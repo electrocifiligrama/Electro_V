@@ -1,0 +1,24 @@
+BLOQUE 1:
+
+Brief: Bloque encargado de controlar los Jumps.
+
+
+Inputs: jumpEnable; {JMP X , JZE X, JNE X, JCY X} encoded in two bits: {00, 01, 10, 11}; 
+	CY (carry); W (w7..w0 : work register's content).
+
+Outputs: JumpRequired (1 or 0).
+
+Details:
+	IF(jumpEnable):
+		IF(JMP X):
+			return 1
+		ELIF(JZE X and W==0):
+			return 1
+		ELIF(JNE X and w15==0)----------ver esto del w15!!!
+			return 1
+		ELIF(JCY X and CY)
+			return 1
+		ELSE
+			return 0
+	ELSE
+		return 0 
