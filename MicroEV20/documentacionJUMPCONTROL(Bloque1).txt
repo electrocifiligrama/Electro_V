@@ -4,7 +4,7 @@ Brief: Bloque encargado de controlar los Jumps.
 
 
 Inputs: jumpEnable; {JMP X , JZE X, JNE X, JCY X} encoded in two bits: {00, 01, 10, 11}; 
-	CY (carry); W (w7..w0 : work register's content).
+	CY (carry); W (w15..w0 : work register's content).
 
 Outputs: JumpRequired (1 or 0).
 
