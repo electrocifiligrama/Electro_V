@@ -18,9 +18,9 @@ the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
 refer to the applicable agreement for further details.
 */
-(header "graphic" (version "1.4"))
+(header "symbol" (version "1.2"))
 (symbol
-	(rect 296 56 504 184)
+	(rect 16 16 224 144)
 	(text "ev20jumpControl" (rect 5 0 108 19)(font "Intel Clear" (font_size 8)))
 	(text "inst" (rect 8 107 24 124)(font "Intel Clear" ))
 	(port
