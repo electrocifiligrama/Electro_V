@@ -1,0 +1,427 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "05/10/2020 13:13:09"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          ev20main
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module ev20main_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg [15:0] A;
+reg [3:0] aluC;
+reg [15:0] B;
+reg carryIn;
+// wires                                               
+wire carryOut;
+wire [15:0] Z;
+
+// assign statements (if any)                          
+ev20main i1 (
+// port map - connection between master ports and signals/registers   
+	.A(A),
+	.aluC(aluC),
+	.B(B),
+	.carryIn(carryIn),
+	.carryOut(carryOut),
+	.Z(Z)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+// A[ 15 ]
+initial
+begin
+	A[15] = 1'b1;
+end 
+// A[ 14 ]
+initial
+begin
+	A[14] = 1'b1;
+end 
+// A[ 13 ]
+initial
+begin
+	A[13] = 1'b1;
+end 
+// A[ 12 ]
+initial
+begin
+	A[12] = 1'b1;
+end 
+// A[ 11 ]
+initial
+begin
+	A[11] = 1'b1;
+end 
+// A[ 10 ]
+initial
+begin
+	A[10] = 1'b1;
+end 
+// A[ 9 ]
+initial
+begin
+	A[9] = 1'b1;
+end 
+// A[ 8 ]
+initial
+begin
+	A[8] = 1'b1;
+end 
+// A[ 7 ]
+initial
+begin
+	A[7] = 1'b1;
+end 
+// A[ 6 ]
+initial
+begin
+	A[6] = 1'b1;
+end 
+// A[ 5 ]
+initial
+begin
+	A[5] = 1'b1;
+end 
+// A[ 4 ]
+initial
+begin
+	A[4] = 1'b1;
+end 
+// A[ 3 ]
+initial
+begin
+	A[3] = 1'b1;
+end 
+// A[ 2 ]
+initial
+begin
+	A[2] = 1'b1;
+end 
+// A[ 1 ]
+initial
+begin
+	A[1] = 1'b1;
+end 
+// A[ 0 ]
+initial
+begin
+	A[0] = 1'b1;
+end 
+// aluC[ 3 ]
+initial
+begin
+	aluC[3] = 1'b0;
+	aluC[3] = #10000 1'b1;
+	aluC[3] = #10000 1'b0;
+	aluC[3] = #10000 1'b1;
+	aluC[3] = #10000 1'b0;
+	aluC[3] = #20000 1'b1;
+	aluC[3] = #10000 1'b0;
+	aluC[3] = #70000 1'b1;
+	aluC[3] = #10000 1'b0;
+	aluC[3] = #40000 1'b1;
+	aluC[3] = #20000 1'b0;
+	aluC[3] = #30000 1'b1;
+	aluC[3] = #20000 1'b0;
+	aluC[3] = #20000 1'b1;
+	aluC[3] = #20000 1'b0;
+	aluC[3] = #20000 1'b1;
+	aluC[3] = #10000 1'b0;
+	aluC[3] = #10000 1'b1;
+	aluC[3] = #30000 1'b0;
+	aluC[3] = #10000 1'b1;
+	aluC[3] = #10000 1'b0;
+	aluC[3] = #20000 1'b1;
+	aluC[3] = #80000 1'b0;
+	aluC[3] = #20000 1'b1;
+	aluC[3] = #30000 1'b0;
+	aluC[3] = #10000 1'b1;
+	aluC[3] = #30000 1'b0;
+	aluC[3] = #20000 1'b1;
+	aluC[3] = #30000 1'b0;
+	aluC[3] = #20000 1'b1;
+	aluC[3] = #10000 1'b0;
+	aluC[3] = #30000 1'b1;
+	aluC[3] = #30000 1'b0;
+	aluC[3] = #50000 1'b1;
+	aluC[3] = #10000 1'b0;
+	aluC[3] = #10000 1'b1;
+	aluC[3] = #10000 1'b0;
+	aluC[3] = #20000 1'b1;
+	aluC[3] = #10000 1'b0;
+	aluC[3] = #50000 1'b1;
+	aluC[3] = #10000 1'b0;
+	aluC[3] = #50000 1'b1;
+end 
+// aluC[ 2 ]
+initial
+begin
+	aluC[2] = 1'b0;
+	aluC[2] = #20000 1'b1;
+	aluC[2] = #20000 1'b0;
+	aluC[2] = #10000 1'b1;
+	aluC[2] = #10000 1'b0;
+	aluC[2] = #10000 1'b1;
+	aluC[2] = #30000 1'b0;
+	aluC[2] = #10000 1'b1;
+	aluC[2] = #10000 1'b0;
+	aluC[2] = #20000 1'b1;
+	aluC[2] = #40000 1'b0;
+	aluC[2] = #50000 1'b1;
+	aluC[2] = #60000 1'b0;
+	aluC[2] = #20000 1'b1;
+	aluC[2] = #30000 1'b0;
+	aluC[2] = #10000 1'b1;
+	aluC[2] = #20000 1'b0;
+	aluC[2] = #10000 1'b1;
+	aluC[2] = #20000 1'b0;
+	aluC[2] = #20000 1'b1;
+	aluC[2] = #10000 1'b0;
+	aluC[2] = #40000 1'b1;
+	aluC[2] = #20000 1'b0;
+	aluC[2] = #10000 1'b1;
+	aluC[2] = #10000 1'b0;
+	aluC[2] = #20000 1'b1;
+	aluC[2] = #20000 1'b0;
+	aluC[2] = #10000 1'b1;
+	aluC[2] = #90000 1'b0;
+	aluC[2] = #10000 1'b1;
+	aluC[2] = #20000 1'b0;
+	aluC[2] = #40000 1'b1;
+	aluC[2] = #10000 1'b0;
+	aluC[2] = #50000 1'b1;
+	aluC[2] = #20000 1'b0;
+	aluC[2] = #10000 1'b1;
+	aluC[2] = #10000 1'b0;
+	aluC[2] = #10000 1'b1;
+	aluC[2] = #10000 1'b0;
+	aluC[2] = #30000 1'b1;
+	aluC[2] = #10000 1'b0;
+	aluC[2] = #20000 1'b1;
+	aluC[2] = #20000 1'b0;
+	aluC[2] = #30000 1'b1;
+	aluC[2] = #40000 1'b0;
+end 
+// aluC[ 1 ]
+initial
+begin
+	aluC[1] = 1'b1;
+	aluC[1] = #10000 1'b0;
+	aluC[1] = #10000 1'b1;
+	aluC[1] = #10000 1'b0;
+	aluC[1] = #30000 1'b1;
+	aluC[1] = #10000 1'b0;
+	aluC[1] = #10000 1'b1;
+	aluC[1] = #20000 1'b0;
+	aluC[1] = #40000 1'b1;
+	aluC[1] = #10000 1'b0;
+	aluC[1] = #10000 1'b1;
+	aluC[1] = #20000 1'b0;
+	aluC[1] = #10000 1'b1;
+	aluC[1] = #10000 1'b0;
+	aluC[1] = #10000 1'b1;
+	aluC[1] = #30000 1'b0;
+	aluC[1] = #20000 1'b1;
+	aluC[1] = #10000 1'b0;
+	aluC[1] = #50000 1'b1;
+	aluC[1] = #10000 1'b0;
+	aluC[1] = #50000 1'b1;
+	aluC[1] = #10000 1'b0;
+	aluC[1] = #30000 1'b1;
+	aluC[1] = #20000 1'b0;
+	aluC[1] = #10000 1'b1;
+	aluC[1] = #10000 1'b0;
+	aluC[1] = #20000 1'b1;
+	aluC[1] = #20000 1'b0;
+	aluC[1] = #40000 1'b1;
+	aluC[1] = #20000 1'b0;
+	aluC[1] = #10000 1'b1;
+	aluC[1] = #10000 1'b0;
+	aluC[1] = #10000 1'b1;
+	aluC[1] = #20000 1'b0;
+	aluC[1] = #30000 1'b1;
+	aluC[1] = #20000 1'b0;
+	aluC[1] = #10000 1'b1;
+	aluC[1] = #10000 1'b0;
+	aluC[1] = #30000 1'b1;
+	aluC[1] = #40000 1'b0;
+	aluC[1] = #10000 1'b1;
+	aluC[1] = #40000 1'b0;
+	aluC[1] = #30000 1'b1;
+	aluC[1] = #30000 1'b0;
+	aluC[1] = #10000 1'b1;
+	aluC[1] = #20000 1'b0;
+	aluC[1] = #10000 1'b1;
+	aluC[1] = #20000 1'b0;
+	aluC[1] = #10000 1'b1;
+end 
+// aluC[ 0 ]
+initial
+begin
+	aluC[0] = 1'b0;
+	aluC[0] = #30000 1'b1;
+	aluC[0] = #10000 1'b0;
+	aluC[0] = #10000 1'b1;
+	aluC[0] = #10000 1'b0;
+	aluC[0] = #40000 1'b1;
+	aluC[0] = #10000 1'b0;
+	aluC[0] = #20000 1'b1;
+	aluC[0] = #10000 1'b0;
+	aluC[0] = #40000 1'b1;
+	aluC[0] = #10000 1'b0;
+	aluC[0] = #10000 1'b1;
+	aluC[0] = #20000 1'b0;
+	aluC[0] = #10000 1'b1;
+	aluC[0] = #10000 1'b0;
+	aluC[0] = #20000 1'b1;
+	aluC[0] = #10000 1'b0;
+	aluC[0] = #10000 1'b1;
+	aluC[0] = #10000 1'b0;
+	aluC[0] = #30000 1'b1;
+	aluC[0] = #10000 1'b0;
+	aluC[0] = #20000 1'b1;
+	aluC[0] = #10000 1'b0;
+	aluC[0] = #20000 1'b1;
+	aluC[0] = #40000 1'b0;
+	aluC[0] = #10000 1'b1;
+	aluC[0] = #20000 1'b0;
+	aluC[0] = #40000 1'b1;
+	aluC[0] = #10000 1'b0;
+	aluC[0] = #10000 1'b1;
+	aluC[0] = #20000 1'b0;
+	aluC[0] = #10000 1'b1;
+	aluC[0] = #10000 1'b0;
+	aluC[0] = #30000 1'b1;
+	aluC[0] = #10000 1'b0;
+	aluC[0] = #30000 1'b1;
+	aluC[0] = #20000 1'b0;
+	aluC[0] = #90000 1'b1;
+	aluC[0] = #10000 1'b0;
+	aluC[0] = #10000 1'b1;
+	aluC[0] = #40000 1'b0;
+	aluC[0] = #10000 1'b1;
+	aluC[0] = #60000 1'b0;
+	aluC[0] = #10000 1'b1;
+	aluC[0] = #10000 1'b0;
+	aluC[0] = #10000 1'b1;
+	aluC[0] = #20000 1'b0;
+	aluC[0] = #10000 1'b1;
+	aluC[0] = #20000 1'b0;
+	aluC[0] = #20000 1'b1;
+	aluC[0] = #20000 1'b0;
+	aluC[0] = #10000 1'b1;
+end 
+// B[ 15 ]
+initial
+begin
+	B[15] = 1'b0;
+end 
+// B[ 14 ]
+initial
+begin
+	B[14] = 1'b0;
+end 
+// B[ 13 ]
+initial
+begin
+	B[13] = 1'b0;
+end 
+// B[ 12 ]
+initial
+begin
+	B[12] = 1'b0;
+end 
+// B[ 11 ]
+initial
+begin
+	B[11] = 1'b0;
+end 
+// B[ 10 ]
+initial
+begin
+	B[10] = 1'b0;
+end 
+// B[ 9 ]
+initial
+begin
+	B[9] = 1'b0;
+end 
+// B[ 8 ]
+initial
+begin
+	B[8] = 1'b0;
+end 
+// B[ 7 ]
+initial
+begin
+	B[7] = 1'b0;
+end 
+// B[ 6 ]
+initial
+begin
+	B[6] = 1'b0;
+end 
+// B[ 5 ]
+initial
+begin
+	B[5] = 1'b0;
+end 
+// B[ 4 ]
+initial
+begin
+	B[4] = 1'b0;
+end 
+// B[ 3 ]
+initial
+begin
+	B[3] = 1'b0;
+end 
+// B[ 2 ]
+initial
+begin
+	B[2] = 1'b0;
+end 
+// B[ 1 ]
+initial
+begin
+	B[1] = 1'b0;
+end 
+// B[ 0 ]
+initial
+begin
+	B[0] = 1'b0;
+end 
+
+// carryIn
+initial
+begin
+	carryIn = 1'b0;
+	carryIn = #20000 1'b1;
+	carryIn = #520000 1'b0;
+end 
+endmodule
+
