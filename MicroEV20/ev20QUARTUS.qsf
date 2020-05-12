@@ -60,3 +60,4 @@ set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_
 set_global_assignment -name BDF_FILE ev20B3BUSA.bdf
 set_global_assignment -name BDF_FILE ev20B3BUSB.bdf
 set_global_assignment -name BDF_FILE ev20BLOQUE3.bdf
+set_global_assignment -name BDF_FILE ev20registerBank.bdf
