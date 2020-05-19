@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ev20QUARTUS
-Sun May 10 14:51:16 2020
+Tue May 12 15:37:40 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -16,9 +16,10 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   8. User-Specified and Inferred Latches
   9. General Register Statistics
  10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+ 11. Parameter Settings for User Entity Instance: LPM_FF:inst10
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -44,16 +45,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun May 10 14:51:16 2020       ;
+; Analysis & Synthesis Status        ; Successful - Tue May 12 15:37:40 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ev20QUARTUS                                 ;
 ; Top-level Entity Name              ; ev20main                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 177                                         ;
-;     Total combinational functions  ; 177                                         ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 54                                          ;
+; Total logic elements               ; 243                                         ;
+;     Total combinational functions  ; 223                                         ;
+;     Dedicated logic registers      ; 20                                          ;
+; Total registers                    ; 20                                          ;
+; Total pins                         ; 99                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -160,7 +161,8 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -172,6 +174,10 @@ refer to the applicable agreement for further details.
 ; ev20main.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/ev20main.bdf        ;         ;
 ; ev20jumpControl.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/ev20jumpControl.bdf ;         ;
 ; alu.v                            ; yes             ; User Verilog HDL File              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v               ;         ;
+; shifter.v                        ; yes             ; User Verilog HDL File              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/shifter.v           ;         ;
+; lpm_ff.tdf                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ff.tdf         ;         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_constant.inc   ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc     ;         ;
 ; 74139m.bdf                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/74139m.bdf       ;         ;
 +----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
 
@@ -181,41 +187,43 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+---------------+
 ; Resource                                    ; Usage         ;
 +---------------------------------------------+---------------+
-; Estimated Total logic elements              ; 177           ;
+; Estimated Total logic elements              ; 243           ;
 ;                                             ;               ;
-; Total combinational functions               ; 177           ;
+; Total combinational functions               ; 223           ;
 ; Logic element usage by number of LUT inputs ;               ;
-;     -- 4 input functions                    ; 93            ;
-;     -- 3 input functions                    ; 52            ;
-;     -- <=2 input functions                  ; 32            ;
+;     -- 4 input functions                    ; 123           ;
+;     -- 3 input functions                    ; 80            ;
+;     -- <=2 input functions                  ; 20            ;
 ;                                             ;               ;
 ; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 131           ;
+;     -- normal mode                          ; 177           ;
 ;     -- arithmetic mode                      ; 46            ;
 ;                                             ;               ;
-; Total registers                             ; 0             ;
-;     -- Dedicated logic registers            ; 0             ;
+; Total registers                             ; 20            ;
+;     -- Dedicated logic registers            ; 20            ;
 ;     -- I/O registers                        ; 0             ;
 ;                                             ;               ;
-; I/O pins                                    ; 54            ;
+; I/O pins                                    ; 99            ;
 ;                                             ;               ;
 ; Embedded Multiplier 9-bit elements          ; 0             ;
 ;                                             ;               ;
-; Maximum fan-out node                        ; aluC[0]~input ;
-; Maximum fan-out                             ; 38            ;
-; Total fan-out                               ; 660           ;
-; Average fan-out                             ; 2.32          ;
+; Maximum fan-out node                        ; aluC[1]~input ;
+; Maximum fan-out                             ; 52            ;
+; Total fan-out                               ; 946           ;
+; Average fan-out                             ; 2.15          ;
 +---------------------------------------------+---------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |ev20main                  ; 177 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 54   ; 0            ; |ev20main           ; ev20main    ; work         ;
-;    |ALU:inst1|             ; 177 (177)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ALU:inst1 ; ALU         ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                          ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name     ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------+-------------+--------------+
+; |ev20main                  ; 223 (2)             ; 20 (0)                    ; 0           ; 0            ; 0       ; 0         ; 99   ; 0            ; |ev20main               ; ev20main    ; work         ;
+;    |ALU:inst1|             ; 191 (191)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ALU:inst1     ; ALU         ; work         ;
+;    |lpm_ff:inst10|         ; 0 (0)               ; 20 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|lpm_ff:inst10 ; lpm_ff      ; work         ;
+;    |shifter:inst2|         ; 30 (30)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|shifter:inst2 ; shifter     ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -250,7 +258,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 20    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -260,13 +268,33 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 14:1               ; 15 bits   ; 135 LEs       ; 105 LEs              ; 30 LEs                 ; No         ; |ev20main|ALU:inst1|Mux15  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
+; 4:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |ev20main|shifter:inst2|Mux1 ;
+; 14:1               ; 15 bits   ; 135 LEs       ; 120 LEs              ; 15 LEs                 ; No         ; |ev20main|ALU:inst1|Mux15    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_FF:inst10 ;
++------------------------+--------------+--------------------+
+; Parameter Name         ; Value        ; Type               ;
++------------------------+--------------+--------------------+
+; LPM_WIDTH              ; 20           ; Untyped            ;
+; LPM_AVALUE             ; UNUSED       ; Untyped            ;
+; LPM_SVALUE             ; UNUSED       ; Untyped            ;
+; LPM_FFTYPE             ; DFF          ; Untyped            ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped            ;
+; CBXI_PARAMETER         ; NOTHING      ; Untyped            ;
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY         ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY       ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE       ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE     ;
++------------------------+--------------+--------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------+
@@ -274,20 +302,22 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 54                          ;
-; cycloneiii_lcell_comb ; 177                         ;
+; boundary_port         ; 99                          ;
+; cycloneiii_ff         ; 20                          ;
+;     plain             ; 20                          ;
+; cycloneiii_lcell_comb ; 223                         ;
 ;     arith             ; 46                          ;
 ;         2 data inputs ; 14                          ;
 ;         3 data inputs ; 32                          ;
-;     normal            ; 131                         ;
+;     normal            ; 177                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 16                          ;
-;         3 data inputs ; 20                          ;
-;         4 data inputs ; 93                          ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 48                          ;
+;         4 data inputs ; 123                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 7.50                        ;
-; Average LUT depth     ; 5.76                        ;
+; Max LUT depth         ; 7.40                        ;
+; Average LUT depth     ; 4.64                        ;
 +-----------------------+-----------------------------+
 
 
@@ -296,7 +326,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:08     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -306,7 +336,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun May 10 14:50:29 2020
+    Info: Processing started: Tue May 12 15:37:24 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ev20QUARTUS -c ev20QUARTUS
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -316,6 +346,14 @@ Info (12021): Found 1 design units, including 1 entities, in source file ev20jum
     Info (12023): Found entity 1: ev20jumpControl
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
     Info (12023): Found entity 1: ALU File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file shifter.v
+    Info (12023): Found entity 1: shifter File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/shifter.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ev20b3busa.bdf
+    Info (12023): Found entity 1: ev20B3BUSA
+Info (12021): Found 1 design units, including 1 entities, in source file ev20b3busb.bdf
+    Info (12023): Found entity 1: ev20B3BUSB
+Info (12021): Found 1 design units, including 1 entities, in source file ev20bloque3.bdf
+    Info (12023): Found entity 1: ev20BLOQUE3
 Info (12127): Elaborating entity "ev20main" for the top level hierarchy
 Info (12128): Elaborating entity "ALU" for hierarchy "ALU:inst1"
 Warning (10240): Verilog HDL Always Construct warning at alu.v(12): inferring latch(es) for variable "aluRes", which holds its previous value in one or more paths through the always construct File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
@@ -335,6 +373,11 @@ Info (10041): Inferred latch for "aluRes[12]" at alu.v(12) File: C:/Users/Manuel
 Info (10041): Inferred latch for "aluRes[13]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
 Info (10041): Inferred latch for "aluRes[14]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
 Info (10041): Inferred latch for "aluRes[15]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
+Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst10"
+Info (12130): Elaborated megafunction instantiation "LPM_FF:inst10"
+Info (12133): Instantiated megafunction "LPM_FF:inst10" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTH" = "20"
+Info (12128): Elaborating entity "shifter" for hierarchy "shifter:inst2"
 Info (12128): Elaborating entity "ev20jumpControl" for hierarchy "ev20jumpControl:inst"
 Info (12128): Elaborating entity "74139M" for hierarchy "ev20jumpControl:inst|74139M:inst6"
 Info (12130): Elaborated megafunction instantiation "ev20jumpControl:inst|74139M:inst6"
@@ -373,14 +416,14 @@ Warning (13012): Latch ALU:inst1|aluRes[0] has unsafe behavior File: C:/Users/Ma
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 231 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 37 input pins
-    Info (21059): Implemented 17 output pins
-    Info (21061): Implemented 177 logic cells
+Info (21057): Implemented 342 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 61 input pins
+    Info (21059): Implemented 38 output pins
+    Info (21061): Implemented 243 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 34 warnings
-    Info: Peak virtual memory: 4779 megabytes
-    Info: Processing ended: Sun May 10 14:51:16 2020
-    Info: Elapsed time: 00:00:47
-    Info: Total CPU time (on all processors): 00:00:43
+    Info: Peak virtual memory: 4785 megabytes
+    Info: Processing ended: Tue May 12 15:37:40 2020
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:33
 
 
