@@ -1,5 +1,5 @@
 Flow report for ev20QUARTUS
-Thu May 21 23:52:19 2020
+Sat May 23 00:42:30 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,22 +40,22 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Flow Failed - Thu May 21 23:52:19 2020      ;
+; Flow Status                        ; Successful - Sat May 23 00:42:20 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ev20QUARTUS                                 ;
-; Top-level Entity Name              ; UC1                                         ;
+; Top-level Entity Name              ; MIRUnit                                     ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE22F17C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 145 / 22,320 ( < 1 % )                      ;
+;     Total combinational functions  ; 26 / 22,320 ( < 1 % )                       ;
+;     Dedicated logic registers      ; 136 / 22,320 ( < 1 % )                      ;
+; Total registers                    ; 136                                         ;
+; Total pins                         ; 96 / 154 ( 62 % )                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0 / 608,256 ( 0 % )                         ;
+; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/21/2020 23:52:01 ;
+; Start date & time ; 05/23/2020 00:41:39 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ev20QUARTUS         ;
 +-------------------+---------------------+
@@ -75,14 +75,16 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 62001001619510.159011592013300         ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 62001001619510.159020529802324         ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; UC1         ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; UC1         ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; UC1         ; Top        ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; MIRUnit     ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; MIRUnit     ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; MIRUnit     ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --         ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --         ;
-; TOP_LEVEL_ENTITY                    ; UC1                                    ; ev20QUARTUS   ; --          ; --         ;
+; TOP_LEVEL_ENTITY                    ; MIRUnit                                ; ev20QUARTUS   ; --          ; --         ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 
 
@@ -91,8 +93,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:20     ; 1.0                     ; 4710 MB             ; 00:00:40                           ;
-; Total                ; 00:00:20     ; --                      ; --                  ; 00:00:40                           ;
+; Analysis & Synthesis ; 00:00:21     ; 1.0                     ; 4745 MB             ; 00:00:39                           ;
+; Fitter               ; 00:00:12     ; 1.0                     ; 5261 MB             ; 00:00:13                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4678 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:08     ; 1.0                     ; 4759 MB             ; 00:00:04                           ;
+; Total                ; 00:00:43     ; --                      ; --                  ; 00:00:58                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -102,6 +107,9 @@ refer to the applicable agreement for further details.
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; DESKTOP-HR2F6HK  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-HR2F6HK  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-HR2F6HK  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-HR2F6HK  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -109,6 +117,9 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off ev20QUARTUS -c ev20QUARTUS
+quartus_fit --read_settings_files=off --write_settings_files=off ev20QUARTUS -c ev20QUARTUS
+quartus_asm --read_settings_files=off --write_settings_files=off ev20QUARTUS -c ev20QUARTUS
+quartus_sta ev20QUARTUS -c ev20QUARTUS
 
 
 
