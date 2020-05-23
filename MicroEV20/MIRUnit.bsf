@@ -68,23 +68,16 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 128)
 		(input)
-		(text "CK3" (rect 0 0 24 19)(font "Intel Clear" (font_size 8)))
-		(text "CK3" (rect 21 123 45 142)(font "Intel Clear" (font_size 8)))
+		(text "CK" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "CK" (rect 21 123 37 142)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 128)(pt 16 128))
 	)
 	(port
 		(pt 0 144)
 		(input)
-		(text "CK4" (rect 0 0 24 19)(font "Intel Clear" (font_size 8)))
-		(text "CK4" (rect 21 139 45 158)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 144)(pt 16 144))
-	)
-	(port
-		(pt 0 160)
-		(input)
 		(text "INST-DAdd[9..0]" (rect 0 0 99 19)(font "Intel Clear" (font_size 8)))
-		(text "INST-DAdd[9..0]" (rect 21 155 120 174)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 160)(pt 16 160)(line_width 3))
+		(text "INST-DAdd[9..0]" (rect 21 139 120 158)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
 	)
 	(port
 		(pt 264 32)

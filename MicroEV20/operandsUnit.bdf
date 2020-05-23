@@ -21,7 +21,7 @@ refer to the applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 704 608 872 624)
+	(rect 696 608 864 624)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "CK3" (rect 5 0 25 17)(font "Intel Clear" ))
 	(pt 168 8)
@@ -39,7 +39,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 128 304 304 320)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "OPERAND[15..0]" (rect 5 0 85 17)(font "Intel Clear" ))
+	(text "OPERAND[15..0]" (rect 5 0 84 17)(font "Intel Clear" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12))
@@ -55,7 +55,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 136 344 304 360)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CK-HOLD" (rect 5 0 53 17)(font "Intel Clear" ))
+	(text "CK-HOLD" (rect 5 0 52 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -71,7 +71,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 696 496 864 512)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "XMux[15..0]" (rect 5 0 63 12)(font "Arial" ))
+	(text "XMux[15..0]" (rect 5 0 62 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -85,9 +85,25 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 696 528 864 544)
+	(rect 696 536 864 552)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "B[15..0]" (rect 5 0 42 17)(font "Intel Clear" ))
+	(text "MUXselect" (rect 5 0 56 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 696 576 864 592)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "B_OP[15..0]" (rect 5 0 62 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -441,16 +457,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 864 536)
-	(pt 1016 536)
-	(bus)
-)
-(connector
-	(pt 1016 536)
-	(pt 1016 496)
-	(bus)
-)
-(connector
 	(pt 1016 496)
 	(pt 1072 496)
 	(bus)
@@ -470,24 +476,12 @@ refer to the applicable agreement for further details.
 	(pt 1032 360)
 )
 (connector
-	(pt 1032 616)
-	(pt 872 616)
-)
-(connector
 	(pt 1032 512)
 	(pt 1072 512)
 )
 (connector
 	(pt 320 328)
 	(pt 352 328)
-)
-(connector
-	(pt 1032 360)
-	(pt 1032 512)
-)
-(connector
-	(pt 1032 512)
-	(pt 1032 616)
 )
 (connector
 	(pt 304 312)
@@ -499,7 +493,37 @@ refer to the applicable agreement for further details.
 	(pt 304 352)
 )
 (connector
-	(text "`" (rect 304 331 321 336)(font "Intel Clear" )(vertical))
+	(pt 944 384)
+	(pt 944 544)
+)
+(connector
+	(pt 944 544)
+	(pt 864 544)
+)
+(connector
+	(pt 1016 496)
+	(pt 1016 584)
+	(bus)
+)
+(connector
+	(pt 864 584)
+	(pt 1016 584)
+	(bus)
+)
+(connector
+	(pt 1032 360)
+	(pt 1032 512)
+)
+(connector
+	(pt 1032 512)
+	(pt 1032 616)
+)
+(connector
+	(pt 864 616)
+	(pt 1032 616)
+)
+(connector
+	(text "<<__$DEF_ALIAS9269>>" (rect 304 331 321 449)(font "Intel Clear" )(vertical)(invisible))
 	(pt 320 328)
 	(pt 320 352)
 )

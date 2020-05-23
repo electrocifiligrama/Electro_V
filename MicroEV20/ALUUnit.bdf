@@ -87,7 +87,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 280 352 448 368)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CK4" (rect 5 0 27 12)(font "Arial" ))
+	(text "CK4" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -304,7 +304,7 @@ refer to the applicable agreement for further details.
 		(pt 152 32)
 		(output)
 		(text "CY" (rect 0 0 16 12)(font "Arial" ))
-		(text "CY" (rect 118 27 131 39)(font "Arial" ))
+		(text "CY" (rect 118 27 134 39)(font "Arial" ))
 		(line (pt 152 32)(pt 136 32))
 	)
 	(drawing
@@ -420,12 +420,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "`" (rect 1144 176 1149 193)(font "Intel Clear" ))
-	(pt 1120 192)
-	(pt 1208 192)
-	(bus)
-)
-(connector
 	(pt 496 360)
 	(pt 448 360)
 )
@@ -437,10 +431,6 @@ refer to the applicable agreement for further details.
 	(pt 248 272)
 	(pt 248 320)
 	(bus)
-)
-(connector
-	(pt 496 360)
-	(pt 496 304)
 )
 (connector
 	(pt 752 288)
@@ -481,5 +471,32 @@ refer to the applicable agreement for further details.
 	(pt 784 424)
 	(pt 752 424)
 )
+(connector
+	(pt 496 304)
+	(pt 496 360)
+)
+(connector
+	(pt 496 360)
+	(pt 496 472)
+)
+(connector
+	(pt 992 472)
+	(pt 496 472)
+)
+(connector
+	(pt 992 472)
+	(pt 992 208)
+)
+(connector
+	(pt 992 208)
+	(pt 1008 208)
+)
+(connector
+	(text "<<__$DEF_ALIAS8998>>" (rect 1144 176 1262 193)(font "Intel Clear" )(invisible))
+	(pt 1120 192)
+	(pt 1208 192)
+	(bus)
+)
 (junction (pt 248 272))
 (junction (pt 752 392))
+(junction (pt 496 360))

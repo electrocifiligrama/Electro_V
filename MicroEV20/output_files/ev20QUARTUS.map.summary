@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Sat May 23 00:41:58 2020
+Analysis & Synthesis Status : Failed - Sat May 23 20:05:42 2020
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : ev20QUARTUS
-Top-level Entity Name : MIRUnit
+Top-level Entity Name : ev20main
 Family : Cyclone IV E
-Total logic elements : 150
-    Total combinational functions : 26
-    Dedicated logic registers : 136
-Total registers : 136
-Total pins : 96
-Total virtual pins : 0
-Total memory bits : 0
-Embedded Multiplier 9-bit elements : 0
-Total PLLs : 0
+Total logic elements : N/A until Partition Merge
+    Total combinational functions : N/A until Partition Merge
+    Dedicated logic registers : N/A until Partition Merge
+Total registers : N/A until Partition Merge
+Total pins : N/A until Partition Merge
+Total virtual pins : N/A until Partition Merge
+Total memory bits : N/A until Partition Merge
+Embedded Multiplier 9-bit elements : N/A until Partition Merge
+Total PLLs : N/A until Partition Merge

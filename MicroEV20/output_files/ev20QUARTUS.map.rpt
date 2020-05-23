@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ev20QUARTUS
-Sat May 23 00:41:58 2020
+Sat May 23 20:05:42 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -10,78 +10,7 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: UC2:inst-uc2|LPM_COMPARE:inst5
- 10. Parameter Settings for User Entity Instance: UC2:inst-uc2|LPM_COMPARE:Paul
- 11. Parameter Settings for User Entity Instance: UC2:inst-uc2|LPM_COMPARE:inst6
- 12. Parameter Settings for User Entity Instance: UC1:inst|LPM_FF:inst1
- 13. Parameter Settings for User Entity Instance: UC1:inst|LPM_FF:inst
- 14. Parameter Settings for User Entity Instance: UC1:inst|BUSMUX:inst2
- 15. Parameter Settings for User Entity Instance: UC1:inst|LPM_FF:inst22
- 16. Parameter Settings for User Entity Instance: UC1:inst|LPM_FF:inst3
- 17. Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:Ezu6
- 18. Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:Ezu5
- 19. Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:Ezu8
- 20. Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:Ezu7
- 21. Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:inst12
- 22. Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:inst11
- 23. Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:inst8
- 24. Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:inst7
- 25. Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:inst1
- 26. Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:inst
- 27. Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:inst4
- 28. Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:inst3
- 29. Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:inst6
- 30. Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:inst5
- 31. Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:inst10
- 32. Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:inst9
- 33. Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:inst14
- 34. Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:inst13
- 35. Parameter Settings for User Entity Instance: BUSMUX:inst7
- 36. Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:Ezu6
- 37. Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:Ezu5
- 38. Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:Ezu8
- 39. Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:Ezu7
- 40. Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:inst12
- 41. Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:inst11
- 42. Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:inst8
- 43. Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:inst7
- 44. Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:inst1
- 45. Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:inst
- 46. Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:inst4
- 47. Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:inst3
- 48. Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:inst6
- 49. Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:inst5
- 50. Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:inst10
- 51. Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:inst9
- 52. Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:inst14
- 53. Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:inst13
- 54. Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:Ezu6
- 55. Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:Ezu5
- 56. Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:Ezu8
- 57. Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:Ezu7
- 58. Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:inst12
- 59. Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:inst11
- 60. Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:inst8
- 61. Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:inst7
- 62. Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:inst1
- 63. Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:inst
- 64. Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:inst4
- 65. Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:inst3
- 66. Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:inst6
- 67. Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:inst5
- 68. Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:inst10
- 69. Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:inst9
- 70. Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:inst14
- 71. Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:inst13
- 72. Parameter Settings for User Entity Instance: LPM_FF:inst6
- 73. Parameter Settings for User Entity Instance: LPM_FF:inst5
- 74. Post-Synthesis Netlist Statistics for Top Partition
- 75. Elapsed Time Per Partition
- 76. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -107,20 +36,20 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat May 23 00:41:58 2020       ;
+; Analysis & Synthesis Status        ; Failed - Sat May 23 20:05:42 2020           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ev20QUARTUS                                 ;
-; Top-level Entity Name              ; MIRUnit                                     ;
+; Top-level Entity Name              ; ev20main                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 150                                         ;
-;     Total combinational functions  ; 26                                          ;
-;     Dedicated logic registers      ; 136                                         ;
-; Total registers                    ; 136                                         ;
-; Total pins                         ; 96                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -129,8 +58,7 @@ refer to the applicable agreement for further details.
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                           ; EP4CE22F17C6       ;                    ;
-; Top-level entity name                                            ; MIRUnit            ; ev20QUARTUS        ;
+; Top-level entity name                                            ; ev20main           ; ev20QUARTUS        ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -215,1406 +143,15 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                   ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                         ; Library ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
-; MIR.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/MIR.bdf         ;         ;
-; UC2.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/UC2.bdf         ;         ;
-; UC1.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/UC1.bdf         ;         ;
-; MIRUnit.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/MIRUnit.bdf     ;         ;
-; lpm_compare.tdf                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.tdf                                               ;         ;
-; comptree.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/comptree.inc                                                  ;         ;
-; altshift.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc                                                  ;         ;
-; aglobal181.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                                                ;         ;
-; db/cmpr_3pd.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/db/cmpr_3pd.tdf ;         ;
-; lpm_ff.tdf                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ff.tdf                                                    ;         ;
-; lpm_constant.inc                 ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_constant.inc                                              ;         ;
-; busmux.tdf                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf                                                    ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                                                   ;         ;
-; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf                                                   ;         ;
-; muxlut.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/muxlut.inc                                                    ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/bypassff.inc                                                  ;         ;
-; db/mux_crc.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/db/mux_crc.tdf  ;         ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
-
-
-+--------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                  ;
-+---------------------------------------------+----------------+
-; Resource                                    ; Usage          ;
-+---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 150            ;
-;                                             ;                ;
-; Total combinational functions               ; 26             ;
-; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 13             ;
-;     -- 3 input functions                    ; 6              ;
-;     -- <=2 input functions                  ; 7              ;
-;                                             ;                ;
-; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 26             ;
-;     -- arithmetic mode                      ; 0              ;
-;                                             ;                ;
-; Total registers                             ; 136            ;
-;     -- Dedicated logic registers            ; 136            ;
-;     -- I/O registers                        ; 0              ;
-;                                             ;                ;
-; I/O pins                                    ; 96             ;
-;                                             ;                ;
-; Embedded Multiplier 9-bit elements          ; 0              ;
-;                                             ;                ;
-; Maximum fan-out node                        ; HOLD-CK2~input ;
-; Maximum fan-out                             ; 76             ;
-; Total fan-out                               ; 491            ;
-; Average fan-out                             ; 1.39           ;
-+---------------------------------------------+----------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                 ;
-+--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+-------------+--------------+
-; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                  ; Entity Name ; Library Name ;
-+--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+-------------+--------------+
-; |MIRUnit                             ; 26 (0)              ; 136 (0)                   ; 0           ; 0            ; 0       ; 0         ; 96   ; 0            ; |MIRUnit                                                             ; MIRUnit     ; work         ;
-;    |MIR:MIR3|                        ; 0 (0)               ; 56 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR3                                                    ; MIR         ; work         ;
-;       |lpm_ff:Ezu5|                  ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR3|lpm_ff:Ezu5                                        ; lpm_ff      ; work         ;
-;       |lpm_ff:Ezu6|                  ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR3|lpm_ff:Ezu6                                        ; lpm_ff      ; work         ;
-;       |lpm_ff:Ezu7|                  ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR3|lpm_ff:Ezu7                                        ; lpm_ff      ; work         ;
-;       |lpm_ff:Ezu8|                  ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR3|lpm_ff:Ezu8                                        ; lpm_ff      ; work         ;
-;       |lpm_ff:inst10|                ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR3|lpm_ff:inst10                                      ; lpm_ff      ; work         ;
-;       |lpm_ff:inst11|                ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR3|lpm_ff:inst11                                      ; lpm_ff      ; work         ;
-;       |lpm_ff:inst12|                ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR3|lpm_ff:inst12                                      ; lpm_ff      ; work         ;
-;       |lpm_ff:inst13|                ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR3|lpm_ff:inst13                                      ; lpm_ff      ; work         ;
-;       |lpm_ff:inst14|                ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR3|lpm_ff:inst14                                      ; lpm_ff      ; work         ;
-;       |lpm_ff:inst1|                 ; 0 (0)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR3|lpm_ff:inst1                                       ; lpm_ff      ; work         ;
-;       |lpm_ff:inst3|                 ; 0 (0)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR3|lpm_ff:inst3                                       ; lpm_ff      ; work         ;
-;       |lpm_ff:inst4|                 ; 0 (0)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR3|lpm_ff:inst4                                       ; lpm_ff      ; work         ;
-;       |lpm_ff:inst5|                 ; 0 (0)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR3|lpm_ff:inst5                                       ; lpm_ff      ; work         ;
-;       |lpm_ff:inst6|                 ; 0 (0)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR3|lpm_ff:inst6                                       ; lpm_ff      ; work         ;
-;       |lpm_ff:inst7|                 ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR3|lpm_ff:inst7                                       ; lpm_ff      ; work         ;
-;       |lpm_ff:inst8|                 ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR3|lpm_ff:inst8                                       ; lpm_ff      ; work         ;
-;       |lpm_ff:inst9|                 ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR3|lpm_ff:inst9                                       ; lpm_ff      ; work         ;
-;       |lpm_ff:inst|                  ; 0 (0)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR3|lpm_ff:inst                                        ; lpm_ff      ; work         ;
-;    |MIR:MIR4|                        ; 0 (0)               ; 28 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR4                                                    ; MIR         ; work         ;
-;       |lpm_ff:inst10|                ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR4|lpm_ff:inst10                                      ; lpm_ff      ; work         ;
-;       |lpm_ff:inst13|                ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR4|lpm_ff:inst13                                      ; lpm_ff      ; work         ;
-;       |lpm_ff:inst14|                ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR4|lpm_ff:inst14                                      ; lpm_ff      ; work         ;
-;       |lpm_ff:inst5|                 ; 0 (0)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR4|lpm_ff:inst5                                       ; lpm_ff      ; work         ;
-;       |lpm_ff:inst6|                 ; 0 (0)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR4|lpm_ff:inst6                                       ; lpm_ff      ; work         ;
-;       |lpm_ff:inst7|                 ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR4|lpm_ff:inst7                                       ; lpm_ff      ; work         ;
-;       |lpm_ff:inst8|                 ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR4|lpm_ff:inst8                                       ; lpm_ff      ; work         ;
-;       |lpm_ff:inst9|                 ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR4|lpm_ff:inst9                                       ; lpm_ff      ; work         ;
-;    |MIR:MIR5|                        ; 0 (0)               ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR5                                                    ; MIR         ; work         ;
-;       |lpm_ff:inst13|                ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR5|lpm_ff:inst13                                      ; lpm_ff      ; work         ;
-;       |lpm_ff:inst14|                ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR5|lpm_ff:inst14                                      ; lpm_ff      ; work         ;
-;       |lpm_ff:inst5|                 ; 0 (0)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR5|lpm_ff:inst5                                       ; lpm_ff      ; work         ;
-;       |lpm_ff:inst6|                 ; 0 (0)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|MIR:MIR5|lpm_ff:inst6                                       ; lpm_ff      ; work         ;
-;    |UC1:inst|                        ; 6 (0)               ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|UC1:inst                                                    ; UC1         ; work         ;
-;       |busmux:inst2|                 ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|UC1:inst|busmux:inst2                                       ; busmux      ; work         ;
-;          |lpm_mux:$00000|            ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|UC1:inst|busmux:inst2|lpm_mux:$00000                        ; lpm_mux     ; work         ;
-;             |mux_crc:auto_generated| ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|UC1:inst|busmux:inst2|lpm_mux:$00000|mux_crc:auto_generated ; mux_crc     ; work         ;
-;       |lpm_ff:inst1|                 ; 0 (0)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|UC1:inst|lpm_ff:inst1                                       ; lpm_ff      ; work         ;
-;       |lpm_ff:inst22|                ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|UC1:inst|lpm_ff:inst22                                      ; lpm_ff      ; work         ;
-;       |lpm_ff:inst3|                 ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|UC1:inst|lpm_ff:inst3                                       ; lpm_ff      ; work         ;
-;       |lpm_ff:inst|                  ; 0 (0)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|UC1:inst|lpm_ff:inst                                        ; lpm_ff      ; work         ;
-;    |UC2:inst-uc2|                    ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|UC2:inst-uc2                                                ; UC2         ; work         ;
-;    |busmux:inst7|                    ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|busmux:inst7                                                ; busmux      ; work         ;
-;       |lpm_mux:$00000|               ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|busmux:inst7|lpm_mux:$00000                                 ; lpm_mux     ; work         ;
-;          |mux_crc:auto_generated|    ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|busmux:inst7|lpm_mux:$00000|mux_crc:auto_generated          ; mux_crc     ; work         ;
-;    |lpm_ff:inst5|                    ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|lpm_ff:inst5                                                ; lpm_ff      ; work         ;
-;    |lpm_ff:inst6|                    ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIRUnit|lpm_ff:inst6                                                ; lpm_ff      ; work         ;
-+--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+-------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 136   ;
-; Number of registers using Synchronous Clear  ; 2     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: UC2:inst-uc2|LPM_COMPARE:inst5 ;
-+------------------------+--------------+-------------------------------------+
-; Parameter Name         ; Value        ; Type                                ;
-+------------------------+--------------+-------------------------------------+
-; lpm_width              ; 5            ; Untyped                             ;
-; LPM_REPRESENTATION     ; UNSIGNED     ; Untyped                             ;
-; LPM_PIPELINE           ; 0            ; Untyped                             ;
-; CHAIN_SIZE             ; 8            ; Untyped                             ;
-; ONE_INPUT_IS_CONSTANT  ; NO           ; Untyped                             ;
-; CARRY_CHAIN            ; MANUAL       ; Untyped                             ;
-; CASCADE_CHAIN          ; MANUAL       ; Untyped                             ;
-; CARRY_CHAIN_LENGTH     ; 48           ; CARRY_CHAIN_LENGTH                  ;
-; CASCADE_CHAIN_LENGTH   ; 2            ; CASCADE_CHAIN_LENGTH                ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                             ;
-; CBXI_PARAMETER         ; cmpr_3pd     ; Untyped                             ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                          ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                        ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                        ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                      ;
-+------------------------+--------------+-------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: UC2:inst-uc2|LPM_COMPARE:Paul ;
-+------------------------+--------------+------------------------------------+
-; Parameter Name         ; Value        ; Type                               ;
-+------------------------+--------------+------------------------------------+
-; lpm_width              ; 5            ; Untyped                            ;
-; LPM_REPRESENTATION     ; UNSIGNED     ; Untyped                            ;
-; LPM_PIPELINE           ; 0            ; Untyped                            ;
-; CHAIN_SIZE             ; 8            ; Untyped                            ;
-; ONE_INPUT_IS_CONSTANT  ; NO           ; Untyped                            ;
-; CARRY_CHAIN            ; MANUAL       ; Untyped                            ;
-; CASCADE_CHAIN          ; MANUAL       ; Untyped                            ;
-; CARRY_CHAIN_LENGTH     ; 48           ; CARRY_CHAIN_LENGTH                 ;
-; CASCADE_CHAIN_LENGTH   ; 2            ; CASCADE_CHAIN_LENGTH               ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                            ;
-; CBXI_PARAMETER         ; cmpr_3pd     ; Untyped                            ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                         ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                       ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                       ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                     ;
-+------------------------+--------------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: UC2:inst-uc2|LPM_COMPARE:inst6 ;
-+------------------------+--------------+-------------------------------------+
-; Parameter Name         ; Value        ; Type                                ;
-+------------------------+--------------+-------------------------------------+
-; lpm_width              ; 5            ; Untyped                             ;
-; LPM_REPRESENTATION     ; UNSIGNED     ; Untyped                             ;
-; LPM_PIPELINE           ; 0            ; Untyped                             ;
-; CHAIN_SIZE             ; 8            ; Untyped                             ;
-; ONE_INPUT_IS_CONSTANT  ; NO           ; Untyped                             ;
-; CARRY_CHAIN            ; MANUAL       ; Untyped                             ;
-; CASCADE_CHAIN          ; MANUAL       ; Untyped                             ;
-; CARRY_CHAIN_LENGTH     ; 48           ; CARRY_CHAIN_LENGTH                  ;
-; CASCADE_CHAIN_LENGTH   ; 2            ; CASCADE_CHAIN_LENGTH                ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                             ;
-; CBXI_PARAMETER         ; cmpr_3pd     ; Untyped                             ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                          ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                        ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                        ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                      ;
-+------------------------+--------------+-------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: UC1:inst|LPM_FF:inst1 ;
-+------------------------+--------------+----------------------------+
-; Parameter Name         ; Value        ; Type                       ;
-+------------------------+--------------+----------------------------+
-; LPM_WIDTH              ; 6            ; Untyped                    ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_FFTYPE             ; DFF          ; Untyped                    ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                    ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                    ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE             ;
-+------------------------+--------------+----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: UC1:inst|LPM_FF:inst ;
-+------------------------+--------------+---------------------------+
-; Parameter Name         ; Value        ; Type                      ;
-+------------------------+--------------+---------------------------+
-; LPM_WIDTH              ; 6            ; Untyped                   ;
-; LPM_AVALUE             ; 35           ; Untyped                   ;
-; LPM_SVALUE             ; 35           ; Untyped                   ;
-; LPM_FFTYPE             ; DFF          ; Untyped                   ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                   ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                   ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY              ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE              ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE            ;
-+------------------------+--------------+---------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: UC1:inst|BUSMUX:inst2 ;
-+----------------+-------+-------------------------------------------+
-; Parameter Name ; Value ; Type                                      ;
-+----------------+-------+-------------------------------------------+
-; WIDTH          ; 6     ; Untyped                                   ;
-+----------------+-------+-------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: UC1:inst|LPM_FF:inst22 ;
-+------------------------+--------------+-----------------------------+
-; Parameter Name         ; Value        ; Type                        ;
-+------------------------+--------------+-----------------------------+
-; LPM_WIDTH              ; 7            ; Untyped                     ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_FFTYPE             ; DFF          ; Untyped                     ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                     ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                     ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                  ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE              ;
-+------------------------+--------------+-----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: UC1:inst|LPM_FF:inst3 ;
-+------------------------+--------------+----------------------------+
-; Parameter Name         ; Value        ; Type                       ;
-+------------------------+--------------+----------------------------+
-; LPM_WIDTH              ; 7            ; Untyped                    ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_FFTYPE             ; DFF          ; Untyped                    ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                    ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                    ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE             ;
-+------------------------+--------------+----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:Ezu6 ;
-+------------------------+--------------+---------------------------+
-; Parameter Name         ; Value        ; Type                      ;
-+------------------------+--------------+---------------------------+
-; LPM_WIDTH              ; 1            ; Untyped                   ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                   ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                   ;
-; LPM_FFTYPE             ; DFF          ; Untyped                   ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                   ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                   ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY              ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE              ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE            ;
-+------------------------+--------------+---------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:Ezu5 ;
-+------------------------+--------------+---------------------------+
-; Parameter Name         ; Value        ; Type                      ;
-+------------------------+--------------+---------------------------+
-; LPM_WIDTH              ; 1            ; Untyped                   ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                   ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                   ;
-; LPM_FFTYPE             ; DFF          ; Untyped                   ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                   ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                   ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY              ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE              ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE            ;
-+------------------------+--------------+---------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:Ezu8 ;
-+------------------------+--------------+---------------------------+
-; Parameter Name         ; Value        ; Type                      ;
-+------------------------+--------------+---------------------------+
-; LPM_WIDTH              ; 1            ; Untyped                   ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                   ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                   ;
-; LPM_FFTYPE             ; DFF          ; Untyped                   ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                   ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                   ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY              ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE              ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE            ;
-+------------------------+--------------+---------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:Ezu7 ;
-+------------------------+--------------+---------------------------+
-; Parameter Name         ; Value        ; Type                      ;
-+------------------------+--------------+---------------------------+
-; LPM_WIDTH              ; 1            ; Untyped                   ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                   ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                   ;
-; LPM_FFTYPE             ; DFF          ; Untyped                   ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                   ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                   ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY              ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE              ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE            ;
-+------------------------+--------------+---------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:inst12 ;
-+------------------------+--------------+-----------------------------+
-; Parameter Name         ; Value        ; Type                        ;
-+------------------------+--------------+-----------------------------+
-; LPM_WIDTH              ; 1            ; Untyped                     ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_FFTYPE             ; DFF          ; Untyped                     ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                     ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                     ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                  ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE              ;
-+------------------------+--------------+-----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:inst11 ;
-+------------------------+--------------+-----------------------------+
-; Parameter Name         ; Value        ; Type                        ;
-+------------------------+--------------+-----------------------------+
-; LPM_WIDTH              ; 1            ; Untyped                     ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_FFTYPE             ; DFF          ; Untyped                     ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                     ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                     ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                  ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE              ;
-+------------------------+--------------+-----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:inst8 ;
-+------------------------+--------------+----------------------------+
-; Parameter Name         ; Value        ; Type                       ;
-+------------------------+--------------+----------------------------+
-; LPM_WIDTH              ; 4            ; Untyped                    ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_FFTYPE             ; DFF          ; Untyped                    ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                    ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                    ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE             ;
-+------------------------+--------------+----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:inst7 ;
-+------------------------+--------------+----------------------------+
-; Parameter Name         ; Value        ; Type                       ;
-+------------------------+--------------+----------------------------+
-; LPM_WIDTH              ; 4            ; Untyped                    ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_FFTYPE             ; DFF          ; Untyped                    ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                    ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                    ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE             ;
-+------------------------+--------------+----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:inst1 ;
-+------------------------+--------------+----------------------------+
-; Parameter Name         ; Value        ; Type                       ;
-+------------------------+--------------+----------------------------+
-; LPM_WIDTH              ; 5            ; Signed Integer             ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_FFTYPE             ; DFF          ; Untyped                    ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                    ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                    ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE             ;
-+------------------------+--------------+----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:inst ;
-+------------------------+--------------+---------------------------+
-; Parameter Name         ; Value        ; Type                      ;
-+------------------------+--------------+---------------------------+
-; LPM_WIDTH              ; 5            ; Signed Integer            ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                   ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                   ;
-; LPM_FFTYPE             ; DFF          ; Untyped                   ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                   ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                   ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY              ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE              ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE            ;
-+------------------------+--------------+---------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:inst4 ;
-+------------------------+--------------+----------------------------+
-; Parameter Name         ; Value        ; Type                       ;
-+------------------------+--------------+----------------------------+
-; LPM_WIDTH              ; 6            ; Untyped                    ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_FFTYPE             ; DFF          ; Untyped                    ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                    ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                    ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE             ;
-+------------------------+--------------+----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:inst3 ;
-+------------------------+--------------+----------------------------+
-; Parameter Name         ; Value        ; Type                       ;
-+------------------------+--------------+----------------------------+
-; LPM_WIDTH              ; 6            ; Untyped                    ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_FFTYPE             ; DFF          ; Untyped                    ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                    ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                    ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE             ;
-+------------------------+--------------+----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:inst6 ;
-+------------------------+--------------+----------------------------+
-; Parameter Name         ; Value        ; Type                       ;
-+------------------------+--------------+----------------------------+
-; LPM_WIDTH              ; 6            ; Untyped                    ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_FFTYPE             ; DFF          ; Untyped                    ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                    ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                    ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE             ;
-+------------------------+--------------+----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:inst5 ;
-+------------------------+--------------+----------------------------+
-; Parameter Name         ; Value        ; Type                       ;
-+------------------------+--------------+----------------------------+
-; LPM_WIDTH              ; 6            ; Untyped                    ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_FFTYPE             ; DFF          ; Untyped                    ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                    ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                    ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE             ;
-+------------------------+--------------+----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:inst10 ;
-+------------------------+--------------+-----------------------------+
-; Parameter Name         ; Value        ; Type                        ;
-+------------------------+--------------+-----------------------------+
-; LPM_WIDTH              ; 2            ; Untyped                     ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_FFTYPE             ; DFF          ; Untyped                     ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                     ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                     ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                  ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE              ;
-+------------------------+--------------+-----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:inst9 ;
-+------------------------+--------------+----------------------------+
-; Parameter Name         ; Value        ; Type                       ;
-+------------------------+--------------+----------------------------+
-; LPM_WIDTH              ; 2            ; Untyped                    ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_FFTYPE             ; DFF          ; Untyped                    ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                    ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                    ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE             ;
-+------------------------+--------------+----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:inst14 ;
-+------------------------+--------------+-----------------------------+
-; Parameter Name         ; Value        ; Type                        ;
-+------------------------+--------------+-----------------------------+
-; LPM_WIDTH              ; 7            ; Untyped                     ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_FFTYPE             ; DFF          ; Untyped                     ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                     ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                     ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                  ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE              ;
-+------------------------+--------------+-----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR3|LPM_FF:inst13 ;
-+------------------------+--------------+-----------------------------+
-; Parameter Name         ; Value        ; Type                        ;
-+------------------------+--------------+-----------------------------+
-; LPM_WIDTH              ; 7            ; Untyped                     ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_FFTYPE             ; DFF          ; Untyped                     ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                     ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                     ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                  ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE              ;
-+------------------------+--------------+-----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: BUSMUX:inst7 ;
-+----------------+-------+----------------------------------+
-; Parameter Name ; Value ; Type                             ;
-+----------------+-------+----------------------------------+
-; WIDTH          ; 6     ; Untyped                          ;
-+----------------+-------+----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:Ezu6 ;
-+------------------------+--------------+---------------------------+
-; Parameter Name         ; Value        ; Type                      ;
-+------------------------+--------------+---------------------------+
-; LPM_WIDTH              ; 1            ; Untyped                   ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                   ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                   ;
-; LPM_FFTYPE             ; DFF          ; Untyped                   ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                   ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                   ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY              ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE              ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE            ;
-+------------------------+--------------+---------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:Ezu5 ;
-+------------------------+--------------+---------------------------+
-; Parameter Name         ; Value        ; Type                      ;
-+------------------------+--------------+---------------------------+
-; LPM_WIDTH              ; 1            ; Untyped                   ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                   ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                   ;
-; LPM_FFTYPE             ; DFF          ; Untyped                   ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                   ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                   ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY              ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE              ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE            ;
-+------------------------+--------------+---------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:Ezu8 ;
-+------------------------+--------------+---------------------------+
-; Parameter Name         ; Value        ; Type                      ;
-+------------------------+--------------+---------------------------+
-; LPM_WIDTH              ; 1            ; Untyped                   ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                   ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                   ;
-; LPM_FFTYPE             ; DFF          ; Untyped                   ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                   ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                   ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY              ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE              ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE            ;
-+------------------------+--------------+---------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:Ezu7 ;
-+------------------------+--------------+---------------------------+
-; Parameter Name         ; Value        ; Type                      ;
-+------------------------+--------------+---------------------------+
-; LPM_WIDTH              ; 1            ; Untyped                   ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                   ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                   ;
-; LPM_FFTYPE             ; DFF          ; Untyped                   ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                   ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                   ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY              ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE              ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE            ;
-+------------------------+--------------+---------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:inst12 ;
-+------------------------+--------------+-----------------------------+
-; Parameter Name         ; Value        ; Type                        ;
-+------------------------+--------------+-----------------------------+
-; LPM_WIDTH              ; 1            ; Untyped                     ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_FFTYPE             ; DFF          ; Untyped                     ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                     ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                     ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                  ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE              ;
-+------------------------+--------------+-----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:inst11 ;
-+------------------------+--------------+-----------------------------+
-; Parameter Name         ; Value        ; Type                        ;
-+------------------------+--------------+-----------------------------+
-; LPM_WIDTH              ; 1            ; Untyped                     ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_FFTYPE             ; DFF          ; Untyped                     ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                     ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                     ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                  ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE              ;
-+------------------------+--------------+-----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:inst8 ;
-+------------------------+--------------+----------------------------+
-; Parameter Name         ; Value        ; Type                       ;
-+------------------------+--------------+----------------------------+
-; LPM_WIDTH              ; 4            ; Untyped                    ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_FFTYPE             ; DFF          ; Untyped                    ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                    ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                    ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE             ;
-+------------------------+--------------+----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:inst7 ;
-+------------------------+--------------+----------------------------+
-; Parameter Name         ; Value        ; Type                       ;
-+------------------------+--------------+----------------------------+
-; LPM_WIDTH              ; 4            ; Untyped                    ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_FFTYPE             ; DFF          ; Untyped                    ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                    ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                    ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE             ;
-+------------------------+--------------+----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:inst1 ;
-+------------------------+--------------+----------------------------+
-; Parameter Name         ; Value        ; Type                       ;
-+------------------------+--------------+----------------------------+
-; LPM_WIDTH              ; 5            ; Signed Integer             ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_FFTYPE             ; DFF          ; Untyped                    ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                    ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                    ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE             ;
-+------------------------+--------------+----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:inst ;
-+------------------------+--------------+---------------------------+
-; Parameter Name         ; Value        ; Type                      ;
-+------------------------+--------------+---------------------------+
-; LPM_WIDTH              ; 5            ; Signed Integer            ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                   ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                   ;
-; LPM_FFTYPE             ; DFF          ; Untyped                   ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                   ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                   ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY              ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE              ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE            ;
-+------------------------+--------------+---------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:inst4 ;
-+------------------------+--------------+----------------------------+
-; Parameter Name         ; Value        ; Type                       ;
-+------------------------+--------------+----------------------------+
-; LPM_WIDTH              ; 6            ; Untyped                    ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_FFTYPE             ; DFF          ; Untyped                    ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                    ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                    ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE             ;
-+------------------------+--------------+----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:inst3 ;
-+------------------------+--------------+----------------------------+
-; Parameter Name         ; Value        ; Type                       ;
-+------------------------+--------------+----------------------------+
-; LPM_WIDTH              ; 6            ; Untyped                    ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_FFTYPE             ; DFF          ; Untyped                    ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                    ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                    ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE             ;
-+------------------------+--------------+----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:inst6 ;
-+------------------------+--------------+----------------------------+
-; Parameter Name         ; Value        ; Type                       ;
-+------------------------+--------------+----------------------------+
-; LPM_WIDTH              ; 6            ; Untyped                    ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_FFTYPE             ; DFF          ; Untyped                    ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                    ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                    ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE             ;
-+------------------------+--------------+----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:inst5 ;
-+------------------------+--------------+----------------------------+
-; Parameter Name         ; Value        ; Type                       ;
-+------------------------+--------------+----------------------------+
-; LPM_WIDTH              ; 6            ; Untyped                    ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_FFTYPE             ; DFF          ; Untyped                    ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                    ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                    ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE             ;
-+------------------------+--------------+----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:inst10 ;
-+------------------------+--------------+-----------------------------+
-; Parameter Name         ; Value        ; Type                        ;
-+------------------------+--------------+-----------------------------+
-; LPM_WIDTH              ; 2            ; Untyped                     ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_FFTYPE             ; DFF          ; Untyped                     ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                     ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                     ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                  ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE              ;
-+------------------------+--------------+-----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:inst9 ;
-+------------------------+--------------+----------------------------+
-; Parameter Name         ; Value        ; Type                       ;
-+------------------------+--------------+----------------------------+
-; LPM_WIDTH              ; 2            ; Untyped                    ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_FFTYPE             ; DFF          ; Untyped                    ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                    ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                    ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE             ;
-+------------------------+--------------+----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:inst14 ;
-+------------------------+--------------+-----------------------------+
-; Parameter Name         ; Value        ; Type                        ;
-+------------------------+--------------+-----------------------------+
-; LPM_WIDTH              ; 7            ; Untyped                     ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_FFTYPE             ; DFF          ; Untyped                     ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                     ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                     ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                  ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE              ;
-+------------------------+--------------+-----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR4|LPM_FF:inst13 ;
-+------------------------+--------------+-----------------------------+
-; Parameter Name         ; Value        ; Type                        ;
-+------------------------+--------------+-----------------------------+
-; LPM_WIDTH              ; 7            ; Untyped                     ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_FFTYPE             ; DFF          ; Untyped                     ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                     ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                     ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                  ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE              ;
-+------------------------+--------------+-----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:Ezu6 ;
-+------------------------+--------------+---------------------------+
-; Parameter Name         ; Value        ; Type                      ;
-+------------------------+--------------+---------------------------+
-; LPM_WIDTH              ; 1            ; Untyped                   ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                   ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                   ;
-; LPM_FFTYPE             ; DFF          ; Untyped                   ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                   ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                   ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY              ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE              ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE            ;
-+------------------------+--------------+---------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:Ezu5 ;
-+------------------------+--------------+---------------------------+
-; Parameter Name         ; Value        ; Type                      ;
-+------------------------+--------------+---------------------------+
-; LPM_WIDTH              ; 1            ; Untyped                   ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                   ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                   ;
-; LPM_FFTYPE             ; DFF          ; Untyped                   ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                   ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                   ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY              ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE              ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE            ;
-+------------------------+--------------+---------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:Ezu8 ;
-+------------------------+--------------+---------------------------+
-; Parameter Name         ; Value        ; Type                      ;
-+------------------------+--------------+---------------------------+
-; LPM_WIDTH              ; 1            ; Untyped                   ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                   ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                   ;
-; LPM_FFTYPE             ; DFF          ; Untyped                   ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                   ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                   ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY              ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE              ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE            ;
-+------------------------+--------------+---------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:Ezu7 ;
-+------------------------+--------------+---------------------------+
-; Parameter Name         ; Value        ; Type                      ;
-+------------------------+--------------+---------------------------+
-; LPM_WIDTH              ; 1            ; Untyped                   ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                   ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                   ;
-; LPM_FFTYPE             ; DFF          ; Untyped                   ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                   ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                   ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY              ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE              ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE            ;
-+------------------------+--------------+---------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:inst12 ;
-+------------------------+--------------+-----------------------------+
-; Parameter Name         ; Value        ; Type                        ;
-+------------------------+--------------+-----------------------------+
-; LPM_WIDTH              ; 1            ; Untyped                     ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_FFTYPE             ; DFF          ; Untyped                     ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                     ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                     ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                  ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE              ;
-+------------------------+--------------+-----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:inst11 ;
-+------------------------+--------------+-----------------------------+
-; Parameter Name         ; Value        ; Type                        ;
-+------------------------+--------------+-----------------------------+
-; LPM_WIDTH              ; 1            ; Untyped                     ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_FFTYPE             ; DFF          ; Untyped                     ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                     ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                     ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                  ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE              ;
-+------------------------+--------------+-----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:inst8 ;
-+------------------------+--------------+----------------------------+
-; Parameter Name         ; Value        ; Type                       ;
-+------------------------+--------------+----------------------------+
-; LPM_WIDTH              ; 4            ; Untyped                    ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_FFTYPE             ; DFF          ; Untyped                    ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                    ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                    ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE             ;
-+------------------------+--------------+----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:inst7 ;
-+------------------------+--------------+----------------------------+
-; Parameter Name         ; Value        ; Type                       ;
-+------------------------+--------------+----------------------------+
-; LPM_WIDTH              ; 4            ; Untyped                    ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_FFTYPE             ; DFF          ; Untyped                    ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                    ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                    ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE             ;
-+------------------------+--------------+----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:inst1 ;
-+------------------------+--------------+----------------------------+
-; Parameter Name         ; Value        ; Type                       ;
-+------------------------+--------------+----------------------------+
-; LPM_WIDTH              ; 5            ; Signed Integer             ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_FFTYPE             ; DFF          ; Untyped                    ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                    ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                    ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE             ;
-+------------------------+--------------+----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:inst ;
-+------------------------+--------------+---------------------------+
-; Parameter Name         ; Value        ; Type                      ;
-+------------------------+--------------+---------------------------+
-; LPM_WIDTH              ; 5            ; Signed Integer            ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                   ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                   ;
-; LPM_FFTYPE             ; DFF          ; Untyped                   ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                   ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                   ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY              ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE              ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE            ;
-+------------------------+--------------+---------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:inst4 ;
-+------------------------+--------------+----------------------------+
-; Parameter Name         ; Value        ; Type                       ;
-+------------------------+--------------+----------------------------+
-; LPM_WIDTH              ; 6            ; Untyped                    ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_FFTYPE             ; DFF          ; Untyped                    ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                    ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                    ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE             ;
-+------------------------+--------------+----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:inst3 ;
-+------------------------+--------------+----------------------------+
-; Parameter Name         ; Value        ; Type                       ;
-+------------------------+--------------+----------------------------+
-; LPM_WIDTH              ; 6            ; Untyped                    ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_FFTYPE             ; DFF          ; Untyped                    ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                    ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                    ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE             ;
-+------------------------+--------------+----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:inst6 ;
-+------------------------+--------------+----------------------------+
-; Parameter Name         ; Value        ; Type                       ;
-+------------------------+--------------+----------------------------+
-; LPM_WIDTH              ; 6            ; Untyped                    ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_FFTYPE             ; DFF          ; Untyped                    ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                    ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                    ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE             ;
-+------------------------+--------------+----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:inst5 ;
-+------------------------+--------------+----------------------------+
-; Parameter Name         ; Value        ; Type                       ;
-+------------------------+--------------+----------------------------+
-; LPM_WIDTH              ; 6            ; Untyped                    ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_FFTYPE             ; DFF          ; Untyped                    ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                    ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                    ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE             ;
-+------------------------+--------------+----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:inst10 ;
-+------------------------+--------------+-----------------------------+
-; Parameter Name         ; Value        ; Type                        ;
-+------------------------+--------------+-----------------------------+
-; LPM_WIDTH              ; 2            ; Untyped                     ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_FFTYPE             ; DFF          ; Untyped                     ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                     ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                     ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                  ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE              ;
-+------------------------+--------------+-----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:inst9 ;
-+------------------------+--------------+----------------------------+
-; Parameter Name         ; Value        ; Type                       ;
-+------------------------+--------------+----------------------------+
-; LPM_WIDTH              ; 2            ; Untyped                    ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                    ;
-; LPM_FFTYPE             ; DFF          ; Untyped                    ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                    ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                    ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY               ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE               ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE             ;
-+------------------------+--------------+----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:inst14 ;
-+------------------------+--------------+-----------------------------+
-; Parameter Name         ; Value        ; Type                        ;
-+------------------------+--------------+-----------------------------+
-; LPM_WIDTH              ; 7            ; Untyped                     ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_FFTYPE             ; DFF          ; Untyped                     ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                     ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                     ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                  ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE              ;
-+------------------------+--------------+-----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:MIR5|LPM_FF:inst13 ;
-+------------------------+--------------+-----------------------------+
-; Parameter Name         ; Value        ; Type                        ;
-+------------------------+--------------+-----------------------------+
-; LPM_WIDTH              ; 7            ; Untyped                     ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                     ;
-; LPM_FFTYPE             ; DFF          ; Untyped                     ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                     ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                     ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                  ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE              ;
-+------------------------+--------------+-----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: LPM_FF:inst6 ;
-+------------------------+--------------+-------------------+
-; Parameter Name         ; Value        ; Type              ;
-+------------------------+--------------+-------------------+
-; LPM_WIDTH              ; 10           ; Untyped           ;
-; LPM_AVALUE             ; UNUSED       ; Untyped           ;
-; LPM_SVALUE             ; UNUSED       ; Untyped           ;
-; LPM_FFTYPE             ; DFF          ; Untyped           ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped           ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped           ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY        ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY      ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE      ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE    ;
-+------------------------+--------------+-------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: LPM_FF:inst5 ;
-+------------------------+--------------+-------------------+
-; Parameter Name         ; Value        ; Type              ;
-+------------------------+--------------+-------------------+
-; LPM_WIDTH              ; 10           ; Untyped           ;
-; LPM_AVALUE             ; UNUSED       ; Untyped           ;
-; LPM_SVALUE             ; UNUSED       ; Untyped           ;
-; LPM_FFTYPE             ; DFF          ; Untyped           ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped           ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped           ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY        ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY      ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE      ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE    ;
-+------------------------+--------------+-------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 96                          ;
-; cycloneiii_ff         ; 136                         ;
-;     SCLR              ; 2                           ;
-;     plain             ; 134                         ;
-; cycloneiii_lcell_comb ; 26                          ;
-;     normal            ; 26                          ;
-;         2 data inputs ; 7                           ;
-;         3 data inputs ; 6                           ;
-;         4 data inputs ; 13                          ;
-;                       ;                             ;
-; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 0.86                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
 
 
 +-------------------------------+
@@ -1623,10 +160,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat May 23 00:41:37 2020
+    Info: Processing started: Sat May 23 20:05:25 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ev20QUARTUS -c ev20QUARTUS
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file mir.bdf
     Info (12023): Found entity 1: MIR
 Info (12021): Found 1 design units, including 1 entities, in source file uc2.bdf
@@ -1638,9 +175,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file ev20mai
 Info (12021): Found 1 design units, including 1 entities, in source file ev20jumpcontrol.bdf
     Info (12023): Found entity 1: ev20jumpControl
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: ALU File: C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/alu.v Line: 1
+    Info (12023): Found entity 1: ALU File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file shifter.v
-    Info (12023): Found entity 1: shifter File: C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/shifter.v Line: 1
+    Info (12023): Found entity 1: shifter File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/shifter.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ev20b3busa.bdf
     Info (12023): Found entity 1: ev20B3BUSA
 Info (12021): Found 1 design units, including 1 entities, in source file ev20b3busb.bdf
@@ -1656,102 +193,275 @@ Info (12021): Found 1 design units, including 1 entities, in source file operand
 Info (12021): Found 1 design units, including 1 entities, in source file aluunit.bdf
     Info (12023): Found entity 1: ALUUnit
 Info (12021): Found 1 design units, including 1 entities, in source file carryblock.v
-    Info (12023): Found entity 1: carryBlock File: C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/carryBlock.v Line: 1
+    Info (12023): Found entity 1: carryBlock File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/carryBlock.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pcregister.v
-    Info (12023): Found entity 1: PCRegister File: C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/PCRegister.v Line: 1
+    Info (12023): Found entity 1: PCRegister File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/PCRegister.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mirunit.bdf
     Info (12023): Found entity 1: MIRUnit
-Info (12127): Elaborating entity "MIRUnit" for the top level hierarchy
+Info (12021): Found 1 design units, including 1 entities, in source file dataunit.bdf
+    Info (12023): Found entity 1: dataUnit
+Info (12127): Elaborating entity "ev20main" for the top level hierarchy
+Warning (275006): Can't find a definition for parameter LPM_FILE -- assuming MIROM.mif was intended to be a quoted string
+Info (12128): Elaborating entity "LPM_RAM_IO" for hierarchy "LPM_RAM_IO:inst4"
+Info (12130): Elaborated megafunction instantiation "LPM_RAM_IO:inst4"
+Info (12133): Instantiated megafunction "LPM_RAM_IO:inst4" with the following parameter:
+    Info (12134): Parameter "LPM_ADDRESS_CONTROL" = "REGISTERED"
+    Info (12134): Parameter "LPM_INDATA" = "REGISTERED"
+    Info (12134): Parameter "LPM_OUTDATA" = "REGISTERED"
+    Info (12134): Parameter "LPM_WIDTH" = "22"
+    Info (12134): Parameter "LPM_WIDTHAD" = "11"
+Info (12128): Elaborating entity "altram" for hierarchy "LPM_RAM_IO:inst4|altram:sram" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ram_io.tdf Line: 63
+Warning (287001): Assertion warning: altram does not support Cyclone IV E device family -- attempting best-case memory conversions, but power-up states and read during write behavior will be different for Cyclone IV E devices File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.tdf Line: 211
+Info (12131): Elaborated megafunction instantiation "LPM_RAM_IO:inst4|altram:sram", which is child of megafunction instantiation "LPM_RAM_IO:inst4" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ram_io.tdf Line: 63
+Info (12128): Elaborating entity "altsyncram" for hierarchy "LPM_RAM_IO:inst4|altram:sram|altsyncram:ram_block" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.tdf Line: 102
+Info (12131): Elaborated megafunction instantiation "LPM_RAM_IO:inst4|altram:sram|altsyncram:ram_block", which is child of megafunction instantiation "LPM_RAM_IO:inst4" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.tdf Line: 102
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_qp71.tdf
+    Info (12023): Found entity 1: altsyncram_qp71 File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_qp71.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_qp71" for hierarchy "LPM_RAM_IO:inst4|altram:sram|altsyncram:ram_block|altsyncram_qp71:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12128): Elaborating entity "fetchUnit" for hierarchy "fetchUnit:inst"
+Info (12128): Elaborating entity "LPM_FF" for hierarchy "fetchUnit:inst|LPM_FF:InstructionRegister"
+Info (12130): Elaborated megafunction instantiation "fetchUnit:inst|LPM_FF:InstructionRegister"
+Info (12133): Instantiated megafunction "fetchUnit:inst|LPM_FF:InstructionRegister" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTH" = "22"
+Info (12128): Elaborating entity "PCRegister" for hierarchy "fetchUnit:inst|PCRegister:inst1"
+Warning (10230): Verilog HDL assignment warning at PCRegister.v(11): truncated value with size 32 to match size of target (11) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/PCRegister.v Line: 11
+Info (12128): Elaborating entity "ev20jumpControl" for hierarchy "fetchUnit:inst|ev20jumpControl:inst"
+Info (12128): Elaborating entity "74139M" for hierarchy "fetchUnit:inst|ev20jumpControl:inst|74139M:inst6"
+Info (12130): Elaborated megafunction instantiation "fetchUnit:inst|ev20jumpControl:inst|74139M:inst6"
+Info (12128): Elaborating entity "MIRUnit" for hierarchy "MIRUnit:inst1"
 Warning (275011): Block or symbol "UC1" of instance "inst" overlaps another block or symbol
-Info (12128): Elaborating entity "UC2" for hierarchy "UC2:inst-uc2"
+Warning (275009): Pin "CK" not connected
+Info (12128): Elaborating entity "UC2" for hierarchy "MIRUnit:inst1|UC2:inst-uc2"
 Warning (275009): Pin "B2" not connected
-Info (12128): Elaborating entity "LPM_COMPARE" for hierarchy "UC2:inst-uc2|LPM_COMPARE:inst5"
-Info (12130): Elaborated megafunction instantiation "UC2:inst-uc2|LPM_COMPARE:inst5"
-Info (12133): Instantiated megafunction "UC2:inst-uc2|LPM_COMPARE:inst5" with the following parameter:
+Info (12128): Elaborating entity "LPM_COMPARE" for hierarchy "MIRUnit:inst1|UC2:inst-uc2|LPM_COMPARE:inst5"
+Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|UC2:inst-uc2|LPM_COMPARE:inst5"
+Info (12133): Instantiated megafunction "MIRUnit:inst1|UC2:inst-uc2|LPM_COMPARE:inst5" with the following parameter:
     Info (12134): Parameter "LPM_WIDTH" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_3pd.tdf
-    Info (12023): Found entity 1: cmpr_3pd File: C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/db/cmpr_3pd.tdf Line: 22
-Info (12128): Elaborating entity "cmpr_3pd" for hierarchy "UC2:inst-uc2|LPM_COMPARE:inst5|cmpr_3pd:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.tdf Line: 280
-Info (12128): Elaborating entity "UC1" for hierarchy "UC1:inst"
+    Info (12023): Found entity 1: cmpr_3pd File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/cmpr_3pd.tdf Line: 22
+Info (12128): Elaborating entity "cmpr_3pd" for hierarchy "MIRUnit:inst1|UC2:inst-uc2|LPM_COMPARE:inst5|cmpr_3pd:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.tdf Line: 280
+Info (12128): Elaborating entity "UC1" for hierarchy "MIRUnit:inst1|UC1:inst"
 Warning (275011): Block or symbol "GND" of instance "inst14" overlaps another block or symbol
 Warning (275011): Block or symbol "GND" of instance "inst16" overlaps another block or symbol
 Warning (275011): Block or symbol "BUSMUX" of instance "inst2" overlaps another block or symbol
-Info (12128): Elaborating entity "LPM_FF" for hierarchy "UC1:inst|LPM_FF:inst1"
-Info (12130): Elaborated megafunction instantiation "UC1:inst|LPM_FF:inst1"
-Info (12133): Instantiated megafunction "UC1:inst|LPM_FF:inst1" with the following parameter:
+Info (12128): Elaborating entity "LPM_FF" for hierarchy "MIRUnit:inst1|UC1:inst|LPM_FF:inst1"
+Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|UC1:inst|LPM_FF:inst1"
+Info (12133): Instantiated megafunction "MIRUnit:inst1|UC1:inst|LPM_FF:inst1" with the following parameter:
     Info (12134): Parameter "LPM_WIDTH" = "6"
-Info (12128): Elaborating entity "LPM_FF" for hierarchy "UC1:inst|LPM_FF:inst"
+Info (12128): Elaborating entity "LPM_FF" for hierarchy "MIRUnit:inst1|UC1:inst|LPM_FF:inst"
 Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ff.tdf Line: 91
 Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ff.tdf Line: 96
 Warning (287013): Variable or input pin "ac" is defined but never used. File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ff.tdf Line: 71
 Warning (287013): Variable or input pin "sc" is defined but never used. File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ff.tdf Line: 74
-Info (12130): Elaborated megafunction instantiation "UC1:inst|LPM_FF:inst"
-Info (12133): Instantiated megafunction "UC1:inst|LPM_FF:inst" with the following parameter:
+Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|UC1:inst|LPM_FF:inst"
+Info (12133): Instantiated megafunction "MIRUnit:inst1|UC1:inst|LPM_FF:inst" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "35"
     Info (12134): Parameter "LPM_SVALUE" = "35"
     Info (12134): Parameter "LPM_WIDTH" = "6"
-Info (12128): Elaborating entity "BUSMUX" for hierarchy "UC1:inst|BUSMUX:inst2"
-Info (12130): Elaborated megafunction instantiation "UC1:inst|BUSMUX:inst2"
-Info (12133): Instantiated megafunction "UC1:inst|BUSMUX:inst2" with the following parameter:
+Info (12128): Elaborating entity "BUSMUX" for hierarchy "MIRUnit:inst1|UC1:inst|BUSMUX:inst2"
+Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|UC1:inst|BUSMUX:inst2"
+Info (12133): Instantiated megafunction "MIRUnit:inst1|UC1:inst|BUSMUX:inst2" with the following parameter:
     Info (12134): Parameter "WIDTH" = "6"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "UC1:inst|BUSMUX:inst2|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
-Info (12131): Elaborated megafunction instantiation "UC1:inst|BUSMUX:inst2|lpm_mux:$00000", which is child of megafunction instantiation "UC1:inst|BUSMUX:inst2" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "MIRUnit:inst1|UC1:inst|BUSMUX:inst2|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
+Info (12131): Elaborated megafunction instantiation "MIRUnit:inst1|UC1:inst|BUSMUX:inst2|lpm_mux:$00000", which is child of megafunction instantiation "MIRUnit:inst1|UC1:inst|BUSMUX:inst2" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_crc.tdf
-    Info (12023): Found entity 1: mux_crc File: C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/db/mux_crc.tdf Line: 22
-Info (12128): Elaborating entity "mux_crc" for hierarchy "UC1:inst|BUSMUX:inst2|lpm_mux:$00000|mux_crc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
-Info (12128): Elaborating entity "LPM_FF" for hierarchy "UC1:inst|LPM_FF:inst22"
-Info (12130): Elaborated megafunction instantiation "UC1:inst|LPM_FF:inst22"
-Info (12133): Instantiated megafunction "UC1:inst|LPM_FF:inst22" with the following parameter:
+    Info (12023): Found entity 1: mux_crc File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_crc.tdf Line: 22
+Info (12128): Elaborating entity "mux_crc" for hierarchy "MIRUnit:inst1|UC1:inst|BUSMUX:inst2|lpm_mux:$00000|mux_crc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
+Info (12128): Elaborating entity "LPM_FF" for hierarchy "MIRUnit:inst1|UC1:inst|LPM_FF:inst22"
+Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|UC1:inst|LPM_FF:inst22"
+Info (12133): Instantiated megafunction "MIRUnit:inst1|UC1:inst|LPM_FF:inst22" with the following parameter:
     Info (12134): Parameter "LPM_WIDTH" = "7"
-Info (12128): Elaborating entity "LPM_FF" for hierarchy "UC1:inst|LPM_FF:inst3"
-Info (12130): Elaborated megafunction instantiation "UC1:inst|LPM_FF:inst3"
-Info (12133): Instantiated megafunction "UC1:inst|LPM_FF:inst3" with the following parameter:
+Info (12128): Elaborating entity "LPM_FF" for hierarchy "MIRUnit:inst1|UC1:inst|LPM_FF:inst3"
+Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|UC1:inst|LPM_FF:inst3"
+Info (12133): Instantiated megafunction "MIRUnit:inst1|UC1:inst|LPM_FF:inst3" with the following parameter:
     Info (12134): Parameter "LPM_WIDTH" = "7"
-Info (12128): Elaborating entity "MIR" for hierarchy "MIR:MIR3"
-Info (12128): Elaborating entity "LPM_FF" for hierarchy "MIR:MIR3|LPM_FF:Ezu6"
-Info (12130): Elaborated megafunction instantiation "MIR:MIR3|LPM_FF:Ezu6"
-Info (12133): Instantiated megafunction "MIR:MIR3|LPM_FF:Ezu6" with the following parameter:
+Info (12128): Elaborating entity "MIR" for hierarchy "MIRUnit:inst1|MIR:MIR3"
+Info (12128): Elaborating entity "LPM_FF" for hierarchy "MIRUnit:inst1|MIR:MIR3|LPM_FF:Ezu6"
+Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|MIR:MIR3|LPM_FF:Ezu6"
+Info (12133): Instantiated megafunction "MIRUnit:inst1|MIR:MIR3|LPM_FF:Ezu6" with the following parameter:
     Info (12134): Parameter "LPM_WIDTH" = "1"
-Info (12128): Elaborating entity "LPM_FF" for hierarchy "MIR:MIR3|LPM_FF:inst8"
-Info (12130): Elaborated megafunction instantiation "MIR:MIR3|LPM_FF:inst8"
-Info (12133): Instantiated megafunction "MIR:MIR3|LPM_FF:inst8" with the following parameter:
+Info (12128): Elaborating entity "LPM_FF" for hierarchy "MIRUnit:inst1|MIR:MIR3|LPM_FF:inst8"
+Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|MIR:MIR3|LPM_FF:inst8"
+Info (12133): Instantiated megafunction "MIRUnit:inst1|MIR:MIR3|LPM_FF:inst8" with the following parameter:
     Info (12134): Parameter "LPM_WIDTH" = "4"
-Info (12128): Elaborating entity "LPM_FF" for hierarchy "MIR:MIR3|LPM_FF:inst1"
-Info (12130): Elaborated megafunction instantiation "MIR:MIR3|LPM_FF:inst1"
-Info (12133): Instantiated megafunction "MIR:MIR3|LPM_FF:inst1" with the following parameter:
+Info (12128): Elaborating entity "LPM_FF" for hierarchy "MIRUnit:inst1|MIR:MIR3|LPM_FF:inst1"
+Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|MIR:MIR3|LPM_FF:inst1"
+Info (12133): Instantiated megafunction "MIRUnit:inst1|MIR:MIR3|LPM_FF:inst1" with the following parameter:
     Info (12134): Parameter "LPM_WIDTH" = "5"
-Info (12128): Elaborating entity "LPM_FF" for hierarchy "MIR:MIR3|LPM_FF:inst10"
-Info (12130): Elaborated megafunction instantiation "MIR:MIR3|LPM_FF:inst10"
-Info (12133): Instantiated megafunction "MIR:MIR3|LPM_FF:inst10" with the following parameter:
+Info (12128): Elaborating entity "LPM_FF" for hierarchy "MIRUnit:inst1|MIR:MIR3|LPM_FF:inst10"
+Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|MIR:MIR3|LPM_FF:inst10"
+Info (12133): Instantiated megafunction "MIRUnit:inst1|MIR:MIR3|LPM_FF:inst10" with the following parameter:
     Info (12134): Parameter "LPM_WIDTH" = "2"
-Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:inst7"
-Info (12130): Elaborated megafunction instantiation "BUSMUX:inst7"
-Info (12133): Instantiated megafunction "BUSMUX:inst7" with the following parameter:
+Info (12128): Elaborating entity "BUSMUX" for hierarchy "MIRUnit:inst1|BUSMUX:inst7"
+Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|BUSMUX:inst7"
+Info (12133): Instantiated megafunction "MIRUnit:inst1|BUSMUX:inst7" with the following parameter:
     Info (12134): Parameter "WIDTH" = "6"
-Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst6"
-Info (12130): Elaborated megafunction instantiation "LPM_FF:inst6"
-Info (12133): Instantiated megafunction "LPM_FF:inst6" with the following parameter:
+Info (12128): Elaborating entity "LPM_FF" for hierarchy "MIRUnit:inst1|LPM_FF:inst6"
+Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|LPM_FF:inst6"
+Info (12133): Instantiated megafunction "MIRUnit:inst1|LPM_FF:inst6" with the following parameter:
     Info (12134): Parameter "LPM_WIDTH" = "10"
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 8 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "MI[11]"
-    Warning (15610): No output dependent on input pin "MI[10]"
-    Warning (15610): No output dependent on input pin "MI[9]"
-    Warning (15610): No output dependent on input pin "MI[4]"
-    Warning (15610): No output dependent on input pin "MI[3]"
-    Warning (15610): No output dependent on input pin "MI[2]"
-    Warning (15610): No output dependent on input pin "MI[1]"
-    Warning (15610): No output dependent on input pin "MI[0]"
-Info (21057): Implemented 246 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 59 input pins
-    Info (21059): Implemented 37 output pins
-    Info (21061): Implemented 150 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
-    Info: Peak virtual memory: 4750 megabytes
-    Info: Processing ended: Sat May 23 00:41:58 2020
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:40
+Info (12128): Elaborating entity "LPM_ROM" for hierarchy "LPM_ROM:MicroInstructionsROM"
+Info (12130): Elaborated megafunction instantiation "LPM_ROM:MicroInstructionsROM"
+Info (12133): Instantiated megafunction "LPM_ROM:MicroInstructionsROM" with the following parameter:
+    Info (12134): Parameter "LPM_ADDRESS_CONTROL" = "REGISTERED"
+    Info (12134): Parameter "LPM_FILE" = "MIROM.mif"
+    Info (12134): Parameter "LPM_OUTDATA" = "REGISTERED"
+    Info (12134): Parameter "LPM_WIDTH" = "33"
+    Info (12134): Parameter "LPM_WIDTHAD" = "7"
+Info (12128): Elaborating entity "altrom" for hierarchy "LPM_ROM:MicroInstructionsROM|altrom:srom" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_rom.tdf Line: 54
+Info (12131): Elaborated megafunction instantiation "LPM_ROM:MicroInstructionsROM|altrom:srom", which is child of megafunction instantiation "LPM_ROM:MicroInstructionsROM" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_rom.tdf Line: 54
+Info (12128): Elaborating entity "altsyncram" for hierarchy "LPM_ROM:MicroInstructionsROM|altrom:srom|altsyncram:rom_block" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.tdf Line: 88
+Info (12131): Elaborated megafunction instantiation "LPM_ROM:MicroInstructionsROM|altrom:srom|altsyncram:rom_block", which is child of megafunction instantiation "LPM_ROM:MicroInstructionsROM" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.tdf Line: 88
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_8301.tdf
+    Info (12023): Found entity 1: altsyncram_8301 File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_8301.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_8301" for hierarchy "LPM_ROM:MicroInstructionsROM|altrom:srom|altsyncram:rom_block|altsyncram_8301:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12128): Elaborating entity "ALUUnit" for hierarchy "ALUUnit:inst13"
+Info (12128): Elaborating entity "carryBlock" for hierarchy "ALUUnit:inst13|carryBlock:inst"
+Info (12128): Elaborating entity "ALU" for hierarchy "ALUUnit:inst13|ALU:inst1"
+Warning (10240): Verilog HDL Always Construct warning at alu.v(12): inferring latch(es) for variable "aluRes", which holds its previous value in one or more paths through the always construct File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
+Info (10041): Inferred latch for "aluRes[0]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
+Info (10041): Inferred latch for "aluRes[1]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
+Info (10041): Inferred latch for "aluRes[2]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
+Info (10041): Inferred latch for "aluRes[3]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
+Info (10041): Inferred latch for "aluRes[4]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
+Info (10041): Inferred latch for "aluRes[5]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
+Info (10041): Inferred latch for "aluRes[6]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
+Info (10041): Inferred latch for "aluRes[7]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
+Info (10041): Inferred latch for "aluRes[8]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
+Info (10041): Inferred latch for "aluRes[9]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
+Info (10041): Inferred latch for "aluRes[10]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
+Info (10041): Inferred latch for "aluRes[11]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
+Info (10041): Inferred latch for "aluRes[12]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
+Info (10041): Inferred latch for "aluRes[13]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
+Info (10041): Inferred latch for "aluRes[14]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
+Info (10041): Inferred latch for "aluRes[15]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
+Info (12128): Elaborating entity "LPM_LATCH" for hierarchy "ALUUnit:inst13|LPM_LATCH:LatchA"
+Info (12130): Elaborated megafunction instantiation "ALUUnit:inst13|LPM_LATCH:LatchA"
+Info (12133): Instantiated megafunction "ALUUnit:inst13|LPM_LATCH:LatchA" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTH" = "16"
+Info (12128): Elaborating entity "shifter" for hierarchy "ALUUnit:inst13|shifter:inst2"
+Info (12128): Elaborating entity "operandsUnit" for hierarchy "operandsUnit:inst10"
+Info (12128): Elaborating entity "BUSMUX" for hierarchy "operandsUnit:inst10|BUSMUX:inst8"
+Info (12130): Elaborated megafunction instantiation "operandsUnit:inst10|BUSMUX:inst8"
+Info (12133): Instantiated megafunction "operandsUnit:inst10|BUSMUX:inst8" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "16"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "operandsUnit:inst10|BUSMUX:inst8|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
+Info (12131): Elaborated megafunction instantiation "operandsUnit:inst10|BUSMUX:inst8|lpm_mux:$00000", which is child of megafunction instantiation "operandsUnit:inst10|BUSMUX:inst8" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_tsc.tdf
+    Info (12023): Found entity 1: mux_tsc File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_tsc.tdf Line: 22
+Info (12128): Elaborating entity "mux_tsc" for hierarchy "operandsUnit:inst10|BUSMUX:inst8|lpm_mux:$00000|mux_tsc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
+Info (12128): Elaborating entity "LPM_FF" for hierarchy "operandsUnit:inst10|LPM_FF:OperandRegister"
+Info (12130): Elaborated megafunction instantiation "operandsUnit:inst10|LPM_FF:OperandRegister"
+Info (12133): Instantiated megafunction "operandsUnit:inst10|LPM_FF:OperandRegister" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTH" = "16"
+Info (12128): Elaborating entity "ev20registerBank" for hierarchy "ev20registerBank:inst14"
+Warning (275083): Bus "reg10[15..0]" found using same base name as "reg1", which might lead to a name conflict.
+Error (275046): Illegal name "reg115" -- pin name already exists
+Error (275046): Illegal name "reg114" -- pin name already exists
+Error (275046): Illegal name "reg113" -- pin name already exists
+Error (275046): Illegal name "reg112" -- pin name already exists
+Error (275046): Illegal name "reg111" -- pin name already exists
+Error (275046): Illegal name "reg110" -- pin name already exists
+Warning (275083): Bus "reg11[15..0]" found using same base name as "reg1", which might lead to a name conflict.
+Warning (275083): Bus "reg12[15..0]" found using same base name as "reg1", which might lead to a name conflict.
+Warning (275083): Bus "reg13[15..0]" found using same base name as "reg1", which might lead to a name conflict.
+Warning (275083): Bus "reg14[15..0]" found using same base name as "reg1", which might lead to a name conflict.
+Warning (275083): Bus "reg15[15..0]" found using same base name as "reg1", which might lead to a name conflict.
+Warning (275083): Bus "reg16[15..0]" found using same base name as "reg1", which might lead to a name conflict.
+Warning (275083): Bus "reg17[15..0]" found using same base name as "reg1", which might lead to a name conflict.
+Warning (275083): Bus "reg18[15..0]" found using same base name as "reg1", which might lead to a name conflict.
+Warning (275083): Bus "reg19[15..0]" found using same base name as "reg1", which might lead to a name conflict.
+Warning (275083): Bus "reg20[15..0]" found using same base name as "reg2", which might lead to a name conflict.
+Error (275046): Illegal name "reg215" -- pin name already exists
+Error (275046): Illegal name "reg214" -- pin name already exists
+Error (275046): Illegal name "reg213" -- pin name already exists
+Error (275046): Illegal name "reg212" -- pin name already exists
+Error (275046): Illegal name "reg211" -- pin name already exists
+Error (275046): Illegal name "reg210" -- pin name already exists
+Warning (275083): Bus "reg21[15..0]" found using same base name as "reg2", which might lead to a name conflict.
+Warning (275083): Bus "reg22[15..0]" found using same base name as "reg2", which might lead to a name conflict.
+Warning (275083): Bus "reg23[15..0]" found using same base name as "reg2", which might lead to a name conflict.
+Warning (275083): Bus "reg24[15..0]" found using same base name as "reg2", which might lead to a name conflict.
+Warning (275083): Bus "reg25[15..0]" found using same base name as "reg2", which might lead to a name conflict.
+Warning (275083): Bus "reg26[15..0]" found using same base name as "reg2", which might lead to a name conflict.
+Warning (275083): Bus "reg27[15..0]" found using same base name as "reg2", which might lead to a name conflict.
+Warning (275083): Bus "reg28[15..0]" found using same base name as "reg2", which might lead to a name conflict.
+Warning (275083): Bus "reg29[15..0]" found using same base name as "reg2", which might lead to a name conflict.
+Warning (275083): Bus "reg30[15..0]" found using same base name as "reg3", which might lead to a name conflict.
+Error (275046): Illegal name "reg315" -- pin name already exists
+Error (275046): Illegal name "reg314" -- pin name already exists
+Error (275046): Illegal name "reg313" -- pin name already exists
+Error (275046): Illegal name "reg312" -- pin name already exists
+Error (275046): Illegal name "reg311" -- pin name already exists
+Error (275046): Illegal name "reg310" -- pin name already exists
+Warning (275083): Bus "reg31[15..0]" found using same base name as "reg3", which might lead to a name conflict.
+Warning (275083): Bus "reg32[15..0]" found using same base name as "reg3", which might lead to a name conflict.
+Warning (275083): Bus "reg33[15..0]" found using same base name as "reg3", which might lead to a name conflict.
+Warning (275083): Bus "reg34[15..0]" found using same base name as "reg3", which might lead to a name conflict.
+Warning (275083): Bus "reg35[15..0]" found using same base name as "reg3", which might lead to a name conflict.
+Warning (275080): Converted elements in bus name "reg1" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "reg1[15..0]" to "reg115..0"
+Warning (275080): Converted elements in bus name "reg10" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "reg10[15..0]" to "reg1015..0"
+Warning (275080): Converted elements in bus name "reg11" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "reg11[15..0]" to "reg1115..0"
+Warning (275080): Converted elements in bus name "reg12" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "reg12[15..0]" to "reg1215..0"
+Warning (275080): Converted elements in bus name "reg13" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "reg13[15..0]" to "reg1315..0"
+Warning (275080): Converted elements in bus name "reg14" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "reg14[15..0]" to "reg1415..0"
+Warning (275080): Converted elements in bus name "reg15" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "reg15[15..0]" to "reg1515..0"
+Warning (275080): Converted elements in bus name "reg16" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "reg16[15..0]" to "reg1615..0"
+Warning (275080): Converted elements in bus name "reg17" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "reg17[15..0]" to "reg1715..0"
+Warning (275080): Converted elements in bus name "reg18" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "reg18[15..0]" to "reg1815..0"
+Warning (275080): Converted elements in bus name "reg19" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "reg19[15..0]" to "reg1915..0"
+Warning (275080): Converted elements in bus name "reg2" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "reg2[15..0]" to "reg215..0"
+Warning (275080): Converted elements in bus name "reg20" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "reg20[15..0]" to "reg2015..0"
+Warning (275080): Converted elements in bus name "reg21" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "reg21[15..0]" to "reg2115..0"
+Warning (275080): Converted elements in bus name "reg22" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "reg22[15..0]" to "reg2215..0"
+Warning (275080): Converted elements in bus name "reg23" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "reg23[15..0]" to "reg2315..0"
+Warning (275080): Converted elements in bus name "reg24" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "reg24[15..0]" to "reg2415..0"
+Warning (275080): Converted elements in bus name "reg25" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "reg25[15..0]" to "reg2515..0"
+Warning (275080): Converted elements in bus name "reg26" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "reg26[15..0]" to "reg2615..0"
+Warning (275080): Converted elements in bus name "reg27" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "reg27[15..0]" to "reg2715..0"
+Warning (275080): Converted elements in bus name "reg28" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "reg28[15..0]" to "reg2815..0"
+Warning (275080): Converted elements in bus name "reg29" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "reg29[15..0]" to "reg2915..0"
+Warning (275080): Converted elements in bus name "reg3" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "reg3[15..0]" to "reg315..0"
+Warning (275080): Converted elements in bus name "reg30" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "reg30[15..0]" to "reg3015..0"
+Warning (275080): Converted elements in bus name "reg31" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "reg31[15..0]" to "reg3115..0"
+Warning (275080): Converted elements in bus name "reg32" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "reg32[15..0]" to "reg3215..0"
+Warning (275080): Converted elements in bus name "reg33" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "reg33[15..0]" to "reg3315..0"
+Warning (275080): Converted elements in bus name "reg34" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "reg34[15..0]" to "reg3415..0"
+Warning (275080): Converted elements in bus name "reg35" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "reg35[15..0]" to "reg3515..0"
+Error (12152): Can't elaborate user hierarchy "ev20registerBank:inst14"
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 19 errors, 99 warnings
+    Error: Peak virtual memory: 4740 megabytes
+    Error: Processing ended: Sat May 23 20:05:42 2020
+    Error: Elapsed time: 00:00:17
+    Error: Total CPU time (on all processors): 00:00:35
 
 

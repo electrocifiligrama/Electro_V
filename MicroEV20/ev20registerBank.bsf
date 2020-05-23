@@ -88,10 +88,17 @@ refer to the applicable agreement for further details.
 	)
 	(port
 		(pt 216 64)
+		(output)
+		(text "W[15..0]" (rect 0 0 50 19)(font "Intel Clear" (font_size 8)))
+		(text "W[15..0]" (rect 145 59 195 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 216 64)(pt 200 64)(line_width 3))
+	)
+	(port
+		(pt 216 80)
 		(bidir)
 		(text "ToFromW[15..0]" (rect 0 0 96 19)(font "Intel Clear" (font_size 8)))
-		(text "ToFromW[15..0]" (rect 99 59 195 78)(font "Intel Clear" (font_size 8)))
-		(line (pt 216 64)(pt 200 64)(line_width 3))
+		(text "ToFromW[15..0]" (rect 99 75 195 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 216 80)(pt 200 80)(line_width 3))
 	)
 	(drawing
 		(rectangle (rect 16 16 200 144))
