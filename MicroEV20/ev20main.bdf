@@ -53,7 +53,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(bidir)
-	(rect -176 464 0 480)
+	(rect -112 464 64 480)
 	(text "BIDIR" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "dio[21..0]" (rect 90 0 136 12)(font "Arial" ))
 	(pt 0 8)
@@ -820,7 +820,7 @@ refer to the applicable agreement for further details.
 	(annotation_block (parameter)(rect 600 -256 857 -123))
 )
 (symbol
-	(rect 568 344 784 504)
+	(rect 592 376 808 536)
 	(text "ev20registerBank" (rect 5 0 110 19)(font "Intel Clear" (font_size 8)))
 	(text "inst14" (rect 8 139 36 156)(font "Intel Clear" ))
 	(port
@@ -905,28 +905,8 @@ refer to the applicable agreement for further details.
 	)
 )
 (connector
-	(pt 784 376)
-	(pt 808 376)
-	(bus)
-)
-(connector
-	(pt 784 392)
-	(pt 824 392)
-	(bus)
-)
-(connector
 	(pt 1352 72)
 	(pt 352 72)
-)
-(connector
-	(pt 808 208)
-	(pt 848 208)
-	(bus)
-)
-(connector
-	(pt 808 376)
-	(pt 808 208)
-	(bus)
 )
 (connector
 	(pt 1056 176)
@@ -1033,16 +1013,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 416 552)
-	(pt 416 392)
-	(bus)
-)
-(connector
-	(pt 568 392)
-	(pt 416 392)
-	(bus)
-)
-(connector
 	(pt 1776 -56)
 	(pt 1704 -56)
 	(bus)
@@ -1057,17 +1027,6 @@ refer to the applicable agreement for further details.
 	(pt 1704 -104)
 	(pt 1832 -104)
 	(bus)
-)
-(connector
-	(text "W[15..0]" (rect 861 384 901 401)(font "Intel Clear" ))
-	(pt 784 408)
-	(pt 928 408)
-	(bus)
-)
-(connector
-	(text "CLK" (rect 480 424 500 441)(font "Intel Clear" ))
-	(pt 568 440)
-	(pt 472 440)
 )
 (connector
 	(text "CLK" (rect 1128 208 1148 225)(font "Intel Clear" ))
@@ -1118,49 +1077,6 @@ refer to the applicable agreement for further details.
 	(pt 1704 -184)
 )
 (connector
-	(text "MIR-C[5..0]" (rect 480 408 534 425)(font "Intel Clear" ))
-	(pt 568 424)
-	(pt 472 424)
-	(bus)
-)
-(connector
-	(text "MIR-A[4..0]" (rect 504 392 558 409)(font "Intel Clear" ))
-	(pt 472 408)
-	(pt 568 408)
-	(bus)
-)
-(connector
-	(text "MIR-MR" (rect 512 440 552 457)(font "Intel Clear" ))
-	(pt 472 456)
-	(pt 568 456)
-)
-(connector
-	(text "MIR-MW" (rect 512 456 555 473)(font "Intel Clear" ))
-	(pt 472 472)
-	(pt 568 472)
-)
-(connector
-	(text "MIR-B[5..0]" (rect 480 360 534 377)(font "Intel Clear" ))
-	(pt 568 376)
-	(pt 472 376)
-	(bus)
-)
-(connector
-	(pt 840 424)
-	(pt 840 448)
-	(bus)
-)
-(connector
-	(pt 784 424)
-	(pt 840 424)
-	(bus)
-)
-(connector
-	(pt 840 448)
-	(pt 936 448)
-	(bus)
-)
-(connector
 	(text "DAdd[9..0]" (rect 1712 -56 1761 -39)(font "Intel Clear" ))
 	(pt 1704 -40)
 	(pt 1768 -40)
@@ -1179,11 +1095,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt -64 112)
 	(pt -64 128)
-)
-(connector
-	(pt 824 240)
-	(pt 824 392)
-	(bus)
 )
 (connector
 	(pt 824 240)
@@ -1478,7 +1389,102 @@ refer to the applicable agreement for further details.
 	(pt 720 -56)
 	(pt 688 -56)
 )
+(connector
+	(pt -176 472)
+	(pt -112 472)
+	(bus)
+)
+(connector
+	(text "W[15..0]" (rect 885 424 925 441)(font "Intel Clear" ))
+	(pt 840 448)
+	(pt 936 448)
+	(bus)
+)
+(connector
+	(pt 848 208)
+	(pt 808 208)
+	(bus)
+)
+(connector
+	(pt 824 424)
+	(pt 808 424)
+	(bus)
+)
+(connector
+	(pt 808 208)
+	(pt 808 408)
+	(bus)
+)
+(connector
+	(pt 416 552)
+	(pt 416 424)
+	(bus)
+)
+(connector
+	(pt 840 456)
+	(pt 808 456)
+	(bus)
+)
+(connector
+	(pt 824 240)
+	(pt 824 424)
+	(bus)
+)
+(connector
+	(text "MIR-B[5..0]" (rect 504 392 558 409)(font "Intel Clear" ))
+	(pt 496 408)
+	(pt 592 408)
+	(bus)
+)
+(connector
+	(pt 416 424)
+	(pt 592 424)
+	(bus)
+)
+(connector
+	(text "MIR-A[4..0]" (rect 528 424 582 441)(font "Intel Clear" ))
+	(pt 496 440)
+	(pt 592 440)
+	(bus)
+)
+(connector
+	(text "MIR-C[5..0]" (rect 504 440 558 457)(font "Intel Clear" ))
+	(pt 496 456)
+	(pt 592 456)
+	(bus)
+)
+(connector
+	(text "CLK" (rect 504 456 524 473)(font "Intel Clear" ))
+	(pt 496 472)
+	(pt 592 472)
+)
+(connector
+	(text "MIR-MR" (rect 536 472 576 489)(font "Intel Clear" ))
+	(pt 496 488)
+	(pt 592 488)
+)
+(connector
+	(text "MIR-MW" (rect 536 488 579 505)(font "Intel Clear" ))
+	(pt 496 504)
+	(pt 592 504)
+)
+(connector
+	(pt 840 440)
+	(pt 808 440)
+	(bus)
+)
+(connector
+	(pt 840 440)
+	(pt 840 448)
+	(bus)
+)
+(connector
+	(pt 840 448)
+	(pt 840 456)
+	(bus)
+)
 (junction (pt 800 192))
 (junction (pt -40 88))
 (junction (pt -328 464))
 (junction (pt 720 -56))
+(junction (pt 840 448))
