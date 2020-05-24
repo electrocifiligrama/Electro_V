@@ -21,115 +21,115 @@ refer to the applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 672 -608 840 -592)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "selB[5..0]" (rect 5 0 52 12)(font "Arial" ))
-	(pt 168 8)
+	(rect 632 -632 808 -616)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "selB[5..0]" (rect 9 0 56 12)(font "Arial" ))
+	(pt 176 8)
 	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
 	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(input)
-	(rect 672 -552 840 -536)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "selA[4..0]" (rect 5 0 49 17)(font "Intel Clear" ))
-	(pt 168 8)
+	(rect 672 -552 848 -536)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "selA[4..0]" (rect 9 0 56 12)(font "Arial" ))
+	(pt 176 8)
 	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
 	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(input)
-	(rect -384 -456 -216 -440)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "selC[5..0]" (rect 5 0 53 12)(font "Arial" ))
-	(pt 168 8)
+	(rect -384 -456 -208 -440)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "selC[5..0]" (rect 9 0 57 12)(font "Arial" ))
+	(pt 176 8)
 	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
 	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(input)
-	(rect -384 -384 -216 -368)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CK5" (rect 5 0 26 12)(font "Arial" ))
-	(pt 168 8)
+	(rect -384 -384 -208 -368)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "CK5" (rect 9 0 30 12)(font "Arial" ))
+	(pt 176 8)
 	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
 	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(input)
-	(rect -400 -592 -232 -576)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Cbus[15..0]" (rect 5 0 62 12)(font "Arial" ))
-	(pt 168 8)
+	(rect -400 -592 -224 -576)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "Cbus[15..0]" (rect 9 0 66 12)(font "Arial" ))
+	(pt 176 8)
 	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
 	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(input)
-	(rect -360 4232 -192 4248)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "MW" (rect 5 0 23 12)(font "Arial" ))
-	(pt 168 8)
+	(rect -360 4232 -184 4248)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "MW" (rect 9 0 27 12)(font "Arial" ))
+	(pt 176 8)
 	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
 	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(input)
-	(rect -360 4056 -192 4072)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "MR" (rect 5 0 21 17)(font "Intel Clear" ))
-	(pt 168 8)
+	(rect -360 4056 -184 4072)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "MR" (rect 9 0 25 12)(font "Arial" ))
+	(pt 176 8)
 	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
 	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(output)
@@ -151,7 +151,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect 1104 -552 1280 -536)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "toB[15..0]" (rect 90 0 136 17)(font "Intel Clear" ))
+	(text "toB[15..0]" (rect 90 0 138 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -239,7 +239,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -264,7 +264,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 424 -360 536 -248)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R1" (rect 3 101 15 118)(font "Intel Clear" ))
+	(text "R1" (rect 3 101 18 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -304,7 +304,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -329,7 +329,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 424 -224 536 -112)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R2" (rect 3 101 15 118)(font "Intel Clear" ))
+	(text "R2" (rect 3 101 18 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -369,7 +369,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -394,7 +394,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 424 -104 536 8)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R3" (rect 3 101 15 118)(font "Intel Clear" ))
+	(text "R3" (rect 3 101 18 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -434,7 +434,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -459,7 +459,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 424 16 536 128)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R4" (rect 3 101 15 118)(font "Intel Clear" ))
+	(text "R4" (rect 3 101 18 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -499,7 +499,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -524,7 +524,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 424 144 536 256)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R5" (rect 3 101 15 118)(font "Intel Clear" ))
+	(text "R5" (rect 3 101 18 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -564,7 +564,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -589,7 +589,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 424 272 536 384)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R6" (rect 3 101 15 118)(font "Intel Clear" ))
+	(text "R6" (rect 3 101 18 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -629,7 +629,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -654,7 +654,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 424 392 536 504)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R7" (rect 3 101 15 118)(font "Intel Clear" ))
+	(text "R7" (rect 3 101 18 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -694,7 +694,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -719,7 +719,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 424 512 536 624)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R8" (rect 3 101 15 118)(font "Intel Clear" ))
+	(text "R8" (rect 3 101 18 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -759,7 +759,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -784,7 +784,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 424 640 536 752)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R9" (rect 3 101 15 118)(font "Intel Clear" ))
+	(text "R9" (rect 3 101 18 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -824,7 +824,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -849,7 +849,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 424 760 536 872)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R10" (rect 3 101 21 118)(font "Intel Clear" ))
+	(text "R10" (rect 3 101 25 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -889,7 +889,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -914,7 +914,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 424 888 536 1000)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R11" (rect 3 101 21 118)(font "Intel Clear" ))
+	(text "R11" (rect 3 101 25 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -954,7 +954,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -979,7 +979,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 424 1008 536 1120)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R12" (rect 3 101 21 118)(font "Intel Clear" ))
+	(text "R12" (rect 3 101 25 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -1019,7 +1019,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -1044,7 +1044,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 424 1128 536 1240)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R13" (rect 3 101 21 118)(font "Intel Clear" ))
+	(text "R13" (rect 3 101 25 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -1084,7 +1084,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -1109,7 +1109,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 424 1256 536 1368)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R14" (rect 3 101 21 118)(font "Intel Clear" ))
+	(text "R14" (rect 3 101 25 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -1149,7 +1149,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -1174,7 +1174,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 424 1376 536 1488)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R15" (rect 3 101 21 118)(font "Intel Clear" ))
+	(text "R15" (rect 3 101 25 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -1214,7 +1214,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -1239,7 +1239,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 416 1496 528 1608)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R16" (rect 3 101 21 118)(font "Intel Clear" ))
+	(text "R16" (rect 3 101 25 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -1279,7 +1279,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -1304,7 +1304,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 416 1616 528 1728)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R17" (rect 3 101 21 118)(font "Intel Clear" ))
+	(text "R17" (rect 3 101 25 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -1344,7 +1344,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -1369,7 +1369,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 416 1736 528 1848)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R18" (rect 3 101 21 118)(font "Intel Clear" ))
+	(text "R18" (rect 3 101 25 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -1409,7 +1409,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -1434,7 +1434,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 416 1864 528 1976)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R19" (rect 3 101 21 118)(font "Intel Clear" ))
+	(text "R19" (rect 3 101 25 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -1474,7 +1474,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -1499,7 +1499,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 408 1992 520 2104)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R20" (rect 3 101 21 118)(font "Intel Clear" ))
+	(text "R20" (rect 3 101 25 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -1539,7 +1539,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -1564,7 +1564,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 408 2120 520 2232)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R21" (rect 3 101 21 118)(font "Intel Clear" ))
+	(text "R21" (rect 3 101 25 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -1604,7 +1604,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -1629,7 +1629,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 408 2240 520 2352)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R22" (rect 3 101 21 118)(font "Intel Clear" ))
+	(text "R22" (rect 3 101 25 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -1669,7 +1669,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -1694,7 +1694,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 408 2360 520 2472)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R23" (rect 3 101 21 118)(font "Intel Clear" ))
+	(text "R23" (rect 3 101 25 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -1734,7 +1734,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -1759,7 +1759,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 408 2488 520 2600)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R24" (rect 3 101 21 118)(font "Intel Clear" ))
+	(text "R24" (rect 3 101 25 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -1799,7 +1799,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -1824,7 +1824,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 408 2608 520 2720)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R25" (rect 3 101 21 118)(font "Intel Clear" ))
+	(text "R25" (rect 3 101 25 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -1864,7 +1864,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -1889,7 +1889,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 408 2728 520 2840)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R26" (rect 3 101 21 118)(font "Intel Clear" ))
+	(text "R26" (rect 3 101 25 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -1929,7 +1929,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -1954,7 +1954,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 408 2856 520 2968)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R27" (rect 3 101 21 118)(font "Intel Clear" ))
+	(text "R27" (rect 3 101 25 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -1994,7 +1994,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -2019,7 +2019,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 408 2976 520 3088)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R28" (rect 3 101 21 118)(font "Intel Clear" ))
+	(text "R28" (rect 3 101 25 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -2059,7 +2059,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -2084,7 +2084,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 408 3112 520 3224)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R29" (rect 3 101 21 118)(font "Intel Clear" ))
+	(text "R29" (rect 3 101 25 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -2124,7 +2124,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -2149,7 +2149,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 408 3232 520 3344)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R30" (rect 3 101 21 118)(font "Intel Clear" ))
+	(text "R30" (rect 3 101 25 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -2189,7 +2189,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -2214,7 +2214,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 408 3352 520 3464)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R31" (rect 3 101 21 118)(font "Intel Clear" ))
+	(text "R31" (rect 3 101 25 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -2254,7 +2254,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -2279,7 +2279,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 408 3488 520 3600)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R32" (rect 3 101 21 118)(font "Intel Clear" ))
+	(text "R32" (rect 3 101 25 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -2319,7 +2319,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -2344,7 +2344,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 400 3616 512 3728)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R33" (rect 3 101 21 118)(font "Intel Clear" ))
+	(text "R33" (rect 3 101 25 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -2384,7 +2384,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -2409,7 +2409,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 400 3752 512 3864)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R34" (rect 3 101 21 118)(font "Intel Clear" ))
+	(text "R34" (rect 3 101 25 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -2449,7 +2449,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -2744,15 +2744,15 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 216 32)
 		(output)
-		(text "outputA[15..0]" (rect 0 0 86 19)(font "Intel Clear" (font_size 8)))
-		(text "outputA[15..0]" (rect 109 27 195 46)(font "Intel Clear" (font_size 8)))
+		(text "outputB[15..0]" (rect 0 0 86 19)(font "Intel Clear" (font_size 8)))
+		(text "outputB[15..0]" (rect 109 27 195 46)(font "Intel Clear" (font_size 8)))
 		(line (pt 216 32)(pt 200 32)(line_width 3))
 	)
 	(port
 		(pt 216 48)
 		(output)
-		(text "outputB[15..0]" (rect 0 0 86 19)(font "Intel Clear" (font_size 8)))
-		(text "outputB[15..0]" (rect 109 43 195 62)(font "Intel Clear" (font_size 8)))
+		(text "outputA[15..0]" (rect 0 0 86 19)(font "Intel Clear" (font_size 8)))
+		(text "outputA[15..0]" (rect 109 43 195 62)(font "Intel Clear" (font_size 8)))
 		(line (pt 216 48)(pt 200 48)(line_width 3))
 	)
 	(drawing
@@ -2762,7 +2762,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 392 3880 504 3992)
 	(text "LPM_LATCH" (rect 19 0 107 16)(font "Arial" (font_size 10)))
-	(text "R35" (rect 3 101 21 118)(font "Intel Clear" ))
+	(text "R35" (rect 3 101 25 115)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 24)
 		(input)
@@ -2802,7 +2802,7 @@ refer to the applicable agreement for further details.
 		(pt 112 40)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 81 33 189 47)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 80 33 94 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 33 91 47)(font "Arial" (font_size 8)))
 		(line (pt 96 40)(pt 112 40)(line_width 3))
 	)
 	(parameter
@@ -2846,7 +2846,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -2859,7 +2859,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 304 -176 368 -128)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst2" (rect 3 37 25 54)(font "Intel Clear" ))
+	(text "inst2" (rect 3 37 26 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -2878,7 +2878,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -2891,7 +2891,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 304 -48 368 0)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst3" (rect 3 37 25 54)(font "Intel Clear" ))
+	(text "inst3" (rect 3 37 26 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -2910,7 +2910,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -2923,7 +2923,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 304 64 368 112)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst4" (rect 3 37 25 54)(font "Intel Clear" ))
+	(text "inst4" (rect 3 37 26 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -2942,7 +2942,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -2955,7 +2955,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 312 184 376 232)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst5" (rect 3 37 25 54)(font "Intel Clear" ))
+	(text "inst5" (rect 3 37 26 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -2974,7 +2974,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -2987,7 +2987,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 288 336 352 384)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst6" (rect 3 37 25 54)(font "Intel Clear" ))
+	(text "inst6" (rect 3 37 26 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3006,7 +3006,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3019,7 +3019,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 240 440 304 488)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst7" (rect 3 37 25 54)(font "Intel Clear" ))
+	(text "inst7" (rect 3 37 26 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3038,7 +3038,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3051,7 +3051,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 224 560 288 608)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst8" (rect 3 37 25 54)(font "Intel Clear" ))
+	(text "inst8" (rect 3 37 26 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3070,7 +3070,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3083,7 +3083,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 232 696 296 744)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst9" (rect 3 37 25 54)(font "Intel Clear" ))
+	(text "inst9" (rect 3 37 26 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3102,7 +3102,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3115,7 +3115,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 224 800 288 848)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst10" (rect 3 37 31 54)(font "Intel Clear" ))
+	(text "inst10" (rect 3 37 32 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3134,7 +3134,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3147,7 +3147,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 144 928 208 976)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst11" (rect 3 37 31 54)(font "Intel Clear" ))
+	(text "inst11" (rect 3 37 32 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3166,7 +3166,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3179,7 +3179,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 128 1048 192 1096)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst12" (rect 3 37 31 54)(font "Intel Clear" ))
+	(text "inst12" (rect 3 37 32 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3198,7 +3198,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3211,7 +3211,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 128 1184 192 1232)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst13" (rect 3 37 31 54)(font "Intel Clear" ))
+	(text "inst13" (rect 3 37 32 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3230,7 +3230,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3243,7 +3243,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 120 1320 184 1368)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst14" (rect 3 37 31 54)(font "Intel Clear" ))
+	(text "inst14" (rect 3 37 32 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3262,7 +3262,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3275,7 +3275,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 128 1424 192 1472)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst15" (rect 3 37 31 54)(font "Intel Clear" ))
+	(text "inst15" (rect 3 37 32 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3294,7 +3294,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3307,7 +3307,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 144 1544 208 1592)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst16" (rect 3 37 31 54)(font "Intel Clear" ))
+	(text "inst16" (rect 3 37 32 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3326,7 +3326,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3339,7 +3339,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 144 1656 208 1704)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst17" (rect 3 37 31 54)(font "Intel Clear" ))
+	(text "inst17" (rect 3 37 32 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3358,7 +3358,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3371,7 +3371,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 136 1784 200 1832)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst18" (rect 3 37 31 54)(font "Intel Clear" ))
+	(text "inst18" (rect 3 37 32 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3390,7 +3390,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3403,7 +3403,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 136 1912 200 1960)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst19" (rect 3 37 31 54)(font "Intel Clear" ))
+	(text "inst19" (rect 3 37 32 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3422,7 +3422,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3435,7 +3435,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 128 2048 192 2096)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst20" (rect 3 37 31 54)(font "Intel Clear" ))
+	(text "inst20" (rect 3 37 32 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3454,7 +3454,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3467,7 +3467,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 128 2168 192 2216)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst21" (rect 3 37 31 54)(font "Intel Clear" ))
+	(text "inst21" (rect 3 37 32 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3486,7 +3486,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3499,7 +3499,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 136 2280 200 2328)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst22" (rect 3 37 31 54)(font "Intel Clear" ))
+	(text "inst22" (rect 3 37 32 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3518,7 +3518,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3531,7 +3531,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 136 2408 200 2456)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst23" (rect 3 37 31 54)(font "Intel Clear" ))
+	(text "inst23" (rect 3 37 32 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3550,7 +3550,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3563,7 +3563,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 128 2544 192 2592)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst24" (rect 3 37 31 54)(font "Intel Clear" ))
+	(text "inst24" (rect 3 37 32 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3582,7 +3582,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3595,7 +3595,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 128 2664 192 2712)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst25" (rect 3 37 31 54)(font "Intel Clear" ))
+	(text "inst25" (rect 3 37 32 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3614,7 +3614,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3627,7 +3627,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 136 2776 200 2824)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst26" (rect 3 37 31 54)(font "Intel Clear" ))
+	(text "inst26" (rect 3 37 32 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3646,7 +3646,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3659,7 +3659,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 144 2912 208 2960)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst27" (rect 3 37 31 54)(font "Intel Clear" ))
+	(text "inst27" (rect 3 37 32 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3678,7 +3678,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3691,7 +3691,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 168 3032 232 3080)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst28" (rect 3 37 31 54)(font "Intel Clear" ))
+	(text "inst28" (rect 3 37 32 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3710,7 +3710,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3723,7 +3723,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 168 3168 232 3216)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst29" (rect 3 37 31 54)(font "Intel Clear" ))
+	(text "inst29" (rect 3 37 32 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3742,7 +3742,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3755,7 +3755,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 176 3280 240 3328)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst30" (rect 3 37 31 54)(font "Intel Clear" ))
+	(text "inst30" (rect 3 37 32 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3774,7 +3774,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3787,7 +3787,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 184 3424 248 3472)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst31" (rect 3 37 31 54)(font "Intel Clear" ))
+	(text "inst31" (rect 3 37 32 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3806,7 +3806,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3819,7 +3819,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 184 3544 248 3592)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst32" (rect 3 37 31 54)(font "Intel Clear" ))
+	(text "inst32" (rect 3 37 32 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3838,7 +3838,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3851,7 +3851,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 184 3672 248 3720)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst33" (rect 3 37 31 54)(font "Intel Clear" ))
+	(text "inst33" (rect 3 37 32 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3870,7 +3870,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3883,7 +3883,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 192 3808 256 3856)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst34" (rect 3 37 31 54)(font "Intel Clear" ))
+	(text "inst34" (rect 3 37 32 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3902,7 +3902,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3915,7 +3915,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 184 3936 248 3984)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst35" (rect 3 37 31 54)(font "Intel Clear" ))
+	(text "inst35" (rect 3 37 32 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3934,7 +3934,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3947,7 +3947,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect -80 4048 -16 4096)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst100" (rect 3 37 37 54)(font "Intel Clear" ))
+	(text "inst100" (rect 3 37 38 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3966,7 +3966,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -3979,7 +3979,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect -176 3792 -112 3840)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst101" (rect 3 37 37 54)(font "Intel Clear" ))
+	(text "inst101" (rect 3 37 38 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -3998,7 +3998,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -4011,7 +4011,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 296 -312 360 -264)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst1RB" (rect 3 37 39 54)(font "Intel Clear" ))
+	(text "inst1RB" (rect 3 37 41 49)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -4030,7 +4030,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -4043,7 +4043,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect -152 -520 -32 -408)
 	(text "LPM_DECODE" (rect 16 0 121 16)(font "Arial" (font_size 10)))
-	(text "instRB" (rect 3 100 33 117)(font "Intel Clear" ))
+	(text "instRB" (rect 3 100 36 112)(font "Arial" ))
 	(port
 		(pt 0 88)
 		(input)
@@ -4083,7 +4083,7 @@ refer to the applicable agreement for further details.
 		(pt 120 88)
 		(output)
 		(text "eq[LPM_DECODES-1..0]" (rect 83 79 217 93)(font "Arial" (font_size 8)))
-		(text "eq[]" (rect 82 79 103 93)(font "Arial" (font_size 8)))
+		(text "eq[]" (rect 82 79 99 93)(font "Arial" (font_size 8)))
 		(line (pt 104 88)(pt 120 88)(line_width 3))
 	)
 	(parameter
@@ -4141,7 +4141,7 @@ refer to the applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -4163,7 +4163,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect -56 3800 8 3848)
 	(text "OR2" (rect 1 0 19 10)(font "Arial" (font_size 6)))
-	(text "inst5_RB" (rect 3 37 45 54)(font "Intel Clear" ))
+	(text "inst5_RB" (rect 3 37 47 49)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -4182,7 +4182,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 48 24)(pt 64 24))
 	)
 	(drawing
@@ -4196,7 +4196,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect -16 4096 128 4192)
 	(text "LPM_BUSTRI" (rect 4 0 98 16)(font "Arial" (font_size 10)))
-	(text "inst4_LPM_RB" (rect 3 85 73 102)(font "Intel Clear" ))
+	(text "inst4_LPM_RB" (rect 3 85 84 99)(font "Arial" (font_size 8)))
 	(port
 		(pt 144 32)
 		(input)
@@ -4222,7 +4222,7 @@ refer to the applicable agreement for further details.
 		(pt 144 64)
 		(output)
 		(text "result[LPM_WIDTH-1..0]" (rect 107 51 240 65)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 107 51 145 65)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 107 51 139 65)(font "Arial" (font_size 8)))
 		(line (pt 104 64)(pt 144 64)(line_width 3))
 	)
 	(port
@@ -4802,18 +4802,8 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 840 -600)
-	(pt 840 -560)
-	(bus)
-)
-(connector
 	(pt 840 -560)
 	(pt 856 -560)
-	(bus)
-)
-(connector
-	(pt 856 -544)
-	(pt 840 -544)
 	(bus)
 )
 (connector
@@ -5184,22 +5174,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt -16 -400)
 	(pt -16 -376)
-	(bus)
-)
-(connector
-	(pt -216 -448)
-	(pt -152 -448)
-	(bus)
-)
-(connector
-	(text "clk" (rect -180 -392 -166 -375)(font "Intel Clear" ))
-	(pt -216 -376)
-	(pt -160 -376)
-)
-(connector
-	(text "C" (rect -182 -600 -175 -583)(font "Intel Clear" ))
-	(pt -232 -584)
-	(pt -160 -584)
 	(bus)
 )
 (connector
@@ -6340,20 +6314,12 @@ refer to the applicable agreement for further details.
 	(pt -472 4264)
 )
 (connector
-	(pt -192 4240)
-	(pt -168 4240)
-)
-(connector
 	(pt -472 4264)
 	(pt -472 3824)
 )
 (connector
 	(pt -472 3824)
 	(pt -176 3824)
-)
-(connector
-	(pt -168 4240)
-	(pt 336 4240)
 )
 (connector
 	(pt -96 3816)
@@ -6380,10 +6346,6 @@ refer to the applicable agreement for further details.
 	(text "writeMem2W" (rect 125 4192 189 4209)(font "Intel Clear" ))
 	(pt 72 4208)
 	(pt 152 4208)
-)
-(connector
-	(pt -192 4064)
-	(pt -80 4064)
 )
 (connector
 	(text "eq[35]" (rect -124 4064 -94 4081)(font "Intel Clear" ))
@@ -6416,6 +6378,49 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 840 32)
 	(pt 856 32)
+	(bus)
+)
+(connector
+	(pt 856 -544)
+	(pt 848 -544)
+	(bus)
+)
+(connector
+	(pt -208 -448)
+	(pt -152 -448)
+	(bus)
+)
+(connector
+	(text "clk" (rect -180 -392 -166 -375)(font "Intel Clear" ))
+	(pt -208 -376)
+	(pt -160 -376)
+)
+(connector
+	(text "C" (rect -182 -600 -175 -583)(font "Intel Clear" ))
+	(pt -224 -584)
+	(pt -160 -584)
+	(bus)
+)
+(connector
+	(pt -184 4240)
+	(pt -168 4240)
+)
+(connector
+	(pt -168 4240)
+	(pt 336 4240)
+)
+(connector
+	(pt -184 4064)
+	(pt -80 4064)
+)
+(connector
+	(pt 808 -624)
+	(pt 840 -624)
+	(bus)
+)
+(connector
+	(pt 840 -624)
+	(pt 840 -560)
 	(bus)
 )
 (junction (pt -16 -424))

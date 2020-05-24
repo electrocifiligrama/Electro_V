@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ev20QUARTUS
-Sat May 23 20:05:42 2020
+Sun May 24 13:56:40 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Sat May 23 20:05:42 2020           ;
+; Analysis & Synthesis Status        ; Failed - Sun May 24 13:56:40 2020           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ev20QUARTUS                                 ;
 ; Top-level Entity Name              ; ev20main                                    ;
@@ -160,7 +160,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat May 23 20:05:25 2020
+    Info: Processing started: Sun May 24 13:56:21 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ev20QUARTUS -c ev20QUARTUS
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -459,9 +459,9 @@ Warning (275080): Converted elements in bus name "reg35" using legacy naming rul
     Warning (275081): Converted element name(s) from "reg35[15..0]" to "reg3515..0"
 Error (12152): Can't elaborate user hierarchy "ev20registerBank:inst14"
 Error: Quartus Prime Analysis & Synthesis was unsuccessful. 19 errors, 99 warnings
-    Error: Peak virtual memory: 4740 megabytes
-    Error: Processing ended: Sat May 23 20:05:42 2020
-    Error: Elapsed time: 00:00:17
-    Error: Total CPU time (on all processors): 00:00:35
+    Error: Peak virtual memory: 4743 megabytes
+    Error: Processing ended: Sun May 24 13:56:40 2020
+    Error: Elapsed time: 00:00:19
+    Error: Total CPU time (on all processors): 00:00:39
 
 

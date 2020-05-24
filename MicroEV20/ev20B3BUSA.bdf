@@ -21,9 +21,9 @@ refer to the applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect -24 -72 144 -56)
+	(rect -136 -168 32 -152)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg0[15..0]" (rect 5 0 58 12)(font "Arial" ))
+	(text "inSelA[4..0]" (rect 5 0 61 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -39,7 +39,23 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -24 -32 144 -16)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg1[15..0]" (rect 5 0 55 17)(font "Intel Clear" ))
+	(text "reg1_A[15..0]" (rect 5 0 69 17)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -24 -72 144 -56)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "reg0_A[15..0]" (rect 5 0 72 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -55,7 +71,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -24 8 144 24)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg2[15..0]" (rect 5 0 55 17)(font "Intel Clear" ))
+	(text "reg2_A[15..0]" (rect 5 0 69 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -71,7 +87,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -24 40 144 56)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg3[15..0]" (rect 5 0 55 17)(font "Intel Clear" ))
+	(text "reg3_A[15..0]" (rect 5 0 69 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -87,7 +103,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -24 80 144 96)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg4[15..0]" (rect 5 0 55 17)(font "Intel Clear" ))
+	(text "reg4_A[15..0]" (rect 5 0 69 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -103,7 +119,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -24 120 144 136)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg5[15..0]" (rect 5 0 55 17)(font "Intel Clear" ))
+	(text "reg5_A[15..0]" (rect 5 0 69 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -119,7 +135,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -24 152 144 168)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg6[15..0]" (rect 5 0 55 17)(font "Intel Clear" ))
+	(text "reg6_A[15..0]" (rect 5 0 69 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -135,7 +151,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -24 192 144 208)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg7[15..0]" (rect 5 0 55 17)(font "Intel Clear" ))
+	(text "reg7_A[15..0]" (rect 5 0 69 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -151,7 +167,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -24 224 144 240)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg8[15..0]" (rect 5 0 55 17)(font "Intel Clear" ))
+	(text "reg8_A[15..0]" (rect 5 0 69 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -167,7 +183,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -24 256 144 272)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg9[15..0]" (rect 5 0 55 17)(font "Intel Clear" ))
+	(text "reg9_A[15..0]" (rect 5 0 69 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -183,7 +199,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -24 288 144 304)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg10[15..0]" (rect 5 0 61 17)(font "Intel Clear" ))
+	(text "reg10_A[15..0]" (rect 5 0 75 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -199,7 +215,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -72 320 96 336)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg11[15..0]" (rect 5 0 61 17)(font "Intel Clear" ))
+	(text "reg11_A[15..0]" (rect 5 0 75 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -215,7 +231,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -72 352 96 368)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg12[15..0]" (rect 5 0 61 17)(font "Intel Clear" ))
+	(text "reg12_A[15..0]" (rect 5 0 75 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -231,7 +247,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -72 384 96 400)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg13[15..0]" (rect 5 0 61 17)(font "Intel Clear" ))
+	(text "reg13_A[15..0]" (rect 5 0 75 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -247,7 +263,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -72 416 96 432)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg14[15..0]" (rect 5 0 61 17)(font "Intel Clear" ))
+	(text "reg14_A[15..0]" (rect 5 0 75 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -263,7 +279,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -72 448 96 464)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg15[15..0]" (rect 5 0 61 17)(font "Intel Clear" ))
+	(text "reg15_A[15..0]" (rect 5 0 75 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -279,7 +295,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -104 512 64 528)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg16[15..0]" (rect 5 0 61 17)(font "Intel Clear" ))
+	(text "reg16_A[15..0]" (rect 5 0 75 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -295,7 +311,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -104 544 64 560)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg17[15..0]" (rect 5 0 61 17)(font "Intel Clear" ))
+	(text "reg17_A[15..0]" (rect 5 0 75 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -311,7 +327,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -104 584 64 600)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg18[15..0]" (rect 5 0 61 17)(font "Intel Clear" ))
+	(text "reg18_A[15..0]" (rect 5 0 75 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -327,7 +343,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -104 632 64 648)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg19[15..0]" (rect 5 0 61 17)(font "Intel Clear" ))
+	(text "reg19_A[15..0]" (rect 5 0 75 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -343,7 +359,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -152 672 16 688)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg20[15..0]" (rect 5 0 61 17)(font "Intel Clear" ))
+	(text "reg20_A[15..0]" (rect 5 0 75 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -359,7 +375,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -144 728 24 744)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg21[15..0]" (rect 5 0 61 17)(font "Intel Clear" ))
+	(text "reg21_A[15..0]" (rect 5 0 75 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -375,7 +391,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -144 768 24 784)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg22[15..0]" (rect 5 0 61 17)(font "Intel Clear" ))
+	(text "reg22_A[15..0]" (rect 5 0 75 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -391,7 +407,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -144 808 24 824)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg23[15..0]" (rect 5 0 61 17)(font "Intel Clear" ))
+	(text "reg23_A[15..0]" (rect 5 0 75 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -407,7 +423,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -96 1040 72 1056)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg24[15..0]" (rect 5 0 61 17)(font "Intel Clear" ))
+	(text "reg24_A[15..0]" (rect 5 0 75 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -423,7 +439,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -96 1080 72 1096)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg25[15..0]" (rect 5 0 61 17)(font "Intel Clear" ))
+	(text "reg25_A[15..0]" (rect 5 0 75 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -437,9 +453,9 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -88 1144 80 1160)
+	(rect -88 1136 80 1152)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg26[15..0]" (rect 5 0 61 17)(font "Intel Clear" ))
+	(text "reg26_A[15..0]" (rect 5 0 75 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -455,7 +471,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -88 1184 80 1200)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg27[15..0]" (rect 5 0 61 17)(font "Intel Clear" ))
+	(text "reg27_A[15..0]" (rect 5 0 75 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -471,7 +487,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -88 1248 80 1264)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg28[15..0]" (rect 5 0 61 17)(font "Intel Clear" ))
+	(text "reg28_A[15..0]" (rect 5 0 75 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -487,7 +503,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -88 1288 80 1304)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg29[15..0]" (rect 5 0 61 17)(font "Intel Clear" ))
+	(text "reg29_A[15..0]" (rect 5 0 75 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -503,7 +519,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -96 1344 72 1360)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg30[15..0]" (rect 5 0 61 17)(font "Intel Clear" ))
+	(text "reg30_A[15..0]" (rect 5 0 75 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -519,23 +535,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -96 1384 72 1400)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reg31[15..0]" (rect 5 0 61 17)(font "Intel Clear" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
-	(rect -136 -168 32 -152)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "inSelA[4..0]" (rect 5 0 62 12)(font "Arial" ))
+	(text "reg31_A[15..0]" (rect 5 0 75 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -2442,16 +2442,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 80 1152)
-	(pt 240 1152)
-	(bus)
-)
-(connector
-	(pt 240 1152)
-	(pt 240 1160)
-	(bus)
-)
-(connector
 	(pt 240 1160)
 	(pt 272 1160)
 	(bus)
@@ -3180,6 +3170,16 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 1328 504)
 	(pt 1440 504)
+	(bus)
+)
+(connector
+	(pt 240 1144)
+	(pt 80 1144)
+	(bus)
+)
+(connector
+	(pt 240 1160)
+	(pt 240 1144)
 	(bus)
 )
 (junction (pt 208 -232))

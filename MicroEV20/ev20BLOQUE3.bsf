@@ -292,15 +292,15 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 216 32)
 		(output)
-		(text "outputA[15..0]" (rect 0 0 86 19)(font "Intel Clear" (font_size 8)))
-		(text "outputA[15..0]" (rect 109 27 195 46)(font "Intel Clear" (font_size 8)))
+		(text "outputB[15..0]" (rect 0 0 86 19)(font "Intel Clear" (font_size 8)))
+		(text "outputB[15..0]" (rect 109 27 195 46)(font "Intel Clear" (font_size 8)))
 		(line (pt 216 32)(pt 200 32)(line_width 3))
 	)
 	(port
 		(pt 216 48)
 		(output)
-		(text "outputB[15..0]" (rect 0 0 86 19)(font "Intel Clear" (font_size 8)))
-		(text "outputB[15..0]" (rect 109 43 195 62)(font "Intel Clear" (font_size 8)))
+		(text "outputA[15..0]" (rect 0 0 86 19)(font "Intel Clear" (font_size 8)))
+		(text "outputA[15..0]" (rect 109 43 195 62)(font "Intel Clear" (font_size 8)))
 		(line (pt 216 48)(pt 200 48)(line_width 3))
 	)
 	(drawing
