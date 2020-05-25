@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ev20QUARTUS
-Sun May 24 13:56:40 2020
+Sun May 24 14:56:21 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Sun May 24 13:56:40 2020           ;
+; Analysis & Synthesis Status        ; Failed - Sun May 24 14:56:21 2020           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ev20QUARTUS                                 ;
 ; Top-level Entity Name              ; ev20main                                    ;
@@ -160,7 +160,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun May 24 13:56:21 2020
+    Info: Processing started: Sun May 24 14:56:05 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ev20QUARTUS -c ev20QUARTUS
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -355,113 +355,12 @@ Info (12130): Elaborated megafunction instantiation "operandsUnit:inst10|LPM_FF:
 Info (12133): Instantiated megafunction "operandsUnit:inst10|LPM_FF:OperandRegister" with the following parameter:
     Info (12134): Parameter "LPM_WIDTH" = "16"
 Info (12128): Elaborating entity "ev20registerBank" for hierarchy "ev20registerBank:inst14"
-Warning (275083): Bus "reg10[15..0]" found using same base name as "reg1", which might lead to a name conflict.
-Error (275046): Illegal name "reg115" -- pin name already exists
-Error (275046): Illegal name "reg114" -- pin name already exists
-Error (275046): Illegal name "reg113" -- pin name already exists
-Error (275046): Illegal name "reg112" -- pin name already exists
-Error (275046): Illegal name "reg111" -- pin name already exists
-Error (275046): Illegal name "reg110" -- pin name already exists
-Warning (275083): Bus "reg11[15..0]" found using same base name as "reg1", which might lead to a name conflict.
-Warning (275083): Bus "reg12[15..0]" found using same base name as "reg1", which might lead to a name conflict.
-Warning (275083): Bus "reg13[15..0]" found using same base name as "reg1", which might lead to a name conflict.
-Warning (275083): Bus "reg14[15..0]" found using same base name as "reg1", which might lead to a name conflict.
-Warning (275083): Bus "reg15[15..0]" found using same base name as "reg1", which might lead to a name conflict.
-Warning (275083): Bus "reg16[15..0]" found using same base name as "reg1", which might lead to a name conflict.
-Warning (275083): Bus "reg17[15..0]" found using same base name as "reg1", which might lead to a name conflict.
-Warning (275083): Bus "reg18[15..0]" found using same base name as "reg1", which might lead to a name conflict.
-Warning (275083): Bus "reg19[15..0]" found using same base name as "reg1", which might lead to a name conflict.
-Warning (275083): Bus "reg20[15..0]" found using same base name as "reg2", which might lead to a name conflict.
-Error (275046): Illegal name "reg215" -- pin name already exists
-Error (275046): Illegal name "reg214" -- pin name already exists
-Error (275046): Illegal name "reg213" -- pin name already exists
-Error (275046): Illegal name "reg212" -- pin name already exists
-Error (275046): Illegal name "reg211" -- pin name already exists
-Error (275046): Illegal name "reg210" -- pin name already exists
-Warning (275083): Bus "reg21[15..0]" found using same base name as "reg2", which might lead to a name conflict.
-Warning (275083): Bus "reg22[15..0]" found using same base name as "reg2", which might lead to a name conflict.
-Warning (275083): Bus "reg23[15..0]" found using same base name as "reg2", which might lead to a name conflict.
-Warning (275083): Bus "reg24[15..0]" found using same base name as "reg2", which might lead to a name conflict.
-Warning (275083): Bus "reg25[15..0]" found using same base name as "reg2", which might lead to a name conflict.
-Warning (275083): Bus "reg26[15..0]" found using same base name as "reg2", which might lead to a name conflict.
-Warning (275083): Bus "reg27[15..0]" found using same base name as "reg2", which might lead to a name conflict.
-Warning (275083): Bus "reg28[15..0]" found using same base name as "reg2", which might lead to a name conflict.
-Warning (275083): Bus "reg29[15..0]" found using same base name as "reg2", which might lead to a name conflict.
-Warning (275083): Bus "reg30[15..0]" found using same base name as "reg3", which might lead to a name conflict.
-Error (275046): Illegal name "reg315" -- pin name already exists
-Error (275046): Illegal name "reg314" -- pin name already exists
-Error (275046): Illegal name "reg313" -- pin name already exists
-Error (275046): Illegal name "reg312" -- pin name already exists
-Error (275046): Illegal name "reg311" -- pin name already exists
-Error (275046): Illegal name "reg310" -- pin name already exists
-Warning (275083): Bus "reg31[15..0]" found using same base name as "reg3", which might lead to a name conflict.
-Warning (275083): Bus "reg32[15..0]" found using same base name as "reg3", which might lead to a name conflict.
-Warning (275083): Bus "reg33[15..0]" found using same base name as "reg3", which might lead to a name conflict.
-Warning (275083): Bus "reg34[15..0]" found using same base name as "reg3", which might lead to a name conflict.
-Warning (275083): Bus "reg35[15..0]" found using same base name as "reg3", which might lead to a name conflict.
-Warning (275080): Converted elements in bus name "reg1" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "reg1[15..0]" to "reg115..0"
-Warning (275080): Converted elements in bus name "reg10" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "reg10[15..0]" to "reg1015..0"
-Warning (275080): Converted elements in bus name "reg11" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "reg11[15..0]" to "reg1115..0"
-Warning (275080): Converted elements in bus name "reg12" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "reg12[15..0]" to "reg1215..0"
-Warning (275080): Converted elements in bus name "reg13" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "reg13[15..0]" to "reg1315..0"
-Warning (275080): Converted elements in bus name "reg14" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "reg14[15..0]" to "reg1415..0"
-Warning (275080): Converted elements in bus name "reg15" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "reg15[15..0]" to "reg1515..0"
-Warning (275080): Converted elements in bus name "reg16" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "reg16[15..0]" to "reg1615..0"
-Warning (275080): Converted elements in bus name "reg17" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "reg17[15..0]" to "reg1715..0"
-Warning (275080): Converted elements in bus name "reg18" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "reg18[15..0]" to "reg1815..0"
-Warning (275080): Converted elements in bus name "reg19" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "reg19[15..0]" to "reg1915..0"
-Warning (275080): Converted elements in bus name "reg2" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "reg2[15..0]" to "reg215..0"
-Warning (275080): Converted elements in bus name "reg20" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "reg20[15..0]" to "reg2015..0"
-Warning (275080): Converted elements in bus name "reg21" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "reg21[15..0]" to "reg2115..0"
-Warning (275080): Converted elements in bus name "reg22" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "reg22[15..0]" to "reg2215..0"
-Warning (275080): Converted elements in bus name "reg23" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "reg23[15..0]" to "reg2315..0"
-Warning (275080): Converted elements in bus name "reg24" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "reg24[15..0]" to "reg2415..0"
-Warning (275080): Converted elements in bus name "reg25" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "reg25[15..0]" to "reg2515..0"
-Warning (275080): Converted elements in bus name "reg26" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "reg26[15..0]" to "reg2615..0"
-Warning (275080): Converted elements in bus name "reg27" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "reg27[15..0]" to "reg2715..0"
-Warning (275080): Converted elements in bus name "reg28" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "reg28[15..0]" to "reg2815..0"
-Warning (275080): Converted elements in bus name "reg29" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "reg29[15..0]" to "reg2915..0"
-Warning (275080): Converted elements in bus name "reg3" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "reg3[15..0]" to "reg315..0"
-Warning (275080): Converted elements in bus name "reg30" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "reg30[15..0]" to "reg3015..0"
-Warning (275080): Converted elements in bus name "reg31" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "reg31[15..0]" to "reg3115..0"
-Warning (275080): Converted elements in bus name "reg32" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "reg32[15..0]" to "reg3215..0"
-Warning (275080): Converted elements in bus name "reg33" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "reg33[15..0]" to "reg3315..0"
-Warning (275080): Converted elements in bus name "reg34" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "reg34[15..0]" to "reg3415..0"
-Warning (275080): Converted elements in bus name "reg35" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "reg35[15..0]" to "reg3515..0"
+Error (275033): Can't find name for bus
 Error (12152): Can't elaborate user hierarchy "ev20registerBank:inst14"
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 19 errors, 99 warnings
-    Error: Peak virtual memory: 4743 megabytes
-    Error: Processing ended: Sun May 24 13:56:40 2020
-    Error: Elapsed time: 00:00:19
-    Error: Total CPU time (on all processors): 00:00:39
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 15 warnings
+    Error: Peak virtual memory: 4740 megabytes
+    Error: Processing ended: Sun May 24 14:56:21 2020
+    Error: Elapsed time: 00:00:16
+    Error: Total CPU time (on all processors): 00:00:34
 
 
