@@ -23,7 +23,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -152 -16 16 0)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "W[15..0]" (rect 5 0 48 12)(font "Arial" ))
+	(text "W[15..0]" (rect 5 0 47 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -37,9 +37,9 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -352 432 -184 448)
+	(rect -344 432 -176 448)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "X12" (rect 5 0 23 12)(font "Arial" ))
+	(text "X12" (rect 5 0 22 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -55,7 +55,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -344 456 -176 472)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "X11" (rect 5 0 24 17)(font "Intel Clear" ))
+	(text "X11" (rect 5 0 23 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -69,9 +69,9 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -344 496 -176 512)
+	(rect -352 592 -184 608)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CY" (rect 5 0 22 12)(font "Arial" ))
+	(text "CY" (rect 5 0 21 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -361,7 +361,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect -96 384 8 480)
+	(rect -88 384 16 480)
 	(text "74139M" (rect 24 -1 80 15)(font "Courier New" (font_size 10)(bold)))
 	(text "inst6" (rect 3 85 25 102)(font "Intel Clear" ))
 	(port
@@ -533,6 +533,106 @@ refer to the applicable agreement for further details.
 		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
 	)
 )
+(symbol
+	(rect 48 368 96 400)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst2" (rect 3 21 25 38)(font "Intel Clear" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
+(symbol
+	(rect 48 488 96 520)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst11" (rect 3 21 31 38)(font "Intel Clear" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
+(symbol
+	(rect 48 408 96 440)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst12" (rect 3 21 31 38)(font "Intel Clear" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
+(symbol
+	(rect 48 448 96 480)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst13" (rect 3 21 31 38)(font "Intel Clear" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
 (connector
 	(pt 296 168)
 	(pt 296 248)
@@ -644,15 +744,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 64 304)
-	(pt 128 304)
-)
-(connector
-	(text "W[15]" (rect 127 288 156 305)(font "Intel Clear" ))
-	(pt 128 304)
-	(pt 208 304)
-)
-(connector
 	(text "W[14]" (rect 115 272 144 289)(font "Intel Clear" ))
 	(pt 64 288)
 	(pt 208 288)
@@ -723,24 +814,8 @@ refer to the applicable agreement for further details.
 	(pt 208 48)
 )
 (connector
-	(pt 360 160)
-	(pt 352 160)
-)
-(connector
-	(pt 384 160)
-	(pt 376 160)
-)
-(connector
 	(pt 376 160)
 	(pt 360 160)
-)
-(connector
-	(pt -96 424)
-	(pt -104 424)
-)
-(connector
-	(pt -104 424)
-	(pt -104 376)
 )
 (connector
 	(pt -104 376)
@@ -749,16 +824,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt -136 376)
 	(pt -136 384)
-)
-(connector
-	(text "JMP" (rect 56 392 78 409)(font "Intel Clear" ))
-	(pt 8 408)
-	(pt 96 408)
-)
-(connector
-	(text "JZE" (rect 58 408 75 425)(font "Intel Clear" ))
-	(pt 8 424)
-	(pt 112 424)
 )
 (connector
 	(text "JMP" (rect 505 80 527 97)(font "Intel Clear" ))
@@ -783,21 +848,12 @@ refer to the applicable agreement for further details.
 	(pt 568 112)
 )
 (connector
-	(text "JNE" (rect 16 424 34 441)(font "Intel Clear" ))
-	(pt 8 440)
-	(pt 232 440)
-)
-(connector
 	(pt 128 368)
 	(pt 256 368)
 )
 (connector
 	(pt 256 384)
 	(pt 232 384)
-)
-(connector
-	(pt 232 384)
-	(pt 232 440)
 )
 (connector
 	(pt 320 376)
@@ -810,15 +866,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 512 128)
 	(pt 568 128)
-)
-(connector
-	(pt 304 456)
-	(pt 304 424)
-)
-(connector
-	(text "JCY" (rect 20 440 40 457)(font "Intel Clear" ))
-	(pt 8 456)
-	(pt 304 456)
 )
 (connector
 	(pt 304 424)
@@ -837,18 +884,6 @@ refer to the applicable agreement for further details.
 	(pt 568 144)
 )
 (connector
-	(pt -184 440)
-	(pt -96 440)
-)
-(connector
-	(pt -176 464)
-	(pt -96 464)
-)
-(connector
-	(pt -96 464)
-	(pt -96 456)
-)
-(connector
 	(pt 360 440)
 	(pt 384 440)
 )
@@ -865,16 +900,115 @@ refer to the applicable agreement for further details.
 	(pt 656 128)
 )
 (connector
+	(pt -104 376)
+	(pt -104 424)
+)
+(connector
+	(pt -104 424)
+	(pt -88 424)
+)
+(connector
+	(pt -88 456)
+	(pt -120 456)
+)
+(connector
+	(pt -120 456)
+	(pt -120 464)
+)
+(connector
+	(pt -120 464)
+	(pt -176 464)
+)
+(connector
+	(pt 16 408)
+	(pt 24 408)
+)
+(connector
+	(pt 16 456)
+	(pt 24 456)
+)
+(connector
 	(pt 360 440)
-	(pt 360 504)
+	(pt 360 600)
 )
 (connector
-	(pt -184 504)
-	(pt -176 504)
+	(pt 360 600)
+	(pt -184 600)
 )
 (connector
-	(pt -176 504)
-	(pt 360 504)
+	(pt 32 440)
+	(pt 16 440)
+)
+(connector
+	(pt 32 440)
+	(pt 32 464)
+)
+(connector
+	(pt 32 464)
+	(pt 48 464)
+)
+(connector
+	(pt 16 424)
+	(pt 48 424)
+)
+(connector
+	(text "JMP" (rect 120 368 142 385)(font "Intel Clear" ))
+	(pt 96 384)
+	(pt 192 384)
+)
+(connector
+	(pt 24 408)
+	(pt 24 384)
+)
+(connector
+	(pt 24 384)
+	(pt 48 384)
+)
+(connector
+	(pt 304 424)
+	(pt 304 504)
+)
+(connector
+	(text "JCY" (rect 180 488 200 505)(font "Intel Clear" ))
+	(pt 304 504)
+	(pt 96 504)
+)
+(connector
+	(pt 24 504)
+	(pt 48 504)
+)
+(connector
+	(pt 24 456)
+	(pt 24 504)
+)
+(connector
+	(text "<<__$DEF_ALIAS21926>>" (rect 127 288 250 305)(font "Intel Clear" )(invisible))
+	(pt 128 304)
+	(pt 208 304)
+)
+(connector
+	(text "W[15]" (rect 77 288 106 305)(font "Intel Clear" ))
+	(pt 64 304)
+	(pt 128 304)
+)
+(connector
+	(pt -88 440)
+	(pt -176 440)
+)
+(connector
+	(text "JZE" (rect 152 448 169 465)(font "Intel Clear" ))
+	(pt 96 464)
+	(pt 192 464)
+)
+(connector
+	(text "JNE" (rect 130 408 148 425)(font "Intel Clear" ))
+	(pt 232 424)
+	(pt 96 424)
+)
+(connector
+	(text "<<__$DEF_ALIAS21963>>" (rect 217 383 234 506)(font "Intel Clear" )(vertical)(invisible))
+	(pt 232 384)
+	(pt 232 424)
 )
 (junction (pt 64 32))
 (junction (pt 64 48))
@@ -892,6 +1026,3 @@ refer to the applicable agreement for further details.
 (junction (pt 64 272))
 (junction (pt 64 288))
 (junction (pt 128 304))
-(junction (pt 360 160))
-(junction (pt 376 160))
-(junction (pt -176 504))
