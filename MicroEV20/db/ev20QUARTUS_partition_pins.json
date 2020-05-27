@@ -68,11 +68,239 @@
 					"strict" : false
 				},
 				{
-					"name" : "MW_IN",
+					"name" : "TOA_OUT[15]",
 					"strict" : false
 				},
 				{
-					"name" : "MR",
+					"name" : "TOA_OUT[14]",
+					"strict" : false
+				},
+				{
+					"name" : "TOA_OUT[13]",
+					"strict" : false
+				},
+				{
+					"name" : "TOA_OUT[12]",
+					"strict" : false
+				},
+				{
+					"name" : "TOA_OUT[11]",
+					"strict" : false
+				},
+				{
+					"name" : "TOA_OUT[10]",
+					"strict" : false
+				},
+				{
+					"name" : "TOA_OUT[9]",
+					"strict" : false
+				},
+				{
+					"name" : "TOA_OUT[8]",
+					"strict" : false
+				},
+				{
+					"name" : "TOA_OUT[7]",
+					"strict" : false
+				},
+				{
+					"name" : "TOA_OUT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "TOA_OUT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "TOA_OUT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "TOA_OUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "TOA_OUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "TOA_OUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "TOA_OUT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "TOB_OUT[15]",
+					"strict" : false
+				},
+				{
+					"name" : "TOB_OUT[14]",
+					"strict" : false
+				},
+				{
+					"name" : "TOB_OUT[13]",
+					"strict" : false
+				},
+				{
+					"name" : "TOB_OUT[12]",
+					"strict" : false
+				},
+				{
+					"name" : "TOB_OUT[11]",
+					"strict" : false
+				},
+				{
+					"name" : "TOB_OUT[10]",
+					"strict" : false
+				},
+				{
+					"name" : "TOB_OUT[9]",
+					"strict" : false
+				},
+				{
+					"name" : "TOB_OUT[8]",
+					"strict" : false
+				},
+				{
+					"name" : "TOB_OUT[7]",
+					"strict" : false
+				},
+				{
+					"name" : "TOB_OUT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "TOB_OUT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "TOB_OUT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "TOB_OUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "TOB_OUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "TOB_OUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "TOB_OUT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "W_OUT[15]",
+					"strict" : false
+				},
+				{
+					"name" : "W_OUT[14]",
+					"strict" : false
+				},
+				{
+					"name" : "W_OUT[13]",
+					"strict" : false
+				},
+				{
+					"name" : "W_OUT[12]",
+					"strict" : false
+				},
+				{
+					"name" : "W_OUT[11]",
+					"strict" : false
+				},
+				{
+					"name" : "W_OUT[10]",
+					"strict" : false
+				},
+				{
+					"name" : "W_OUT[9]",
+					"strict" : false
+				},
+				{
+					"name" : "W_OUT[8]",
+					"strict" : false
+				},
+				{
+					"name" : "W_OUT[7]",
+					"strict" : false
+				},
+				{
+					"name" : "W_OUT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "W_OUT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "W_OUT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "W_OUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "W_OUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "W_OUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "W_OUT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SELB_IN[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SELB_IN[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SELB_IN[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SELB_IN[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SELB_IN[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SELB_IN[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SELA_IN[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SELA_IN[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SELA_IN[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SELA_IN[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SELA_IN[4]",
 					"strict" : false
 				},
 				{
@@ -80,47 +308,39 @@
 					"strict" : false
 				},
 				{
+					"name" : "SELC_IN[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SELC_IN[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SELC_IN[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SELC_IN[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SELC_IN[1]",
+					"strict" : false
+				},
+				{
+					"name" : "MW_IN",
+					"strict" : false
+				},
+				{
+					"name" : "SELC_IN[0]",
+					"strict" : false
+				},
+				{
 					"name" : "TOW_IN[15]",
 					"strict" : false
 				},
 				{
-					"name" : "DADD_IN[0]",
-					"strict" : false
-				},
-				{
-					"name" : "DADD_IN[1]",
-					"strict" : false
-				},
-				{
-					"name" : "DADD_IN[2]",
-					"strict" : false
-				},
-				{
-					"name" : "DADD_IN[3]",
-					"strict" : false
-				},
-				{
-					"name" : "DADD_IN[4]",
-					"strict" : false
-				},
-				{
-					"name" : "DADD_IN[5]",
-					"strict" : false
-				},
-				{
-					"name" : "DADD_IN[6]",
-					"strict" : false
-				},
-				{
-					"name" : "DADD_IN[7]",
-					"strict" : false
-				},
-				{
-					"name" : "DADD_IN[8]",
-					"strict" : false
-				},
-				{
-					"name" : "DADD_IN[9]",
+					"name" : "CBUS_IN[15]",
 					"strict" : false
 				},
 				{
@@ -128,7 +348,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "CBUS_IN[14]",
+					"strict" : false
+				},
+				{
 					"name" : "TOW_IN[13]",
+					"strict" : false
+				},
+				{
+					"name" : "CBUS_IN[13]",
 					"strict" : false
 				},
 				{
@@ -136,7 +364,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "CBUS_IN[12]",
+					"strict" : false
+				},
+				{
 					"name" : "TOW_IN[11]",
+					"strict" : false
+				},
+				{
+					"name" : "CBUS_IN[11]",
 					"strict" : false
 				},
 				{
@@ -144,7 +380,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "CBUS_IN[10]",
+					"strict" : false
+				},
+				{
 					"name" : "TOW_IN[9]",
+					"strict" : false
+				},
+				{
+					"name" : "CBUS_IN[9]",
 					"strict" : false
 				},
 				{
@@ -152,7 +396,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "CBUS_IN[8]",
+					"strict" : false
+				},
+				{
 					"name" : "TOW_IN[7]",
+					"strict" : false
+				},
+				{
+					"name" : "CBUS_IN[7]",
 					"strict" : false
 				},
 				{
@@ -160,7 +412,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "CBUS_IN[6]",
+					"strict" : false
+				},
+				{
 					"name" : "TOW_IN[5]",
+					"strict" : false
+				},
+				{
+					"name" : "CBUS_IN[5]",
 					"strict" : false
 				},
 				{
@@ -168,7 +428,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "CBUS_IN[4]",
+					"strict" : false
+				},
+				{
 					"name" : "TOW_IN[3]",
+					"strict" : false
+				},
+				{
+					"name" : "CBUS_IN[3]",
 					"strict" : false
 				},
 				{
@@ -176,11 +444,23 @@
 					"strict" : false
 				},
 				{
+					"name" : "CBUS_IN[2]",
+					"strict" : false
+				},
+				{
 					"name" : "TOW_IN[1]",
 					"strict" : false
 				},
 				{
+					"name" : "CBUS_IN[1]",
+					"strict" : false
+				},
+				{
 					"name" : "TOW_IN[0]",
+					"strict" : false
+				},
+				{
+					"name" : "CBUS_IN[0]",
 					"strict" : false
 				}
 			]

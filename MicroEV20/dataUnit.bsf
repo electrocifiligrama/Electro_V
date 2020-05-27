@@ -20,7 +20,7 @@ refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 224 144)
+	(rect 16 16 248 144)
 	(text "dataUnit" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
 	(text "inst" (rect 8 107 24 124)(font "Intel Clear" ))
 	(port
@@ -40,8 +40,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 64)
 		(input)
-		(text "ToW[15..0]" (rect 0 0 66 19)(font "Intel Clear" (font_size 8)))
-		(text "ToW[15..0]" (rect 21 59 87 78)(font "Intel Clear" (font_size 8)))
+		(text "ToData[15..0]" (rect 0 0 82 19)(font "Intel Clear" (font_size 8)))
+		(text "ToData[15..0]" (rect 21 59 103 78)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
@@ -59,13 +59,13 @@ refer to the applicable agreement for further details.
 		(line (pt 0 96)(pt 16 96))
 	)
 	(port
-		(pt 208 32)
+		(pt 232 32)
 		(output)
-		(text "FromW[15..0]" (rect 0 0 81 19)(font "Intel Clear" (font_size 8)))
-		(text "FromW[15..0]" (rect 106 27 187 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 208 32)(pt 192 32)(line_width 3))
+		(text "FromData[15..0]" (rect 0 0 97 19)(font "Intel Clear" (font_size 8)))
+		(text "FromData[15..0]" (rect 114 27 211 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 232 32)(pt 216 32)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 192 112))
+		(rectangle (rect 16 16 216 112))
 	)
 )
