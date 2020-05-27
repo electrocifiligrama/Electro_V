@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ev20QUARTUS
-Mon May 25 02:13:20 2020
+Tue May 26 23:22:17 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -13,202 +13,198 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. User-Specified and Inferred Latches
+  8. Analysis & Synthesis RAM Summary
   9. Registers Removed During Synthesis
  10. Removed Registers Triggering Further Register Optimizations
  11. General Register Statistics
- 12. Source assignments for LPM_ROM:MicroInstructionsROM|altrom:srom|altsyncram:rom_block|altsyncram_8301:auto_generated
- 13. Source assignments for dataUnit:inst3|LPM_RAM_IO:inst3|altram:sram|altsyncram:ram_block|altsyncram_lp71:auto_generated
- 14. Source assignments for LPM_RAM_IO:inst2|altram:sram|altsyncram:ram_block|altsyncram_qp71:auto_generated
- 15. Parameter Settings for User Entity Instance: operandsUnit:inst16|LPM_LATCH:LatchA
- 16. Parameter Settings for User Entity Instance: operandsUnit:inst16|BUSMUX:inst8
- 17. Parameter Settings for User Entity Instance: operandsUnit:inst16|LPM_FF:OperandRegister
- 18. Parameter Settings for User Entity Instance: operandsUnit:inst16|LPM_LATCH:LatchB
- 19. Parameter Settings for User Entity Instance: fetchUnit:inst|LPM_FF:InstructionRegister
- 20. Parameter Settings for User Entity Instance: MIRUnit:inst1|UC2:inst-uc2|LPM_COMPARE:inst5
- 21. Parameter Settings for User Entity Instance: MIRUnit:inst1|UC2:inst-uc2|LPM_COMPARE:Paul
- 22. Parameter Settings for User Entity Instance: MIRUnit:inst1|UC2:inst-uc2|LPM_COMPARE:inst6
- 23. Parameter Settings for User Entity Instance: MIRUnit:inst1|UC1:inst|LPM_FF:inst1
- 24. Parameter Settings for User Entity Instance: MIRUnit:inst1|UC1:inst|LPM_FF:inst
- 25. Parameter Settings for User Entity Instance: MIRUnit:inst1|UC1:inst|BUSMUX:inst2
- 26. Parameter Settings for User Entity Instance: MIRUnit:inst1|UC1:inst|LPM_FF:inst22
- 27. Parameter Settings for User Entity Instance: MIRUnit:inst1|UC1:inst|LPM_FF:inst3
- 28. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:Ezu6
- 29. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:Ezu5
- 30. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:Ezu8
- 31. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:Ezu7
- 32. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:inst12
- 33. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:inst11
- 34. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:inst8
- 35. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:inst7
- 36. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:inst1
- 37. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:inst
- 38. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:inst4
- 39. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:inst3
- 40. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:inst6
- 41. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:inst5
- 42. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:inst10
- 43. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:inst9
- 44. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:inst14
- 45. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:inst13
- 46. Parameter Settings for User Entity Instance: MIRUnit:inst1|BUSMUX:inst7
- 47. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:Ezu6
- 48. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:Ezu5
- 49. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:Ezu8
- 50. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:Ezu7
- 51. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:inst12
- 52. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:inst11
- 53. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:inst8
- 54. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:inst7
- 55. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:inst1
- 56. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:inst
- 57. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:inst4
- 58. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:inst3
- 59. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:inst6
- 60. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:inst5
- 61. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:inst10
- 62. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:inst9
- 63. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:inst14
- 64. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:inst13
- 65. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:Ezu6
- 66. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:Ezu5
- 67. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:Ezu8
- 68. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:Ezu7
- 69. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:inst12
- 70. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:inst11
- 71. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:inst8
- 72. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:inst7
- 73. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:inst1
- 74. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:inst
- 75. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:inst4
- 76. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:inst3
- 77. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:inst6
- 78. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:inst5
- 79. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:inst10
- 80. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:inst9
- 81. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:inst14
- 82. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:inst13
- 83. Parameter Settings for User Entity Instance: MIRUnit:inst1|LPM_FF:inst6
- 84. Parameter Settings for User Entity Instance: MIRUnit:inst1|LPM_FF:inst5
- 85. Parameter Settings for User Entity Instance: LPM_ROM:MicroInstructionsROM
- 86. Parameter Settings for User Entity Instance: ALUUnit:inst13|LPM_LATCH:LatchA
- 87. Parameter Settings for User Entity Instance: operandsUnit:inst10|LPM_LATCH:LatchA
- 88. Parameter Settings for User Entity Instance: operandsUnit:inst10|BUSMUX:inst8
- 89. Parameter Settings for User Entity Instance: operandsUnit:inst10|LPM_FF:OperandRegister
- 90. Parameter Settings for User Entity Instance: operandsUnit:inst10|LPM_LATCH:LatchB
- 91. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst36
- 92. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst33
- 93. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst28
- 94. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst19
- 95. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst
- 96. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst2
- 97. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst20
- 98. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst3
- 99. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst4
-100. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst29
-101. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst21
-102. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst5
-103. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst6
-104. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst22
-105. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst7
-106. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst8
-107. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst34
-108. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst30
-109. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst23
-110. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst9
-111. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst10
-112. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst24
-113. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst11
-114. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst12
-115. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst31
-116. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst25
-117. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst13
-118. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst14
-119. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst26
-120. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst15
-121. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst16
-122. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst38
-123. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst36
-124. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst33
-125. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst28
-126. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst19
-127. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst
-128. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst2
-129. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst20
-130. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst3
-131. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst4
-132. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst29
-133. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst21
-134. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst5
-135. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst6
-136. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst22
-137. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst7
-138. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst8
-139. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst34
-140. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst30
-141. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst23
-142. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst9
-143. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst10
-144. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst24
-145. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst11
-146. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst12
-147. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst31
-148. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst25
-149. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst13
-150. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst14
-151. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst26
-152. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst15
-153. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst16
-154. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst37
-155. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst35
-156. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst32
-157. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst27
-158. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst17
-159. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst18
-160. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R0
-161. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_DECODE:instRB
-162. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R10
-163. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R11
-164. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R12
-165. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R13
-166. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R14
-167. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R15
-168. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R16
-169. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R17
-170. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R18
-171. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R19
-172. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R1
-173. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R20
-174. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R21
-175. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R22
-176. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R23
-177. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R24
-178. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R25
-179. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R26
-180. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R27
-181. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R28
-182. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R29
-183. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R2
-184. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R30
-185. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R31
-186. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R32
-187. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R33
-188. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R34
-189. Parameter Settings for User Entity Instance: ev20registerBank:inst14|BUSMUX:instBUS_RB
-190. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_BUSTRI:inst4_LPM_RB
-191. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R35
-192. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R3
-193. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R4
-194. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R5
-195. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R6
-196. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R7
-197. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R8
-198. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R9
-199. Parameter Settings for User Entity Instance: dataUnit:inst3|LPM_RAM_IO:inst3
-200. Parameter Settings for User Entity Instance: LPM_RAM_IO:inst2
-201. Post-Synthesis Netlist Statistics for Top Partition
-202. Elapsed Time Per Partition
-203. Analysis & Synthesis Messages
+ 12. Source assignments for dataUnit:inst4|ALTDPRAM:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated
+ 13. Source assignments for LPM_ROM:MicroInstructionsROM|altrom:srom|altsyncram:rom_block|altsyncram_8301:auto_generated
+ 14. Source assignments for dataUnit:inst3|ALTDPRAM:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated
+ 15. Source assignments for LPM_RAM_IO:inst2|altram:sram|altsyncram:ram_block|altsyncram_qp71:auto_generated
+ 16. Parameter Settings for User Entity Instance: dataUnit:inst4|ALTDPRAM:inst1
+ 17. Parameter Settings for User Entity Instance: fetchUnit:inst|LPM_FF:InstructionRegister
+ 18. Parameter Settings for User Entity Instance: MIRUnit:inst1|UC2:inst-uc2|LPM_COMPARE:Paul
+ 19. Parameter Settings for User Entity Instance: MIRUnit:inst1|UC2:inst-uc2|LPM_COMPARE:inst5
+ 20. Parameter Settings for User Entity Instance: MIRUnit:inst1|UC1:Control1|BUSMUX:inst2
+ 21. Parameter Settings for User Entity Instance: MIRUnit:inst1|UC1:Control1|LPM_FF:inst
+ 22. Parameter Settings for User Entity Instance: MIRUnit:inst1|UC1:Control1|BUSMUX:inst9
+ 23. Parameter Settings for User Entity Instance: MIRUnit:inst1|UC1:Control1|LPM_FF:inst10
+ 24. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:Ezu6
+ 25. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:Ezu5
+ 26. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:Ezu8
+ 27. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:Ezu7
+ 28. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:inst12
+ 29. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:inst11
+ 30. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:inst8
+ 31. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:inst7
+ 32. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:inst1
+ 33. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:inst
+ 34. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:inst4
+ 35. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:inst3
+ 36. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:inst6
+ 37. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:inst5
+ 38. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:inst10
+ 39. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:inst9
+ 40. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:inst14
+ 41. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR3|LPM_FF:inst13
+ 42. Parameter Settings for User Entity Instance: MIRUnit:inst1|BUSMUX:CinMUX
+ 43. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:Ezu6
+ 44. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:Ezu5
+ 45. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:Ezu8
+ 46. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:Ezu7
+ 47. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:inst12
+ 48. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:inst11
+ 49. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:inst8
+ 50. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:inst7
+ 51. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:inst1
+ 52. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:inst
+ 53. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:inst4
+ 54. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:inst3
+ 55. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:inst6
+ 56. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:inst5
+ 57. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:inst10
+ 58. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:inst9
+ 59. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:inst14
+ 60. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR4|LPM_FF:inst13
+ 61. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:Ezu6
+ 62. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:Ezu5
+ 63. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:Ezu8
+ 64. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:Ezu7
+ 65. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:inst12
+ 66. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:inst11
+ 67. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:inst8
+ 68. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:inst7
+ 69. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:inst1
+ 70. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:inst
+ 71. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:inst4
+ 72. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:inst3
+ 73. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:inst6
+ 74. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:inst5
+ 75. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:inst10
+ 76. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:inst9
+ 77. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:inst14
+ 78. Parameter Settings for User Entity Instance: MIRUnit:inst1|MIR:MIR5|LPM_FF:inst13
+ 79. Parameter Settings for User Entity Instance: MIRUnit:inst1|LPM_FF:inst6
+ 80. Parameter Settings for User Entity Instance: MIRUnit:inst1|LPM_FF:inst5
+ 81. Parameter Settings for User Entity Instance: LPM_ROM:MicroInstructionsROM
+ 82. Parameter Settings for User Entity Instance: ALUUnit:inst13|LPM_LATCH:LatchA
+ 83. Parameter Settings for User Entity Instance: operandsUnit:inst10|LPM_LATCH:LatchA
+ 84. Parameter Settings for User Entity Instance: operandsUnit:inst10|BUSMUX:inst8
+ 85. Parameter Settings for User Entity Instance: operandsUnit:inst10|LPM_FF:OperandRegister
+ 86. Parameter Settings for User Entity Instance: operandsUnit:inst10|LPM_LATCH:LatchB
+ 87. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst36
+ 88. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst33
+ 89. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst28
+ 90. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst19
+ 91. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst
+ 92. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst2
+ 93. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst20
+ 94. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst3
+ 95. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst4
+ 96. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst29
+ 97. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst21
+ 98. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst5
+ 99. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst6
+100. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst22
+101. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst7
+102. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst8
+103. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst34
+104. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst30
+105. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst23
+106. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst9
+107. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst10
+108. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst24
+109. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst11
+110. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst12
+111. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst31
+112. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst25
+113. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst13
+114. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst14
+115. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst26
+116. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst15
+117. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst16
+118. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst38
+119. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst36
+120. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst33
+121. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst28
+122. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst19
+123. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst
+124. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst2
+125. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst20
+126. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst3
+127. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst4
+128. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst29
+129. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst21
+130. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst5
+131. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst6
+132. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst22
+133. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst7
+134. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst8
+135. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst34
+136. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst30
+137. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst23
+138. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst9
+139. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst10
+140. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst24
+141. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst11
+142. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst12
+143. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst31
+144. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst25
+145. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst13
+146. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst14
+147. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst26
+148. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst15
+149. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst16
+150. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst37
+151. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst35
+152. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst32
+153. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst27
+154. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst17
+155. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst18
+156. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R0
+157. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_DECODE:instRB
+158. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R10
+159. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R11
+160. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R12
+161. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R13
+162. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R14
+163. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R15
+164. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R16
+165. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R17
+166. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R18
+167. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R19
+168. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R1
+169. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R20
+170. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R21
+171. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R22
+172. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R23
+173. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R24
+174. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R25
+175. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R26
+176. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R27
+177. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R28
+178. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R29
+179. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R2
+180. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R30
+181. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R31
+182. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R32
+183. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R33
+184. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R34
+185. Parameter Settings for User Entity Instance: ev20registerBank:inst14|BUSMUX:instBUS_RB
+186. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_BUSTRI:inst4_LPM_RB
+187. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R35
+188. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R3
+189. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R4
+190. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R5
+191. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R6
+192. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R7
+193. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R8
+194. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_LATCH:R9
+195. Parameter Settings for User Entity Instance: dataUnit:inst3|ALTDPRAM:inst1
+196. Parameter Settings for User Entity Instance: LPM_RAM_IO:inst2
+197. Post-Synthesis Netlist Statistics for Top Partition
+198. Elapsed Time Per Partition
+199. Analysis & Synthesis Messages
 
 
 
@@ -234,18 +230,18 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon May 25 02:13:20 2020       ;
+; Analysis & Synthesis Status        ; Successful - Tue May 26 23:22:17 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ev20QUARTUS                                 ;
 ; Top-level Entity Name              ; ev20main                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 64                                          ;
-;     Total combinational functions  ; 48                                          ;
-;     Dedicated logic registers      ; 16                                          ;
-; Total registers                    ; 16                                          ;
-; Total pins                         ; 84                                          ;
+; Total logic elements               ; 3                                           ;
+;     Total combinational functions  ; 3                                           ;
+;     Dedicated logic registers      ; 1                                           ;
+; Total registers                    ; 1                                           ;
+; Total pins                         ; 45                                          ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
+; Total memory bits                  ; 16,384                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
 ; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
@@ -345,11 +341,10 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -376,35 +371,40 @@ refer to the applicable agreement for further details.
 ; PCRegister.v                     ; yes             ; User Verilog HDL File                  ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/PCRegister.v           ;         ;
 ; MIRUnit.bdf                      ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/MIRUnit.bdf            ;         ;
 ; dataUnit.bdf                     ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/dataUnit.bdf           ;         ;
-; lpm_latch.tdf                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_latch.tdf         ;         ;
-; lpm_constant.inc                 ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_constant.inc      ;         ;
-; busmux.tdf                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf            ;         ;
+; altdpram.tdf                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.tdf          ;         ;
+; memmodes.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/memmodes.inc        ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
-; lpm_mux.tdf                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf           ;         ;
+; a_hdffe.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_hdffe.inc           ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
+; alt_le_rden_reg.inc              ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/alt_le_rden_reg.inc   ;         ;
+; altsyncram.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.inc        ;         ;
 ; aglobal181.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc        ;         ;
-; muxlut.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/muxlut.inc            ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/bypassff.inc          ;         ;
-; altshift.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc          ;         ;
-; db/mux_tsc.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_tsc.tdf         ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
+; altrom.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
+; altram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc            ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
+; db/altsyncram_bgq1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_bgq1.tdf ;         ;
 ; lpm_ff.tdf                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ff.tdf            ;         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_constant.inc      ;         ;
 ; 74139m.bdf                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/74139m.bdf          ;         ;
 ; lpm_compare.tdf                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.tdf       ;         ;
 ; comptree.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/comptree.inc          ;         ;
+; altshift.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc          ;         ;
 ; db/cmpr_3pd.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/cmpr_3pd.tdf        ;         ;
+; busmux.tdf                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf            ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf           ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/muxlut.inc            ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/bypassff.inc          ;         ;
 ; db/mux_crc.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_crc.tdf         ;         ;
+; db/mux_drc.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_drc.tdf         ;         ;
 ; lpm_rom.tdf                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_rom.tdf           ;         ;
-; altrom.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
 ; altrom.tdf                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.tdf            ;         ;
-; memmodes.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/memmodes.inc        ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; altsyncram.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.inc        ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
-; altram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc            ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
 ; db/altsyncram_8301.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_8301.tdf ;         ;
 ; mirom.mif                        ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/mirom.mif              ;         ;
+; lpm_latch.tdf                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_latch.tdf         ;         ;
+; db/mux_tsc.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_tsc.tdf         ;         ;
 ; lpm_decode.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.tdf        ;         ;
 ; declut.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/declut.inc            ;         ;
 ; lpm_compare.inc                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.inc       ;         ;
@@ -412,199 +412,164 @@ refer to the applicable agreement for further details.
 ; lpm_bustri.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_bustri.tdf        ;         ;
 ; lpm_ram_io.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ram_io.tdf        ;         ;
 ; altram.tdf                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.tdf            ;         ;
-; db/altsyncram_lp71.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_lp71.tdf ;         ;
 ; db/altsyncram_qp71.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_qp71.tdf ;         ;
 +----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                ;
-+---------------------------------------------+--------------+
-; Resource                                    ; Usage        ;
-+---------------------------------------------+--------------+
-; Estimated Total logic elements              ; 64           ;
-;                                             ;              ;
-; Total combinational functions               ; 48           ;
-; Logic element usage by number of LUT inputs ;              ;
-;     -- 4 input functions                    ; 0            ;
-;     -- 3 input functions                    ; 48           ;
-;     -- <=2 input functions                  ; 0            ;
-;                                             ;              ;
-; Logic elements by mode                      ;              ;
-;     -- normal mode                          ; 48           ;
-;     -- arithmetic mode                      ; 0            ;
-;                                             ;              ;
-; Total registers                             ; 16           ;
-;     -- Dedicated logic registers            ; 16           ;
-;     -- I/O registers                        ; 0            ;
-;                                             ;              ;
-; I/O pins                                    ; 84           ;
-;                                             ;              ;
-; Embedded Multiplier 9-bit elements          ; 0            ;
-;                                             ;              ;
-; Maximum fan-out node                        ; CLK_IN~input ;
-; Maximum fan-out                             ; 32           ;
-; Total fan-out                               ; 292          ;
-; Average fan-out                             ; 1.26         ;
-+---------------------------------------------+--------------+
++---------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                         ;
++---------------------------------------------+-----------------------+
+; Resource                                    ; Usage                 ;
++---------------------------------------------+-----------------------+
+; Estimated Total logic elements              ; 3                     ;
+;                                             ;                       ;
+; Total combinational functions               ; 3                     ;
+; Logic element usage by number of LUT inputs ;                       ;
+;     -- 4 input functions                    ; 0                     ;
+;     -- 3 input functions                    ; 1                     ;
+;     -- <=2 input functions                  ; 2                     ;
+;                                             ;                       ;
+; Logic elements by mode                      ;                       ;
+;     -- normal mode                          ; 3                     ;
+;     -- arithmetic mode                      ; 0                     ;
+;                                             ;                       ;
+; Total registers                             ; 1                     ;
+;     -- Dedicated logic registers            ; 1                     ;
+;     -- I/O registers                        ; 0                     ;
+;                                             ;                       ;
+; I/O pins                                    ; 45                    ;
+; Total memory bits                           ; 16384                 ;
+;                                             ;                       ;
+; Embedded Multiplier 9-bit elements          ; 0                     ;
+;                                             ;                       ;
+; Maximum fan-out node                        ; dataUnit:inst4|inst13 ;
+; Maximum fan-out                             ; 17                    ;
+; Total fan-out                               ; 293                   ;
+; Average fan-out                             ; 2.66                  ;
++---------------------------------------------+-----------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                              ;
-+--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------+--------------+--------------+
-; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                              ; Entity Name  ; Library Name ;
-+--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------+--------------+--------------+
-; |ev20main                            ; 48 (0)              ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 84   ; 0            ; |ev20main                                                                        ; ev20main     ; work         ;
-;    |operandsUnit:inst16|             ; 48 (0)              ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|operandsUnit:inst16                                                    ; operandsUnit ; work         ;
-;       |busmux:inst8|                 ; 16 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|operandsUnit:inst16|busmux:inst8                                       ; busmux       ; work         ;
-;          |lpm_mux:$00000|            ; 16 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|operandsUnit:inst16|busmux:inst8|lpm_mux:$00000                        ; lpm_mux      ; work         ;
-;             |mux_tsc:auto_generated| ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|operandsUnit:inst16|busmux:inst8|lpm_mux:$00000|mux_tsc:auto_generated ; mux_tsc      ; work         ;
-;       |lpm_ff:OperandRegister|       ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|operandsUnit:inst16|lpm_ff:OperandRegister                             ; lpm_ff       ; work         ;
-;       |lpm_latch:LatchA|             ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|operandsUnit:inst16|lpm_latch:LatchA                                   ; lpm_latch    ; work         ;
-;       |lpm_latch:LatchB|             ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|operandsUnit:inst16|lpm_latch:LatchB                                   ; lpm_latch    ; work         ;
-+--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------+--------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                    ;
++----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                         ; Entity Name     ; Library Name ;
++----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------+-----------------+--------------+
+; |ev20main                                    ; 3 (0)               ; 1 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 45   ; 0            ; |ev20main                                                                                   ; ev20main        ; work         ;
+;    |dataUnit:inst4|                          ; 3 (1)               ; 1 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|dataUnit:inst4                                                                    ; dataUnit        ; work         ;
+;       |altdpram:inst1|                       ; 2 (0)               ; 1 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|dataUnit:inst4|altdpram:inst1                                                     ; altdpram        ; work         ;
+;          |altsyncram:ram_block|              ; 2 (0)               ; 1 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|dataUnit:inst4|altdpram:inst1|altsyncram:ram_block                                ; altsyncram      ; work         ;
+;             |altsyncram_bgq1:auto_generated| ; 2 (2)               ; 1 (1)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|dataUnit:inst4|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated ; altsyncram_bgq1 ; work         ;
++----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+----------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                ;
-+-----------------------------------------------------+---------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
-+-----------------------------------------------------+---------------------+------------------------+
-; operandsUnit:inst16|lpm_latch:LatchA|latches[15]    ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchA|latches[14]    ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchA|latches[13]    ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchA|latches[12]    ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchA|latches[11]    ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchA|latches[10]    ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchA|latches[9]     ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchA|latches[8]     ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchA|latches[7]     ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchA|latches[6]     ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchA|latches[5]     ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchA|latches[4]     ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchA|latches[3]     ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchA|latches[2]     ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchA|latches[1]     ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchA|latches[0]     ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchB|latches[15]    ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchB|latches[14]    ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchB|latches[13]    ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchB|latches[12]    ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchB|latches[11]    ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchB|latches[10]    ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchB|latches[9]     ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchB|latches[8]     ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchB|latches[7]     ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchB|latches[6]     ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchB|latches[5]     ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchB|latches[4]     ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchB|latches[3]     ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchB|latches[2]     ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchB|latches[1]     ; CLK_IN              ; yes                    ;
-; operandsUnit:inst16|lpm_latch:LatchB|latches[0]     ; CLK_IN              ; yes                    ;
-; Number of user-specified and inferred latches = 32  ;                     ;                        ;
-+-----------------------------------------------------+---------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                  ;
++----------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
+; Name                                                                                         ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF  ;
++----------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
+; dataUnit:inst4|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 1024         ; 16           ; 1024         ; 16           ; 16384 ; None ;
++----------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
 
 
-+-----------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                          ;
-+--------------------------------------------------------+--------------------+
-; Register name                                          ; Reason for Removal ;
-+--------------------------------------------------------+--------------------+
-; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[0..15] ; Lost fanout        ;
-; ALUUnit:inst13|carryBlock:inst|CY                      ; Lost fanout        ;
-; MIRUnit:inst1|lpm_ff:inst5|dffs[0..9]                  ; Lost fanout        ;
-; MIRUnit:inst1|lpm_ff:inst6|dffs[0..9]                  ; Lost fanout        ;
-; MIRUnit:inst1|MIR:MIR5|lpm_ff:inst13|dffs[1,3]         ; Lost fanout        ;
-; MIRUnit:inst1|MIR:MIR5|lpm_ff:inst14|dffs[1,3]         ; Lost fanout        ;
-; MIRUnit:inst1|MIR:MIR5|lpm_ff:inst5|dffs[0..5]         ; Lost fanout        ;
-; MIRUnit:inst1|MIR:MIR5|lpm_ff:inst6|dffs[0..5]         ; Lost fanout        ;
-; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst13|dffs[1,3]         ; Lost fanout        ;
-; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst14|dffs[1,3]         ; Lost fanout        ;
-; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst9|dffs[0,1]          ; Lost fanout        ;
-; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst10|dffs[0,1]         ; Lost fanout        ;
-; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst5|dffs[0..5]         ; Lost fanout        ;
-; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst6|dffs[0..5]         ; Lost fanout        ;
-; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst7|dffs[0..3]         ; Lost fanout        ;
-; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst8|dffs[0..3]         ; Lost fanout        ;
-; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst13|dffs[1,3]         ; Lost fanout        ;
-; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst14|dffs[1,3]         ; Lost fanout        ;
-; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst9|dffs[0,1]          ; Lost fanout        ;
-; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst10|dffs[0,1]         ; Lost fanout        ;
-; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst5|dffs[0..5]         ; Lost fanout        ;
-; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst6|dffs[0..5]         ; Lost fanout        ;
-; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst3|dffs[0..5]         ; Lost fanout        ;
-; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst4|dffs[0..5]         ; Lost fanout        ;
-; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst|dffs[0..4]          ; Lost fanout        ;
-; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst1|dffs[0..4]         ; Lost fanout        ;
-; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst7|dffs[0..3]         ; Lost fanout        ;
-; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst8|dffs[0..3]         ; Lost fanout        ;
-; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst11|dffs[0]           ; Lost fanout        ;
-; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst12|dffs[0]           ; Lost fanout        ;
-; MIRUnit:inst1|MIR:MIR3|lpm_ff:Ezu7|dffs[0]             ; Lost fanout        ;
-; MIRUnit:inst1|MIR:MIR3|lpm_ff:Ezu8|dffs[0]             ; Lost fanout        ;
-; MIRUnit:inst1|MIR:MIR3|lpm_ff:Ezu5|dffs[0]             ; Lost fanout        ;
-; MIRUnit:inst1|MIR:MIR3|lpm_ff:Ezu6|dffs[0]             ; Lost fanout        ;
-; MIRUnit:inst1|UC1:inst|lpm_ff:inst3|dffs[1,3]          ; Lost fanout        ;
-; MIRUnit:inst1|UC1:inst|lpm_ff:inst22|dffs[1,3]         ; Lost fanout        ;
-; MIRUnit:inst1|UC1:inst|lpm_ff:inst|dffs[0..5]          ; Lost fanout        ;
-; MIRUnit:inst1|UC1:inst|lpm_ff:inst1|dffs[0..5]         ; Lost fanout        ;
-; fetchUnit:inst|PCRegister:inst1|PC[0..10]              ; Lost fanout        ;
-; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[0..21]  ; Lost fanout        ;
-; Total Number of Removed Registers = 186                ;                    ;
-+--------------------------------------------------------+--------------------+
++---------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                  ;
++------------------------------------------------------------------------------------------------+--------------------+
+; Register name                                                                                  ; Reason for Removal ;
++------------------------------------------------------------------------------------------------+--------------------+
+; dataUnit:inst3|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|rden_b_store ; Lost fanout        ;
+; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[0..15]                                         ; Lost fanout        ;
+; ALUUnit:inst13|carryBlock:inst|CY                                                              ; Lost fanout        ;
+; MIRUnit:inst1|lpm_ff:inst5|dffs[0..9]                                                          ; Lost fanout        ;
+; MIRUnit:inst1|lpm_ff:inst6|dffs[0..9]                                                          ; Lost fanout        ;
+; MIRUnit:inst1|MIR:MIR5|lpm_ff:inst5|dffs[0..5]                                                 ; Lost fanout        ;
+; MIRUnit:inst1|MIR:MIR5|lpm_ff:inst6|dffs[0..5]                                                 ; Lost fanout        ;
+; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst13|dffs[1,3]                                                 ; Lost fanout        ;
+; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst14|dffs[1,3]                                                 ; Lost fanout        ;
+; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst9|dffs[0,1]                                                  ; Lost fanout        ;
+; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst10|dffs[0,1]                                                 ; Lost fanout        ;
+; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst5|dffs[0..5]                                                 ; Lost fanout        ;
+; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst6|dffs[0..5]                                                 ; Lost fanout        ;
+; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst7|dffs[0..3]                                                 ; Lost fanout        ;
+; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst8|dffs[0..3]                                                 ; Lost fanout        ;
+; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst13|dffs[1,3]                                                 ; Lost fanout        ;
+; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst14|dffs[1,3]                                                 ; Lost fanout        ;
+; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst9|dffs[0,1]                                                  ; Lost fanout        ;
+; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst10|dffs[0,1]                                                 ; Lost fanout        ;
+; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst5|dffs[0..5]                                                 ; Lost fanout        ;
+; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst6|dffs[0..5]                                                 ; Lost fanout        ;
+; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst3|dffs[0..5]                                                 ; Lost fanout        ;
+; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst4|dffs[0..5]                                                 ; Lost fanout        ;
+; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst|dffs[0..4]                                                  ; Lost fanout        ;
+; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst1|dffs[0..4]                                                 ; Lost fanout        ;
+; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst7|dffs[0..3]                                                 ; Lost fanout        ;
+; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst8|dffs[0..3]                                                 ; Lost fanout        ;
+; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst11|dffs[0]                                                   ; Lost fanout        ;
+; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst12|dffs[0]                                                   ; Lost fanout        ;
+; MIRUnit:inst1|MIR:MIR3|lpm_ff:Ezu7|dffs[0]                                                     ; Lost fanout        ;
+; MIRUnit:inst1|MIR:MIR3|lpm_ff:Ezu8|dffs[0]                                                     ; Lost fanout        ;
+; MIRUnit:inst1|MIR:MIR3|lpm_ff:Ezu5|dffs[0]                                                     ; Lost fanout        ;
+; MIRUnit:inst1|MIR:MIR3|lpm_ff:Ezu6|dffs[0]                                                     ; Lost fanout        ;
+; MIRUnit:inst1|UC1:Control1|lpm_ff:inst10|dffs[0]                                               ; Lost fanout        ;
+; MIRUnit:inst1|UC1:Control1|lpm_ff:inst|dffs[0]                                                 ; Lost fanout        ;
+; fetchUnit:inst|PCRegister:inst1|PC[0..10]                                                      ; Lost fanout        ;
+; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[0..21]                                          ; Lost fanout        ;
+; Total Number of Removed Registers = 169                                                        ;                    ;
++------------------------------------------------------------------------------------------------+--------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                   ;
-+-----------------------------------------------------+--------------------+----------------------------------------------------+
-; Register name                                       ; Reason for Removal ; Registers Removed due to This Register             ;
-+-----------------------------------------------------+--------------------+----------------------------------------------------+
-; ALUUnit:inst13|carryBlock:inst|CY                   ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst8|dffs[3],       ;
-;                                                     ;                    ; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst8|dffs[2],       ;
-;                                                     ;                    ; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst8|dffs[1],       ;
-;                                                     ;                    ; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst8|dffs[0]        ;
-; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[15] ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[15] ;
-; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[14] ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[14] ;
-; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[13] ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[13] ;
-; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[12] ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[12] ;
-; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[11] ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[11] ;
-; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[10] ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[10] ;
-; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[9]  ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[9]  ;
-; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[8]  ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[8]  ;
-; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[7]  ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[7]  ;
-; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[6]  ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[6]  ;
-; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[5]  ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[5]  ;
-; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[4]  ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[4]  ;
-; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[3]  ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[3]  ;
-; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[2]  ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[2]  ;
-; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[1]  ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[1]  ;
-; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[0]  ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[0]  ;
-; MIRUnit:inst1|MIR:MIR5|lpm_ff:inst13|dffs[3]        ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst14|dffs[3]       ;
-; MIRUnit:inst1|MIR:MIR5|lpm_ff:inst13|dffs[1]        ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst14|dffs[1]       ;
-; MIRUnit:inst1|MIR:MIR5|lpm_ff:inst5|dffs[5]         ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst6|dffs[5]        ;
-; MIRUnit:inst1|MIR:MIR5|lpm_ff:inst5|dffs[4]         ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst6|dffs[4]        ;
-; MIRUnit:inst1|MIR:MIR5|lpm_ff:inst5|dffs[3]         ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst6|dffs[3]        ;
-; MIRUnit:inst1|MIR:MIR5|lpm_ff:inst5|dffs[2]         ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst6|dffs[2]        ;
-; MIRUnit:inst1|MIR:MIR5|lpm_ff:inst5|dffs[1]         ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst6|dffs[1]        ;
-; MIRUnit:inst1|MIR:MIR5|lpm_ff:inst5|dffs[0]         ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst6|dffs[0]        ;
-; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst13|dffs[3]        ; Lost Fanouts       ; MIRUnit:inst1|UC1:inst|lpm_ff:inst22|dffs[3]       ;
-; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst13|dffs[1]        ; Lost Fanouts       ; MIRUnit:inst1|UC1:inst|lpm_ff:inst22|dffs[1]       ;
-; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst9|dffs[1]         ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst10|dffs[1]       ;
-; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst9|dffs[0]         ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst10|dffs[0]       ;
-; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst5|dffs[5]         ; Lost Fanouts       ; MIRUnit:inst1|UC1:inst|lpm_ff:inst1|dffs[5]        ;
-; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst5|dffs[4]         ; Lost Fanouts       ; MIRUnit:inst1|UC1:inst|lpm_ff:inst1|dffs[4]        ;
-; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst5|dffs[3]         ; Lost Fanouts       ; MIRUnit:inst1|UC1:inst|lpm_ff:inst1|dffs[3]        ;
-; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst5|dffs[2]         ; Lost Fanouts       ; MIRUnit:inst1|UC1:inst|lpm_ff:inst1|dffs[2]        ;
-; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst5|dffs[1]         ; Lost Fanouts       ; MIRUnit:inst1|UC1:inst|lpm_ff:inst1|dffs[1]        ;
-; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst5|dffs[0]         ; Lost Fanouts       ; MIRUnit:inst1|UC1:inst|lpm_ff:inst1|dffs[0]        ;
-; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst7|dffs[3]         ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst8|dffs[3]        ;
-; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst7|dffs[2]         ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst8|dffs[2]        ;
-; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst7|dffs[1]         ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst8|dffs[1]        ;
-; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst7|dffs[0]         ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst8|dffs[0]        ;
-+-----------------------------------------------------+--------------------+----------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                    ;
++-----------------------------------------------------+--------------------+-----------------------------------------------------+
+; Register name                                       ; Reason for Removal ; Registers Removed due to This Register              ;
++-----------------------------------------------------+--------------------+-----------------------------------------------------+
+; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst13|dffs[3]        ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst14|dffs[3],       ;
+;                                                     ;                    ; MIRUnit:inst1|UC1:Control1|lpm_ff:inst10|dffs[0],   ;
+;                                                     ;                    ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[21], ;
+;                                                     ;                    ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[20], ;
+;                                                     ;                    ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[19], ;
+;                                                     ;                    ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[18]  ;
+; ALUUnit:inst13|carryBlock:inst|CY                   ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst8|dffs[3],        ;
+;                                                     ;                    ; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst8|dffs[2],        ;
+;                                                     ;                    ; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst8|dffs[1],        ;
+;                                                     ;                    ; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst8|dffs[0]         ;
+; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst5|dffs[5]         ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst6|dffs[5],        ;
+;                                                     ;                    ; MIRUnit:inst1|UC1:Control1|lpm_ff:inst|dffs[0]      ;
+; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[13] ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[13]  ;
+; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[12] ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[12]  ;
+; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[11] ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[11]  ;
+; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[10] ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[10]  ;
+; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[9]  ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[9]   ;
+; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[8]  ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[8]   ;
+; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[7]  ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[7]   ;
+; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[6]  ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[6]   ;
+; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[5]  ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[5]   ;
+; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[4]  ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[4]   ;
+; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[3]  ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[3]   ;
+; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[2]  ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[2]   ;
+; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[1]  ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[1]   ;
+; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[0]  ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[0]   ;
+; MIRUnit:inst1|MIR:MIR5|lpm_ff:inst5|dffs[5]         ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst6|dffs[5]         ;
+; MIRUnit:inst1|MIR:MIR5|lpm_ff:inst5|dffs[4]         ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst6|dffs[4]         ;
+; MIRUnit:inst1|MIR:MIR5|lpm_ff:inst5|dffs[3]         ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst6|dffs[3]         ;
+; MIRUnit:inst1|MIR:MIR5|lpm_ff:inst5|dffs[2]         ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst6|dffs[2]         ;
+; MIRUnit:inst1|MIR:MIR5|lpm_ff:inst5|dffs[1]         ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst6|dffs[1]         ;
+; MIRUnit:inst1|MIR:MIR5|lpm_ff:inst5|dffs[0]         ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst6|dffs[0]         ;
+; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[15] ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[15]  ;
+; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst13|dffs[1]        ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst14|dffs[1]        ;
+; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst9|dffs[1]         ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst10|dffs[1]        ;
+; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst9|dffs[0]         ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst10|dffs[0]        ;
+; operandsUnit:inst10|lpm_ff:OperandRegister|dffs[14] ; Lost Fanouts       ; fetchUnit:inst|lpm_ff:InstructionRegister|dffs[14]  ;
+; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst5|dffs[4]         ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst6|dffs[4]         ;
+; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst5|dffs[3]         ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst6|dffs[3]         ;
+; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst5|dffs[2]         ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst6|dffs[2]         ;
+; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst5|dffs[1]         ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst6|dffs[1]         ;
+; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst5|dffs[0]         ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst6|dffs[0]         ;
+; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst7|dffs[3]         ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst8|dffs[3]         ;
+; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst7|dffs[2]         ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst8|dffs[2]         ;
+; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst7|dffs[1]         ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst8|dffs[1]         ;
+; MIRUnit:inst1|MIR:MIR4|lpm_ff:inst7|dffs[0]         ; Lost Fanouts       ; MIRUnit:inst1|MIR:MIR3|lpm_ff:inst8|dffs[0]         ;
++-----------------------------------------------------+--------------------+-----------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -612,7 +577,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 16    ;
+; Total registers                              ; 1     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -620,6 +585,15 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Source assignments for dataUnit:inst4|ALTDPRAM:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated ;
++---------------------------------+--------------------+------+--------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                         ;
++---------------------------------+--------------------+------+--------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                          ;
++---------------------------------+--------------------+------+--------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------+
@@ -631,13 +605,13 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +---------------------------------+--------------------+------+-------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for dataUnit:inst3|LPM_RAM_IO:inst3|altram:sram|altsyncram:ram_block|altsyncram_lp71:auto_generated ;
-+---------------------------------+--------------------+------+----------------------------------------------------------+
-; Assignment                      ; Value              ; From ; To                                                       ;
-+---------------------------------+--------------------+------+----------------------------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                        ;
-+---------------------------------+--------------------+------+----------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------+
+; Source assignments for dataUnit:inst3|ALTDPRAM:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated ;
++---------------------------------+--------------------+------+--------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                         ;
++---------------------------------+--------------------+------+--------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                          ;
++---------------------------------+--------------------+------+--------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------+
@@ -649,54 +623,49 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +---------------------------------+--------------------+------+-------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: operandsUnit:inst16|LPM_LATCH:LatchA ;
-+----------------+--------+---------------------------------------------------------+
-; Parameter Name ; Value  ; Type                                                    ;
-+----------------+--------+---------------------------------------------------------+
-; LPM_WIDTH      ; 16     ; Untyped                                                 ;
-; LPM_AVALUE     ; UNUSED ; Untyped                                                 ;
-+----------------+--------+---------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: operandsUnit:inst16|BUSMUX:inst8 ;
-+----------------+-------+------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                 ;
-+----------------+-------+------------------------------------------------------+
-; WIDTH          ; 16    ; Untyped                                              ;
-+----------------+-------+------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: operandsUnit:inst16|LPM_FF:OperandRegister ;
-+------------------------+--------------+-------------------------------------------------+
-; Parameter Name         ; Value        ; Type                                            ;
-+------------------------+--------------+-------------------------------------------------+
-; LPM_WIDTH              ; 16           ; Untyped                                         ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                                         ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                                         ;
-; LPM_FFTYPE             ; DFF          ; Untyped                                         ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                         ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                                         ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                      ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                    ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                    ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                  ;
-+------------------------+--------------+-------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: operandsUnit:inst16|LPM_LATCH:LatchB ;
-+----------------+--------+---------------------------------------------------------+
-; Parameter Name ; Value  ; Type                                                    ;
-+----------------+--------+---------------------------------------------------------+
-; LPM_WIDTH      ; 16     ; Untyped                                                 ;
-; LPM_AVALUE     ; UNUSED ; Untyped                                                 ;
-+----------------+--------+---------------------------------------------------------+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dataUnit:inst4|ALTDPRAM:inst1 ;
++-------------------------------------+--------------+-----------------------+
+; Parameter Name                      ; Value        ; Type                  ;
++-------------------------------------+--------------+-----------------------+
+; WIDTH_BYTEENA_A                     ; 1            ; Untyped               ;
+; WIDTH_BYTEENA_B                     ; 1            ; Untyped               ;
+; WIDTH_ECCSTATUS                     ; 3            ; Untyped               ;
+; WIDTH                               ; 16           ; Untyped               ;
+; WIDTHAD                             ; 10           ; Untyped               ;
+; NUMWORDS                            ; 1024         ; Untyped               ;
+; FILE                                ; UNUSED       ; Untyped               ;
+; LPM_FILE                            ; UNUSED       ; Untyped               ;
+; INDATA_REG                          ; INCLOCK      ; Untyped               ;
+; INDATA_ACLR                         ; ON           ; Untyped               ;
+; WRADDRESS_REG                       ; INCLOCK      ; Untyped               ;
+; WRADDRESS_ACLR                      ; ON           ; Untyped               ;
+; WRCONTROL_REG                       ; INCLOCK      ; Untyped               ;
+; WRCONTROL_ACLR                      ; ON           ; Untyped               ;
+; RDADDRESS_REG                       ; OUTCLOCK     ; Untyped               ;
+; RDADDRESS_ACLR                      ; ON           ; Untyped               ;
+; RDCONTROL_REG                       ; OUTCLOCK     ; Untyped               ;
+; RDCONTROL_ACLR                      ; ON           ; Untyped               ;
+; OUTDATA_REG                         ; UNREGISTERED ; Untyped               ;
+; OUTDATA_ACLR                        ; ON           ; Untyped               ;
+; OUTDATA_SCLR                        ; ON           ; Untyped               ;
+; USE_EAB                             ; ON           ; Untyped               ;
+; MAXIMUM_DEPTH                       ; 2048         ; Untyped               ;
+; DEVICE_FAMILY                       ; Cyclone IV E ; Untyped               ;
+; SUPPRESS_MEMORY_CONVERSION_WARNINGS ; OFF          ; Untyped               ;
+; INTENDED_DEVICE_FAMILY              ; Stratix      ; Untyped               ;
+; ENABLE_RAM_BENCHMARKING_MODE        ; OFF          ; Untyped               ;
+; RAM_BLOCK_TYPE                      ; AUTO         ; Untyped               ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS  ; DONT_CARE    ; Untyped               ;
+; BYTE_SIZE                           ; 8            ; Untyped               ;
+; WIDTH_BYTEENA                       ; 1            ; Untyped               ;
+; DISABLE_LE_RAM_LIMIT_CHECK          ; OFF          ; Untyped               ;
+; CBXI_PARAMETER                      ; dpram_74g1   ; Untyped               ;
+; AUTO_CARRY_CHAINS                   ; ON           ; AUTO_CARRY            ;
+; IGNORE_CARRY_BUFFERS                ; OFF          ; IGNORE_CARRY          ;
+; AUTO_CASCADE_CHAINS                 ; ON           ; AUTO_CASCADE          ;
+; IGNORE_CASCADE_BUFFERS              ; OFF          ; IGNORE_CASCADE        ;
++-------------------------------------+--------------+-----------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -716,30 +685,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                   ;
 ; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                 ;
 +------------------------+--------------+------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIRUnit:inst1|UC2:inst-uc2|LPM_COMPARE:inst5 ;
-+------------------------+--------------+---------------------------------------------------+
-; Parameter Name         ; Value        ; Type                                              ;
-+------------------------+--------------+---------------------------------------------------+
-; lpm_width              ; 5            ; Untyped                                           ;
-; LPM_REPRESENTATION     ; UNSIGNED     ; Untyped                                           ;
-; LPM_PIPELINE           ; 0            ; Untyped                                           ;
-; CHAIN_SIZE             ; 8            ; Untyped                                           ;
-; ONE_INPUT_IS_CONSTANT  ; NO           ; Untyped                                           ;
-; CARRY_CHAIN            ; MANUAL       ; Untyped                                           ;
-; CASCADE_CHAIN          ; MANUAL       ; Untyped                                           ;
-; CARRY_CHAIN_LENGTH     ; 48           ; CARRY_CHAIN_LENGTH                                ;
-; CASCADE_CHAIN_LENGTH   ; 2            ; CASCADE_CHAIN_LENGTH                              ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                           ;
-; CBXI_PARAMETER         ; cmpr_3pd     ; Untyped                                           ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                        ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                      ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                      ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                    ;
-+------------------------+--------------+---------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -768,7 +713,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIRUnit:inst1|UC2:inst-uc2|LPM_COMPARE:inst6 ;
+; Parameter Settings for User Entity Instance: MIRUnit:inst1|UC2:inst-uc2|LPM_COMPARE:inst5 ;
 +------------------------+--------------+---------------------------------------------------+
 ; Parameter Name         ; Value        ; Type                                              ;
 +------------------------+--------------+---------------------------------------------------+
@@ -791,89 +736,61 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIRUnit:inst1|UC1:inst|LPM_FF:inst1 ;
-+------------------------+--------------+------------------------------------------+
-; Parameter Name         ; Value        ; Type                                     ;
-+------------------------+--------------+------------------------------------------+
-; LPM_WIDTH              ; 6            ; Untyped                                  ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                                  ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                                  ;
-; LPM_FFTYPE             ; DFF          ; Untyped                                  ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                  ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                                  ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                               ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                             ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                             ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                           ;
-+------------------------+--------------+------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MIRUnit:inst1|UC1:Control1|BUSMUX:inst2 ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; WIDTH          ; 6     ; Untyped                                                     ;
++----------------+-------+-------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIRUnit:inst1|UC1:inst|LPM_FF:inst ;
-+------------------------+--------------+-----------------------------------------+
-; Parameter Name         ; Value        ; Type                                    ;
-+------------------------+--------------+-----------------------------------------+
-; LPM_WIDTH              ; 6            ; Untyped                                 ;
-; LPM_AVALUE             ; 35           ; Untyped                                 ;
-; LPM_SVALUE             ; 35           ; Untyped                                 ;
-; LPM_FFTYPE             ; DFF          ; Untyped                                 ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                 ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                                 ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                              ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                            ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                            ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                          ;
-+------------------------+--------------+-----------------------------------------+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MIRUnit:inst1|UC1:Control1|LPM_FF:inst ;
++------------------------+--------------+---------------------------------------------+
+; Parameter Name         ; Value        ; Type                                        ;
++------------------------+--------------+---------------------------------------------+
+; LPM_WIDTH              ; 1            ; Untyped                                     ;
+; LPM_AVALUE             ; UNUSED       ; Untyped                                     ;
+; LPM_SVALUE             ; UNUSED       ; Untyped                                     ;
+; LPM_FFTYPE             ; DFF          ; Untyped                                     ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                     ;
+; CBXI_PARAMETER         ; NOTHING      ; Untyped                                     ;
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                  ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                              ;
++------------------------+--------------+---------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIRUnit:inst1|UC1:inst|BUSMUX:inst2 ;
-+----------------+-------+---------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                    ;
-+----------------+-------+---------------------------------------------------------+
-; WIDTH          ; 6     ; Untyped                                                 ;
-+----------------+-------+---------------------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MIRUnit:inst1|UC1:Control1|BUSMUX:inst9 ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; WIDTH          ; 7     ; Untyped                                                     ;
++----------------+-------+-------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIRUnit:inst1|UC1:inst|LPM_FF:inst22 ;
-+------------------------+--------------+-------------------------------------------+
-; Parameter Name         ; Value        ; Type                                      ;
-+------------------------+--------------+-------------------------------------------+
-; LPM_WIDTH              ; 7            ; Untyped                                   ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                                   ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                                   ;
-; LPM_FFTYPE             ; DFF          ; Untyped                                   ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                   ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                                   ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                              ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                              ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                            ;
-+------------------------+--------------+-------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIRUnit:inst1|UC1:inst|LPM_FF:inst3 ;
-+------------------------+--------------+------------------------------------------+
-; Parameter Name         ; Value        ; Type                                     ;
-+------------------------+--------------+------------------------------------------+
-; LPM_WIDTH              ; 7            ; Untyped                                  ;
-; LPM_AVALUE             ; UNUSED       ; Untyped                                  ;
-; LPM_SVALUE             ; UNUSED       ; Untyped                                  ;
-; LPM_FFTYPE             ; DFF          ; Untyped                                  ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                  ;
-; CBXI_PARAMETER         ; NOTHING      ; Untyped                                  ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                               ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                             ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                             ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                           ;
-+------------------------+--------------+------------------------------------------+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MIRUnit:inst1|UC1:Control1|LPM_FF:inst10 ;
++------------------------+--------------+-----------------------------------------------+
+; Parameter Name         ; Value        ; Type                                          ;
++------------------------+--------------+-----------------------------------------------+
+; LPM_WIDTH              ; 1            ; Untyped                                       ;
+; LPM_AVALUE             ; UNUSED       ; Untyped                                       ;
+; LPM_SVALUE             ; UNUSED       ; Untyped                                       ;
+; LPM_FFTYPE             ; DFF          ; Untyped                                       ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                       ;
+; CBXI_PARAMETER         ; NOTHING      ; Untyped                                       ;
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                    ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                  ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                  ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                ;
++------------------------+--------------+-----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1219,13 +1136,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIRUnit:inst1|BUSMUX:inst7 ;
-+----------------+-------+------------------------------------------------+
-; Parameter Name ; Value ; Type                                           ;
-+----------------+-------+------------------------------------------------+
-; WIDTH          ; 6     ; Untyped                                        ;
-+----------------+-------+------------------------------------------------+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MIRUnit:inst1|BUSMUX:CinMUX ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WIDTH          ; 6     ; Untyped                                         ;
++----------------+-------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -3158,25 +3075,49 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: dataUnit:inst3|LPM_RAM_IO:inst3 ;
-+------------------------+--------------+--------------------------------------+
-; Parameter Name         ; Value        ; Type                                 ;
-+------------------------+--------------+--------------------------------------+
-; LPM_WIDTH              ; 16           ; Untyped                              ;
-; LPM_WIDTHAD            ; 10           ; Untyped                              ;
-; LPM_NUMWORDS           ; 1024         ; Untyped                              ;
-; LPM_INDATA             ; REGISTERED   ; Untyped                              ;
-; LPM_ADDRESS_CONTROL    ; REGISTERED   ; Untyped                              ;
-; LPM_OUTDATA            ; REGISTERED   ; Untyped                              ;
-; LPM_FILE               ; UNUSED       ; Untyped                              ;
-; USE_EAB                ; ON           ; Untyped                              ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                              ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                           ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                         ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                         ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                       ;
-+------------------------+--------------+--------------------------------------+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dataUnit:inst3|ALTDPRAM:inst1 ;
++-------------------------------------+--------------+-----------------------+
+; Parameter Name                      ; Value        ; Type                  ;
++-------------------------------------+--------------+-----------------------+
+; WIDTH_BYTEENA_A                     ; 1            ; Untyped               ;
+; WIDTH_BYTEENA_B                     ; 1            ; Untyped               ;
+; WIDTH_ECCSTATUS                     ; 3            ; Untyped               ;
+; WIDTH                               ; 16           ; Untyped               ;
+; WIDTHAD                             ; 10           ; Untyped               ;
+; NUMWORDS                            ; 1024         ; Untyped               ;
+; FILE                                ; UNUSED       ; Untyped               ;
+; LPM_FILE                            ; UNUSED       ; Untyped               ;
+; INDATA_REG                          ; INCLOCK      ; Untyped               ;
+; INDATA_ACLR                         ; ON           ; Untyped               ;
+; WRADDRESS_REG                       ; INCLOCK      ; Untyped               ;
+; WRADDRESS_ACLR                      ; ON           ; Untyped               ;
+; WRCONTROL_REG                       ; INCLOCK      ; Untyped               ;
+; WRCONTROL_ACLR                      ; ON           ; Untyped               ;
+; RDADDRESS_REG                       ; OUTCLOCK     ; Untyped               ;
+; RDADDRESS_ACLR                      ; ON           ; Untyped               ;
+; RDCONTROL_REG                       ; OUTCLOCK     ; Untyped               ;
+; RDCONTROL_ACLR                      ; ON           ; Untyped               ;
+; OUTDATA_REG                         ; UNREGISTERED ; Untyped               ;
+; OUTDATA_ACLR                        ; ON           ; Untyped               ;
+; OUTDATA_SCLR                        ; ON           ; Untyped               ;
+; USE_EAB                             ; ON           ; Untyped               ;
+; MAXIMUM_DEPTH                       ; 2048         ; Untyped               ;
+; DEVICE_FAMILY                       ; Cyclone IV E ; Untyped               ;
+; SUPPRESS_MEMORY_CONVERSION_WARNINGS ; OFF          ; Untyped               ;
+; INTENDED_DEVICE_FAMILY              ; Stratix      ; Untyped               ;
+; ENABLE_RAM_BENCHMARKING_MODE        ; OFF          ; Untyped               ;
+; RAM_BLOCK_TYPE                      ; AUTO         ; Untyped               ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS  ; DONT_CARE    ; Untyped               ;
+; BYTE_SIZE                           ; 8            ; Untyped               ;
+; WIDTH_BYTEENA                       ; 1            ; Untyped               ;
+; DISABLE_LE_RAM_LIMIT_CHECK          ; OFF          ; Untyped               ;
+; CBXI_PARAMETER                      ; dpram_74g1   ; Untyped               ;
+; AUTO_CARRY_CHAINS                   ; ON           ; AUTO_CARRY            ;
+; IGNORE_CARRY_BUFFERS                ; OFF          ; IGNORE_CARRY          ;
+; AUTO_CASCADE_CHAINS                 ; ON           ; AUTO_CASCADE          ;
+; IGNORE_CASCADE_BUFFERS              ; OFF          ; IGNORE_CASCADE        ;
++-------------------------------------+--------------+-----------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -3207,15 +3148,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 84                          ;
-; cycloneiii_ff         ; 16                          ;
-;     plain             ; 16                          ;
-; cycloneiii_lcell_comb ; 48                          ;
-;     normal            ; 48                          ;
-;         3 data inputs ; 48                          ;
+; boundary_port         ; 45                          ;
+; cycloneiii_ff         ; 1                           ;
+;     plain             ; 1                           ;
+; cycloneiii_lcell_comb ; 3                           ;
+;     normal            ; 3                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 1                           ;
+; cycloneiii_ram_block  ; 16                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.33                        ;
+; Average LUT depth     ; 0.20                        ;
 +-----------------------+-----------------------------+
 
 
@@ -3224,7 +3168,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -3234,7 +3178,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon May 25 02:12:59 2020
+    Info: Processing started: Tue May 26 23:21:49 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ev20QUARTUS -c ev20QUARTUS
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -3275,24 +3219,31 @@ Info (12021): Found 1 design units, including 1 entities, in source file mirunit
 Info (12021): Found 1 design units, including 1 entities, in source file dataunit.bdf
     Info (12023): Found entity 1: dataUnit
 Info (12127): Elaborating entity "ev20main" for the top level hierarchy
-Info (12128): Elaborating entity "operandsUnit" for hierarchy "operandsUnit:inst16"
-Info (12128): Elaborating entity "LPM_LATCH" for hierarchy "operandsUnit:inst16|LPM_LATCH:LatchA"
-Info (12130): Elaborated megafunction instantiation "operandsUnit:inst16|LPM_LATCH:LatchA"
-Info (12133): Instantiated megafunction "operandsUnit:inst16|LPM_LATCH:LatchA" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTH" = "16"
-Info (12128): Elaborating entity "BUSMUX" for hierarchy "operandsUnit:inst16|BUSMUX:inst8"
-Info (12130): Elaborated megafunction instantiation "operandsUnit:inst16|BUSMUX:inst8"
-Info (12133): Instantiated megafunction "operandsUnit:inst16|BUSMUX:inst8" with the following parameter:
+Info (12128): Elaborating entity "dataUnit" for hierarchy "dataUnit:inst4"
+Warning (272007): ALTDPRAM doesn't support Cyclone IV E. Trying for best case memory conversions. The power up states will be different for stratix as well as read during write modes
+Info (12128): Elaborating entity "ALTDPRAM" for hierarchy "dataUnit:inst4|ALTDPRAM:inst1"
+Info (12130): Elaborated megafunction instantiation "dataUnit:inst4|ALTDPRAM:inst1"
+Info (12133): Instantiated megafunction "dataUnit:inst4|ALTDPRAM:inst1" with the following parameter:
+    Info (12134): Parameter "INDATA_ACLR" = "ON"
+    Info (12134): Parameter "INDATA_REG" = "INCLOCK"
+    Info (12134): Parameter "NUMWORDS" = "1024"
+    Info (12134): Parameter "OUTDATA_ACLR" = "ON"
+    Info (12134): Parameter "OUTDATA_REG" = "UNREGISTERED"
+    Info (12134): Parameter "RDADDRESS_ACLR" = "ON"
+    Info (12134): Parameter "RDADDRESS_REG" = "OUTCLOCK"
+    Info (12134): Parameter "RDCONTROL_ACLR" = "ON"
+    Info (12134): Parameter "RDCONTROL_REG" = "OUTCLOCK"
     Info (12134): Parameter "WIDTH" = "16"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "operandsUnit:inst16|BUSMUX:inst8|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
-Info (12131): Elaborated megafunction instantiation "operandsUnit:inst16|BUSMUX:inst8|lpm_mux:$00000", which is child of megafunction instantiation "operandsUnit:inst16|BUSMUX:inst8" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
-Info (12021): Found 1 design units, including 1 entities, in source file db/mux_tsc.tdf
-    Info (12023): Found entity 1: mux_tsc File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_tsc.tdf Line: 22
-Info (12128): Elaborating entity "mux_tsc" for hierarchy "operandsUnit:inst16|BUSMUX:inst8|lpm_mux:$00000|mux_tsc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
-Info (12128): Elaborating entity "LPM_FF" for hierarchy "operandsUnit:inst16|LPM_FF:OperandRegister"
-Info (12130): Elaborated megafunction instantiation "operandsUnit:inst16|LPM_FF:OperandRegister"
-Info (12133): Instantiated megafunction "operandsUnit:inst16|LPM_FF:OperandRegister" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTH" = "16"
+    Info (12134): Parameter "WIDTHAD" = "10"
+    Info (12134): Parameter "WRADDRESS_ACLR" = "ON"
+    Info (12134): Parameter "WRADDRESS_REG" = "INCLOCK"
+    Info (12134): Parameter "WRCONTROL_ACLR" = "ON"
+    Info (12134): Parameter "WRCONTROL_REG" = "INCLOCK"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "dataUnit:inst4|ALTDPRAM:inst1|altsyncram:ram_block" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.tdf Line: 206
+Info (12131): Elaborated megafunction instantiation "dataUnit:inst4|ALTDPRAM:inst1|altsyncram:ram_block", which is child of megafunction instantiation "dataUnit:inst4|ALTDPRAM:inst1" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.tdf Line: 206
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_bgq1.tdf
+    Info (12023): Found entity 1: altsyncram_bgq1 File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_bgq1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_bgq1" for hierarchy "dataUnit:inst4|ALTDPRAM:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12128): Elaborating entity "fetchUnit" for hierarchy "fetchUnit:inst"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "fetchUnit:inst|LPM_FF:InstructionRegister"
 Info (12130): Elaborated megafunction instantiation "fetchUnit:inst|LPM_FF:InstructionRegister"
@@ -3304,51 +3255,37 @@ Info (12128): Elaborating entity "ev20jumpControl" for hierarchy "fetchUnit:inst
 Info (12128): Elaborating entity "74139M" for hierarchy "fetchUnit:inst|ev20jumpControl:inst|74139M:inst6"
 Info (12130): Elaborated megafunction instantiation "fetchUnit:inst|ev20jumpControl:inst|74139M:inst6"
 Info (12128): Elaborating entity "MIRUnit" for hierarchy "MIRUnit:inst1"
-Warning (275011): Block or symbol "UC1" of instance "inst" overlaps another block or symbol
 Info (12128): Elaborating entity "UC2" for hierarchy "MIRUnit:inst1|UC2:inst-uc2"
-Warning (275009): Pin "B2" not connected
-Info (12128): Elaborating entity "LPM_COMPARE" for hierarchy "MIRUnit:inst1|UC2:inst-uc2|LPM_COMPARE:inst5"
-Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|UC2:inst-uc2|LPM_COMPARE:inst5"
-Info (12133): Instantiated megafunction "MIRUnit:inst1|UC2:inst-uc2|LPM_COMPARE:inst5" with the following parameter:
+Info (12128): Elaborating entity "LPM_COMPARE" for hierarchy "MIRUnit:inst1|UC2:inst-uc2|LPM_COMPARE:Paul"
+Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|UC2:inst-uc2|LPM_COMPARE:Paul"
+Info (12133): Instantiated megafunction "MIRUnit:inst1|UC2:inst-uc2|LPM_COMPARE:Paul" with the following parameter:
     Info (12134): Parameter "LPM_WIDTH" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_3pd.tdf
     Info (12023): Found entity 1: cmpr_3pd File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/cmpr_3pd.tdf Line: 22
-Info (12128): Elaborating entity "cmpr_3pd" for hierarchy "MIRUnit:inst1|UC2:inst-uc2|LPM_COMPARE:inst5|cmpr_3pd:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.tdf Line: 280
-Info (12128): Elaborating entity "UC1" for hierarchy "MIRUnit:inst1|UC1:inst"
-Warning (275011): Block or symbol "GND" of instance "inst14" overlaps another block or symbol
-Warning (275011): Block or symbol "GND" of instance "inst16" overlaps another block or symbol
-Warning (275011): Block or symbol "BUSMUX" of instance "inst2" overlaps another block or symbol
-Info (12128): Elaborating entity "LPM_FF" for hierarchy "MIRUnit:inst1|UC1:inst|LPM_FF:inst1"
-Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|UC1:inst|LPM_FF:inst1"
-Info (12133): Instantiated megafunction "MIRUnit:inst1|UC1:inst|LPM_FF:inst1" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTH" = "6"
-Info (12128): Elaborating entity "LPM_FF" for hierarchy "MIRUnit:inst1|UC1:inst|LPM_FF:inst"
-Warning (287001): Assertion warning: Ignored LPM_AVALUE parameter because the aset port is not used File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ff.tdf Line: 91
-Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ff.tdf Line: 96
-Warning (287013): Variable or input pin "ac" is defined but never used. File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ff.tdf Line: 71
-Warning (287013): Variable or input pin "sc" is defined but never used. File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ff.tdf Line: 74
-Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|UC1:inst|LPM_FF:inst"
-Info (12133): Instantiated megafunction "MIRUnit:inst1|UC1:inst|LPM_FF:inst" with the following parameter:
-    Info (12134): Parameter "LPM_AVALUE" = "35"
-    Info (12134): Parameter "LPM_SVALUE" = "35"
-    Info (12134): Parameter "LPM_WIDTH" = "6"
-Info (12128): Elaborating entity "BUSMUX" for hierarchy "MIRUnit:inst1|UC1:inst|BUSMUX:inst2"
-Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|UC1:inst|BUSMUX:inst2"
-Info (12133): Instantiated megafunction "MIRUnit:inst1|UC1:inst|BUSMUX:inst2" with the following parameter:
+Info (12128): Elaborating entity "cmpr_3pd" for hierarchy "MIRUnit:inst1|UC2:inst-uc2|LPM_COMPARE:Paul|cmpr_3pd:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.tdf Line: 280
+Info (12128): Elaborating entity "UC1" for hierarchy "MIRUnit:inst1|UC1:Control1"
+Info (12128): Elaborating entity "BUSMUX" for hierarchy "MIRUnit:inst1|UC1:Control1|BUSMUX:inst2"
+Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|UC1:Control1|BUSMUX:inst2"
+Info (12133): Instantiated megafunction "MIRUnit:inst1|UC1:Control1|BUSMUX:inst2" with the following parameter:
     Info (12134): Parameter "WIDTH" = "6"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "MIRUnit:inst1|UC1:inst|BUSMUX:inst2|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
-Info (12131): Elaborated megafunction instantiation "MIRUnit:inst1|UC1:inst|BUSMUX:inst2|lpm_mux:$00000", which is child of megafunction instantiation "MIRUnit:inst1|UC1:inst|BUSMUX:inst2" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "MIRUnit:inst1|UC1:Control1|BUSMUX:inst2|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
+Info (12131): Elaborated megafunction instantiation "MIRUnit:inst1|UC1:Control1|BUSMUX:inst2|lpm_mux:$00000", which is child of megafunction instantiation "MIRUnit:inst1|UC1:Control1|BUSMUX:inst2" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_crc.tdf
     Info (12023): Found entity 1: mux_crc File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_crc.tdf Line: 22
-Info (12128): Elaborating entity "mux_crc" for hierarchy "MIRUnit:inst1|UC1:inst|BUSMUX:inst2|lpm_mux:$00000|mux_crc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
-Info (12128): Elaborating entity "LPM_FF" for hierarchy "MIRUnit:inst1|UC1:inst|LPM_FF:inst22"
-Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|UC1:inst|LPM_FF:inst22"
-Info (12133): Instantiated megafunction "MIRUnit:inst1|UC1:inst|LPM_FF:inst22" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTH" = "7"
-Info (12128): Elaborating entity "LPM_FF" for hierarchy "MIRUnit:inst1|UC1:inst|LPM_FF:inst3"
-Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|UC1:inst|LPM_FF:inst3"
-Info (12133): Instantiated megafunction "MIRUnit:inst1|UC1:inst|LPM_FF:inst3" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTH" = "7"
+Info (12128): Elaborating entity "mux_crc" for hierarchy "MIRUnit:inst1|UC1:Control1|BUSMUX:inst2|lpm_mux:$00000|mux_crc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
+Info (12128): Elaborating entity "LPM_FF" for hierarchy "MIRUnit:inst1|UC1:Control1|LPM_FF:inst"
+Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|UC1:Control1|LPM_FF:inst"
+Info (12133): Instantiated megafunction "MIRUnit:inst1|UC1:Control1|LPM_FF:inst" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTH" = "1"
+Info (12128): Elaborating entity "BUSMUX" for hierarchy "MIRUnit:inst1|UC1:Control1|BUSMUX:inst9"
+Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|UC1:Control1|BUSMUX:inst9"
+Info (12133): Instantiated megafunction "MIRUnit:inst1|UC1:Control1|BUSMUX:inst9" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "7"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "MIRUnit:inst1|UC1:Control1|BUSMUX:inst9|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
+Info (12131): Elaborated megafunction instantiation "MIRUnit:inst1|UC1:Control1|BUSMUX:inst9|lpm_mux:$00000", which is child of megafunction instantiation "MIRUnit:inst1|UC1:Control1|BUSMUX:inst9" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_drc.tdf
+    Info (12023): Found entity 1: mux_drc File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_drc.tdf Line: 22
+Info (12128): Elaborating entity "mux_drc" for hierarchy "MIRUnit:inst1|UC1:Control1|BUSMUX:inst9|lpm_mux:$00000|mux_drc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
 Info (12128): Elaborating entity "MIR" for hierarchy "MIRUnit:inst1|MIR:MIR3"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "MIRUnit:inst1|MIR:MIR3|LPM_FF:Ezu6"
 Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|MIR:MIR3|LPM_FF:Ezu6"
@@ -3362,13 +3299,21 @@ Info (12128): Elaborating entity "LPM_FF" for hierarchy "MIRUnit:inst1|MIR:MIR3|
 Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|MIR:MIR3|LPM_FF:inst1"
 Info (12133): Instantiated megafunction "MIRUnit:inst1|MIR:MIR3|LPM_FF:inst1" with the following parameter:
     Info (12134): Parameter "LPM_WIDTH" = "5"
+Info (12128): Elaborating entity "LPM_FF" for hierarchy "MIRUnit:inst1|MIR:MIR3|LPM_FF:inst4"
+Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|MIR:MIR3|LPM_FF:inst4"
+Info (12133): Instantiated megafunction "MIRUnit:inst1|MIR:MIR3|LPM_FF:inst4" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTH" = "6"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "MIRUnit:inst1|MIR:MIR3|LPM_FF:inst10"
 Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|MIR:MIR3|LPM_FF:inst10"
 Info (12133): Instantiated megafunction "MIRUnit:inst1|MIR:MIR3|LPM_FF:inst10" with the following parameter:
     Info (12134): Parameter "LPM_WIDTH" = "2"
-Info (12128): Elaborating entity "BUSMUX" for hierarchy "MIRUnit:inst1|BUSMUX:inst7"
-Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|BUSMUX:inst7"
-Info (12133): Instantiated megafunction "MIRUnit:inst1|BUSMUX:inst7" with the following parameter:
+Info (12128): Elaborating entity "LPM_FF" for hierarchy "MIRUnit:inst1|MIR:MIR3|LPM_FF:inst14"
+Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|MIR:MIR3|LPM_FF:inst14"
+Info (12133): Instantiated megafunction "MIRUnit:inst1|MIR:MIR3|LPM_FF:inst14" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTH" = "7"
+Info (12128): Elaborating entity "BUSMUX" for hierarchy "MIRUnit:inst1|BUSMUX:CinMUX"
+Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|BUSMUX:CinMUX"
+Info (12133): Instantiated megafunction "MIRUnit:inst1|BUSMUX:CinMUX" with the following parameter:
     Info (12134): Parameter "WIDTH" = "6"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "MIRUnit:inst1|LPM_FF:inst6"
 Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|LPM_FF:inst6"
@@ -3392,24 +3337,25 @@ Info (12128): Elaborating entity "altsyncram_8301" for hierarchy "LPM_ROM:MicroI
 Info (12128): Elaborating entity "ALUUnit" for hierarchy "ALUUnit:inst13"
 Info (12128): Elaborating entity "carryBlock" for hierarchy "ALUUnit:inst13|carryBlock:inst"
 Info (12128): Elaborating entity "ALU" for hierarchy "ALUUnit:inst13|ALU:inst1"
-Warning (10240): Verilog HDL Always Construct warning at alu.v(12): inferring latch(es) for variable "aluRes", which holds its previous value in one or more paths through the always construct File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
-Info (10041): Inferred latch for "aluRes[0]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
-Info (10041): Inferred latch for "aluRes[1]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
-Info (10041): Inferred latch for "aluRes[2]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
-Info (10041): Inferred latch for "aluRes[3]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
-Info (10041): Inferred latch for "aluRes[4]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
-Info (10041): Inferred latch for "aluRes[5]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
-Info (10041): Inferred latch for "aluRes[6]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
-Info (10041): Inferred latch for "aluRes[7]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
-Info (10041): Inferred latch for "aluRes[8]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
-Info (10041): Inferred latch for "aluRes[9]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
-Info (10041): Inferred latch for "aluRes[10]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
-Info (10041): Inferred latch for "aluRes[11]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
-Info (10041): Inferred latch for "aluRes[12]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
-Info (10041): Inferred latch for "aluRes[13]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
-Info (10041): Inferred latch for "aluRes[14]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
-Info (10041): Inferred latch for "aluRes[15]" at alu.v(12) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 12
+Info (12128): Elaborating entity "LPM_LATCH" for hierarchy "ALUUnit:inst13|LPM_LATCH:LatchA"
+Info (12130): Elaborated megafunction instantiation "ALUUnit:inst13|LPM_LATCH:LatchA"
+Info (12133): Instantiated megafunction "ALUUnit:inst13|LPM_LATCH:LatchA" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTH" = "16"
 Info (12128): Elaborating entity "shifter" for hierarchy "ALUUnit:inst13|shifter:inst2"
+Info (12128): Elaborating entity "operandsUnit" for hierarchy "operandsUnit:inst10"
+Info (12128): Elaborating entity "BUSMUX" for hierarchy "operandsUnit:inst10|BUSMUX:inst8"
+Info (12130): Elaborated megafunction instantiation "operandsUnit:inst10|BUSMUX:inst8"
+Info (12133): Instantiated megafunction "operandsUnit:inst10|BUSMUX:inst8" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "16"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "operandsUnit:inst10|BUSMUX:inst8|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
+Info (12131): Elaborated megafunction instantiation "operandsUnit:inst10|BUSMUX:inst8|lpm_mux:$00000", which is child of megafunction instantiation "operandsUnit:inst10|BUSMUX:inst8" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_tsc.tdf
+    Info (12023): Found entity 1: mux_tsc File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_tsc.tdf Line: 22
+Info (12128): Elaborating entity "mux_tsc" for hierarchy "operandsUnit:inst10|BUSMUX:inst8|lpm_mux:$00000|mux_tsc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
+Info (12128): Elaborating entity "LPM_FF" for hierarchy "operandsUnit:inst10|LPM_FF:OperandRegister"
+Info (12130): Elaborated megafunction instantiation "operandsUnit:inst10|LPM_FF:OperandRegister"
+Info (12133): Instantiated megafunction "operandsUnit:inst10|LPM_FF:OperandRegister" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTH" = "16"
 Info (12128): Elaborating entity "ev20registerBank" for hierarchy "ev20registerBank:inst14"
 Info (12128): Elaborating entity "ev20BLOQUE3" for hierarchy "ev20registerBank:inst14|ev20BLOQUE3:inst"
 Info (12128): Elaborating entity "ev20B3BUSA" for hierarchy "ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst"
@@ -3437,23 +3383,6 @@ Info (12128): Elaborating entity "LPM_BUSTRI" for hierarchy "ev20registerBank:in
 Info (12130): Elaborated megafunction instantiation "ev20registerBank:inst14|LPM_BUSTRI:inst4_LPM_RB"
 Info (12133): Instantiated megafunction "ev20registerBank:inst14|LPM_BUSTRI:inst4_LPM_RB" with the following parameter:
     Info (12134): Parameter "LPM_WIDTH" = "16"
-Info (12128): Elaborating entity "dataUnit" for hierarchy "dataUnit:inst3"
-Info (12128): Elaborating entity "LPM_RAM_IO" for hierarchy "dataUnit:inst3|LPM_RAM_IO:inst3"
-Info (12130): Elaborated megafunction instantiation "dataUnit:inst3|LPM_RAM_IO:inst3"
-Info (12133): Instantiated megafunction "dataUnit:inst3|LPM_RAM_IO:inst3" with the following parameter:
-    Info (12134): Parameter "LPM_ADDRESS_CONTROL" = "REGISTERED"
-    Info (12134): Parameter "LPM_INDATA" = "REGISTERED"
-    Info (12134): Parameter "LPM_OUTDATA" = "REGISTERED"
-    Info (12134): Parameter "LPM_WIDTH" = "16"
-    Info (12134): Parameter "LPM_WIDTHAD" = "10"
-Info (12128): Elaborating entity "altram" for hierarchy "dataUnit:inst3|LPM_RAM_IO:inst3|altram:sram" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ram_io.tdf Line: 63
-Warning (287001): Assertion warning: altram does not support Cyclone IV E device family -- attempting best-case memory conversions, but power-up states and read during write behavior will be different for Cyclone IV E devices File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.tdf Line: 211
-Info (12131): Elaborated megafunction instantiation "dataUnit:inst3|LPM_RAM_IO:inst3|altram:sram", which is child of megafunction instantiation "dataUnit:inst3|LPM_RAM_IO:inst3" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ram_io.tdf Line: 63
-Info (12128): Elaborating entity "altsyncram" for hierarchy "dataUnit:inst3|LPM_RAM_IO:inst3|altram:sram|altsyncram:ram_block" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.tdf Line: 102
-Info (12131): Elaborated megafunction instantiation "dataUnit:inst3|LPM_RAM_IO:inst3|altram:sram|altsyncram:ram_block", which is child of megafunction instantiation "dataUnit:inst3|LPM_RAM_IO:inst3" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.tdf Line: 102
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_lp71.tdf
-    Info (12023): Found entity 1: altsyncram_lp71 File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_lp71.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_lp71" for hierarchy "dataUnit:inst3|LPM_RAM_IO:inst3|altram:sram|altsyncram:ram_block|altsyncram_lp71:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12128): Elaborating entity "LPM_RAM_IO" for hierarchy "LPM_RAM_IO:inst2"
 Info (12130): Elaborated megafunction instantiation "LPM_RAM_IO:inst2"
 Info (12133): Instantiated megafunction "LPM_RAM_IO:inst2" with the following parameter:
@@ -3504,22 +3433,22 @@ Warning (14284): Synthesized away the following node(s):
         Warning (14320): Synthesized away node "lpm_ram_io:inst2|altram:sram|altsyncram:ram_block|altsyncram_qp71:auto_generated|q_a[19]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_qp71.tdf Line: 455
         Warning (14320): Synthesized away node "lpm_ram_io:inst2|altram:sram|altsyncram:ram_block|altsyncram_qp71:auto_generated|q_a[20]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_qp71.tdf Line: 477
         Warning (14320): Synthesized away node "lpm_ram_io:inst2|altram:sram|altsyncram:ram_block|altsyncram_qp71:auto_generated|q_a[21]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_qp71.tdf Line: 499
-        Warning (14320): Synthesized away node "dataUnit:inst3|lpm_ram_io:inst3|altram:sram|altsyncram:ram_block|altsyncram_lp71:auto_generated|q_a[0]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_lp71.tdf Line: 37
-        Warning (14320): Synthesized away node "dataUnit:inst3|lpm_ram_io:inst3|altram:sram|altsyncram:ram_block|altsyncram_lp71:auto_generated|q_a[1]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_lp71.tdf Line: 59
-        Warning (14320): Synthesized away node "dataUnit:inst3|lpm_ram_io:inst3|altram:sram|altsyncram:ram_block|altsyncram_lp71:auto_generated|q_a[2]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_lp71.tdf Line: 81
-        Warning (14320): Synthesized away node "dataUnit:inst3|lpm_ram_io:inst3|altram:sram|altsyncram:ram_block|altsyncram_lp71:auto_generated|q_a[3]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_lp71.tdf Line: 103
-        Warning (14320): Synthesized away node "dataUnit:inst3|lpm_ram_io:inst3|altram:sram|altsyncram:ram_block|altsyncram_lp71:auto_generated|q_a[4]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_lp71.tdf Line: 125
-        Warning (14320): Synthesized away node "dataUnit:inst3|lpm_ram_io:inst3|altram:sram|altsyncram:ram_block|altsyncram_lp71:auto_generated|q_a[5]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_lp71.tdf Line: 147
-        Warning (14320): Synthesized away node "dataUnit:inst3|lpm_ram_io:inst3|altram:sram|altsyncram:ram_block|altsyncram_lp71:auto_generated|q_a[6]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_lp71.tdf Line: 169
-        Warning (14320): Synthesized away node "dataUnit:inst3|lpm_ram_io:inst3|altram:sram|altsyncram:ram_block|altsyncram_lp71:auto_generated|q_a[7]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_lp71.tdf Line: 191
-        Warning (14320): Synthesized away node "dataUnit:inst3|lpm_ram_io:inst3|altram:sram|altsyncram:ram_block|altsyncram_lp71:auto_generated|q_a[8]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_lp71.tdf Line: 213
-        Warning (14320): Synthesized away node "dataUnit:inst3|lpm_ram_io:inst3|altram:sram|altsyncram:ram_block|altsyncram_lp71:auto_generated|q_a[9]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_lp71.tdf Line: 235
-        Warning (14320): Synthesized away node "dataUnit:inst3|lpm_ram_io:inst3|altram:sram|altsyncram:ram_block|altsyncram_lp71:auto_generated|q_a[10]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_lp71.tdf Line: 257
-        Warning (14320): Synthesized away node "dataUnit:inst3|lpm_ram_io:inst3|altram:sram|altsyncram:ram_block|altsyncram_lp71:auto_generated|q_a[11]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_lp71.tdf Line: 279
-        Warning (14320): Synthesized away node "dataUnit:inst3|lpm_ram_io:inst3|altram:sram|altsyncram:ram_block|altsyncram_lp71:auto_generated|q_a[12]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_lp71.tdf Line: 301
-        Warning (14320): Synthesized away node "dataUnit:inst3|lpm_ram_io:inst3|altram:sram|altsyncram:ram_block|altsyncram_lp71:auto_generated|q_a[13]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_lp71.tdf Line: 323
-        Warning (14320): Synthesized away node "dataUnit:inst3|lpm_ram_io:inst3|altram:sram|altsyncram:ram_block|altsyncram_lp71:auto_generated|q_a[14]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_lp71.tdf Line: 345
-        Warning (14320): Synthesized away node "dataUnit:inst3|lpm_ram_io:inst3|altram:sram|altsyncram:ram_block|altsyncram_lp71:auto_generated|q_a[15]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_lp71.tdf Line: 367
+        Warning (14320): Synthesized away node "dataUnit:inst3|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|q_b[0]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_bgq1.tdf Line: 40
+        Warning (14320): Synthesized away node "dataUnit:inst3|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|q_b[1]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_bgq1.tdf Line: 70
+        Warning (14320): Synthesized away node "dataUnit:inst3|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|q_b[2]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_bgq1.tdf Line: 100
+        Warning (14320): Synthesized away node "dataUnit:inst3|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|q_b[3]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_bgq1.tdf Line: 130
+        Warning (14320): Synthesized away node "dataUnit:inst3|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|q_b[4]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_bgq1.tdf Line: 160
+        Warning (14320): Synthesized away node "dataUnit:inst3|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|q_b[5]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_bgq1.tdf Line: 190
+        Warning (14320): Synthesized away node "dataUnit:inst3|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|q_b[6]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_bgq1.tdf Line: 220
+        Warning (14320): Synthesized away node "dataUnit:inst3|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|q_b[7]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_bgq1.tdf Line: 250
+        Warning (14320): Synthesized away node "dataUnit:inst3|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|q_b[8]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_bgq1.tdf Line: 280
+        Warning (14320): Synthesized away node "dataUnit:inst3|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|q_b[9]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_bgq1.tdf Line: 310
+        Warning (14320): Synthesized away node "dataUnit:inst3|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|q_b[10]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_bgq1.tdf Line: 340
+        Warning (14320): Synthesized away node "dataUnit:inst3|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|q_b[11]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_bgq1.tdf Line: 370
+        Warning (14320): Synthesized away node "dataUnit:inst3|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|q_b[12]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_bgq1.tdf Line: 400
+        Warning (14320): Synthesized away node "dataUnit:inst3|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|q_b[13]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_bgq1.tdf Line: 430
+        Warning (14320): Synthesized away node "dataUnit:inst3|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|q_b[14]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_bgq1.tdf Line: 460
+        Warning (14320): Synthesized away node "dataUnit:inst3|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|q_b[15]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_bgq1.tdf Line: 490
         Warning (14320): Synthesized away node "lpm_rom:MicroInstructionsROM|altrom:srom|altsyncram:rom_block|altsyncram_8301:auto_generated|q_a[5]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_8301.tdf Line: 145
         Warning (14320): Synthesized away node "lpm_rom:MicroInstructionsROM|altrom:srom|altsyncram:rom_block|altsyncram_8301:auto_generated|q_a[6]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_8301.tdf Line: 167
         Warning (14320): Synthesized away node "lpm_rom:MicroInstructionsROM|altrom:srom|altsyncram:rom_block|altsyncram_8301:auto_generated|q_a[7]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_8301.tdf Line: 189
@@ -3546,19 +3475,18 @@ Warning (14284): Synthesized away the following node(s):
         Warning (14320): Synthesized away node "lpm_rom:MicroInstructionsROM|altrom:srom|altsyncram:rom_block|altsyncram_8301:auto_generated|q_a[31]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_8301.tdf Line: 717
         Warning (14320): Synthesized away node "lpm_rom:MicroInstructionsROM|altrom:srom|altsyncram:rom_block|altsyncram_8301:auto_generated|q_a[32]" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_8301.tdf Line: 739
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 186 registers lost all their fanouts during netlist optimizations.
+Info (17049): 169 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "CLK"
-Info (21057): Implemented 148 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 52 input pins
-    Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 64 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 92 warnings
-    Info: Peak virtual memory: 4807 megabytes
-    Info: Processing ended: Mon May 25 02:13:20 2020
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:40
+Info (21057): Implemented 64 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 29 input pins
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 3 logic cells
+    Info (21064): Implemented 16 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 80 warnings
+    Info: Peak virtual memory: 4796 megabytes
+    Info: Processing ended: Tue May 26 23:22:17 2020
+    Info: Elapsed time: 00:00:28
+    Info: Total CPU time (on all processors): 00:00:41
 
 

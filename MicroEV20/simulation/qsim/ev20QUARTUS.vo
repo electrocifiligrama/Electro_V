@@ -16,10 +16,10 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
-// DATE "05/25/2020 02:17:07"
+// DATE "05/26/2020 23:25:47"
 
 // 
-// Device: Altera EP4CE6F17C6 Package FBGA256
+// Device: Altera EP4CE6E22C6 Package TQFP144
 // 
 
 // 
@@ -29,24 +29,18 @@
 `timescale 1 ps/ 1 ps
 
 module ev20main (
-	A_OUT,
-	CLK_HOLD_IN,
-	MUXSEL_IN,
-	CLK_IN,
-	B_OP_IN,
-	OPERANDS_IN,
-	XMUX_IN,
-	B_OUT,
-	CLK);
-output 	[15:0] A_OUT;
-input 	CLK_HOLD_IN;
-input 	MUXSEL_IN;
-input 	CLK_IN;
-input 	[15:0] B_OP_IN;
-input 	[15:0] OPERANDS_IN;
-input 	[15:0] XMUX_IN;
-output 	[15:0] B_OUT;
+	FROMW_OUT,
+	CLK,
+	MR,
+	MW_IN,
+	DADD_IN,
+	TOW_IN);
+output 	[15:0] FROMW_OUT;
 input 	CLK;
+input 	MR;
+input 	MW_IN;
+input 	[9:0] DADD_IN;
+input 	[15:0] TOW_IN;
 
 wire gnd;
 wire vcc;
@@ -59,2008 +53,330 @@ assign unknown = 1'bx;
 tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
+wire \FROMW_OUT[15]~output_o ;
+wire \FROMW_OUT[14]~output_o ;
+wire \FROMW_OUT[13]~output_o ;
+wire \FROMW_OUT[12]~output_o ;
+wire \FROMW_OUT[11]~output_o ;
+wire \FROMW_OUT[10]~output_o ;
+wire \FROMW_OUT[9]~output_o ;
+wire \FROMW_OUT[8]~output_o ;
+wire \FROMW_OUT[7]~output_o ;
+wire \FROMW_OUT[6]~output_o ;
+wire \FROMW_OUT[5]~output_o ;
+wire \FROMW_OUT[4]~output_o ;
+wire \FROMW_OUT[3]~output_o ;
+wire \FROMW_OUT[2]~output_o ;
+wire \FROMW_OUT[1]~output_o ;
+wire \FROMW_OUT[0]~output_o ;
+wire \MW_IN~input_o ;
+wire \MR~input_o ;
+wire \inst4|inst13~combout ;
 wire \CLK~input_o ;
-wire \A_OUT[15]~output_o ;
-wire \A_OUT[14]~output_o ;
-wire \A_OUT[13]~output_o ;
-wire \A_OUT[12]~output_o ;
-wire \A_OUT[11]~output_o ;
-wire \A_OUT[10]~output_o ;
-wire \A_OUT[9]~output_o ;
-wire \A_OUT[8]~output_o ;
-wire \A_OUT[7]~output_o ;
-wire \A_OUT[6]~output_o ;
-wire \A_OUT[5]~output_o ;
-wire \A_OUT[4]~output_o ;
-wire \A_OUT[3]~output_o ;
-wire \A_OUT[2]~output_o ;
-wire \A_OUT[1]~output_o ;
-wire \A_OUT[0]~output_o ;
-wire \B_OUT[15]~output_o ;
-wire \B_OUT[14]~output_o ;
-wire \B_OUT[13]~output_o ;
-wire \B_OUT[12]~output_o ;
-wire \B_OUT[11]~output_o ;
-wire \B_OUT[10]~output_o ;
-wire \B_OUT[9]~output_o ;
-wire \B_OUT[8]~output_o ;
-wire \B_OUT[7]~output_o ;
-wire \B_OUT[6]~output_o ;
-wire \B_OUT[5]~output_o ;
-wire \B_OUT[4]~output_o ;
-wire \B_OUT[3]~output_o ;
-wire \B_OUT[2]~output_o ;
-wire \B_OUT[1]~output_o ;
-wire \B_OUT[0]~output_o ;
-wire \XMUX_IN[15]~input_o ;
-wire \CLK_HOLD_IN~input_o ;
-wire \OPERANDS_IN[15]~input_o ;
-wire \MUXSEL_IN~input_o ;
-wire \inst16|inst8|$00000|auto_generated|result_node[15]~0_combout ;
-wire \CLK_IN~input_o ;
-wire \XMUX_IN[14]~input_o ;
-wire \OPERANDS_IN[14]~input_o ;
-wire \inst16|inst8|$00000|auto_generated|result_node[14]~1_combout ;
-wire \XMUX_IN[13]~input_o ;
-wire \OPERANDS_IN[13]~input_o ;
-wire \inst16|inst8|$00000|auto_generated|result_node[13]~2_combout ;
-wire \XMUX_IN[12]~input_o ;
-wire \OPERANDS_IN[12]~input_o ;
-wire \inst16|inst8|$00000|auto_generated|result_node[12]~3_combout ;
-wire \XMUX_IN[11]~input_o ;
-wire \OPERANDS_IN[11]~input_o ;
-wire \inst16|inst8|$00000|auto_generated|result_node[11]~4_combout ;
-wire \XMUX_IN[10]~input_o ;
-wire \OPERANDS_IN[10]~input_o ;
-wire \inst16|inst8|$00000|auto_generated|result_node[10]~5_combout ;
-wire \XMUX_IN[9]~input_o ;
-wire \OPERANDS_IN[9]~input_o ;
-wire \inst16|inst8|$00000|auto_generated|result_node[9]~6_combout ;
-wire \XMUX_IN[8]~input_o ;
-wire \OPERANDS_IN[8]~input_o ;
-wire \inst16|inst8|$00000|auto_generated|result_node[8]~7_combout ;
-wire \XMUX_IN[7]~input_o ;
-wire \OPERANDS_IN[7]~input_o ;
-wire \inst16|inst8|$00000|auto_generated|result_node[7]~8_combout ;
-wire \XMUX_IN[6]~input_o ;
-wire \OPERANDS_IN[6]~input_o ;
-wire \inst16|inst8|$00000|auto_generated|result_node[6]~9_combout ;
-wire \XMUX_IN[5]~input_o ;
-wire \OPERANDS_IN[5]~input_o ;
-wire \inst16|inst8|$00000|auto_generated|result_node[5]~10_combout ;
-wire \XMUX_IN[4]~input_o ;
-wire \OPERANDS_IN[4]~input_o ;
-wire \inst16|inst8|$00000|auto_generated|result_node[4]~11_combout ;
-wire \XMUX_IN[3]~input_o ;
-wire \OPERANDS_IN[3]~input_o ;
-wire \inst16|inst8|$00000|auto_generated|result_node[3]~12_combout ;
-wire \XMUX_IN[2]~input_o ;
-wire \OPERANDS_IN[2]~input_o ;
-wire \inst16|inst8|$00000|auto_generated|result_node[2]~13_combout ;
-wire \XMUX_IN[1]~input_o ;
-wire \OPERANDS_IN[1]~input_o ;
-wire \inst16|inst8|$00000|auto_generated|result_node[1]~14_combout ;
-wire \XMUX_IN[0]~input_o ;
-wire \OPERANDS_IN[0]~input_o ;
-wire \inst16|inst8|$00000|auto_generated|result_node[0]~15_combout ;
-wire \B_OP_IN[15]~input_o ;
-wire \B_OP_IN[14]~input_o ;
-wire \B_OP_IN[13]~input_o ;
-wire \B_OP_IN[12]~input_o ;
-wire \B_OP_IN[11]~input_o ;
-wire \B_OP_IN[10]~input_o ;
-wire \B_OP_IN[9]~input_o ;
-wire \B_OP_IN[8]~input_o ;
-wire \B_OP_IN[7]~input_o ;
-wire \B_OP_IN[6]~input_o ;
-wire \B_OP_IN[5]~input_o ;
-wire \B_OP_IN[4]~input_o ;
-wire \B_OP_IN[3]~input_o ;
-wire \B_OP_IN[2]~input_o ;
-wire \B_OP_IN[1]~input_o ;
-wire \B_OP_IN[0]~input_o ;
-wire [15:0] \inst16|OperandRegister|dffs ;
-wire [15:0] \inst16|LatchA|latches ;
-wire [15:0] \inst16|LatchB|latches ;
+wire \inst4|inst1|ram_block|auto_generated|rden_b_store~0_combout ;
+wire \inst4|inst1|ram_block|auto_generated|rden_b_store~q ;
+wire \inst4|inst1|ram_block|auto_generated|ram_block1a0~0_combout ;
+wire \TOW_IN[15]~input_o ;
+wire \DADD_IN[0]~input_o ;
+wire \DADD_IN[1]~input_o ;
+wire \DADD_IN[2]~input_o ;
+wire \DADD_IN[3]~input_o ;
+wire \DADD_IN[4]~input_o ;
+wire \DADD_IN[5]~input_o ;
+wire \DADD_IN[6]~input_o ;
+wire \DADD_IN[7]~input_o ;
+wire \DADD_IN[8]~input_o ;
+wire \DADD_IN[9]~input_o ;
+wire \TOW_IN[14]~input_o ;
+wire \TOW_IN[13]~input_o ;
+wire \TOW_IN[12]~input_o ;
+wire \TOW_IN[11]~input_o ;
+wire \TOW_IN[10]~input_o ;
+wire \TOW_IN[9]~input_o ;
+wire \TOW_IN[8]~input_o ;
+wire \TOW_IN[7]~input_o ;
+wire \TOW_IN[6]~input_o ;
+wire \TOW_IN[5]~input_o ;
+wire \TOW_IN[4]~input_o ;
+wire \TOW_IN[3]~input_o ;
+wire \TOW_IN[2]~input_o ;
+wire \TOW_IN[1]~input_o ;
+wire \TOW_IN[0]~input_o ;
+wire [15:0] \inst4|inst1|ram_block|auto_generated|q_b ;
 
+wire [0:0] \inst4|inst1|ram_block|auto_generated|ram_block1a15_PORTBDATAOUT_bus ;
+wire [0:0] \inst4|inst1|ram_block|auto_generated|ram_block1a14_PORTBDATAOUT_bus ;
+wire [0:0] \inst4|inst1|ram_block|auto_generated|ram_block1a13_PORTBDATAOUT_bus ;
+wire [0:0] \inst4|inst1|ram_block|auto_generated|ram_block1a12_PORTBDATAOUT_bus ;
+wire [0:0] \inst4|inst1|ram_block|auto_generated|ram_block1a11_PORTBDATAOUT_bus ;
+wire [0:0] \inst4|inst1|ram_block|auto_generated|ram_block1a10_PORTBDATAOUT_bus ;
+wire [0:0] \inst4|inst1|ram_block|auto_generated|ram_block1a9_PORTBDATAOUT_bus ;
+wire [0:0] \inst4|inst1|ram_block|auto_generated|ram_block1a8_PORTBDATAOUT_bus ;
+wire [0:0] \inst4|inst1|ram_block|auto_generated|ram_block1a7_PORTBDATAOUT_bus ;
+wire [0:0] \inst4|inst1|ram_block|auto_generated|ram_block1a6_PORTBDATAOUT_bus ;
+wire [0:0] \inst4|inst1|ram_block|auto_generated|ram_block1a5_PORTBDATAOUT_bus ;
+wire [0:0] \inst4|inst1|ram_block|auto_generated|ram_block1a4_PORTBDATAOUT_bus ;
+wire [0:0] \inst4|inst1|ram_block|auto_generated|ram_block1a3_PORTBDATAOUT_bus ;
+wire [0:0] \inst4|inst1|ram_block|auto_generated|ram_block1a2_PORTBDATAOUT_bus ;
+wire [0:0] \inst4|inst1|ram_block|auto_generated|ram_block1a1_PORTBDATAOUT_bus ;
+wire [0:0] \inst4|inst1|ram_block|auto_generated|ram_block1a0_PORTBDATAOUT_bus ;
 
-cycloneive_io_obuf \A_OUT[15]~output (
-	.i(\inst16|LatchA|latches [15]),
+assign \inst4|inst1|ram_block|auto_generated|q_b [15] = \inst4|inst1|ram_block|auto_generated|ram_block1a15_PORTBDATAOUT_bus [0];
+
+assign \inst4|inst1|ram_block|auto_generated|q_b [14] = \inst4|inst1|ram_block|auto_generated|ram_block1a14_PORTBDATAOUT_bus [0];
+
+assign \inst4|inst1|ram_block|auto_generated|q_b [13] = \inst4|inst1|ram_block|auto_generated|ram_block1a13_PORTBDATAOUT_bus [0];
+
+assign \inst4|inst1|ram_block|auto_generated|q_b [12] = \inst4|inst1|ram_block|auto_generated|ram_block1a12_PORTBDATAOUT_bus [0];
+
+assign \inst4|inst1|ram_block|auto_generated|q_b [11] = \inst4|inst1|ram_block|auto_generated|ram_block1a11_PORTBDATAOUT_bus [0];
+
+assign \inst4|inst1|ram_block|auto_generated|q_b [10] = \inst4|inst1|ram_block|auto_generated|ram_block1a10_PORTBDATAOUT_bus [0];
+
+assign \inst4|inst1|ram_block|auto_generated|q_b [9] = \inst4|inst1|ram_block|auto_generated|ram_block1a9_PORTBDATAOUT_bus [0];
+
+assign \inst4|inst1|ram_block|auto_generated|q_b [8] = \inst4|inst1|ram_block|auto_generated|ram_block1a8_PORTBDATAOUT_bus [0];
+
+assign \inst4|inst1|ram_block|auto_generated|q_b [7] = \inst4|inst1|ram_block|auto_generated|ram_block1a7_PORTBDATAOUT_bus [0];
+
+assign \inst4|inst1|ram_block|auto_generated|q_b [6] = \inst4|inst1|ram_block|auto_generated|ram_block1a6_PORTBDATAOUT_bus [0];
+
+assign \inst4|inst1|ram_block|auto_generated|q_b [5] = \inst4|inst1|ram_block|auto_generated|ram_block1a5_PORTBDATAOUT_bus [0];
+
+assign \inst4|inst1|ram_block|auto_generated|q_b [4] = \inst4|inst1|ram_block|auto_generated|ram_block1a4_PORTBDATAOUT_bus [0];
+
+assign \inst4|inst1|ram_block|auto_generated|q_b [3] = \inst4|inst1|ram_block|auto_generated|ram_block1a3_PORTBDATAOUT_bus [0];
+
+assign \inst4|inst1|ram_block|auto_generated|q_b [2] = \inst4|inst1|ram_block|auto_generated|ram_block1a2_PORTBDATAOUT_bus [0];
+
+assign \inst4|inst1|ram_block|auto_generated|q_b [1] = \inst4|inst1|ram_block|auto_generated|ram_block1a1_PORTBDATAOUT_bus [0];
+
+assign \inst4|inst1|ram_block|auto_generated|q_b [0] = \inst4|inst1|ram_block|auto_generated|ram_block1a0_PORTBDATAOUT_bus [0];
+
+cycloneive_io_obuf \FROMW_OUT[15]~output (
+	.i(\inst4|inst1|ram_block|auto_generated|q_b [15]),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\A_OUT[15]~output_o ),
+	.o(\FROMW_OUT[15]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \A_OUT[15]~output .bus_hold = "false";
-defparam \A_OUT[15]~output .open_drain_output = "false";
+defparam \FROMW_OUT[15]~output .bus_hold = "false";
+defparam \FROMW_OUT[15]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \A_OUT[14]~output (
-	.i(\inst16|LatchA|latches [14]),
+cycloneive_io_obuf \FROMW_OUT[14]~output (
+	.i(\inst4|inst1|ram_block|auto_generated|q_b [14]),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\A_OUT[14]~output_o ),
+	.o(\FROMW_OUT[14]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \A_OUT[14]~output .bus_hold = "false";
-defparam \A_OUT[14]~output .open_drain_output = "false";
+defparam \FROMW_OUT[14]~output .bus_hold = "false";
+defparam \FROMW_OUT[14]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \A_OUT[13]~output (
-	.i(\inst16|LatchA|latches [13]),
+cycloneive_io_obuf \FROMW_OUT[13]~output (
+	.i(\inst4|inst1|ram_block|auto_generated|q_b [13]),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\A_OUT[13]~output_o ),
+	.o(\FROMW_OUT[13]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \A_OUT[13]~output .bus_hold = "false";
-defparam \A_OUT[13]~output .open_drain_output = "false";
+defparam \FROMW_OUT[13]~output .bus_hold = "false";
+defparam \FROMW_OUT[13]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \A_OUT[12]~output (
-	.i(\inst16|LatchA|latches [12]),
+cycloneive_io_obuf \FROMW_OUT[12]~output (
+	.i(\inst4|inst1|ram_block|auto_generated|q_b [12]),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\A_OUT[12]~output_o ),
+	.o(\FROMW_OUT[12]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \A_OUT[12]~output .bus_hold = "false";
-defparam \A_OUT[12]~output .open_drain_output = "false";
+defparam \FROMW_OUT[12]~output .bus_hold = "false";
+defparam \FROMW_OUT[12]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \A_OUT[11]~output (
-	.i(\inst16|LatchA|latches [11]),
+cycloneive_io_obuf \FROMW_OUT[11]~output (
+	.i(\inst4|inst1|ram_block|auto_generated|q_b [11]),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\A_OUT[11]~output_o ),
+	.o(\FROMW_OUT[11]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \A_OUT[11]~output .bus_hold = "false";
-defparam \A_OUT[11]~output .open_drain_output = "false";
+defparam \FROMW_OUT[11]~output .bus_hold = "false";
+defparam \FROMW_OUT[11]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \A_OUT[10]~output (
-	.i(\inst16|LatchA|latches [10]),
+cycloneive_io_obuf \FROMW_OUT[10]~output (
+	.i(\inst4|inst1|ram_block|auto_generated|q_b [10]),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\A_OUT[10]~output_o ),
+	.o(\FROMW_OUT[10]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \A_OUT[10]~output .bus_hold = "false";
-defparam \A_OUT[10]~output .open_drain_output = "false";
+defparam \FROMW_OUT[10]~output .bus_hold = "false";
+defparam \FROMW_OUT[10]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \A_OUT[9]~output (
-	.i(\inst16|LatchA|latches [9]),
+cycloneive_io_obuf \FROMW_OUT[9]~output (
+	.i(\inst4|inst1|ram_block|auto_generated|q_b [9]),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\A_OUT[9]~output_o ),
+	.o(\FROMW_OUT[9]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \A_OUT[9]~output .bus_hold = "false";
-defparam \A_OUT[9]~output .open_drain_output = "false";
+defparam \FROMW_OUT[9]~output .bus_hold = "false";
+defparam \FROMW_OUT[9]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \A_OUT[8]~output (
-	.i(\inst16|LatchA|latches [8]),
+cycloneive_io_obuf \FROMW_OUT[8]~output (
+	.i(\inst4|inst1|ram_block|auto_generated|q_b [8]),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\A_OUT[8]~output_o ),
+	.o(\FROMW_OUT[8]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \A_OUT[8]~output .bus_hold = "false";
-defparam \A_OUT[8]~output .open_drain_output = "false";
+defparam \FROMW_OUT[8]~output .bus_hold = "false";
+defparam \FROMW_OUT[8]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \A_OUT[7]~output (
-	.i(\inst16|LatchA|latches [7]),
+cycloneive_io_obuf \FROMW_OUT[7]~output (
+	.i(\inst4|inst1|ram_block|auto_generated|q_b [7]),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\A_OUT[7]~output_o ),
+	.o(\FROMW_OUT[7]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \A_OUT[7]~output .bus_hold = "false";
-defparam \A_OUT[7]~output .open_drain_output = "false";
+defparam \FROMW_OUT[7]~output .bus_hold = "false";
+defparam \FROMW_OUT[7]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \A_OUT[6]~output (
-	.i(\inst16|LatchA|latches [6]),
+cycloneive_io_obuf \FROMW_OUT[6]~output (
+	.i(\inst4|inst1|ram_block|auto_generated|q_b [6]),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\A_OUT[6]~output_o ),
+	.o(\FROMW_OUT[6]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \A_OUT[6]~output .bus_hold = "false";
-defparam \A_OUT[6]~output .open_drain_output = "false";
+defparam \FROMW_OUT[6]~output .bus_hold = "false";
+defparam \FROMW_OUT[6]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \A_OUT[5]~output (
-	.i(\inst16|LatchA|latches [5]),
+cycloneive_io_obuf \FROMW_OUT[5]~output (
+	.i(\inst4|inst1|ram_block|auto_generated|q_b [5]),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\A_OUT[5]~output_o ),
+	.o(\FROMW_OUT[5]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \A_OUT[5]~output .bus_hold = "false";
-defparam \A_OUT[5]~output .open_drain_output = "false";
+defparam \FROMW_OUT[5]~output .bus_hold = "false";
+defparam \FROMW_OUT[5]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \A_OUT[4]~output (
-	.i(\inst16|LatchA|latches [4]),
+cycloneive_io_obuf \FROMW_OUT[4]~output (
+	.i(\inst4|inst1|ram_block|auto_generated|q_b [4]),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\A_OUT[4]~output_o ),
+	.o(\FROMW_OUT[4]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \A_OUT[4]~output .bus_hold = "false";
-defparam \A_OUT[4]~output .open_drain_output = "false";
+defparam \FROMW_OUT[4]~output .bus_hold = "false";
+defparam \FROMW_OUT[4]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \A_OUT[3]~output (
-	.i(\inst16|LatchA|latches [3]),
+cycloneive_io_obuf \FROMW_OUT[3]~output (
+	.i(\inst4|inst1|ram_block|auto_generated|q_b [3]),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\A_OUT[3]~output_o ),
+	.o(\FROMW_OUT[3]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \A_OUT[3]~output .bus_hold = "false";
-defparam \A_OUT[3]~output .open_drain_output = "false";
+defparam \FROMW_OUT[3]~output .bus_hold = "false";
+defparam \FROMW_OUT[3]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \A_OUT[2]~output (
-	.i(\inst16|LatchA|latches [2]),
+cycloneive_io_obuf \FROMW_OUT[2]~output (
+	.i(\inst4|inst1|ram_block|auto_generated|q_b [2]),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\A_OUT[2]~output_o ),
+	.o(\FROMW_OUT[2]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \A_OUT[2]~output .bus_hold = "false";
-defparam \A_OUT[2]~output .open_drain_output = "false";
+defparam \FROMW_OUT[2]~output .bus_hold = "false";
+defparam \FROMW_OUT[2]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \A_OUT[1]~output (
-	.i(\inst16|LatchA|latches [1]),
+cycloneive_io_obuf \FROMW_OUT[1]~output (
+	.i(\inst4|inst1|ram_block|auto_generated|q_b [1]),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\A_OUT[1]~output_o ),
+	.o(\FROMW_OUT[1]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \A_OUT[1]~output .bus_hold = "false";
-defparam \A_OUT[1]~output .open_drain_output = "false";
+defparam \FROMW_OUT[1]~output .bus_hold = "false";
+defparam \FROMW_OUT[1]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \A_OUT[0]~output (
-	.i(\inst16|LatchA|latches [0]),
+cycloneive_io_obuf \FROMW_OUT[0]~output (
+	.i(\inst4|inst1|ram_block|auto_generated|q_b [0]),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\A_OUT[0]~output_o ),
+	.o(\FROMW_OUT[0]~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \A_OUT[0]~output .bus_hold = "false";
-defparam \A_OUT[0]~output .open_drain_output = "false";
+defparam \FROMW_OUT[0]~output .bus_hold = "false";
+defparam \FROMW_OUT[0]~output .open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_io_obuf \B_OUT[15]~output (
-	.i(\inst16|LatchB|latches [15]),
-	.oe(vcc),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.devoe(devoe),
-	.o(\B_OUT[15]~output_o ),
-	.obar());
-// synopsys translate_off
-defparam \B_OUT[15]~output .bus_hold = "false";
-defparam \B_OUT[15]~output .open_drain_output = "false";
-// synopsys translate_on
-
-cycloneive_io_obuf \B_OUT[14]~output (
-	.i(\inst16|LatchB|latches [14]),
-	.oe(vcc),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.devoe(devoe),
-	.o(\B_OUT[14]~output_o ),
-	.obar());
-// synopsys translate_off
-defparam \B_OUT[14]~output .bus_hold = "false";
-defparam \B_OUT[14]~output .open_drain_output = "false";
-// synopsys translate_on
-
-cycloneive_io_obuf \B_OUT[13]~output (
-	.i(\inst16|LatchB|latches [13]),
-	.oe(vcc),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.devoe(devoe),
-	.o(\B_OUT[13]~output_o ),
-	.obar());
-// synopsys translate_off
-defparam \B_OUT[13]~output .bus_hold = "false";
-defparam \B_OUT[13]~output .open_drain_output = "false";
-// synopsys translate_on
-
-cycloneive_io_obuf \B_OUT[12]~output (
-	.i(\inst16|LatchB|latches [12]),
-	.oe(vcc),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.devoe(devoe),
-	.o(\B_OUT[12]~output_o ),
-	.obar());
-// synopsys translate_off
-defparam \B_OUT[12]~output .bus_hold = "false";
-defparam \B_OUT[12]~output .open_drain_output = "false";
-// synopsys translate_on
-
-cycloneive_io_obuf \B_OUT[11]~output (
-	.i(\inst16|LatchB|latches [11]),
-	.oe(vcc),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.devoe(devoe),
-	.o(\B_OUT[11]~output_o ),
-	.obar());
-// synopsys translate_off
-defparam \B_OUT[11]~output .bus_hold = "false";
-defparam \B_OUT[11]~output .open_drain_output = "false";
-// synopsys translate_on
-
-cycloneive_io_obuf \B_OUT[10]~output (
-	.i(\inst16|LatchB|latches [10]),
-	.oe(vcc),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.devoe(devoe),
-	.o(\B_OUT[10]~output_o ),
-	.obar());
-// synopsys translate_off
-defparam \B_OUT[10]~output .bus_hold = "false";
-defparam \B_OUT[10]~output .open_drain_output = "false";
-// synopsys translate_on
-
-cycloneive_io_obuf \B_OUT[9]~output (
-	.i(\inst16|LatchB|latches [9]),
-	.oe(vcc),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.devoe(devoe),
-	.o(\B_OUT[9]~output_o ),
-	.obar());
-// synopsys translate_off
-defparam \B_OUT[9]~output .bus_hold = "false";
-defparam \B_OUT[9]~output .open_drain_output = "false";
-// synopsys translate_on
-
-cycloneive_io_obuf \B_OUT[8]~output (
-	.i(\inst16|LatchB|latches [8]),
-	.oe(vcc),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.devoe(devoe),
-	.o(\B_OUT[8]~output_o ),
-	.obar());
-// synopsys translate_off
-defparam \B_OUT[8]~output .bus_hold = "false";
-defparam \B_OUT[8]~output .open_drain_output = "false";
-// synopsys translate_on
-
-cycloneive_io_obuf \B_OUT[7]~output (
-	.i(\inst16|LatchB|latches [7]),
-	.oe(vcc),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.devoe(devoe),
-	.o(\B_OUT[7]~output_o ),
-	.obar());
-// synopsys translate_off
-defparam \B_OUT[7]~output .bus_hold = "false";
-defparam \B_OUT[7]~output .open_drain_output = "false";
-// synopsys translate_on
-
-cycloneive_io_obuf \B_OUT[6]~output (
-	.i(\inst16|LatchB|latches [6]),
-	.oe(vcc),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.devoe(devoe),
-	.o(\B_OUT[6]~output_o ),
-	.obar());
-// synopsys translate_off
-defparam \B_OUT[6]~output .bus_hold = "false";
-defparam \B_OUT[6]~output .open_drain_output = "false";
-// synopsys translate_on
-
-cycloneive_io_obuf \B_OUT[5]~output (
-	.i(\inst16|LatchB|latches [5]),
-	.oe(vcc),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.devoe(devoe),
-	.o(\B_OUT[5]~output_o ),
-	.obar());
-// synopsys translate_off
-defparam \B_OUT[5]~output .bus_hold = "false";
-defparam \B_OUT[5]~output .open_drain_output = "false";
-// synopsys translate_on
-
-cycloneive_io_obuf \B_OUT[4]~output (
-	.i(\inst16|LatchB|latches [4]),
-	.oe(vcc),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.devoe(devoe),
-	.o(\B_OUT[4]~output_o ),
-	.obar());
-// synopsys translate_off
-defparam \B_OUT[4]~output .bus_hold = "false";
-defparam \B_OUT[4]~output .open_drain_output = "false";
-// synopsys translate_on
-
-cycloneive_io_obuf \B_OUT[3]~output (
-	.i(\inst16|LatchB|latches [3]),
-	.oe(vcc),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.devoe(devoe),
-	.o(\B_OUT[3]~output_o ),
-	.obar());
-// synopsys translate_off
-defparam \B_OUT[3]~output .bus_hold = "false";
-defparam \B_OUT[3]~output .open_drain_output = "false";
-// synopsys translate_on
-
-cycloneive_io_obuf \B_OUT[2]~output (
-	.i(\inst16|LatchB|latches [2]),
-	.oe(vcc),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.devoe(devoe),
-	.o(\B_OUT[2]~output_o ),
-	.obar());
-// synopsys translate_off
-defparam \B_OUT[2]~output .bus_hold = "false";
-defparam \B_OUT[2]~output .open_drain_output = "false";
-// synopsys translate_on
-
-cycloneive_io_obuf \B_OUT[1]~output (
-	.i(\inst16|LatchB|latches [1]),
-	.oe(vcc),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.devoe(devoe),
-	.o(\B_OUT[1]~output_o ),
-	.obar());
-// synopsys translate_off
-defparam \B_OUT[1]~output .bus_hold = "false";
-defparam \B_OUT[1]~output .open_drain_output = "false";
-// synopsys translate_on
-
-cycloneive_io_obuf \B_OUT[0]~output (
-	.i(\inst16|LatchB|latches [0]),
-	.oe(vcc),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.devoe(devoe),
-	.o(\B_OUT[0]~output_o ),
-	.obar());
-// synopsys translate_off
-defparam \B_OUT[0]~output .bus_hold = "false";
-defparam \B_OUT[0]~output .open_drain_output = "false";
-// synopsys translate_on
-
-cycloneive_io_ibuf \XMUX_IN[15]~input (
-	.i(XMUX_IN[15]),
+cycloneive_io_ibuf \MW_IN~input (
+	.i(MW_IN),
 	.ibar(gnd),
-	.o(\XMUX_IN[15]~input_o ));
+	.o(\MW_IN~input_o ));
 // synopsys translate_off
-defparam \XMUX_IN[15]~input .bus_hold = "false";
-defparam \XMUX_IN[15]~input .simulate_z_as = "z";
+defparam \MW_IN~input .bus_hold = "false";
+defparam \MW_IN~input .simulate_z_as = "z";
 // synopsys translate_on
 
-cycloneive_io_ibuf \CLK_HOLD_IN~input (
-	.i(CLK_HOLD_IN),
+cycloneive_io_ibuf \MR~input (
+	.i(MR),
 	.ibar(gnd),
-	.o(\CLK_HOLD_IN~input_o ));
+	.o(\MR~input_o ));
 // synopsys translate_off
-defparam \CLK_HOLD_IN~input .bus_hold = "false";
-defparam \CLK_HOLD_IN~input .simulate_z_as = "z";
+defparam \MR~input .bus_hold = "false";
+defparam \MR~input .simulate_z_as = "z";
 // synopsys translate_on
 
-cycloneive_io_ibuf \OPERANDS_IN[15]~input (
-	.i(OPERANDS_IN[15]),
-	.ibar(gnd),
-	.o(\OPERANDS_IN[15]~input_o ));
-// synopsys translate_off
-defparam \OPERANDS_IN[15]~input .bus_hold = "false";
-defparam \OPERANDS_IN[15]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-dffeas \inst16|OperandRegister|dffs[15] (
-	.clk(\CLK_HOLD_IN~input_o ),
-	.d(\OPERANDS_IN[15]~input_o ),
-	.asdata(vcc),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\inst16|OperandRegister|dffs [15]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \inst16|OperandRegister|dffs[15] .is_wysiwyg = "true";
-defparam \inst16|OperandRegister|dffs[15] .power_up = "low";
-// synopsys translate_on
-
-cycloneive_io_ibuf \MUXSEL_IN~input (
-	.i(MUXSEL_IN),
-	.ibar(gnd),
-	.o(\MUXSEL_IN~input_o ));
-// synopsys translate_off
-defparam \MUXSEL_IN~input .bus_hold = "false";
-defparam \MUXSEL_IN~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|inst8|$00000|auto_generated|result_node[15]~0 (
+cycloneive_lcell_comb \inst4|inst13 (
 // Equation(s):
-// \inst16|inst8|$00000|auto_generated|result_node[15]~0_combout  = (\MUXSEL_IN~input_o  & (\XMUX_IN[15]~input_o )) # (!\MUXSEL_IN~input_o  & ((\inst16|OperandRegister|dffs [15])))
+// \inst4|inst13~combout  = (\MW_IN~input_o  & !\MR~input_o )
 
-	.dataa(\XMUX_IN[15]~input_o ),
-	.datab(\inst16|OperandRegister|dffs [15]),
+	.dataa(\MW_IN~input_o ),
+	.datab(gnd),
 	.datac(gnd),
-	.datad(\MUXSEL_IN~input_o ),
+	.datad(\MR~input_o ),
 	.cin(gnd),
-	.combout(\inst16|inst8|$00000|auto_generated|result_node[15]~0_combout ),
+	.combout(\inst4|inst13~combout ),
 	.cout());
 // synopsys translate_off
-defparam \inst16|inst8|$00000|auto_generated|result_node[15]~0 .lut_mask = 16'hAACC;
-defparam \inst16|inst8|$00000|auto_generated|result_node[15]~0 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \CLK_IN~input (
-	.i(CLK_IN),
-	.ibar(gnd),
-	.o(\CLK_IN~input_o ));
-// synopsys translate_off
-defparam \CLK_IN~input .bus_hold = "false";
-defparam \CLK_IN~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchA|latches[15] (
-// Equation(s):
-// \inst16|LatchA|latches [15] = (\CLK_IN~input_o  & (\inst16|inst8|$00000|auto_generated|result_node[15]~0_combout )) # (!\CLK_IN~input_o  & ((\inst16|LatchA|latches [15])))
-
-	.dataa(gnd),
-	.datab(\inst16|inst8|$00000|auto_generated|result_node[15]~0_combout ),
-	.datac(\inst16|LatchA|latches [15]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchA|latches [15]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchA|latches[15] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchA|latches[15] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \XMUX_IN[14]~input (
-	.i(XMUX_IN[14]),
-	.ibar(gnd),
-	.o(\XMUX_IN[14]~input_o ));
-// synopsys translate_off
-defparam \XMUX_IN[14]~input .bus_hold = "false";
-defparam \XMUX_IN[14]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_io_ibuf \OPERANDS_IN[14]~input (
-	.i(OPERANDS_IN[14]),
-	.ibar(gnd),
-	.o(\OPERANDS_IN[14]~input_o ));
-// synopsys translate_off
-defparam \OPERANDS_IN[14]~input .bus_hold = "false";
-defparam \OPERANDS_IN[14]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-dffeas \inst16|OperandRegister|dffs[14] (
-	.clk(\CLK_HOLD_IN~input_o ),
-	.d(\OPERANDS_IN[14]~input_o ),
-	.asdata(vcc),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\inst16|OperandRegister|dffs [14]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \inst16|OperandRegister|dffs[14] .is_wysiwyg = "true";
-defparam \inst16|OperandRegister|dffs[14] .power_up = "low";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|inst8|$00000|auto_generated|result_node[14]~1 (
-// Equation(s):
-// \inst16|inst8|$00000|auto_generated|result_node[14]~1_combout  = (\MUXSEL_IN~input_o  & (\XMUX_IN[14]~input_o )) # (!\MUXSEL_IN~input_o  & ((\inst16|OperandRegister|dffs [14])))
-
-	.dataa(\XMUX_IN[14]~input_o ),
-	.datab(\inst16|OperandRegister|dffs [14]),
-	.datac(gnd),
-	.datad(\MUXSEL_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|inst8|$00000|auto_generated|result_node[14]~1_combout ),
-	.cout());
-// synopsys translate_off
-defparam \inst16|inst8|$00000|auto_generated|result_node[14]~1 .lut_mask = 16'hAACC;
-defparam \inst16|inst8|$00000|auto_generated|result_node[14]~1 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchA|latches[14] (
-// Equation(s):
-// \inst16|LatchA|latches [14] = (\CLK_IN~input_o  & (\inst16|inst8|$00000|auto_generated|result_node[14]~1_combout )) # (!\CLK_IN~input_o  & ((\inst16|LatchA|latches [14])))
-
-	.dataa(gnd),
-	.datab(\inst16|inst8|$00000|auto_generated|result_node[14]~1_combout ),
-	.datac(\inst16|LatchA|latches [14]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchA|latches [14]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchA|latches[14] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchA|latches[14] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \XMUX_IN[13]~input (
-	.i(XMUX_IN[13]),
-	.ibar(gnd),
-	.o(\XMUX_IN[13]~input_o ));
-// synopsys translate_off
-defparam \XMUX_IN[13]~input .bus_hold = "false";
-defparam \XMUX_IN[13]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_io_ibuf \OPERANDS_IN[13]~input (
-	.i(OPERANDS_IN[13]),
-	.ibar(gnd),
-	.o(\OPERANDS_IN[13]~input_o ));
-// synopsys translate_off
-defparam \OPERANDS_IN[13]~input .bus_hold = "false";
-defparam \OPERANDS_IN[13]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-dffeas \inst16|OperandRegister|dffs[13] (
-	.clk(\CLK_HOLD_IN~input_o ),
-	.d(\OPERANDS_IN[13]~input_o ),
-	.asdata(vcc),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\inst16|OperandRegister|dffs [13]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \inst16|OperandRegister|dffs[13] .is_wysiwyg = "true";
-defparam \inst16|OperandRegister|dffs[13] .power_up = "low";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|inst8|$00000|auto_generated|result_node[13]~2 (
-// Equation(s):
-// \inst16|inst8|$00000|auto_generated|result_node[13]~2_combout  = (\MUXSEL_IN~input_o  & (\XMUX_IN[13]~input_o )) # (!\MUXSEL_IN~input_o  & ((\inst16|OperandRegister|dffs [13])))
-
-	.dataa(\XMUX_IN[13]~input_o ),
-	.datab(\inst16|OperandRegister|dffs [13]),
-	.datac(gnd),
-	.datad(\MUXSEL_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|inst8|$00000|auto_generated|result_node[13]~2_combout ),
-	.cout());
-// synopsys translate_off
-defparam \inst16|inst8|$00000|auto_generated|result_node[13]~2 .lut_mask = 16'hAACC;
-defparam \inst16|inst8|$00000|auto_generated|result_node[13]~2 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchA|latches[13] (
-// Equation(s):
-// \inst16|LatchA|latches [13] = (\CLK_IN~input_o  & (\inst16|inst8|$00000|auto_generated|result_node[13]~2_combout )) # (!\CLK_IN~input_o  & ((\inst16|LatchA|latches [13])))
-
-	.dataa(gnd),
-	.datab(\inst16|inst8|$00000|auto_generated|result_node[13]~2_combout ),
-	.datac(\inst16|LatchA|latches [13]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchA|latches [13]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchA|latches[13] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchA|latches[13] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \XMUX_IN[12]~input (
-	.i(XMUX_IN[12]),
-	.ibar(gnd),
-	.o(\XMUX_IN[12]~input_o ));
-// synopsys translate_off
-defparam \XMUX_IN[12]~input .bus_hold = "false";
-defparam \XMUX_IN[12]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_io_ibuf \OPERANDS_IN[12]~input (
-	.i(OPERANDS_IN[12]),
-	.ibar(gnd),
-	.o(\OPERANDS_IN[12]~input_o ));
-// synopsys translate_off
-defparam \OPERANDS_IN[12]~input .bus_hold = "false";
-defparam \OPERANDS_IN[12]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-dffeas \inst16|OperandRegister|dffs[12] (
-	.clk(\CLK_HOLD_IN~input_o ),
-	.d(\OPERANDS_IN[12]~input_o ),
-	.asdata(vcc),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\inst16|OperandRegister|dffs [12]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \inst16|OperandRegister|dffs[12] .is_wysiwyg = "true";
-defparam \inst16|OperandRegister|dffs[12] .power_up = "low";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|inst8|$00000|auto_generated|result_node[12]~3 (
-// Equation(s):
-// \inst16|inst8|$00000|auto_generated|result_node[12]~3_combout  = (\MUXSEL_IN~input_o  & (\XMUX_IN[12]~input_o )) # (!\MUXSEL_IN~input_o  & ((\inst16|OperandRegister|dffs [12])))
-
-	.dataa(\XMUX_IN[12]~input_o ),
-	.datab(\inst16|OperandRegister|dffs [12]),
-	.datac(gnd),
-	.datad(\MUXSEL_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|inst8|$00000|auto_generated|result_node[12]~3_combout ),
-	.cout());
-// synopsys translate_off
-defparam \inst16|inst8|$00000|auto_generated|result_node[12]~3 .lut_mask = 16'hAACC;
-defparam \inst16|inst8|$00000|auto_generated|result_node[12]~3 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchA|latches[12] (
-// Equation(s):
-// \inst16|LatchA|latches [12] = (\CLK_IN~input_o  & (\inst16|inst8|$00000|auto_generated|result_node[12]~3_combout )) # (!\CLK_IN~input_o  & ((\inst16|LatchA|latches [12])))
-
-	.dataa(gnd),
-	.datab(\inst16|inst8|$00000|auto_generated|result_node[12]~3_combout ),
-	.datac(\inst16|LatchA|latches [12]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchA|latches [12]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchA|latches[12] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchA|latches[12] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \XMUX_IN[11]~input (
-	.i(XMUX_IN[11]),
-	.ibar(gnd),
-	.o(\XMUX_IN[11]~input_o ));
-// synopsys translate_off
-defparam \XMUX_IN[11]~input .bus_hold = "false";
-defparam \XMUX_IN[11]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_io_ibuf \OPERANDS_IN[11]~input (
-	.i(OPERANDS_IN[11]),
-	.ibar(gnd),
-	.o(\OPERANDS_IN[11]~input_o ));
-// synopsys translate_off
-defparam \OPERANDS_IN[11]~input .bus_hold = "false";
-defparam \OPERANDS_IN[11]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-dffeas \inst16|OperandRegister|dffs[11] (
-	.clk(\CLK_HOLD_IN~input_o ),
-	.d(\OPERANDS_IN[11]~input_o ),
-	.asdata(vcc),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\inst16|OperandRegister|dffs [11]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \inst16|OperandRegister|dffs[11] .is_wysiwyg = "true";
-defparam \inst16|OperandRegister|dffs[11] .power_up = "low";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|inst8|$00000|auto_generated|result_node[11]~4 (
-// Equation(s):
-// \inst16|inst8|$00000|auto_generated|result_node[11]~4_combout  = (\MUXSEL_IN~input_o  & (\XMUX_IN[11]~input_o )) # (!\MUXSEL_IN~input_o  & ((\inst16|OperandRegister|dffs [11])))
-
-	.dataa(\XMUX_IN[11]~input_o ),
-	.datab(\inst16|OperandRegister|dffs [11]),
-	.datac(gnd),
-	.datad(\MUXSEL_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|inst8|$00000|auto_generated|result_node[11]~4_combout ),
-	.cout());
-// synopsys translate_off
-defparam \inst16|inst8|$00000|auto_generated|result_node[11]~4 .lut_mask = 16'hAACC;
-defparam \inst16|inst8|$00000|auto_generated|result_node[11]~4 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchA|latches[11] (
-// Equation(s):
-// \inst16|LatchA|latches [11] = (\CLK_IN~input_o  & (\inst16|inst8|$00000|auto_generated|result_node[11]~4_combout )) # (!\CLK_IN~input_o  & ((\inst16|LatchA|latches [11])))
-
-	.dataa(gnd),
-	.datab(\inst16|inst8|$00000|auto_generated|result_node[11]~4_combout ),
-	.datac(\inst16|LatchA|latches [11]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchA|latches [11]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchA|latches[11] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchA|latches[11] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \XMUX_IN[10]~input (
-	.i(XMUX_IN[10]),
-	.ibar(gnd),
-	.o(\XMUX_IN[10]~input_o ));
-// synopsys translate_off
-defparam \XMUX_IN[10]~input .bus_hold = "false";
-defparam \XMUX_IN[10]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_io_ibuf \OPERANDS_IN[10]~input (
-	.i(OPERANDS_IN[10]),
-	.ibar(gnd),
-	.o(\OPERANDS_IN[10]~input_o ));
-// synopsys translate_off
-defparam \OPERANDS_IN[10]~input .bus_hold = "false";
-defparam \OPERANDS_IN[10]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-dffeas \inst16|OperandRegister|dffs[10] (
-	.clk(\CLK_HOLD_IN~input_o ),
-	.d(\OPERANDS_IN[10]~input_o ),
-	.asdata(vcc),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\inst16|OperandRegister|dffs [10]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \inst16|OperandRegister|dffs[10] .is_wysiwyg = "true";
-defparam \inst16|OperandRegister|dffs[10] .power_up = "low";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|inst8|$00000|auto_generated|result_node[10]~5 (
-// Equation(s):
-// \inst16|inst8|$00000|auto_generated|result_node[10]~5_combout  = (\MUXSEL_IN~input_o  & (\XMUX_IN[10]~input_o )) # (!\MUXSEL_IN~input_o  & ((\inst16|OperandRegister|dffs [10])))
-
-	.dataa(\XMUX_IN[10]~input_o ),
-	.datab(\inst16|OperandRegister|dffs [10]),
-	.datac(gnd),
-	.datad(\MUXSEL_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|inst8|$00000|auto_generated|result_node[10]~5_combout ),
-	.cout());
-// synopsys translate_off
-defparam \inst16|inst8|$00000|auto_generated|result_node[10]~5 .lut_mask = 16'hAACC;
-defparam \inst16|inst8|$00000|auto_generated|result_node[10]~5 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchA|latches[10] (
-// Equation(s):
-// \inst16|LatchA|latches [10] = (\CLK_IN~input_o  & (\inst16|inst8|$00000|auto_generated|result_node[10]~5_combout )) # (!\CLK_IN~input_o  & ((\inst16|LatchA|latches [10])))
-
-	.dataa(gnd),
-	.datab(\inst16|inst8|$00000|auto_generated|result_node[10]~5_combout ),
-	.datac(\inst16|LatchA|latches [10]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchA|latches [10]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchA|latches[10] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchA|latches[10] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \XMUX_IN[9]~input (
-	.i(XMUX_IN[9]),
-	.ibar(gnd),
-	.o(\XMUX_IN[9]~input_o ));
-// synopsys translate_off
-defparam \XMUX_IN[9]~input .bus_hold = "false";
-defparam \XMUX_IN[9]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_io_ibuf \OPERANDS_IN[9]~input (
-	.i(OPERANDS_IN[9]),
-	.ibar(gnd),
-	.o(\OPERANDS_IN[9]~input_o ));
-// synopsys translate_off
-defparam \OPERANDS_IN[9]~input .bus_hold = "false";
-defparam \OPERANDS_IN[9]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-dffeas \inst16|OperandRegister|dffs[9] (
-	.clk(\CLK_HOLD_IN~input_o ),
-	.d(\OPERANDS_IN[9]~input_o ),
-	.asdata(vcc),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\inst16|OperandRegister|dffs [9]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \inst16|OperandRegister|dffs[9] .is_wysiwyg = "true";
-defparam \inst16|OperandRegister|dffs[9] .power_up = "low";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|inst8|$00000|auto_generated|result_node[9]~6 (
-// Equation(s):
-// \inst16|inst8|$00000|auto_generated|result_node[9]~6_combout  = (\MUXSEL_IN~input_o  & (\XMUX_IN[9]~input_o )) # (!\MUXSEL_IN~input_o  & ((\inst16|OperandRegister|dffs [9])))
-
-	.dataa(\XMUX_IN[9]~input_o ),
-	.datab(\inst16|OperandRegister|dffs [9]),
-	.datac(gnd),
-	.datad(\MUXSEL_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|inst8|$00000|auto_generated|result_node[9]~6_combout ),
-	.cout());
-// synopsys translate_off
-defparam \inst16|inst8|$00000|auto_generated|result_node[9]~6 .lut_mask = 16'hAACC;
-defparam \inst16|inst8|$00000|auto_generated|result_node[9]~6 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchA|latches[9] (
-// Equation(s):
-// \inst16|LatchA|latches [9] = (\CLK_IN~input_o  & (\inst16|inst8|$00000|auto_generated|result_node[9]~6_combout )) # (!\CLK_IN~input_o  & ((\inst16|LatchA|latches [9])))
-
-	.dataa(gnd),
-	.datab(\inst16|inst8|$00000|auto_generated|result_node[9]~6_combout ),
-	.datac(\inst16|LatchA|latches [9]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchA|latches [9]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchA|latches[9] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchA|latches[9] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \XMUX_IN[8]~input (
-	.i(XMUX_IN[8]),
-	.ibar(gnd),
-	.o(\XMUX_IN[8]~input_o ));
-// synopsys translate_off
-defparam \XMUX_IN[8]~input .bus_hold = "false";
-defparam \XMUX_IN[8]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_io_ibuf \OPERANDS_IN[8]~input (
-	.i(OPERANDS_IN[8]),
-	.ibar(gnd),
-	.o(\OPERANDS_IN[8]~input_o ));
-// synopsys translate_off
-defparam \OPERANDS_IN[8]~input .bus_hold = "false";
-defparam \OPERANDS_IN[8]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-dffeas \inst16|OperandRegister|dffs[8] (
-	.clk(\CLK_HOLD_IN~input_o ),
-	.d(\OPERANDS_IN[8]~input_o ),
-	.asdata(vcc),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\inst16|OperandRegister|dffs [8]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \inst16|OperandRegister|dffs[8] .is_wysiwyg = "true";
-defparam \inst16|OperandRegister|dffs[8] .power_up = "low";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|inst8|$00000|auto_generated|result_node[8]~7 (
-// Equation(s):
-// \inst16|inst8|$00000|auto_generated|result_node[8]~7_combout  = (\MUXSEL_IN~input_o  & (\XMUX_IN[8]~input_o )) # (!\MUXSEL_IN~input_o  & ((\inst16|OperandRegister|dffs [8])))
-
-	.dataa(\XMUX_IN[8]~input_o ),
-	.datab(\inst16|OperandRegister|dffs [8]),
-	.datac(gnd),
-	.datad(\MUXSEL_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|inst8|$00000|auto_generated|result_node[8]~7_combout ),
-	.cout());
-// synopsys translate_off
-defparam \inst16|inst8|$00000|auto_generated|result_node[8]~7 .lut_mask = 16'hAACC;
-defparam \inst16|inst8|$00000|auto_generated|result_node[8]~7 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchA|latches[8] (
-// Equation(s):
-// \inst16|LatchA|latches [8] = (\CLK_IN~input_o  & (\inst16|inst8|$00000|auto_generated|result_node[8]~7_combout )) # (!\CLK_IN~input_o  & ((\inst16|LatchA|latches [8])))
-
-	.dataa(gnd),
-	.datab(\inst16|inst8|$00000|auto_generated|result_node[8]~7_combout ),
-	.datac(\inst16|LatchA|latches [8]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchA|latches [8]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchA|latches[8] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchA|latches[8] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \XMUX_IN[7]~input (
-	.i(XMUX_IN[7]),
-	.ibar(gnd),
-	.o(\XMUX_IN[7]~input_o ));
-// synopsys translate_off
-defparam \XMUX_IN[7]~input .bus_hold = "false";
-defparam \XMUX_IN[7]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_io_ibuf \OPERANDS_IN[7]~input (
-	.i(OPERANDS_IN[7]),
-	.ibar(gnd),
-	.o(\OPERANDS_IN[7]~input_o ));
-// synopsys translate_off
-defparam \OPERANDS_IN[7]~input .bus_hold = "false";
-defparam \OPERANDS_IN[7]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-dffeas \inst16|OperandRegister|dffs[7] (
-	.clk(\CLK_HOLD_IN~input_o ),
-	.d(\OPERANDS_IN[7]~input_o ),
-	.asdata(vcc),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\inst16|OperandRegister|dffs [7]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \inst16|OperandRegister|dffs[7] .is_wysiwyg = "true";
-defparam \inst16|OperandRegister|dffs[7] .power_up = "low";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|inst8|$00000|auto_generated|result_node[7]~8 (
-// Equation(s):
-// \inst16|inst8|$00000|auto_generated|result_node[7]~8_combout  = (\MUXSEL_IN~input_o  & (\XMUX_IN[7]~input_o )) # (!\MUXSEL_IN~input_o  & ((\inst16|OperandRegister|dffs [7])))
-
-	.dataa(\XMUX_IN[7]~input_o ),
-	.datab(\inst16|OperandRegister|dffs [7]),
-	.datac(gnd),
-	.datad(\MUXSEL_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|inst8|$00000|auto_generated|result_node[7]~8_combout ),
-	.cout());
-// synopsys translate_off
-defparam \inst16|inst8|$00000|auto_generated|result_node[7]~8 .lut_mask = 16'hAACC;
-defparam \inst16|inst8|$00000|auto_generated|result_node[7]~8 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchA|latches[7] (
-// Equation(s):
-// \inst16|LatchA|latches [7] = (\CLK_IN~input_o  & (\inst16|inst8|$00000|auto_generated|result_node[7]~8_combout )) # (!\CLK_IN~input_o  & ((\inst16|LatchA|latches [7])))
-
-	.dataa(gnd),
-	.datab(\inst16|inst8|$00000|auto_generated|result_node[7]~8_combout ),
-	.datac(\inst16|LatchA|latches [7]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchA|latches [7]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchA|latches[7] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchA|latches[7] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \XMUX_IN[6]~input (
-	.i(XMUX_IN[6]),
-	.ibar(gnd),
-	.o(\XMUX_IN[6]~input_o ));
-// synopsys translate_off
-defparam \XMUX_IN[6]~input .bus_hold = "false";
-defparam \XMUX_IN[6]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_io_ibuf \OPERANDS_IN[6]~input (
-	.i(OPERANDS_IN[6]),
-	.ibar(gnd),
-	.o(\OPERANDS_IN[6]~input_o ));
-// synopsys translate_off
-defparam \OPERANDS_IN[6]~input .bus_hold = "false";
-defparam \OPERANDS_IN[6]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-dffeas \inst16|OperandRegister|dffs[6] (
-	.clk(\CLK_HOLD_IN~input_o ),
-	.d(\OPERANDS_IN[6]~input_o ),
-	.asdata(vcc),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\inst16|OperandRegister|dffs [6]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \inst16|OperandRegister|dffs[6] .is_wysiwyg = "true";
-defparam \inst16|OperandRegister|dffs[6] .power_up = "low";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|inst8|$00000|auto_generated|result_node[6]~9 (
-// Equation(s):
-// \inst16|inst8|$00000|auto_generated|result_node[6]~9_combout  = (\MUXSEL_IN~input_o  & (\XMUX_IN[6]~input_o )) # (!\MUXSEL_IN~input_o  & ((\inst16|OperandRegister|dffs [6])))
-
-	.dataa(\XMUX_IN[6]~input_o ),
-	.datab(\inst16|OperandRegister|dffs [6]),
-	.datac(gnd),
-	.datad(\MUXSEL_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|inst8|$00000|auto_generated|result_node[6]~9_combout ),
-	.cout());
-// synopsys translate_off
-defparam \inst16|inst8|$00000|auto_generated|result_node[6]~9 .lut_mask = 16'hAACC;
-defparam \inst16|inst8|$00000|auto_generated|result_node[6]~9 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchA|latches[6] (
-// Equation(s):
-// \inst16|LatchA|latches [6] = (\CLK_IN~input_o  & (\inst16|inst8|$00000|auto_generated|result_node[6]~9_combout )) # (!\CLK_IN~input_o  & ((\inst16|LatchA|latches [6])))
-
-	.dataa(gnd),
-	.datab(\inst16|inst8|$00000|auto_generated|result_node[6]~9_combout ),
-	.datac(\inst16|LatchA|latches [6]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchA|latches [6]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchA|latches[6] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchA|latches[6] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \XMUX_IN[5]~input (
-	.i(XMUX_IN[5]),
-	.ibar(gnd),
-	.o(\XMUX_IN[5]~input_o ));
-// synopsys translate_off
-defparam \XMUX_IN[5]~input .bus_hold = "false";
-defparam \XMUX_IN[5]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_io_ibuf \OPERANDS_IN[5]~input (
-	.i(OPERANDS_IN[5]),
-	.ibar(gnd),
-	.o(\OPERANDS_IN[5]~input_o ));
-// synopsys translate_off
-defparam \OPERANDS_IN[5]~input .bus_hold = "false";
-defparam \OPERANDS_IN[5]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-dffeas \inst16|OperandRegister|dffs[5] (
-	.clk(\CLK_HOLD_IN~input_o ),
-	.d(\OPERANDS_IN[5]~input_o ),
-	.asdata(vcc),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\inst16|OperandRegister|dffs [5]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \inst16|OperandRegister|dffs[5] .is_wysiwyg = "true";
-defparam \inst16|OperandRegister|dffs[5] .power_up = "low";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|inst8|$00000|auto_generated|result_node[5]~10 (
-// Equation(s):
-// \inst16|inst8|$00000|auto_generated|result_node[5]~10_combout  = (\MUXSEL_IN~input_o  & (\XMUX_IN[5]~input_o )) # (!\MUXSEL_IN~input_o  & ((\inst16|OperandRegister|dffs [5])))
-
-	.dataa(\XMUX_IN[5]~input_o ),
-	.datab(\inst16|OperandRegister|dffs [5]),
-	.datac(gnd),
-	.datad(\MUXSEL_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|inst8|$00000|auto_generated|result_node[5]~10_combout ),
-	.cout());
-// synopsys translate_off
-defparam \inst16|inst8|$00000|auto_generated|result_node[5]~10 .lut_mask = 16'hAACC;
-defparam \inst16|inst8|$00000|auto_generated|result_node[5]~10 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchA|latches[5] (
-// Equation(s):
-// \inst16|LatchA|latches [5] = (\CLK_IN~input_o  & (\inst16|inst8|$00000|auto_generated|result_node[5]~10_combout )) # (!\CLK_IN~input_o  & ((\inst16|LatchA|latches [5])))
-
-	.dataa(gnd),
-	.datab(\inst16|inst8|$00000|auto_generated|result_node[5]~10_combout ),
-	.datac(\inst16|LatchA|latches [5]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchA|latches [5]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchA|latches[5] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchA|latches[5] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \XMUX_IN[4]~input (
-	.i(XMUX_IN[4]),
-	.ibar(gnd),
-	.o(\XMUX_IN[4]~input_o ));
-// synopsys translate_off
-defparam \XMUX_IN[4]~input .bus_hold = "false";
-defparam \XMUX_IN[4]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_io_ibuf \OPERANDS_IN[4]~input (
-	.i(OPERANDS_IN[4]),
-	.ibar(gnd),
-	.o(\OPERANDS_IN[4]~input_o ));
-// synopsys translate_off
-defparam \OPERANDS_IN[4]~input .bus_hold = "false";
-defparam \OPERANDS_IN[4]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-dffeas \inst16|OperandRegister|dffs[4] (
-	.clk(\CLK_HOLD_IN~input_o ),
-	.d(\OPERANDS_IN[4]~input_o ),
-	.asdata(vcc),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\inst16|OperandRegister|dffs [4]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \inst16|OperandRegister|dffs[4] .is_wysiwyg = "true";
-defparam \inst16|OperandRegister|dffs[4] .power_up = "low";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|inst8|$00000|auto_generated|result_node[4]~11 (
-// Equation(s):
-// \inst16|inst8|$00000|auto_generated|result_node[4]~11_combout  = (\MUXSEL_IN~input_o  & (\XMUX_IN[4]~input_o )) # (!\MUXSEL_IN~input_o  & ((\inst16|OperandRegister|dffs [4])))
-
-	.dataa(\XMUX_IN[4]~input_o ),
-	.datab(\inst16|OperandRegister|dffs [4]),
-	.datac(gnd),
-	.datad(\MUXSEL_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|inst8|$00000|auto_generated|result_node[4]~11_combout ),
-	.cout());
-// synopsys translate_off
-defparam \inst16|inst8|$00000|auto_generated|result_node[4]~11 .lut_mask = 16'hAACC;
-defparam \inst16|inst8|$00000|auto_generated|result_node[4]~11 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchA|latches[4] (
-// Equation(s):
-// \inst16|LatchA|latches [4] = (\CLK_IN~input_o  & (\inst16|inst8|$00000|auto_generated|result_node[4]~11_combout )) # (!\CLK_IN~input_o  & ((\inst16|LatchA|latches [4])))
-
-	.dataa(gnd),
-	.datab(\inst16|inst8|$00000|auto_generated|result_node[4]~11_combout ),
-	.datac(\inst16|LatchA|latches [4]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchA|latches [4]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchA|latches[4] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchA|latches[4] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \XMUX_IN[3]~input (
-	.i(XMUX_IN[3]),
-	.ibar(gnd),
-	.o(\XMUX_IN[3]~input_o ));
-// synopsys translate_off
-defparam \XMUX_IN[3]~input .bus_hold = "false";
-defparam \XMUX_IN[3]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_io_ibuf \OPERANDS_IN[3]~input (
-	.i(OPERANDS_IN[3]),
-	.ibar(gnd),
-	.o(\OPERANDS_IN[3]~input_o ));
-// synopsys translate_off
-defparam \OPERANDS_IN[3]~input .bus_hold = "false";
-defparam \OPERANDS_IN[3]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-dffeas \inst16|OperandRegister|dffs[3] (
-	.clk(\CLK_HOLD_IN~input_o ),
-	.d(\OPERANDS_IN[3]~input_o ),
-	.asdata(vcc),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\inst16|OperandRegister|dffs [3]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \inst16|OperandRegister|dffs[3] .is_wysiwyg = "true";
-defparam \inst16|OperandRegister|dffs[3] .power_up = "low";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|inst8|$00000|auto_generated|result_node[3]~12 (
-// Equation(s):
-// \inst16|inst8|$00000|auto_generated|result_node[3]~12_combout  = (\MUXSEL_IN~input_o  & (\XMUX_IN[3]~input_o )) # (!\MUXSEL_IN~input_o  & ((\inst16|OperandRegister|dffs [3])))
-
-	.dataa(\XMUX_IN[3]~input_o ),
-	.datab(\inst16|OperandRegister|dffs [3]),
-	.datac(gnd),
-	.datad(\MUXSEL_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|inst8|$00000|auto_generated|result_node[3]~12_combout ),
-	.cout());
-// synopsys translate_off
-defparam \inst16|inst8|$00000|auto_generated|result_node[3]~12 .lut_mask = 16'hAACC;
-defparam \inst16|inst8|$00000|auto_generated|result_node[3]~12 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchA|latches[3] (
-// Equation(s):
-// \inst16|LatchA|latches [3] = (\CLK_IN~input_o  & (\inst16|inst8|$00000|auto_generated|result_node[3]~12_combout )) # (!\CLK_IN~input_o  & ((\inst16|LatchA|latches [3])))
-
-	.dataa(gnd),
-	.datab(\inst16|inst8|$00000|auto_generated|result_node[3]~12_combout ),
-	.datac(\inst16|LatchA|latches [3]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchA|latches [3]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchA|latches[3] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchA|latches[3] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \XMUX_IN[2]~input (
-	.i(XMUX_IN[2]),
-	.ibar(gnd),
-	.o(\XMUX_IN[2]~input_o ));
-// synopsys translate_off
-defparam \XMUX_IN[2]~input .bus_hold = "false";
-defparam \XMUX_IN[2]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_io_ibuf \OPERANDS_IN[2]~input (
-	.i(OPERANDS_IN[2]),
-	.ibar(gnd),
-	.o(\OPERANDS_IN[2]~input_o ));
-// synopsys translate_off
-defparam \OPERANDS_IN[2]~input .bus_hold = "false";
-defparam \OPERANDS_IN[2]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-dffeas \inst16|OperandRegister|dffs[2] (
-	.clk(\CLK_HOLD_IN~input_o ),
-	.d(\OPERANDS_IN[2]~input_o ),
-	.asdata(vcc),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\inst16|OperandRegister|dffs [2]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \inst16|OperandRegister|dffs[2] .is_wysiwyg = "true";
-defparam \inst16|OperandRegister|dffs[2] .power_up = "low";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|inst8|$00000|auto_generated|result_node[2]~13 (
-// Equation(s):
-// \inst16|inst8|$00000|auto_generated|result_node[2]~13_combout  = (\MUXSEL_IN~input_o  & (\XMUX_IN[2]~input_o )) # (!\MUXSEL_IN~input_o  & ((\inst16|OperandRegister|dffs [2])))
-
-	.dataa(\XMUX_IN[2]~input_o ),
-	.datab(\inst16|OperandRegister|dffs [2]),
-	.datac(gnd),
-	.datad(\MUXSEL_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|inst8|$00000|auto_generated|result_node[2]~13_combout ),
-	.cout());
-// synopsys translate_off
-defparam \inst16|inst8|$00000|auto_generated|result_node[2]~13 .lut_mask = 16'hAACC;
-defparam \inst16|inst8|$00000|auto_generated|result_node[2]~13 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchA|latches[2] (
-// Equation(s):
-// \inst16|LatchA|latches [2] = (\CLK_IN~input_o  & (\inst16|inst8|$00000|auto_generated|result_node[2]~13_combout )) # (!\CLK_IN~input_o  & ((\inst16|LatchA|latches [2])))
-
-	.dataa(gnd),
-	.datab(\inst16|inst8|$00000|auto_generated|result_node[2]~13_combout ),
-	.datac(\inst16|LatchA|latches [2]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchA|latches [2]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchA|latches[2] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchA|latches[2] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \XMUX_IN[1]~input (
-	.i(XMUX_IN[1]),
-	.ibar(gnd),
-	.o(\XMUX_IN[1]~input_o ));
-// synopsys translate_off
-defparam \XMUX_IN[1]~input .bus_hold = "false";
-defparam \XMUX_IN[1]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_io_ibuf \OPERANDS_IN[1]~input (
-	.i(OPERANDS_IN[1]),
-	.ibar(gnd),
-	.o(\OPERANDS_IN[1]~input_o ));
-// synopsys translate_off
-defparam \OPERANDS_IN[1]~input .bus_hold = "false";
-defparam \OPERANDS_IN[1]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-dffeas \inst16|OperandRegister|dffs[1] (
-	.clk(\CLK_HOLD_IN~input_o ),
-	.d(\OPERANDS_IN[1]~input_o ),
-	.asdata(vcc),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\inst16|OperandRegister|dffs [1]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \inst16|OperandRegister|dffs[1] .is_wysiwyg = "true";
-defparam \inst16|OperandRegister|dffs[1] .power_up = "low";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|inst8|$00000|auto_generated|result_node[1]~14 (
-// Equation(s):
-// \inst16|inst8|$00000|auto_generated|result_node[1]~14_combout  = (\MUXSEL_IN~input_o  & (\XMUX_IN[1]~input_o )) # (!\MUXSEL_IN~input_o  & ((\inst16|OperandRegister|dffs [1])))
-
-	.dataa(\XMUX_IN[1]~input_o ),
-	.datab(\inst16|OperandRegister|dffs [1]),
-	.datac(gnd),
-	.datad(\MUXSEL_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|inst8|$00000|auto_generated|result_node[1]~14_combout ),
-	.cout());
-// synopsys translate_off
-defparam \inst16|inst8|$00000|auto_generated|result_node[1]~14 .lut_mask = 16'hAACC;
-defparam \inst16|inst8|$00000|auto_generated|result_node[1]~14 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchA|latches[1] (
-// Equation(s):
-// \inst16|LatchA|latches [1] = (\CLK_IN~input_o  & (\inst16|inst8|$00000|auto_generated|result_node[1]~14_combout )) # (!\CLK_IN~input_o  & ((\inst16|LatchA|latches [1])))
-
-	.dataa(gnd),
-	.datab(\inst16|inst8|$00000|auto_generated|result_node[1]~14_combout ),
-	.datac(\inst16|LatchA|latches [1]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchA|latches [1]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchA|latches[1] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchA|latches[1] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \XMUX_IN[0]~input (
-	.i(XMUX_IN[0]),
-	.ibar(gnd),
-	.o(\XMUX_IN[0]~input_o ));
-// synopsys translate_off
-defparam \XMUX_IN[0]~input .bus_hold = "false";
-defparam \XMUX_IN[0]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_io_ibuf \OPERANDS_IN[0]~input (
-	.i(OPERANDS_IN[0]),
-	.ibar(gnd),
-	.o(\OPERANDS_IN[0]~input_o ));
-// synopsys translate_off
-defparam \OPERANDS_IN[0]~input .bus_hold = "false";
-defparam \OPERANDS_IN[0]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-dffeas \inst16|OperandRegister|dffs[0] (
-	.clk(\CLK_HOLD_IN~input_o ),
-	.d(\OPERANDS_IN[0]~input_o ),
-	.asdata(vcc),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\inst16|OperandRegister|dffs [0]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \inst16|OperandRegister|dffs[0] .is_wysiwyg = "true";
-defparam \inst16|OperandRegister|dffs[0] .power_up = "low";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|inst8|$00000|auto_generated|result_node[0]~15 (
-// Equation(s):
-// \inst16|inst8|$00000|auto_generated|result_node[0]~15_combout  = (\MUXSEL_IN~input_o  & (\XMUX_IN[0]~input_o )) # (!\MUXSEL_IN~input_o  & ((\inst16|OperandRegister|dffs [0])))
-
-	.dataa(\XMUX_IN[0]~input_o ),
-	.datab(\inst16|OperandRegister|dffs [0]),
-	.datac(gnd),
-	.datad(\MUXSEL_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|inst8|$00000|auto_generated|result_node[0]~15_combout ),
-	.cout());
-// synopsys translate_off
-defparam \inst16|inst8|$00000|auto_generated|result_node[0]~15 .lut_mask = 16'hAACC;
-defparam \inst16|inst8|$00000|auto_generated|result_node[0]~15 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchA|latches[0] (
-// Equation(s):
-// \inst16|LatchA|latches [0] = (\CLK_IN~input_o  & (\inst16|inst8|$00000|auto_generated|result_node[0]~15_combout )) # (!\CLK_IN~input_o  & ((\inst16|LatchA|latches [0])))
-
-	.dataa(gnd),
-	.datab(\inst16|inst8|$00000|auto_generated|result_node[0]~15_combout ),
-	.datac(\inst16|LatchA|latches [0]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchA|latches [0]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchA|latches[0] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchA|latches[0] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \B_OP_IN[15]~input (
-	.i(B_OP_IN[15]),
-	.ibar(gnd),
-	.o(\B_OP_IN[15]~input_o ));
-// synopsys translate_off
-defparam \B_OP_IN[15]~input .bus_hold = "false";
-defparam \B_OP_IN[15]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchB|latches[15] (
-// Equation(s):
-// \inst16|LatchB|latches [15] = (\CLK_IN~input_o  & (\B_OP_IN[15]~input_o )) # (!\CLK_IN~input_o  & ((\inst16|LatchB|latches [15])))
-
-	.dataa(gnd),
-	.datab(\B_OP_IN[15]~input_o ),
-	.datac(\inst16|LatchB|latches [15]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchB|latches [15]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchB|latches[15] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchB|latches[15] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \B_OP_IN[14]~input (
-	.i(B_OP_IN[14]),
-	.ibar(gnd),
-	.o(\B_OP_IN[14]~input_o ));
-// synopsys translate_off
-defparam \B_OP_IN[14]~input .bus_hold = "false";
-defparam \B_OP_IN[14]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchB|latches[14] (
-// Equation(s):
-// \inst16|LatchB|latches [14] = (\CLK_IN~input_o  & (\B_OP_IN[14]~input_o )) # (!\CLK_IN~input_o  & ((\inst16|LatchB|latches [14])))
-
-	.dataa(gnd),
-	.datab(\B_OP_IN[14]~input_o ),
-	.datac(\inst16|LatchB|latches [14]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchB|latches [14]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchB|latches[14] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchB|latches[14] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \B_OP_IN[13]~input (
-	.i(B_OP_IN[13]),
-	.ibar(gnd),
-	.o(\B_OP_IN[13]~input_o ));
-// synopsys translate_off
-defparam \B_OP_IN[13]~input .bus_hold = "false";
-defparam \B_OP_IN[13]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchB|latches[13] (
-// Equation(s):
-// \inst16|LatchB|latches [13] = (\CLK_IN~input_o  & (\B_OP_IN[13]~input_o )) # (!\CLK_IN~input_o  & ((\inst16|LatchB|latches [13])))
-
-	.dataa(gnd),
-	.datab(\B_OP_IN[13]~input_o ),
-	.datac(\inst16|LatchB|latches [13]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchB|latches [13]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchB|latches[13] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchB|latches[13] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \B_OP_IN[12]~input (
-	.i(B_OP_IN[12]),
-	.ibar(gnd),
-	.o(\B_OP_IN[12]~input_o ));
-// synopsys translate_off
-defparam \B_OP_IN[12]~input .bus_hold = "false";
-defparam \B_OP_IN[12]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchB|latches[12] (
-// Equation(s):
-// \inst16|LatchB|latches [12] = (\CLK_IN~input_o  & (\B_OP_IN[12]~input_o )) # (!\CLK_IN~input_o  & ((\inst16|LatchB|latches [12])))
-
-	.dataa(gnd),
-	.datab(\B_OP_IN[12]~input_o ),
-	.datac(\inst16|LatchB|latches [12]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchB|latches [12]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchB|latches[12] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchB|latches[12] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \B_OP_IN[11]~input (
-	.i(B_OP_IN[11]),
-	.ibar(gnd),
-	.o(\B_OP_IN[11]~input_o ));
-// synopsys translate_off
-defparam \B_OP_IN[11]~input .bus_hold = "false";
-defparam \B_OP_IN[11]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchB|latches[11] (
-// Equation(s):
-// \inst16|LatchB|latches [11] = (\CLK_IN~input_o  & (\B_OP_IN[11]~input_o )) # (!\CLK_IN~input_o  & ((\inst16|LatchB|latches [11])))
-
-	.dataa(gnd),
-	.datab(\B_OP_IN[11]~input_o ),
-	.datac(\inst16|LatchB|latches [11]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchB|latches [11]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchB|latches[11] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchB|latches[11] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \B_OP_IN[10]~input (
-	.i(B_OP_IN[10]),
-	.ibar(gnd),
-	.o(\B_OP_IN[10]~input_o ));
-// synopsys translate_off
-defparam \B_OP_IN[10]~input .bus_hold = "false";
-defparam \B_OP_IN[10]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchB|latches[10] (
-// Equation(s):
-// \inst16|LatchB|latches [10] = (\CLK_IN~input_o  & (\B_OP_IN[10]~input_o )) # (!\CLK_IN~input_o  & ((\inst16|LatchB|latches [10])))
-
-	.dataa(gnd),
-	.datab(\B_OP_IN[10]~input_o ),
-	.datac(\inst16|LatchB|latches [10]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchB|latches [10]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchB|latches[10] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchB|latches[10] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \B_OP_IN[9]~input (
-	.i(B_OP_IN[9]),
-	.ibar(gnd),
-	.o(\B_OP_IN[9]~input_o ));
-// synopsys translate_off
-defparam \B_OP_IN[9]~input .bus_hold = "false";
-defparam \B_OP_IN[9]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchB|latches[9] (
-// Equation(s):
-// \inst16|LatchB|latches [9] = (\CLK_IN~input_o  & (\B_OP_IN[9]~input_o )) # (!\CLK_IN~input_o  & ((\inst16|LatchB|latches [9])))
-
-	.dataa(gnd),
-	.datab(\B_OP_IN[9]~input_o ),
-	.datac(\inst16|LatchB|latches [9]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchB|latches [9]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchB|latches[9] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchB|latches[9] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \B_OP_IN[8]~input (
-	.i(B_OP_IN[8]),
-	.ibar(gnd),
-	.o(\B_OP_IN[8]~input_o ));
-// synopsys translate_off
-defparam \B_OP_IN[8]~input .bus_hold = "false";
-defparam \B_OP_IN[8]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchB|latches[8] (
-// Equation(s):
-// \inst16|LatchB|latches [8] = (\CLK_IN~input_o  & (\B_OP_IN[8]~input_o )) # (!\CLK_IN~input_o  & ((\inst16|LatchB|latches [8])))
-
-	.dataa(gnd),
-	.datab(\B_OP_IN[8]~input_o ),
-	.datac(\inst16|LatchB|latches [8]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchB|latches [8]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchB|latches[8] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchB|latches[8] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \B_OP_IN[7]~input (
-	.i(B_OP_IN[7]),
-	.ibar(gnd),
-	.o(\B_OP_IN[7]~input_o ));
-// synopsys translate_off
-defparam \B_OP_IN[7]~input .bus_hold = "false";
-defparam \B_OP_IN[7]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchB|latches[7] (
-// Equation(s):
-// \inst16|LatchB|latches [7] = (\CLK_IN~input_o  & (\B_OP_IN[7]~input_o )) # (!\CLK_IN~input_o  & ((\inst16|LatchB|latches [7])))
-
-	.dataa(gnd),
-	.datab(\B_OP_IN[7]~input_o ),
-	.datac(\inst16|LatchB|latches [7]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchB|latches [7]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchB|latches[7] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchB|latches[7] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \B_OP_IN[6]~input (
-	.i(B_OP_IN[6]),
-	.ibar(gnd),
-	.o(\B_OP_IN[6]~input_o ));
-// synopsys translate_off
-defparam \B_OP_IN[6]~input .bus_hold = "false";
-defparam \B_OP_IN[6]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchB|latches[6] (
-// Equation(s):
-// \inst16|LatchB|latches [6] = (\CLK_IN~input_o  & (\B_OP_IN[6]~input_o )) # (!\CLK_IN~input_o  & ((\inst16|LatchB|latches [6])))
-
-	.dataa(gnd),
-	.datab(\B_OP_IN[6]~input_o ),
-	.datac(\inst16|LatchB|latches [6]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchB|latches [6]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchB|latches[6] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchB|latches[6] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \B_OP_IN[5]~input (
-	.i(B_OP_IN[5]),
-	.ibar(gnd),
-	.o(\B_OP_IN[5]~input_o ));
-// synopsys translate_off
-defparam \B_OP_IN[5]~input .bus_hold = "false";
-defparam \B_OP_IN[5]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchB|latches[5] (
-// Equation(s):
-// \inst16|LatchB|latches [5] = (\CLK_IN~input_o  & (\B_OP_IN[5]~input_o )) # (!\CLK_IN~input_o  & ((\inst16|LatchB|latches [5])))
-
-	.dataa(gnd),
-	.datab(\B_OP_IN[5]~input_o ),
-	.datac(\inst16|LatchB|latches [5]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchB|latches [5]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchB|latches[5] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchB|latches[5] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \B_OP_IN[4]~input (
-	.i(B_OP_IN[4]),
-	.ibar(gnd),
-	.o(\B_OP_IN[4]~input_o ));
-// synopsys translate_off
-defparam \B_OP_IN[4]~input .bus_hold = "false";
-defparam \B_OP_IN[4]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchB|latches[4] (
-// Equation(s):
-// \inst16|LatchB|latches [4] = (\CLK_IN~input_o  & (\B_OP_IN[4]~input_o )) # (!\CLK_IN~input_o  & ((\inst16|LatchB|latches [4])))
-
-	.dataa(gnd),
-	.datab(\B_OP_IN[4]~input_o ),
-	.datac(\inst16|LatchB|latches [4]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchB|latches [4]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchB|latches[4] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchB|latches[4] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \B_OP_IN[3]~input (
-	.i(B_OP_IN[3]),
-	.ibar(gnd),
-	.o(\B_OP_IN[3]~input_o ));
-// synopsys translate_off
-defparam \B_OP_IN[3]~input .bus_hold = "false";
-defparam \B_OP_IN[3]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchB|latches[3] (
-// Equation(s):
-// \inst16|LatchB|latches [3] = (\CLK_IN~input_o  & (\B_OP_IN[3]~input_o )) # (!\CLK_IN~input_o  & ((\inst16|LatchB|latches [3])))
-
-	.dataa(gnd),
-	.datab(\B_OP_IN[3]~input_o ),
-	.datac(\inst16|LatchB|latches [3]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchB|latches [3]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchB|latches[3] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchB|latches[3] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \B_OP_IN[2]~input (
-	.i(B_OP_IN[2]),
-	.ibar(gnd),
-	.o(\B_OP_IN[2]~input_o ));
-// synopsys translate_off
-defparam \B_OP_IN[2]~input .bus_hold = "false";
-defparam \B_OP_IN[2]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchB|latches[2] (
-// Equation(s):
-// \inst16|LatchB|latches [2] = (\CLK_IN~input_o  & (\B_OP_IN[2]~input_o )) # (!\CLK_IN~input_o  & ((\inst16|LatchB|latches [2])))
-
-	.dataa(gnd),
-	.datab(\B_OP_IN[2]~input_o ),
-	.datac(\inst16|LatchB|latches [2]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchB|latches [2]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchB|latches[2] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchB|latches[2] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \B_OP_IN[1]~input (
-	.i(B_OP_IN[1]),
-	.ibar(gnd),
-	.o(\B_OP_IN[1]~input_o ));
-// synopsys translate_off
-defparam \B_OP_IN[1]~input .bus_hold = "false";
-defparam \B_OP_IN[1]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchB|latches[1] (
-// Equation(s):
-// \inst16|LatchB|latches [1] = (\CLK_IN~input_o  & (\B_OP_IN[1]~input_o )) # (!\CLK_IN~input_o  & ((\inst16|LatchB|latches [1])))
-
-	.dataa(gnd),
-	.datab(\B_OP_IN[1]~input_o ),
-	.datac(\inst16|LatchB|latches [1]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchB|latches [1]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchB|latches[1] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchB|latches[1] .sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_io_ibuf \B_OP_IN[0]~input (
-	.i(B_OP_IN[0]),
-	.ibar(gnd),
-	.o(\B_OP_IN[0]~input_o ));
-// synopsys translate_off
-defparam \B_OP_IN[0]~input .bus_hold = "false";
-defparam \B_OP_IN[0]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_lcell_comb \inst16|LatchB|latches[0] (
-// Equation(s):
-// \inst16|LatchB|latches [0] = (\CLK_IN~input_o  & (\B_OP_IN[0]~input_o )) # (!\CLK_IN~input_o  & ((\inst16|LatchB|latches [0])))
-
-	.dataa(gnd),
-	.datab(\B_OP_IN[0]~input_o ),
-	.datac(\inst16|LatchB|latches [0]),
-	.datad(\CLK_IN~input_o ),
-	.cin(gnd),
-	.combout(\inst16|LatchB|latches [0]),
-	.cout());
-// synopsys translate_off
-defparam \inst16|LatchB|latches[0] .lut_mask = 16'hCCF0;
-defparam \inst16|LatchB|latches[0] .sum_lutc_input = "datac";
+defparam \inst4|inst13 .lut_mask = 16'h00AA;
+defparam \inst4|inst13 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneive_io_ibuf \CLK~input (
@@ -2072,68 +388,1296 @@ defparam \CLK~input .bus_hold = "false";
 defparam \CLK~input .simulate_z_as = "z";
 // synopsys translate_on
 
-assign A_OUT[15] = \A_OUT[15]~output_o ;
+cycloneive_lcell_comb \inst4|inst1|ram_block|auto_generated|rden_b_store~0 (
+// Equation(s):
+// \inst4|inst1|ram_block|auto_generated|rden_b_store~0_combout  = !\inst4|inst13~combout 
 
-assign A_OUT[14] = \A_OUT[14]~output_o ;
+	.dataa(\inst4|inst13~combout ),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\inst4|inst1|ram_block|auto_generated|rden_b_store~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst4|inst1|ram_block|auto_generated|rden_b_store~0 .lut_mask = 16'h5555;
+defparam \inst4|inst1|ram_block|auto_generated|rden_b_store~0 .sum_lutc_input = "datac";
+// synopsys translate_on
 
-assign A_OUT[13] = \A_OUT[13]~output_o ;
+dffeas \inst4|inst1|ram_block|auto_generated|rden_b_store (
+	.clk(\CLK~input_o ),
+	.d(\inst4|inst1|ram_block|auto_generated|rden_b_store~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst4|inst1|ram_block|auto_generated|rden_b_store~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst4|inst1|ram_block|auto_generated|rden_b_store .is_wysiwyg = "true";
+defparam \inst4|inst1|ram_block|auto_generated|rden_b_store .power_up = "low";
+// synopsys translate_on
 
-assign A_OUT[12] = \A_OUT[12]~output_o ;
+cycloneive_lcell_comb \inst4|inst1|ram_block|auto_generated|ram_block1a0~0 (
+// Equation(s):
+// \inst4|inst1|ram_block|auto_generated|ram_block1a0~0_combout  = (\MR~input_o ) # ((\inst4|inst1|ram_block|auto_generated|rden_b_store~q ) # (!\MW_IN~input_o ))
 
-assign A_OUT[11] = \A_OUT[11]~output_o ;
+	.dataa(\MR~input_o ),
+	.datab(\inst4|inst1|ram_block|auto_generated|rden_b_store~q ),
+	.datac(gnd),
+	.datad(\MW_IN~input_o ),
+	.cin(gnd),
+	.combout(\inst4|inst1|ram_block|auto_generated|ram_block1a0~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0~0 .lut_mask = 16'hEEFF;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0~0 .sum_lutc_input = "datac";
+// synopsys translate_on
 
-assign A_OUT[10] = \A_OUT[10]~output_o ;
+cycloneive_io_ibuf \TOW_IN[15]~input (
+	.i(TOW_IN[15]),
+	.ibar(gnd),
+	.o(\TOW_IN[15]~input_o ));
+// synopsys translate_off
+defparam \TOW_IN[15]~input .bus_hold = "false";
+defparam \TOW_IN[15]~input .simulate_z_as = "z";
+// synopsys translate_on
 
-assign A_OUT[9] = \A_OUT[9]~output_o ;
+cycloneive_io_ibuf \DADD_IN[0]~input (
+	.i(DADD_IN[0]),
+	.ibar(gnd),
+	.o(\DADD_IN[0]~input_o ));
+// synopsys translate_off
+defparam \DADD_IN[0]~input .bus_hold = "false";
+defparam \DADD_IN[0]~input .simulate_z_as = "z";
+// synopsys translate_on
 
-assign A_OUT[8] = \A_OUT[8]~output_o ;
+cycloneive_io_ibuf \DADD_IN[1]~input (
+	.i(DADD_IN[1]),
+	.ibar(gnd),
+	.o(\DADD_IN[1]~input_o ));
+// synopsys translate_off
+defparam \DADD_IN[1]~input .bus_hold = "false";
+defparam \DADD_IN[1]~input .simulate_z_as = "z";
+// synopsys translate_on
 
-assign A_OUT[7] = \A_OUT[7]~output_o ;
+cycloneive_io_ibuf \DADD_IN[2]~input (
+	.i(DADD_IN[2]),
+	.ibar(gnd),
+	.o(\DADD_IN[2]~input_o ));
+// synopsys translate_off
+defparam \DADD_IN[2]~input .bus_hold = "false";
+defparam \DADD_IN[2]~input .simulate_z_as = "z";
+// synopsys translate_on
 
-assign A_OUT[6] = \A_OUT[6]~output_o ;
+cycloneive_io_ibuf \DADD_IN[3]~input (
+	.i(DADD_IN[3]),
+	.ibar(gnd),
+	.o(\DADD_IN[3]~input_o ));
+// synopsys translate_off
+defparam \DADD_IN[3]~input .bus_hold = "false";
+defparam \DADD_IN[3]~input .simulate_z_as = "z";
+// synopsys translate_on
 
-assign A_OUT[5] = \A_OUT[5]~output_o ;
+cycloneive_io_ibuf \DADD_IN[4]~input (
+	.i(DADD_IN[4]),
+	.ibar(gnd),
+	.o(\DADD_IN[4]~input_o ));
+// synopsys translate_off
+defparam \DADD_IN[4]~input .bus_hold = "false";
+defparam \DADD_IN[4]~input .simulate_z_as = "z";
+// synopsys translate_on
 
-assign A_OUT[4] = \A_OUT[4]~output_o ;
+cycloneive_io_ibuf \DADD_IN[5]~input (
+	.i(DADD_IN[5]),
+	.ibar(gnd),
+	.o(\DADD_IN[5]~input_o ));
+// synopsys translate_off
+defparam \DADD_IN[5]~input .bus_hold = "false";
+defparam \DADD_IN[5]~input .simulate_z_as = "z";
+// synopsys translate_on
 
-assign A_OUT[3] = \A_OUT[3]~output_o ;
+cycloneive_io_ibuf \DADD_IN[6]~input (
+	.i(DADD_IN[6]),
+	.ibar(gnd),
+	.o(\DADD_IN[6]~input_o ));
+// synopsys translate_off
+defparam \DADD_IN[6]~input .bus_hold = "false";
+defparam \DADD_IN[6]~input .simulate_z_as = "z";
+// synopsys translate_on
 
-assign A_OUT[2] = \A_OUT[2]~output_o ;
+cycloneive_io_ibuf \DADD_IN[7]~input (
+	.i(DADD_IN[7]),
+	.ibar(gnd),
+	.o(\DADD_IN[7]~input_o ));
+// synopsys translate_off
+defparam \DADD_IN[7]~input .bus_hold = "false";
+defparam \DADD_IN[7]~input .simulate_z_as = "z";
+// synopsys translate_on
 
-assign A_OUT[1] = \A_OUT[1]~output_o ;
+cycloneive_io_ibuf \DADD_IN[8]~input (
+	.i(DADD_IN[8]),
+	.ibar(gnd),
+	.o(\DADD_IN[8]~input_o ));
+// synopsys translate_off
+defparam \DADD_IN[8]~input .bus_hold = "false";
+defparam \DADD_IN[8]~input .simulate_z_as = "z";
+// synopsys translate_on
 
-assign A_OUT[0] = \A_OUT[0]~output_o ;
+cycloneive_io_ibuf \DADD_IN[9]~input (
+	.i(DADD_IN[9]),
+	.ibar(gnd),
+	.o(\DADD_IN[9]~input_o ));
+// synopsys translate_off
+defparam \DADD_IN[9]~input .bus_hold = "false";
+defparam \DADD_IN[9]~input .simulate_z_as = "z";
+// synopsys translate_on
 
-assign B_OUT[15] = \B_OUT[15]~output_o ;
+cycloneive_ram_block \inst4|inst1|ram_block|auto_generated|ram_block1a15 (
+	.portawe(\inst4|inst13~combout ),
+	.portare(vcc),
+	.portaaddrstall(gnd),
+	.portbwe(gnd),
+	.portbre(!\inst4|inst13~combout ),
+	.portbaddrstall(gnd),
+	.clk0(\CLK~input_o ),
+	.clk1(\CLK~input_o ),
+	.ena0(\inst4|inst13~combout ),
+	.ena1(\inst4|inst1|ram_block|auto_generated|ram_block1a0~0_combout ),
+	.ena2(vcc),
+	.ena3(vcc),
+	.clr0(gnd),
+	.clr1(gnd),
+	.portadatain({\TOW_IN[15]~input_o }),
+	.portaaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portabyteenamasks(1'b1),
+	.portbdatain(1'b0),
+	.portbaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portbbyteenamasks(1'b1),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.portadataout(),
+	.portbdataout(\inst4|inst1|ram_block|auto_generated|ram_block1a15_PORTBDATAOUT_bus ));
+// synopsys translate_off
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .clk0_core_clock_enable = "ena0";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .clk1_core_clock_enable = "ena1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .data_interleave_offset_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .data_interleave_width_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .logical_ram_name = "dataUnit:inst4|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|ALTSYNCRAM";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .mixed_port_feed_through_mode = "dont_care";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .operation_mode = "dual_port";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .port_a_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .port_a_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .port_a_byte_enable_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .port_a_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .port_a_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .port_a_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .port_a_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .port_a_first_bit_number = 15;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .port_a_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .port_a_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .port_a_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .port_a_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .port_b_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .port_b_address_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .port_b_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .port_b_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .port_b_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .port_b_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .port_b_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .port_b_first_bit_number = 15;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .port_b_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .port_b_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .port_b_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .port_b_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .port_b_read_enable_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a15 .ram_block_type = "M9K";
+// synopsys translate_on
 
-assign B_OUT[14] = \B_OUT[14]~output_o ;
+cycloneive_io_ibuf \TOW_IN[14]~input (
+	.i(TOW_IN[14]),
+	.ibar(gnd),
+	.o(\TOW_IN[14]~input_o ));
+// synopsys translate_off
+defparam \TOW_IN[14]~input .bus_hold = "false";
+defparam \TOW_IN[14]~input .simulate_z_as = "z";
+// synopsys translate_on
 
-assign B_OUT[13] = \B_OUT[13]~output_o ;
+cycloneive_ram_block \inst4|inst1|ram_block|auto_generated|ram_block1a14 (
+	.portawe(\inst4|inst13~combout ),
+	.portare(vcc),
+	.portaaddrstall(gnd),
+	.portbwe(gnd),
+	.portbre(!\inst4|inst13~combout ),
+	.portbaddrstall(gnd),
+	.clk0(\CLK~input_o ),
+	.clk1(\CLK~input_o ),
+	.ena0(\inst4|inst13~combout ),
+	.ena1(\inst4|inst1|ram_block|auto_generated|ram_block1a0~0_combout ),
+	.ena2(vcc),
+	.ena3(vcc),
+	.clr0(gnd),
+	.clr1(gnd),
+	.portadatain({\TOW_IN[14]~input_o }),
+	.portaaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portabyteenamasks(1'b1),
+	.portbdatain(1'b0),
+	.portbaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portbbyteenamasks(1'b1),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.portadataout(),
+	.portbdataout(\inst4|inst1|ram_block|auto_generated|ram_block1a14_PORTBDATAOUT_bus ));
+// synopsys translate_off
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .clk0_core_clock_enable = "ena0";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .clk1_core_clock_enable = "ena1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .data_interleave_offset_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .data_interleave_width_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .logical_ram_name = "dataUnit:inst4|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|ALTSYNCRAM";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .mixed_port_feed_through_mode = "dont_care";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .operation_mode = "dual_port";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .port_a_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .port_a_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .port_a_byte_enable_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .port_a_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .port_a_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .port_a_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .port_a_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .port_a_first_bit_number = 14;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .port_a_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .port_a_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .port_a_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .port_a_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .port_b_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .port_b_address_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .port_b_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .port_b_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .port_b_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .port_b_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .port_b_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .port_b_first_bit_number = 14;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .port_b_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .port_b_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .port_b_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .port_b_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .port_b_read_enable_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a14 .ram_block_type = "M9K";
+// synopsys translate_on
 
-assign B_OUT[12] = \B_OUT[12]~output_o ;
+cycloneive_io_ibuf \TOW_IN[13]~input (
+	.i(TOW_IN[13]),
+	.ibar(gnd),
+	.o(\TOW_IN[13]~input_o ));
+// synopsys translate_off
+defparam \TOW_IN[13]~input .bus_hold = "false";
+defparam \TOW_IN[13]~input .simulate_z_as = "z";
+// synopsys translate_on
 
-assign B_OUT[11] = \B_OUT[11]~output_o ;
+cycloneive_ram_block \inst4|inst1|ram_block|auto_generated|ram_block1a13 (
+	.portawe(\inst4|inst13~combout ),
+	.portare(vcc),
+	.portaaddrstall(gnd),
+	.portbwe(gnd),
+	.portbre(!\inst4|inst13~combout ),
+	.portbaddrstall(gnd),
+	.clk0(\CLK~input_o ),
+	.clk1(\CLK~input_o ),
+	.ena0(\inst4|inst13~combout ),
+	.ena1(\inst4|inst1|ram_block|auto_generated|ram_block1a0~0_combout ),
+	.ena2(vcc),
+	.ena3(vcc),
+	.clr0(gnd),
+	.clr1(gnd),
+	.portadatain({\TOW_IN[13]~input_o }),
+	.portaaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portabyteenamasks(1'b1),
+	.portbdatain(1'b0),
+	.portbaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portbbyteenamasks(1'b1),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.portadataout(),
+	.portbdataout(\inst4|inst1|ram_block|auto_generated|ram_block1a13_PORTBDATAOUT_bus ));
+// synopsys translate_off
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .clk0_core_clock_enable = "ena0";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .clk1_core_clock_enable = "ena1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .data_interleave_offset_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .data_interleave_width_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .logical_ram_name = "dataUnit:inst4|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|ALTSYNCRAM";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .mixed_port_feed_through_mode = "dont_care";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .operation_mode = "dual_port";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .port_a_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .port_a_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .port_a_byte_enable_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .port_a_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .port_a_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .port_a_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .port_a_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .port_a_first_bit_number = 13;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .port_a_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .port_a_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .port_a_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .port_a_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .port_b_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .port_b_address_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .port_b_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .port_b_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .port_b_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .port_b_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .port_b_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .port_b_first_bit_number = 13;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .port_b_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .port_b_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .port_b_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .port_b_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .port_b_read_enable_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a13 .ram_block_type = "M9K";
+// synopsys translate_on
 
-assign B_OUT[10] = \B_OUT[10]~output_o ;
+cycloneive_io_ibuf \TOW_IN[12]~input (
+	.i(TOW_IN[12]),
+	.ibar(gnd),
+	.o(\TOW_IN[12]~input_o ));
+// synopsys translate_off
+defparam \TOW_IN[12]~input .bus_hold = "false";
+defparam \TOW_IN[12]~input .simulate_z_as = "z";
+// synopsys translate_on
 
-assign B_OUT[9] = \B_OUT[9]~output_o ;
+cycloneive_ram_block \inst4|inst1|ram_block|auto_generated|ram_block1a12 (
+	.portawe(\inst4|inst13~combout ),
+	.portare(vcc),
+	.portaaddrstall(gnd),
+	.portbwe(gnd),
+	.portbre(!\inst4|inst13~combout ),
+	.portbaddrstall(gnd),
+	.clk0(\CLK~input_o ),
+	.clk1(\CLK~input_o ),
+	.ena0(\inst4|inst13~combout ),
+	.ena1(\inst4|inst1|ram_block|auto_generated|ram_block1a0~0_combout ),
+	.ena2(vcc),
+	.ena3(vcc),
+	.clr0(gnd),
+	.clr1(gnd),
+	.portadatain({\TOW_IN[12]~input_o }),
+	.portaaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portabyteenamasks(1'b1),
+	.portbdatain(1'b0),
+	.portbaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portbbyteenamasks(1'b1),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.portadataout(),
+	.portbdataout(\inst4|inst1|ram_block|auto_generated|ram_block1a12_PORTBDATAOUT_bus ));
+// synopsys translate_off
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .clk0_core_clock_enable = "ena0";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .clk1_core_clock_enable = "ena1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .data_interleave_offset_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .data_interleave_width_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .logical_ram_name = "dataUnit:inst4|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|ALTSYNCRAM";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .mixed_port_feed_through_mode = "dont_care";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .operation_mode = "dual_port";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .port_a_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .port_a_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .port_a_byte_enable_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .port_a_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .port_a_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .port_a_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .port_a_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .port_a_first_bit_number = 12;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .port_a_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .port_a_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .port_a_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .port_a_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .port_b_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .port_b_address_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .port_b_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .port_b_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .port_b_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .port_b_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .port_b_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .port_b_first_bit_number = 12;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .port_b_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .port_b_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .port_b_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .port_b_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .port_b_read_enable_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a12 .ram_block_type = "M9K";
+// synopsys translate_on
 
-assign B_OUT[8] = \B_OUT[8]~output_o ;
+cycloneive_io_ibuf \TOW_IN[11]~input (
+	.i(TOW_IN[11]),
+	.ibar(gnd),
+	.o(\TOW_IN[11]~input_o ));
+// synopsys translate_off
+defparam \TOW_IN[11]~input .bus_hold = "false";
+defparam \TOW_IN[11]~input .simulate_z_as = "z";
+// synopsys translate_on
 
-assign B_OUT[7] = \B_OUT[7]~output_o ;
+cycloneive_ram_block \inst4|inst1|ram_block|auto_generated|ram_block1a11 (
+	.portawe(\inst4|inst13~combout ),
+	.portare(vcc),
+	.portaaddrstall(gnd),
+	.portbwe(gnd),
+	.portbre(!\inst4|inst13~combout ),
+	.portbaddrstall(gnd),
+	.clk0(\CLK~input_o ),
+	.clk1(\CLK~input_o ),
+	.ena0(\inst4|inst13~combout ),
+	.ena1(\inst4|inst1|ram_block|auto_generated|ram_block1a0~0_combout ),
+	.ena2(vcc),
+	.ena3(vcc),
+	.clr0(gnd),
+	.clr1(gnd),
+	.portadatain({\TOW_IN[11]~input_o }),
+	.portaaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portabyteenamasks(1'b1),
+	.portbdatain(1'b0),
+	.portbaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portbbyteenamasks(1'b1),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.portadataout(),
+	.portbdataout(\inst4|inst1|ram_block|auto_generated|ram_block1a11_PORTBDATAOUT_bus ));
+// synopsys translate_off
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .clk0_core_clock_enable = "ena0";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .clk1_core_clock_enable = "ena1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .data_interleave_offset_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .data_interleave_width_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .logical_ram_name = "dataUnit:inst4|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|ALTSYNCRAM";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .mixed_port_feed_through_mode = "dont_care";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .operation_mode = "dual_port";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .port_a_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .port_a_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .port_a_byte_enable_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .port_a_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .port_a_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .port_a_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .port_a_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .port_a_first_bit_number = 11;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .port_a_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .port_a_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .port_a_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .port_a_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .port_b_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .port_b_address_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .port_b_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .port_b_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .port_b_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .port_b_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .port_b_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .port_b_first_bit_number = 11;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .port_b_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .port_b_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .port_b_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .port_b_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .port_b_read_enable_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a11 .ram_block_type = "M9K";
+// synopsys translate_on
 
-assign B_OUT[6] = \B_OUT[6]~output_o ;
+cycloneive_io_ibuf \TOW_IN[10]~input (
+	.i(TOW_IN[10]),
+	.ibar(gnd),
+	.o(\TOW_IN[10]~input_o ));
+// synopsys translate_off
+defparam \TOW_IN[10]~input .bus_hold = "false";
+defparam \TOW_IN[10]~input .simulate_z_as = "z";
+// synopsys translate_on
 
-assign B_OUT[5] = \B_OUT[5]~output_o ;
+cycloneive_ram_block \inst4|inst1|ram_block|auto_generated|ram_block1a10 (
+	.portawe(\inst4|inst13~combout ),
+	.portare(vcc),
+	.portaaddrstall(gnd),
+	.portbwe(gnd),
+	.portbre(!\inst4|inst13~combout ),
+	.portbaddrstall(gnd),
+	.clk0(\CLK~input_o ),
+	.clk1(\CLK~input_o ),
+	.ena0(\inst4|inst13~combout ),
+	.ena1(\inst4|inst1|ram_block|auto_generated|ram_block1a0~0_combout ),
+	.ena2(vcc),
+	.ena3(vcc),
+	.clr0(gnd),
+	.clr1(gnd),
+	.portadatain({\TOW_IN[10]~input_o }),
+	.portaaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portabyteenamasks(1'b1),
+	.portbdatain(1'b0),
+	.portbaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portbbyteenamasks(1'b1),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.portadataout(),
+	.portbdataout(\inst4|inst1|ram_block|auto_generated|ram_block1a10_PORTBDATAOUT_bus ));
+// synopsys translate_off
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .clk0_core_clock_enable = "ena0";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .clk1_core_clock_enable = "ena1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .data_interleave_offset_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .data_interleave_width_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .logical_ram_name = "dataUnit:inst4|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|ALTSYNCRAM";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .mixed_port_feed_through_mode = "dont_care";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .operation_mode = "dual_port";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .port_a_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .port_a_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .port_a_byte_enable_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .port_a_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .port_a_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .port_a_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .port_a_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .port_a_first_bit_number = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .port_a_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .port_a_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .port_a_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .port_a_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .port_b_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .port_b_address_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .port_b_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .port_b_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .port_b_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .port_b_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .port_b_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .port_b_first_bit_number = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .port_b_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .port_b_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .port_b_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .port_b_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .port_b_read_enable_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a10 .ram_block_type = "M9K";
+// synopsys translate_on
 
-assign B_OUT[4] = \B_OUT[4]~output_o ;
+cycloneive_io_ibuf \TOW_IN[9]~input (
+	.i(TOW_IN[9]),
+	.ibar(gnd),
+	.o(\TOW_IN[9]~input_o ));
+// synopsys translate_off
+defparam \TOW_IN[9]~input .bus_hold = "false";
+defparam \TOW_IN[9]~input .simulate_z_as = "z";
+// synopsys translate_on
 
-assign B_OUT[3] = \B_OUT[3]~output_o ;
+cycloneive_ram_block \inst4|inst1|ram_block|auto_generated|ram_block1a9 (
+	.portawe(\inst4|inst13~combout ),
+	.portare(vcc),
+	.portaaddrstall(gnd),
+	.portbwe(gnd),
+	.portbre(!\inst4|inst13~combout ),
+	.portbaddrstall(gnd),
+	.clk0(\CLK~input_o ),
+	.clk1(\CLK~input_o ),
+	.ena0(\inst4|inst13~combout ),
+	.ena1(\inst4|inst1|ram_block|auto_generated|ram_block1a0~0_combout ),
+	.ena2(vcc),
+	.ena3(vcc),
+	.clr0(gnd),
+	.clr1(gnd),
+	.portadatain({\TOW_IN[9]~input_o }),
+	.portaaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portabyteenamasks(1'b1),
+	.portbdatain(1'b0),
+	.portbaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portbbyteenamasks(1'b1),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.portadataout(),
+	.portbdataout(\inst4|inst1|ram_block|auto_generated|ram_block1a9_PORTBDATAOUT_bus ));
+// synopsys translate_off
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .clk0_core_clock_enable = "ena0";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .clk1_core_clock_enable = "ena1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .data_interleave_offset_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .data_interleave_width_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .logical_ram_name = "dataUnit:inst4|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|ALTSYNCRAM";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .mixed_port_feed_through_mode = "dont_care";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .operation_mode = "dual_port";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .port_a_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .port_a_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .port_a_byte_enable_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .port_a_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .port_a_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .port_a_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .port_a_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .port_a_first_bit_number = 9;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .port_a_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .port_a_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .port_a_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .port_a_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .port_b_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .port_b_address_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .port_b_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .port_b_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .port_b_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .port_b_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .port_b_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .port_b_first_bit_number = 9;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .port_b_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .port_b_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .port_b_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .port_b_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .port_b_read_enable_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a9 .ram_block_type = "M9K";
+// synopsys translate_on
 
-assign B_OUT[2] = \B_OUT[2]~output_o ;
+cycloneive_io_ibuf \TOW_IN[8]~input (
+	.i(TOW_IN[8]),
+	.ibar(gnd),
+	.o(\TOW_IN[8]~input_o ));
+// synopsys translate_off
+defparam \TOW_IN[8]~input .bus_hold = "false";
+defparam \TOW_IN[8]~input .simulate_z_as = "z";
+// synopsys translate_on
 
-assign B_OUT[1] = \B_OUT[1]~output_o ;
+cycloneive_ram_block \inst4|inst1|ram_block|auto_generated|ram_block1a8 (
+	.portawe(\inst4|inst13~combout ),
+	.portare(vcc),
+	.portaaddrstall(gnd),
+	.portbwe(gnd),
+	.portbre(!\inst4|inst13~combout ),
+	.portbaddrstall(gnd),
+	.clk0(\CLK~input_o ),
+	.clk1(\CLK~input_o ),
+	.ena0(\inst4|inst13~combout ),
+	.ena1(\inst4|inst1|ram_block|auto_generated|ram_block1a0~0_combout ),
+	.ena2(vcc),
+	.ena3(vcc),
+	.clr0(gnd),
+	.clr1(gnd),
+	.portadatain({\TOW_IN[8]~input_o }),
+	.portaaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portabyteenamasks(1'b1),
+	.portbdatain(1'b0),
+	.portbaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portbbyteenamasks(1'b1),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.portadataout(),
+	.portbdataout(\inst4|inst1|ram_block|auto_generated|ram_block1a8_PORTBDATAOUT_bus ));
+// synopsys translate_off
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .clk0_core_clock_enable = "ena0";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .clk1_core_clock_enable = "ena1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .data_interleave_offset_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .data_interleave_width_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .logical_ram_name = "dataUnit:inst4|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|ALTSYNCRAM";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .mixed_port_feed_through_mode = "dont_care";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .operation_mode = "dual_port";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .port_a_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .port_a_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .port_a_byte_enable_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .port_a_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .port_a_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .port_a_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .port_a_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .port_a_first_bit_number = 8;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .port_a_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .port_a_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .port_a_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .port_a_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .port_b_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .port_b_address_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .port_b_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .port_b_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .port_b_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .port_b_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .port_b_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .port_b_first_bit_number = 8;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .port_b_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .port_b_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .port_b_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .port_b_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .port_b_read_enable_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a8 .ram_block_type = "M9K";
+// synopsys translate_on
 
-assign B_OUT[0] = \B_OUT[0]~output_o ;
+cycloneive_io_ibuf \TOW_IN[7]~input (
+	.i(TOW_IN[7]),
+	.ibar(gnd),
+	.o(\TOW_IN[7]~input_o ));
+// synopsys translate_off
+defparam \TOW_IN[7]~input .bus_hold = "false";
+defparam \TOW_IN[7]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_ram_block \inst4|inst1|ram_block|auto_generated|ram_block1a7 (
+	.portawe(\inst4|inst13~combout ),
+	.portare(vcc),
+	.portaaddrstall(gnd),
+	.portbwe(gnd),
+	.portbre(!\inst4|inst13~combout ),
+	.portbaddrstall(gnd),
+	.clk0(\CLK~input_o ),
+	.clk1(\CLK~input_o ),
+	.ena0(\inst4|inst13~combout ),
+	.ena1(\inst4|inst1|ram_block|auto_generated|ram_block1a0~0_combout ),
+	.ena2(vcc),
+	.ena3(vcc),
+	.clr0(gnd),
+	.clr1(gnd),
+	.portadatain({\TOW_IN[7]~input_o }),
+	.portaaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portabyteenamasks(1'b1),
+	.portbdatain(1'b0),
+	.portbaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portbbyteenamasks(1'b1),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.portadataout(),
+	.portbdataout(\inst4|inst1|ram_block|auto_generated|ram_block1a7_PORTBDATAOUT_bus ));
+// synopsys translate_off
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .clk0_core_clock_enable = "ena0";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .clk1_core_clock_enable = "ena1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .data_interleave_offset_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .data_interleave_width_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .logical_ram_name = "dataUnit:inst4|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|ALTSYNCRAM";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .mixed_port_feed_through_mode = "dont_care";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .operation_mode = "dual_port";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .port_a_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .port_a_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .port_a_byte_enable_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .port_a_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .port_a_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .port_a_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .port_a_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .port_a_first_bit_number = 7;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .port_a_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .port_a_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .port_a_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .port_a_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .port_b_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .port_b_address_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .port_b_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .port_b_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .port_b_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .port_b_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .port_b_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .port_b_first_bit_number = 7;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .port_b_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .port_b_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .port_b_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .port_b_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .port_b_read_enable_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a7 .ram_block_type = "M9K";
+// synopsys translate_on
+
+cycloneive_io_ibuf \TOW_IN[6]~input (
+	.i(TOW_IN[6]),
+	.ibar(gnd),
+	.o(\TOW_IN[6]~input_o ));
+// synopsys translate_off
+defparam \TOW_IN[6]~input .bus_hold = "false";
+defparam \TOW_IN[6]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_ram_block \inst4|inst1|ram_block|auto_generated|ram_block1a6 (
+	.portawe(\inst4|inst13~combout ),
+	.portare(vcc),
+	.portaaddrstall(gnd),
+	.portbwe(gnd),
+	.portbre(!\inst4|inst13~combout ),
+	.portbaddrstall(gnd),
+	.clk0(\CLK~input_o ),
+	.clk1(\CLK~input_o ),
+	.ena0(\inst4|inst13~combout ),
+	.ena1(\inst4|inst1|ram_block|auto_generated|ram_block1a0~0_combout ),
+	.ena2(vcc),
+	.ena3(vcc),
+	.clr0(gnd),
+	.clr1(gnd),
+	.portadatain({\TOW_IN[6]~input_o }),
+	.portaaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portabyteenamasks(1'b1),
+	.portbdatain(1'b0),
+	.portbaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portbbyteenamasks(1'b1),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.portadataout(),
+	.portbdataout(\inst4|inst1|ram_block|auto_generated|ram_block1a6_PORTBDATAOUT_bus ));
+// synopsys translate_off
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .clk0_core_clock_enable = "ena0";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .clk1_core_clock_enable = "ena1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .data_interleave_offset_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .data_interleave_width_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .logical_ram_name = "dataUnit:inst4|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|ALTSYNCRAM";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .mixed_port_feed_through_mode = "dont_care";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .operation_mode = "dual_port";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .port_a_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .port_a_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .port_a_byte_enable_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .port_a_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .port_a_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .port_a_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .port_a_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .port_a_first_bit_number = 6;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .port_a_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .port_a_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .port_a_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .port_a_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .port_b_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .port_b_address_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .port_b_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .port_b_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .port_b_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .port_b_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .port_b_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .port_b_first_bit_number = 6;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .port_b_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .port_b_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .port_b_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .port_b_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .port_b_read_enable_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a6 .ram_block_type = "M9K";
+// synopsys translate_on
+
+cycloneive_io_ibuf \TOW_IN[5]~input (
+	.i(TOW_IN[5]),
+	.ibar(gnd),
+	.o(\TOW_IN[5]~input_o ));
+// synopsys translate_off
+defparam \TOW_IN[5]~input .bus_hold = "false";
+defparam \TOW_IN[5]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_ram_block \inst4|inst1|ram_block|auto_generated|ram_block1a5 (
+	.portawe(\inst4|inst13~combout ),
+	.portare(vcc),
+	.portaaddrstall(gnd),
+	.portbwe(gnd),
+	.portbre(!\inst4|inst13~combout ),
+	.portbaddrstall(gnd),
+	.clk0(\CLK~input_o ),
+	.clk1(\CLK~input_o ),
+	.ena0(\inst4|inst13~combout ),
+	.ena1(\inst4|inst1|ram_block|auto_generated|ram_block1a0~0_combout ),
+	.ena2(vcc),
+	.ena3(vcc),
+	.clr0(gnd),
+	.clr1(gnd),
+	.portadatain({\TOW_IN[5]~input_o }),
+	.portaaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portabyteenamasks(1'b1),
+	.portbdatain(1'b0),
+	.portbaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portbbyteenamasks(1'b1),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.portadataout(),
+	.portbdataout(\inst4|inst1|ram_block|auto_generated|ram_block1a5_PORTBDATAOUT_bus ));
+// synopsys translate_off
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .clk0_core_clock_enable = "ena0";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .clk1_core_clock_enable = "ena1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .data_interleave_offset_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .data_interleave_width_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .logical_ram_name = "dataUnit:inst4|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|ALTSYNCRAM";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .mixed_port_feed_through_mode = "dont_care";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .operation_mode = "dual_port";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .port_a_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .port_a_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .port_a_byte_enable_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .port_a_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .port_a_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .port_a_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .port_a_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .port_a_first_bit_number = 5;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .port_a_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .port_a_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .port_a_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .port_a_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .port_b_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .port_b_address_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .port_b_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .port_b_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .port_b_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .port_b_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .port_b_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .port_b_first_bit_number = 5;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .port_b_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .port_b_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .port_b_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .port_b_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .port_b_read_enable_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a5 .ram_block_type = "M9K";
+// synopsys translate_on
+
+cycloneive_io_ibuf \TOW_IN[4]~input (
+	.i(TOW_IN[4]),
+	.ibar(gnd),
+	.o(\TOW_IN[4]~input_o ));
+// synopsys translate_off
+defparam \TOW_IN[4]~input .bus_hold = "false";
+defparam \TOW_IN[4]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_ram_block \inst4|inst1|ram_block|auto_generated|ram_block1a4 (
+	.portawe(\inst4|inst13~combout ),
+	.portare(vcc),
+	.portaaddrstall(gnd),
+	.portbwe(gnd),
+	.portbre(!\inst4|inst13~combout ),
+	.portbaddrstall(gnd),
+	.clk0(\CLK~input_o ),
+	.clk1(\CLK~input_o ),
+	.ena0(\inst4|inst13~combout ),
+	.ena1(\inst4|inst1|ram_block|auto_generated|ram_block1a0~0_combout ),
+	.ena2(vcc),
+	.ena3(vcc),
+	.clr0(gnd),
+	.clr1(gnd),
+	.portadatain({\TOW_IN[4]~input_o }),
+	.portaaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portabyteenamasks(1'b1),
+	.portbdatain(1'b0),
+	.portbaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portbbyteenamasks(1'b1),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.portadataout(),
+	.portbdataout(\inst4|inst1|ram_block|auto_generated|ram_block1a4_PORTBDATAOUT_bus ));
+// synopsys translate_off
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .clk0_core_clock_enable = "ena0";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .clk1_core_clock_enable = "ena1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .data_interleave_offset_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .data_interleave_width_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .logical_ram_name = "dataUnit:inst4|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|ALTSYNCRAM";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .mixed_port_feed_through_mode = "dont_care";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .operation_mode = "dual_port";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .port_a_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .port_a_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .port_a_byte_enable_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .port_a_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .port_a_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .port_a_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .port_a_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .port_a_first_bit_number = 4;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .port_a_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .port_a_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .port_a_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .port_a_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .port_b_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .port_b_address_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .port_b_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .port_b_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .port_b_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .port_b_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .port_b_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .port_b_first_bit_number = 4;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .port_b_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .port_b_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .port_b_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .port_b_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .port_b_read_enable_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a4 .ram_block_type = "M9K";
+// synopsys translate_on
+
+cycloneive_io_ibuf \TOW_IN[3]~input (
+	.i(TOW_IN[3]),
+	.ibar(gnd),
+	.o(\TOW_IN[3]~input_o ));
+// synopsys translate_off
+defparam \TOW_IN[3]~input .bus_hold = "false";
+defparam \TOW_IN[3]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_ram_block \inst4|inst1|ram_block|auto_generated|ram_block1a3 (
+	.portawe(\inst4|inst13~combout ),
+	.portare(vcc),
+	.portaaddrstall(gnd),
+	.portbwe(gnd),
+	.portbre(!\inst4|inst13~combout ),
+	.portbaddrstall(gnd),
+	.clk0(\CLK~input_o ),
+	.clk1(\CLK~input_o ),
+	.ena0(\inst4|inst13~combout ),
+	.ena1(\inst4|inst1|ram_block|auto_generated|ram_block1a0~0_combout ),
+	.ena2(vcc),
+	.ena3(vcc),
+	.clr0(gnd),
+	.clr1(gnd),
+	.portadatain({\TOW_IN[3]~input_o }),
+	.portaaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portabyteenamasks(1'b1),
+	.portbdatain(1'b0),
+	.portbaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portbbyteenamasks(1'b1),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.portadataout(),
+	.portbdataout(\inst4|inst1|ram_block|auto_generated|ram_block1a3_PORTBDATAOUT_bus ));
+// synopsys translate_off
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .clk0_core_clock_enable = "ena0";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .clk1_core_clock_enable = "ena1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .data_interleave_offset_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .data_interleave_width_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .logical_ram_name = "dataUnit:inst4|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|ALTSYNCRAM";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .mixed_port_feed_through_mode = "dont_care";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .operation_mode = "dual_port";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .port_a_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .port_a_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .port_a_byte_enable_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .port_a_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .port_a_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .port_a_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .port_a_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .port_a_first_bit_number = 3;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .port_a_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .port_a_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .port_a_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .port_a_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .port_b_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .port_b_address_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .port_b_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .port_b_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .port_b_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .port_b_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .port_b_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .port_b_first_bit_number = 3;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .port_b_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .port_b_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .port_b_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .port_b_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .port_b_read_enable_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a3 .ram_block_type = "M9K";
+// synopsys translate_on
+
+cycloneive_io_ibuf \TOW_IN[2]~input (
+	.i(TOW_IN[2]),
+	.ibar(gnd),
+	.o(\TOW_IN[2]~input_o ));
+// synopsys translate_off
+defparam \TOW_IN[2]~input .bus_hold = "false";
+defparam \TOW_IN[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_ram_block \inst4|inst1|ram_block|auto_generated|ram_block1a2 (
+	.portawe(\inst4|inst13~combout ),
+	.portare(vcc),
+	.portaaddrstall(gnd),
+	.portbwe(gnd),
+	.portbre(!\inst4|inst13~combout ),
+	.portbaddrstall(gnd),
+	.clk0(\CLK~input_o ),
+	.clk1(\CLK~input_o ),
+	.ena0(\inst4|inst13~combout ),
+	.ena1(\inst4|inst1|ram_block|auto_generated|ram_block1a0~0_combout ),
+	.ena2(vcc),
+	.ena3(vcc),
+	.clr0(gnd),
+	.clr1(gnd),
+	.portadatain({\TOW_IN[2]~input_o }),
+	.portaaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portabyteenamasks(1'b1),
+	.portbdatain(1'b0),
+	.portbaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portbbyteenamasks(1'b1),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.portadataout(),
+	.portbdataout(\inst4|inst1|ram_block|auto_generated|ram_block1a2_PORTBDATAOUT_bus ));
+// synopsys translate_off
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .clk0_core_clock_enable = "ena0";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .clk1_core_clock_enable = "ena1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .data_interleave_offset_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .data_interleave_width_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .logical_ram_name = "dataUnit:inst4|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|ALTSYNCRAM";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .mixed_port_feed_through_mode = "dont_care";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .operation_mode = "dual_port";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .port_a_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .port_a_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .port_a_byte_enable_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .port_a_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .port_a_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .port_a_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .port_a_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .port_a_first_bit_number = 2;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .port_a_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .port_a_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .port_a_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .port_a_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .port_b_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .port_b_address_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .port_b_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .port_b_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .port_b_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .port_b_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .port_b_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .port_b_first_bit_number = 2;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .port_b_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .port_b_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .port_b_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .port_b_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .port_b_read_enable_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a2 .ram_block_type = "M9K";
+// synopsys translate_on
+
+cycloneive_io_ibuf \TOW_IN[1]~input (
+	.i(TOW_IN[1]),
+	.ibar(gnd),
+	.o(\TOW_IN[1]~input_o ));
+// synopsys translate_off
+defparam \TOW_IN[1]~input .bus_hold = "false";
+defparam \TOW_IN[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_ram_block \inst4|inst1|ram_block|auto_generated|ram_block1a1 (
+	.portawe(\inst4|inst13~combout ),
+	.portare(vcc),
+	.portaaddrstall(gnd),
+	.portbwe(gnd),
+	.portbre(!\inst4|inst13~combout ),
+	.portbaddrstall(gnd),
+	.clk0(\CLK~input_o ),
+	.clk1(\CLK~input_o ),
+	.ena0(\inst4|inst13~combout ),
+	.ena1(\inst4|inst1|ram_block|auto_generated|ram_block1a0~0_combout ),
+	.ena2(vcc),
+	.ena3(vcc),
+	.clr0(gnd),
+	.clr1(gnd),
+	.portadatain({\TOW_IN[1]~input_o }),
+	.portaaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portabyteenamasks(1'b1),
+	.portbdatain(1'b0),
+	.portbaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portbbyteenamasks(1'b1),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.portadataout(),
+	.portbdataout(\inst4|inst1|ram_block|auto_generated|ram_block1a1_PORTBDATAOUT_bus ));
+// synopsys translate_off
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .clk0_core_clock_enable = "ena0";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .clk1_core_clock_enable = "ena1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .data_interleave_offset_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .data_interleave_width_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .logical_ram_name = "dataUnit:inst4|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|ALTSYNCRAM";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .mixed_port_feed_through_mode = "dont_care";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .operation_mode = "dual_port";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .port_a_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .port_a_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .port_a_byte_enable_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .port_a_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .port_a_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .port_a_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .port_a_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .port_a_first_bit_number = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .port_a_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .port_a_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .port_a_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .port_a_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .port_b_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .port_b_address_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .port_b_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .port_b_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .port_b_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .port_b_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .port_b_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .port_b_first_bit_number = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .port_b_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .port_b_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .port_b_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .port_b_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .port_b_read_enable_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a1 .ram_block_type = "M9K";
+// synopsys translate_on
+
+cycloneive_io_ibuf \TOW_IN[0]~input (
+	.i(TOW_IN[0]),
+	.ibar(gnd),
+	.o(\TOW_IN[0]~input_o ));
+// synopsys translate_off
+defparam \TOW_IN[0]~input .bus_hold = "false";
+defparam \TOW_IN[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_ram_block \inst4|inst1|ram_block|auto_generated|ram_block1a0 (
+	.portawe(\inst4|inst13~combout ),
+	.portare(vcc),
+	.portaaddrstall(gnd),
+	.portbwe(gnd),
+	.portbre(!\inst4|inst13~combout ),
+	.portbaddrstall(gnd),
+	.clk0(\CLK~input_o ),
+	.clk1(\CLK~input_o ),
+	.ena0(\inst4|inst13~combout ),
+	.ena1(\inst4|inst1|ram_block|auto_generated|ram_block1a0~0_combout ),
+	.ena2(vcc),
+	.ena3(vcc),
+	.clr0(gnd),
+	.clr1(gnd),
+	.portadatain({\TOW_IN[0]~input_o }),
+	.portaaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portabyteenamasks(1'b1),
+	.portbdatain(1'b0),
+	.portbaddr({\DADD_IN[9]~input_o ,\DADD_IN[8]~input_o ,\DADD_IN[7]~input_o ,\DADD_IN[6]~input_o ,\DADD_IN[5]~input_o ,\DADD_IN[4]~input_o ,\DADD_IN[3]~input_o ,\DADD_IN[2]~input_o ,\DADD_IN[1]~input_o ,\DADD_IN[0]~input_o }),
+	.portbbyteenamasks(1'b1),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.portadataout(),
+	.portbdataout(\inst4|inst1|ram_block|auto_generated|ram_block1a0_PORTBDATAOUT_bus ));
+// synopsys translate_off
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .clk0_core_clock_enable = "ena0";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .clk1_core_clock_enable = "ena1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .data_interleave_offset_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .data_interleave_width_in_bits = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .logical_ram_name = "dataUnit:inst4|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|ALTSYNCRAM";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .mixed_port_feed_through_mode = "dont_care";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .operation_mode = "dual_port";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .port_a_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .port_a_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .port_a_byte_enable_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .port_a_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .port_a_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .port_a_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .port_a_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .port_a_first_bit_number = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .port_a_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .port_a_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .port_a_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .port_a_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .port_b_address_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .port_b_address_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .port_b_address_width = 10;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .port_b_data_out_clear = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .port_b_data_out_clock = "none";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .port_b_data_width = 1;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .port_b_first_address = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .port_b_first_bit_number = 0;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .port_b_last_address = 1023;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .port_b_logical_ram_depth = 1024;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .port_b_logical_ram_width = 16;
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .port_b_read_during_write_mode = "new_data_with_nbe_read";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .port_b_read_enable_clock = "clock1";
+defparam \inst4|inst1|ram_block|auto_generated|ram_block1a0 .ram_block_type = "M9K";
+// synopsys translate_on
+
+assign FROMW_OUT[15] = \FROMW_OUT[15]~output_o ;
+
+assign FROMW_OUT[14] = \FROMW_OUT[14]~output_o ;
+
+assign FROMW_OUT[13] = \FROMW_OUT[13]~output_o ;
+
+assign FROMW_OUT[12] = \FROMW_OUT[12]~output_o ;
+
+assign FROMW_OUT[11] = \FROMW_OUT[11]~output_o ;
+
+assign FROMW_OUT[10] = \FROMW_OUT[10]~output_o ;
+
+assign FROMW_OUT[9] = \FROMW_OUT[9]~output_o ;
+
+assign FROMW_OUT[8] = \FROMW_OUT[8]~output_o ;
+
+assign FROMW_OUT[7] = \FROMW_OUT[7]~output_o ;
+
+assign FROMW_OUT[6] = \FROMW_OUT[6]~output_o ;
+
+assign FROMW_OUT[5] = \FROMW_OUT[5]~output_o ;
+
+assign FROMW_OUT[4] = \FROMW_OUT[4]~output_o ;
+
+assign FROMW_OUT[3] = \FROMW_OUT[3]~output_o ;
+
+assign FROMW_OUT[2] = \FROMW_OUT[2]~output_o ;
+
+assign FROMW_OUT[1] = \FROMW_OUT[1]~output_o ;
+
+assign FROMW_OUT[0] = \FROMW_OUT[0]~output_o ;
 
 endmodule

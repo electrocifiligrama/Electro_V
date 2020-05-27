@@ -4,335 +4,183 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "A_OUT[15]",
+					"name" : "FROMW_OUT[15]",
 					"strict" : false
 				},
 				{
-					"name" : "A_OUT[14]",
+					"name" : "FROMW_OUT[14]",
 					"strict" : false
 				},
 				{
-					"name" : "A_OUT[13]",
+					"name" : "FROMW_OUT[13]",
 					"strict" : false
 				},
 				{
-					"name" : "A_OUT[12]",
+					"name" : "FROMW_OUT[12]",
 					"strict" : false
 				},
 				{
-					"name" : "A_OUT[11]",
+					"name" : "FROMW_OUT[11]",
 					"strict" : false
 				},
 				{
-					"name" : "A_OUT[10]",
+					"name" : "FROMW_OUT[10]",
 					"strict" : false
 				},
 				{
-					"name" : "A_OUT[9]",
+					"name" : "FROMW_OUT[9]",
 					"strict" : false
 				},
 				{
-					"name" : "A_OUT[8]",
+					"name" : "FROMW_OUT[8]",
 					"strict" : false
 				},
 				{
-					"name" : "A_OUT[7]",
+					"name" : "FROMW_OUT[7]",
 					"strict" : false
 				},
 				{
-					"name" : "A_OUT[6]",
+					"name" : "FROMW_OUT[6]",
 					"strict" : false
 				},
 				{
-					"name" : "A_OUT[5]",
+					"name" : "FROMW_OUT[5]",
 					"strict" : false
 				},
 				{
-					"name" : "A_OUT[4]",
+					"name" : "FROMW_OUT[4]",
 					"strict" : false
 				},
 				{
-					"name" : "A_OUT[3]",
+					"name" : "FROMW_OUT[3]",
 					"strict" : false
 				},
 				{
-					"name" : "A_OUT[2]",
+					"name" : "FROMW_OUT[2]",
 					"strict" : false
 				},
 				{
-					"name" : "A_OUT[1]",
+					"name" : "FROMW_OUT[1]",
 					"strict" : false
 				},
 				{
-					"name" : "A_OUT[0]",
+					"name" : "FROMW_OUT[0]",
 					"strict" : false
 				},
 				{
-					"name" : "B_OUT[15]",
+					"name" : "MW_IN",
 					"strict" : false
 				},
 				{
-					"name" : "B_OUT[14]",
+					"name" : "MR",
 					"strict" : false
 				},
 				{
-					"name" : "B_OUT[13]",
+					"name" : "CLK",
 					"strict" : false
 				},
 				{
-					"name" : "B_OUT[12]",
+					"name" : "TOW_IN[15]",
 					"strict" : false
 				},
 				{
-					"name" : "B_OUT[11]",
+					"name" : "DADD_IN[0]",
 					"strict" : false
 				},
 				{
-					"name" : "B_OUT[10]",
+					"name" : "DADD_IN[1]",
 					"strict" : false
 				},
 				{
-					"name" : "B_OUT[9]",
+					"name" : "DADD_IN[2]",
 					"strict" : false
 				},
 				{
-					"name" : "B_OUT[8]",
+					"name" : "DADD_IN[3]",
 					"strict" : false
 				},
 				{
-					"name" : "B_OUT[7]",
+					"name" : "DADD_IN[4]",
 					"strict" : false
 				},
 				{
-					"name" : "B_OUT[6]",
+					"name" : "DADD_IN[5]",
 					"strict" : false
 				},
 				{
-					"name" : "B_OUT[5]",
+					"name" : "DADD_IN[6]",
 					"strict" : false
 				},
 				{
-					"name" : "B_OUT[4]",
+					"name" : "DADD_IN[7]",
 					"strict" : false
 				},
 				{
-					"name" : "B_OUT[3]",
+					"name" : "DADD_IN[8]",
 					"strict" : false
 				},
 				{
-					"name" : "B_OUT[2]",
+					"name" : "DADD_IN[9]",
 					"strict" : false
 				},
 				{
-					"name" : "B_OUT[1]",
+					"name" : "TOW_IN[14]",
 					"strict" : false
 				},
 				{
-					"name" : "B_OUT[0]",
+					"name" : "TOW_IN[13]",
 					"strict" : false
 				},
 				{
-					"name" : "XMUX_IN[15]",
+					"name" : "TOW_IN[12]",
 					"strict" : false
 				},
 				{
-					"name" : "MUXSEL_IN",
+					"name" : "TOW_IN[11]",
 					"strict" : false
 				},
 				{
-					"name" : "CLK_IN",
+					"name" : "TOW_IN[10]",
 					"strict" : false
 				},
 				{
-					"name" : "XMUX_IN[14]",
+					"name" : "TOW_IN[9]",
 					"strict" : false
 				},
 				{
-					"name" : "XMUX_IN[13]",
+					"name" : "TOW_IN[8]",
 					"strict" : false
 				},
 				{
-					"name" : "XMUX_IN[12]",
+					"name" : "TOW_IN[7]",
 					"strict" : false
 				},
 				{
-					"name" : "XMUX_IN[11]",
+					"name" : "TOW_IN[6]",
 					"strict" : false
 				},
 				{
-					"name" : "XMUX_IN[10]",
+					"name" : "TOW_IN[5]",
 					"strict" : false
 				},
 				{
-					"name" : "XMUX_IN[9]",
+					"name" : "TOW_IN[4]",
 					"strict" : false
 				},
 				{
-					"name" : "XMUX_IN[8]",
+					"name" : "TOW_IN[3]",
 					"strict" : false
 				},
 				{
-					"name" : "XMUX_IN[7]",
+					"name" : "TOW_IN[2]",
 					"strict" : false
 				},
 				{
-					"name" : "XMUX_IN[6]",
+					"name" : "TOW_IN[1]",
 					"strict" : false
 				},
 				{
-					"name" : "XMUX_IN[5]",
-					"strict" : false
-				},
-				{
-					"name" : "XMUX_IN[4]",
-					"strict" : false
-				},
-				{
-					"name" : "XMUX_IN[3]",
-					"strict" : false
-				},
-				{
-					"name" : "XMUX_IN[2]",
-					"strict" : false
-				},
-				{
-					"name" : "XMUX_IN[1]",
-					"strict" : false
-				},
-				{
-					"name" : "XMUX_IN[0]",
-					"strict" : false
-				},
-				{
-					"name" : "B_OP_IN[15]",
-					"strict" : false
-				},
-				{
-					"name" : "B_OP_IN[14]",
-					"strict" : false
-				},
-				{
-					"name" : "B_OP_IN[13]",
-					"strict" : false
-				},
-				{
-					"name" : "B_OP_IN[12]",
-					"strict" : false
-				},
-				{
-					"name" : "B_OP_IN[11]",
-					"strict" : false
-				},
-				{
-					"name" : "B_OP_IN[10]",
-					"strict" : false
-				},
-				{
-					"name" : "B_OP_IN[9]",
-					"strict" : false
-				},
-				{
-					"name" : "B_OP_IN[8]",
-					"strict" : false
-				},
-				{
-					"name" : "B_OP_IN[7]",
-					"strict" : false
-				},
-				{
-					"name" : "B_OP_IN[6]",
-					"strict" : false
-				},
-				{
-					"name" : "B_OP_IN[5]",
-					"strict" : false
-				},
-				{
-					"name" : "B_OP_IN[4]",
-					"strict" : false
-				},
-				{
-					"name" : "B_OP_IN[3]",
-					"strict" : false
-				},
-				{
-					"name" : "B_OP_IN[2]",
-					"strict" : false
-				},
-				{
-					"name" : "B_OP_IN[1]",
-					"strict" : false
-				},
-				{
-					"name" : "B_OP_IN[0]",
-					"strict" : false
-				},
-				{
-					"name" : "OPERANDS_IN[15]",
-					"strict" : false
-				},
-				{
-					"name" : "CLK_HOLD_IN",
-					"strict" : false
-				},
-				{
-					"name" : "OPERANDS_IN[14]",
-					"strict" : false
-				},
-				{
-					"name" : "OPERANDS_IN[13]",
-					"strict" : false
-				},
-				{
-					"name" : "OPERANDS_IN[12]",
-					"strict" : false
-				},
-				{
-					"name" : "OPERANDS_IN[11]",
-					"strict" : false
-				},
-				{
-					"name" : "OPERANDS_IN[10]",
-					"strict" : false
-				},
-				{
-					"name" : "OPERANDS_IN[9]",
-					"strict" : false
-				},
-				{
-					"name" : "OPERANDS_IN[8]",
-					"strict" : false
-				},
-				{
-					"name" : "OPERANDS_IN[7]",
-					"strict" : false
-				},
-				{
-					"name" : "OPERANDS_IN[6]",
-					"strict" : false
-				},
-				{
-					"name" : "OPERANDS_IN[5]",
-					"strict" : false
-				},
-				{
-					"name" : "OPERANDS_IN[4]",
-					"strict" : false
-				},
-				{
-					"name" : "OPERANDS_IN[3]",
-					"strict" : false
-				},
-				{
-					"name" : "OPERANDS_IN[2]",
-					"strict" : false
-				},
-				{
-					"name" : "OPERANDS_IN[1]",
-					"strict" : false
-				},
-				{
-					"name" : "OPERANDS_IN[0]",
+					"name" : "TOW_IN[0]",
 					"strict" : false
 				}
 			]

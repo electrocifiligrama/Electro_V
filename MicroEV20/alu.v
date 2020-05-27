@@ -10,6 +10,7 @@ module ALU( input [15:0] A,B,
 	always @ (*)
 	begin
 		temp = {1'b0,A} + {1'b0,B}; // A+B 17bit sum
+		aluRes = 0;
 		case(aluC)
 		4'b0000: // NopA
 			aluRes = A;

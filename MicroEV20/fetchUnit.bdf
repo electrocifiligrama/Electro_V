@@ -167,9 +167,9 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1152 200 1328 216)
+	(rect 1152 200 1331 216)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "INST-DAdd[9..0]" (rect 90 0 171 12)(font "Arial" ))
+	(text "INST_DAdd[9..0]" (rect 90 0 173 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -185,7 +185,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect 1152 136 1328 152)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "INST-A[4..0]" (rect 90 0 151 12)(font "Arial" ))
+	(text "INST_A[4..0]" (rect 90 0 153 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -262,7 +262,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -287,7 +287,7 @@ refer to the applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
 		(line (pt 39 16)(pt 48 16))
 	)
 	(drawing
@@ -326,7 +326,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
 		(line (pt 43 24)(pt 64 24))
 	)
 	(drawing
@@ -351,7 +351,7 @@ refer to the applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
 		(line (pt 39 16)(pt 48 16))
 	)
 	(drawing
@@ -376,7 +376,7 @@ refer to the applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
 		(line (pt 39 16)(pt 48 16))
 	)
 	(drawing
@@ -408,7 +408,7 @@ refer to the applicable agreement for further details.
 		(pt 0 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 2 15 16 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 2 15 19 27)(font "Courier New" (bold))(invisible))
 		(line (pt 22 24)(pt 0 24))
 	)
 	(drawing
@@ -448,7 +448,7 @@ refer to the applicable agreement for further details.
 		(pt 0 32)
 		(output)
 		(text "PC[10..0]" (rect 0 0 47 12)(font "Arial" ))
-		(text "PC[10..0]" (rect 21 27 60 39)(font "Arial" ))
+		(text "PC[10..0]" (rect 21 27 68 39)(font "Arial" ))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(drawing
@@ -527,7 +527,7 @@ refer to the applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -598,7 +598,7 @@ refer to the applicable agreement for further details.
 		(pt 64 40)
 		(output)
 		(text "OUT" (rect 48 31 65 43)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 31 62 43)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 31 65 43)(font "Courier New" (bold))(invisible))
 		(line (pt 46 40)(pt 64 40))
 	)
 	(drawing
@@ -624,7 +624,7 @@ refer to the applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
 		(line (pt 39 16)(pt 48 16))
 	)
 	(drawing
@@ -656,7 +656,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
 		(line (pt 48 24)(pt 64 24))
 	)
 	(drawing
