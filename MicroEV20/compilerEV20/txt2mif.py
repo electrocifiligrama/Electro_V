@@ -1,16 +1,25 @@
 from dictNemonics import nem2binDict
 
-def nem2binFun(nemLines):   ##AUN FALLA SI HAY ENTERSSSS ENTRE LINEAS
+def nem2binFun(nemLines):   
     binLines = []
     for i in range(len(nemLines)):
         #print(i)
+        j = -1
         lineSplitted = nemLines[i].split()
-        if lineSplitted[0] in nem2binDict:
-            binLines.append(nem2binDict[lineSplitted[0]][1](nem2binDict, lineSplitted))
-            if binLines[i] == -1:
+        print(lineSplitted)
+        print(len(lineSplitted))
+        
+        if len(lineSplitted) > 0:  #ignore enter
+            
+            if lineSplitted[0] in nem2binDict:
+                binLines.append(nem2binDict[lineSplitted[0]][1](nem2binDict, lineSplitted))
+                j = j + 1
+                if binLines[j] == -1:
+                    return [-1, "Error en la línea " + str(i)]
+            else:
                 return [-1, "Error en la línea " + str(i)]
-        else:
-            return [-1, "Error en la línea " + str(i)]
+    
+    
     ##if for loop is done with success, all the nemLines were decoded correctly... so return binLines...
     return binLines
 
