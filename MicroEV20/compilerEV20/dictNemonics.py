@@ -103,8 +103,8 @@ def riFromW(opcode_, ri_):
     if not validRegister(ri):
         return -1
 
-    operand = (32 << 5) + (ri << 5)
-    return "{0:022b}".format(operand + opcode_)
+    operand = (ri << 5)
+    return "{0:022b}".format(operand + (opcode_ >> 1) + opcode_)
 
 def rjToW(opcode_, rj_):
     rj = int(rj_)
@@ -128,7 +128,7 @@ def poiFromW(opcode_, poi_):
     if not validPort(poi):
         return -1
     operand = (32 << 5) + ((poi + 30) << 5)
-    return "{0:022b}".format(operand + opcode_)
+    return "{0:022b}".format(operand + (opcode_ >> 1) + opcode_)
 
 def constW(opcode_, c_):
     c = int(c_)
@@ -203,9 +203,9 @@ nem2binDict = {"JMP":[0x200000, jump],
                 "ANK":[0x050000, genericComaSeparated],
                 "ORK":[0x060000, genericComaSeparated],
                 "ADK":[0x070000, genericComaSeparated],
-                "ANR":[0x0A0000, genericComaSeparated],
-                "ORR":[0x0C0000, genericComaSeparated],
-                "ADR":[0x0E0000, genericComaSeparated],
+                "ANR":[0x028000, genericComaSeparated],
+                "ORR":[0x030000, genericComaSeparated],
+                "ADR":[0x038000, genericComaSeparated],
                 "CPL":[0x000000, simpleParser],
                 "CLR":[0x008000, simpleParser],
                 "SET":[0x010000, simpleParser],
