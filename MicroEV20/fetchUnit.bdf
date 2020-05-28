@@ -135,7 +135,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 920 520 1096 536)
+	(rect 1208 576 1384 592)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "OPERAND[15..0]" (rect 90 0 176 12)(font "Arial" ))
 	(pt 0 8)
@@ -262,7 +262,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -287,7 +287,7 @@ refer to the applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
 		(line (pt 39 16)(pt 48 16))
 	)
 	(drawing
@@ -326,7 +326,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
 		(line (pt 43 24)(pt 64 24))
 	)
 	(drawing
@@ -351,7 +351,7 @@ refer to the applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
 		(line (pt 39 16)(pt 48 16))
 	)
 	(drawing
@@ -376,7 +376,7 @@ refer to the applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
 		(line (pt 39 16)(pt 48 16))
 	)
 	(drawing
@@ -408,7 +408,7 @@ refer to the applicable agreement for further details.
 		(pt 0 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 2 15 16 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 2 15 19 27)(font "Courier New" (bold))(invisible))
 		(line (pt 22 24)(pt 0 24))
 	)
 	(drawing
@@ -448,7 +448,7 @@ refer to the applicable agreement for further details.
 		(pt 0 32)
 		(output)
 		(text "PC[10..0]" (rect 0 0 47 12)(font "Arial" ))
-		(text "PC[10..0]" (rect 21 27 60 39)(font "Arial" ))
+		(text "PC[10..0]" (rect 21 27 68 39)(font "Arial" ))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(drawing
@@ -527,7 +527,7 @@ refer to the applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -598,7 +598,7 @@ refer to the applicable agreement for further details.
 		(pt 64 40)
 		(output)
 		(text "OUT" (rect 48 31 65 43)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 31 62 43)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 31 65 43)(font "Courier New" (bold))(invisible))
 		(line (pt 46 40)(pt 64 40))
 	)
 	(drawing
@@ -624,7 +624,7 @@ refer to the applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
 		(line (pt 39 16)(pt 48 16))
 	)
 	(drawing
@@ -656,7 +656,7 @@ refer to the applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
 		(line (pt 48 24)(pt 64 24))
 	)
 	(drawing
@@ -738,7 +738,7 @@ refer to the applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -788,7 +788,7 @@ refer to the applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
 		(line (pt 39 16)(pt 48 16))
 	)
 	(drawing
@@ -929,17 +929,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 1016 384)
 	(pt 1128 384)
-)
-(connector
-	(text "q[15..0]" (rect 856 400 873 435)(font "Intel Clear" )(vertical))
-	(pt 880 328)
-	(pt 880 528)
-	(bus)
-)
-(connector
-	(pt 880 528)
-	(pt 920 528)
-	(bus)
 )
 (connector
 	(pt 896 488)
@@ -1118,17 +1107,6 @@ refer to the applicable agreement for further details.
 	(pt 832 624)
 )
 (connector
-	(pt 880 328)
-	(pt 896 328)
-	(bus)
-)
-(connector
-	(text "q[21..0]" (rect 822 304 857 321)(font "Intel Clear" ))
-	(pt 824 328)
-	(pt 880 328)
-	(bus)
-)
-(connector
 	(pt 344 488)
 	(pt 352 488)
 	(bus)
@@ -1140,10 +1118,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 568 408)
 	(pt 568 488)
-)
-(connector
-	(pt 424 408)
-	(pt 568 408)
 )
 (connector
 	(pt 568 408)
@@ -1161,6 +1135,43 @@ refer to the applicable agreement for further details.
 	(text "I[10..0]" (rect 595 504 626 521)(font "Intel Clear" ))
 	(pt 544 520)
 	(pt 632 520)
+	(bus)
+)
+(connector
+	(text "q[15..0]" (rect 856 400 873 435)(font "Intel Clear" )(vertical))
+	(pt 880 536)
+	(pt 880 328)
+	(bus)
+)
+(connector
+	(pt 880 536)
+	(pt 1144 536)
+	(bus)
+)
+(connector
+	(text "q[21..0]" (rect 822 304 857 321)(font "Intel Clear" ))
+	(pt 824 328)
+	(pt 880 328)
+	(bus)
+)
+(connector
+	(pt 880 328)
+	(pt 896 328)
+	(bus)
+)
+(connector
+	(pt 1144 536)
+	(pt 1144 584)
+	(bus)
+)
+(connector
+	(text "ClkAux" (rect 485 392 519 409)(font "Intel Clear" ))
+	(pt 424 408)
+	(pt 568 408)
+)
+(connector
+	(pt 1208 584)
+	(pt 1144 584)
 	(bus)
 )
 (junction (pt 976 328))

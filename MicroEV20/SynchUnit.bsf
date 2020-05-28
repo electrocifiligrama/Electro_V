@@ -1,0 +1,99 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 312 176)
+	(text "SynchUnit" (rect 5 0 65 19)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 139 24 156)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "HOLD" (rect 0 0 35 19)(font "Intel Clear" (font_size 8)))
+		(text "HOLD" (rect 21 27 56 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Clk_in" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Clk_in" (rect 21 43 57 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Ain[4..0]" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
+		(text "Ain[4..0]" (rect 21 59 70 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "Dadd_in[9..0]" (rect 0 0 81 19)(font "Intel Clear" (font_size 8)))
+		(text "Dadd_in[9..0]" (rect 21 75 102 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "MuxSel" (rect 0 0 42 19)(font "Intel Clear" (font_size 8)))
+		(text "MuxSel" (rect 21 91 63 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "Operands[15..0]" (rect 0 0 96 19)(font "Intel Clear" (font_size 8)))
+		(text "Operands[15..0]" (rect 21 107 117 126)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 296 32)
+		(output)
+		(text "Asynched[4..0]" (rect 0 0 87 19)(font "Intel Clear" (font_size 8)))
+		(text "Asynched[4..0]" (rect 188 27 275 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 296 32)(pt 280 32)(line_width 3))
+	)
+	(port
+		(pt 296 48)
+		(output)
+		(text "DaddSynched[9..0]" (rect 0 0 114 19)(font "Intel Clear" (font_size 8)))
+		(text "DaddSynched[9..0]" (rect 161 43 275 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 296 48)(pt 280 48)(line_width 3))
+	)
+	(port
+		(pt 296 64)
+		(output)
+		(text "MuxSelSynched" (rect 0 0 93 19)(font "Intel Clear" (font_size 8)))
+		(text "MuxSelSynched" (rect 182 59 275 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 296 64)(pt 280 64))
+	)
+	(port
+		(pt 296 80)
+		(output)
+		(text "OperandsSynched[15..0]" (rect 0 0 147 19)(font "Intel Clear" (font_size 8)))
+		(text "OperandsSynched[15..0]" (rect 128 75 275 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 296 80)(pt 280 80)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 280 144))
+	)
+)
