@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ev20QUARTUS
-Thu May 28 20:09:36 2020
+Fri May 29 02:01:10 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -282,16 +282,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu May 28 20:09:36 2020       ;
+; Analysis & Synthesis Status        ; Successful - Fri May 29 02:01:10 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ev20QUARTUS                                 ;
 ; Top-level Entity Name              ; ev20main                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 2,406                                       ;
-;     Total combinational functions  ; 1,042                                       ;
-;     Dedicated logic registers      ; 1,477                                       ;
-; Total registers                    ; 1477                                        ;
-; Total pins                         ; 104                                         ;
+; Total logic elements               ; 2,418                                       ;
+;     Total combinational functions  ; 1,049                                       ;
+;     Dedicated logic registers      ; 1,487                                       ;
+; Total registers                    ; 1487                                        ;
+; Total pins                         ; 143                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 65,664                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -389,7 +389,7 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
+; Number detected on machine ; 2           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -397,78 +397,79 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                              ;
-+----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                                                ; Library ;
-+----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
-; SynchUnit.bdf                    ; yes             ; User Block Diagram/Schematic File      ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/SynchUnit.bdf          ;         ;
-; SynchRegister.bdf                ; yes             ; User Block Diagram/Schematic File      ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/SynchRegister.bdf      ;         ;
-; DelayInicial.v                   ; yes             ; User Verilog HDL File                  ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/DelayInicial.v         ;         ;
-; MIR.bdf                          ; yes             ; User Block Diagram/Schematic File      ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/MIR.bdf                ;         ;
-; UC2.bdf                          ; yes             ; User Block Diagram/Schematic File      ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/UC2.bdf                ;         ;
-; UC1.bdf                          ; yes             ; User Block Diagram/Schematic File      ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/UC1.bdf                ;         ;
-; ev20main.bdf                     ; yes             ; User Block Diagram/Schematic File      ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/ev20main.bdf           ;         ;
-; ev20jumpControl.bdf              ; yes             ; User Block Diagram/Schematic File      ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/ev20jumpControl.bdf    ;         ;
-; alu.v                            ; yes             ; User Verilog HDL File                  ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/alu.v                  ;         ;
-; shifter.v                        ; yes             ; User Verilog HDL File                  ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/shifter.v              ;         ;
-; ev20B3BUSA.bdf                   ; yes             ; User Block Diagram/Schematic File      ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/ev20B3BUSA.bdf         ;         ;
-; ev20B3BUSB.bdf                   ; yes             ; User Block Diagram/Schematic File      ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/ev20B3BUSB.bdf         ;         ;
-; ev20BLOQUE3.bdf                  ; yes             ; User Block Diagram/Schematic File      ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/ev20BLOQUE3.bdf        ;         ;
-; ev20registerBank.bdf             ; yes             ; User Block Diagram/Schematic File      ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/ev20registerBank.bdf   ;         ;
-; fetchUnit.bdf                    ; yes             ; User Block Diagram/Schematic File      ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/fetchUnit.bdf          ;         ;
-; operandsUnit.bdf                 ; yes             ; User Block Diagram/Schematic File      ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/operandsUnit.bdf       ;         ;
-; ALUUnit.bdf                      ; yes             ; User Block Diagram/Schematic File      ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/ALUUnit.bdf            ;         ;
-; carryBlock.v                     ; yes             ; User Verilog HDL File                  ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/carryBlock.v           ;         ;
-; PCRegister.v                     ; yes             ; User Verilog HDL File                  ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/PCRegister.v           ;         ;
-; MIRUnit.bdf                      ; yes             ; User Block Diagram/Schematic File      ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/MIRUnit.bdf            ;         ;
-; dataUnit.bdf                     ; yes             ; User Block Diagram/Schematic File      ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/dataUnit.bdf           ;         ;
-; lpm_compare.tdf                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.tdf                                                      ;         ;
-; comptree.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/comptree.inc                                                         ;         ;
-; altshift.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc                                                         ;         ;
-; aglobal181.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                                                       ;         ;
-; db/cmpr_3pd.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/db/cmpr_3pd.tdf        ;         ;
-; busmux.tdf                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf                                                           ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                                                          ;         ;
-; lpm_mux.tdf                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf                                                          ;         ;
-; muxlut.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/muxlut.inc                                                           ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/bypassff.inc                                                         ;         ;
-; db/mux_crc.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/db/mux_crc.tdf         ;         ;
-; lpm_ff.tdf                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ff.tdf                                                           ;         ;
-; lpm_constant.inc                 ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_constant.inc                                                     ;         ;
-; db/mux_drc.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/db/mux_drc.tdf         ;         ;
-; 74139m.bdf                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/74139m.bdf                                                         ;         ;
-; db/mux_tsc.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/db/mux_tsc.tdf         ;         ;
-; lpm_decode.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.tdf                                                       ;         ;
-; declut.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/declut.inc                                                           ;         ;
-; lpm_compare.inc                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.inc                                                      ;         ;
-; db/decode_epg.tdf                ; yes             ; Auto-Generated Megafunction            ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/db/decode_epg.tdf      ;         ;
-; altdpram.tdf                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.tdf                                                         ;         ;
-; memmodes.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/memmodes.inc                                                       ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc                                                       ;         ;
-; a_hdffe.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_hdffe.inc                                                          ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                        ;         ;
-; alt_le_rden_reg.inc              ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/alt_le_rden_reg.inc                                                  ;         ;
-; altsyncram.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.inc                                                       ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                                                       ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                ;         ;
-; altrom.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                                                           ;         ;
-; altram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                                                           ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                                                         ;         ;
-; db/altsyncram_bgq1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/db/altsyncram_bgq1.tdf ;         ;
-; lpm_ram_io.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ram_io.tdf                                                       ;         ;
-; altram.tdf                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.tdf                                                           ;         ;
-; db/altsyncram_kqa1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/db/altsyncram_kqa1.tdf ;         ;
-; db/mux_ssc.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/db/mux_ssc.tdf         ;         ;
-; lpm_rom.tdf                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_rom.tdf                                                          ;         ;
-; altrom.tdf                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.tdf                                                           ;         ;
-; db/altsyncram_8301.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/db/altsyncram_8301.tdf ;         ;
-; mirom.mif                        ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/mirom.mif              ;         ;
-+----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                  ;
++----------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                    ; Library ;
++----------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------+---------+
+; SynchUnit.bdf                    ; yes             ; User Block Diagram/Schematic File      ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/SynchUnit.bdf          ;         ;
+; SynchRegister.bdf                ; yes             ; User Block Diagram/Schematic File      ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/SynchRegister.bdf      ;         ;
+; DelayInicial.v                   ; yes             ; User Verilog HDL File                  ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/DelayInicial.v         ;         ;
+; MIR.bdf                          ; yes             ; User Block Diagram/Schematic File      ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/MIR.bdf                ;         ;
+; UC2.bdf                          ; yes             ; User Block Diagram/Schematic File      ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/UC2.bdf                ;         ;
+; UC1.bdf                          ; yes             ; User Block Diagram/Schematic File      ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/UC1.bdf                ;         ;
+; ev20main.bdf                     ; yes             ; User Block Diagram/Schematic File      ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/ev20main.bdf           ;         ;
+; ev20jumpControl.bdf              ; yes             ; User Block Diagram/Schematic File      ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/ev20jumpControl.bdf    ;         ;
+; alu.v                            ; yes             ; User Verilog HDL File                  ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/alu.v                  ;         ;
+; shifter.v                        ; yes             ; User Verilog HDL File                  ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/shifter.v              ;         ;
+; ev20B3BUSA.bdf                   ; yes             ; User Block Diagram/Schematic File      ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/ev20B3BUSA.bdf         ;         ;
+; ev20B3BUSB.bdf                   ; yes             ; User Block Diagram/Schematic File      ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/ev20B3BUSB.bdf         ;         ;
+; ev20BLOQUE3.bdf                  ; yes             ; User Block Diagram/Schematic File      ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/ev20BLOQUE3.bdf        ;         ;
+; ev20registerBank.bdf             ; yes             ; User Block Diagram/Schematic File      ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/ev20registerBank.bdf   ;         ;
+; fetchUnit.bdf                    ; yes             ; User Block Diagram/Schematic File      ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/fetchUnit.bdf          ;         ;
+; operandsUnit.bdf                 ; yes             ; User Block Diagram/Schematic File      ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/operandsUnit.bdf       ;         ;
+; ALUUnit.bdf                      ; yes             ; User Block Diagram/Schematic File      ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/ALUUnit.bdf            ;         ;
+; carryBlock.v                     ; yes             ; User Verilog HDL File                  ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/carryBlock.v           ;         ;
+; PCRegister.v                     ; yes             ; User Verilog HDL File                  ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/PCRegister.v           ;         ;
+; MIRUnit.bdf                      ; yes             ; User Block Diagram/Schematic File      ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/MIRUnit.bdf            ;         ;
+; dataUnit.bdf                     ; yes             ; User Block Diagram/Schematic File      ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/dataUnit.bdf           ;         ;
+; lpm_compare.tdf                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.tdf          ;         ;
+; comptree.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/comptree.inc             ;         ;
+; altshift.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc             ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc           ;         ;
+; db/cmpr_3pd.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/cmpr_3pd.tdf        ;         ;
+; busmux.tdf                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf               ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc              ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf              ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/muxlut.inc               ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/bypassff.inc             ;         ;
+; db/mux_crc.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/mux_crc.tdf         ;         ;
+; lpm_ff.tdf                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ff.tdf               ;         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_constant.inc         ;         ;
+; db/mux_drc.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/mux_drc.tdf         ;         ;
+; 74139m.bdf                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/74139m.bdf             ;         ;
+; db/mux_tsc.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/mux_tsc.tdf         ;         ;
+; lpm_decode.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.tdf           ;         ;
+; declut.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/declut.inc               ;         ;
+; lpm_compare.inc                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.inc          ;         ;
+; db/decode_epg.tdf                ; yes             ; Auto-Generated Megafunction            ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/decode_epg.tdf      ;         ;
+; altdpram.tdf                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.tdf             ;         ;
+; memmodes.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/memmodes.inc           ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc           ;         ;
+; a_hdffe.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_hdffe.inc              ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc            ;         ;
+; alt_le_rden_reg.inc              ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/alt_le_rden_reg.inc      ;         ;
+; altsyncram.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.inc           ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf           ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc    ;         ;
+; altrom.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc               ;         ;
+; altram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc               ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc             ;         ;
+; db/altsyncram_bgq1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/altsyncram_bgq1.tdf ;         ;
+; lpm_ram_io.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ram_io.tdf           ;         ;
+; altram.tdf                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.tdf               ;         ;
+; db/altsyncram_kqa1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/altsyncram_kqa1.tdf ;         ;
+; instructiondata.mif              ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/instructiondata.mif    ;         ;
+; db/mux_ssc.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/mux_ssc.tdf         ;         ;
+; lpm_rom.tdf                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_rom.tdf              ;         ;
+; altrom.tdf                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.tdf               ;         ;
+; db/altsyncram_8301.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/altsyncram_8301.tdf ;         ;
+; mirom.mif                        ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/mirom.mif              ;         ;
++----------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -476,31 +477,31 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 2,406     ;
+; Estimated Total logic elements              ; 2,418     ;
 ;                                             ;           ;
-; Total combinational functions               ; 1042      ;
+; Total combinational functions               ; 1049      ;
 ; Logic element usage by number of LUT inputs ;           ;
 ;     -- 4 input functions                    ; 839       ;
 ;     -- 3 input functions                    ; 156       ;
-;     -- <=2 input functions                  ; 47        ;
+;     -- <=2 input functions                  ; 54        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 986       ;
+;     -- normal mode                          ; 993       ;
 ;     -- arithmetic mode                      ; 56        ;
 ;                                             ;           ;
-; Total registers                             ; 1477      ;
-;     -- Dedicated logic registers            ; 1477      ;
+; Total registers                             ; 1487      ;
+;     -- Dedicated logic registers            ; 1487      ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 104       ;
+; I/O pins                                    ; 143       ;
 ; Total memory bits                           ; 65664     ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
-; Maximum fan-out                             ; 1368      ;
-; Total fan-out                               ; 9117      ;
-; Average fan-out                             ; 3.26      ;
+; Maximum fan-out                             ; 1315      ;
+; Total fan-out                               ; 9214      ;
+; Average fan-out                             ; 3.18      ;
 +---------------------------------------------+-----------+
 
 
@@ -509,7 +510,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------+------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                     ; Entity Name      ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------+------------------+--------------+
-; |ev20main                                    ; 1042 (2)            ; 1477 (0)                  ; 65664       ; 0            ; 0       ; 0         ; 104  ; 0            ; |ev20main                                                                                                               ; ev20main         ; work         ;
+; |ev20main                                    ; 1049 (4)            ; 1487 (0)                  ; 65664       ; 0            ; 0       ; 0         ; 143  ; 0            ; |ev20main                                                                                                               ; ev20main         ; work         ;
 ;    |ALUUnit:inst13|                          ; 178 (0)             ; 33 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ALUUnit:inst13                                                                                                ; ALUUnit          ; work         ;
 ;       |ALU:inst1|                            ; 158 (158)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ALUUnit:inst13|ALU:inst1                                                                                      ; ALU              ; work         ;
 ;       |carryBlock:inst|                      ; 3 (3)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ALUUnit:inst13|carryBlock:inst                                                                                ; carryBlock       ; work         ;
@@ -517,8 +518,8 @@ refer to the applicable agreement for further details.
 ;       |lpm_ff:OperandRegister2|              ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ALUUnit:inst13|lpm_ff:OperandRegister2                                                                        ; lpm_ff           ; work         ;
 ;       |shifter:inst2|                        ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ALUUnit:inst13|shifter:inst2                                                                                  ; shifter          ; work         ;
 ;    |DelayInicial:inst6|                      ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|DelayInicial:inst6                                                                                            ; DelayInicial     ; work         ;
-;    |MIRUnit:inst1|                           ; 24 (0)              ; 118 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1                                                                                                 ; MIRUnit          ; work         ;
-;       |MIR:MIR3|                             ; 0 (0)               ; 56 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|MIR:MIR3                                                                                        ; MIR              ; work         ;
+;    |MIRUnit:inst1|                           ; 29 (0)              ; 128 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1                                                                                                 ; MIRUnit          ; work         ;
+;       |MIR:MIR3|                             ; 0 (0)               ; 66 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|MIR:MIR3                                                                                        ; MIR              ; work         ;
 ;          |lpm_ff:Ezu5|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|MIR:MIR3|lpm_ff:Ezu5                                                                            ; lpm_ff           ; work         ;
 ;          |lpm_ff:Ezu6|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|MIR:MIR3|lpm_ff:Ezu6                                                                            ; lpm_ff           ; work         ;
 ;          |lpm_ff:Ezu7|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|MIR:MIR3|lpm_ff:Ezu7                                                                            ; lpm_ff           ; work         ;
@@ -526,8 +527,8 @@ refer to the applicable agreement for further details.
 ;          |lpm_ff:inst10|                     ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|MIR:MIR3|lpm_ff:inst10                                                                          ; lpm_ff           ; work         ;
 ;          |lpm_ff:inst11|                     ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|MIR:MIR3|lpm_ff:inst11                                                                          ; lpm_ff           ; work         ;
 ;          |lpm_ff:inst12|                     ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|MIR:MIR3|lpm_ff:inst12                                                                          ; lpm_ff           ; work         ;
-;          |lpm_ff:inst13|                     ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|MIR:MIR3|lpm_ff:inst13                                                                          ; lpm_ff           ; work         ;
-;          |lpm_ff:inst14|                     ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|MIR:MIR3|lpm_ff:inst14                                                                          ; lpm_ff           ; work         ;
+;          |lpm_ff:inst13|                     ; 0 (0)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|MIR:MIR3|lpm_ff:inst13                                                                          ; lpm_ff           ; work         ;
+;          |lpm_ff:inst14|                     ; 0 (0)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|MIR:MIR3|lpm_ff:inst14                                                                          ; lpm_ff           ; work         ;
 ;          |lpm_ff:inst1|                      ; 0 (0)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|MIR:MIR3|lpm_ff:inst1                                                                           ; lpm_ff           ; work         ;
 ;          |lpm_ff:inst3|                      ; 0 (0)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|MIR:MIR3|lpm_ff:inst3                                                                           ; lpm_ff           ; work         ;
 ;          |lpm_ff:inst4|                      ; 0 (0)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|MIR:MIR3|lpm_ff:inst4                                                                           ; lpm_ff           ; work         ;
@@ -549,13 +550,13 @@ refer to the applicable agreement for further details.
 ;       |MIR:MIR5|                             ; 0 (0)               ; 12 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|MIR:MIR5                                                                                        ; MIR              ; work         ;
 ;          |lpm_ff:inst5|                      ; 0 (0)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|MIR:MIR5|lpm_ff:inst5                                                                           ; lpm_ff           ; work         ;
 ;          |lpm_ff:inst6|                      ; 0 (0)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|MIR:MIR5|lpm_ff:inst6                                                                           ; lpm_ff           ; work         ;
-;       |UC1:Control1|                         ; 8 (0)               ; 2 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|UC1:Control1                                                                                    ; UC1              ; work         ;
+;       |UC1:Control1|                         ; 13 (0)              ; 2 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|UC1:Control1                                                                                    ; UC1              ; work         ;
 ;          |busmux:inst2|                      ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|UC1:Control1|busmux:inst2                                                                       ; busmux           ; work         ;
 ;             |lpm_mux:$00000|                 ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|UC1:Control1|busmux:inst2|lpm_mux:$00000                                                        ; lpm_mux          ; work         ;
 ;                |mux_crc:auto_generated|      ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|UC1:Control1|busmux:inst2|lpm_mux:$00000|mux_crc:auto_generated                                 ; mux_crc          ; work         ;
-;          |busmux:inst9|                      ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|UC1:Control1|busmux:inst9                                                                       ; busmux           ; work         ;
-;             |lpm_mux:$00000|                 ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|UC1:Control1|busmux:inst9|lpm_mux:$00000                                                        ; lpm_mux          ; work         ;
-;                |mux_drc:auto_generated|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|UC1:Control1|busmux:inst9|lpm_mux:$00000|mux_drc:auto_generated                                 ; mux_drc          ; work         ;
+;          |busmux:inst9|                      ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|UC1:Control1|busmux:inst9                                                                       ; busmux           ; work         ;
+;             |lpm_mux:$00000|                 ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|UC1:Control1|busmux:inst9|lpm_mux:$00000                                                        ; lpm_mux          ; work         ;
+;                |mux_drc:auto_generated|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|UC1:Control1|busmux:inst9|lpm_mux:$00000|mux_drc:auto_generated                                 ; mux_drc          ; work         ;
 ;          |lpm_ff:inst10|                     ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|UC1:Control1|lpm_ff:inst10                                                                      ; lpm_ff           ; work         ;
 ;          |lpm_ff:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|UC1:Control1|lpm_ff:inst                                                                        ; lpm_ff           ; work         ;
 ;       |UC2:inst-uc2|                         ; 10 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit:inst1|UC2:inst-uc2                                                                                    ; UC2              ; work         ;
@@ -695,15 +696,15 @@ refer to the applicable agreement for further details.
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                  ;
-+---------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+-----------+
-; Name                                                                                                    ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF       ;
-+---------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+-----------+
-; dataUnit:inst3|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|ALTSYNCRAM            ; AUTO ; Simple Dual Port ; 1024         ; 16           ; 1024         ; 16           ; 16384 ; None      ;
-; lpm_ram_io:inst2|altram:sram|altsyncram:ram_block|altsyncram_kqa1:auto_generated|ALTSYNCRAM             ; AUTO ; Single Port      ; 2048         ; 22           ; --           ; --           ; 45056 ; None      ;
-; lpm_rom:MicroInstructionsROM|altrom:srom|altsyncram:rom_block|altsyncram_8301:auto_generated|ALTSYNCRAM ; AUTO ; ROM              ; 128          ; 33           ; --           ; --           ; 4224  ; MIROM.mif ;
-+---------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+-----------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                            ;
++---------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+---------------------+
+; Name                                                                                                    ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF                 ;
++---------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+---------------------+
+; dataUnit:inst3|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|ALTSYNCRAM            ; AUTO ; Simple Dual Port ; 1024         ; 16           ; 1024         ; 16           ; 16384 ; None                ;
+; lpm_ram_io:inst2|altram:sram|altsyncram:ram_block|altsyncram_kqa1:auto_generated|ALTSYNCRAM             ; AUTO ; Single Port      ; 2048         ; 22           ; --           ; --           ; 45056 ; instructionData.mif ;
+; lpm_rom:MicroInstructionsROM|altrom:srom|altsyncram:rom_block|altsyncram_8301:auto_generated|ALTSYNCRAM ; AUTO ; ROM              ; 128          ; 33           ; --           ; --           ; 4224  ; MIROM.mif           ;
++---------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+---------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------+
@@ -776,7 +777,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1477  ;
+; Total registers                              ; 1487  ;
 ; Number of registers using Synchronous Clear  ; 1     ;
 ; Number of registers using Synchronous Load   ; 60    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -802,10 +803,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------+
-; 4:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |ev20main|ALUUnit:inst13|lpm_ff:OperandRegister1|dffs[8]                                                                               ;
-; 33:1               ; 16 bits   ; 352 LEs       ; 352 LEs              ; 0 LEs                  ; Yes        ; |ev20main|operandsUnit:inst10|lpm_ff:LatchA1|dffs[3]                                                                                   ;
-; 33:1               ; 16 bits   ; 352 LEs       ; 352 LEs              ; 0 LEs                  ; Yes        ; |ev20main|operandsUnit:inst10|lpm_ff:LatchB1|dffs[13]                                                                                  ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |ev20main|ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|busmux:inst27|lpm_mux:$00000|mux_tsc:auto_generated|result_node[0] ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |ev20main|ALUUnit:inst13|lpm_ff:OperandRegister1|dffs[9]                                                                               ;
+; 33:1               ; 16 bits   ; 352 LEs       ; 352 LEs              ; 0 LEs                  ; Yes        ; |ev20main|operandsUnit:inst10|lpm_ff:LatchA1|dffs[14]                                                                                  ;
+; 33:1               ; 16 bits   ; 352 LEs       ; 352 LEs              ; 0 LEs                  ; Yes        ; |ev20main|operandsUnit:inst10|lpm_ff:LatchB1|dffs[4]                                                                                   ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |ev20main|ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|busmux:inst27|lpm_mux:$00000|mux_tsc:auto_generated|result_node[7] ;
 ; 16:1               ; 15 bits   ; 150 LEs       ; 120 LEs              ; 30 LEs                 ; No         ; |ev20main|ALUUnit:inst13|ALU:inst1|Mux0                                                                                                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------+
 
@@ -4599,26 +4600,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 104                         ;
-; cycloneiii_ff         ; 1477                        ;
+; boundary_port         ; 143                         ;
+; cycloneiii_ff         ; 1487                        ;
 ;     ENA               ; 1152                        ;
 ;     SCLR              ; 1                           ;
 ;     SLD               ; 60                          ;
-;     plain             ; 264                         ;
-; cycloneiii_lcell_comb ; 1042                        ;
+;     plain             ; 274                         ;
+; cycloneiii_lcell_comb ; 1049                        ;
 ;     arith             ; 56                          ;
 ;         2 data inputs ; 24                          ;
 ;         3 data inputs ; 32                          ;
-;     normal            ; 986                         ;
+;     normal            ; 993                         ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 3                           ;
-;         2 data inputs ; 18                          ;
+;         2 data inputs ; 25                          ;
 ;         3 data inputs ; 124                         ;
 ;         4 data inputs ; 839                         ;
 ; cycloneiii_ram_block  ; 71                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 7.00                        ;
-; Average LUT depth     ; 2.82                        ;
+; Average LUT depth     ; 2.81                        ;
 +-----------------------+-----------------------------+
 
 
@@ -4627,7 +4628,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:10     ;
 +----------------+--------------+
 
 
@@ -4637,7 +4638,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu May 28 20:08:49 2020
+    Info: Processing started: Fri May 29 01:59:52 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ev20QUARTUS -c ev20QUARTUS
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -4646,7 +4647,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file synchun
 Info (12021): Found 1 design units, including 1 entities, in source file synchregister.bdf
     Info (12023): Found entity 1: SynchRegister
 Info (12021): Found 1 design units, including 1 entities, in source file delayinicial.v
-    Info (12023): Found entity 1: DelayInicial File: C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/DelayInicial.v Line: 1
+    Info (12023): Found entity 1: DelayInicial File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/DelayInicial.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mir.bdf
     Info (12023): Found entity 1: MIR
 Info (12021): Found 1 design units, including 1 entities, in source file uc2.bdf
@@ -4658,9 +4659,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file ev20mai
 Info (12021): Found 1 design units, including 1 entities, in source file ev20jumpcontrol.bdf
     Info (12023): Found entity 1: ev20jumpControl
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: ALU File: C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/alu.v Line: 1
+    Info (12023): Found entity 1: ALU File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/alu.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file shifter.v
-    Info (12023): Found entity 1: shifter File: C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/shifter.v Line: 1
+    Info (12023): Found entity 1: shifter File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/shifter.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ev20b3busa.bdf
     Info (12023): Found entity 1: ev20B3BUSA
 Info (12021): Found 1 design units, including 1 entities, in source file ev20b3busb.bdf
@@ -4676,15 +4677,17 @@ Info (12021): Found 1 design units, including 1 entities, in source file operand
 Info (12021): Found 1 design units, including 1 entities, in source file aluunit.bdf
     Info (12023): Found entity 1: ALUUnit
 Info (12021): Found 1 design units, including 1 entities, in source file carryblock.v
-    Info (12023): Found entity 1: carryBlock File: C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/carryBlock.v Line: 1
+    Info (12023): Found entity 1: carryBlock File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/carryBlock.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pcregister.v
-    Info (12023): Found entity 1: PCRegister File: C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/PCRegister.v Line: 1
+    Info (12023): Found entity 1: PCRegister File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/PCRegister.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mirunit.bdf
     Info (12023): Found entity 1: MIRUnit
 Info (12021): Found 1 design units, including 1 entities, in source file dataunit.bdf
     Info (12023): Found entity 1: dataUnit
 Info (12127): Elaborating entity "ev20main" for the top level hierarchy
 Warning (275006): Can't find a definition for parameter LPM_FILE -- assuming instructionData.mif was intended to be a quoted string
+Warning (275043): Pin "INST_A_view[4..0]" is missing source
+Warning (275043): Pin "INST_DAdd_view[9..0]" is missing source
 Info (12128): Elaborating entity "MIRUnit" for hierarchy "MIRUnit:inst1"
 Info (12128): Elaborating entity "UC2" for hierarchy "MIRUnit:inst1|UC2:inst-uc2"
 Info (12128): Elaborating entity "LPM_COMPARE" for hierarchy "MIRUnit:inst1|UC2:inst-uc2|LPM_COMPARE:Paul"
@@ -4692,7 +4695,7 @@ Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|UC2:inst-uc2|
 Info (12133): Instantiated megafunction "MIRUnit:inst1|UC2:inst-uc2|LPM_COMPARE:Paul" with the following parameter:
     Info (12134): Parameter "LPM_WIDTH" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_3pd.tdf
-    Info (12023): Found entity 1: cmpr_3pd File: C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/db/cmpr_3pd.tdf Line: 22
+    Info (12023): Found entity 1: cmpr_3pd File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/cmpr_3pd.tdf Line: 22
 Info (12128): Elaborating entity "cmpr_3pd" for hierarchy "MIRUnit:inst1|UC2:inst-uc2|LPM_COMPARE:Paul|cmpr_3pd:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.tdf Line: 280
 Info (12128): Elaborating entity "UC1" for hierarchy "MIRUnit:inst1|UC1:Control1"
 Info (12128): Elaborating entity "BUSMUX" for hierarchy "MIRUnit:inst1|UC1:Control1|BUSMUX:inst2"
@@ -4702,7 +4705,7 @@ Info (12133): Instantiated megafunction "MIRUnit:inst1|UC1:Control1|BUSMUX:inst2
 Info (12128): Elaborating entity "lpm_mux" for hierarchy "MIRUnit:inst1|UC1:Control1|BUSMUX:inst2|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12131): Elaborated megafunction instantiation "MIRUnit:inst1|UC1:Control1|BUSMUX:inst2|lpm_mux:$00000", which is child of megafunction instantiation "MIRUnit:inst1|UC1:Control1|BUSMUX:inst2" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_crc.tdf
-    Info (12023): Found entity 1: mux_crc File: C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/db/mux_crc.tdf Line: 22
+    Info (12023): Found entity 1: mux_crc File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/mux_crc.tdf Line: 22
 Info (12128): Elaborating entity "mux_crc" for hierarchy "MIRUnit:inst1|UC1:Control1|BUSMUX:inst2|lpm_mux:$00000|mux_crc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "MIRUnit:inst1|UC1:Control1|LPM_FF:inst"
 Info (12130): Elaborated megafunction instantiation "MIRUnit:inst1|UC1:Control1|LPM_FF:inst"
@@ -4715,7 +4718,7 @@ Info (12133): Instantiated megafunction "MIRUnit:inst1|UC1:Control1|BUSMUX:inst9
 Info (12128): Elaborating entity "lpm_mux" for hierarchy "MIRUnit:inst1|UC1:Control1|BUSMUX:inst9|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12131): Elaborated megafunction instantiation "MIRUnit:inst1|UC1:Control1|BUSMUX:inst9|lpm_mux:$00000", which is child of megafunction instantiation "MIRUnit:inst1|UC1:Control1|BUSMUX:inst9" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_drc.tdf
-    Info (12023): Found entity 1: mux_drc File: C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/db/mux_drc.tdf Line: 22
+    Info (12023): Found entity 1: mux_drc File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/mux_drc.tdf Line: 22
 Info (12128): Elaborating entity "mux_drc" for hierarchy "MIRUnit:inst1|UC1:Control1|BUSMUX:inst9|lpm_mux:$00000|mux_drc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
 Info (12128): Elaborating entity "MIR" for hierarchy "MIRUnit:inst1|MIR:MIR3"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "MIRUnit:inst1|MIR:MIR3|LPM_FF:Ezu6"
@@ -4780,7 +4783,7 @@ Info (12133): Instantiated megafunction "operandsUnit:inst10|BUSMUX:inst8" with 
 Info (12128): Elaborating entity "lpm_mux" for hierarchy "operandsUnit:inst10|BUSMUX:inst8|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12131): Elaborated megafunction instantiation "operandsUnit:inst10|BUSMUX:inst8|lpm_mux:$00000", which is child of megafunction instantiation "operandsUnit:inst10|BUSMUX:inst8" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_tsc.tdf
-    Info (12023): Found entity 1: mux_tsc File: C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/db/mux_tsc.tdf Line: 22
+    Info (12023): Found entity 1: mux_tsc File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/mux_tsc.tdf Line: 22
 Info (12128): Elaborating entity "mux_tsc" for hierarchy "operandsUnit:inst10|BUSMUX:inst8|lpm_mux:$00000|mux_tsc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
 Info (12128): Elaborating entity "ev20registerBank" for hierarchy "ev20registerBank:inst14"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "ev20registerBank:inst14|LPM_FF:inst35"
@@ -4794,7 +4797,7 @@ Info (12133): Instantiated megafunction "ev20registerBank:inst14|LPM_DECODE:inst
     Info (12134): Parameter "LPM_PIPELINE" = "0"
     Info (12134): Parameter "LPM_WIDTH" = "6"
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_epg.tdf
-    Info (12023): Found entity 1: decode_epg File: C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/db/decode_epg.tdf Line: 22
+    Info (12023): Found entity 1: decode_epg File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/decode_epg.tdf Line: 22
 Info (12128): Elaborating entity "decode_epg" for hierarchy "ev20registerBank:inst14|LPM_DECODE:instRB|decode_epg:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.tdf Line: 76
 Info (12128): Elaborating entity "ev20BLOQUE3" for hierarchy "ev20registerBank:inst14|ev20BLOQUE3:inst"
 Info (12128): Elaborating entity "ev20B3BUSA" for hierarchy "ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst"
@@ -4825,7 +4828,7 @@ Info (12133): Instantiated megafunction "dataUnit:inst3|ALTDPRAM:inst1" with the
 Info (12128): Elaborating entity "altsyncram" for hierarchy "dataUnit:inst3|ALTDPRAM:inst1|altsyncram:ram_block" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.tdf Line: 206
 Info (12131): Elaborated megafunction instantiation "dataUnit:inst3|ALTDPRAM:inst1|altsyncram:ram_block", which is child of megafunction instantiation "dataUnit:inst3|ALTDPRAM:inst1" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.tdf Line: 206
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_bgq1.tdf
-    Info (12023): Found entity 1: altsyncram_bgq1 File: C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/db/altsyncram_bgq1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_bgq1 File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/altsyncram_bgq1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_bgq1" for hierarchy "dataUnit:inst3|ALTDPRAM:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12128): Elaborating entity "LPM_RAM_IO" for hierarchy "LPM_RAM_IO:inst2"
 Info (12130): Elaborated megafunction instantiation "LPM_RAM_IO:inst2"
@@ -4842,9 +4845,8 @@ Info (12131): Elaborated megafunction instantiation "LPM_RAM_IO:inst2|altram:sra
 Info (12128): Elaborating entity "altsyncram" for hierarchy "LPM_RAM_IO:inst2|altram:sram|altsyncram:ram_block" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.tdf Line: 102
 Info (12131): Elaborated megafunction instantiation "LPM_RAM_IO:inst2|altram:sram|altsyncram:ram_block", which is child of megafunction instantiation "LPM_RAM_IO:inst2" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.tdf Line: 102
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_kqa1.tdf
-    Info (12023): Found entity 1: altsyncram_kqa1 File: C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/db/altsyncram_kqa1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_kqa1 File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/altsyncram_kqa1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_kqa1" for hierarchy "LPM_RAM_IO:inst2|altram:sram|altsyncram:ram_block|altsyncram_kqa1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Critical Warning (127003): Can't find Memory Initialization File or Hexadecimal (Intel-Format) File C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/instructionData.mif -- setting all initial values to 0
 Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:inst8"
 Info (12130): Elaborated megafunction instantiation "BUSMUX:inst8"
 Info (12133): Instantiated megafunction "BUSMUX:inst8" with the following parameter:
@@ -4852,10 +4854,10 @@ Info (12133): Instantiated megafunction "BUSMUX:inst8" with the following parame
 Info (12128): Elaborating entity "lpm_mux" for hierarchy "BUSMUX:inst8|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12131): Elaborated megafunction instantiation "BUSMUX:inst8|lpm_mux:$00000", which is child of megafunction instantiation "BUSMUX:inst8" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_ssc.tdf
-    Info (12023): Found entity 1: mux_ssc File: C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/db/mux_ssc.tdf Line: 22
+    Info (12023): Found entity 1: mux_ssc File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/mux_ssc.tdf Line: 22
 Info (12128): Elaborating entity "mux_ssc" for hierarchy "BUSMUX:inst8|lpm_mux:$00000|mux_ssc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
 Info (12128): Elaborating entity "DelayInicial" for hierarchy "DelayInicial:inst6"
-Warning (10230): Verilog HDL assignment warning at DelayInicial.v(11): truncated value with size 32 to match size of target (2) File: C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/DelayInicial.v Line: 11
+Warning (10230): Verilog HDL assignment warning at DelayInicial.v(11): truncated value with size 32 to match size of target (2) File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/DelayInicial.v Line: 11
 Info (12128): Elaborating entity "LPM_ROM" for hierarchy "LPM_ROM:MicroInstructionsROM"
 Info (12130): Elaborated megafunction instantiation "LPM_ROM:MicroInstructionsROM"
 Info (12133): Instantiated megafunction "LPM_ROM:MicroInstructionsROM" with the following parameter:
@@ -4869,7 +4871,7 @@ Info (12131): Elaborated megafunction instantiation "LPM_ROM:MicroInstructionsRO
 Info (12128): Elaborating entity "altsyncram" for hierarchy "LPM_ROM:MicroInstructionsROM|altrom:srom|altsyncram:rom_block" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.tdf Line: 88
 Info (12131): Elaborated megafunction instantiation "LPM_ROM:MicroInstructionsROM|altrom:srom|altsyncram:rom_block", which is child of megafunction instantiation "LPM_ROM:MicroInstructionsROM" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.tdf Line: 88
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_8301.tdf
-    Info (12023): Found entity 1: altsyncram_8301 File: C:/Users/HP/Documents/ITBA/Cuarto Año/Segundo cuatrimestre/Electronica V/Tps/Tp2/Electro_V/MicroEV20/db/altsyncram_8301.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_8301 File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/altsyncram_8301.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_8301" for hierarchy "LPM_ROM:MicroInstructionsROM|altrom:srom|altsyncram:rom_block|altsyncram_8301:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13049): Converted tri-state buffer "lpm_rom:MicroInstructionsROM|otri[32]" feeding internal logic into a wire File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_rom.tdf Line: 67
@@ -4927,18 +4929,34 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13049): Converted tri-state buffer "lpm_ram_io:inst2|datatri[2]" feeding internal logic into a wire File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ram_io.tdf Line: 119
     Warning (13049): Converted tri-state buffer "lpm_ram_io:inst2|datatri[1]" feeding internal logic into a wire File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ram_io.tdf Line: 119
     Warning (13049): Converted tri-state buffer "lpm_ram_io:inst2|datatri[0]" feeding internal logic into a wire File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ram_io.tdf Line: 119
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "INST_A_view[4]" is stuck at GND
+    Warning (13410): Pin "INST_A_view[3]" is stuck at GND
+    Warning (13410): Pin "INST_A_view[2]" is stuck at GND
+    Warning (13410): Pin "INST_A_view[1]" is stuck at GND
+    Warning (13410): Pin "INST_A_view[0]" is stuck at GND
+    Warning (13410): Pin "INST_DAdd_view[9]" is stuck at GND
+    Warning (13410): Pin "INST_DAdd_view[8]" is stuck at GND
+    Warning (13410): Pin "INST_DAdd_view[7]" is stuck at GND
+    Warning (13410): Pin "INST_DAdd_view[6]" is stuck at GND
+    Warning (13410): Pin "INST_DAdd_view[5]" is stuck at GND
+    Warning (13410): Pin "INST_DAdd_view[4]" is stuck at GND
+    Warning (13410): Pin "INST_DAdd_view[3]" is stuck at GND
+    Warning (13410): Pin "INST_DAdd_view[2]" is stuck at GND
+    Warning (13410): Pin "INST_DAdd_view[1]" is stuck at GND
+    Warning (13410): Pin "INST_DAdd_view[0]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2606 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2662 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 103 output pins
-    Info (21061): Implemented 2431 logic cells
+    Info (21059): Implemented 142 output pins
+    Info (21061): Implemented 2448 logic cells
     Info (21064): Implemented 71 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 61 warnings
-    Info: Peak virtual memory: 4804 megabytes
-    Info: Processing ended: Thu May 28 20:09:36 2020
-    Info: Elapsed time: 00:00:47
-    Info: Total CPU time (on all processors): 00:01:03
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 78 warnings
+    Info: Peak virtual memory: 4797 megabytes
+    Info: Processing ended: Fri May 29 02:01:10 2020
+    Info: Elapsed time: 00:01:18
+    Info: Total CPU time (on all processors): 00:01:15
 
 

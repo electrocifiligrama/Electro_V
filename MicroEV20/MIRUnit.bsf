@@ -145,9 +145,16 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 216 176)
 		(output)
-		(text "DaddOut[9..0]" (rect 0 0 84 19)(font "Intel Clear" (font_size 8)))
-		(text "DaddOut[9..0]" (rect 111 171 195 190)(font "Intel Clear" (font_size 8)))
+		(text "TOUT[6..0]" (rect 0 0 66 19)(font "Intel Clear" (font_size 8)))
+		(text "TOUT[6..0]" (rect 129 171 195 190)(font "Intel Clear" (font_size 8)))
 		(line (pt 216 176)(pt 200 176)(line_width 3))
+	)
+	(port
+		(pt 216 192)
+		(output)
+		(text "DaddOut[9..0]" (rect 0 0 84 19)(font "Intel Clear" (font_size 8)))
+		(text "DaddOut[9..0]" (rect 111 187 195 206)(font "Intel Clear" (font_size 8)))
+		(line (pt 216 192)(pt 200 192)(line_width 3))
 	)
 	(drawing
 		(rectangle (rect 16 16 200 208))

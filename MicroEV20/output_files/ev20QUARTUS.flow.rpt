@@ -1,5 +1,5 @@
 Flow report for ev20QUARTUS
-Thu May 28 20:09:36 2020
+Fri May 29 02:02:04 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,16 +40,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu May 28 20:09:36 2020       ;
+; Flow Status                        ; Successful - Fri May 29 02:02:03 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ev20QUARTUS                                 ;
 ; Top-level Entity Name              ; ev20main                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 2,406                                       ;
-;     Total combinational functions  ; 1,042                                       ;
-;     Dedicated logic registers      ; 1,477                                       ;
-; Total registers                    ; 1477                                        ;
-; Total pins                         ; 104                                         ;
+; Total logic elements               ; 2,418                                       ;
+;     Total combinational functions  ; 1,049                                       ;
+;     Dedicated logic registers      ; 1,487                                       ;
+; Total registers                    ; 1487                                        ;
+; Total pins                         ; 143                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 65,664                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -62,7 +62,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/28/2020 20:08:50 ;
+; Start date & time ; 05/29/2020 01:59:55 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ev20QUARTUS         ;
 +-------------------+---------------------+
@@ -73,7 +73,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 62001001619510.159070733010804         ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 277375809421349.159072839311776        ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; ev20main    ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; ev20main    ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; ev20main    ; Top        ;
@@ -89,8 +89,10 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:45     ; 1.0                     ; 4799 MB             ; 00:01:02                           ;
-; Total                ; 00:00:45     ; --                      ; --                  ; 00:01:02                           ;
+; Analysis & Synthesis ; 00:01:16     ; 1.0                     ; 4794 MB             ; 00:01:14                           ;
+; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4637 MB             ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:06     ; 1.0                     ; 4648 MB             ; 00:00:05                           ;
+; Total                ; 00:01:26     ; --                      ; --                  ; 00:01:22                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -99,7 +101,9 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-HR2F6HK  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; LAPTOP-7J40QSID  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-7J40QSID  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-7J40QSID  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -107,6 +111,8 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off ev20QUARTUS -c ev20QUARTUS
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ev20QUARTUS -c ev20QUARTUS --vector_source="C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/Waveform30.vwf" --testbench_file="C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/simulation/qsim/Waveform30.vwf.vt"
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/simulation/qsim/" ev20QUARTUS -c ev20QUARTUS
 
 
 

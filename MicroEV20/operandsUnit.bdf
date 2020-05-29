@@ -69,7 +69,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 696 496 864 512)
+	(rect 552 296 720 312)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "XMux[15..0]" (rect 5 0 62 12)(font "Arial" ))
 	(pt 168 8)
@@ -907,28 +907,8 @@ refer to the applicable agreement for further details.
 	(annotation_block (parameter)(rect 1552 608 1689 703))
 )
 (connector
-	(pt 528 328)
-	(pt 888 328)
-	(bus)
-)
-(connector
 	(pt 1000 344)
 	(pt 1064 344)
-	(bus)
-)
-(connector
-	(pt 888 360)
-	(pt 880 360)
-	(bus)
-)
-(connector
-	(pt 880 504)
-	(pt 880 360)
-	(bus)
-)
-(connector
-	(pt 880 504)
-	(pt 864 504)
 	(bus)
 )
 (connector
@@ -1109,6 +1089,37 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 1016 512)
 	(pt 1168 512)
+	(bus)
+)
+(connector
+	(pt 528 328)
+	(pt 688 328)
+	(bus)
+)
+(connector
+	(pt 688 328)
+	(pt 688 360)
+	(bus)
+)
+(connector
+	(pt 688 360)
+	(pt 888 360)
+	(bus)
+)
+(connector
+	(pt 880 328)
+	(pt 880 304)
+	(bus)
+)
+(connector
+	(pt 888 328)
+	(pt 880 328)
+	(bus)
+)
+(connector
+	(text "<<__$DEF_ALIAS2440>>" (rect 742 288 860 305)(font "Intel Clear" )(invisible))
+	(pt 880 304)
+	(pt 720 304)
 	(bus)
 )
 (junction (pt 144 336))
