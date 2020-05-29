@@ -135,7 +135,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 760 176 928 192)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "HOLD-CK2" (rect 5 0 61 12)(font "Arial" ))
+	(text "HOLD-CK2" (rect 5 0 60 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -296,6 +296,22 @@ refer to the applicable agreement for further details.
 	(rect 2112 392 2288 408)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ALUout[3..0]" (rect 90 0 149 17)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1736 424 1912 440)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "TOUT[6..0]" (rect 90 0 144 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -1600,6 +1616,11 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 928 184)
 	(pt 1008 184)
+)
+(connector
+	(pt 1480 264)
+	(pt 1480 288)
+	(bus)
 )
 (junction (pt 2080 288))
 (text "INSTRUCCION EN DECODE" (rect 760 112 920 131)(font "Intel Clear" (font_size 8)))

@@ -108,6 +108,70 @@
 					"strict" : false
 				},
 				{
+					"name" : "COUT[15]",
+					"strict" : false
+				},
+				{
+					"name" : "COUT[14]",
+					"strict" : false
+				},
+				{
+					"name" : "COUT[13]",
+					"strict" : false
+				},
+				{
+					"name" : "COUT[12]",
+					"strict" : false
+				},
+				{
+					"name" : "COUT[11]",
+					"strict" : false
+				},
+				{
+					"name" : "COUT[10]",
+					"strict" : false
+				},
+				{
+					"name" : "COUT[9]",
+					"strict" : false
+				},
+				{
+					"name" : "COUT[8]",
+					"strict" : false
+				},
+				{
+					"name" : "COUT[7]",
+					"strict" : false
+				},
+				{
+					"name" : "COUT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "COUT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "COUT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "COUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "COUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "COUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "COUT[0]",
+					"strict" : false
+				},
+				{
 					"name" : "DaddOut[9]",
 					"strict" : false
 				},
@@ -213,66 +277,6 @@
 				},
 				{
 					"name" : "IC_view[0]",
-					"strict" : false
-				},
-				{
-					"name" : "INST_A_view[4]",
-					"strict" : false
-				},
-				{
-					"name" : "INST_A_view[3]",
-					"strict" : false
-				},
-				{
-					"name" : "INST_A_view[2]",
-					"strict" : false
-				},
-				{
-					"name" : "INST_A_view[1]",
-					"strict" : false
-				},
-				{
-					"name" : "INST_A_view[0]",
-					"strict" : false
-				},
-				{
-					"name" : "INST_DAdd_view[9]",
-					"strict" : false
-				},
-				{
-					"name" : "INST_DAdd_view[8]",
-					"strict" : false
-				},
-				{
-					"name" : "INST_DAdd_view[7]",
-					"strict" : false
-				},
-				{
-					"name" : "INST_DAdd_view[6]",
-					"strict" : false
-				},
-				{
-					"name" : "INST_DAdd_view[5]",
-					"strict" : false
-				},
-				{
-					"name" : "INST_DAdd_view[4]",
-					"strict" : false
-				},
-				{
-					"name" : "INST_DAdd_view[3]",
-					"strict" : false
-				},
-				{
-					"name" : "INST_DAdd_view[2]",
-					"strict" : false
-				},
-				{
-					"name" : "INST_DAdd_view[1]",
-					"strict" : false
-				},
-				{
-					"name" : "INST_DAdd_view[0]",
 					"strict" : false
 				},
 				{
@@ -413,6 +417,98 @@
 				},
 				{
 					"name" : "SH_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "T[6]",
+					"strict" : false
+				},
+				{
+					"name" : "T[5]",
+					"strict" : false
+				},
+				{
+					"name" : "T[4]",
+					"strict" : false
+				},
+				{
+					"name" : "T[3]",
+					"strict" : false
+				},
+				{
+					"name" : "T[2]",
+					"strict" : false
+				},
+				{
+					"name" : "T[1]",
+					"strict" : false
+				},
+				{
+					"name" : "T[0]",
+					"strict" : false
+				},
+				{
+					"name" : "WOUT[15]",
+					"strict" : false
+				},
+				{
+					"name" : "WOUT[14]",
+					"strict" : false
+				},
+				{
+					"name" : "WOUT[13]",
+					"strict" : false
+				},
+				{
+					"name" : "WOUT[12]",
+					"strict" : false
+				},
+				{
+					"name" : "WOUT[11]",
+					"strict" : false
+				},
+				{
+					"name" : "WOUT[10]",
+					"strict" : false
+				},
+				{
+					"name" : "WOUT[9]",
+					"strict" : false
+				},
+				{
+					"name" : "WOUT[8]",
+					"strict" : false
+				},
+				{
+					"name" : "WOUT[7]",
+					"strict" : false
+				},
+				{
+					"name" : "WOUT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "WOUT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "WOUT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "WOUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "WOUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "WOUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "WOUT[0]",
 					"strict" : false
 				},
 				{

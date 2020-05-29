@@ -69,7 +69,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 1064 456 1232 472)
+	(rect 880 456 1048 472)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "CLK_DATA" (rect 5 0 58 17)(font "Intel Clear" ))
 	(pt 168 8)
@@ -87,7 +87,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 1064 512 1232 528)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "ToData[15..0]" (rect 5 0 69 17)(font "Intel Clear" ))
+	(text "ToData[15..0]" (rect 5 0 68 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -402,6 +402,31 @@ refer to the applicable agreement for further details.
 	)
 	(annotation_block (parameter)(rect 1608 72 1842 414))
 )
+(symbol
+	(rect 1144 448 1192 480)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst" (rect 3 21 20 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
 (connector
 	(pt 1448 536)
 	(pt 1384 536)
@@ -502,11 +527,6 @@ refer to the applicable agreement for further details.
 	(pt 1328 576)
 )
 (connector
-	(text "CLK_DU" (rect 1240 448 1280 465)(font "Intel Clear" ))
-	(pt 1232 464)
-	(pt 1264 464)
-)
-(connector
 	(pt 1432 576)
 	(pt 1432 656)
 )
@@ -520,8 +540,17 @@ refer to the applicable agreement for further details.
 	(pt 1264 480)
 )
 (connector
-	(pt 1264 480)
+	(text "CLK_DU" (rect 1056 448 1096 465)(font "Intel Clear" ))
+	(pt 1144 464)
+	(pt 1048 464)
+)
+(connector
+	(pt 1192 464)
 	(pt 1264 464)
+)
+(connector
+	(pt 1264 464)
+	(pt 1264 480)
 )
 (junction (pt 1384 496))
 (junction (pt 1416 576))

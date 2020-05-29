@@ -33,16 +33,16 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "CK-HOLD" (rect 0 0 56 19)(font "Intel Clear" (font_size 8)))
-		(text "CK-HOLD" (rect 21 43 77 62)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
+		(text "XMux[15..0]" (rect 0 0 70 19)(font "Intel Clear" (font_size 8)))
+		(text "XMux[15..0]" (rect 21 43 91 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
 		(pt 0 64)
 		(input)
-		(text "XMux[15..0]" (rect 0 0 70 19)(font "Intel Clear" (font_size 8)))
-		(text "XMux[15..0]" (rect 21 59 91 78)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 64)(pt 16 64)(line_width 3))
+		(text "CK-HOLD" (rect 0 0 56 19)(font "Intel Clear" (font_size 8)))
+		(text "CK-HOLD" (rect 21 59 77 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
 	)
 	(port
 		(pt 0 80)
