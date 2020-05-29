@@ -31,9 +31,11 @@
 				  end
             endcase
          else
+           begin
             out3 <= out3;
-				out2 <= out2;
-				out1 <= out1;
-				out0 <= out0;
+             out2 <= out2;
+             out1 <= out1;
+             out0 <= out0;
+           end
       end
 endmodule

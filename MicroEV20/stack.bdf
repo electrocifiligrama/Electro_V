@@ -135,7 +135,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 512 136 648 280)
 	(text "bi_shift_reg" (rect 5 0 62 12)(font "Arial" ))
-	(text "inst9" (rect 8 128 30 145)(font "Intel Clear" ))
+	(text "inst" (rect 8 128 25 140)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -206,7 +206,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 504 360 640 504)
 	(text "bi_shift_reg" (rect 5 0 62 12)(font "Arial" ))
-	(text "inst10" (rect 8 128 36 145)(font "Intel Clear" ))
+	(text "inst15" (rect 8 128 36 145)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -283,20 +283,12 @@ refer to the applicable agreement for further details.
 	(pt 288 200)
 )
 (connector
-	(pt 512 216)
-	(pt 336 216)
-)
-(connector
 	(pt 504 408)
 	(pt 216 408)
 )
 (connector
 	(pt 504 424)
 	(pt 288 424)
-)
-(connector
-	(pt 504 440)
-	(pt 336 440)
 )
 (connector
 	(pt 216 184)
@@ -373,14 +365,22 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "salida[0]" (rect 658 152 699 169)(font "Intel Clear" ))
-	(pt 952 168)
-	(pt 648 168)
+	(pt 336 440)
+	(pt 504 440)
+)
+(connector
+	(pt 336 216)
+	(pt 512 216)
 )
 (connector
 	(text "salida[1]" (rect 650 376 691 393)(font "Intel Clear" ))
-	(pt 952 392)
 	(pt 640 392)
+	(pt 952 392)
+)
+(connector
+	(text "salida[0]" (rect 658 152 699 169)(font "Intel Clear" ))
+	(pt 648 168)
+	(pt 952 168)
 )
 (connector
 	(pt 952 168)
