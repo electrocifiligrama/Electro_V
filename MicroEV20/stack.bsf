@@ -75,9 +75,16 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 200 64)
 		(output)
-		(text "shift2[3..0]" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
-		(text "shift2[3..0]" (rect 115 59 179 78)(font "Intel Clear" (font_size 8)))
+		(text "fifoOut[1..0]" (rect 0 0 71 19)(font "Intel Clear" (font_size 8)))
+		(text "fifoOut[1..0]" (rect 108 59 179 78)(font "Intel Clear" (font_size 8)))
 		(line (pt 200 64)(pt 184 64)(line_width 3))
+	)
+	(port
+		(pt 200 80)
+		(output)
+		(text "shift2[3..0]" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "shift2[3..0]" (rect 115 75 179 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 200 80)(pt 184 80)(line_width 3))
 	)
 	(drawing
 		(rectangle (rect 16 16 184 112))
