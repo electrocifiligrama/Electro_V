@@ -20,14 +20,14 @@ refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 216 144)
+	(rect 16 16 224 144)
 	(text "stack" (rect 5 0 35 19)(font "Intel Clear" (font_size 8)))
 	(text "inst" (rect 8 107 24 124)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "FromPC[1..0]" (rect 0 0 77 19)(font "Intel Clear" (font_size 8)))
-		(text "FromPC[1..0]" (rect 21 27 98 46)(font "Intel Clear" (font_size 8)))
+		(text "FromPC[10..0]" (rect 0 0 86 19)(font "Intel Clear" (font_size 8)))
+		(text "FromPC[10..0]" (rect 21 27 107 46)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
@@ -59,34 +59,13 @@ refer to the applicable agreement for further details.
 		(line (pt 0 96)(pt 16 96))
 	)
 	(port
-		(pt 200 32)
+		(pt 208 32)
 		(output)
-		(text "shift1[3..0]" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
-		(text "shift1[3..0]" (rect 115 27 179 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 200 32)(pt 184 32)(line_width 3))
-	)
-	(port
-		(pt 200 48)
-		(output)
-		(text "lifoOut[1..0]" (rect 0 0 70 19)(font "Intel Clear" (font_size 8)))
-		(text "lifoOut[1..0]" (rect 109 43 179 62)(font "Intel Clear" (font_size 8)))
-		(line (pt 200 48)(pt 184 48)(line_width 3))
-	)
-	(port
-		(pt 200 64)
-		(output)
-		(text "fifoOut[1..0]" (rect 0 0 71 19)(font "Intel Clear" (font_size 8)))
-		(text "fifoOut[1..0]" (rect 108 59 179 78)(font "Intel Clear" (font_size 8)))
-		(line (pt 200 64)(pt 184 64)(line_width 3))
-	)
-	(port
-		(pt 200 80)
-		(output)
-		(text "shift2[3..0]" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
-		(text "shift2[3..0]" (rect 115 75 179 94)(font "Intel Clear" (font_size 8)))
-		(line (pt 200 80)(pt 184 80)(line_width 3))
+		(text "ToPC[10..0]" (rect 0 0 70 19)(font "Intel Clear" (font_size 8)))
+		(text "ToPC[10..0]" (rect 117 27 187 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 208 32)(pt 192 32)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 184 112))
+		(rectangle (rect 16 16 192 112))
 	)
 )
