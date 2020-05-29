@@ -16,18 +16,18 @@
          if (enb)
             case (dir)
               0 : begin 	//pop
-				  //out <= {out[2:0], 1'b0};
+				  //out <= {out[2:0], 0};
 				  out3 <= out2;
 				  out2 <= out1;
 				  out1 <= out0;
-				  out0 <= 1'b0;
+				  out0 <= 0;
 					end
               1 :  begin	//push
 				  //out <= {in, out[3:1]};
-				  out3 <= in;
-				  out2 <= out3;
-				  out1 <= out2;
-				  out0 <= out1;
+                	out0 <= out1;
+                	out1 <= out2;
+                	out2 <= out3;
+                	out3 <= in;				  
 				  end
             endcase
          else
