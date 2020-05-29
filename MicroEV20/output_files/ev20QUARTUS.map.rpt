@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ev20QUARTUS
-Fri May 29 02:01:10 2020
+Fri May 29 19:02:36 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -18,7 +18,7 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  10. General Register Statistics
  11. Inverted Register Statistics
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Source assignments for dataUnit:inst3|ALTDPRAM:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated
+ 13. Source assignments for dataUnit:inst3|ALTDPRAM:inst1|altsyncram:ram_block|altsyncram_1sp1:auto_generated
  14. Source assignments for LPM_RAM_IO:inst2|altram:sram|altsyncram:ram_block|altsyncram_kqa1:auto_generated
  15. Source assignments for LPM_ROM:MicroInstructionsROM|altrom:srom|altsyncram:rom_block|altsyncram_8301:auto_generated
  16. Parameter Settings for User Entity Instance: MIRUnit:inst1|UC2:inst-uc2|LPM_COMPARE:Paul
@@ -282,16 +282,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri May 29 02:01:10 2020       ;
+; Analysis & Synthesis Status        ; Successful - Fri May 29 19:02:35 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ev20QUARTUS                                 ;
 ; Top-level Entity Name              ; ev20main                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 2,418                                       ;
-;     Total combinational functions  ; 1,049                                       ;
-;     Dedicated logic registers      ; 1,487                                       ;
-; Total registers                    ; 1487                                        ;
-; Total pins                         ; 143                                         ;
+; Total logic elements               ; 2,415                                       ;
+;     Total combinational functions  ; 1,046                                       ;
+;     Dedicated logic registers      ; 1,486                                       ;
+; Total registers                    ; 1486                                        ;
+; Total pins                         ; 159                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 65,664                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -459,11 +459,11 @@ refer to the applicable agreement for further details.
 ; altrom.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc               ;         ;
 ; altram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc               ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc             ;         ;
-; db/altsyncram_bgq1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/altsyncram_bgq1.tdf ;         ;
+; db/altsyncram_1sp1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/altsyncram_1sp1.tdf ;         ;
 ; lpm_ram_io.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ram_io.tdf           ;         ;
 ; altram.tdf                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.tdf               ;         ;
 ; db/altsyncram_kqa1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/altsyncram_kqa1.tdf ;         ;
-; instructiondata.mif              ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/instructiondata.mif    ;         ;
+; instructionData.mif              ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/instructionData.mif    ;         ;
 ; db/mux_ssc.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/mux_ssc.tdf         ;         ;
 ; lpm_rom.tdf                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_rom.tdf              ;         ;
 ; altrom.tdf                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.tdf               ;         ;
@@ -477,31 +477,31 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 2,418     ;
+; Estimated Total logic elements              ; 2,415     ;
 ;                                             ;           ;
-; Total combinational functions               ; 1049      ;
+; Total combinational functions               ; 1046      ;
 ; Logic element usage by number of LUT inputs ;           ;
 ;     -- 4 input functions                    ; 839       ;
-;     -- 3 input functions                    ; 156       ;
-;     -- <=2 input functions                  ; 54        ;
+;     -- 3 input functions                    ; 155       ;
+;     -- <=2 input functions                  ; 52        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 993       ;
+;     -- normal mode                          ; 990       ;
 ;     -- arithmetic mode                      ; 56        ;
 ;                                             ;           ;
-; Total registers                             ; 1487      ;
-;     -- Dedicated logic registers            ; 1487      ;
+; Total registers                             ; 1486      ;
+;     -- Dedicated logic registers            ; 1486      ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 143       ;
+; I/O pins                                    ; 159       ;
 ; Total memory bits                           ; 65664     ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
-; Maximum fan-out                             ; 1315      ;
-; Total fan-out                               ; 9214      ;
-; Average fan-out                             ; 3.18      ;
+; Maximum fan-out                             ; 1314      ;
+; Total fan-out                               ; 9222      ;
+; Average fan-out                             ; 3.16      ;
 +---------------------------------------------+-----------+
 
 
@@ -510,7 +510,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------+------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                     ; Entity Name      ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------+------------------+--------------+
-; |ev20main                                    ; 1049 (4)            ; 1487 (0)                  ; 65664       ; 0            ; 0       ; 0         ; 143  ; 0            ; |ev20main                                                                                                               ; ev20main         ; work         ;
+; |ev20main                                    ; 1046 (4)            ; 1486 (0)                  ; 65664       ; 0            ; 0       ; 0         ; 159  ; 0            ; |ev20main                                                                                                               ; ev20main         ; work         ;
 ;    |ALUUnit:inst13|                          ; 178 (0)             ; 33 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ALUUnit:inst13                                                                                                ; ALUUnit          ; work         ;
 ;       |ALU:inst1|                            ; 158 (158)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ALUUnit:inst13|ALU:inst1                                                                                      ; ALU              ; work         ;
 ;       |carryBlock:inst|                      ; 3 (3)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ALUUnit:inst13|carryBlock:inst                                                                                ; carryBlock       ; work         ;
@@ -577,10 +577,10 @@ refer to the applicable agreement for further details.
 ;    |busmux:inst8|                            ; 33 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|busmux:inst8                                                                                                  ; busmux           ; work         ;
 ;       |lpm_mux:$00000|                       ; 33 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|busmux:inst8|lpm_mux:$00000                                                                                   ; lpm_mux          ; work         ;
 ;          |mux_ssc:auto_generated|            ; 33 (33)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|busmux:inst8|lpm_mux:$00000|mux_ssc:auto_generated                                                            ; mux_ssc          ; work         ;
-;    |dataUnit:inst3|                          ; 3 (1)               ; 1 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|dataUnit:inst3                                                                                                ; dataUnit         ; work         ;
-;       |altdpram:inst1|                       ; 2 (0)               ; 1 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|dataUnit:inst3|altdpram:inst1                                                                                 ; altdpram         ; work         ;
-;          |altsyncram:ram_block|              ; 2 (0)               ; 1 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|dataUnit:inst3|altdpram:inst1|altsyncram:ram_block                                                            ; altsyncram       ; work         ;
-;             |altsyncram_bgq1:auto_generated| ; 2 (2)               ; 1 (1)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|dataUnit:inst3|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated                             ; altsyncram_bgq1  ; work         ;
+;    |dataUnit:inst3|                          ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|dataUnit:inst3                                                                                                ; dataUnit         ; work         ;
+;       |altdpram:inst1|                       ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|dataUnit:inst3|altdpram:inst1                                                                                 ; altdpram         ; work         ;
+;          |altsyncram:ram_block|              ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|dataUnit:inst3|altdpram:inst1|altsyncram:ram_block                                                            ; altsyncram       ; work         ;
+;             |altsyncram_1sp1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|dataUnit:inst3|altdpram:inst1|altsyncram:ram_block|altsyncram_1sp1:auto_generated                             ; altsyncram_1sp1  ; work         ;
 ;    |ev20registerBank:inst14|                 ; 427 (1)             ; 1152 (0)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ev20registerBank:inst14                                                                                       ; ev20registerBank ; work         ;
 ;       |busmux:instBUS_RB|                    ; 16 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ev20registerBank:inst14|busmux:instBUS_RB                                                                     ; busmux           ; work         ;
 ;          |lpm_mux:$00000|                    ; 16 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ev20registerBank:inst14|busmux:instBUS_RB|lpm_mux:$00000                                                      ; lpm_mux          ; work         ;
@@ -701,7 +701,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+---------------------+
 ; Name                                                                                                    ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF                 ;
 +---------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+---------------------+
-; dataUnit:inst3|altdpram:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated|ALTSYNCRAM            ; AUTO ; Simple Dual Port ; 1024         ; 16           ; 1024         ; 16           ; 16384 ; None                ;
+; dataUnit:inst3|altdpram:inst1|altsyncram:ram_block|altsyncram_1sp1:auto_generated|ALTSYNCRAM            ; AUTO ; Simple Dual Port ; 1024         ; 16           ; 1024         ; 16           ; 16384 ; None                ;
 ; lpm_ram_io:inst2|altram:sram|altsyncram:ram_block|altsyncram_kqa1:auto_generated|ALTSYNCRAM             ; AUTO ; Single Port      ; 2048         ; 22           ; --           ; --           ; 45056 ; instructionData.mif ;
 ; lpm_rom:MicroInstructionsROM|altrom:srom|altsyncram:rom_block|altsyncram_8301:auto_generated|ALTSYNCRAM ; AUTO ; ROM              ; 128          ; 33           ; --           ; --           ; 4224  ; MIROM.mif           ;
 +---------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+---------------------+
@@ -777,7 +777,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1487  ;
+; Total registers                              ; 1486  ;
 ; Number of registers using Synchronous Clear  ; 1     ;
 ; Number of registers using Synchronous Load   ; 60    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -812,7 +812,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +----------------------------------------------------------------------------------------------------------+
-; Source assignments for dataUnit:inst3|ALTDPRAM:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated ;
+; Source assignments for dataUnit:inst3|ALTDPRAM:inst1|altsyncram:ram_block|altsyncram_1sp1:auto_generated ;
 +---------------------------------+--------------------+------+--------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                         ;
 +---------------------------------+--------------------+------+--------------------------------------------+
@@ -4534,7 +4534,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; BYTE_SIZE                           ; 8            ; Untyped               ;
 ; WIDTH_BYTEENA                       ; 1            ; Untyped               ;
 ; DISABLE_LE_RAM_LIMIT_CHECK          ; OFF          ; Untyped               ;
-; CBXI_PARAMETER                      ; dpram_74g1   ; Untyped               ;
+; CBXI_PARAMETER                      ; dpram_ulf1   ; Untyped               ;
 ; AUTO_CARRY_CHAINS                   ; ON           ; AUTO_CARRY            ;
 ; IGNORE_CARRY_BUFFERS                ; OFF          ; IGNORE_CARRY          ;
 ; AUTO_CASCADE_CHAINS                 ; ON           ; AUTO_CASCADE          ;
@@ -4600,21 +4600,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 143                         ;
-; cycloneiii_ff         ; 1487                        ;
+; boundary_port         ; 159                         ;
+; cycloneiii_ff         ; 1486                        ;
 ;     ENA               ; 1152                        ;
 ;     SCLR              ; 1                           ;
 ;     SLD               ; 60                          ;
-;     plain             ; 274                         ;
-; cycloneiii_lcell_comb ; 1049                        ;
+;     plain             ; 273                         ;
+; cycloneiii_lcell_comb ; 1046                        ;
 ;     arith             ; 56                          ;
 ;         2 data inputs ; 24                          ;
 ;         3 data inputs ; 32                          ;
-;     normal            ; 993                         ;
+;     normal            ; 990                         ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 3                           ;
-;         2 data inputs ; 25                          ;
-;         3 data inputs ; 124                         ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 24                          ;
+;         3 data inputs ; 123                         ;
 ;         4 data inputs ; 839                         ;
 ; cycloneiii_ram_block  ; 71                          ;
 ;                       ;                             ;
@@ -4628,7 +4628,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:10     ;
+; Top            ; 00:00:20     ;
 +----------------+--------------+
 
 
@@ -4638,7 +4638,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri May 29 01:59:52 2020
+    Info: Processing started: Fri May 29 18:59:55 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ev20QUARTUS -c ev20QUARTUS
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -4827,9 +4827,9 @@ Info (12133): Instantiated megafunction "dataUnit:inst3|ALTDPRAM:inst1" with the
     Info (12134): Parameter "WRCONTROL_REG" = "INCLOCK"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "dataUnit:inst3|ALTDPRAM:inst1|altsyncram:ram_block" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.tdf Line: 206
 Info (12131): Elaborated megafunction instantiation "dataUnit:inst3|ALTDPRAM:inst1|altsyncram:ram_block", which is child of megafunction instantiation "dataUnit:inst3|ALTDPRAM:inst1" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.tdf Line: 206
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_bgq1.tdf
-    Info (12023): Found entity 1: altsyncram_bgq1 File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/altsyncram_bgq1.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_bgq1" for hierarchy "dataUnit:inst3|ALTDPRAM:inst1|altsyncram:ram_block|altsyncram_bgq1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_1sp1.tdf
+    Info (12023): Found entity 1: altsyncram_1sp1 File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/altsyncram_1sp1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_1sp1" for hierarchy "dataUnit:inst3|ALTDPRAM:inst1|altsyncram:ram_block|altsyncram_1sp1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12128): Elaborating entity "LPM_RAM_IO" for hierarchy "LPM_RAM_IO:inst2"
 Info (12130): Elaborated megafunction instantiation "LPM_RAM_IO:inst2"
 Info (12133): Instantiated megafunction "LPM_RAM_IO:inst2" with the following parameter:
@@ -4847,6 +4847,7 @@ Info (12131): Elaborated megafunction instantiation "LPM_RAM_IO:inst2|altram:sra
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_kqa1.tdf
     Info (12023): Found entity 1: altsyncram_kqa1 File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/altsyncram_kqa1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_kqa1" for hierarchy "LPM_RAM_IO:inst2|altram:sram|altsyncram:ram_block|altsyncram_kqa1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Critical Warning (127005): Memory depth (2048) in the design file differs from memory depth (23) in the Memory Initialization File "C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/instructionData.mif" -- setting initial value for remaining addresses to 0
 Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:inst8"
 Info (12130): Elaborated megafunction instantiation "BUSMUX:inst8"
 Info (12133): Instantiated megafunction "BUSMUX:inst8" with the following parameter:
@@ -4948,15 +4949,15 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2662 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2675 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 142 output pins
-    Info (21061): Implemented 2448 logic cells
+    Info (21059): Implemented 158 output pins
+    Info (21061): Implemented 2445 logic cells
     Info (21064): Implemented 71 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 78 warnings
-    Info: Peak virtual memory: 4797 megabytes
-    Info: Processing ended: Fri May 29 02:01:10 2020
-    Info: Elapsed time: 00:01:18
-    Info: Total CPU time (on all processors): 00:01:15
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 79 warnings
+    Info: Peak virtual memory: 4803 megabytes
+    Info: Processing ended: Fri May 29 19:02:36 2020
+    Info: Elapsed time: 00:02:41
+    Info: Total CPU time (on all processors): 00:01:46
 
 

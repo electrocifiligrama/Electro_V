@@ -280,6 +280,70 @@
 					"strict" : false
 				},
 				{
+					"name" : "MEMORYout[15]",
+					"strict" : false
+				},
+				{
+					"name" : "MEMORYout[14]",
+					"strict" : false
+				},
+				{
+					"name" : "MEMORYout[13]",
+					"strict" : false
+				},
+				{
+					"name" : "MEMORYout[12]",
+					"strict" : false
+				},
+				{
+					"name" : "MEMORYout[11]",
+					"strict" : false
+				},
+				{
+					"name" : "MEMORYout[10]",
+					"strict" : false
+				},
+				{
+					"name" : "MEMORYout[9]",
+					"strict" : false
+				},
+				{
+					"name" : "MEMORYout[8]",
+					"strict" : false
+				},
+				{
+					"name" : "MEMORYout[7]",
+					"strict" : false
+				},
+				{
+					"name" : "MEMORYout[6]",
+					"strict" : false
+				},
+				{
+					"name" : "MEMORYout[5]",
+					"strict" : false
+				},
+				{
+					"name" : "MEMORYout[4]",
+					"strict" : false
+				},
+				{
+					"name" : "MEMORYout[3]",
+					"strict" : false
+				},
+				{
+					"name" : "MEMORYout[2]",
+					"strict" : false
+				},
+				{
+					"name" : "MEMORYout[1]",
+					"strict" : false
+				},
+				{
+					"name" : "MEMORYout[0]",
+					"strict" : false
+				},
+				{
 					"name" : "MI_view[32]",
 					"strict" : false
 				},
