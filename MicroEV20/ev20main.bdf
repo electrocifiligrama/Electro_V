@@ -344,6 +344,22 @@ refer to the applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 )
+(pin
+	(output)
+	(rect 1304 432 1480 448)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "MEMORYout[15..0]" (rect 90 0 185 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
 (symbol
 	(rect 544 280 608 328)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
@@ -498,56 +514,6 @@ refer to the applicable agreement for further details.
 		(line (pt 16 80)(pt 16 16))
 	)
 	(annotation_block (parameter)(rect 512 -240 759 -107))
-)
-(symbol
-	(rect 992 392 1224 520)
-	(text "dataUnit" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
-	(text "inst3" (rect 8 107 30 124)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "CLK_DATA" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
-		(text "CLK_DATA" (rect 21 27 85 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "DAdd2[9..0]" (rect 0 0 73 19)(font "Intel Clear" (font_size 8)))
-		(text "DAdd2[9..0]" (rect 21 43 94 62)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "ToData[15..0]" (rect 0 0 82 19)(font "Intel Clear" (font_size 8)))
-		(text "ToData[15..0]" (rect 21 59 103 78)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 64)(pt 16 64)(line_width 3))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "MR" (rect 0 0 18 19)(font "Intel Clear" (font_size 8)))
-		(text "MR" (rect 21 75 39 94)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 80)(pt 16 80))
-	)
-	(port
-		(pt 0 96)
-		(input)
-		(text "MW" (rect 0 0 22 19)(font "Intel Clear" (font_size 8)))
-		(text "MW" (rect 21 91 43 110)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 96)(pt 16 96))
-	)
-	(port
-		(pt 232 32)
-		(output)
-		(text "FromData[15..0]" (rect 0 0 97 19)(font "Intel Clear" (font_size 8)))
-		(text "FromData[15..0]" (rect 114 27 211 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 232 32)(pt 216 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 216 112))
-	)
 )
 (symbol
 	(rect 672 -56 720 -24)
@@ -733,7 +699,7 @@ refer to the applicable agreement for further details.
 	(annotation_block (parameter)(rect 120 -112 399 40))
 )
 (symbol
-	(rect 568 376 768 536)
+	(rect 640 376 840 536)
 	(text "ev20registerBank" (rect 5 0 110 19)(font "Intel Clear" (font_size 8)))
 	(text "inst14" (rect 8 139 36 156)(font "Intel Clear" ))
 	(port
@@ -1395,6 +1361,49 @@ refer to the applicable agreement for further details.
 		(rectangle (rect 16 16 184 144))
 	)
 )
+(symbol
+	(rect 992 392 1224 520)
+	(text "dataUnit" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
+	(text "inst3" (rect 8 107 30 124)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "CLK_DATA" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "CLK_DATA" (rect 21 27 85 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "DAdd2[9..0]" (rect 0 0 73 19)(font "Intel Clear" (font_size 8)))
+		(text "DAdd2[9..0]" (rect 21 43 94 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "ToData[15..0]" (rect 0 0 82 19)(font "Intel Clear" (font_size 8)))
+		(text "ToData[15..0]" (rect 21 59 103 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "MW" (rect 0 0 22 19)(font "Intel Clear" (font_size 8)))
+		(text "MW" (rect 21 75 43 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 232 32)
+		(output)
+		(text "FromData[15..0]" (rect 0 0 97 19)(font "Intel Clear" (font_size 8)))
+		(text "FromData[15..0]" (rect 114 27 211 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 232 32)(pt 216 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 216 112))
+	)
+)
 (connector
 	(pt -8 112)
 	(pt -64 112)
@@ -1452,26 +1461,6 @@ refer to the applicable agreement for further details.
 	(text "CLK" (rect 955 408 975 425)(font "Intel Clear" ))
 	(pt 992 424)
 	(pt 920 424)
-)
-(connector
-	(pt 1224 424)
-	(pt 1256 424)
-	(bus)
-)
-(connector
-	(pt 1256 424)
-	(pt 1256 544)
-	(bus)
-)
-(connector
-	(text "MIR_MW" (rect 947 472 991 489)(font "Intel Clear" ))
-	(pt 992 488)
-	(pt 920 488)
-)
-(connector
-	(text "MIR_MR" (rect 945 456 986 473)(font "Intel Clear" ))
-	(pt 992 472)
-	(pt 920 472)
 )
 (connector
 	(text "INST_A[4..0]" (rect 1360 -200 1417 -183)(font "Intel Clear" ))
@@ -1888,59 +1877,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 416 424)
-	(pt 568 424)
-	(bus)
-)
-(connector
-	(text "CLK" (rect 480 456 500 473)(font "Intel Clear" ))
-	(pt 472 472)
-	(pt 568 472)
-)
-(connector
-	(text "MIR_C[5..0]" (rect 480 440 535 457)(font "Intel Clear" ))
-	(pt 472 456)
-	(pt 568 456)
-	(bus)
-)
-(connector
-	(text "MIR_B[5..0]" (rect 480 392 535 409)(font "Intel Clear" ))
-	(pt 472 408)
-	(pt 568 408)
-	(bus)
-)
-(connector
-	(text "MIR_A[4..0]" (rect 504 424 559 441)(font "Intel Clear" ))
-	(pt 472 440)
-	(pt 568 440)
-	(bus)
-)
-(connector
-	(text "MIR_MR" (rect 512 488 553 505)(font "Intel Clear" ))
-	(pt 472 504)
-	(pt 568 504)
-)
-(connector
-	(pt 768 408)
-	(pt 888 408)
-	(bus)
-)
-(connector
-	(pt 1256 544)
-	(pt 456 544)
-	(bus)
-)
-(connector
-	(pt 568 488)
-	(pt 456 488)
-	(bus)
-)
-(connector
-	(pt 456 488)
-	(pt 456 544)
-	(bus)
-)
-(connector
 	(pt 992 456)
 	(pt 896 456)
 	(bus)
@@ -1948,17 +1884,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 896 512)
 	(pt 888 512)
-	(bus)
-)
-(connector
-	(pt 888 440)
-	(pt 888 512)
-	(bus)
-)
-(connector
-	(text "W[15..0]" (rect 785 424 825 441)(font "Intel Clear" ))
-	(pt 768 440)
-	(pt 888 440)
 	(bus)
 )
 (connector
@@ -1984,16 +1909,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 248 472)
 	(pt 416 472)
-	(bus)
-)
-(connector
-	(pt 416 560)
-	(pt 416 472)
-	(bus)
-)
-(connector
-	(pt 416 472)
-	(pt 416 424)
 	(bus)
 )
 (connector
@@ -2050,7 +1965,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "<<__$DEF_ALIAS1774>>" (rect 632 -56 750 -39)(font "Intel Clear" )(invisible))
 	(pt 672 -40)
 	(pt 624 -40)
 )
@@ -2063,7 +1977,6 @@ refer to the applicable agreement for further details.
 	(pt 624 -64)
 )
 (connector
-	(text "<<__$DEF_ALIAS1772>>" (rect 712 -80 830 -63)(font "Intel Clear" )(invisible))
 	(pt 624 -64)
 	(pt 592 -64)
 )
@@ -2168,21 +2081,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 888 408)
-	(pt 888 288)
-	(bus)
-)
-(connector
-	(pt 864 424)
-	(pt 768 424)
-	(bus)
-)
-(connector
-	(pt 864 424)
-	(pt 864 240)
-	(bus)
-)
-(connector
 	(pt 864 240)
 	(pt 1056 240)
 	(bus)
@@ -2200,6 +2098,120 @@ refer to the applicable agreement for further details.
 	(pt 1056 256)
 	(pt 848 256)
 )
+(connector
+	(pt 888 408)
+	(pt 840 408)
+	(bus)
+)
+(connector
+	(pt 456 544)
+	(pt 456 488)
+	(bus)
+)
+(connector
+	(pt 888 512)
+	(pt 888 440)
+	(bus)
+)
+(connector
+	(text "W[15..0]" (rect 857 424 897 441)(font "Intel Clear" ))
+	(pt 888 440)
+	(pt 840 440)
+	(bus)
+)
+(connector
+	(pt 888 288)
+	(pt 888 408)
+	(bus)
+)
+(connector
+	(pt 864 424)
+	(pt 840 424)
+	(bus)
+)
+(connector
+	(pt 864 240)
+	(pt 864 424)
+	(bus)
+)
+(connector
+	(pt 416 424)
+	(pt 416 472)
+	(bus)
+)
+(connector
+	(pt 416 472)
+	(pt 416 560)
+	(bus)
+)
+(connector
+	(text "MIR_B[5..0]" (rect 552 392 607 409)(font "Intel Clear" ))
+	(pt 544 408)
+	(pt 640 408)
+	(bus)
+)
+(connector
+	(pt 416 424)
+	(pt 640 424)
+	(bus)
+)
+(connector
+	(text "MIR_A[4..0]" (rect 576 424 631 441)(font "Intel Clear" ))
+	(pt 544 440)
+	(pt 640 440)
+	(bus)
+)
+(connector
+	(text "MIR_C[5..0]" (rect 552 440 607 457)(font "Intel Clear" ))
+	(pt 544 456)
+	(pt 640 456)
+	(bus)
+)
+(connector
+	(text "CLK" (rect 552 456 572 473)(font "Intel Clear" ))
+	(pt 544 472)
+	(pt 640 472)
+)
+(connector
+	(pt 456 488)
+	(pt 640 488)
+	(bus)
+)
+(connector
+	(text "MIR_MR" (rect 584 488 625 505)(font "Intel Clear" ))
+	(pt 544 504)
+	(pt 640 504)
+)
+(connector
+	(pt 1224 424)
+	(pt 1280 424)
+	(bus)
+)
+(connector
+	(pt 456 544)
+	(pt 1280 544)
+	(bus)
+)
+(connector
+	(pt 1304 440)
+	(pt 1280 440)
+	(bus)
+)
+(connector
+	(pt 1280 424)
+	(pt 1280 440)
+	(bus)
+)
+(connector
+	(pt 1280 440)
+	(pt 1280 544)
+	(bus)
+)
+(connector
+	(text "MIR_MW" (rect 945 456 989 473)(font "Intel Clear" ))
+	(pt 992 472)
+	(pt 920 472)
+)
 (junction (pt -72 80))
 (junction (pt -32 64))
 (junction (pt 1416 -88))
@@ -2208,3 +2220,4 @@ refer to the applicable agreement for further details.
 (junction (pt 416 472))
 (junction (pt 1832 -56))
 (junction (pt 624 -64))
+(junction (pt 1280 440))

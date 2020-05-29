@@ -23,6 +23,8 @@ def jump(dict, lineSplitted):
         operand = lineSplitted[1]
         binNemonic = dict[opcode][0] + int(operand)
         return "{0:0022b}".format(binNemonic)
+    elif (len(lineSplitted) == 1) and (lineSplitted[0] == "END"):
+        return -1
     else:
         return -1
 
@@ -203,12 +205,13 @@ nem2binDict = {"JMP":[0x200000, jump],
                 "ANK":[0x050000, genericComaSeparated],
                 "ORK":[0x060000, genericComaSeparated],
                 "ADK":[0x070000, genericComaSeparated],
-                "ANR":[0x028000, genericComaSeparated],
-                "ORR":[0x030000, genericComaSeparated],
-                "ADR":[0x038000, genericComaSeparated],
+                "ANR":[0x0A0000, genericComaSeparated],
+                "ORR":[0x0B0000, genericComaSeparated],
+                "ADR":[0x0E0000, genericComaSeparated],
                 "CPL":[0x000000, simpleParser],
                 "CLR":[0x008000, simpleParser],
                 "SET":[0x010000, simpleParser],
-                "RET":[0x018000, simpleParser]}
+                "RET":[0x018000, simpleParser],
+                "END":[0x200000, jump]}
 
 

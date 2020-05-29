@@ -26,7 +26,7 @@ def nem2binFun(nemLines):
 def generateMifList(binLines):
     mifList = []
     #preamble...
-    mifList.append("DEPTH = " + str(len(binLines)) + ";\n")  #The size of memory in words
+    mifList.append("DEPTH = " + str(len(binLines) + 1) + ";\n")  #The size of memory in words
     mifList.append("WIDTH = 22;\n")                     #The size of data in bits
     mifList.append("ADDRESS_RADIX = HEX;\n")           #The radix for address values
     mifList.append("DATA_RADIX = BIN;\n")              #The radix for data values
@@ -35,10 +35,14 @@ def generateMifList(binLines):
     mifList.append("\n")
 
     #-- memory address : data
+    lastDIR = 0
     for i in range(len(binLines)):
         mifList.append("{0:0>4X}".format(i) + " : " + binLines[i] + ";\n")
+        lastDIR = i
 
     #FINISH
+    lastINSTRUCCION = nem2binDict["JMP"][1](nem2binDict, ["JMP", str(lastDIR)])
+    mifList.append("{0:0>4X}".format(lastDIR + 1) + " : " + lastINSTRUCCION + ";\n")
     mifList.append("END;")
     print(mifList)
     return mifList
