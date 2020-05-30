@@ -81,6 +81,10 @@
 
 \begin_body
 
+\begin_layout Part*
+EV20 - Unidad Central de Procesamiento
+\end_layout
+
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
@@ -98,24 +102,44 @@ filename "caratula.lyx"
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "carac_generales.lyx"
-
-\end_inset
-
-
+\begin_layout Section
+Características Generales
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "interfaces.lyx"
+CLOCK MAXIMO, MEMORIA DE DATOS y DE INSTRUCCIONES, PIPELINE DE 5 ETAPAS,
+ BRANCH PREDICTION, BUSES DE X bits, REGISTROS DE x bits, STACK DE x PROFUNDIDAD
+, etc.
+\end_layout
 
-\end_inset
+\begin_layout Section
+Interfaces
+\end_layout
 
+\begin_layout Subsection
+Set de Instrucciones
+\end_layout
 
+\begin_layout Standard
+CAPAZ NO HACE FALTA DESCRIBIRLO, SOLO MOSTRARLO, ACLARAR QUE TIENE EXPANDING
+ OPCODES, LESTO.
+\end_layout
+
+\begin_layout Subsection
+Memoria de datos y memoria de instrucciones
+\end_layout
+
+\begin_layout Standard
+COMO USAR EL MICRO, COMO USAR LAS MEMORIAS DE DATOS Y DE INSTRUCCIONES.
+\end_layout
+
+\begin_layout Subsection
+Compilador
+\end_layout
+
+\begin_layout Standard
+EXPLICAR COMO FUNCIONA EL COMPILADOR, COMO SE HIZO, COMO SE PENSÓ, COMO
+ SE USA.
 \end_layout
 
 \begin_layout Section
@@ -131,84 +155,76 @@ MAIN.
 IDENTIFICAR PIPELINE!!!!!
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "fetch_unit.lyx"
-
-\end_inset
-
-
+\begin_layout Subsection
+FETCH UNIT
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "micro_inst_rom.lyx"
+IMAGEN DEL BLOQUE, DESCRIPCION DEL MISMO, QUE HACE; INPUTS, OUTPUTS, SIMULACIONE
+S PARA MOSTRAR COMO ANDA.
+\end_layout
 
-\end_inset
-
-
+\begin_layout Subsection
+ASDAÑSKDJ
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "mir_unit.lyx"
+IMAGEN DEL BLOQUE, DESCRIPCION DEL MISMO, QUE HACE; INPUTS, OUTPUTS, SIMULACIONE
+S PARA MOSTRAR COMO ANDA.
+\end_layout
 
-\end_inset
-
-
+\begin_layout Subsection
+MICRO-INSTRUCTION-ROM
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "register_bank.lyx"
+IMAGEN DEL BLOQUE, DESCRIPCION DEL MISMO, QUE HACE; INPUTS, OUTPUTS, SIMULACIONE
+S PARA MOSTRAR COMO ANDA.
+\end_layout
 
-\end_inset
-
-
+\begin_layout Subsection
+MIR UNIT
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "stack.lyx"
+IMAGEN DEL BLOQUE, DESCRIPCION DEL MISMO, QUE HACE; INPUTS, OUTPUTS, SIMULACIONE
+S PARA MOSTRAR COMO ANDA.
+\end_layout
 
-\end_inset
-
-
+\begin_layout Subsection
+REGISTER BANK
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "branch_pred.lyx"
+IMAGEN DEL BLOQUE, DESCRIPCION DEL MISMO, QUE HACE; INPUTS, OUTPUTS, SIMULACIONE
+S PARA MOSTRAR COMO ANDA.
+\end_layout
 
-\end_inset
-
-
+\begin_layout Subsection
+BRANCH PREDICTION
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "analisis_funcionamiento.lyx"
+IMAGEN DEL BLOQUE, DESCRIPCION DEL MISMO, QUE HACE; INPUTS, OUTPUTS, SIMULACIONE
+S PARA MOSTRAR COMO ANDA.
+\end_layout
 
-\end_inset
-
-
+\begin_layout Section
+Análisis de Funcionamiento
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "conclusion.lyx"
+ANALISIS DE COMO FUNCIONA TODO, JUSTIFICACION DE POR QUE SE LLEGA A LO QUE
+ SE DIJO EN CARACTERISTICAS GENERALES: MAXIMO CLOCK, PORQUE VA BIEN EL PIPELINE.
+\end_layout
 
-\end_inset
+\begin_layout Section
+Conclusión
+\end_layout
 
-
+\begin_layout Standard
+HAY QUE ROMPERLA TODA ACA, A ANDRES LE VA A GUSTAR QUE NOS ESFORCEMOS EN
+ ESCRIBIR ESTO.
 \end_layout
 
 \end_body
