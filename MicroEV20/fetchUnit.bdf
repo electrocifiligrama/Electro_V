@@ -1250,12 +1250,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "stackPC[10..0]" (rect 304 712 372 729)(font "Intel Clear" ))
-	(pt 336 728)
-	(pt 264 728)
-	(bus)
-)
-(connector
 	(text "I[10..0]" (rect 289 680 320 697)(font "Intel Clear" ))
 	(pt 336 696)
 	(pt 256 696)
@@ -1321,6 +1315,17 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 544 504)
 	(pt 712 504)
+)
+(connector
+	(pt 256 696)
+	(pt 256 728)
+	(bus)
+)
+(connector
+	(text "<<__$DEF_ALIAS264>>" (rect 304 712 416 729)(font "Intel Clear" )(invisible))
+	(pt 256 728)
+	(pt 336 728)
+	(bus)
 )
 (junction (pt 976 328))
 (junction (pt 952 328))
