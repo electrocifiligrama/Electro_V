@@ -1,14 +1,18 @@
 from dictNemonics import nem2binDict
 
+def discardComments(nemLine):
+    uncommented = nemLine.split("//")[0]
+    print(uncommented)
+    return uncommented
 def nem2binFun(nemLines):   
     binLines = []
     for i in range(len(nemLines)):
         #print(i)
+        uncommentedLine = discardComments(nemLines[i])
         j = -1
-        lineSplitted = nemLines[i].split()
+        lineSplitted = uncommentedLine.split()
         print(lineSplitted)
         print(len(lineSplitted))
-        
         if len(lineSplitted) > 0:  #ignore enter
             
             if lineSplitted[0] in nem2binDict:

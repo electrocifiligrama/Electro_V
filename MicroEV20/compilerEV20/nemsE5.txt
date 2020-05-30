@@ -1,9 +1,9 @@
-MOK W,#10
+MOK W,#10          //comentario
 MOV R0,W
 MOV R1,R0
 MOV R2,R1
 MOV R3,W
-CPL W
+CPL W		//COMENTSSSSS
 MOK W,#1
 CLR CY
 ADW R0,R1
@@ -20,3 +20,4 @@ MOM W,0
 MOM W,1
 MOM W,2
 MOM W,3
+CLR CY
