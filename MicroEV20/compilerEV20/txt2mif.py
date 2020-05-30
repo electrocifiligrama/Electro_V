@@ -45,7 +45,7 @@ def generateMifList(binLines):
         lastDIR = i
 
     #FINISH
-    lastINSTRUCCION = nem2binDict["JMP"][1](nem2binDict, ["JMP", str(lastDIR)])
+    lastINSTRUCCION = nem2binDict["JMP"][1](nem2binDict, ["JMP", str(lastDIR + 1)])
     mifList.append("{0:0>4X}".format(lastDIR + 1) + " : " + lastINSTRUCCION + ";\n")
     mifList.append("END;")
     print(mifList)
