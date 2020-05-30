@@ -66,13 +66,6 @@ refer to the applicable agreement for further details.
 		(line (pt 0 112)(pt 16 112)(line_width 3))
 	)
 	(port
-		(pt 0 128)
-		(input)
-		(text "Jump" (rect 0 0 34 19)(font "Intel Clear" (font_size 8)))
-		(text "Jump" (rect 21 123 55 142)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 128)(pt 16 128))
-	)
-	(port
 		(pt 296 32)
 		(output)
 		(text "Asynched[4..0]" (rect 0 0 87 19)(font "Intel Clear" (font_size 8)))
@@ -99,13 +92,6 @@ refer to the applicable agreement for further details.
 		(text "OperandsSynched[15..0]" (rect 0 0 147 19)(font "Intel Clear" (font_size 8)))
 		(text "OperandsSynched[15..0]" (rect 128 75 275 94)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 80)(pt 280 80)(line_width 3))
-	)
-	(port
-		(pt 296 96)
-		(output)
-		(text "JumpSynched" (rect 0 0 84 19)(font "Intel Clear" (font_size 8)))
-		(text "JumpSynched" (rect 191 91 275 110)(font "Intel Clear" (font_size 8)))
-		(line (pt 296 96)(pt 280 96))
 	)
 	(drawing
 		(rectangle (rect 16 16 280 144))
