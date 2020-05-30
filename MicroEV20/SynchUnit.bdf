@@ -117,9 +117,9 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 40 512 208 528)
+	(rect -144 528 24 544)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Jump" (rect 5 0 33 12)(font "Arial" ))
+	(text "Jump" (rect 5 0 32 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -197,7 +197,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 552 512 728 528)
+	(rect 704 512 880 528)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "JumpSynched" (rect 90 0 157 17)(font "Intel Clear" ))
 	(pt 0 8)
@@ -409,7 +409,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 248 488 528 584)
+	(rect 400 480 680 576)
 	(text "SynchRegister" (rect 5 0 88 19)(font "Intel Clear" (font_size 8)))
 	(text "inst6" (rect 8 75 30 92)(font "Intel Clear" ))
 	(port
@@ -441,7 +441,42 @@ refer to the applicable agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 264 80))
 	)
-	(annotation_block (parameter)(rect 528 448 710 486))
+	(annotation_block (parameter)(rect 680 440 862 478))
+)
+(symbol
+	(rect 24 504 304 600)
+	(text "SynchRegister" (rect 5 0 88 19)(font "Intel Clear" (font_size 8)))
+	(text "inst7" (rect 8 75 30 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DATA[SIZE-1..0]" (rect 0 0 96 19)(font "Intel Clear" (font_size 8)))
+		(text "DATA[SIZE-1..0]" (rect 21 27 117 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Clk" (rect 0 0 18 19)(font "Intel Clear" (font_size 8)))
+		(text "Clk" (rect 21 43 39 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 280 32)
+		(output)
+		(text "DATA_OUT[SIZE-1..0]" (rect 0 0 130 19)(font "Intel Clear" (font_size 8)))
+		(text "DATA_OUT[SIZE-1..0]" (rect 129 27 259 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 280 32)(pt 264 32)(line_width 3))
+	)
+	(parameter
+		"SIZE"
+		"1"
+		""
+		(type "PARAMETER_UNSIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 264 80))
+	)
+	(annotation_block (parameter)(rect 304 464 486 502))
 )
 (connector
 	(text "Clk" (rect 216 80 232 97)(font "Intel Clear" ))
@@ -528,16 +563,62 @@ refer to the applicable agreement for further details.
 	(pt 440 0)
 )
 (connector
-	(text "Clk" (rect 216 520 232 537)(font "Intel Clear" ))
-	(pt 248 536)
-	(pt 208 536)
-)
-(connector
-	(pt 208 520)
-	(pt 248 520)
-)
-(connector
-	(pt 528 520)
-	(pt 552 520)
+	(pt 696 512)
+	(pt 680 512)
 	(bus)
 )
+(connector
+	(pt 696 512)
+	(pt 696 520)
+	(bus)
+)
+(connector
+	(pt 704 520)
+	(pt 696 520)
+	(bus)
+)
+(connector
+	(pt 304 536)
+	(pt 336 536)
+	(bus)
+)
+(connector
+	(pt 336 512)
+	(pt 336 536)
+	(bus)
+)
+(connector
+	(pt 336 512)
+	(pt 400 512)
+	(bus)
+)
+(connector
+	(pt -16 624)
+	(pt 368 624)
+)
+(connector
+	(text "Clk" (rect -80 552 -64 569)(font "Intel Clear" ))
+	(pt 24 552)
+	(pt -16 552)
+)
+(connector
+	(pt 368 624)
+	(pt 368 528)
+)
+(connector
+	(pt 368 528)
+	(pt 400 528)
+)
+(connector
+	(pt -16 568)
+	(pt -112 568)
+)
+(connector
+	(pt -16 552)
+	(pt -16 568)
+)
+(connector
+	(pt -16 568)
+	(pt -16 624)
+)
+(junction (pt -16 568))

@@ -100,6 +100,13 @@ refer to the applicable agreement for further details.
 		(text "OPERAND[15..0]" (rect 88 107 187 126)(font "Intel Clear" (font_size 8)))
 		(line (pt 208 112)(pt 192 112)(line_width 3))
 	)
+	(port
+		(pt 208 128)
+		(output)
+		(text "Jump" (rect 0 0 34 19)(font "Intel Clear" (font_size 8)))
+		(text "Jump" (rect 153 123 187 142)(font "Intel Clear" (font_size 8)))
+		(line (pt 208 128)(pt 192 128))
+	)
 	(drawing
 		(rectangle (rect 16 16 192 144))
 	)

@@ -1,25 +1,25 @@
 # do ev20QUARTUS.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:04:32 on May 29,2020
+# Start time: 16:00:35 on May 30,2020
 # vlog -work work ev20QUARTUS.vo 
 # -- Compiling module ev20main
 # 
 # Top level modules:
 # 	ev20main
-# End time: 19:04:33 on May 29,2020, Elapsed time: 0:00:01
+# End time: 16:00:37 on May 30,2020, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:04:33 on May 29,2020
-# vlog -work work Waveform43.vwf.vt 
+# Start time: 16:00:37 on May 30,2020
+# vlog -work work Waveform46.vwf.vt 
 # -- Compiling module ev20main_vlg_vec_tst
 # 
 # Top level modules:
 # 	ev20main_vlg_vec_tst
-# End time: 19:04:33 on May 29,2020, Elapsed time: 0:00:00
+# End time: 16:00:38 on May 30,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.ev20main_vlg_vec_tst 
-# Start time: 19:04:34 on May 29,2020
+# Start time: 16:00:42 on May 30,2020
 # Loading work.ev20main_vlg_vec_tst
 # Loading work.ev20main
 # Loading cycloneive_ver.cycloneive_io_obuf
@@ -31,8 +31,7 @@
 # Loading cycloneive_ver.cycloneive_ram_pulse_generator
 # Loading altera_ver.PRIM_GDFF_LOW
 # after#25
-# Simulation time: 840001 ps
-# ** Note: $finish    : Waveform43.vwf.vt(82)
-#    Time: 4 us  Iteration: 0  Instance: /ev20main_vlg_vec_tst
-# End time: 19:04:39 on May 29,2020, Elapsed time: 0:00:05
+# ** Note: $finish    : Waveform46.vwf.vt(88)
+#    Time: 1 us  Iteration: 0  Instance: /ev20main_vlg_vec_tst
+# End time: 16:00:47 on May 30,2020, Elapsed time: 0:00:05
 # Errors: 0, Warnings: 0
