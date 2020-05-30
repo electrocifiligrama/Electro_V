@@ -32,6 +32,6 @@ module bi_shift_reg ( input in,
 		  out3 <= out2;
 		  out2 <= out1;
 		  out1 <= out0;
-		  out0 <= 0;
+		  out0 <= 1'b0;
 		end
 endmodule

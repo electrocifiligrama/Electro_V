@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ev20QUARTUS
-Sat May 30 15:58:52 2020
+Sat May 30 20:26:36 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -109,165 +109,166 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 101. Parameter Settings for User Entity Instance: fetchUnit:inst|LPM_FF:InstructionRegister
 102. Parameter Settings for User Entity Instance: fetchUnit:inst|LPM_FF:InstructionRegister1
 103. Parameter Settings for User Entity Instance: fetchUnit:inst|BUSMUX:inst7
-104. Parameter Settings for User Entity Instance: ALUUnit:inst13|LPM_FF:OperandRegister2
-105. Parameter Settings for User Entity Instance: ALUUnit:inst13|LPM_FF:OperandRegister1
-106. Parameter Settings for User Entity Instance: operandsUnit:inst10|LPM_FF:LatchA2
-107. Parameter Settings for User Entity Instance: operandsUnit:inst10|LPM_FF:LatchA1
-108. Parameter Settings for User Entity Instance: operandsUnit:inst10|BUSMUX:inst8
-109. Parameter Settings for User Entity Instance: operandsUnit:inst10|LPM_FF:OperandRegister2
-110. Parameter Settings for User Entity Instance: operandsUnit:inst10|LPM_FF:OperandRegister1
-111. Parameter Settings for User Entity Instance: operandsUnit:inst10|LPM_FF:LatchB2
-112. Parameter Settings for User Entity Instance: operandsUnit:inst10|LPM_FF:LatchB1
-113. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst35
-114. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_DECODE:instRB
-115. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst107
-116. Parameter Settings for User Entity Instance: ev20registerBank:inst14|BUSMUX:instBUS_RB
-117. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst36
-118. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst33
-119. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst28
-120. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst19
-121. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst
-122. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst2
-123. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst20
-124. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst3
-125. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst4
-126. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst29
-127. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst21
-128. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst5
-129. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst6
-130. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst22
-131. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst7
-132. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst8
-133. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst34
-134. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst30
-135. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst23
-136. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst9
-137. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst10
-138. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst24
-139. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst11
-140. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst12
-141. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst31
-142. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst25
-143. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst13
-144. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst14
-145. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst26
-146. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst15
-147. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst16
-148. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst38
-149. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst36
-150. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst33
-151. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst28
-152. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst19
-153. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst
-154. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst2
-155. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst20
-156. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst3
-157. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst4
-158. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst29
-159. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst21
-160. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst5
-161. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst6
-162. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst22
-163. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst7
-164. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst8
-165. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst34
-166. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst30
-167. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst23
-168. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst9
-169. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst10
-170. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst24
-171. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst11
-172. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst12
-173. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst31
-174. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst25
-175. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst13
-176. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst14
-177. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst26
-178. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst15
-179. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst16
-180. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst37
-181. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst35
-182. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst32
-183. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst27
-184. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst17
-185. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst18
-186. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst1
-187. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst36
-188. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst11
-189. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst57
-190. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst12
-191. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst59
-192. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst13
-193. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst61
-194. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst14
-195. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst63
-196. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst15
-197. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst65
-198. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst16
-199. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst67
-200. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst17
-201. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst69
-202. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst18
-203. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst71
-204. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst19
-205. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst73
-206. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst20
-207. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst75
-208. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst2
-209. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst37
-210. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst21
-211. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst77
-212. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst22
-213. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst79
-214. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst23
-215. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst81
-216. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst24
-217. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst83
-218. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst25
-219. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst85
-220. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst26
-221. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst87
-222. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst27
-223. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst89
-224. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst28
-225. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst91
-226. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst29
-227. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst93
-228. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst30
-229. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst95
-230. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst3
-231. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst38
-232. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst31
-233. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst97
-234. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst32
-235. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst99
-236. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst33
-237. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst103
-238. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst34
-239. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst105
-240. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst110
-241. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst109
-242. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst4
-243. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst42
-244. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst5
-245. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst44
-246. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst6
-247. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst46
-248. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst7
-249. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst48
-250. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst8
-251. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst50
-252. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst9
-253. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst52
-254. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst10
-255. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst55
-256. Parameter Settings for User Entity Instance: dataUnit:inst3|ALTDPRAM:inst1
-257. Parameter Settings for User Entity Instance: LPM_RAM_IO:inst2
-258. Parameter Settings for User Entity Instance: BUSMUX:inst8
-259. Parameter Settings for User Entity Instance: LPM_ROM:MicroInstructionsROM
-260. Post-Synthesis Netlist Statistics for Top Partition
-261. Elapsed Time Per Partition
-262. Analysis & Synthesis Messages
+104. Parameter Settings for User Entity Instance: fetchUnit:inst|BUSMUX:inst8
+105. Parameter Settings for User Entity Instance: ALUUnit:inst13|LPM_FF:OperandRegister2
+106. Parameter Settings for User Entity Instance: ALUUnit:inst13|LPM_FF:OperandRegister1
+107. Parameter Settings for User Entity Instance: operandsUnit:inst10|LPM_FF:LatchA2
+108. Parameter Settings for User Entity Instance: operandsUnit:inst10|LPM_FF:LatchA1
+109. Parameter Settings for User Entity Instance: operandsUnit:inst10|BUSMUX:inst8
+110. Parameter Settings for User Entity Instance: operandsUnit:inst10|LPM_FF:OperandRegister2
+111. Parameter Settings for User Entity Instance: operandsUnit:inst10|LPM_FF:OperandRegister1
+112. Parameter Settings for User Entity Instance: operandsUnit:inst10|LPM_FF:LatchB2
+113. Parameter Settings for User Entity Instance: operandsUnit:inst10|LPM_FF:LatchB1
+114. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst35
+115. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_DECODE:instRB
+116. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst107
+117. Parameter Settings for User Entity Instance: ev20registerBank:inst14|BUSMUX:instBUS_RB
+118. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst36
+119. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst33
+120. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst28
+121. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst19
+122. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst
+123. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst2
+124. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst20
+125. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst3
+126. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst4
+127. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst29
+128. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst21
+129. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst5
+130. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst6
+131. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst22
+132. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst7
+133. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst8
+134. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst34
+135. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst30
+136. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst23
+137. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst9
+138. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst10
+139. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst24
+140. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst11
+141. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst12
+142. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst31
+143. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst25
+144. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst13
+145. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst14
+146. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst26
+147. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst15
+148. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst|BUSMUX:inst16
+149. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst38
+150. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst36
+151. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst33
+152. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst28
+153. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst19
+154. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst
+155. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst2
+156. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst20
+157. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst3
+158. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst4
+159. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst29
+160. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst21
+161. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst5
+162. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst6
+163. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst22
+164. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst7
+165. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst8
+166. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst34
+167. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst30
+168. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst23
+169. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst9
+170. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst10
+171. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst24
+172. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst11
+173. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst12
+174. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst31
+175. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst25
+176. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst13
+177. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst14
+178. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst26
+179. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst15
+180. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst16
+181. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst37
+182. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst35
+183. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst32
+184. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst27
+185. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst17
+186. Parameter Settings for User Entity Instance: ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|BUSMUX:inst18
+187. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst1
+188. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst36
+189. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst11
+190. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst57
+191. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst12
+192. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst59
+193. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst13
+194. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst61
+195. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst14
+196. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst63
+197. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst15
+198. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst65
+199. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst16
+200. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst67
+201. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst17
+202. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst69
+203. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst18
+204. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst71
+205. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst19
+206. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst73
+207. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst20
+208. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst75
+209. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst2
+210. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst37
+211. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst21
+212. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst77
+213. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst22
+214. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst79
+215. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst23
+216. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst81
+217. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst24
+218. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst83
+219. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst25
+220. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst85
+221. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst26
+222. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst87
+223. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst27
+224. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst89
+225. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst28
+226. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst91
+227. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst29
+228. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst93
+229. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst30
+230. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst95
+231. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst3
+232. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst38
+233. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst31
+234. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst97
+235. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst32
+236. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst99
+237. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst33
+238. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst103
+239. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst34
+240. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst105
+241. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst110
+242. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst109
+243. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst4
+244. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst42
+245. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst5
+246. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst44
+247. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst6
+248. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst46
+249. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst7
+250. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst48
+251. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst8
+252. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst50
+253. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst9
+254. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst52
+255. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst10
+256. Parameter Settings for User Entity Instance: ev20registerBank:inst14|LPM_FF:inst55
+257. Parameter Settings for User Entity Instance: dataUnit:inst3|ALTDPRAM:inst1
+258. Parameter Settings for User Entity Instance: LPM_RAM_IO:inst2
+259. Parameter Settings for User Entity Instance: BUSMUX:inst8
+260. Parameter Settings for User Entity Instance: LPM_ROM:MicroInstructionsROM
+261. Post-Synthesis Netlist Statistics for Top Partition
+262. Elapsed Time Per Partition
+263. Analysis & Synthesis Messages
 
 
 
@@ -293,15 +294,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat May 30 15:58:52 2020       ;
+; Analysis & Synthesis Status        ; Successful - Sat May 30 20:26:36 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ev20QUARTUS                                 ;
 ; Top-level Entity Name              ; ev20main                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 2,500                                       ;
-;     Total combinational functions  ; 1,114                                       ;
-;     Dedicated logic registers      ; 1,558                                       ;
-; Total registers                    ; 1558                                        ;
+; Total logic elements               ; 2,567                                       ;
+;     Total combinational functions  ; 1,194                                       ;
+;     Dedicated logic registers      ; 1,556                                       ;
+; Total registers                    ; 1556                                        ;
 ; Total pins                         ; 180                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 65,664                                      ;
@@ -400,91 +401,93 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 2           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                       ;
-+----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                       ; Library ;
-+----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------+---------+
-; SubRoutineControlUnit.bdf        ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/SubRoutineControlUnit.bdf ;         ;
-; MIRUnit2.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/MIRUnit2.bdf              ;         ;
-; SynchUnit.bdf                    ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/SynchUnit.bdf             ;         ;
-; SynchRegister.bdf                ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/SynchRegister.bdf         ;         ;
-; DelayInicial.v                   ; yes             ; User Verilog HDL File                    ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/DelayInicial.v            ;         ;
-; MIR.bdf                          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/MIR.bdf                   ;         ;
-; UC2.bdf                          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/UC2.bdf                   ;         ;
-; UC1.bdf                          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/UC1.bdf                   ;         ;
-; ev20main.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/ev20main.bdf              ;         ;
-; ev20jumpControl.bdf              ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/ev20jumpControl.bdf       ;         ;
-; alu.v                            ; yes             ; User Verilog HDL File                    ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/alu.v                     ;         ;
-; shifter.v                        ; yes             ; User Verilog HDL File                    ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/shifter.v                 ;         ;
-; ev20B3BUSA.bdf                   ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/ev20B3BUSA.bdf            ;         ;
-; ev20B3BUSB.bdf                   ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/ev20B3BUSB.bdf            ;         ;
-; ev20BLOQUE3.bdf                  ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/ev20BLOQUE3.bdf           ;         ;
-; ev20registerBank.bdf             ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/ev20registerBank.bdf      ;         ;
-; fetchUnit.bdf                    ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/fetchUnit.bdf             ;         ;
-; operandsUnit.bdf                 ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/operandsUnit.bdf          ;         ;
-; ALUUnit.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/ALUUnit.bdf               ;         ;
-; carryBlock.v                     ; yes             ; User Verilog HDL File                    ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/carryBlock.v              ;         ;
-; PCRegister.v                     ; yes             ; User Verilog HDL File                    ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/PCRegister.v              ;         ;
-; dataUnit.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/dataUnit.bdf              ;         ;
-; lpm_compare.tdf                  ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.tdf             ;         ;
-; comptree.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/comptree.inc                ;         ;
-; altshift.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc                ;         ;
-; aglobal181.inc                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc              ;         ;
-; db/cmpr_3pd.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/cmpr_3pd.tdf           ;         ;
-; busmux.tdf                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf                  ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                 ;         ;
-; lpm_mux.tdf                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf                 ;         ;
-; muxlut.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/muxlut.inc                  ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/bypassff.inc                ;         ;
-; db/mux_crc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/mux_crc.tdf            ;         ;
-; lpm_ff.tdf                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ff.tdf                  ;         ;
-; lpm_constant.inc                 ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_constant.inc            ;         ;
-; db/mux_drc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/mux_drc.tdf            ;         ;
-; 74139m.bdf                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/74139m.bdf                ;         ;
-; stack.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/stack.bdf                 ;         ;
-; bi_shift_reg.v                   ; yes             ; Auto-Found Verilog HDL File              ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v            ;         ;
-; db/mux_osc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/mux_osc.tdf            ;         ;
-; db/mux_tsc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/mux_tsc.tdf            ;         ;
-; lpm_decode.tdf                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.tdf              ;         ;
-; declut.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/declut.inc                  ;         ;
-; lpm_compare.inc                  ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.inc             ;         ;
-; db/decode_epg.tdf                ; yes             ; Auto-Generated Megafunction              ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/decode_epg.tdf         ;         ;
-; altdpram.tdf                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.tdf                ;         ;
-; memmodes.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/memmodes.inc              ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc              ;         ;
-; a_hdffe.inc                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_hdffe.inc                 ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc               ;         ;
-; alt_le_rden_reg.inc              ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/alt_le_rden_reg.inc         ;         ;
-; altsyncram.inc                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.inc              ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf              ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc       ;         ;
-; altrom.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                  ;         ;
-; altram.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                  ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                ;         ;
-; db/altsyncram_1sp1.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/altsyncram_1sp1.tdf    ;         ;
-; lpm_ram_io.tdf                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ram_io.tdf              ;         ;
-; altram.tdf                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.tdf                  ;         ;
-; db/altsyncram_kqa1.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/altsyncram_kqa1.tdf    ;         ;
-; instructionData.mif              ; yes             ; Auto-Found Memory Initialization File    ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/instructionData.mif       ;         ;
-; db/mux_ssc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/mux_ssc.tdf            ;         ;
-; lpm_rom.tdf                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_rom.tdf                 ;         ;
-; altrom.tdf                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.tdf                  ;         ;
-; db/altsyncram_8301.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/altsyncram_8301.tdf    ;         ;
-; mirom.mif                        ; yes             ; Auto-Found Memory Initialization File    ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/mirom.mif                 ;         ;
-+----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
++----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                    ; Library ;
++----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------------------+---------+
+; SubRoutineControlUnit.bdf        ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/SubRoutineControlUnit.bdf ;         ;
+; MIRUnit2.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/MIRUnit2.bdf              ;         ;
+; SynchUnit.bdf                    ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/SynchUnit.bdf             ;         ;
+; SynchRegister.bdf                ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/SynchRegister.bdf         ;         ;
+; DelayInicial.v                   ; yes             ; User Verilog HDL File                    ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/DelayInicial.v            ;         ;
+; MIR.bdf                          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/MIR.bdf                   ;         ;
+; UC2.bdf                          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/UC2.bdf                   ;         ;
+; UC1.bdf                          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/UC1.bdf                   ;         ;
+; ev20main.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/ev20main.bdf              ;         ;
+; ev20jumpControl.bdf              ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/ev20jumpControl.bdf       ;         ;
+; alu.v                            ; yes             ; User Verilog HDL File                    ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v                     ;         ;
+; shifter.v                        ; yes             ; User Verilog HDL File                    ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/shifter.v                 ;         ;
+; ev20B3BUSA.bdf                   ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/ev20B3BUSA.bdf            ;         ;
+; ev20B3BUSB.bdf                   ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/ev20B3BUSB.bdf            ;         ;
+; ev20BLOQUE3.bdf                  ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/ev20BLOQUE3.bdf           ;         ;
+; ev20registerBank.bdf             ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/ev20registerBank.bdf      ;         ;
+; fetchUnit.bdf                    ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/fetchUnit.bdf             ;         ;
+; operandsUnit.bdf                 ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/operandsUnit.bdf          ;         ;
+; ALUUnit.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/ALUUnit.bdf               ;         ;
+; carryBlock.v                     ; yes             ; User Verilog HDL File                    ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/carryBlock.v              ;         ;
+; PCRegister.v                     ; yes             ; User Verilog HDL File                    ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/PCRegister.v              ;         ;
+; dataUnit.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/dataUnit.bdf              ;         ;
+; lpm_compare.tdf                  ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.tdf          ;         ;
+; comptree.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/comptree.inc             ;         ;
+; altshift.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc             ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc           ;         ;
+; db/cmpr_3pd.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/cmpr_3pd.tdf           ;         ;
+; busmux.tdf                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf               ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc              ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf              ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/muxlut.inc               ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/bypassff.inc             ;         ;
+; db/mux_crc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_crc.tdf            ;         ;
+; lpm_ff.tdf                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ff.tdf               ;         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_constant.inc         ;         ;
+; db/mux_drc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_drc.tdf            ;         ;
+; 74139m.bdf                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/74139m.bdf             ;         ;
+; stack.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/stack.bdf                 ;         ;
+; bi_shift_reg.v                   ; yes             ; Auto-Found Verilog HDL File              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v            ;         ;
+; db/mux_osc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_osc.tdf            ;         ;
+; db/mux_tsc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_tsc.tdf            ;         ;
+; lpm_decode.tdf                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.tdf           ;         ;
+; declut.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/declut.inc               ;         ;
+; lpm_compare.inc                  ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.inc          ;         ;
+; db/decode_epg.tdf                ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/decode_epg.tdf         ;         ;
+; altdpram.tdf                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.tdf             ;         ;
+; memmodes.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/memmodes.inc           ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc           ;         ;
+; a_hdffe.inc                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_hdffe.inc              ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc            ;         ;
+; alt_le_rden_reg.inc              ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/alt_le_rden_reg.inc      ;         ;
+; altsyncram.inc                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.inc           ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf           ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc    ;         ;
+; altrom.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc               ;         ;
+; altram.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc               ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc             ;         ;
+; db/altsyncram_1sp1.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_1sp1.tdf    ;         ;
+; lpm_ram_io.tdf                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ram_io.tdf           ;         ;
+; altram.tdf                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.tdf               ;         ;
+; db/altsyncram_kqa1.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_kqa1.tdf    ;         ;
+; instructiondata.mif              ; yes             ; Auto-Found Memory Initialization File    ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/instructiondata.mif       ;         ;
+; db/mux_ssc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_ssc.tdf            ;         ;
+; lpm_rom.tdf                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_rom.tdf              ;         ;
+; altrom.tdf                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.tdf               ;         ;
+; db/altsyncram_8301.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_8301.tdf    ;         ;
+; mirom.mif                        ; yes             ; Auto-Found Memory Initialization File    ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/mirom.mif                 ;         ;
++----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -492,20 +495,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 2,500     ;
+; Estimated Total logic elements              ; 2,567     ;
 ;                                             ;           ;
-; Total combinational functions               ; 1114      ;
+; Total combinational functions               ; 1194      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 856       ;
-;     -- 3 input functions                    ; 194       ;
-;     -- <=2 input functions                  ; 64        ;
+;     -- 4 input functions                    ; 889       ;
+;     -- 3 input functions                    ; 219       ;
+;     -- <=2 input functions                  ; 86        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 1058      ;
+;     -- normal mode                          ; 1138      ;
 ;     -- arithmetic mode                      ; 56        ;
 ;                                             ;           ;
-; Total registers                             ; 1558      ;
-;     -- Dedicated logic registers            ; 1558      ;
+; Total registers                             ; 1556      ;
+;     -- Dedicated logic registers            ; 1556      ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 180       ;
@@ -514,8 +517,8 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
-; Maximum fan-out                             ; 1371      ;
-; Total fan-out                               ; 9684      ;
+; Maximum fan-out                             ; 1314      ;
+; Total fan-out                               ; 9929      ;
 ; Average fan-out                             ; 3.12      ;
 +---------------------------------------------+-----------+
 
@@ -525,15 +528,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                     ; Entity Name           ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
-; |ev20main                                    ; 1114 (4)            ; 1558 (0)                  ; 65664       ; 0            ; 0       ; 0         ; 180  ; 0            ; |ev20main                                                                                                               ; ev20main              ; work         ;
-;    |ALUUnit:inst13|                          ; 178 (0)             ; 33 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ALUUnit:inst13                                                                                                ; ALUUnit               ; work         ;
+; |ev20main                                    ; 1194 (4)            ; 1556 (0)                  ; 65664       ; 0            ; 0       ; 0         ; 180  ; 0            ; |ev20main                                                                                                               ; ev20main              ; work         ;
+;    |ALUUnit:inst13|                          ; 179 (0)             ; 33 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ALUUnit:inst13                                                                                                ; ALUUnit               ; work         ;
 ;       |ALU:inst1|                            ; 158 (158)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ALUUnit:inst13|ALU:inst1                                                                                      ; ALU                   ; work         ;
 ;       |carryBlock:inst|                      ; 3 (3)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ALUUnit:inst13|carryBlock:inst                                                                                ; carryBlock            ; work         ;
 ;       |lpm_ff:OperandRegister1|              ; 15 (15)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ALUUnit:inst13|lpm_ff:OperandRegister1                                                                        ; lpm_ff                ; work         ;
 ;       |lpm_ff:OperandRegister2|              ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ALUUnit:inst13|lpm_ff:OperandRegister2                                                                        ; lpm_ff                ; work         ;
-;       |shifter:inst2|                        ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ALUUnit:inst13|shifter:inst2                                                                                  ; shifter               ; work         ;
+;       |shifter:inst2|                        ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ALUUnit:inst13|shifter:inst2                                                                                  ; shifter               ; work         ;
 ;    |DelayInicial:inst6|                      ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|DelayInicial:inst6                                                                                            ; DelayInicial          ; work         ;
-;    |MIRUnit2:inst1|                          ; 36 (0)              ; 130 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1                                                                                                ; MIRUnit2              ; work         ;
+;    |MIRUnit2:inst1|                          ; 29 (0)              ; 128 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1                                                                                                ; MIRUnit2              ; work         ;
 ;       |MIR:MIR3|                             ; 0 (0)               ; 66 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|MIR:MIR3                                                                                       ; MIR                   ; work         ;
 ;          |lpm_ff:Ezu5|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|MIR:MIR3|lpm_ff:Ezu5                                                                           ; lpm_ff                ; work         ;
 ;          |lpm_ff:Ezu6|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|MIR:MIR3|lpm_ff:Ezu6                                                                           ; lpm_ff                ; work         ;
@@ -574,16 +577,10 @@ refer to the applicable agreement for further details.
 ;                |mux_drc:auto_generated|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|UC1:Control1|busmux:inst9|lpm_mux:$00000|mux_drc:auto_generated                                ; mux_drc               ; work         ;
 ;          |lpm_ff:inst10|                     ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|UC1:Control1|lpm_ff:inst10                                                                     ; lpm_ff                ; work         ;
 ;          |lpm_ff:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|UC1:Control1|lpm_ff:inst                                                                       ; lpm_ff                ; work         ;
-;       |UC1:JmpControl|                       ; 13 (0)              ; 2 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|UC1:JmpControl                                                                                 ; UC1                   ; work         ;
-;          |busmux:inst2|                      ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|UC1:JmpControl|busmux:inst2                                                                    ; busmux                ; work         ;
-;             |lpm_mux:$00000|                 ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|UC1:JmpControl|busmux:inst2|lpm_mux:$00000                                                     ; lpm_mux               ; work         ;
-;                |mux_crc:auto_generated|      ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|UC1:JmpControl|busmux:inst2|lpm_mux:$00000|mux_crc:auto_generated                              ; mux_crc               ; work         ;
-;          |busmux:inst9|                      ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|UC1:JmpControl|busmux:inst9                                                                    ; busmux                ; work         ;
-;             |lpm_mux:$00000|                 ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|UC1:JmpControl|busmux:inst9|lpm_mux:$00000                                                     ; lpm_mux               ; work         ;
-;                |mux_drc:auto_generated|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|UC1:JmpControl|busmux:inst9|lpm_mux:$00000|mux_drc:auto_generated                              ; mux_drc               ; work         ;
-;          |lpm_ff:inst10|                     ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|UC1:JmpControl|lpm_ff:inst10                                                                   ; lpm_ff                ; work         ;
-;          |lpm_ff:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|UC1:JmpControl|lpm_ff:inst                                                                     ; lpm_ff                ; work         ;
 ;       |UC2:inst-uc2|                         ; 10 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|UC2:inst-uc2                                                                                   ; UC2                   ; work         ;
+;       |busmux:CinMUX|                        ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|busmux:CinMUX                                                                                  ; busmux                ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|busmux:CinMUX|lpm_mux:$00000                                                                   ; lpm_mux               ; work         ;
+;             |mux_crc:auto_generated|         ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|busmux:CinMUX|lpm_mux:$00000|mux_crc:auto_generated                                            ; mux_crc               ; work         ;
 ;       |lpm_ff:inst5|                         ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|lpm_ff:inst5                                                                                   ; lpm_ff                ; work         ;
 ;       |lpm_ff:inst6|                         ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|lpm_ff:inst6                                                                                   ; lpm_ff                ; work         ;
 ;    |SynchUnit:inst9|                         ; 1 (1)               ; 43 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|SynchUnit:inst9                                                                                               ; SynchUnit             ; work         ;
@@ -697,24 +694,27 @@ refer to the applicable agreement for further details.
 ;       |lpm_ff:inst97|                        ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ev20registerBank:inst14|lpm_ff:inst97                                                                         ; lpm_ff                ; work         ;
 ;       |lpm_ff:inst99|                        ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ev20registerBank:inst14|lpm_ff:inst99                                                                         ; lpm_ff                ; work         ;
 ;       |lpm_ff:inst9|                         ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ev20registerBank:inst14|lpm_ff:inst9                                                                          ; lpm_ff                ; work         ;
-;    |fetchUnit:inst|                          ; 81 (12)             ; 122 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst                                                                                                ; fetchUnit             ; work         ;
+;    |fetchUnit:inst|                          ; 167 (10)            ; 122 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst                                                                                                ; fetchUnit             ; work         ;
 ;       |PCRegister:inst1|                     ; 11 (11)             ; 23 (23)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|PCRegister:inst1                                                                               ; PCRegister            ; work         ;
-;       |SubRoutineControlUnit:inst6|          ; 47 (3)              ; 55 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6                                                                    ; SubRoutineControlUnit ; work         ;
-;          |stack:inst|                        ; 44 (0)              ; 55 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst                                                         ; stack                 ; work         ;
-;             |bi_shift_reg:inst21|            ; 4 (4)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21                                     ; bi_shift_reg          ; work         ;
-;             |bi_shift_reg:inst31|            ; 4 (4)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31                                     ; bi_shift_reg          ; work         ;
-;             |bi_shift_reg:inst32|            ; 4 (4)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32                                     ; bi_shift_reg          ; work         ;
-;             |bi_shift_reg:inst33|            ; 4 (4)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33                                     ; bi_shift_reg          ; work         ;
-;             |bi_shift_reg:inst34|            ; 4 (4)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34                                     ; bi_shift_reg          ; work         ;
-;             |bi_shift_reg:inst35|            ; 4 (4)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35                                     ; bi_shift_reg          ; work         ;
-;             |bi_shift_reg:inst36|            ; 4 (4)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36                                     ; bi_shift_reg          ; work         ;
-;             |bi_shift_reg:inst37|            ; 4 (4)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37                                     ; bi_shift_reg          ; work         ;
-;             |bi_shift_reg:inst38|            ; 4 (4)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38                                     ; bi_shift_reg          ; work         ;
-;             |bi_shift_reg:inst39|            ; 4 (4)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39                                     ; bi_shift_reg          ; work         ;
-;             |bi_shift_reg:inst40|            ; 4 (4)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40                                     ; bi_shift_reg          ; work         ;
+;       |SubRoutineControlUnit:inst6|          ; 124 (3)             ; 55 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6                                                                    ; SubRoutineControlUnit ; work         ;
+;          |stack:inst|                        ; 121 (0)             ; 55 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst                                                         ; stack                 ; work         ;
+;             |bi_shift_reg:inst21|            ; 11 (11)             ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21                                     ; bi_shift_reg          ; work         ;
+;             |bi_shift_reg:inst31|            ; 11 (11)             ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31                                     ; bi_shift_reg          ; work         ;
+;             |bi_shift_reg:inst32|            ; 11 (11)             ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32                                     ; bi_shift_reg          ; work         ;
+;             |bi_shift_reg:inst33|            ; 11 (11)             ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33                                     ; bi_shift_reg          ; work         ;
+;             |bi_shift_reg:inst34|            ; 11 (11)             ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34                                     ; bi_shift_reg          ; work         ;
+;             |bi_shift_reg:inst35|            ; 11 (11)             ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35                                     ; bi_shift_reg          ; work         ;
+;             |bi_shift_reg:inst36|            ; 11 (11)             ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36                                     ; bi_shift_reg          ; work         ;
+;             |bi_shift_reg:inst37|            ; 11 (11)             ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37                                     ; bi_shift_reg          ; work         ;
+;             |bi_shift_reg:inst38|            ; 11 (11)             ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38                                     ; bi_shift_reg          ; work         ;
+;             |bi_shift_reg:inst39|            ; 11 (11)             ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39                                     ; bi_shift_reg          ; work         ;
+;             |bi_shift_reg:inst40|            ; 11 (11)             ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40                                     ; bi_shift_reg          ; work         ;
 ;       |busmux:inst7|                         ; 11 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|busmux:inst7                                                                                   ; busmux                ; work         ;
 ;          |lpm_mux:$00000|                    ; 11 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|busmux:inst7|lpm_mux:$00000                                                                    ; lpm_mux               ; work         ;
 ;             |mux_osc:auto_generated|         ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|busmux:inst7|lpm_mux:$00000|mux_osc:auto_generated                                             ; mux_osc               ; work         ;
+;       |busmux:inst8|                         ; 11 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|busmux:inst8                                                                                   ; busmux                ; work         ;
+;          |lpm_mux:$00000|                    ; 11 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|busmux:inst8|lpm_mux:$00000                                                                    ; lpm_mux               ; work         ;
+;             |mux_osc:auto_generated|         ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|busmux:inst8|lpm_mux:$00000|mux_osc:auto_generated                                             ; mux_osc               ; work         ;
 ;       |lpm_ff:InstructionRegister1|          ; 0 (0)               ; 22 (22)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|lpm_ff:InstructionRegister1                                                                    ; lpm_ff                ; work         ;
 ;       |lpm_ff:InstructionRegister|           ; 0 (0)               ; 22 (22)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|lpm_ff:InstructionRegister                                                                     ; lpm_ff                ; work         ;
 ;    |lpm_ram_io:inst2|                        ; 0 (0)               ; 0 (0)                     ; 45056       ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|lpm_ram_io:inst2                                                                                              ; lpm_ram_io            ; work         ;
@@ -755,6 +755,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------+----------------------------------------------------------------------+
 ; Register name                                            ; Reason for Removal                                                   ;
 +----------------------------------------------------------+----------------------------------------------------------------------+
+; MIRUnit2:inst1|UC1:JmpControl|lpm_ff:inst10|dffs[0]      ; Stuck at GND due to stuck port data_in                               ;
+; MIRUnit2:inst1|UC1:JmpControl|lpm_ff:inst|dffs[0]        ; Stuck at GND due to stuck port data_in                               ;
 ; SynchUnit:inst9|SynchRegister:inst1|lpm_ff:inst|dffs[9]  ; Merged with SynchUnit:inst9|SynchRegister:inst3|lpm_ff:inst|dffs[9]  ;
 ; SynchUnit:inst9|SynchRegister:inst1|lpm_ff:inst|dffs[8]  ; Merged with SynchUnit:inst9|SynchRegister:inst3|lpm_ff:inst|dffs[8]  ;
 ; SynchUnit:inst9|SynchRegister:inst1|lpm_ff:inst|dffs[7]  ; Merged with SynchUnit:inst9|SynchRegister:inst3|lpm_ff:inst|dffs[7]  ;
@@ -800,7 +802,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; operandsUnit:inst10|lpm_ff:OperandRegister2|dffs[2]      ; Merged with MIRUnit2:inst1|lpm_ff:inst6|dffs[2]                      ;
 ; operandsUnit:inst10|lpm_ff:OperandRegister2|dffs[1]      ; Merged with MIRUnit2:inst1|lpm_ff:inst6|dffs[1]                      ;
 ; operandsUnit:inst10|lpm_ff:OperandRegister2|dffs[0]      ; Merged with MIRUnit2:inst1|lpm_ff:inst6|dffs[0]                      ;
-; Total Number of Removed Registers = 45                   ;                                                                      ;
+; Total Number of Removed Registers = 47                   ;                                                                      ;
 +----------------------------------------------------------+----------------------------------------------------------------------+
 
 
@@ -809,12 +811,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1558  ;
+; Total registers                              ; 1556  ;
 ; Number of registers using Synchronous Clear  ; 1     ;
-; Number of registers using Synchronous Load   ; 62    ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Synchronous Load   ; 60    ;
+; Number of registers using Asynchronous Clear ; 44    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1207  ;
+; Number of registers using Clock Enable       ; 1163  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -824,23 +826,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; DelayInicial:inst6|counter[1]          ; 42      ;
-; DelayInicial:inst6|counter[0]          ; 42      ;
+; DelayInicial:inst6|counter[1]          ; 35      ;
+; DelayInicial:inst6|counter[0]          ; 35      ;
 ; Total number of inverted registers = 2 ;         ;
 +----------------------------------------+---------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------+
-; 4:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |ev20main|ALUUnit:inst13|lpm_ff:OperandRegister1|dffs[1]                                                                               ;
-; 33:1               ; 16 bits   ; 352 LEs       ; 352 LEs              ; 0 LEs                  ; Yes        ; |ev20main|operandsUnit:inst10|lpm_ff:LatchA1|dffs[11]                                                                                  ;
-; 33:1               ; 16 bits   ; 352 LEs       ; 352 LEs              ; 0 LEs                  ; Yes        ; |ev20main|operandsUnit:inst10|lpm_ff:LatchB1|dffs[5]                                                                                   ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |ev20main|ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|busmux:inst27|lpm_mux:$00000|mux_tsc:auto_generated|result_node[8] ;
-; 16:1               ; 15 bits   ; 150 LEs       ; 120 LEs              ; 30 LEs                 ; No         ; |ev20main|ALUUnit:inst13|ALU:inst1|Mux0                                                                                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------+
+; 4:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |ev20main|ALUUnit:inst13|lpm_ff:OperandRegister1|dffs[12]                                                                               ;
+; 33:1               ; 16 bits   ; 352 LEs       ; 352 LEs              ; 0 LEs                  ; Yes        ; |ev20main|operandsUnit:inst10|lpm_ff:LatchA1|dffs[0]                                                                                    ;
+; 33:1               ; 16 bits   ; 352 LEs       ; 352 LEs              ; 0 LEs                  ; Yes        ; |ev20main|operandsUnit:inst10|lpm_ff:LatchB1|dffs[15]                                                                                   ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |ev20main|ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|busmux:inst27|lpm_mux:$00000|mux_tsc:auto_generated|result_node[12] ;
+; 16:1               ; 15 bits   ; 150 LEs       ; 120 LEs              ; 30 LEs                 ; No         ; |ev20main|ALUUnit:inst13|ALU:inst1|Mux0                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------+
@@ -2436,6 +2438,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +--------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: fetchUnit:inst|BUSMUX:inst7 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WIDTH          ; 11    ; Untyped                                         ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fetchUnit:inst|BUSMUX:inst8 ;
 +----------------+-------+-------------------------------------------------+
 ; Parameter Name ; Value ; Type                                            ;
 +----------------+-------+-------------------------------------------------+
@@ -4797,25 +4809,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 180                         ;
-; cycloneiii_ff         ; 1558                        ;
-;     ENA               ; 1207                        ;
+; cycloneiii_ff         ; 1556                        ;
+;     CLR               ; 44                          ;
+;     ENA               ; 1163                        ;
 ;     SCLR              ; 1                           ;
-;     SLD               ; 62                          ;
+;     SLD               ; 60                          ;
 ;     plain             ; 288                         ;
-; cycloneiii_lcell_comb ; 1114                        ;
+; cycloneiii_lcell_comb ; 1194                        ;
 ;     arith             ; 56                          ;
 ;         2 data inputs ; 24                          ;
 ;         3 data inputs ; 32                          ;
-;     normal            ; 1058                        ;
+;     normal            ; 1138                        ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 36                          ;
-;         3 data inputs ; 162                         ;
-;         4 data inputs ; 856                         ;
+;         2 data inputs ; 58                          ;
+;         3 data inputs ; 187                         ;
+;         4 data inputs ; 889                         ;
 ; cycloneiii_ram_block  ; 71                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 7.00                        ;
-; Average LUT depth     ; 2.76                        ;
+; Average LUT depth     ; 2.98                        ;
 +-----------------------+-----------------------------+
 
 
@@ -4824,7 +4837,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:16     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -4834,10 +4847,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat May 30 15:55:18 2020
+    Info: Processing started: Sat May 30 20:25:53 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ev20QUARTUS -c ev20QUARTUS
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file subroutinecontrolunit.bdf
     Info (12023): Found entity 1: SubRoutineControlUnit
 Info (12021): Found 1 design units, including 1 entities, in source file mirunit2.bdf
@@ -4847,7 +4860,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file synchun
 Info (12021): Found 1 design units, including 1 entities, in source file synchregister.bdf
     Info (12023): Found entity 1: SynchRegister
 Info (12021): Found 1 design units, including 1 entities, in source file delayinicial.v
-    Info (12023): Found entity 1: DelayInicial File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/DelayInicial.v Line: 1
+    Info (12023): Found entity 1: DelayInicial File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/DelayInicial.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mir.bdf
     Info (12023): Found entity 1: MIR
 Info (12021): Found 1 design units, including 1 entities, in source file uc2.bdf
@@ -4859,9 +4872,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file ev20mai
 Info (12021): Found 1 design units, including 1 entities, in source file ev20jumpcontrol.bdf
     Info (12023): Found entity 1: ev20jumpControl
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: ALU File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/alu.v Line: 1
+    Info (12023): Found entity 1: ALU File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file shifter.v
-    Info (12023): Found entity 1: shifter File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/shifter.v Line: 1
+    Info (12023): Found entity 1: shifter File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/shifter.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ev20b3busa.bdf
     Info (12023): Found entity 1: ev20B3BUSA
 Info (12021): Found 1 design units, including 1 entities, in source file ev20b3busb.bdf
@@ -4877,15 +4890,17 @@ Info (12021): Found 1 design units, including 1 entities, in source file operand
 Info (12021): Found 1 design units, including 1 entities, in source file aluunit.bdf
     Info (12023): Found entity 1: ALUUnit
 Info (12021): Found 1 design units, including 1 entities, in source file carryblock.v
-    Info (12023): Found entity 1: carryBlock File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/carryBlock.v Line: 1
+    Info (12023): Found entity 1: carryBlock File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/carryBlock.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pcregister.v
-    Info (12023): Found entity 1: PCRegister File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/PCRegister.v Line: 1
+    Info (12023): Found entity 1: PCRegister File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/PCRegister.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mirunit.bdf
     Info (12023): Found entity 1: MIRUnit
 Info (12021): Found 1 design units, including 1 entities, in source file dataunit.bdf
     Info (12023): Found entity 1: dataUnit
+Warning (12019): Can't analyze file -- file PCRegisterAsync.v is missing
+Info (12021): Found 1 design units, including 1 entities, in source file pulsegen.bdf
+    Info (12023): Found entity 1: pulseGen
 Info (12127): Elaborating entity "ev20main" for the top level hierarchy
-Warning (275006): Can't find a definition for parameter LPM_FILE -- assuming instructionData.mif was intended to be a quoted string
 Warning (275043): Pin "INST_A_view[4..0]" is missing source
 Info (12128): Elaborating entity "MIRUnit2" for hierarchy "MIRUnit2:inst1"
 Info (12128): Elaborating entity "UC2" for hierarchy "MIRUnit2:inst1|UC2:inst-uc2"
@@ -4894,7 +4909,7 @@ Info (12130): Elaborated megafunction instantiation "MIRUnit2:inst1|UC2:inst-uc2
 Info (12133): Instantiated megafunction "MIRUnit2:inst1|UC2:inst-uc2|LPM_COMPARE:Paul" with the following parameter:
     Info (12134): Parameter "LPM_WIDTH" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_3pd.tdf
-    Info (12023): Found entity 1: cmpr_3pd File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/cmpr_3pd.tdf Line: 22
+    Info (12023): Found entity 1: cmpr_3pd File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/cmpr_3pd.tdf Line: 22
 Info (12128): Elaborating entity "cmpr_3pd" for hierarchy "MIRUnit2:inst1|UC2:inst-uc2|LPM_COMPARE:Paul|cmpr_3pd:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.tdf Line: 280
 Info (12128): Elaborating entity "UC1" for hierarchy "MIRUnit2:inst1|UC1:Control1"
 Info (12128): Elaborating entity "BUSMUX" for hierarchy "MIRUnit2:inst1|UC1:Control1|BUSMUX:inst2"
@@ -4904,7 +4919,7 @@ Info (12133): Instantiated megafunction "MIRUnit2:inst1|UC1:Control1|BUSMUX:inst
 Info (12128): Elaborating entity "lpm_mux" for hierarchy "MIRUnit2:inst1|UC1:Control1|BUSMUX:inst2|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12131): Elaborated megafunction instantiation "MIRUnit2:inst1|UC1:Control1|BUSMUX:inst2|lpm_mux:$00000", which is child of megafunction instantiation "MIRUnit2:inst1|UC1:Control1|BUSMUX:inst2" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_crc.tdf
-    Info (12023): Found entity 1: mux_crc File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/mux_crc.tdf Line: 22
+    Info (12023): Found entity 1: mux_crc File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_crc.tdf Line: 22
 Info (12128): Elaborating entity "mux_crc" for hierarchy "MIRUnit2:inst1|UC1:Control1|BUSMUX:inst2|lpm_mux:$00000|mux_crc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "MIRUnit2:inst1|UC1:Control1|LPM_FF:inst"
 Info (12130): Elaborated megafunction instantiation "MIRUnit2:inst1|UC1:Control1|LPM_FF:inst"
@@ -4917,7 +4932,7 @@ Info (12133): Instantiated megafunction "MIRUnit2:inst1|UC1:Control1|BUSMUX:inst
 Info (12128): Elaborating entity "lpm_mux" for hierarchy "MIRUnit2:inst1|UC1:Control1|BUSMUX:inst9|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12131): Elaborated megafunction instantiation "MIRUnit2:inst1|UC1:Control1|BUSMUX:inst9|lpm_mux:$00000", which is child of megafunction instantiation "MIRUnit2:inst1|UC1:Control1|BUSMUX:inst9" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_drc.tdf
-    Info (12023): Found entity 1: mux_drc File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/mux_drc.tdf Line: 22
+    Info (12023): Found entity 1: mux_drc File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_drc.tdf Line: 22
 Info (12128): Elaborating entity "mux_drc" for hierarchy "MIRUnit2:inst1|UC1:Control1|BUSMUX:inst9|lpm_mux:$00000|mux_drc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
 Info (12128): Elaborating entity "MIR" for hierarchy "MIRUnit2:inst1|MIR:MIR3"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "MIRUnit2:inst1|MIR:MIR3|LPM_FF:Ezu6"
@@ -4974,8 +4989,10 @@ Warning (12125): Using design file stack.bdf, which is not specified as a design
     Info (12023): Found entity 1: stack
 Info (12128): Elaborating entity "stack" for hierarchy "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst"
 Warning (12125): Using design file bi_shift_reg.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: bi_shift_reg File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 2
+    Info (12023): Found entity 1: bi_shift_reg File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 3
 Info (12128): Elaborating entity "bi_shift_reg" for hierarchy "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21"
+Warning (10240): Verilog HDL Always Construct warning at bi_shift_reg.v(19): inferring latch(es) for variable "fifoOut", which holds its previous value in one or more paths through the always construct File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 19
+Info (10041): Inferred latch for "fifoOut" at bi_shift_reg.v(19) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 19
 Info (12128): Elaborating entity "PCRegister" for hierarchy "fetchUnit:inst|PCRegister:inst1"
 Info (12128): Elaborating entity "BUSMUX" for hierarchy "fetchUnit:inst|BUSMUX:inst7"
 Info (12130): Elaborated megafunction instantiation "fetchUnit:inst|BUSMUX:inst7"
@@ -4984,7 +5001,7 @@ Info (12133): Instantiated megafunction "fetchUnit:inst|BUSMUX:inst7" with the f
 Info (12128): Elaborating entity "lpm_mux" for hierarchy "fetchUnit:inst|BUSMUX:inst7|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12131): Elaborated megafunction instantiation "fetchUnit:inst|BUSMUX:inst7|lpm_mux:$00000", which is child of megafunction instantiation "fetchUnit:inst|BUSMUX:inst7" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_osc.tdf
-    Info (12023): Found entity 1: mux_osc File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/mux_osc.tdf Line: 22
+    Info (12023): Found entity 1: mux_osc File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_osc.tdf Line: 22
 Info (12128): Elaborating entity "mux_osc" for hierarchy "fetchUnit:inst|BUSMUX:inst7|lpm_mux:$00000|mux_osc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
 Info (12128): Elaborating entity "ALUUnit" for hierarchy "ALUUnit:inst13"
 Info (12128): Elaborating entity "carryBlock" for hierarchy "ALUUnit:inst13|carryBlock:inst"
@@ -4998,7 +5015,7 @@ Info (12133): Instantiated megafunction "operandsUnit:inst10|BUSMUX:inst8" with 
 Info (12128): Elaborating entity "lpm_mux" for hierarchy "operandsUnit:inst10|BUSMUX:inst8|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12131): Elaborated megafunction instantiation "operandsUnit:inst10|BUSMUX:inst8|lpm_mux:$00000", which is child of megafunction instantiation "operandsUnit:inst10|BUSMUX:inst8" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_tsc.tdf
-    Info (12023): Found entity 1: mux_tsc File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/mux_tsc.tdf Line: 22
+    Info (12023): Found entity 1: mux_tsc File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_tsc.tdf Line: 22
 Info (12128): Elaborating entity "mux_tsc" for hierarchy "operandsUnit:inst10|BUSMUX:inst8|lpm_mux:$00000|mux_tsc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
 Info (12128): Elaborating entity "ev20registerBank" for hierarchy "ev20registerBank:inst14"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "ev20registerBank:inst14|LPM_FF:inst35"
@@ -5012,7 +5029,7 @@ Info (12133): Instantiated megafunction "ev20registerBank:inst14|LPM_DECODE:inst
     Info (12134): Parameter "LPM_PIPELINE" = "0"
     Info (12134): Parameter "LPM_WIDTH" = "6"
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_epg.tdf
-    Info (12023): Found entity 1: decode_epg File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/decode_epg.tdf Line: 22
+    Info (12023): Found entity 1: decode_epg File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/decode_epg.tdf Line: 22
 Info (12128): Elaborating entity "decode_epg" for hierarchy "ev20registerBank:inst14|LPM_DECODE:instRB|decode_epg:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.tdf Line: 76
 Info (12128): Elaborating entity "ev20BLOQUE3" for hierarchy "ev20registerBank:inst14|ev20BLOQUE3:inst"
 Info (12128): Elaborating entity "ev20B3BUSA" for hierarchy "ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst"
@@ -5043,7 +5060,7 @@ Info (12133): Instantiated megafunction "dataUnit:inst3|ALTDPRAM:inst1" with the
 Info (12128): Elaborating entity "altsyncram" for hierarchy "dataUnit:inst3|ALTDPRAM:inst1|altsyncram:ram_block" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.tdf Line: 206
 Info (12131): Elaborated megafunction instantiation "dataUnit:inst3|ALTDPRAM:inst1|altsyncram:ram_block", which is child of megafunction instantiation "dataUnit:inst3|ALTDPRAM:inst1" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.tdf Line: 206
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_1sp1.tdf
-    Info (12023): Found entity 1: altsyncram_1sp1 File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/altsyncram_1sp1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_1sp1 File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_1sp1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_1sp1" for hierarchy "dataUnit:inst3|ALTDPRAM:inst1|altsyncram:ram_block|altsyncram_1sp1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12128): Elaborating entity "LPM_RAM_IO" for hierarchy "LPM_RAM_IO:inst2"
 Info (12130): Elaborated megafunction instantiation "LPM_RAM_IO:inst2"
@@ -5060,9 +5077,8 @@ Info (12131): Elaborated megafunction instantiation "LPM_RAM_IO:inst2|altram:sra
 Info (12128): Elaborating entity "altsyncram" for hierarchy "LPM_RAM_IO:inst2|altram:sram|altsyncram:ram_block" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.tdf Line: 102
 Info (12131): Elaborated megafunction instantiation "LPM_RAM_IO:inst2|altram:sram|altsyncram:ram_block", which is child of megafunction instantiation "LPM_RAM_IO:inst2" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.tdf Line: 102
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_kqa1.tdf
-    Info (12023): Found entity 1: altsyncram_kqa1 File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/altsyncram_kqa1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_kqa1 File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_kqa1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_kqa1" for hierarchy "LPM_RAM_IO:inst2|altram:sram|altsyncram:ram_block|altsyncram_kqa1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Critical Warning (127005): Memory depth (2048) in the design file differs from memory depth (13) in the Memory Initialization File "C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/instructionData.mif" -- setting initial value for remaining addresses to 0
 Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:inst8"
 Info (12130): Elaborated megafunction instantiation "BUSMUX:inst8"
 Info (12133): Instantiated megafunction "BUSMUX:inst8" with the following parameter:
@@ -5070,10 +5086,10 @@ Info (12133): Instantiated megafunction "BUSMUX:inst8" with the following parame
 Info (12128): Elaborating entity "lpm_mux" for hierarchy "BUSMUX:inst8|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12131): Elaborated megafunction instantiation "BUSMUX:inst8|lpm_mux:$00000", which is child of megafunction instantiation "BUSMUX:inst8" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_ssc.tdf
-    Info (12023): Found entity 1: mux_ssc File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/mux_ssc.tdf Line: 22
+    Info (12023): Found entity 1: mux_ssc File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_ssc.tdf Line: 22
 Info (12128): Elaborating entity "mux_ssc" for hierarchy "BUSMUX:inst8|lpm_mux:$00000|mux_ssc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
 Info (12128): Elaborating entity "DelayInicial" for hierarchy "DelayInicial:inst6"
-Warning (10230): Verilog HDL assignment warning at DelayInicial.v(11): truncated value with size 32 to match size of target (2) File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/DelayInicial.v Line: 11
+Warning (10230): Verilog HDL assignment warning at DelayInicial.v(11): truncated value with size 32 to match size of target (2) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/DelayInicial.v Line: 11
 Info (12128): Elaborating entity "LPM_ROM" for hierarchy "LPM_ROM:MicroInstructionsROM"
 Info (12130): Elaborated megafunction instantiation "LPM_ROM:MicroInstructionsROM"
 Info (12133): Instantiated megafunction "LPM_ROM:MicroInstructionsROM" with the following parameter:
@@ -5087,7 +5103,7 @@ Info (12131): Elaborated megafunction instantiation "LPM_ROM:MicroInstructionsRO
 Info (12128): Elaborating entity "altsyncram" for hierarchy "LPM_ROM:MicroInstructionsROM|altrom:srom|altsyncram:rom_block" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.tdf Line: 88
 Info (12131): Elaborated megafunction instantiation "LPM_ROM:MicroInstructionsROM|altrom:srom|altsyncram:rom_block", which is child of megafunction instantiation "LPM_ROM:MicroInstructionsROM" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.tdf Line: 88
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_8301.tdf
-    Info (12023): Found entity 1: altsyncram_8301 File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/altsyncram_8301.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_8301 File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_8301.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_8301" for hierarchy "LPM_ROM:MicroInstructionsROM|altrom:srom|altsyncram:rom_block|altsyncram_8301:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13049): Converted tri-state buffer "lpm_rom:MicroInstructionsROM|otri[32]" feeding internal logic into a wire File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_rom.tdf Line: 67
@@ -5169,6 +5185,51 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13047): Converted the fan-out from the tri-state buffer "lpm_ram_io:inst2|datatri[2]" to the node "fetchUnit:inst|lpm_ff:InstructionRegister1|dffs[2]" into an OR gate File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ram_io.tdf Line: 119
     Warning (13047): Converted the fan-out from the tri-state buffer "lpm_ram_io:inst2|datatri[1]" to the node "fetchUnit:inst|lpm_ff:InstructionRegister1|dffs[1]" into an OR gate File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ram_io.tdf Line: 119
     Warning (13047): Converted the fan-out from the tri-state buffer "lpm_ram_io:inst2|datatri[0]" to the node "fetchUnit:inst|lpm_ff:InstructionRegister1|dffs[0]" into an OR gate File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ram_io.tdf Line: 119
+Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out3~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out3~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out3~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out3~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out3~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out3~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out3~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out3~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out3~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out3~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out3~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out2~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out2~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out2~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out2~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out2~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out2~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out2~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out2~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out2~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out2~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out2~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out1~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out1~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out1~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out1~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out1~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out1~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out1~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out1~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out1~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out1~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out1~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out0~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out0~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out0~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out0~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out0~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out0~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out0~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out0~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out0~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out0~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out0~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "INST_A_view[4]" is stuck at GND
     Warning (13410): Pin "INST_A_view[3]" is stuck at GND
@@ -5178,15 +5239,15 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2782 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2882 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 179 output pins
-    Info (21061): Implemented 2531 logic cells
+    Info (21061): Implemented 2631 logic cells
     Info (21064): Implemented 71 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 94 warnings
-    Info: Peak virtual memory: 4808 megabytes
-    Info: Processing ended: Sat May 30 15:58:52 2020
-    Info: Elapsed time: 00:03:34
-    Info: Total CPU time (on all processors): 00:01:40
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 139 warnings
+    Info: Peak virtual memory: 4832 megabytes
+    Info: Processing ended: Sat May 30 20:26:36 2020
+    Info: Elapsed time: 00:00:43
+    Info: Total CPU time (on all processors): 00:01:10
 
 

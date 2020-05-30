@@ -8,7 +8,7 @@ module DelayInicial( input clk,
 	always @ (negedge clk)
 		begin
 			if(counter > 0)
-				counter = counter -1;
+				counter = counter - 1;
 		end
 	
 endmodule
