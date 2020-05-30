@@ -90,6 +90,8 @@ filename "caratula.lyx"
 \end_layout
 
 \begin_layout Standard
+
+\lang spanish
 \begin_inset Newpage newpage
 \end_inset
 
@@ -97,6 +99,38 @@ filename "caratula.lyx"
 \end_layout
 
 \begin_layout Standard
+
+\lang spanish
+\begin_inset CommandInset include
+LatexCommand input
+filename "ej1.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset CommandInset include
+LatexCommand input
+filename "ej2nuevo.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset CommandInset include
+LatexCommand input
+filename "ej3.lyx"
+
+\end_inset
+
 
 \end_layout
 
