@@ -20,9 +20,9 @@ refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 208 144)
+	(rect 16 16 208 112)
 	(text "SubRoutineControlUnit" (rect 5 0 140 19)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 107 24 124)(font "Intel Clear" ))
+	(text "inst" (rect 8 75 24 92)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -54,32 +54,11 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 192 48)
 		(output)
-		(text "enable" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
-		(text "enable" (rect 131 43 171 62)(font "Intel Clear" (font_size 8)))
-		(line (pt 192 48)(pt 176 48))
-	)
-	(port
-		(pt 192 64)
-		(output)
 		(text "stackPC[10..0]" (rect 0 0 86 19)(font "Intel Clear" (font_size 8)))
-		(text "stackPC[10..0]" (rect 85 59 171 78)(font "Intel Clear" (font_size 8)))
-		(line (pt 192 64)(pt 176 64)(line_width 3))
-	)
-	(port
-		(pt 192 80)
-		(output)
-		(text "push" (rect 0 0 28 19)(font "Intel Clear" (font_size 8)))
-		(text "push" (rect 143 75 171 94)(font "Intel Clear" (font_size 8)))
-		(line (pt 192 80)(pt 176 80))
-	)
-	(port
-		(pt 192 96)
-		(output)
-		(text "isBSRtest" (rect 0 0 56 19)(font "Intel Clear" (font_size 8)))
-		(text "isBSRtest" (rect 115 91 171 110)(font "Intel Clear" (font_size 8)))
-		(line (pt 192 96)(pt 176 96))
+		(text "stackPC[10..0]" (rect 85 43 171 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 192 48)(pt 176 48)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 176 112))
+		(rectangle (rect 16 16 176 80))
 	)
 )
