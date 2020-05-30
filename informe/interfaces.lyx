@@ -81,134 +81,34 @@
 
 \begin_body
 
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "caratula.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "carac_generales.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "interfaces.lyx"
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
-Unidades Funcionales
+Interfaces
+\end_layout
+
+\begin_layout Subsection
+Set de Instrucciones
 \end_layout
 
 \begin_layout Standard
-MAIN.
- FOTITO DE MAIN.
+CAPAZ NO HACE FALTA DESCRIBIRLO, SOLO MOSTRARLO, ACLARAR QUE TIENE EXPANDING
+ OPCODES, LESTO.
+\end_layout
+
+\begin_layout Subsection
+Memoria de datos y memoria de instrucciones
 \end_layout
 
 \begin_layout Standard
-IDENTIFICAR PIPELINE!!!!!
+COMO USAR EL MICRO, COMO USAR LAS MEMORIAS DE DATOS Y DE INSTRUCCIONES.
+\end_layout
+
+\begin_layout Subsection
+Compilador
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "fetch_unit.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "micro_inst_rom.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "mir_unit.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "register_bank.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "stack.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "branch_pred.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "analisis_funcionamiento.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "conclusion.lyx"
-
-\end_inset
-
-
+EXPLICAR COMO FUNCIONA EL COMPILADOR, COMO SE HIZO, COMO SE PENSÓ, COMO
+ SE USA.
 \end_layout
 
 \end_body

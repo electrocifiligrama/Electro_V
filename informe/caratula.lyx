@@ -262,14 +262,30 @@ emph{Grupo 1:}
 
 \begin_layout Plain Layout
 
-Ezequiel 
+Matías Agustín 
 \backslash
-textsc{Vijande}
+textsc{Larroque}
 \backslash
 
 \backslash
  Leg.
- 58057 
+ 56597 
+\backslash
+
+\backslash
+  [.3cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+Tomás Agustín 
+\backslash
+textsc{González Orlando}
+\backslash
+
+\backslash
+ Leg.
+ 57090 
 \backslash
 
 \backslash
@@ -310,50 +326,40 @@ textsc{Mollón}
 
 \begin_layout Plain Layout
 
-Matías Agustín 
+Ezequiel 
 \backslash
-textsc{Larroque}
-\backslash
-
-\backslash
- Leg.
- 56597 
-\backslash
-
-\backslash
-  [.3cm]
-\end_layout
-
-\begin_layout Plain Layout
-
-Robin 
-\backslash
-textsc{Bertrand}
+textsc{Vijande}
 \backslash
 
 \backslash
  Leg.
- 61739 
-\backslash
-
-\backslash
-  [.3cm]
-\end_layout
-
-\begin_layout Plain Layout
-
-Tomás Agustín 
-\backslash
-textsc{González Orlando}
-\backslash
-
-\backslash
- Leg.
- 57090 
+ 58057 
 \backslash
 
 \backslash
   [.3cm] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{flushleft} 
+\backslash
+end{minipage} ~ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}{0.4
+\backslash
+textwidth} 
+\backslash
+begin{flushright} 
+\backslash
+large 
 \end_layout
 
 \begin_layout Plain Layout

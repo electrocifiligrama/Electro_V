@@ -81,134 +81,13 @@
 
 \begin_body
 
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "caratula.lyx"
-
-\end_inset
-
-
+\begin_layout Subsection
+MIR UNIT
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "carac_generales.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "interfaces.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Unidades Funcionales
-\end_layout
-
-\begin_layout Standard
-MAIN.
- FOTITO DE MAIN.
-\end_layout
-
-\begin_layout Standard
-IDENTIFICAR PIPELINE!!!!!
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "fetch_unit.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "micro_inst_rom.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "mir_unit.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "register_bank.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "stack.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "branch_pred.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "analisis_funcionamiento.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "conclusion.lyx"
-
-\end_inset
-
-
+IMAGEN DEL BLOQUE, DESCRIPCION DEL MISMO, QUE HACE; INPUTS, OUTPUTS, SIMULACIONE
+S PARA MOSTRAR COMO ANDA.
 \end_layout
 
 \end_body
