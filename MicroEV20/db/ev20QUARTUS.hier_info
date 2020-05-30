@@ -1,25 +1,26 @@
 |ev20main
 Hold_out <= HOLD.DB_MAX_OUTPUT_PORT_TYPE
-CLK => inst11.IN1
 CLK => SynchUnit:inst9.Clk_in
 CLK => fetchUnit:inst.CK1
 CLK => ALUUnit:inst13.CK4
+CLK => inst11.IN1
 CLK => operandsUnit:inst10.CK3
 CLK => ev20registerBank:inst14.CK5
 CLK => dataUnit:inst3.CLK_DATA
 CLK => inst7.IN0
-CLK => MIRUnit:inst1.CK3
-CLK => MIRUnit:inst1.CK4
+CLK => MIRUnit2:inst1.CK3
+CLK => MIRUnit2:inst1.CK4
 CLK => DelayInicial:inst6.clk
 CLK => inst4.IN0
 mr_out <= MIR_MR.DB_MAX_OUTPUT_PORT_TYPE
 MW_out <= MIR_MW.DB_MAX_OUTPUT_PORT_TYPE
 Kmx_out <= KMx.DB_MAX_OUTPUT_PORT_TYPE
 HOLD_CK2_View <= inst11.DB_MAX_OUTPUT_PORT_TYPE
-ALU_out[0] <= MIRUnit:inst1.ALUout[0]
-ALU_out[1] <= MIRUnit:inst1.ALUout[1]
-ALU_out[2] <= MIRUnit:inst1.ALUout[2]
-ALU_out[3] <= MIRUnit:inst1.ALUout[3]
+Jmp_out <= JmpSynchd.DB_MAX_OUTPUT_PORT_TYPE
+ALU_out[0] <= MIRUnit2:inst1.ALUout[0]
+ALU_out[1] <= MIRUnit2:inst1.ALUout[1]
+ALU_out[2] <= MIRUnit2:inst1.ALUout[2]
+ALU_out[3] <= MIRUnit2:inst1.ALUout[3]
 Asel_out[0] <= MIR_A[0].DB_MAX_OUTPUT_PORT_TYPE
 Asel_out[1] <= MIR_A[1].DB_MAX_OUTPUT_PORT_TYPE
 Asel_out[2] <= MIR_A[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -63,6 +64,28 @@ DaddOut[6] <= DAdd[6].DB_MAX_OUTPUT_PORT_TYPE
 DaddOut[7] <= DAdd[7].DB_MAX_OUTPUT_PORT_TYPE
 DaddOut[8] <= DAdd[8].DB_MAX_OUTPUT_PORT_TYPE
 DaddOut[9] <= DAdd[9].DB_MAX_OUTPUT_PORT_TYPE
+I_out[0] <= LPM_RAM_IO:inst2.dio[0]
+I_out[1] <= LPM_RAM_IO:inst2.dio[1]
+I_out[2] <= LPM_RAM_IO:inst2.dio[2]
+I_out[3] <= LPM_RAM_IO:inst2.dio[3]
+I_out[4] <= LPM_RAM_IO:inst2.dio[4]
+I_out[5] <= LPM_RAM_IO:inst2.dio[5]
+I_out[6] <= LPM_RAM_IO:inst2.dio[6]
+I_out[7] <= LPM_RAM_IO:inst2.dio[7]
+I_out[8] <= LPM_RAM_IO:inst2.dio[8]
+I_out[9] <= LPM_RAM_IO:inst2.dio[9]
+I_out[10] <= LPM_RAM_IO:inst2.dio[10]
+I_out[11] <= LPM_RAM_IO:inst2.dio[11]
+I_out[12] <= LPM_RAM_IO:inst2.dio[12]
+I_out[13] <= LPM_RAM_IO:inst2.dio[13]
+I_out[14] <= LPM_RAM_IO:inst2.dio[14]
+I_out[15] <= LPM_RAM_IO:inst2.dio[15]
+I_out[16] <= LPM_RAM_IO:inst2.dio[16]
+I_out[17] <= LPM_RAM_IO:inst2.dio[17]
+I_out[18] <= LPM_RAM_IO:inst2.dio[18]
+I_out[19] <= LPM_RAM_IO:inst2.dio[19]
+I_out[20] <= LPM_RAM_IO:inst2.dio[20]
+I_out[21] <= LPM_RAM_IO:inst2.dio[21]
 IA_view[0] <= IA[0].DB_MAX_OUTPUT_PORT_TYPE
 IA_view[1] <= IA[1].DB_MAX_OUTPUT_PORT_TYPE
 IA_view[2] <= IA[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -85,32 +108,16 @@ INST_A_view[1] <= <GND>
 INST_A_view[2] <= <GND>
 INST_A_view[3] <= <GND>
 INST_A_view[4] <= <GND>
-INST_DAdd_view[0] <= <GND>
-INST_DAdd_view[1] <= <GND>
-INST_DAdd_view[2] <= <GND>
-INST_DAdd_view[3] <= <GND>
-INST_DAdd_view[4] <= <GND>
-INST_DAdd_view[5] <= <GND>
-INST_DAdd_view[6] <= <GND>
-INST_DAdd_view[7] <= <GND>
-INST_DAdd_view[8] <= <GND>
-INST_DAdd_view[9] <= <GND>
-MEMORYout[0] <= dataUnit:inst3.FromData[0]
-MEMORYout[1] <= dataUnit:inst3.FromData[1]
-MEMORYout[2] <= dataUnit:inst3.FromData[2]
-MEMORYout[3] <= dataUnit:inst3.FromData[3]
-MEMORYout[4] <= dataUnit:inst3.FromData[4]
-MEMORYout[5] <= dataUnit:inst3.FromData[5]
-MEMORYout[6] <= dataUnit:inst3.FromData[6]
-MEMORYout[7] <= dataUnit:inst3.FromData[7]
-MEMORYout[8] <= dataUnit:inst3.FromData[8]
-MEMORYout[9] <= dataUnit:inst3.FromData[9]
-MEMORYout[10] <= dataUnit:inst3.FromData[10]
-MEMORYout[11] <= dataUnit:inst3.FromData[11]
-MEMORYout[12] <= dataUnit:inst3.FromData[12]
-MEMORYout[13] <= dataUnit:inst3.FromData[13]
-MEMORYout[14] <= dataUnit:inst3.FromData[14]
-MEMORYout[15] <= dataUnit:inst3.FromData[15]
+INST_DAdd_view[0] <= INST_DAdd[0].DB_MAX_OUTPUT_PORT_TYPE
+INST_DAdd_view[1] <= INST_DAdd[1].DB_MAX_OUTPUT_PORT_TYPE
+INST_DAdd_view[2] <= INST_DAdd[2].DB_MAX_OUTPUT_PORT_TYPE
+INST_DAdd_view[3] <= INST_DAdd[3].DB_MAX_OUTPUT_PORT_TYPE
+INST_DAdd_view[4] <= INST_DAdd[4].DB_MAX_OUTPUT_PORT_TYPE
+INST_DAdd_view[5] <= INST_DAdd[5].DB_MAX_OUTPUT_PORT_TYPE
+INST_DAdd_view[6] <= INST_DAdd[6].DB_MAX_OUTPUT_PORT_TYPE
+INST_DAdd_view[7] <= INST_DAdd[7].DB_MAX_OUTPUT_PORT_TYPE
+INST_DAdd_view[8] <= INST_DAdd[8].DB_MAX_OUTPUT_PORT_TYPE
+INST_DAdd_view[9] <= INST_DAdd[9].DB_MAX_OUTPUT_PORT_TYPE
 MI_view[0] <= BUSMUX:inst8.result[0]
 MI_view[1] <= BUSMUX:inst8.result[1]
 MI_view[2] <= BUSMUX:inst8.result[2]
@@ -144,15 +151,29 @@ MI_view[29] <= BUSMUX:inst8.result[29]
 MI_view[30] <= BUSMUX:inst8.result[30]
 MI_view[31] <= BUSMUX:inst8.result[31]
 MI_view[32] <= BUSMUX:inst8.result[32]
+Rom_add_out[0] <= ROMadd[0].DB_MAX_OUTPUT_PORT_TYPE
+Rom_add_out[1] <= ROMadd[1].DB_MAX_OUTPUT_PORT_TYPE
+Rom_add_out[2] <= ROMadd[2].DB_MAX_OUTPUT_PORT_TYPE
+Rom_add_out[3] <= ROMadd[3].DB_MAX_OUTPUT_PORT_TYPE
+Rom_add_out[4] <= ROMadd[4].DB_MAX_OUTPUT_PORT_TYPE
+Rom_add_out[5] <= ROMadd[5].DB_MAX_OUTPUT_PORT_TYPE
+Rom_add_out[6] <= ROMadd[6].DB_MAX_OUTPUT_PORT_TYPE
 SH_out[0] <= SHout[0].DB_MAX_OUTPUT_PORT_TYPE
 SH_out[1] <= SHout[1].DB_MAX_OUTPUT_PORT_TYPE
-T[0] <= MIRUnit:inst1.TOUT[0]
-T[1] <= MIRUnit:inst1.TOUT[1]
-T[2] <= MIRUnit:inst1.TOUT[2]
-T[3] <= MIRUnit:inst1.TOUT[3]
-T[4] <= MIRUnit:inst1.TOUT[4]
-T[5] <= MIRUnit:inst1.TOUT[5]
-T[6] <= MIRUnit:inst1.TOUT[6]
+T[0] <= MIRUnit2:inst1.TOUT[0]
+T[1] <= MIRUnit2:inst1.TOUT[1]
+T[2] <= MIRUnit2:inst1.TOUT[2]
+T[3] <= MIRUnit2:inst1.TOUT[3]
+T[4] <= MIRUnit2:inst1.TOUT[4]
+T[5] <= MIRUnit2:inst1.TOUT[5]
+T[6] <= MIRUnit2:inst1.TOUT[6]
+T2_view[0] <= MIRUnit2:inst1.T2_out[0]
+T2_view[1] <= MIRUnit2:inst1.T2_out[1]
+T2_view[2] <= MIRUnit2:inst1.T2_out[2]
+T2_view[3] <= MIRUnit2:inst1.T2_out[3]
+T2_view[4] <= MIRUnit2:inst1.T2_out[4]
+T2_view[5] <= MIRUnit2:inst1.T2_out[5]
+T2_view[6] <= MIRUnit2:inst1.T2_out[6]
 WOUT[0] <= W[0].DB_MAX_OUTPUT_PORT_TYPE
 WOUT[1] <= W[1].DB_MAX_OUTPUT_PORT_TYPE
 WOUT[2] <= W[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -171,7 +192,7 @@ WOUT[14] <= W[14].DB_MAX_OUTPUT_PORT_TYPE
 WOUT[15] <= W[15].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1
+|ev20main|MIRUnit2:inst1
 HOLD <= HoldUC1.DB_MAX_OUTPUT_PORT_TYPE
 Ain[0] => UC2:inst-uc2.A2[0]
 Ain[0] => MIR:MIR3.Ain[0]
@@ -184,26 +205,20 @@ Ain[3] => MIR:MIR3.Ain[3]
 Ain[4] => UC2:inst-uc2.A2[4]
 Ain[4] => MIR:MIR3.Ain[4]
 CK3 => UC1:Control1.Clk
+CK3 => UC1:JmpControl.Clk
 CK3 => MIR:MIR4.Clk
 MI[0] => ~NO_FANOUT~
 MI[1] => ~NO_FANOUT~
 MI[2] => ~NO_FANOUT~
 MI[3] => ~NO_FANOUT~
 MI[4] => ~NO_FANOUT~
-MI[5] => MIR:MIR3.Tin[0]
-MI[5] => UC2:inst-uc2.T2[0]
-MI[6] => MIR:MIR3.Tin[1]
-MI[6] => UC2:inst-uc2.T2[1]
-MI[7] => MIR:MIR3.Tin[2]
-MI[7] => UC2:inst-uc2.T2[2]
-MI[8] => MIR:MIR3.Tin[3]
-MI[8] => UC2:inst-uc2.T2[3]
-MI[9] => MIR:MIR3.Tin[4]
-MI[9] => UC2:inst-uc2.T2[4]
-MI[10] => MIR:MIR3.Tin[5]
-MI[10] => UC2:inst-uc2.T2[5]
-MI[11] => MIR:MIR3.Tin[6]
-MI[11] => UC2:inst-uc2.T2[6]
+MI[5] => UC1:JmpControl.Tin[0]
+MI[6] => UC1:JmpControl.Tin[1]
+MI[7] => UC1:JmpControl.Tin[2]
+MI[8] => UC1:JmpControl.Tin[3]
+MI[9] => UC1:JmpControl.Tin[4]
+MI[10] => UC1:JmpControl.Tin[5]
+MI[11] => UC1:JmpControl.Tin[6]
 MI[12] => BUSMUX:CinMUX.dataa[0]
 MI[13] => BUSMUX:CinMUX.dataa[1]
 MI[14] => BUSMUX:CinMUX.dataa[2]
@@ -228,6 +243,7 @@ MI[32] => MIR:MIR3.ALUin[3]
 HOLD-CK2 => MIR:MIR3.Clk
 HOLD-CK2 => inst8.IN0
 HOLD-CK2 => LPM_FF:inst5.clock
+JumpIn => UC1:JmpControl.Hold
 MUXselect => BUSMUX:CinMUX.sel
 IC[0] => BUSMUX:CinMUX.datab[0]
 IC[1] => BUSMUX:CinMUX.datab[1]
@@ -282,6 +298,13 @@ DAddIn[8] => LPM_FF:inst5.data[8]
 DAddIn[9] => LPM_FF:inst5.data[9]
 SH[0] <= SH4[0].DB_MAX_OUTPUT_PORT_TYPE
 SH[1] <= SH4[1].DB_MAX_OUTPUT_PORT_TYPE
+T2_out[0] <= T2[0].DB_MAX_OUTPUT_PORT_TYPE
+T2_out[1] <= T2[1].DB_MAX_OUTPUT_PORT_TYPE
+T2_out[2] <= T2[2].DB_MAX_OUTPUT_PORT_TYPE
+T2_out[3] <= T2[3].DB_MAX_OUTPUT_PORT_TYPE
+T2_out[4] <= T2[4].DB_MAX_OUTPUT_PORT_TYPE
+T2_out[5] <= T2[5].DB_MAX_OUTPUT_PORT_TYPE
+T2_out[6] <= T2[6].DB_MAX_OUTPUT_PORT_TYPE
 TOUT[0] <= T3[0].DB_MAX_OUTPUT_PORT_TYPE
 TOUT[1] <= T3[1].DB_MAX_OUTPUT_PORT_TYPE
 TOUT[2] <= T3[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -291,7 +314,7 @@ TOUT[5] <= T3[5].DB_MAX_OUTPUT_PORT_TYPE
 TOUT[6] <= T3[6].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|UC2:inst-uc2
+|ev20main|MIRUnit2:inst1|UC2:inst-uc2
 Hold <= inst26.DB_MAX_OUTPUT_PORT_TYPE
 T2[0] => inst2.IN0
 T2[1] => inst4.IN1
@@ -339,7 +362,7 @@ C4[4] => LPM_COMPARE:inst5.datab[4]
 C4[5] => ~NO_FANOUT~
 
 
-|ev20main|MIRUnit:inst1|UC2:inst-uc2|LPM_COMPARE:Paul
+|ev20main|MIRUnit2:inst1|UC2:inst-uc2|LPM_COMPARE:Paul
 dataa[0] => cmpr_3pd:auto_generated.dataa[0]
 dataa[1] => cmpr_3pd:auto_generated.dataa[1]
 dataa[2] => cmpr_3pd:auto_generated.dataa[2]
@@ -361,7 +384,7 @@ aneb <= <GND>
 ageb <= <GND>
 
 
-|ev20main|MIRUnit:inst1|UC2:inst-uc2|LPM_COMPARE:Paul|cmpr_3pd:auto_generated
+|ev20main|MIRUnit2:inst1|UC2:inst-uc2|LPM_COMPARE:Paul|cmpr_3pd:auto_generated
 aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[0].IN0
 dataa[1] => data_wire[0].IN0
@@ -375,7 +398,7 @@ datab[3] => data_wire[1].IN1
 datab[4] => data_wire[2].IN1
 
 
-|ev20main|MIRUnit:inst1|UC2:inst-uc2|LPM_COMPARE:inst5
+|ev20main|MIRUnit2:inst1|UC2:inst-uc2|LPM_COMPARE:inst5
 dataa[0] => cmpr_3pd:auto_generated.dataa[0]
 dataa[1] => cmpr_3pd:auto_generated.dataa[1]
 dataa[2] => cmpr_3pd:auto_generated.dataa[2]
@@ -397,7 +420,7 @@ aneb <= <GND>
 ageb <= <GND>
 
 
-|ev20main|MIRUnit:inst1|UC2:inst-uc2|LPM_COMPARE:inst5|cmpr_3pd:auto_generated
+|ev20main|MIRUnit2:inst1|UC2:inst-uc2|LPM_COMPARE:inst5|cmpr_3pd:auto_generated
 aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[0].IN0
 dataa[1] => data_wire[0].IN0
@@ -411,7 +434,7 @@ datab[3] => data_wire[1].IN1
 datab[4] => data_wire[2].IN1
 
 
-|ev20main|MIRUnit:inst1|UC1:Control1
+|ev20main|MIRUnit2:inst1|UC1:Control1
 Cout[0] <= BUSMUX:inst2.result[0]
 Cout[1] <= BUSMUX:inst2.result[1]
 Cout[2] <= BUSMUX:inst2.result[2]
@@ -443,7 +466,7 @@ Tin[5] => BUSMUX:inst9.dataa[5]
 Tin[6] => BUSMUX:inst9.dataa[6]
 
 
-|ev20main|MIRUnit:inst1|UC1:Control1|BUSMUX:inst2
+|ev20main|MIRUnit2:inst1|UC1:Control1|BUSMUX:inst2
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -465,7 +488,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|ev20main|MIRUnit:inst1|UC1:Control1|BUSMUX:inst2|lpm_mux:$00000
+|ev20main|MIRUnit2:inst1|UC1:Control1|BUSMUX:inst2|lpm_mux:$00000
 data[0][0] => mux_crc:auto_generated.data[0]
 data[0][1] => mux_crc:auto_generated.data[1]
 data[0][2] => mux_crc:auto_generated.data[2]
@@ -490,7 +513,7 @@ result[4] <= mux_crc:auto_generated.result[4]
 result[5] <= mux_crc:auto_generated.result[5]
 
 
-|ev20main|MIRUnit:inst1|UC1:Control1|BUSMUX:inst2|lpm_mux:$00000|mux_crc:auto_generated
+|ev20main|MIRUnit2:inst1|UC1:Control1|BUSMUX:inst2|lpm_mux:$00000|mux_crc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -523,7 +546,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|ev20main|MIRUnit:inst1|UC1:Control1|LPM_FF:inst
+|ev20main|MIRUnit2:inst1|UC1:Control1|LPM_FF:inst
 data[0] => dffs[0].DATAIN
 clock => dffs[0].CLK
 enable => dffs[0].ENA
@@ -537,7 +560,7 @@ sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|UC1:Control1|BUSMUX:inst9
+|ev20main|MIRUnit2:inst1|UC1:Control1|BUSMUX:inst9
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -562,7 +585,7 @@ result[5] <= lpm_mux:$00000.result[5]
 result[6] <= lpm_mux:$00000.result[6]
 
 
-|ev20main|MIRUnit:inst1|UC1:Control1|BUSMUX:inst9|lpm_mux:$00000
+|ev20main|MIRUnit2:inst1|UC1:Control1|BUSMUX:inst9|lpm_mux:$00000
 data[0][0] => mux_drc:auto_generated.data[0]
 data[0][1] => mux_drc:auto_generated.data[1]
 data[0][2] => mux_drc:auto_generated.data[2]
@@ -590,7 +613,7 @@ result[5] <= mux_drc:auto_generated.result[5]
 result[6] <= mux_drc:auto_generated.result[6]
 
 
-|ev20main|MIRUnit:inst1|UC1:Control1|BUSMUX:inst9|lpm_mux:$00000|mux_drc:auto_generated
+|ev20main|MIRUnit2:inst1|UC1:Control1|BUSMUX:inst9|lpm_mux:$00000|mux_drc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -628,7 +651,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|ev20main|MIRUnit:inst1|UC1:Control1|LPM_FF:inst10
+|ev20main|MIRUnit2:inst1|UC1:Control1|LPM_FF:inst10
 data[0] => dffs[0].DATAIN
 clock => dffs[0].CLK
 enable => dffs[0].ENA
@@ -642,7 +665,7 @@ sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR3
+|ev20main|MIRUnit2:inst1|MIR:MIR3
 MRout <= LPM_FF:Ezu6.q[0]
 Clk => inst2.IN0
 Clk => LPM_FF:Ezu5.clock
@@ -721,7 +744,7 @@ Tin[5] => LPM_FF:inst13.data[5]
 Tin[6] => LPM_FF:inst13.data[6]
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR3|LPM_FF:Ezu6
+|ev20main|MIRUnit2:inst1|MIR:MIR3|LPM_FF:Ezu6
 data[0] => dffs[0].DATAIN
 clock => dffs[0].CLK
 enable => dffs[0].ENA
@@ -734,7 +757,7 @@ sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR3|LPM_FF:Ezu5
+|ev20main|MIRUnit2:inst1|MIR:MIR3|LPM_FF:Ezu5
 data[0] => dffs[0].DATAIN
 clock => dffs[0].CLK
 enable => dffs[0].ENA
@@ -747,7 +770,7 @@ sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR3|LPM_FF:Ezu8
+|ev20main|MIRUnit2:inst1|MIR:MIR3|LPM_FF:Ezu8
 data[0] => dffs[0].DATAIN
 clock => dffs[0].CLK
 enable => dffs[0].ENA
@@ -760,7 +783,7 @@ sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR3|LPM_FF:Ezu7
+|ev20main|MIRUnit2:inst1|MIR:MIR3|LPM_FF:Ezu7
 data[0] => dffs[0].DATAIN
 clock => dffs[0].CLK
 enable => dffs[0].ENA
@@ -773,7 +796,7 @@ sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR3|LPM_FF:inst12
+|ev20main|MIRUnit2:inst1|MIR:MIR3|LPM_FF:inst12
 data[0] => dffs[0].DATAIN
 clock => dffs[0].CLK
 enable => dffs[0].ENA
@@ -786,7 +809,7 @@ sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR3|LPM_FF:inst11
+|ev20main|MIRUnit2:inst1|MIR:MIR3|LPM_FF:inst11
 data[0] => dffs[0].DATAIN
 clock => dffs[0].CLK
 enable => dffs[0].ENA
@@ -799,32 +822,7 @@ sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR3|LPM_FF:inst8
-data[0] => dffs[0].DATAIN
-data[1] => dffs[1].DATAIN
-data[2] => dffs[2].DATAIN
-data[3] => dffs[3].DATAIN
-clock => dffs[3].CLK
-clock => dffs[2].CLK
-clock => dffs[1].CLK
-clock => dffs[0].CLK
-enable => dffs[3].ENA
-enable => dffs[2].ENA
-enable => dffs[1].ENA
-enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aload => ~NO_FANOUT~
-sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
-sload => ~NO_FANOUT~
-q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|MIRUnit:inst1|MIR:MIR3|LPM_FF:inst7
+|ev20main|MIRUnit2:inst1|MIR:MIR3|LPM_FF:inst8
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -849,18 +847,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR3|LPM_FF:inst1
+|ev20main|MIRUnit2:inst1|MIR:MIR3|LPM_FF:inst7
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
 data[3] => dffs[3].DATAIN
-data[4] => dffs[4].DATAIN
-clock => dffs[4].CLK
 clock => dffs[3].CLK
 clock => dffs[2].CLK
 clock => dffs[1].CLK
 clock => dffs[0].CLK
-enable => dffs[4].ENA
 enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
@@ -875,10 +870,9 @@ q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
-q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR3|LPM_FF:inst
+|ev20main|MIRUnit2:inst1|MIR:MIR3|LPM_FF:inst1
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -907,20 +901,17 @@ q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR3|LPM_FF:inst4
+|ev20main|MIRUnit2:inst1|MIR:MIR3|LPM_FF:inst
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
 data[3] => dffs[3].DATAIN
 data[4] => dffs[4].DATAIN
-data[5] => dffs[5].DATAIN
-clock => dffs[5].CLK
 clock => dffs[4].CLK
 clock => dffs[3].CLK
 clock => dffs[2].CLK
 clock => dffs[1].CLK
 clock => dffs[0].CLK
-enable => dffs[5].ENA
 enable => dffs[4].ENA
 enable => dffs[3].ENA
 enable => dffs[2].ENA
@@ -937,10 +928,9 @@ q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
-q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR3|LPM_FF:inst3
+|ev20main|MIRUnit2:inst1|MIR:MIR3|LPM_FF:inst4
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -973,7 +963,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR3|LPM_FF:inst6
+|ev20main|MIRUnit2:inst1|MIR:MIR3|LPM_FF:inst3
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -1006,7 +996,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR3|LPM_FF:inst5
+|ev20main|MIRUnit2:inst1|MIR:MIR3|LPM_FF:inst6
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -1039,56 +1029,19 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR3|LPM_FF:inst10
-data[0] => dffs[0].DATAIN
-data[1] => dffs[1].DATAIN
-clock => dffs[1].CLK
-clock => dffs[0].CLK
-enable => dffs[1].ENA
-enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aload => ~NO_FANOUT~
-sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
-sload => ~NO_FANOUT~
-q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|MIRUnit:inst1|MIR:MIR3|LPM_FF:inst9
-data[0] => dffs[0].DATAIN
-data[1] => dffs[1].DATAIN
-clock => dffs[1].CLK
-clock => dffs[0].CLK
-enable => dffs[1].ENA
-enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aload => ~NO_FANOUT~
-sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
-sload => ~NO_FANOUT~
-q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|MIRUnit:inst1|MIR:MIR3|LPM_FF:inst14
+|ev20main|MIRUnit2:inst1|MIR:MIR3|LPM_FF:inst5
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
 data[3] => dffs[3].DATAIN
 data[4] => dffs[4].DATAIN
 data[5] => dffs[5].DATAIN
-data[6] => dffs[6].DATAIN
-clock => dffs[6].CLK
 clock => dffs[5].CLK
 clock => dffs[4].CLK
 clock => dffs[3].CLK
 clock => dffs[2].CLK
 clock => dffs[1].CLK
 clock => dffs[0].CLK
-enable => dffs[6].ENA
 enable => dffs[5].ENA
 enable => dffs[4].ENA
 enable => dffs[3].ENA
@@ -1107,10 +1060,43 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
-q[6] <= dffs[6].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR3|LPM_FF:inst13
+|ev20main|MIRUnit2:inst1|MIR:MIR3|LPM_FF:inst10
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|MIRUnit2:inst1|MIR:MIR3|LPM_FF:inst9
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|MIRUnit2:inst1|MIR:MIR3|LPM_FF:inst14
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -1147,7 +1133,76 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 q[6] <= dffs[6].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|BUSMUX:CinMUX
+|ev20main|MIRUnit2:inst1|MIR:MIR3|LPM_FF:inst13
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+data[2] => dffs[2].DATAIN
+data[3] => dffs[3].DATAIN
+data[4] => dffs[4].DATAIN
+data[5] => dffs[5].DATAIN
+data[6] => dffs[6].DATAIN
+clock => dffs[6].CLK
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[6].ENA
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= dffs[6].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|MIRUnit2:inst1|UC1:JmpControl
+Cout[0] <= BUSMUX:inst2.result[0]
+Cout[1] <= BUSMUX:inst2.result[1]
+Cout[2] <= BUSMUX:inst2.result[2]
+Cout[3] <= BUSMUX:inst2.result[3]
+Cout[4] <= BUSMUX:inst2.result[4]
+Cout[5] <= BUSMUX:inst2.result[5]
+Clk => inst3.IN0
+Hold => LPM_FF:inst.sset
+Hold => LPM_FF:inst10.sset
+Cin[0] => BUSMUX:inst2.dataa[0]
+Cin[1] => BUSMUX:inst2.dataa[1]
+Cin[2] => BUSMUX:inst2.dataa[2]
+Cin[3] => BUSMUX:inst2.dataa[3]
+Cin[4] => BUSMUX:inst2.dataa[4]
+Cin[5] => BUSMUX:inst2.dataa[5]
+Tout[0] <= BUSMUX:inst9.result[0]
+Tout[1] <= BUSMUX:inst9.result[1]
+Tout[2] <= BUSMUX:inst9.result[2]
+Tout[3] <= BUSMUX:inst9.result[3]
+Tout[4] <= BUSMUX:inst9.result[4]
+Tout[5] <= BUSMUX:inst9.result[5]
+Tout[6] <= BUSMUX:inst9.result[6]
+Tin[0] => BUSMUX:inst9.dataa[0]
+Tin[1] => BUSMUX:inst9.dataa[1]
+Tin[2] => BUSMUX:inst9.dataa[2]
+Tin[3] => BUSMUX:inst9.dataa[3]
+Tin[4] => BUSMUX:inst9.dataa[4]
+Tin[5] => BUSMUX:inst9.dataa[5]
+Tin[6] => BUSMUX:inst9.dataa[6]
+
+
+|ev20main|MIRUnit2:inst1|UC1:JmpControl|BUSMUX:inst2
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
@@ -1169,7 +1224,7 @@ result[4] <= lpm_mux:$00000.result[4]
 result[5] <= lpm_mux:$00000.result[5]
 
 
-|ev20main|MIRUnit:inst1|BUSMUX:CinMUX|lpm_mux:$00000
+|ev20main|MIRUnit2:inst1|UC1:JmpControl|BUSMUX:inst2|lpm_mux:$00000
 data[0][0] => mux_crc:auto_generated.data[0]
 data[0][1] => mux_crc:auto_generated.data[1]
 data[0][2] => mux_crc:auto_generated.data[2]
@@ -1194,7 +1249,7 @@ result[4] <= mux_crc:auto_generated.result[4]
 result[5] <= mux_crc:auto_generated.result[5]
 
 
-|ev20main|MIRUnit:inst1|BUSMUX:CinMUX|lpm_mux:$00000|mux_crc:auto_generated
+|ev20main|MIRUnit2:inst1|UC1:JmpControl|BUSMUX:inst2|lpm_mux:$00000|mux_crc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -1227,7 +1282,206 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR4
+|ev20main|MIRUnit2:inst1|UC1:JmpControl|LPM_FF:inst
+data[0] => dffs[0].DATAIN
+clock => dffs[0].CLK
+enable => dffs[0].ENA
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => dffs[0].ADATA
+sset => dffs[0].SLOAD
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|MIRUnit2:inst1|UC1:JmpControl|BUSMUX:inst9
+dataa[0] => lpm_mux:$00000.data[0][0]
+dataa[1] => lpm_mux:$00000.data[0][1]
+dataa[2] => lpm_mux:$00000.data[0][2]
+dataa[3] => lpm_mux:$00000.data[0][3]
+dataa[4] => lpm_mux:$00000.data[0][4]
+dataa[5] => lpm_mux:$00000.data[0][5]
+dataa[6] => lpm_mux:$00000.data[0][6]
+datab[0] => lpm_mux:$00000.data[1][0]
+datab[1] => lpm_mux:$00000.data[1][1]
+datab[2] => lpm_mux:$00000.data[1][2]
+datab[3] => lpm_mux:$00000.data[1][3]
+datab[4] => lpm_mux:$00000.data[1][4]
+datab[5] => lpm_mux:$00000.data[1][5]
+datab[6] => lpm_mux:$00000.data[1][6]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+result[1] <= lpm_mux:$00000.result[1]
+result[2] <= lpm_mux:$00000.result[2]
+result[3] <= lpm_mux:$00000.result[3]
+result[4] <= lpm_mux:$00000.result[4]
+result[5] <= lpm_mux:$00000.result[5]
+result[6] <= lpm_mux:$00000.result[6]
+
+
+|ev20main|MIRUnit2:inst1|UC1:JmpControl|BUSMUX:inst9|lpm_mux:$00000
+data[0][0] => mux_drc:auto_generated.data[0]
+data[0][1] => mux_drc:auto_generated.data[1]
+data[0][2] => mux_drc:auto_generated.data[2]
+data[0][3] => mux_drc:auto_generated.data[3]
+data[0][4] => mux_drc:auto_generated.data[4]
+data[0][5] => mux_drc:auto_generated.data[5]
+data[0][6] => mux_drc:auto_generated.data[6]
+data[1][0] => mux_drc:auto_generated.data[7]
+data[1][1] => mux_drc:auto_generated.data[8]
+data[1][2] => mux_drc:auto_generated.data[9]
+data[1][3] => mux_drc:auto_generated.data[10]
+data[1][4] => mux_drc:auto_generated.data[11]
+data[1][5] => mux_drc:auto_generated.data[12]
+data[1][6] => mux_drc:auto_generated.data[13]
+sel[0] => mux_drc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_drc:auto_generated.result[0]
+result[1] <= mux_drc:auto_generated.result[1]
+result[2] <= mux_drc:auto_generated.result[2]
+result[3] <= mux_drc:auto_generated.result[3]
+result[4] <= mux_drc:auto_generated.result[4]
+result[5] <= mux_drc:auto_generated.result[5]
+result[6] <= mux_drc:auto_generated.result[6]
+
+
+|ev20main|MIRUnit2:inst1|UC1:JmpControl|BUSMUX:inst9|lpm_mux:$00000|mux_drc:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[4].IN1
+data[5] => result_node[5].IN1
+data[6] => result_node[6].IN1
+data[7] => result_node[0].IN1
+data[8] => result_node[1].IN1
+data[9] => result_node[2].IN1
+data[10] => result_node[3].IN1
+data[11] => result_node[4].IN1
+data[12] => result_node[5].IN1
+data[13] => result_node[6].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= result_node[4].DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= result_node[5].DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= result_node[6].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[6].IN0
+sel[0] => _.IN0
+sel[0] => result_node[5].IN0
+sel[0] => _.IN0
+sel[0] => result_node[4].IN0
+sel[0] => _.IN0
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+
+|ev20main|MIRUnit2:inst1|UC1:JmpControl|LPM_FF:inst10
+data[0] => dffs[0].DATAIN
+clock => dffs[0].CLK
+enable => dffs[0].ENA
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => dffs[0].ADATA
+sset => dffs[0].SLOAD
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|MIRUnit2:inst1|BUSMUX:CinMUX
+dataa[0] => lpm_mux:$00000.data[0][0]
+dataa[1] => lpm_mux:$00000.data[0][1]
+dataa[2] => lpm_mux:$00000.data[0][2]
+dataa[3] => lpm_mux:$00000.data[0][3]
+dataa[4] => lpm_mux:$00000.data[0][4]
+dataa[5] => lpm_mux:$00000.data[0][5]
+datab[0] => lpm_mux:$00000.data[1][0]
+datab[1] => lpm_mux:$00000.data[1][1]
+datab[2] => lpm_mux:$00000.data[1][2]
+datab[3] => lpm_mux:$00000.data[1][3]
+datab[4] => lpm_mux:$00000.data[1][4]
+datab[5] => lpm_mux:$00000.data[1][5]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+result[1] <= lpm_mux:$00000.result[1]
+result[2] <= lpm_mux:$00000.result[2]
+result[3] <= lpm_mux:$00000.result[3]
+result[4] <= lpm_mux:$00000.result[4]
+result[5] <= lpm_mux:$00000.result[5]
+
+
+|ev20main|MIRUnit2:inst1|BUSMUX:CinMUX|lpm_mux:$00000
+data[0][0] => mux_crc:auto_generated.data[0]
+data[0][1] => mux_crc:auto_generated.data[1]
+data[0][2] => mux_crc:auto_generated.data[2]
+data[0][3] => mux_crc:auto_generated.data[3]
+data[0][4] => mux_crc:auto_generated.data[4]
+data[0][5] => mux_crc:auto_generated.data[5]
+data[1][0] => mux_crc:auto_generated.data[6]
+data[1][1] => mux_crc:auto_generated.data[7]
+data[1][2] => mux_crc:auto_generated.data[8]
+data[1][3] => mux_crc:auto_generated.data[9]
+data[1][4] => mux_crc:auto_generated.data[10]
+data[1][5] => mux_crc:auto_generated.data[11]
+sel[0] => mux_crc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_crc:auto_generated.result[0]
+result[1] <= mux_crc:auto_generated.result[1]
+result[2] <= mux_crc:auto_generated.result[2]
+result[3] <= mux_crc:auto_generated.result[3]
+result[4] <= mux_crc:auto_generated.result[4]
+result[5] <= mux_crc:auto_generated.result[5]
+
+
+|ev20main|MIRUnit2:inst1|BUSMUX:CinMUX|lpm_mux:$00000|mux_crc:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[4].IN1
+data[5] => result_node[5].IN1
+data[6] => result_node[0].IN1
+data[7] => result_node[1].IN1
+data[8] => result_node[2].IN1
+data[9] => result_node[3].IN1
+data[10] => result_node[4].IN1
+data[11] => result_node[5].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= result_node[4].DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= result_node[5].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[5].IN0
+sel[0] => _.IN0
+sel[0] => result_node[4].IN0
+sel[0] => _.IN0
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+
+|ev20main|MIRUnit2:inst1|MIR:MIR4
 MRout <= LPM_FF:Ezu6.q[0]
 Clk => inst2.IN0
 Clk => LPM_FF:Ezu5.clock
@@ -1306,7 +1560,7 @@ Tin[5] => LPM_FF:inst13.data[5]
 Tin[6] => LPM_FF:inst13.data[6]
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR4|LPM_FF:Ezu6
+|ev20main|MIRUnit2:inst1|MIR:MIR4|LPM_FF:Ezu6
 data[0] => dffs[0].DATAIN
 clock => dffs[0].CLK
 enable => dffs[0].ENA
@@ -1319,7 +1573,7 @@ sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR4|LPM_FF:Ezu5
+|ev20main|MIRUnit2:inst1|MIR:MIR4|LPM_FF:Ezu5
 data[0] => dffs[0].DATAIN
 clock => dffs[0].CLK
 enable => dffs[0].ENA
@@ -1332,7 +1586,7 @@ sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR4|LPM_FF:Ezu8
+|ev20main|MIRUnit2:inst1|MIR:MIR4|LPM_FF:Ezu8
 data[0] => dffs[0].DATAIN
 clock => dffs[0].CLK
 enable => dffs[0].ENA
@@ -1345,7 +1599,7 @@ sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR4|LPM_FF:Ezu7
+|ev20main|MIRUnit2:inst1|MIR:MIR4|LPM_FF:Ezu7
 data[0] => dffs[0].DATAIN
 clock => dffs[0].CLK
 enable => dffs[0].ENA
@@ -1358,7 +1612,7 @@ sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR4|LPM_FF:inst12
+|ev20main|MIRUnit2:inst1|MIR:MIR4|LPM_FF:inst12
 data[0] => dffs[0].DATAIN
 clock => dffs[0].CLK
 enable => dffs[0].ENA
@@ -1371,7 +1625,7 @@ sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR4|LPM_FF:inst11
+|ev20main|MIRUnit2:inst1|MIR:MIR4|LPM_FF:inst11
 data[0] => dffs[0].DATAIN
 clock => dffs[0].CLK
 enable => dffs[0].ENA
@@ -1384,32 +1638,7 @@ sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR4|LPM_FF:inst8
-data[0] => dffs[0].DATAIN
-data[1] => dffs[1].DATAIN
-data[2] => dffs[2].DATAIN
-data[3] => dffs[3].DATAIN
-clock => dffs[3].CLK
-clock => dffs[2].CLK
-clock => dffs[1].CLK
-clock => dffs[0].CLK
-enable => dffs[3].ENA
-enable => dffs[2].ENA
-enable => dffs[1].ENA
-enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aload => ~NO_FANOUT~
-sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
-sload => ~NO_FANOUT~
-q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|MIRUnit:inst1|MIR:MIR4|LPM_FF:inst7
+|ev20main|MIRUnit2:inst1|MIR:MIR4|LPM_FF:inst8
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -1434,18 +1663,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR4|LPM_FF:inst1
+|ev20main|MIRUnit2:inst1|MIR:MIR4|LPM_FF:inst7
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
 data[3] => dffs[3].DATAIN
-data[4] => dffs[4].DATAIN
-clock => dffs[4].CLK
 clock => dffs[3].CLK
 clock => dffs[2].CLK
 clock => dffs[1].CLK
 clock => dffs[0].CLK
-enable => dffs[4].ENA
 enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
@@ -1460,10 +1686,9 @@ q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
-q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR4|LPM_FF:inst
+|ev20main|MIRUnit2:inst1|MIR:MIR4|LPM_FF:inst1
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -1492,20 +1717,17 @@ q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR4|LPM_FF:inst4
+|ev20main|MIRUnit2:inst1|MIR:MIR4|LPM_FF:inst
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
 data[3] => dffs[3].DATAIN
 data[4] => dffs[4].DATAIN
-data[5] => dffs[5].DATAIN
-clock => dffs[5].CLK
 clock => dffs[4].CLK
 clock => dffs[3].CLK
 clock => dffs[2].CLK
 clock => dffs[1].CLK
 clock => dffs[0].CLK
-enable => dffs[5].ENA
 enable => dffs[4].ENA
 enable => dffs[3].ENA
 enable => dffs[2].ENA
@@ -1522,10 +1744,9 @@ q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
-q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR4|LPM_FF:inst3
+|ev20main|MIRUnit2:inst1|MIR:MIR4|LPM_FF:inst4
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -1558,7 +1779,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR4|LPM_FF:inst6
+|ev20main|MIRUnit2:inst1|MIR:MIR4|LPM_FF:inst3
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -1591,7 +1812,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR4|LPM_FF:inst5
+|ev20main|MIRUnit2:inst1|MIR:MIR4|LPM_FF:inst6
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -1624,56 +1845,19 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR4|LPM_FF:inst10
-data[0] => dffs[0].DATAIN
-data[1] => dffs[1].DATAIN
-clock => dffs[1].CLK
-clock => dffs[0].CLK
-enable => dffs[1].ENA
-enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aload => ~NO_FANOUT~
-sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
-sload => ~NO_FANOUT~
-q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|MIRUnit:inst1|MIR:MIR4|LPM_FF:inst9
-data[0] => dffs[0].DATAIN
-data[1] => dffs[1].DATAIN
-clock => dffs[1].CLK
-clock => dffs[0].CLK
-enable => dffs[1].ENA
-enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aload => ~NO_FANOUT~
-sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
-sload => ~NO_FANOUT~
-q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|MIRUnit:inst1|MIR:MIR4|LPM_FF:inst14
+|ev20main|MIRUnit2:inst1|MIR:MIR4|LPM_FF:inst5
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
 data[3] => dffs[3].DATAIN
 data[4] => dffs[4].DATAIN
 data[5] => dffs[5].DATAIN
-data[6] => dffs[6].DATAIN
-clock => dffs[6].CLK
 clock => dffs[5].CLK
 clock => dffs[4].CLK
 clock => dffs[3].CLK
 clock => dffs[2].CLK
 clock => dffs[1].CLK
 clock => dffs[0].CLK
-enable => dffs[6].ENA
 enable => dffs[5].ENA
 enable => dffs[4].ENA
 enable => dffs[3].ENA
@@ -1692,10 +1876,43 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
-q[6] <= dffs[6].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR4|LPM_FF:inst13
+|ev20main|MIRUnit2:inst1|MIR:MIR4|LPM_FF:inst10
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|MIRUnit2:inst1|MIR:MIR4|LPM_FF:inst9
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|MIRUnit2:inst1|MIR:MIR4|LPM_FF:inst14
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -1732,7 +1949,44 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 q[6] <= dffs[6].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR5
+|ev20main|MIRUnit2:inst1|MIR:MIR4|LPM_FF:inst13
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+data[2] => dffs[2].DATAIN
+data[3] => dffs[3].DATAIN
+data[4] => dffs[4].DATAIN
+data[5] => dffs[5].DATAIN
+data[6] => dffs[6].DATAIN
+clock => dffs[6].CLK
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[6].ENA
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= dffs[6].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|MIRUnit2:inst1|MIR:MIR5
 MRout <= LPM_FF:Ezu6.q[0]
 Clk => inst2.IN0
 Clk => LPM_FF:Ezu5.clock
@@ -1811,7 +2065,7 @@ Tin[5] => LPM_FF:inst13.data[5]
 Tin[6] => LPM_FF:inst13.data[6]
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR5|LPM_FF:Ezu6
+|ev20main|MIRUnit2:inst1|MIR:MIR5|LPM_FF:Ezu6
 data[0] => dffs[0].DATAIN
 clock => dffs[0].CLK
 enable => dffs[0].ENA
@@ -1824,7 +2078,7 @@ sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR5|LPM_FF:Ezu5
+|ev20main|MIRUnit2:inst1|MIR:MIR5|LPM_FF:Ezu5
 data[0] => dffs[0].DATAIN
 clock => dffs[0].CLK
 enable => dffs[0].ENA
@@ -1837,7 +2091,7 @@ sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR5|LPM_FF:Ezu8
+|ev20main|MIRUnit2:inst1|MIR:MIR5|LPM_FF:Ezu8
 data[0] => dffs[0].DATAIN
 clock => dffs[0].CLK
 enable => dffs[0].ENA
@@ -1850,7 +2104,7 @@ sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR5|LPM_FF:Ezu7
+|ev20main|MIRUnit2:inst1|MIR:MIR5|LPM_FF:Ezu7
 data[0] => dffs[0].DATAIN
 clock => dffs[0].CLK
 enable => dffs[0].ENA
@@ -1863,7 +2117,7 @@ sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR5|LPM_FF:inst12
+|ev20main|MIRUnit2:inst1|MIR:MIR5|LPM_FF:inst12
 data[0] => dffs[0].DATAIN
 clock => dffs[0].CLK
 enable => dffs[0].ENA
@@ -1876,7 +2130,7 @@ sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR5|LPM_FF:inst11
+|ev20main|MIRUnit2:inst1|MIR:MIR5|LPM_FF:inst11
 data[0] => dffs[0].DATAIN
 clock => dffs[0].CLK
 enable => dffs[0].ENA
@@ -1889,32 +2143,7 @@ sload => ~NO_FANOUT~
 q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR5|LPM_FF:inst8
-data[0] => dffs[0].DATAIN
-data[1] => dffs[1].DATAIN
-data[2] => dffs[2].DATAIN
-data[3] => dffs[3].DATAIN
-clock => dffs[3].CLK
-clock => dffs[2].CLK
-clock => dffs[1].CLK
-clock => dffs[0].CLK
-enable => dffs[3].ENA
-enable => dffs[2].ENA
-enable => dffs[1].ENA
-enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aload => ~NO_FANOUT~
-sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
-sload => ~NO_FANOUT~
-q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|MIRUnit:inst1|MIR:MIR5|LPM_FF:inst7
+|ev20main|MIRUnit2:inst1|MIR:MIR5|LPM_FF:inst8
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -1939,18 +2168,15 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR5|LPM_FF:inst1
+|ev20main|MIRUnit2:inst1|MIR:MIR5|LPM_FF:inst7
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
 data[3] => dffs[3].DATAIN
-data[4] => dffs[4].DATAIN
-clock => dffs[4].CLK
 clock => dffs[3].CLK
 clock => dffs[2].CLK
 clock => dffs[1].CLK
 clock => dffs[0].CLK
-enable => dffs[4].ENA
 enable => dffs[3].ENA
 enable => dffs[2].ENA
 enable => dffs[1].ENA
@@ -1965,10 +2191,9 @@ q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
-q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR5|LPM_FF:inst
+|ev20main|MIRUnit2:inst1|MIR:MIR5|LPM_FF:inst1
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -1997,20 +2222,17 @@ q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR5|LPM_FF:inst4
+|ev20main|MIRUnit2:inst1|MIR:MIR5|LPM_FF:inst
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
 data[3] => dffs[3].DATAIN
 data[4] => dffs[4].DATAIN
-data[5] => dffs[5].DATAIN
-clock => dffs[5].CLK
 clock => dffs[4].CLK
 clock => dffs[3].CLK
 clock => dffs[2].CLK
 clock => dffs[1].CLK
 clock => dffs[0].CLK
-enable => dffs[5].ENA
 enable => dffs[4].ENA
 enable => dffs[3].ENA
 enable => dffs[2].ENA
@@ -2027,10 +2249,9 @@ q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
-q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR5|LPM_FF:inst3
+|ev20main|MIRUnit2:inst1|MIR:MIR5|LPM_FF:inst4
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -2063,7 +2284,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR5|LPM_FF:inst6
+|ev20main|MIRUnit2:inst1|MIR:MIR5|LPM_FF:inst3
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -2096,7 +2317,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR5|LPM_FF:inst5
+|ev20main|MIRUnit2:inst1|MIR:MIR5|LPM_FF:inst6
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -2129,56 +2350,19 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR5|LPM_FF:inst10
-data[0] => dffs[0].DATAIN
-data[1] => dffs[1].DATAIN
-clock => dffs[1].CLK
-clock => dffs[0].CLK
-enable => dffs[1].ENA
-enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aload => ~NO_FANOUT~
-sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
-sload => ~NO_FANOUT~
-q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|MIRUnit:inst1|MIR:MIR5|LPM_FF:inst9
-data[0] => dffs[0].DATAIN
-data[1] => dffs[1].DATAIN
-clock => dffs[1].CLK
-clock => dffs[0].CLK
-enable => dffs[1].ENA
-enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aload => ~NO_FANOUT~
-sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
-sload => ~NO_FANOUT~
-q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|MIRUnit:inst1|MIR:MIR5|LPM_FF:inst14
+|ev20main|MIRUnit2:inst1|MIR:MIR5|LPM_FF:inst5
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
 data[3] => dffs[3].DATAIN
 data[4] => dffs[4].DATAIN
 data[5] => dffs[5].DATAIN
-data[6] => dffs[6].DATAIN
-clock => dffs[6].CLK
 clock => dffs[5].CLK
 clock => dffs[4].CLK
 clock => dffs[3].CLK
 clock => dffs[2].CLK
 clock => dffs[1].CLK
 clock => dffs[0].CLK
-enable => dffs[6].ENA
 enable => dffs[5].ENA
 enable => dffs[4].ENA
 enable => dffs[3].ENA
@@ -2197,10 +2381,43 @@ q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
 q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
-q[6] <= dffs[6].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|MIR:MIR5|LPM_FF:inst13
+|ev20main|MIRUnit2:inst1|MIR:MIR5|LPM_FF:inst10
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|MIRUnit2:inst1|MIR:MIR5|LPM_FF:inst9
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|MIRUnit2:inst1|MIR:MIR5|LPM_FF:inst14
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -2237,7 +2454,44 @@ q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 q[6] <= dffs[6].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|LPM_FF:inst6
+|ev20main|MIRUnit2:inst1|MIR:MIR5|LPM_FF:inst13
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+data[2] => dffs[2].DATAIN
+data[3] => dffs[3].DATAIN
+data[4] => dffs[4].DATAIN
+data[5] => dffs[5].DATAIN
+data[6] => dffs[6].DATAIN
+clock => dffs[6].CLK
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[6].ENA
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= dffs[6].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|MIRUnit2:inst1|LPM_FF:inst6
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -2286,7 +2540,7 @@ q[8] <= dffs[8].DB_MAX_OUTPUT_PORT_TYPE
 q[9] <= dffs[9].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|MIRUnit:inst1|LPM_FF:inst5
+|ev20main|MIRUnit2:inst1|LPM_FF:inst5
 data[0] => dffs[0].DATAIN
 data[1] => dffs[1].DATAIN
 data[2] => dffs[2].DATAIN
@@ -2340,6 +2594,8 @@ MuxSelSynched <= SynchRegister:inst2.DATA_OUT[0]
 HOLD => inst4.IN0
 Clk_in => inst5.IN1
 MuxSel => SynchRegister:inst2.DATA[0]
+JumpSynched <= SynchRegister:inst6.DATA_OUT[0]
+Jump => SynchRegister:inst6.DATA[0]
 Asynched[0] <= SynchRegister:inst.DATA_OUT[0]
 Asynched[1] <= SynchRegister:inst.DATA_OUT[1]
 Asynched[2] <= SynchRegister:inst.DATA_OUT[2]
@@ -2425,6 +2681,39 @@ q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ev20main|SynchUnit:inst9|SynchRegister:inst2|LPM_FF:inst
+data[0] => dffs[0].DATAIN
+clock => dffs[0].CLK
+enable => dffs[0].ENA
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|SynchUnit:inst9|SynchRegister:inst6
+DATA_OUT[0] <= LPM_FF:inst1.q[0]
+Clk => inst2.IN0
+Clk => LPM_FF:inst.clock
+DATA[0] => LPM_FF:inst.data[0]
+
+
+|ev20main|SynchUnit:inst9|SynchRegister:inst6|LPM_FF:inst1
+data[0] => dffs[0].DATAIN
+clock => dffs[0].CLK
+enable => dffs[0].ENA
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|SynchUnit:inst9|SynchRegister:inst6|LPM_FF:inst
 data[0] => dffs[0].DATAIN
 clock => dffs[0].CLK
 enable => dffs[0].ENA
@@ -2856,17 +3145,7 @@ I[20] => LPM_FF:InstructionRegister1.data[20]
 I[20] => ev20jumpControl:inst.X12
 I[21] => LPM_FF:InstructionRegister1.data[21]
 I[21] => inst4.IN0
-IA[0] <= PCRegister:inst1.PC[0]
-IA[1] <= PCRegister:inst1.PC[1]
-IA[2] <= PCRegister:inst1.PC[2]
-IA[3] <= PCRegister:inst1.PC[3]
-IA[4] <= PCRegister:inst1.PC[4]
-IA[5] <= PCRegister:inst1.PC[5]
-IA[6] <= PCRegister:inst1.PC[6]
-IA[7] <= PCRegister:inst1.PC[7]
-IA[8] <= PCRegister:inst1.PC[8]
-IA[9] <= PCRegister:inst1.PC[9]
-IA[10] <= PCRegister:inst1.PC[10]
+Jump <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 CY => ev20jumpControl:inst.CY
 W[0] => ev20jumpControl:inst.W[0]
 W[1] => ev20jumpControl:inst.W[1]
@@ -2884,6 +3163,17 @@ W[12] => ev20jumpControl:inst.W[12]
 W[13] => ev20jumpControl:inst.W[13]
 W[14] => ev20jumpControl:inst.W[14]
 W[15] => ev20jumpControl:inst.W[15]
+IA[0] <= PCRegister:inst1.PC[0]
+IA[1] <= PCRegister:inst1.PC[1]
+IA[2] <= PCRegister:inst1.PC[2]
+IA[3] <= PCRegister:inst1.PC[3]
+IA[4] <= PCRegister:inst1.PC[4]
+IA[5] <= PCRegister:inst1.PC[5]
+IA[6] <= PCRegister:inst1.PC[6]
+IA[7] <= PCRegister:inst1.PC[7]
+IA[8] <= PCRegister:inst1.PC[8]
+IA[9] <= PCRegister:inst1.PC[9]
+IA[10] <= PCRegister:inst1.PC[10]
 INST_A[0] <= q[0].DB_MAX_OUTPUT_PORT_TYPE
 INST_A[1] <= q[1].DB_MAX_OUTPUT_PORT_TYPE
 INST_A[2] <= q[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -3118,6 +3408,40 @@ q[20] <= dffs[20].DB_MAX_OUTPUT_PORT_TYPE
 q[21] <= dffs[21].DB_MAX_OUTPUT_PORT_TYPE
 
 
+|ev20main|fetchUnit:inst|ev20jumpControl:inst
+JUMP_REQUIRED <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+X11 => 74139M:inst6.B
+X12 => 74139M:inst6.A
+W[0] => inst.IN0
+W[1] => inst.IN2
+W[2] => inst.IN1
+W[3] => inst.IN3
+W[4] => inst.IN5
+W[5] => inst.IN4
+W[6] => inst.IN6
+W[7] => inst.IN7
+W[8] => inst1.IN0
+W[9] => inst1.IN2
+W[10] => inst1.IN1
+W[11] => inst1.IN3
+W[12] => inst1.IN5
+W[13] => inst1.IN4
+W[14] => inst1.IN6
+W[15] => inst9.IN0
+W[15] => inst1.IN7
+CY => inst10.IN1
+
+
+|ev20main|fetchUnit:inst|ev20jumpControl:inst|74139M:inst6
+Y3N <= 36.DB_MAX_OUTPUT_PORT_TYPE
+B => 11.IN0
+A => 8.IN0
+G => 7.IN0
+Y0N <= 33.DB_MAX_OUTPUT_PORT_TYPE
+Y1N <= 34.DB_MAX_OUTPUT_PORT_TYPE
+Y2N <= 35.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |ev20main|fetchUnit:inst|PCRegister:inst1
 inc => auxLoad.CLK
 inc => auxAdd[0].CLK
@@ -3165,40 +3489,6 @@ PC[7] <= PC[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 PC[8] <= PC[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 PC[9] <= PC[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 PC[10] <= PC[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|ev20jumpControl:inst
-JUMP_REQUIRED <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-X11 => 74139M:inst6.B
-X12 => 74139M:inst6.A
-W[0] => inst.IN0
-W[1] => inst.IN2
-W[2] => inst.IN1
-W[3] => inst.IN3
-W[4] => inst.IN5
-W[5] => inst.IN4
-W[6] => inst.IN6
-W[7] => inst.IN7
-W[8] => inst1.IN0
-W[9] => inst1.IN2
-W[10] => inst1.IN1
-W[11] => inst1.IN3
-W[12] => inst1.IN5
-W[13] => inst1.IN4
-W[14] => inst1.IN6
-W[15] => inst9.IN0
-W[15] => inst1.IN7
-CY => inst10.IN1
-
-
-|ev20main|fetchUnit:inst|ev20jumpControl:inst|74139M:inst6
-Y3N <= 36.DB_MAX_OUTPUT_PORT_TYPE
-B => 11.IN0
-A => 8.IN0
-G => 7.IN0
-Y0N <= 33.DB_MAX_OUTPUT_PORT_TYPE
-Y1N <= 34.DB_MAX_OUTPUT_PORT_TYPE
-Y2N <= 35.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ev20main|ALUUnit:inst13
