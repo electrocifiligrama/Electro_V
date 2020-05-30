@@ -1,22 +1,12 @@
-MOK W,#10
+MOK W,#10          //0
 MOV R0,W
-MOV R1,R0
-MOV R2,R1
-MOV R3,W
-CPL W
-MOK W,#1
-CLR CY
-ADW R0,R1
-ADR W,R3
-ADW R2,R3	  
-MOM 0,W
-MOV W,R1	
-MOM 1,W
-MOV W,R2
-MOM 2,W	
-MOV W,R3
-MOM 3,W
-MOM W,0
-MOM W,1
-MOM W,2
-MOM W,3
+JMP 4
+MOK W,#5
+MOV R1,W   //el W debe finalizar en 10!!!!!!!!!!!!!
+BSR 10      //linea 5
+MOK W,#1    //linea 6
+CLR CY      //linea 7
+CLR CY      //linea 8
+JMP 8       //linea 9
+MOK W,#15      //linea 10
+RET

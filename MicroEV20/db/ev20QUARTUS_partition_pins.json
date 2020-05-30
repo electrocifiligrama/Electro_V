@@ -24,6 +24,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "Jmp_out",
+					"strict" : false
+				},
+				{
 					"name" : "ALU_out[3]",
 					"strict" : false
 				},
@@ -212,6 +216,94 @@
 					"strict" : false
 				},
 				{
+					"name" : "I_out[21]",
+					"strict" : false
+				},
+				{
+					"name" : "I_out[20]",
+					"strict" : false
+				},
+				{
+					"name" : "I_out[19]",
+					"strict" : false
+				},
+				{
+					"name" : "I_out[18]",
+					"strict" : false
+				},
+				{
+					"name" : "I_out[17]",
+					"strict" : false
+				},
+				{
+					"name" : "I_out[16]",
+					"strict" : false
+				},
+				{
+					"name" : "I_out[15]",
+					"strict" : false
+				},
+				{
+					"name" : "I_out[14]",
+					"strict" : false
+				},
+				{
+					"name" : "I_out[13]",
+					"strict" : false
+				},
+				{
+					"name" : "I_out[12]",
+					"strict" : false
+				},
+				{
+					"name" : "I_out[11]",
+					"strict" : false
+				},
+				{
+					"name" : "I_out[10]",
+					"strict" : false
+				},
+				{
+					"name" : "I_out[9]",
+					"strict" : false
+				},
+				{
+					"name" : "I_out[8]",
+					"strict" : false
+				},
+				{
+					"name" : "I_out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "I_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "I_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "I_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "I_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "I_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "I_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "I_out[0]",
+					"strict" : false
+				},
+				{
 					"name" : "IA_view[10]",
 					"strict" : false
 				},
@@ -280,67 +372,43 @@
 					"strict" : false
 				},
 				{
-					"name" : "MEMORYout[15]",
+					"name" : "INST_DAdd_view[9]",
 					"strict" : false
 				},
 				{
-					"name" : "MEMORYout[14]",
+					"name" : "INST_DAdd_view[8]",
 					"strict" : false
 				},
 				{
-					"name" : "MEMORYout[13]",
+					"name" : "INST_DAdd_view[7]",
 					"strict" : false
 				},
 				{
-					"name" : "MEMORYout[12]",
+					"name" : "INST_DAdd_view[6]",
 					"strict" : false
 				},
 				{
-					"name" : "MEMORYout[11]",
+					"name" : "INST_DAdd_view[5]",
 					"strict" : false
 				},
 				{
-					"name" : "MEMORYout[10]",
+					"name" : "INST_DAdd_view[4]",
 					"strict" : false
 				},
 				{
-					"name" : "MEMORYout[9]",
+					"name" : "INST_DAdd_view[3]",
 					"strict" : false
 				},
 				{
-					"name" : "MEMORYout[8]",
+					"name" : "INST_DAdd_view[2]",
 					"strict" : false
 				},
 				{
-					"name" : "MEMORYout[7]",
+					"name" : "INST_DAdd_view[1]",
 					"strict" : false
 				},
 				{
-					"name" : "MEMORYout[6]",
-					"strict" : false
-				},
-				{
-					"name" : "MEMORYout[5]",
-					"strict" : false
-				},
-				{
-					"name" : "MEMORYout[4]",
-					"strict" : false
-				},
-				{
-					"name" : "MEMORYout[3]",
-					"strict" : false
-				},
-				{
-					"name" : "MEMORYout[2]",
-					"strict" : false
-				},
-				{
-					"name" : "MEMORYout[1]",
-					"strict" : false
-				},
-				{
-					"name" : "MEMORYout[0]",
+					"name" : "INST_DAdd_view[0]",
 					"strict" : false
 				},
 				{
@@ -476,6 +544,34 @@
 					"strict" : false
 				},
 				{
+					"name" : "Rom_add_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Rom_add_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Rom_add_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Rom_add_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Rom_add_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Rom_add_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Rom_add_out[0]",
+					"strict" : false
+				},
+				{
 					"name" : "SH_out[1]",
 					"strict" : false
 				},
@@ -509,6 +605,34 @@
 				},
 				{
 					"name" : "T[0]",
+					"strict" : false
+				},
+				{
+					"name" : "T2_view[6]",
+					"strict" : false
+				},
+				{
+					"name" : "T2_view[5]",
+					"strict" : false
+				},
+				{
+					"name" : "T2_view[4]",
+					"strict" : false
+				},
+				{
+					"name" : "T2_view[3]",
+					"strict" : false
+				},
+				{
+					"name" : "T2_view[2]",
+					"strict" : false
+				},
+				{
+					"name" : "T2_view[1]",
+					"strict" : false
+				},
+				{
+					"name" : "T2_view[0]",
 					"strict" : false
 				},
 				{
