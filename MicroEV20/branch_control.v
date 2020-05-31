@@ -16,9 +16,9 @@ initial begin
 	prediction = 0;
 end 
 
-branch_predictor predictor(.I(I[12:11]), 
-									.predict(enable),
-									.prediction(prediction));
+//branch_predictor predictor(.I(I[12:11]), 
+//									.predict(enable),
+//									.prediction(prediction));
 
 //eleven_fifo fifo1(.clk(clk),
 //						.enable(enable),
@@ -38,18 +38,18 @@ branch_predictor predictor(.I(I[12:11]),
 
 always @ (I) begin
 		if(I[13] == 1) begin
-			if(I[13:11] == 3'b100)begin  //unconditional jump
+			if(I[13:11] == 3'b100) begin  //unconditional jump
 				next <= I[10:0];
 				enable <= 0;
 			end
 			else begin
 				enable <= 1;
 			end
+		end
 		else begin
 			enable <= 0;
 		end
 	end
-end
 
 ////this piece of code is not necessary
 //always @(posedge clk)
@@ -65,4 +65,4 @@ end
 //		end
 //	end
 
-endmodule;
+endmodule

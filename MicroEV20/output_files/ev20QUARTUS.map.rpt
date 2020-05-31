@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ev20QUARTUS
-Sun May 31 13:28:17 2020
+Sun May 31 16:09:17 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -10,17 +10,8 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Inverted Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Post-Synthesis Netlist Statistics for Top Partition
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
- 15. Analysis & Synthesis Suppressed Messages
+  5. Analysis & Synthesis Messages
+  6. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -46,20 +37,20 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun May 31 13:28:17 2020       ;
+; Analysis & Synthesis Status        ; Failed - Sun May 31 16:09:17 2020           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ev20QUARTUS                                 ;
 ; Top-level Entity Name              ; fifo_TB                                     ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 59                                          ;
-;     Total combinational functions  ; 57                                          ;
-;     Dedicated logic registers      ; 42                                          ;
-; Total registers                    ; 42                                          ;
-; Total pins                         ; 7                                           ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -153,181 +144,15 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                       ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                             ; Library ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------+---------+
-; fifo.v                           ; yes             ; User Verilog HDL File              ; C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/fifo.v      ;         ;
-; fifo_TB.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/fifo_TB.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------+---------+
-
-
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 59        ;
-;                                             ;           ;
-; Total combinational functions               ; 57        ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 14        ;
-;     -- 3 input functions                    ; 36        ;
-;     -- <=2 input functions                  ; 7         ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 26        ;
-;     -- arithmetic mode                      ; 31        ;
-;                                             ;           ;
-; Total registers                             ; 42        ;
-;     -- Dedicated logic registers            ; 42        ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 7         ;
-;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; CLK~input ;
-; Maximum fan-out                             ; 42        ;
-; Total fan-out                               ; 311       ;
-; Average fan-out                             ; 2.75      ;
-+---------------------------------------------+-----------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |fifo_TB                   ; 57 (0)              ; 42 (0)                    ; 0           ; 0            ; 0       ; 0         ; 7    ; 0            ; |fifo_TB            ; fifo_TB     ; work         ;
-;    |fifo:inst2|            ; 53 (53)             ; 37 (37)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fifo_TB|fifo:inst2 ; fifo        ; work         ;
-;    |fifo:inst|             ; 4 (4)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |fifo_TB|fifo:inst  ; fifo        ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+---------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                        ;
-+----------------------------------------+----------------------------------+
-; Register name                          ; Reason for Removal               ;
-+----------------------------------------+----------------------------------+
-; fifo:inst|index[31]                    ; Merged with fifo:inst2|index[31] ;
-; fifo:inst|index[30]                    ; Merged with fifo:inst2|index[30] ;
-; fifo:inst|index[29]                    ; Merged with fifo:inst2|index[29] ;
-; fifo:inst|index[28]                    ; Merged with fifo:inst2|index[28] ;
-; fifo:inst|index[27]                    ; Merged with fifo:inst2|index[27] ;
-; fifo:inst|index[26]                    ; Merged with fifo:inst2|index[26] ;
-; fifo:inst|index[25]                    ; Merged with fifo:inst2|index[25] ;
-; fifo:inst|index[24]                    ; Merged with fifo:inst2|index[24] ;
-; fifo:inst|index[23]                    ; Merged with fifo:inst2|index[23] ;
-; fifo:inst|index[22]                    ; Merged with fifo:inst2|index[22] ;
-; fifo:inst|index[21]                    ; Merged with fifo:inst2|index[21] ;
-; fifo:inst|index[20]                    ; Merged with fifo:inst2|index[20] ;
-; fifo:inst|index[19]                    ; Merged with fifo:inst2|index[19] ;
-; fifo:inst|index[18]                    ; Merged with fifo:inst2|index[18] ;
-; fifo:inst|index[17]                    ; Merged with fifo:inst2|index[17] ;
-; fifo:inst|index[16]                    ; Merged with fifo:inst2|index[16] ;
-; fifo:inst|index[15]                    ; Merged with fifo:inst2|index[15] ;
-; fifo:inst|index[14]                    ; Merged with fifo:inst2|index[14] ;
-; fifo:inst|index[13]                    ; Merged with fifo:inst2|index[13] ;
-; fifo:inst|index[12]                    ; Merged with fifo:inst2|index[12] ;
-; fifo:inst|index[11]                    ; Merged with fifo:inst2|index[11] ;
-; fifo:inst|index[10]                    ; Merged with fifo:inst2|index[10] ;
-; fifo:inst|index[9]                     ; Merged with fifo:inst2|index[9]  ;
-; fifo:inst|index[8]                     ; Merged with fifo:inst2|index[8]  ;
-; fifo:inst|index[7]                     ; Merged with fifo:inst2|index[7]  ;
-; fifo:inst|index[6]                     ; Merged with fifo:inst2|index[6]  ;
-; fifo:inst|index[5]                     ; Merged with fifo:inst2|index[5]  ;
-; fifo:inst|index[4]                     ; Merged with fifo:inst2|index[4]  ;
-; fifo:inst|index[3]                     ; Merged with fifo:inst2|index[3]  ;
-; fifo:inst|index[2]                     ; Merged with fifo:inst2|index[2]  ;
-; fifo:inst|index[1]                     ; Merged with fifo:inst2|index[1]  ;
-; fifo:inst|index[0]                     ; Merged with fifo:inst2|index[0]  ;
-; Total Number of Removed Registers = 32 ;                                  ;
-+----------------------------------------+----------------------------------+
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 42    ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 42    ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; fifo:inst2|index[0]                    ; 5       ;
-; fifo:inst2|index[1]                    ; 5       ;
-; Total number of inverted registers = 2 ;         ;
-+----------------------------------------+---------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |fifo_TB|fifo:inst2|queue[3] ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |fifo_TB|fifo:inst2|queue[2] ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |fifo_TB|fifo:inst2|queue[1] ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |fifo_TB|fifo:inst2|queue[0] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 7                           ;
-; cycloneiii_ff         ; 42                          ;
-;     ENA               ; 42                          ;
-; cycloneiii_lcell_comb ; 57                          ;
-;     arith             ; 31                          ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 30                          ;
-;     normal            ; 26                          ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 6                           ;
-;         4 data inputs ; 14                          ;
-;                       ;                             ;
-; Max LUT depth         ; 4.10                        ;
-; Average LUT depth     ; 3.05                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:01     ;
-+----------------+--------------+
 
 
 +-------------------------------+
@@ -336,10 +161,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun May 31 13:27:47 2020
+    Info: Processing started: Sun May 31 16:08:59 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ev20QUARTUS -c ev20QUARTUS
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file subroutinecontrolunit.bdf
     Info (12023): Found entity 1: SubRoutineControlUnit
 Info (12021): Found 1 design units, including 1 entities, in source file mirunit2.bdf
@@ -349,7 +174,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file synchun
 Info (12021): Found 1 design units, including 1 entities, in source file synchregister.bdf
     Info (12023): Found entity 1: SynchRegister
 Info (12021): Found 1 design units, including 1 entities, in source file delayinicial.v
-    Info (12023): Found entity 1: DelayInicial File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/DelayInicial.v Line: 1
+    Info (12023): Found entity 1: DelayInicial File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/DelayInicial.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mir.bdf
     Info (12023): Found entity 1: MIR
 Info (12021): Found 1 design units, including 1 entities, in source file uc2.bdf
@@ -361,9 +186,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file ev20mai
 Info (12021): Found 1 design units, including 1 entities, in source file ev20jumpcontrol.bdf
     Info (12023): Found entity 1: ev20jumpControl
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: ALU File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/alu.v Line: 1
+    Info (12023): Found entity 1: ALU File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file shifter.v
-    Info (12023): Found entity 1: shifter File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/shifter.v Line: 1
+    Info (12023): Found entity 1: shifter File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/shifter.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ev20b3busa.bdf
     Info (12023): Found entity 1: ev20B3BUSA
 Info (12021): Found 1 design units, including 1 entities, in source file ev20b3busb.bdf
@@ -379,9 +204,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file operand
 Info (12021): Found 1 design units, including 1 entities, in source file aluunit.bdf
     Info (12023): Found entity 1: ALUUnit
 Info (12021): Found 1 design units, including 1 entities, in source file carryblock.v
-    Info (12023): Found entity 1: carryBlock File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/carryBlock.v Line: 1
+    Info (12023): Found entity 1: carryBlock File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/carryBlock.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pcregister.v
-    Info (12023): Found entity 1: PCRegister File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/PCRegister.v Line: 1
+    Info (12023): Found entity 1: PCRegister File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/PCRegister.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mirunit.bdf
     Info (12023): Found entity 1: MIRUnit
 Info (12021): Found 1 design units, including 1 entities, in source file dataunit.bdf
@@ -390,31 +215,33 @@ Warning (12019): Can't analyze file -- file PCRegisterAsync.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file pulsegen.bdf
     Info (12023): Found entity 1: pulseGen
 Info (12021): Found 1 design units, including 1 entities, in source file fifo.v
-    Info (12023): Found entity 1: fifo File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/fifo.v Line: 1
+    Info (12023): Found entity 1: fifo File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/fifo.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fifo_tb.bdf
     Info (12023): Found entity 1: fifo_TB
 Info (12021): Found 1 design units, including 1 entities, in source file branch_queue.bdf
     Info (12023): Found entity 1: branch_queue
-Info (12127): Elaborating entity "fifo_TB" for the top level hierarchy
-Info (12128): Elaborating entity "fifo" for hierarchy "fifo:inst"
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 66 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 2 output pins
-    Info (21061): Implemented 59 logic cells
-Info (144001): Generated suppressed messages file C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/output_files/ev20QUARTUS.map.smsg
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4738 megabytes
-    Info: Processing ended: Sun May 31 13:28:17 2020
-    Info: Elapsed time: 00:00:30
-    Info: Total CPU time (on all processors): 00:00:51
+Info (12021): Found 1 design units, including 1 entities, in source file eleven_fifo.v
+    Info (12023): Found entity 1: eleven_fifo File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/eleven_fifo.v Line: 3
+Error (10170): Verilog HDL syntax error at branch_control.v(48) near text: "else";  expecting "end". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/branch_control.v Line: 48
+Error (10112): Ignored design unit "branch_control" at branch_control.v(1) due to previous errors File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/branch_control.v Line: 1
+Info (12021): Found 0 design units, including 0 entities, in source file branch_control.v
+Info (12021): Found 1 design units, including 1 entities, in source file branch_predictor.v
+    Info (12023): Found entity 1: branch_predictor File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/branch_predictor.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file prediction_block.bdf
+    Info (12023): Found entity 1: prediction_block
+Info (12021): Found 1 design units, including 1 entities, in source file fifo_two_bit.bdf
+    Info (12023): Found entity 1: fifo_two_bit
+Info (144001): Generated suppressed messages file C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/output_files/ev20QUARTUS.map.smsg
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 2 warnings
+    Error: Peak virtual memory: 4713 megabytes
+    Error: Processing ended: Sun May 31 16:09:18 2020
+    Error: Elapsed time: 00:00:19
+    Error: Total CPU time (on all processors): 00:00:42
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/output_files/ev20QUARTUS.map.smsg.
+The suppressed messages can be found in C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/output_files/ev20QUARTUS.map.smsg.
 
 
