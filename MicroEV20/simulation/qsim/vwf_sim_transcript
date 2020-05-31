@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ev20QUARTUS -c ev20QUARTUS --vector_source="C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/Waveform7.vwf" --testbench_file="C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/simulation/qsim/Waveform7.vwf.vt"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ev20QUARTUS -c ev20QUARTUS --vector_source="C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/Waveform8.vwf" --testbench_file="C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/simulation/qsim/Waveform8.vwf.vt"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -25,15 +25,10 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Sat May 30 20:27:31 2020
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ev20QUARTUS -c ev20QUARTUS --vector_source="C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/Waveform7.vwf" --testbench_file="C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/simulation/qsim/Waveform7.vwf.vt"
-Info (119004): Automatically selected device EP4CE15F23C6 for design ev20QUARTUS
-Info (119005): Fitting design with smaller device may be possible, but smaller device must be specified
-Warning (18550): Found RAM instances implemented as ROM because the write logic is disabled. One instance is listed below as an example.
-    Info (119043): Atom "lpm_ram_io:inst2|altram:sram|altsyncram:ram_block|altsyncram_kqa1:auto_generated|ram_block1a21" is instantiated as RAM, but it is actually implemented as ROM function because the write logic is always disabled
+    Info: Processing started: Sun May 31 02:20:30 2020
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ev20QUARTUS -c ev20QUARTUS --vector_source="C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/Waveform8.vwf" --testbench_file="C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/simulation/qsim/Waveform8.vwf.vt"
+Info (119004): Automatically selected device EP4CE6E22C6 for design ev20QUARTUS
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-
- test bench files
 
 Completed successfully. 
 
@@ -59,19 +54,16 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Sat May 30 20:27:37 2020
+    Info: Processing started: Sun May 31 02:20:33 2020
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/simulation/qsim/" ev20QUARTUS -c ev20QUARTUS
-Info (119004): Automatically selected device EP4CE15F23C6 for design ev20QUARTUS
-Info (119005): Fitting design with smaller device may be possible, but smaller device must be specified
-Warning (18550): Found RAM instances implemented as ROM because the write logic is disabled. One instance is listed below as an example.
-    Info (119043): Atom "lpm_ram_io:inst2|altram:sram|altsyncram:ram_block|altsyncram_kqa1:auto_generated|ram_block1a21" is instantiated as RAM, but it is actually implemented as ROM function because the write logic is always disabled
+Info (119004): Automatically selected device EP4CE6E22C6 for design ev20QUARTUS
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file ev20QUARTUS.vo in folder "C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/simulation/qsim//" for EDA simulation tool
-Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4654 megabytes
-    Info: Processing ended: Sat May 30 20:27:43 2020
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:06
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4641 megabytes
+    Info: Processing ended: Sun May 31 02:20:35 2020
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 Completed successfully. 
 
@@ -91,61 +83,58 @@ Reading C:/intelFPGA/19.1/modelsim_ase/tcl/vsim/pref.tcl
 
 
 # do ev20QUARTUS.do
+
 # ** Warning: (vlib-34) Library already exists at "work".
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:27:44 on May 30,2020
+# Start time: 02:20:39 on May 31,2020
 # vlog -work work ev20QUARTUS.vo 
-# -- Compiling module ev20main
 
+# -- Compiling module fifo_TB
 # 
 # Top level modules:
-# 	ev20main
-# End time: 20:27:45 on May 30,2020, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
+# 	fifo_TB
 
+# End time: 02:20:39 on May 31,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:27:45 on May 30,2020
-# vlog -work work Waveform7.vwf.vt 
+# Start time: 02:20:39 on May 31,2020
+# vlog -work work Waveform8.vwf.vt 
 
-# -- Compiling module ev20main_vlg_vec_tst
+# -- Compiling module fifo_TB_vlg_vec_tst
 # 
 # Top level modules:
-# 	ev20main_vlg_vec_tst
-
-# End time: 20:27:45 on May 30,2020, Elapsed time: 0:00:00
+# 	fifo_TB_vlg_vec_tst
+# End time: 02:20:39 on May 31,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
-# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.ev20main_vlg_vec_tst 
-# Start time: 20:27:45 on May 30,2020
-# Loading work.ev20main_vlg_vec_tst
-# Loading work.ev20main
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.fifo_TB_vlg_vec_tst 
+# Start time: 02:20:41 on May 31,2020
+# Loading work.fifo_TB_vlg_vec_tst
+# Loading work.fifo_TB
 # Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_io_ibuf
 # Loading cycloneive_ver.cycloneive_lcell_comb
 # Loading altera_ver.dffeas
-# Loading cycloneive_ver.cycloneive_ram_block
-# Loading cycloneive_ver.cycloneive_ram_register
-# Loading cycloneive_ver.cycloneive_ram_pulse_generator
 # Loading altera_ver.PRIM_GDFF_LOW
 # after#25
 
-# ** Note: $finish    : Waveform7.vwf.vt(88)
-#    Time: 1 us  Iteration: 0  Instance: /ev20main_vlg_vec_tst
-# End time: 20:27:47 on May 30,2020, Elapsed time: 0:00:02
+# ** Note: $finish    : Waveform8.vwf.vt(50)
+#    Time: 1 us  Iteration: 0  Instance: /fifo_TB_vlg_vec_tst
+# End time: 02:20:42 on May 31,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/Waveform7.vwf...
+Reading C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/Waveform8.vwf...
 
 Reading C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/simulation/qsim/ev20QUARTUS.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/simulation/qsim/ev20QUARTUS_20200530202747.sim.vwf
+Writing the resulting VWF to C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/simulation/qsim/ev20QUARTUS_20200531022042.sim.vwf
 
 Finished VCD to VWF conversion.
 

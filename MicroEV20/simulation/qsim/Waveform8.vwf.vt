@@ -18,202 +18,91 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "05/24/2020 19:23:35"
+// Generated on "05/31/2020 02:20:32"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          ev20main
+// Verilog Test Bench (with test vectors) for design :                          fifo_TB
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module ev20main_vlg_vec_tst();
+module fifo_TB_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg CLK;
-reg [9:0] DAddIN;
-reg [15:0] DATA;
-reg MR_IN;
-reg MW_IN;
+reg clk;
+reg enable_in;
+reg I_in;
+reg pop_in;
 // wires                                               
-wire [15:0] RESULT;
+wire P_out;
 
 // assign statements (if any)                          
-ev20main i1 (
+fifo_TB i1 (
 // port map - connection between master ports and signals/registers   
-	.CLK(CLK),
-	.DAddIN(DAddIN),
-	.DATA(DATA),
-	.MR_IN(MR_IN),
-	.MW_IN(MW_IN),
-	.RESULT(RESULT)
+	.clk(clk),
+	.enable_in(enable_in),
+	.I_in(I_in),
+	.P_out(P_out),
+	.pop_in(pop_in)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
 
-// CLK
+// clk
 always
 begin
-	CLK = 1'b0;
-	CLK = #5000 1'b1;
+	clk = 1'b0;
+	clk = #5000 1'b1;
 	#5000;
 end 
-// DAddIN[ 9 ]
+
+// enable_in
 initial
 begin
-	DAddIN[9] = 1'b0;
-end 
-// DAddIN[ 8 ]
-initial
-begin
-	DAddIN[8] = 1'b0;
-end 
-// DAddIN[ 7 ]
-initial
-begin
-	DAddIN[7] = 1'b0;
-end 
-// DAddIN[ 6 ]
-initial
-begin
-	DAddIN[6] = 1'b0;
-end 
-// DAddIN[ 5 ]
-initial
-begin
-	DAddIN[5] = 1'b0;
-end 
-// DAddIN[ 4 ]
-initial
-begin
-	DAddIN[4] = 1'b0;
-end 
-// DAddIN[ 3 ]
-initial
-begin
-	DAddIN[3] = 1'b0;
-	DAddIN[3] = #90000 1'b1;
-	DAddIN[3] = #40000 1'b0;
-end 
-// DAddIN[ 2 ]
-initial
-begin
-	DAddIN[2] = 1'b0;
-	DAddIN[2] = #90000 1'b1;
-	DAddIN[2] = #40000 1'b0;
-end 
-// DAddIN[ 1 ]
-initial
-begin
-	DAddIN[1] = 1'b0;
-	DAddIN[1] = #90000 1'b1;
-	DAddIN[1] = #40000 1'b0;
-end 
-// DAddIN[ 0 ]
-initial
-begin
-	DAddIN[0] = 1'b0;
-	DAddIN[0] = #50000 1'b1;
-	DAddIN[0] = #130000 1'b0;
-end 
-// DATA[ 15 ]
-initial
-begin
-	DATA[15] = 1'b0;
-end 
-// DATA[ 14 ]
-initial
-begin
-	DATA[14] = 1'b0;
-end 
-// DATA[ 13 ]
-initial
-begin
-	DATA[13] = 1'b0;
-end 
-// DATA[ 12 ]
-initial
-begin
-	DATA[12] = 1'b0;
-end 
-// DATA[ 11 ]
-initial
-begin
-	DATA[11] = 1'b0;
-end 
-// DATA[ 10 ]
-initial
-begin
-	DATA[10] = 1'b0;
-end 
-// DATA[ 9 ]
-initial
-begin
-	DATA[9] = 1'b0;
-end 
-// DATA[ 8 ]
-initial
-begin
-	DATA[8] = 1'b0;
-end 
-// DATA[ 7 ]
-initial
-begin
-	DATA[7] = 1'b0;
-end 
-// DATA[ 6 ]
-initial
-begin
-	DATA[6] = 1'b0;
-end 
-// DATA[ 5 ]
-initial
-begin
-	DATA[5] = 1'b0;
-end 
-// DATA[ 4 ]
-initial
-begin
-	DATA[4] = 1'b0;
-end 
-// DATA[ 3 ]
-initial
-begin
-	DATA[3] = 1'b0;
-end 
-// DATA[ 2 ]
-initial
-begin
-	DATA[2] = 1'b1;
-	DATA[2] = #90000 1'b0;
-end 
-// DATA[ 1 ]
-initial
-begin
-	DATA[1] = 1'b1;
-	DATA[1] = #90000 1'b0;
-end 
-// DATA[ 0 ]
-initial
-begin
-	DATA[0] = 1'b1;
-	DATA[0] = #90000 1'b0;
+	enable_in = 1'b0;
+	enable_in = #80000 1'b1;
+	enable_in = #10000 1'b0;
+	enable_in = #10000 1'b1;
+	enable_in = #10000 1'b0;
+	enable_in = #20000 1'b1;
+	enable_in = #10000 1'b0;
+	enable_in = #10000 1'b1;
+	enable_in = #20000 1'b0;
+	enable_in = #20000 1'b1;
+	enable_in = #10000 1'b0;
 end 
 
-// MR_IN
+// I_in
 initial
 begin
-	MR_IN = 1'b0;
-	MR_IN = #90000 1'b1;
-	MR_IN = #210000 1'b0;
+	I_in = 1'b0;
+	I_in = #20000 1'b1;
+	I_in = #30000 1'b0;
+	I_in = #10000 1'b1;
+	I_in = #10000 1'b0;
+	I_in = #10000 1'b1;
+	I_in = #10000 1'b0;
+	I_in = #10000 1'b1;
+	I_in = #10000 1'b0;
+	I_in = #50000 1'b1;
+	I_in = #10000 1'b0;
 end 
 
-// MW_IN
+// pop_in
 initial
 begin
-	MW_IN = 1'b1;
-	MW_IN = #90000 1'b0;
+	pop_in = 1'b1;
+	pop_in = #10000 1'b0;
+	pop_in = #20000 1'b1;
+	pop_in = #20000 1'b0;
+	pop_in = #10000 1'b1;
+	pop_in = #10000 1'b0;
+	pop_in = #80000 1'b1;
+	pop_in = #20000 1'b0;
+	pop_in = #20000 1'b1;
+	pop_in = #10000 1'b0;
 end 
 endmodule
 
