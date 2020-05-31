@@ -2,19 +2,10 @@ module prediction_control(input clk,
 							input [13:0] I,
 							input [10:0] PC,
 							output reg enable,
-							output reg [10:0]next);
-
-reg enable;
-reg pop_push;
-reg prediction;
-reg clear;
-reg [10:0] aux_next;
+							output reg [10:0]next);;
 
 initial begin
-	clear = 0;
 	enable = 0;
-	pop_push = 0;
-	prediction = 0;
 end 
 
 always @ (I) begin
@@ -28,6 +19,7 @@ always @ (I) begin
 		end
 	end
 	else begin
+		next <= PC;
 		enable <= 0;
 	end
 end

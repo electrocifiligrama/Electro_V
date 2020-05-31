@@ -1,76 +1,22 @@
-//include "fifo.v"
-
 module eleven_fifo(input clk,
-							input enable,
+							input enable
 							input clear,
 							input select,
+							input pop,
+							input push,
 							input [10:0] I1,
 							input [10:0] I2,
 							output reg [10:0] P);
 
 reg [10:0] curr_selection;
-//fifo fif0(.clk(clk),
-//	.enable(enable),
-//	.clear(clear),
-//	.I(curr_selection[0]),
-//	.P(P[0]));
-//fifo fif1(.clk(clk),
-//	.enable(enable),
-//	.clear(clear),
-//	.I(curr_selection[1]),
-//	.P(P[1]));
-//fifo fif2(.clk(clk),
-//	.enable(enable),
-//	.clear(clear),
-//	.I(curr_selection[2]),
-//	.P(P[2]));
-//fifo fif3(.clk(clk),
-//	.enable(enable),
-//	.clear(clear),
-//	.I(curr_selection[3]),
-//	.P(P[3]));
-//fifo fif4(.clk(clk),
-//	.enable(enable),
-//	.clear(clear),
-//	.I(curr_selection[4]),
-//	.P(P[4]));
-//fifo fif5(.clk(clk),
-//	.enable(enable),
-//	.clear(clear),
-//	.I(curr_selection[5]),
-//	.P(P[5]));
-//fifo fif6(.clk(clk),
-//	.enable(enable),
-//	.clear(clear),
-//	.I(curr_selection[6]),
-//	.P(P[6]));
-//fifo fif7(.clk(clk),
-//	.enable(enable),
-//	.clear(clear),
-//	.I(curr_selection[7]),
-//	.P(P[7]));
-//fifo fif8(.clk(clk),
-//	.enable(enable),
-//	.clear(clear),
-//	.I(curr_selection[8]),
-//	.P(P[8]));
-//fifo fif9(.clk(clk),
-//	.enable(enable),
-//	.clear(clear),
-//	.I(I[9]),
-//	.P(P[9]));
-//fifo fif10(.clk(clk),
-//	.enable(enable),
-//	.clear(clear),
-//	.I(curr_selection[10]),
-//	.P(P[10]));
 
 integer i;
 initial begin
 	for (i = 0; i <= 10; i = i + 1) begin
       fifo(.clk(clk),
-				.enable(enable),
 				.clear(clear),
+				.push(push),
+				.pop(pop),
 				.I(curr_selection[i]),
 				.P(P[i]));
 	end
@@ -86,7 +32,7 @@ always@(*) begin
 		end
 	end
 	else begin
-		curr_selection = I1;			//push PC to fifo1 in posedge of clk
+		curr_selection = I1;			
 	end 
 end
 endmodule

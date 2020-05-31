@@ -1,0 +1,13 @@
+module prediction_checker(input [] I,
+									input [] P,
+									input last_pred,
+									input pred_type,
+									output reg incorrect_pred,
+									output reg pop);
+
+always@(I) begin
+
+end
+
+
+endmodule
