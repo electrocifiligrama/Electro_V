@@ -1,5 +1,5 @@
 Flow report for ev20QUARTUS
-Sat May 30 22:19:27 2020
+Sun May 31 13:28:17 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,18 +40,18 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat May 30 22:19:26 2020       ;
+; Flow Status                        ; Successful - Sun May 31 13:28:17 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ev20QUARTUS                                 ;
-; Top-level Entity Name              ; ev20main                                    ;
+; Top-level Entity Name              ; fifo_TB                                     ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 2,567                                       ;
-;     Total combinational functions  ; 1,194                                       ;
-;     Dedicated logic registers      ; 1,556                                       ;
-; Total registers                    ; 1556                                        ;
-; Total pins                         ; 180                                         ;
+; Total logic elements               ; 59                                          ;
+;     Total combinational functions  ; 57                                          ;
+;     Dedicated logic registers      ; 42                                          ;
+; Total registers                    ; 42                                          ;
+; Total pins                         ; 7                                           ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 65,664                                      ;
+; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
 ; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
@@ -62,7 +62,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/30/2020 22:17:58 ;
+; Start date & time ; 05/31/2020 13:27:49 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ev20QUARTUS         ;
 +-------------------+---------------------+
@@ -73,14 +73,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 277375809421349.159088787706716        ; --            ; --          ; --         ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; ev20main    ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; ev20main    ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; ev20main    ; Top        ;
+; COMPILER_SIGNATURE_ID               ; 136865864712007.159094246826260        ; --            ; --          ; --         ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; fifo_TB     ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; fifo_TB     ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; fifo_TB     ; Top        ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --         ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --         ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --         ;
-; TOP_LEVEL_ENTITY                    ; ev20main                               ; ev20QUARTUS   ; --          ; --         ;
+; TOP_LEVEL_ENTITY                    ; fifo_TB                                ; ev20QUARTUS   ; --          ; --         ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 
 
@@ -89,8 +89,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:01:25     ; 1.0                     ; 4801 MB             ; 00:01:31                           ;
-; Total                ; 00:01:25     ; --                      ; --                  ; 00:01:31                           ;
+; Analysis & Synthesis ; 00:00:29     ; 1.0                     ; 4719 MB             ; 00:00:50                           ;
+; Total                ; 00:00:29     ; --                      ; --                  ; 00:00:50                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -99,7 +99,7 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; LAPTOP-7J40QSID  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; Lenovo-PC        ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

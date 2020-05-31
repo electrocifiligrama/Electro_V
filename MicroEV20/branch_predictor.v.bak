@@ -1,0 +1,9 @@
+module branch_predictor(input I[1:0],
+								input predict,
+								output reg prediction);
+
+always@() begin
+
+end
+
+endmodule
