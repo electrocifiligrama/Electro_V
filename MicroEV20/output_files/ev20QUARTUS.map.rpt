@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ev20QUARTUS
-Sat May 30 20:26:36 2020
+Sat May 30 22:19:26 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -294,7 +294,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat May 30 20:26:36 2020       ;
+; Analysis & Synthesis Status        ; Successful - Sat May 30 22:19:26 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ev20QUARTUS                                 ;
 ; Top-level Entity Name              ; ev20main                                    ;
@@ -401,93 +401,91 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 2           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processor 3            ;   0.0%      ;
-;     Processor 4            ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
-+----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                    ; Library ;
-+----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------------------+---------+
-; SubRoutineControlUnit.bdf        ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/SubRoutineControlUnit.bdf ;         ;
-; MIRUnit2.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/MIRUnit2.bdf              ;         ;
-; SynchUnit.bdf                    ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/SynchUnit.bdf             ;         ;
-; SynchRegister.bdf                ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/SynchRegister.bdf         ;         ;
-; DelayInicial.v                   ; yes             ; User Verilog HDL File                    ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/DelayInicial.v            ;         ;
-; MIR.bdf                          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/MIR.bdf                   ;         ;
-; UC2.bdf                          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/UC2.bdf                   ;         ;
-; UC1.bdf                          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/UC1.bdf                   ;         ;
-; ev20main.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/ev20main.bdf              ;         ;
-; ev20jumpControl.bdf              ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/ev20jumpControl.bdf       ;         ;
-; alu.v                            ; yes             ; User Verilog HDL File                    ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v                     ;         ;
-; shifter.v                        ; yes             ; User Verilog HDL File                    ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/shifter.v                 ;         ;
-; ev20B3BUSA.bdf                   ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/ev20B3BUSA.bdf            ;         ;
-; ev20B3BUSB.bdf                   ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/ev20B3BUSB.bdf            ;         ;
-; ev20BLOQUE3.bdf                  ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/ev20BLOQUE3.bdf           ;         ;
-; ev20registerBank.bdf             ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/ev20registerBank.bdf      ;         ;
-; fetchUnit.bdf                    ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/fetchUnit.bdf             ;         ;
-; operandsUnit.bdf                 ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/operandsUnit.bdf          ;         ;
-; ALUUnit.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/ALUUnit.bdf               ;         ;
-; carryBlock.v                     ; yes             ; User Verilog HDL File                    ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/carryBlock.v              ;         ;
-; PCRegister.v                     ; yes             ; User Verilog HDL File                    ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/PCRegister.v              ;         ;
-; dataUnit.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/dataUnit.bdf              ;         ;
-; lpm_compare.tdf                  ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.tdf          ;         ;
-; comptree.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/comptree.inc             ;         ;
-; altshift.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc             ;         ;
-; aglobal181.inc                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc           ;         ;
-; db/cmpr_3pd.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/cmpr_3pd.tdf           ;         ;
-; busmux.tdf                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf               ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc              ;         ;
-; lpm_mux.tdf                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf              ;         ;
-; muxlut.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/muxlut.inc               ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/bypassff.inc             ;         ;
-; db/mux_crc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_crc.tdf            ;         ;
-; lpm_ff.tdf                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ff.tdf               ;         ;
-; lpm_constant.inc                 ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_constant.inc         ;         ;
-; db/mux_drc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_drc.tdf            ;         ;
-; 74139m.bdf                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/74139m.bdf             ;         ;
-; stack.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/stack.bdf                 ;         ;
-; bi_shift_reg.v                   ; yes             ; Auto-Found Verilog HDL File              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v            ;         ;
-; db/mux_osc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_osc.tdf            ;         ;
-; db/mux_tsc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_tsc.tdf            ;         ;
-; lpm_decode.tdf                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.tdf           ;         ;
-; declut.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/declut.inc               ;         ;
-; lpm_compare.inc                  ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.inc          ;         ;
-; db/decode_epg.tdf                ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/decode_epg.tdf         ;         ;
-; altdpram.tdf                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.tdf             ;         ;
-; memmodes.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/memmodes.inc           ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc           ;         ;
-; a_hdffe.inc                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_hdffe.inc              ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc            ;         ;
-; alt_le_rden_reg.inc              ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/alt_le_rden_reg.inc      ;         ;
-; altsyncram.inc                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.inc           ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf           ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc    ;         ;
-; altrom.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc               ;         ;
-; altram.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc               ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc             ;         ;
-; db/altsyncram_1sp1.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_1sp1.tdf    ;         ;
-; lpm_ram_io.tdf                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ram_io.tdf           ;         ;
-; altram.tdf                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.tdf               ;         ;
-; db/altsyncram_kqa1.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_kqa1.tdf    ;         ;
-; instructiondata.mif              ; yes             ; Auto-Found Memory Initialization File    ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/instructiondata.mif       ;         ;
-; db/mux_ssc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_ssc.tdf            ;         ;
-; lpm_rom.tdf                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_rom.tdf              ;         ;
-; altrom.tdf                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.tdf               ;         ;
-; db/altsyncram_8301.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_8301.tdf    ;         ;
-; mirom.mif                        ; yes             ; Auto-Found Memory Initialization File    ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/mirom.mif                 ;         ;
-+----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                       ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                       ; Library ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------+---------+
+; SubRoutineControlUnit.bdf        ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/SubRoutineControlUnit.bdf ;         ;
+; MIRUnit2.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/MIRUnit2.bdf              ;         ;
+; SynchUnit.bdf                    ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/SynchUnit.bdf             ;         ;
+; SynchRegister.bdf                ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/SynchRegister.bdf         ;         ;
+; DelayInicial.v                   ; yes             ; User Verilog HDL File                    ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/DelayInicial.v            ;         ;
+; MIR.bdf                          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/MIR.bdf                   ;         ;
+; UC2.bdf                          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/UC2.bdf                   ;         ;
+; UC1.bdf                          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/UC1.bdf                   ;         ;
+; ev20main.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/ev20main.bdf              ;         ;
+; ev20jumpControl.bdf              ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/ev20jumpControl.bdf       ;         ;
+; alu.v                            ; yes             ; User Verilog HDL File                    ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/alu.v                     ;         ;
+; shifter.v                        ; yes             ; User Verilog HDL File                    ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/shifter.v                 ;         ;
+; ev20B3BUSA.bdf                   ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/ev20B3BUSA.bdf            ;         ;
+; ev20B3BUSB.bdf                   ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/ev20B3BUSB.bdf            ;         ;
+; ev20BLOQUE3.bdf                  ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/ev20BLOQUE3.bdf           ;         ;
+; ev20registerBank.bdf             ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/ev20registerBank.bdf      ;         ;
+; fetchUnit.bdf                    ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/fetchUnit.bdf             ;         ;
+; operandsUnit.bdf                 ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/operandsUnit.bdf          ;         ;
+; ALUUnit.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/ALUUnit.bdf               ;         ;
+; carryBlock.v                     ; yes             ; User Verilog HDL File                    ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/carryBlock.v              ;         ;
+; PCRegister.v                     ; yes             ; User Verilog HDL File                    ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/PCRegister.v              ;         ;
+; dataUnit.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/dataUnit.bdf              ;         ;
+; lpm_compare.tdf                  ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.tdf             ;         ;
+; comptree.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/comptree.inc                ;         ;
+; altshift.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc                ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc              ;         ;
+; db/cmpr_3pd.tdf                  ; yes             ; Auto-Generated Megafunction              ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/cmpr_3pd.tdf           ;         ;
+; busmux.tdf                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf                  ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                 ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf                 ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/muxlut.inc                  ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/bypassff.inc                ;         ;
+; db/mux_crc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/mux_crc.tdf            ;         ;
+; lpm_ff.tdf                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ff.tdf                  ;         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_constant.inc            ;         ;
+; db/mux_drc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/mux_drc.tdf            ;         ;
+; 74139m.bdf                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/74139m.bdf                ;         ;
+; stack.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/stack.bdf                 ;         ;
+; bi_shift_reg.v                   ; yes             ; Auto-Found Verilog HDL File              ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v            ;         ;
+; db/mux_osc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/mux_osc.tdf            ;         ;
+; db/mux_tsc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/mux_tsc.tdf            ;         ;
+; lpm_decode.tdf                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.tdf              ;         ;
+; declut.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/declut.inc                  ;         ;
+; lpm_compare.inc                  ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.inc             ;         ;
+; db/decode_epg.tdf                ; yes             ; Auto-Generated Megafunction              ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/decode_epg.tdf         ;         ;
+; altdpram.tdf                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.tdf                ;         ;
+; memmodes.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/memmodes.inc              ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc              ;         ;
+; a_hdffe.inc                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_hdffe.inc                 ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc               ;         ;
+; alt_le_rden_reg.inc              ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/alt_le_rden_reg.inc         ;         ;
+; altsyncram.inc                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.inc              ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf              ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc       ;         ;
+; altrom.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                  ;         ;
+; altram.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                  ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                ;         ;
+; db/altsyncram_1sp1.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/altsyncram_1sp1.tdf    ;         ;
+; lpm_ram_io.tdf                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ram_io.tdf              ;         ;
+; altram.tdf                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.tdf                  ;         ;
+; db/altsyncram_kqa1.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/altsyncram_kqa1.tdf    ;         ;
+; instructionData.mif              ; yes             ; Auto-Found Memory Initialization File    ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/instructionData.mif       ;         ;
+; db/mux_ssc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/mux_ssc.tdf            ;         ;
+; lpm_rom.tdf                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_rom.tdf                 ;         ;
+; altrom.tdf                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.tdf                  ;         ;
+; db/altsyncram_8301.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/altsyncram_8301.tdf    ;         ;
+; mirom.mif                        ; yes             ; Auto-Found Memory Initialization File    ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/mirom.mif                 ;         ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -4837,7 +4835,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:09     ;
 +----------------+--------------+
 
 
@@ -4847,10 +4845,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat May 30 20:25:53 2020
+    Info: Processing started: Sat May 30 22:17:56 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ev20QUARTUS -c ev20QUARTUS
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file subroutinecontrolunit.bdf
     Info (12023): Found entity 1: SubRoutineControlUnit
 Info (12021): Found 1 design units, including 1 entities, in source file mirunit2.bdf
@@ -4860,7 +4858,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file synchun
 Info (12021): Found 1 design units, including 1 entities, in source file synchregister.bdf
     Info (12023): Found entity 1: SynchRegister
 Info (12021): Found 1 design units, including 1 entities, in source file delayinicial.v
-    Info (12023): Found entity 1: DelayInicial File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/DelayInicial.v Line: 1
+    Info (12023): Found entity 1: DelayInicial File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/DelayInicial.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mir.bdf
     Info (12023): Found entity 1: MIR
 Info (12021): Found 1 design units, including 1 entities, in source file uc2.bdf
@@ -4872,9 +4870,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file ev20mai
 Info (12021): Found 1 design units, including 1 entities, in source file ev20jumpcontrol.bdf
     Info (12023): Found entity 1: ev20jumpControl
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: ALU File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 1
+    Info (12023): Found entity 1: ALU File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/alu.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file shifter.v
-    Info (12023): Found entity 1: shifter File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/shifter.v Line: 1
+    Info (12023): Found entity 1: shifter File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/shifter.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ev20b3busa.bdf
     Info (12023): Found entity 1: ev20B3BUSA
 Info (12021): Found 1 design units, including 1 entities, in source file ev20b3busb.bdf
@@ -4890,9 +4888,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file operand
 Info (12021): Found 1 design units, including 1 entities, in source file aluunit.bdf
     Info (12023): Found entity 1: ALUUnit
 Info (12021): Found 1 design units, including 1 entities, in source file carryblock.v
-    Info (12023): Found entity 1: carryBlock File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/carryBlock.v Line: 1
+    Info (12023): Found entity 1: carryBlock File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/carryBlock.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pcregister.v
-    Info (12023): Found entity 1: PCRegister File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/PCRegister.v Line: 1
+    Info (12023): Found entity 1: PCRegister File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/PCRegister.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mirunit.bdf
     Info (12023): Found entity 1: MIRUnit
 Info (12021): Found 1 design units, including 1 entities, in source file dataunit.bdf
@@ -4909,7 +4907,7 @@ Info (12130): Elaborated megafunction instantiation "MIRUnit2:inst1|UC2:inst-uc2
 Info (12133): Instantiated megafunction "MIRUnit2:inst1|UC2:inst-uc2|LPM_COMPARE:Paul" with the following parameter:
     Info (12134): Parameter "LPM_WIDTH" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_3pd.tdf
-    Info (12023): Found entity 1: cmpr_3pd File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/cmpr_3pd.tdf Line: 22
+    Info (12023): Found entity 1: cmpr_3pd File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/cmpr_3pd.tdf Line: 22
 Info (12128): Elaborating entity "cmpr_3pd" for hierarchy "MIRUnit2:inst1|UC2:inst-uc2|LPM_COMPARE:Paul|cmpr_3pd:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.tdf Line: 280
 Info (12128): Elaborating entity "UC1" for hierarchy "MIRUnit2:inst1|UC1:Control1"
 Info (12128): Elaborating entity "BUSMUX" for hierarchy "MIRUnit2:inst1|UC1:Control1|BUSMUX:inst2"
@@ -4919,7 +4917,7 @@ Info (12133): Instantiated megafunction "MIRUnit2:inst1|UC1:Control1|BUSMUX:inst
 Info (12128): Elaborating entity "lpm_mux" for hierarchy "MIRUnit2:inst1|UC1:Control1|BUSMUX:inst2|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12131): Elaborated megafunction instantiation "MIRUnit2:inst1|UC1:Control1|BUSMUX:inst2|lpm_mux:$00000", which is child of megafunction instantiation "MIRUnit2:inst1|UC1:Control1|BUSMUX:inst2" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_crc.tdf
-    Info (12023): Found entity 1: mux_crc File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_crc.tdf Line: 22
+    Info (12023): Found entity 1: mux_crc File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/mux_crc.tdf Line: 22
 Info (12128): Elaborating entity "mux_crc" for hierarchy "MIRUnit2:inst1|UC1:Control1|BUSMUX:inst2|lpm_mux:$00000|mux_crc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "MIRUnit2:inst1|UC1:Control1|LPM_FF:inst"
 Info (12130): Elaborated megafunction instantiation "MIRUnit2:inst1|UC1:Control1|LPM_FF:inst"
@@ -4932,7 +4930,7 @@ Info (12133): Instantiated megafunction "MIRUnit2:inst1|UC1:Control1|BUSMUX:inst
 Info (12128): Elaborating entity "lpm_mux" for hierarchy "MIRUnit2:inst1|UC1:Control1|BUSMUX:inst9|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12131): Elaborated megafunction instantiation "MIRUnit2:inst1|UC1:Control1|BUSMUX:inst9|lpm_mux:$00000", which is child of megafunction instantiation "MIRUnit2:inst1|UC1:Control1|BUSMUX:inst9" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_drc.tdf
-    Info (12023): Found entity 1: mux_drc File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_drc.tdf Line: 22
+    Info (12023): Found entity 1: mux_drc File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/mux_drc.tdf Line: 22
 Info (12128): Elaborating entity "mux_drc" for hierarchy "MIRUnit2:inst1|UC1:Control1|BUSMUX:inst9|lpm_mux:$00000|mux_drc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
 Info (12128): Elaborating entity "MIR" for hierarchy "MIRUnit2:inst1|MIR:MIR3"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "MIRUnit2:inst1|MIR:MIR3|LPM_FF:Ezu6"
@@ -4989,10 +4987,10 @@ Warning (12125): Using design file stack.bdf, which is not specified as a design
     Info (12023): Found entity 1: stack
 Info (12128): Elaborating entity "stack" for hierarchy "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst"
 Warning (12125): Using design file bi_shift_reg.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: bi_shift_reg File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 3
+    Info (12023): Found entity 1: bi_shift_reg File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 3
 Info (12128): Elaborating entity "bi_shift_reg" for hierarchy "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21"
-Warning (10240): Verilog HDL Always Construct warning at bi_shift_reg.v(19): inferring latch(es) for variable "fifoOut", which holds its previous value in one or more paths through the always construct File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 19
-Info (10041): Inferred latch for "fifoOut" at bi_shift_reg.v(19) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 19
+Warning (10240): Verilog HDL Always Construct warning at bi_shift_reg.v(19): inferring latch(es) for variable "fifoOut", which holds its previous value in one or more paths through the always construct File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 19
+Info (10041): Inferred latch for "fifoOut" at bi_shift_reg.v(19) File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 19
 Info (12128): Elaborating entity "PCRegister" for hierarchy "fetchUnit:inst|PCRegister:inst1"
 Info (12128): Elaborating entity "BUSMUX" for hierarchy "fetchUnit:inst|BUSMUX:inst7"
 Info (12130): Elaborated megafunction instantiation "fetchUnit:inst|BUSMUX:inst7"
@@ -5001,7 +4999,7 @@ Info (12133): Instantiated megafunction "fetchUnit:inst|BUSMUX:inst7" with the f
 Info (12128): Elaborating entity "lpm_mux" for hierarchy "fetchUnit:inst|BUSMUX:inst7|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12131): Elaborated megafunction instantiation "fetchUnit:inst|BUSMUX:inst7|lpm_mux:$00000", which is child of megafunction instantiation "fetchUnit:inst|BUSMUX:inst7" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_osc.tdf
-    Info (12023): Found entity 1: mux_osc File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_osc.tdf Line: 22
+    Info (12023): Found entity 1: mux_osc File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/mux_osc.tdf Line: 22
 Info (12128): Elaborating entity "mux_osc" for hierarchy "fetchUnit:inst|BUSMUX:inst7|lpm_mux:$00000|mux_osc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
 Info (12128): Elaborating entity "ALUUnit" for hierarchy "ALUUnit:inst13"
 Info (12128): Elaborating entity "carryBlock" for hierarchy "ALUUnit:inst13|carryBlock:inst"
@@ -5015,7 +5013,7 @@ Info (12133): Instantiated megafunction "operandsUnit:inst10|BUSMUX:inst8" with 
 Info (12128): Elaborating entity "lpm_mux" for hierarchy "operandsUnit:inst10|BUSMUX:inst8|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12131): Elaborated megafunction instantiation "operandsUnit:inst10|BUSMUX:inst8|lpm_mux:$00000", which is child of megafunction instantiation "operandsUnit:inst10|BUSMUX:inst8" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_tsc.tdf
-    Info (12023): Found entity 1: mux_tsc File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_tsc.tdf Line: 22
+    Info (12023): Found entity 1: mux_tsc File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/mux_tsc.tdf Line: 22
 Info (12128): Elaborating entity "mux_tsc" for hierarchy "operandsUnit:inst10|BUSMUX:inst8|lpm_mux:$00000|mux_tsc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
 Info (12128): Elaborating entity "ev20registerBank" for hierarchy "ev20registerBank:inst14"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "ev20registerBank:inst14|LPM_FF:inst35"
@@ -5029,7 +5027,7 @@ Info (12133): Instantiated megafunction "ev20registerBank:inst14|LPM_DECODE:inst
     Info (12134): Parameter "LPM_PIPELINE" = "0"
     Info (12134): Parameter "LPM_WIDTH" = "6"
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_epg.tdf
-    Info (12023): Found entity 1: decode_epg File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/decode_epg.tdf Line: 22
+    Info (12023): Found entity 1: decode_epg File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/decode_epg.tdf Line: 22
 Info (12128): Elaborating entity "decode_epg" for hierarchy "ev20registerBank:inst14|LPM_DECODE:instRB|decode_epg:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.tdf Line: 76
 Info (12128): Elaborating entity "ev20BLOQUE3" for hierarchy "ev20registerBank:inst14|ev20BLOQUE3:inst"
 Info (12128): Elaborating entity "ev20B3BUSA" for hierarchy "ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSA:inst"
@@ -5060,7 +5058,7 @@ Info (12133): Instantiated megafunction "dataUnit:inst3|ALTDPRAM:inst1" with the
 Info (12128): Elaborating entity "altsyncram" for hierarchy "dataUnit:inst3|ALTDPRAM:inst1|altsyncram:ram_block" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.tdf Line: 206
 Info (12131): Elaborated megafunction instantiation "dataUnit:inst3|ALTDPRAM:inst1|altsyncram:ram_block", which is child of megafunction instantiation "dataUnit:inst3|ALTDPRAM:inst1" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.tdf Line: 206
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_1sp1.tdf
-    Info (12023): Found entity 1: altsyncram_1sp1 File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_1sp1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_1sp1 File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/altsyncram_1sp1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_1sp1" for hierarchy "dataUnit:inst3|ALTDPRAM:inst1|altsyncram:ram_block|altsyncram_1sp1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12128): Elaborating entity "LPM_RAM_IO" for hierarchy "LPM_RAM_IO:inst2"
 Info (12130): Elaborated megafunction instantiation "LPM_RAM_IO:inst2"
@@ -5077,8 +5075,9 @@ Info (12131): Elaborated megafunction instantiation "LPM_RAM_IO:inst2|altram:sra
 Info (12128): Elaborating entity "altsyncram" for hierarchy "LPM_RAM_IO:inst2|altram:sram|altsyncram:ram_block" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.tdf Line: 102
 Info (12131): Elaborated megafunction instantiation "LPM_RAM_IO:inst2|altram:sram|altsyncram:ram_block", which is child of megafunction instantiation "LPM_RAM_IO:inst2" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.tdf Line: 102
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_kqa1.tdf
-    Info (12023): Found entity 1: altsyncram_kqa1 File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_kqa1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_kqa1 File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/altsyncram_kqa1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_kqa1" for hierarchy "LPM_RAM_IO:inst2|altram:sram|altsyncram:ram_block|altsyncram_kqa1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Critical Warning (127005): Memory depth (2048) in the design file differs from memory depth (13) in the Memory Initialization File "C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/instructionData.mif" -- setting initial value for remaining addresses to 0
 Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:inst8"
 Info (12130): Elaborated megafunction instantiation "BUSMUX:inst8"
 Info (12133): Instantiated megafunction "BUSMUX:inst8" with the following parameter:
@@ -5086,10 +5085,10 @@ Info (12133): Instantiated megafunction "BUSMUX:inst8" with the following parame
 Info (12128): Elaborating entity "lpm_mux" for hierarchy "BUSMUX:inst8|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12131): Elaborated megafunction instantiation "BUSMUX:inst8|lpm_mux:$00000", which is child of megafunction instantiation "BUSMUX:inst8" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_ssc.tdf
-    Info (12023): Found entity 1: mux_ssc File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_ssc.tdf Line: 22
+    Info (12023): Found entity 1: mux_ssc File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/mux_ssc.tdf Line: 22
 Info (12128): Elaborating entity "mux_ssc" for hierarchy "BUSMUX:inst8|lpm_mux:$00000|mux_ssc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
 Info (12128): Elaborating entity "DelayInicial" for hierarchy "DelayInicial:inst6"
-Warning (10230): Verilog HDL assignment warning at DelayInicial.v(11): truncated value with size 32 to match size of target (2) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/DelayInicial.v Line: 11
+Warning (10230): Verilog HDL assignment warning at DelayInicial.v(11): truncated value with size 32 to match size of target (2) File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/DelayInicial.v Line: 11
 Info (12128): Elaborating entity "LPM_ROM" for hierarchy "LPM_ROM:MicroInstructionsROM"
 Info (12130): Elaborated megafunction instantiation "LPM_ROM:MicroInstructionsROM"
 Info (12133): Instantiated megafunction "LPM_ROM:MicroInstructionsROM" with the following parameter:
@@ -5103,7 +5102,7 @@ Info (12131): Elaborated megafunction instantiation "LPM_ROM:MicroInstructionsRO
 Info (12128): Elaborating entity "altsyncram" for hierarchy "LPM_ROM:MicroInstructionsROM|altrom:srom|altsyncram:rom_block" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.tdf Line: 88
 Info (12131): Elaborated megafunction instantiation "LPM_ROM:MicroInstructionsROM|altrom:srom|altsyncram:rom_block", which is child of megafunction instantiation "LPM_ROM:MicroInstructionsROM" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.tdf Line: 88
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_8301.tdf
-    Info (12023): Found entity 1: altsyncram_8301 File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/altsyncram_8301.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_8301 File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/altsyncram_8301.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_8301" for hierarchy "LPM_ROM:MicroInstructionsROM|altrom:srom|altsyncram:rom_block|altsyncram_8301:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13049): Converted tri-state buffer "lpm_rom:MicroInstructionsROM|otri[32]" feeding internal logic into a wire File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_rom.tdf Line: 67
@@ -5186,50 +5185,50 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13047): Converted the fan-out from the tri-state buffer "lpm_ram_io:inst2|datatri[1]" to the node "fetchUnit:inst|lpm_ff:InstructionRegister1|dffs[1]" into an OR gate File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ram_io.tdf Line: 119
     Warning (13047): Converted the fan-out from the tri-state buffer "lpm_ram_io:inst2|datatri[0]" to the node "fetchUnit:inst|lpm_ff:InstructionRegister1|dffs[0]" into an OR gate File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ram_io.tdf Line: 119
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out3~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out3~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out3~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out3~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out3~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out3~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out3~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out3~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out3~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out3~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out3~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out2~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out2~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out2~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out2~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out2~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out2~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out2~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out2~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out2~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out2~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out2~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out1~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out1~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out1~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out1~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out1~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out1~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out1~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out1~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out1~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out1~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out1~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out0~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out0~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out0~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out0~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out0~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out0~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out0~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out0~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out0~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out0~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
-    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out0~1" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out3~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out3~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out3~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out3~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out3~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out3~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out3~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out3~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out3~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out3~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out3" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out3~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out3~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 6
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out2~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out2~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out2~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out2~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out2~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out2~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out2~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out2~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out2~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out2~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out2" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out2~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out2~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 7
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out1~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out1~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out1~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out1~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out1~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out1~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out1~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out1~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out1~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out1~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out1" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out1~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out1~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 8
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst40|out0~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst39|out0~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst38|out0~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst37|out0~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst36|out0~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst35|out0~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst34|out0~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst33|out0~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst31|out0~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst32|out0~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
+    Warning (13310): Register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out0" is converted into an equivalent circuit using register "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out0~_emulated" and latch "fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst21|out0~1" File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/bi_shift_reg.v Line: 9
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "INST_A_view[4]" is stuck at GND
     Warning (13410): Pin "INST_A_view[3]" is stuck at GND
@@ -5244,10 +5243,10 @@ Info (21057): Implemented 2882 device resources after synthesis - the final reso
     Info (21059): Implemented 179 output pins
     Info (21061): Implemented 2631 logic cells
     Info (21064): Implemented 71 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 139 warnings
-    Info: Peak virtual memory: 4832 megabytes
-    Info: Processing ended: Sat May 30 20:26:36 2020
-    Info: Elapsed time: 00:00:43
-    Info: Total CPU time (on all processors): 00:01:10
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 140 warnings
+    Info: Peak virtual memory: 4810 megabytes
+    Info: Processing ended: Sat May 30 22:19:27 2020
+    Info: Elapsed time: 00:01:31
+    Info: Total CPU time (on all processors): 00:01:33
 
 
