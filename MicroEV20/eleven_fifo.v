@@ -1,5 +1,5 @@
-module eleven_fifo(input clk,
-							input enable
+module eleven_fifo(	input clk,
+							input enable,
 							input clear,
 							input select,
 							input pop,
