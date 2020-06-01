@@ -1,5 +1,5 @@
 module prediction_checker(input [6:0] T,
-									input [] P,
+									input [10:0] P,
 									input [15:0] W,
 									input[1:0] pred_type,
 									input CY,
@@ -12,9 +12,9 @@ always@(T or W) begin
 	incorrect_pred = 0;
 	correct_pred = last_pred;
 	
-	if(T == 7b'1000001) begin
-		if(pred_type == 2b'01) begin		//JZE 	
-			if(W == 15'000000000000000) begin 	//should have taken the branch
+	if(T == 7'b1000001) begin
+		if(pred_type == 2'b01) begin		//JZE 	
+			if(W == 15'b0) begin 	//should have taken the branch
 				if (!last_pred) begin	//mistakes were made
 					incorrect_pred <= 1;
 					correct_pred <= 1;
@@ -42,7 +42,7 @@ always@(T or W) begin
 			end
 		end
 	end
-	else if(T == 7b'1010000) begin		//JCY
+	else if(T == 7'b1010000) begin		//JCY
 		if(CY) begin				//Should have taken the branch
 			if(!last_pred) begin
 				incorrect_pred <= 1;

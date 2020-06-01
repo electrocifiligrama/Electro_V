@@ -2,7 +2,7 @@ module prediction_control(input clk,
 							input [13:0] I,
 							input [10:0] PC,
 							output reg enable,
-							output reg [10:0]next);;
+							output reg [10:0]next);
 
 initial begin
 	enable = 0;
