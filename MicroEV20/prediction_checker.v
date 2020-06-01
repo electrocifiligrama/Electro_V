@@ -22,14 +22,14 @@ OUTPUT:
 		1) incorrect_pred: 1 if the prediction was incorrect. 0 Otherwise.
 		2) correct_pred: 1 if the prediction should have been "take the branch". 0 otherwise.
 		3) checked: 1 if the current instruction on the execute step of the pipeline
-						involved previous prediction. 
+						involved previous prediction when fetched. 
 						0 Otherwise.
 		
 TIME ANALYSIS (for input and for output):
 
 		1) Continuous: 
 */		
-always@(T or W) begin
+always@(T or W or last_pred) begin
 	incorrect_pred = 0;
 	correct_pred = last_pred;
 	

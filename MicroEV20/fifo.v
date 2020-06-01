@@ -20,11 +20,14 @@ INPUT:
 		5) I: value of the fifo input, to be pushed to the fifo when a push operation is performed.
 
 OUTPUT:
-		1) P: value of the fifo output, to be popped from the fifo when a pop operation is performed.
+		1) P: After performing a pop operation: value of the popped element.
+				After posedge (no pop operation performed): value of first element of the fifo.
+				When fifo is empty: 0
+				
 								
 TIME ANALYSIS (for input and for output):
 
-		2) posedge: all inputs are taken into account, and outputs updated.
+		1) posedge: all inputs are taken into account, and outputs updated.
 						pop operations are performed before making a push to the fifo. 
 */		
 integer index = 3;
@@ -63,6 +66,9 @@ always@(posedge clk) begin
 		index = index - 1;	
 	end
 
+	if(!pop) begin
+		P = queue[3]; 
+	end
 end
 
 
