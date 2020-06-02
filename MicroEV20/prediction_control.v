@@ -41,8 +41,8 @@ initial begin
 end 
 
 always @ (I) begin
-	if(I[13] == 1) begin
-		if(I[13:11] == 3'b100) begin  //unconditional jump
+	if(I[21] == 1) begin
+		if(I[21:19] == 3'b100) begin  //unconditional jump
 			next <= I[10:0];
 			enable <= 0;
 		end

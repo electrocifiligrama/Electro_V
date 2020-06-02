@@ -29,7 +29,7 @@ TIME ANALYSIS (for input and for output):
 
 		1) Continuous: 
 */		
-always@(T or W or last_pred) begin
+always@(T or W or last_pred or pred_type) begin
 	incorrect_pred = 0;
 	correct_pred = last_pred;
 	

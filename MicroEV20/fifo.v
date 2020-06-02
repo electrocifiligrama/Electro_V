@@ -45,7 +45,6 @@ always@(posedge clk) begin
 
 	// pop first, before clearing
 	if (pop) begin 
-		P = queue[3];
 		queue[3] = queue[2];
 		queue[2] = queue[1];
 		queue[1] = queue[0];
@@ -62,13 +61,10 @@ always@(posedge clk) begin
 		index = 3;
 	end
 	else if(push) begin
-		queue[index] <= I;
+		queue[index] = I;
 		index = index - 1;	
 	end
-
-	if(!pop) begin
-		P = queue[3]; 
-	end
+	P = queue[3]; 
 end
 
 

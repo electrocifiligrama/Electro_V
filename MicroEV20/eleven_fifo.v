@@ -6,7 +6,7 @@ module eleven_fifo(	input clk,
 							input push,
 							input [10:0] I1,
 							input [10:0] I2,
-							output reg [10:0] P);
+							output [10:0] P);
 							
 /**************************************
 **************eleven_fifo**************
@@ -37,17 +37,17 @@ TIME ANALYSIS (for input and for output):
 
 reg [10:0] curr_selection;
 
-integer i;
-initial begin
-	for (i = 0; i <= 10; i = i + 1) begin
-      fifo(.clk(clk),
+genvar i;
+generate
+	for (i = 0; i <= 10; i = i + 1) begin : fifo2_block
+      fifo2 f0(.clk(clk),
 				.clear(clear),
 				.push(push),
 				.pop(pop),
 				.I(curr_selection[i]),
 				.P(P[i]));
 	end
-end
+endgenerate
 
 always@(*) begin
 	if(enable) begin
