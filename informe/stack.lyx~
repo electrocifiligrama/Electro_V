@@ -88,7 +88,7 @@ Stack
 \begin_layout Standard
 La base del módulo del stack se basa en un shift register bidireccional.
  La cantidad de niveles requerida define el tamaño del registro, en este
- caso 4, es decir que el MSB equivaldrá a 3.
+ caso, 4, es decir que el MSB equivaldrá a 3.
  
 \end_layout
 
@@ -101,8 +101,12 @@ last in first out
 .
  Los registros se inicializan en cero, cuando se pushea un valor al stack
  se shiftean los bits a la derecha, ingresando el valor por el bit más significa
-tivo (en la figura: MSB); mientras que al realizar la acción de pop, se
- shiftean a la izquierda, siendo la salida también por el bit más significativo.
+tivo 
+\shape italic
+-MSB
+\shape default
+–; mientras que al realizar la acción de pop, se shiftean a la izquierda,
+ siendo la salida también por el bit más significativo.
 \end_layout
 
 \begin_layout Standard
@@ -162,16 +166,16 @@ name "fig:Shift-Register-Bidireccional"
 \begin_layout Standard
 La función del stack es guardar el valor del program counter register (PC),
  que es de 11 bits, por lo que necesitaríamos 11 shift registers para guardar
- cada uno de los bits y a su vez dar soporte para 4 subrutinas anidadas.
+ cada uno de los bits y a su vez soportar 4 subrutinas anidadas.
  El esquema del que se habla se puede ver en la figura 
 \begin_inset Formula $\text{\ref{fig:Sstrucuture}}$
 \end_inset
 
 , donde 
-\begin_inset Formula $n$
+\begin_inset Formula $n=10$
 \end_inset
 
- equivale a 10, para un total de 11 bits.
+, para un total de 11 bits.
  
 \end_layout
 
@@ -219,9 +223,8 @@ name "fig:Sstrucuture"
 
 \begin_layout Standard
 Al momento de implementar el shift register en verilog, se sintetizaba de
- manera diferente a la que se esperaba, resultando en un funcionamiento
- inadecuado, por lo que se decidió cambiar el esquema y dividir las acciones
- de 
+ manera diferente a la que se esperaba que funcionara por lo que se decidió
+ cambiar el esquema y dividir las acciones de 
 \shape italic
 push
 \shape default
@@ -247,7 +250,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagenes/push_pop.PNG
-	scale 70
+	scale 50
 
 \end_inset
 
@@ -279,24 +282,15 @@ name "fig:push_pop"
 \end_layout
 
 \begin_layout Standard
-El bloque de 
-\shape italic
-push
-\shape default
- realiza únicamente un shifteo a la derecha (un push) cuando le llega un
- flanco ascendente de la señal BSR que indica que hubo una instrucción de
- branch; de manera análoga, el bloque de 
-\shape italic
-pop
-\shape default
- realiza un shifteo a la izquierda, para realizar un pop del stack al recibir
- un flanco ascendente de la señal RET que señala una instrucción para volver
- de la subrutina.
+El bloque de push realiza únicamente un shifteo a la derecha (un push) cuando
+ le llega un flanco ascendente de la señal BSR que indica que hubo una instrucci
+ón de branch; de manera análoga, el bloque de pop realiza un shifteo a la
+ izquierda, para realizar un pop al recibir un flanco ascendente de la señal
+ RET que señala una instrucción para volver de la subrutina.
  A la salida se encuentra un mux cuya línea de selección se condice con
- la instrucción de RET, y se realimentan ambos bloques con la salida, de
- manera de tener el registro actualizado.
- Cabe aclarar que la salida de este bloque es sólamente un bit, aquel más
- significativo.
+ la instrucción de RET puesto que se desea tener salida cuando el valor
+ del PC debe ser recuperado, y no cuando se pushea un valor, donde lo único
+ que se busca es mantener el stack con sus valores actuales shifteados.
 \end_layout
 
 \begin_layout Standard
@@ -347,20 +341,9 @@ name "fig:subrutinecontrolunit"
 
 \begin_layout Standard
 Recibe los 7 bits más significativos del opcode para poder discernir si
- se trata de un BSR (
-\shape italic
-branch to subroutine
-\shape default
-) o RET (
-\shape italic
-return to subroutine
-\shape default
-), y además recibe el PC, que es el valor a guardar.
- 
-\end_layout
-
-\begin_layout Standard
-Devuelve ante un pop el valor del PC, y las señales isRET, isBSR se utilizan
+ se trata de un BSR (branch to subroutine) o RET (return to subroutine),
+ y además recibe el PC, que el valor a guardar.
+ Devuelve ante un pop el valor del PC, y las señales isRET, isBSR se utilizan
  de manera externa para actualizar el valor del PC.
 \end_layout
 
