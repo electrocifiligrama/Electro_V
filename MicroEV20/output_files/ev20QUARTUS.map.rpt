@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ev20QUARTUS
-Tue Jun 02 00:55:51 2020
+Thu Jun 04 22:50:37 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -50,15 +50,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jun 02 00:55:51 2020       ;
+; Analysis & Synthesis Status        ; Successful - Thu Jun 04 22:50:37 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ev20QUARTUS                                 ;
 ; Top-level Entity Name              ; prediction_block                            ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 278                                         ;
-;     Total combinational functions  ; 272                                         ;
-;     Dedicated logic registers      ; 106                                         ;
-; Total registers                    ; 106                                         ;
+; Total logic elements               ; 286                                         ;
+;     Total combinational functions  ; 277                                         ;
+;     Dedicated logic registers      ; 111                                         ;
+; Total registers                    ; 111                                         ;
 ; Total pins                         ; 70                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -157,42 +157,44 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                         ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                               ; Library ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------+---------+
-; fifo.v                           ; yes             ; User Verilog HDL File              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/fifo.v               ;         ;
-; eleven_fifo.v                    ; yes             ; User Verilog HDL File              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/eleven_fifo.v        ;         ;
-; branch_predictor.v               ; yes             ; User Verilog HDL File              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/branch_predictor.v   ;         ;
-; prediction_block.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/prediction_block.bdf ;         ;
-; fifo_two_bit.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/fifo_two_bit.bdf     ;         ;
-; prediction_control.v             ; yes             ; User Verilog HDL File              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/prediction_control.v ;         ;
-; prediction_checker.v             ; yes             ; User Verilog HDL File              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/prediction_checker.v ;         ;
-; fifo_popper.v                    ; yes             ; User Verilog HDL File              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/fifo_popper.v        ;         ;
-; fifo2.v                          ; yes             ; User Verilog HDL File              ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/fifo2.v              ;         ;
-; busmux.tdf                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf          ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc         ;         ;
-; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf         ;         ;
-; aglobal181.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc      ;         ;
-; muxlut.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/muxlut.inc          ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/bypassff.inc        ;         ;
-; altshift.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc        ;         ;
-; db/mux_osc.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_osc.tdf       ;         ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                      ; Library ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------+---------+
+; fifo.v                           ; yes             ; User Verilog HDL File              ; C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/fifo.v               ;         ;
+; eleven_fifo.v                    ; yes             ; User Verilog HDL File              ; C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/eleven_fifo.v        ;         ;
+; branch_predictor.v               ; yes             ; User Verilog HDL File              ; C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/branch_predictor.v   ;         ;
+; prediction_block.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_block.bdf ;         ;
+; prediction_control.v             ; yes             ; User Verilog HDL File              ; C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_control.v ;         ;
+; prediction_checker.v             ; yes             ; User Verilog HDL File              ; C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_checker.v ;         ;
+; fifo_popper.v                    ; yes             ; User Verilog HDL File              ; C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/fifo_popper.v        ;         ;
+; fifo2.v                          ; yes             ; User Verilog HDL File              ; C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/fifo2.v              ;         ;
+; jcy_checker.v                    ; yes             ; User Verilog HDL File              ; C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/jcy_checker.v        ;         ;
+; jze_checker.v                    ; yes             ; User Verilog HDL File              ; C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/jze_checker.v        ;         ;
+; jne_checker.v                    ; yes             ; User Verilog HDL File              ; C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/jne_checker.v        ;         ;
+; fifo_two_bit.v                   ; yes             ; User Verilog HDL File              ; C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/fifo_two_bit.v       ;         ;
+; busmux.tdf                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf                                 ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                                ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf                                ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                             ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/muxlut.inc                                 ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/bypassff.inc                               ;         ;
+; altshift.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc                               ;         ;
+; db/mux_osc.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/db/mux_osc.tdf       ;         ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -200,20 +202,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 278       ;
+; Estimated Total logic elements              ; 286       ;
 ;                                             ;           ;
-; Total combinational functions               ; 272       ;
+; Total combinational functions               ; 277       ;
 ; Logic element usage by number of LUT inputs ;           ;
 ;     -- 4 input functions                    ; 98        ;
-;     -- 3 input functions                    ; 96        ;
-;     -- <=2 input functions                  ; 78        ;
+;     -- 3 input functions                    ; 98        ;
+;     -- <=2 input functions                  ; 81        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 210       ;
+;     -- normal mode                          ; 215       ;
 ;     -- arithmetic mode                      ; 62        ;
 ;                                             ;           ;
-; Total registers                             ; 106       ;
-;     -- Dedicated logic registers            ; 106       ;
+; Total registers                             ; 111       ;
+;     -- Dedicated logic registers            ; 111       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 70        ;
@@ -221,8 +223,8 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 106       ;
-; Total fan-out                               ; 1211      ;
+; Maximum fan-out                             ; 111       ;
+; Total fan-out                               ; 1236      ;
 ; Average fan-out                             ; 2.34      ;
 +---------------------------------------------+-----------+
 
@@ -232,29 +234,32 @@ refer to the applicable agreement for further details.
 +-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+--------------------+--------------+
 ; Compilation Hierarchy Node        ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                  ; Entity Name        ; Library Name ;
 +-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+--------------------+--------------+
-; |prediction_block                 ; 272 (0)             ; 106 (0)                   ; 0           ; 0            ; 0       ; 0         ; 70   ; 0            ; |prediction_block                                                    ; prediction_block   ; work         ;
+; |prediction_block                 ; 277 (0)             ; 111 (0)                   ; 0           ; 0            ; 0       ; 0         ; 70   ; 0            ; |prediction_block                                                    ; prediction_block   ; work         ;
 ;    |branch_predictor:inst|        ; 6 (6)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|branch_predictor:inst                              ; branch_predictor   ; work         ;
 ;    |busmux:inst9|                 ; 24 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|busmux:inst9                                       ; busmux             ; work         ;
 ;       |lpm_mux:$00000|            ; 24 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|busmux:inst9|lpm_mux:$00000                        ; lpm_mux            ; work         ;
 ;          |mux_osc:auto_generated| ; 24 (24)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|busmux:inst9|lpm_mux:$00000|mux_osc:auto_generated ; mux_osc            ; work         ;
-;    |eleven_fifo:inst2|            ; 135 (1)             ; 87 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|eleven_fifo:inst2                                  ; eleven_fifo        ; work         ;
+;    |eleven_fifo:inst2|            ; 133 (1)             ; 87 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|eleven_fifo:inst2                                  ; eleven_fifo        ; work         ;
 ;       |fifo2:fifo2_block[0].f0|   ; 71 (71)             ; 37 (37)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|eleven_fifo:inst2|fifo2:fifo2_block[0].f0          ; fifo2              ; work         ;
 ;       |fifo2:fifo2_block[10].f0|  ; 6 (6)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|eleven_fifo:inst2|fifo2:fifo2_block[10].f0         ; fifo2              ; work         ;
-;       |fifo2:fifo2_block[1].f0|   ; 8 (8)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|eleven_fifo:inst2|fifo2:fifo2_block[1].f0          ; fifo2              ; work         ;
+;       |fifo2:fifo2_block[1].f0|   ; 6 (6)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|eleven_fifo:inst2|fifo2:fifo2_block[1].f0          ; fifo2              ; work         ;
 ;       |fifo2:fifo2_block[2].f0|   ; 6 (6)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|eleven_fifo:inst2|fifo2:fifo2_block[2].f0          ; fifo2              ; work         ;
-;       |fifo2:fifo2_block[3].f0|   ; 7 (7)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|eleven_fifo:inst2|fifo2:fifo2_block[3].f0          ; fifo2              ; work         ;
-;       |fifo2:fifo2_block[4].f0|   ; 6 (6)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|eleven_fifo:inst2|fifo2:fifo2_block[4].f0          ; fifo2              ; work         ;
+;       |fifo2:fifo2_block[3].f0|   ; 6 (6)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|eleven_fifo:inst2|fifo2:fifo2_block[3].f0          ; fifo2              ; work         ;
+;       |fifo2:fifo2_block[4].f0|   ; 7 (7)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|eleven_fifo:inst2|fifo2:fifo2_block[4].f0          ; fifo2              ; work         ;
 ;       |fifo2:fifo2_block[5].f0|   ; 6 (6)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|eleven_fifo:inst2|fifo2:fifo2_block[5].f0          ; fifo2              ; work         ;
 ;       |fifo2:fifo2_block[6].f0|   ; 6 (6)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|eleven_fifo:inst2|fifo2:fifo2_block[6].f0          ; fifo2              ; work         ;
 ;       |fifo2:fifo2_block[7].f0|   ; 6 (6)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|eleven_fifo:inst2|fifo2:fifo2_block[7].f0          ; fifo2              ; work         ;
 ;       |fifo2:fifo2_block[8].f0|   ; 6 (6)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|eleven_fifo:inst2|fifo2:fifo2_block[8].f0          ; fifo2              ; work         ;
 ;       |fifo2:fifo2_block[9].f0|   ; 6 (6)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|eleven_fifo:inst2|fifo2:fifo2_block[9].f0          ; fifo2              ; work         ;
-;    |fifo:inst11|                  ; 55 (55)             ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|fifo:inst11                                        ; fifo               ; work         ;
+;    |fifo:inst11|                  ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|fifo:inst11                                        ; fifo               ; work         ;
 ;    |fifo_popper:inst3|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|fifo_popper:inst3                                  ; fifo_popper        ; work         ;
-;    |fifo_two_bit:inst1|           ; 11 (0)              ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|fifo_two_bit:inst1                                 ; fifo_two_bit       ; work         ;
-;       |fifo:inst2|                ; 6 (6)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|fifo_two_bit:inst1|fifo:inst2                      ; fifo               ; work         ;
-;       |fifo:inst|                 ; 5 (5)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|fifo_two_bit:inst1|fifo:inst                       ; fifo               ; work         ;
-;    |prediction_checker:inst5|     ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|prediction_checker:inst5                           ; prediction_checker ; work         ;
+;    |fifo_two_bit:inst1|           ; 64 (0)              ; 10 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|fifo_two_bit:inst1                                 ; fifo_two_bit       ; work         ;
+;       |fifo2:fifo2b_block[0].f0|  ; 56 (56)             ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0        ; fifo2              ; work         ;
+;       |fifo2:fifo2b_block[1].f0|  ; 8 (8)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0        ; fifo2              ; work         ;
+;    |prediction_checker:inst5|     ; 21 (12)             ; 3 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|prediction_checker:inst5                           ; prediction_checker ; work         ;
+;       |jcy_checker:jcy|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|prediction_checker:inst5|jcy_checker:jcy           ; jcy_checker        ; work         ;
+;       |jne_checker:jne|           ; 2 (2)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|prediction_checker:inst5|jne_checker:jne           ; jne_checker        ; work         ;
+;       |jze_checker:jze|           ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|prediction_checker:inst5|jze_checker:jze           ; jze_checker        ; work         ;
 ;    |prediction_control:inst4|     ; 24 (24)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |prediction_block|prediction_control:inst4                           ; prediction_control ; work         ;
 +-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+--------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -282,432 +287,434 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                     ;
-+------------------------------------------------------+-----------------------------------------------------------------+
-; Register name                                        ; Reason for Removal                                              ;
-+------------------------------------------------------+-----------------------------------------------------------------+
-; fifo:inst11|queue[3]                                 ; Merged with fifo:inst11|P                                       ;
-; fifo_two_bit:inst1|fifo:inst2|queue[3]               ; Merged with fifo_two_bit:inst1|fifo:inst2|P                     ;
-; fifo_two_bit:inst1|fifo:inst|queue[3]                ; Merged with fifo_two_bit:inst1|fifo:inst|P                      ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[31] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[31] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[31]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[31] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[31]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[31] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[31]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[31] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[31]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[31] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[31]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[31] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[31]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[31] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[31]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[31] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[31]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[31] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[31]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[31] ;
-; fifo:inst11|index[31]                                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[31] ;
-; fifo_two_bit:inst1|fifo:inst2|index[31]              ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[31] ;
-; fifo_two_bit:inst1|fifo:inst|index[31]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[31] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[30] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[30] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[30]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[30] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[30]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[30] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[30]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[30] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[30]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[30] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[30]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[30] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[30]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[30] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[30]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[30] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[30]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[30] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[30]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[30] ;
-; fifo:inst11|index[30]                                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[30] ;
-; fifo_two_bit:inst1|fifo:inst2|index[30]              ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[30] ;
-; fifo_two_bit:inst1|fifo:inst|index[30]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[30] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[29] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[29] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[29]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[29] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[29]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[29] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[29]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[29] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[29]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[29] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[29]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[29] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[29]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[29] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[29]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[29] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[29]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[29] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[29]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[29] ;
-; fifo:inst11|index[29]                                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[29] ;
-; fifo_two_bit:inst1|fifo:inst2|index[29]              ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[29] ;
-; fifo_two_bit:inst1|fifo:inst|index[29]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[29] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[28] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[28] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[28]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[28] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[28]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[28] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[28]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[28] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[28]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[28] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[28]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[28] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[28]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[28] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[28]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[28] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[28]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[28] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[28]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[28] ;
-; fifo:inst11|index[28]                                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[28] ;
-; fifo_two_bit:inst1|fifo:inst2|index[28]              ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[28] ;
-; fifo_two_bit:inst1|fifo:inst|index[28]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[28] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[27] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[27] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[27]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[27] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[27]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[27] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[27]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[27] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[27]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[27] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[27]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[27] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[27]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[27] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[27]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[27] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[27]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[27] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[27]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[27] ;
-; fifo:inst11|index[27]                                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[27] ;
-; fifo_two_bit:inst1|fifo:inst2|index[27]              ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[27] ;
-; fifo_two_bit:inst1|fifo:inst|index[27]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[27] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[26] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[26] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[26]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[26] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[26]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[26] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[26]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[26] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[26]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[26] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[26]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[26] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[26]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[26] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[26]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[26] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[26]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[26] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[26]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[26] ;
-; fifo:inst11|index[26]                                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[26] ;
-; fifo_two_bit:inst1|fifo:inst2|index[26]              ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[26] ;
-; fifo_two_bit:inst1|fifo:inst|index[26]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[26] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[25] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[25] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[25]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[25] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[25]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[25] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[25]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[25] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[25]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[25] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[25]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[25] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[25]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[25] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[25]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[25] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[25]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[25] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[25]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[25] ;
-; fifo:inst11|index[25]                                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[25] ;
-; fifo_two_bit:inst1|fifo:inst2|index[25]              ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[25] ;
-; fifo_two_bit:inst1|fifo:inst|index[25]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[25] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[24] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[24] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[24]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[24] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[24]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[24] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[24]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[24] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[24]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[24] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[24]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[24] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[24]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[24] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[24]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[24] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[24]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[24] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[24]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[24] ;
-; fifo:inst11|index[24]                                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[24] ;
-; fifo_two_bit:inst1|fifo:inst2|index[24]              ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[24] ;
-; fifo_two_bit:inst1|fifo:inst|index[24]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[24] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[23] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[23] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[23]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[23] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[23]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[23] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[23]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[23] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[23]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[23] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[23]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[23] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[23]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[23] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[23]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[23] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[23]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[23] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[23]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[23] ;
-; fifo:inst11|index[23]                                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[23] ;
-; fifo_two_bit:inst1|fifo:inst2|index[23]              ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[23] ;
-; fifo_two_bit:inst1|fifo:inst|index[23]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[23] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[22] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[22] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[22]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[22] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[22]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[22] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[22]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[22] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[22]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[22] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[22]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[22] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[22]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[22] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[22]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[22] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[22]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[22] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[22]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[22] ;
-; fifo:inst11|index[22]                                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[22] ;
-; fifo_two_bit:inst1|fifo:inst2|index[22]              ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[22] ;
-; fifo_two_bit:inst1|fifo:inst|index[22]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[22] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[21] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[21] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[21]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[21] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[21]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[21] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[21]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[21] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[21]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[21] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[21]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[21] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[21]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[21] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[21]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[21] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[21]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[21] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[21]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[21] ;
-; fifo:inst11|index[21]                                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[21] ;
-; fifo_two_bit:inst1|fifo:inst2|index[21]              ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[21] ;
-; fifo_two_bit:inst1|fifo:inst|index[21]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[21] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[20] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[20] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[20]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[20] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[20]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[20] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[20]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[20] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[20]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[20] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[20]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[20] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[20]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[20] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[20]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[20] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[20]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[20] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[20]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[20] ;
-; fifo:inst11|index[20]                                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[20] ;
-; fifo_two_bit:inst1|fifo:inst2|index[20]              ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[20] ;
-; fifo_two_bit:inst1|fifo:inst|index[20]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[20] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[19] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[19] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[19]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[19] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[19]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[19] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[19]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[19] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[19]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[19] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[19]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[19] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[19]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[19] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[19]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[19] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[19]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[19] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[19]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[19] ;
-; fifo:inst11|index[19]                                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[19] ;
-; fifo_two_bit:inst1|fifo:inst2|index[19]              ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[19] ;
-; fifo_two_bit:inst1|fifo:inst|index[19]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[19] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[18] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[18] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[18]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[18] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[18]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[18] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[18]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[18] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[18]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[18] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[18]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[18] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[18]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[18] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[18]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[18] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[18]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[18] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[18]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[18] ;
-; fifo:inst11|index[18]                                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[18] ;
-; fifo_two_bit:inst1|fifo:inst2|index[18]              ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[18] ;
-; fifo_two_bit:inst1|fifo:inst|index[18]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[18] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[17] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[17] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[17]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[17] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[17]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[17] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[17]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[17] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[17]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[17] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[17]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[17] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[17]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[17] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[17]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[17] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[17]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[17] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[17]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[17] ;
-; fifo:inst11|index[17]                                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[17] ;
-; fifo_two_bit:inst1|fifo:inst2|index[17]              ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[17] ;
-; fifo_two_bit:inst1|fifo:inst|index[17]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[17] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[16] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[16] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[16]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[16] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[16]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[16] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[16]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[16] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[16]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[16] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[16]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[16] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[16]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[16] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[16]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[16] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[16]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[16] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[16]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[16] ;
-; fifo:inst11|index[16]                                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[16] ;
-; fifo_two_bit:inst1|fifo:inst2|index[16]              ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[16] ;
-; fifo_two_bit:inst1|fifo:inst|index[16]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[16] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[15] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[15] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[15]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[15] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[15]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[15] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[15]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[15] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[15]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[15] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[15]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[15] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[15]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[15] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[15]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[15] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[15]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[15] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[15]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[15] ;
-; fifo:inst11|index[15]                                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[15] ;
-; fifo_two_bit:inst1|fifo:inst2|index[15]              ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[15] ;
-; fifo_two_bit:inst1|fifo:inst|index[15]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[15] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[14] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[14] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[14]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[14] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[14]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[14] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[14]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[14] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[14]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[14] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[14]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[14] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[14]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[14] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[14]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[14] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[14]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[14] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[14]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[14] ;
-; fifo:inst11|index[14]                                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[14] ;
-; fifo_two_bit:inst1|fifo:inst2|index[14]              ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[14] ;
-; fifo_two_bit:inst1|fifo:inst|index[14]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[14] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[13] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[13] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[13]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[13] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[13]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[13] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[13]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[13] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[13]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[13] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[13]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[13] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[13]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[13] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[13]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[13] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[13]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[13] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[13]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[13] ;
-; fifo:inst11|index[13]                                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[13] ;
-; fifo_two_bit:inst1|fifo:inst2|index[13]              ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[13] ;
-; fifo_two_bit:inst1|fifo:inst|index[13]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[13] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[12] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[12] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[12]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[12] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[12]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[12] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[12]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[12] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[12]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[12] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[12]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[12] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[12]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[12] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[12]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[12] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[12]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[12] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[12]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[12] ;
-; fifo:inst11|index[12]                                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[12] ;
-; fifo_two_bit:inst1|fifo:inst2|index[12]              ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[12] ;
-; fifo_two_bit:inst1|fifo:inst|index[12]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[12] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[11] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[11] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[11]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[11] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[11]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[11] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[11]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[11] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[11]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[11] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[11]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[11] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[11]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[11] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[11]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[11] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[11]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[11] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[11]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[11] ;
-; fifo:inst11|index[11]                                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[11] ;
-; fifo_two_bit:inst1|fifo:inst2|index[11]              ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[11] ;
-; fifo_two_bit:inst1|fifo:inst|index[11]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[11] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[10] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[10] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[10]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[10] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[10]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[10] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[10]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[10] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[10]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[10] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[10]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[10] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[10]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[10] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[10]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[10] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[10]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[10] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[10]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[10] ;
-; fifo:inst11|index[10]                                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[10] ;
-; fifo_two_bit:inst1|fifo:inst2|index[10]              ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[10] ;
-; fifo_two_bit:inst1|fifo:inst|index[10]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[10] ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[9]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[9]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[9]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[9]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[9]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[9]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[9]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[9]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[9]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[9]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[9]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[9]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[9]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[9]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[9]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[9]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[9]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[9]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[9]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[9]  ;
-; fifo:inst11|index[9]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[9]  ;
-; fifo_two_bit:inst1|fifo:inst2|index[9]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[9]  ;
-; fifo_two_bit:inst1|fifo:inst|index[9]                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[9]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[8]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[8]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[8]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[8]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[8]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[8]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[8]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[8]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[8]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[8]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[8]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[8]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[8]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[8]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[8]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[8]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[8]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[8]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[8]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[8]  ;
-; fifo:inst11|index[8]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[8]  ;
-; fifo_two_bit:inst1|fifo:inst2|index[8]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[8]  ;
-; fifo_two_bit:inst1|fifo:inst|index[8]                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[8]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[7]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[7]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[7]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[7]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[7]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[7]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[7]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[7]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[7]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[7]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[7]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[7]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[7]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[7]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[7]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[7]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[7]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[7]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[7]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[7]  ;
-; fifo:inst11|index[7]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[7]  ;
-; fifo_two_bit:inst1|fifo:inst2|index[7]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[7]  ;
-; fifo_two_bit:inst1|fifo:inst|index[7]                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[7]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[6]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[6]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[6]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[6]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[6]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[6]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[6]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[6]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[6]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[6]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[6]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[6]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[6]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[6]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[6]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[6]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[6]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[6]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[6]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[6]  ;
-; fifo:inst11|index[6]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[6]  ;
-; fifo_two_bit:inst1|fifo:inst2|index[6]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[6]  ;
-; fifo_two_bit:inst1|fifo:inst|index[6]                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[6]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[5]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[5]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[5]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[5]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[5]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[5]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[5]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[5]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[5]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[5]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[5]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[5]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[5]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[5]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[5]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[5]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[5]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[5]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[5]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[5]  ;
-; fifo:inst11|index[5]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[5]  ;
-; fifo_two_bit:inst1|fifo:inst2|index[5]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[5]  ;
-; fifo_two_bit:inst1|fifo:inst|index[5]                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[5]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[4]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[4]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[4]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[4]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[4]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[4]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[4]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[4]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[4]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[4]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[4]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[4]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[4]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[4]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[4]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[4]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[4]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[4]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[4]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[4]  ;
-; fifo:inst11|index[4]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[4]  ;
-; fifo_two_bit:inst1|fifo:inst2|index[4]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[4]  ;
-; fifo_two_bit:inst1|fifo:inst|index[4]                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[4]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[3]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[3]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[3]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[3]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[3]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[3]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[3]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[3]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[3]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[3]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[3]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[3]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[3]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[3]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[3]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[3]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[3]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[3]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[3]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[3]  ;
-; fifo:inst11|index[3]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[3]  ;
-; fifo_two_bit:inst1|fifo:inst2|index[3]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[3]  ;
-; fifo_two_bit:inst1|fifo:inst|index[3]                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[3]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[2]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[2]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[2]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[2]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[2]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[2]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[2]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[2]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[2]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[2]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[2]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[2]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[2]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[2]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[2]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[2]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[2]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[2]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[2]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[2]  ;
-; fifo:inst11|index[2]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[2]  ;
-; fifo_two_bit:inst1|fifo:inst2|index[2]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[2]  ;
-; fifo_two_bit:inst1|fifo:inst|index[2]                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[2]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[1]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[1]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[1]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[1]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[1]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[1]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[1]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[1]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[1]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[1]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[1]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[1]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[1]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[1]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[1]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[1]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[1]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[1]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[1]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[1]  ;
-; fifo:inst11|index[1]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[1]  ;
-; fifo_two_bit:inst1|fifo:inst2|index[1]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[1]  ;
-; fifo_two_bit:inst1|fifo:inst|index[1]                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[1]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[0]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[0]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[0]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[0]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[0]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[0]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[0]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[0]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[0]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[0]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[0]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[0]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[0]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[0]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[0]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[0]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[0]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[0]  ;
-; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[0]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[0]  ;
-; fifo:inst11|index[0]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[0]  ;
-; fifo_two_bit:inst1|fifo:inst2|index[0]               ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[0]  ;
-; fifo_two_bit:inst1|fifo:inst|index[0]                ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[0]  ;
-; Total Number of Removed Registers = 419              ;                                                                 ;
-+------------------------------------------------------+-----------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                        ;
++-------------------------------------------------------+-------------------------------------------------------------------+
+; Register name                                         ; Reason for Removal                                                ;
++-------------------------------------------------------+-------------------------------------------------------------------+
+; prediction_checker:inst5|jcy_checker:jcy|last_pred    ; Merged with prediction_checker:inst5|jne_checker:jne|last_pred    ;
+; prediction_checker:inst5|jze_checker:jze|last_pred    ; Merged with prediction_checker:inst5|jne_checker:jne|last_pred    ;
+; prediction_checker:inst5|jze_checker:jze|pred_type[1] ; Merged with prediction_checker:inst5|jne_checker:jne|pred_type[1] ;
+; prediction_checker:inst5|jze_checker:jze|pred_type[0] ; Merged with prediction_checker:inst5|jne_checker:jne|pred_type[0] ;
+; fifo:inst11|queue[3]                                  ; Merged with fifo:inst11|P                                         ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[31]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[31]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[31]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[31]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[31]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[31]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[31]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[31]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[31]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[31]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[31]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[31]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[31]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[31]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[31]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[31]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[31]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[31]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[31]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[31]   ;
+; fifo:inst11|index[31]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[31]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[31] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[31]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[31] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[31]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[30]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[30]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[30]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[30]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[30]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[30]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[30]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[30]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[30]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[30]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[30]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[30]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[30]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[30]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[30]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[30]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[30]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[30]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[30]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[30]   ;
+; fifo:inst11|index[30]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[30]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[30] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[30]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[30] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[30]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[29]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[29]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[29]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[29]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[29]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[29]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[29]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[29]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[29]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[29]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[29]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[29]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[29]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[29]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[29]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[29]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[29]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[29]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[29]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[29]   ;
+; fifo:inst11|index[29]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[29]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[29] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[29]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[29] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[29]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[28]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[28]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[28]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[28]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[28]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[28]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[28]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[28]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[28]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[28]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[28]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[28]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[28]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[28]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[28]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[28]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[28]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[28]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[28]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[28]   ;
+; fifo:inst11|index[28]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[28]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[28] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[28]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[28] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[28]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[27]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[27]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[27]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[27]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[27]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[27]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[27]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[27]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[27]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[27]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[27]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[27]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[27]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[27]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[27]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[27]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[27]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[27]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[27]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[27]   ;
+; fifo:inst11|index[27]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[27]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[27] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[27]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[27] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[27]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[26]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[26]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[26]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[26]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[26]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[26]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[26]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[26]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[26]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[26]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[26]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[26]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[26]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[26]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[26]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[26]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[26]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[26]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[26]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[26]   ;
+; fifo:inst11|index[26]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[26]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[26] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[26]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[26] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[26]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[25]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[25]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[25]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[25]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[25]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[25]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[25]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[25]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[25]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[25]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[25]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[25]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[25]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[25]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[25]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[25]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[25]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[25]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[25]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[25]   ;
+; fifo:inst11|index[25]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[25]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[25] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[25]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[25] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[25]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[24]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[24]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[24]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[24]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[24]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[24]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[24]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[24]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[24]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[24]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[24]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[24]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[24]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[24]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[24]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[24]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[24]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[24]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[24]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[24]   ;
+; fifo:inst11|index[24]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[24]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[24] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[24]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[24] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[24]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[23]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[23]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[23]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[23]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[23]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[23]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[23]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[23]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[23]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[23]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[23]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[23]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[23]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[23]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[23]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[23]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[23]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[23]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[23]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[23]   ;
+; fifo:inst11|index[23]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[23]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[23] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[23]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[23] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[23]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[22]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[22]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[22]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[22]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[22]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[22]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[22]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[22]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[22]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[22]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[22]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[22]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[22]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[22]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[22]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[22]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[22]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[22]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[22]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[22]   ;
+; fifo:inst11|index[22]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[22]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[22] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[22]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[22] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[22]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[21]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[21]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[21]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[21]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[21]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[21]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[21]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[21]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[21]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[21]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[21]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[21]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[21]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[21]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[21]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[21]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[21]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[21]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[21]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[21]   ;
+; fifo:inst11|index[21]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[21]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[21] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[21]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[21] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[21]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[20]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[20]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[20]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[20]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[20]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[20]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[20]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[20]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[20]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[20]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[20]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[20]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[20]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[20]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[20]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[20]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[20]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[20]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[20]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[20]   ;
+; fifo:inst11|index[20]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[20]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[20] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[20]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[20] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[20]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[19]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[19]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[19]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[19]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[19]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[19]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[19]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[19]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[19]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[19]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[19]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[19]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[19]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[19]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[19]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[19]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[19]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[19]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[19]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[19]   ;
+; fifo:inst11|index[19]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[19]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[19] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[19]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[19] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[19]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[18]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[18]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[18]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[18]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[18]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[18]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[18]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[18]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[18]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[18]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[18]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[18]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[18]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[18]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[18]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[18]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[18]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[18]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[18]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[18]   ;
+; fifo:inst11|index[18]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[18]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[18] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[18]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[18] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[18]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[17]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[17]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[17]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[17]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[17]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[17]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[17]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[17]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[17]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[17]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[17]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[17]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[17]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[17]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[17]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[17]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[17]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[17]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[17]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[17]   ;
+; fifo:inst11|index[17]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[17]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[17] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[17]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[17] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[17]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[16]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[16]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[16]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[16]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[16]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[16]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[16]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[16]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[16]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[16]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[16]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[16]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[16]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[16]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[16]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[16]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[16]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[16]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[16]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[16]   ;
+; fifo:inst11|index[16]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[16]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[16] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[16]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[16] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[16]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[15]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[15]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[15]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[15]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[15]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[15]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[15]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[15]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[15]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[15]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[15]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[15]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[15]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[15]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[15]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[15]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[15]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[15]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[15]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[15]   ;
+; fifo:inst11|index[15]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[15]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[15] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[15]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[15] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[15]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[14]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[14]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[14]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[14]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[14]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[14]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[14]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[14]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[14]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[14]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[14]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[14]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[14]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[14]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[14]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[14]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[14]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[14]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[14]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[14]   ;
+; fifo:inst11|index[14]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[14]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[14] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[14]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[14] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[14]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[13]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[13]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[13]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[13]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[13]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[13]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[13]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[13]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[13]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[13]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[13]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[13]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[13]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[13]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[13]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[13]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[13]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[13]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[13]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[13]   ;
+; fifo:inst11|index[13]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[13]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[13] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[13]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[13] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[13]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[12]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[12]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[12]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[12]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[12]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[12]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[12]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[12]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[12]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[12]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[12]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[12]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[12]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[12]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[12]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[12]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[12]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[12]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[12]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[12]   ;
+; fifo:inst11|index[12]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[12]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[12] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[12]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[12] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[12]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[11]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[11]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[11]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[11]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[11]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[11]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[11]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[11]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[11]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[11]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[11]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[11]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[11]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[11]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[11]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[11]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[11]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[11]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[11]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[11]   ;
+; fifo:inst11|index[11]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[11]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[11] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[11]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[11] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[11]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[10]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[10]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[10]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[10]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[10]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[10]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[10]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[10]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[10]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[10]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[10]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[10]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[10]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[10]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[10]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[10]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[10]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[10]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[10]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[10]   ;
+; fifo:inst11|index[10]                                 ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[10]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[10] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[10]   ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[10] ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[10]   ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[9]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[9]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[9]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[9]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[9]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[9]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[9]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[9]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[9]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[9]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[9]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[9]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[9]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[9]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[9]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[9]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[9]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[9]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[9]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[9]    ;
+; fifo:inst11|index[9]                                  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[9]    ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[9]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[9]    ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[9]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[9]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[8]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[8]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[8]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[8]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[8]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[8]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[8]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[8]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[8]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[8]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[8]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[8]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[8]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[8]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[8]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[8]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[8]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[8]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[8]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[8]    ;
+; fifo:inst11|index[8]                                  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[8]    ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[8]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[8]    ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[8]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[8]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[7]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[7]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[7]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[7]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[7]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[7]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[7]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[7]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[7]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[7]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[7]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[7]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[7]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[7]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[7]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[7]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[7]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[7]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[7]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[7]    ;
+; fifo:inst11|index[7]                                  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[7]    ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[7]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[7]    ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[7]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[7]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[6]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[6]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[6]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[6]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[6]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[6]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[6]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[6]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[6]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[6]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[6]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[6]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[6]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[6]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[6]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[6]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[6]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[6]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[6]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[6]    ;
+; fifo:inst11|index[6]                                  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[6]    ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[6]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[6]    ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[6]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[6]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[5]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[5]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[5]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[5]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[5]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[5]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[5]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[5]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[5]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[5]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[5]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[5]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[5]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[5]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[5]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[5]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[5]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[5]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[5]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[5]    ;
+; fifo:inst11|index[5]                                  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[5]    ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[5]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[5]    ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[5]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[5]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[4]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[4]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[4]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[4]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[4]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[4]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[4]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[4]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[4]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[4]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[4]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[4]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[4]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[4]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[4]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[4]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[4]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[4]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[4]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[4]    ;
+; fifo:inst11|index[4]                                  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[4]    ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[4]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[4]    ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[4]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[4]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[3]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[3]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[3]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[3]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[3]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[3]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[3]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[3]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[3]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[3]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[3]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[3]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[3]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[3]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[3]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[3]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[3]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[3]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[3]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[3]    ;
+; fifo:inst11|index[3]                                  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[3]    ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[3]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[3]    ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[3]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[3]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[2]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[2]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[2]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[2]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[2]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[2]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[2]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[2]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[2]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[2]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[2]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[2]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[2]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[2]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[2]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[2]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[2]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[2]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[2]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[2]    ;
+; fifo:inst11|index[2]                                  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[2]    ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[2]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[2]    ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[2]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[2]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[1]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[1]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[1]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[1]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[1]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[1]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[1]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[1]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[1]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[1]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[1]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[1]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[1]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[1]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[1]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[1]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[1]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[1]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[1]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[1]    ;
+; fifo:inst11|index[1]                                  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[1]    ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[1]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[1]    ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[1]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[1]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[10].f0|index[0]   ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[0]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[1].f0|index[0]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[0]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[2].f0|index[0]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[0]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[3].f0|index[0]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[0]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[4].f0|index[0]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[0]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[5].f0|index[0]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[0]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[6].f0|index[0]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[0]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[7].f0|index[0]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[0]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[8].f0|index[0]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[0]    ;
+; eleven_fifo:inst2|fifo2:fifo2_block[9].f0|index[0]    ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[0]    ;
+; fifo:inst11|index[0]                                  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[0]    ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|index[0]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[0]    ;
+; fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|index[0]  ; Merged with eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[0]    ;
+; Total Number of Removed Registers = 421               ;                                                                   ;
++-------------------------------------------------------+-------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -715,9 +722,9 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 106   ;
-; Number of registers using Synchronous Clear  ; 11    ;
-; Number of registers using Synchronous Load   ; 11    ;
+; Total registers                              ; 111   ;
+; Number of registers using Synchronous Clear  ; 12    ;
+; Number of registers using Synchronous Load   ; 12    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 49    ;
@@ -748,14 +755,13 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
-; 3:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |prediction_block|eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[22]                ;
-; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |prediction_block|eleven_fifo:inst2|fifo2:fifo2_block[1].f0|queue[0]                 ;
-; 4:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |prediction_block|eleven_fifo:inst2|fifo2:fifo2_block[3].f0|queue[1]                 ;
-; 4:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |prediction_block|fifo_two_bit:inst1|fifo:inst2|queue[2]                             ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |prediction_block|fifo:inst11|P                                                      ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |prediction_block|eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[0]                 ;
+; 3:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |prediction_block|eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[28]                ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |prediction_block|fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|queue[0]               ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |prediction_block|eleven_fifo:inst2|fifo2:fifo2_block[0].f0|queue[1]                 ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |prediction_block|fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|queue[2]               ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |prediction_block|eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[1]                 ;
 ; 4:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |prediction_block|busmux:inst9|lpm_mux:$00000|mux_osc:auto_generated|result_node[10] ;
-; 4:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |prediction_block|eleven_fifo:inst2|fifo2:fifo2_block[10].f0|queue                   ;
+; 4:1                ; 13 bits   ; 26 LEs        ; 26 LEs               ; 0 LEs                  ; No         ; |prediction_block|fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|queue                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
 
 
@@ -795,22 +801,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 70                          ;
-; cycloneiii_ff         ; 106                         ;
+; cycloneiii_ff         ; 111                         ;
 ;     ENA               ; 38                          ;
 ;     ENA SCLR SLD      ; 11                          ;
-;     plain             ; 57                          ;
-; cycloneiii_lcell_comb ; 272                         ;
+;     SCLR SLD          ; 1                           ;
+;     plain             ; 61                          ;
+; cycloneiii_lcell_comb ; 277                         ;
 ;     arith             ; 62                          ;
 ;         2 data inputs ; 30                          ;
 ;         3 data inputs ; 32                          ;
-;     normal            ; 210                         ;
+;     normal            ; 215                         ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 47                          ;
-;         3 data inputs ; 64                          ;
+;         2 data inputs ; 50                          ;
+;         3 data inputs ; 66                          ;
 ;         4 data inputs ; 98                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 12.00                       ;
-; Average LUT depth     ; 6.91                        ;
+; Max LUT depth         ; 11.60                       ;
+; Average LUT depth     ; 6.93                        ;
 +-----------------------+-----------------------------+
 
 
@@ -819,7 +826,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -829,10 +836,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Jun 02 00:55:23 2020
+    Info: Processing started: Thu Jun 04 22:50:08 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ev20QUARTUS -c ev20QUARTUS
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file subroutinecontrolunit.bdf
     Info (12023): Found entity 1: SubRoutineControlUnit
 Info (12021): Found 1 design units, including 1 entities, in source file mirunit2.bdf
@@ -842,7 +849,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file synchun
 Info (12021): Found 1 design units, including 1 entities, in source file synchregister.bdf
     Info (12023): Found entity 1: SynchRegister
 Info (12021): Found 1 design units, including 1 entities, in source file delayinicial.v
-    Info (12023): Found entity 1: DelayInicial File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/DelayInicial.v Line: 1
+    Info (12023): Found entity 1: DelayInicial File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/DelayInicial.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mir.bdf
     Info (12023): Found entity 1: MIR
 Info (12021): Found 1 design units, including 1 entities, in source file uc2.bdf
@@ -854,9 +861,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file ev20mai
 Info (12021): Found 1 design units, including 1 entities, in source file ev20jumpcontrol.bdf
     Info (12023): Found entity 1: ev20jumpControl
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: ALU File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/alu.v Line: 1
+    Info (12023): Found entity 1: ALU File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/alu.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file shifter.v
-    Info (12023): Found entity 1: shifter File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/shifter.v Line: 1
+    Info (12023): Found entity 1: shifter File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/shifter.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ev20b3busa.bdf
     Info (12023): Found entity 1: ev20B3BUSA
 Info (12021): Found 1 design units, including 1 entities, in source file ev20b3busb.bdf
@@ -872,9 +879,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file operand
 Info (12021): Found 1 design units, including 1 entities, in source file aluunit.bdf
     Info (12023): Found entity 1: ALUUnit
 Info (12021): Found 1 design units, including 1 entities, in source file carryblock.v
-    Info (12023): Found entity 1: carryBlock File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/carryBlock.v Line: 1
+    Info (12023): Found entity 1: carryBlock File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/carryBlock.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pcregister.v
-    Info (12023): Found entity 1: PCRegister File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/PCRegister.v Line: 1
+    Info (12023): Found entity 1: PCRegister File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/PCRegister.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mirunit.bdf
     Info (12023): Found entity 1: MIRUnit
 Info (12021): Found 1 design units, including 1 entities, in source file dataunit.bdf
@@ -883,52 +890,62 @@ Warning (12019): Can't analyze file -- file PCRegisterAsync.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file pulsegen.bdf
     Info (12023): Found entity 1: pulseGen
 Info (12021): Found 1 design units, including 1 entities, in source file fifo.v
-    Info (12023): Found entity 1: fifo File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/fifo.v Line: 1
+    Info (12023): Found entity 1: fifo File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/fifo.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file branch_queue.bdf
     Info (12023): Found entity 1: branch_queue
 Info (12021): Found 1 design units, including 1 entities, in source file eleven_fifo.v
-    Info (12023): Found entity 1: eleven_fifo File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/eleven_fifo.v Line: 1
+    Info (12023): Found entity 1: eleven_fifo File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/eleven_fifo.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file branch_predictor.v
-    Info (12023): Found entity 1: branch_predictor File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/branch_predictor.v Line: 1
+    Info (12023): Found entity 1: branch_predictor File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/branch_predictor.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file prediction_block.bdf
     Info (12023): Found entity 1: prediction_block
-Info (12021): Found 1 design units, including 1 entities, in source file fifo_two_bit.bdf
-    Info (12023): Found entity 1: fifo_two_bit
 Info (12021): Found 1 design units, including 1 entities, in source file prediction_control.v
-    Info (12023): Found entity 1: prediction_control File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/prediction_control.v Line: 1
+    Info (12023): Found entity 1: prediction_control File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_control.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file prediction_checker.v
-    Info (12023): Found entity 1: prediction_checker File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/prediction_checker.v Line: 1
+    Info (12023): Found entity 1: prediction_checker File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_checker.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pline_flush_ctrl.v
-    Info (12023): Found entity 1: pline_flush_ctrl File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/pline_flush_ctrl.v Line: 1
+    Info (12023): Found entity 1: pline_flush_ctrl File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/pline_flush_ctrl.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fifo_popper.v
-    Info (12023): Found entity 1: fifo_popper File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/fifo_popper.v Line: 1
+    Info (12023): Found entity 1: fifo_popper File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/fifo_popper.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fifo2.v
-    Info (12023): Found entity 1: fifo2 File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/fifo2.v Line: 1
+    Info (12023): Found entity 1: fifo2 File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/fifo2.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file jcy_checker.v
+    Info (12023): Found entity 1: jcy_checker File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/jcy_checker.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file jze_checker.v
+    Info (12023): Found entity 1: jze_checker File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/jze_checker.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file jne_checker.v
+    Info (12023): Found entity 1: jne_checker File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/jne_checker.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file fifo_two_bit.v
+    Info (12023): Found entity 1: fifo_two_bit File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/fifo_two_bit.v Line: 1
 Info (12127): Elaborating entity "prediction_block" for the top level hierarchy
 Info (12128): Elaborating entity "prediction_checker" for hierarchy "prediction_checker:inst5"
-Warning (10235): Verilog HDL Always Construct warning at prediction_checker.v(69): variable "CY" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/prediction_checker.v Line: 69
+Info (12128): Elaborating entity "jcy_checker" for hierarchy "prediction_checker:inst5|jcy_checker:jcy" File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_checker.v Line: 54
+Warning (10036): Verilog HDL or VHDL warning at jcy_checker.v(12): object "pred_type" assigned a value but never read File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/jcy_checker.v Line: 12
+Info (12128): Elaborating entity "jze_checker" for hierarchy "prediction_checker:inst5|jze_checker:jze" File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_checker.v Line: 64
+Info (12128): Elaborating entity "jne_checker" for hierarchy "prediction_checker:inst5|jne_checker:jne" File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_checker.v Line: 74
 Info (12128): Elaborating entity "fifo" for hierarchy "fifo:inst11"
 Info (12128): Elaborating entity "fifo_popper" for hierarchy "fifo_popper:inst3"
 Info (12128): Elaborating entity "prediction_control" for hierarchy "prediction_control:inst4"
-Warning (10235): Verilog HDL Always Construct warning at prediction_control.v(54): variable "PC" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/prediction_control.v Line: 54
-Warning (10240): Verilog HDL Always Construct warning at prediction_control.v(43): inferring latch(es) for variable "next", which holds its previous value in one or more paths through the always construct File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/prediction_control.v Line: 43
-Info (10041): Inferred latch for "next[0]" at prediction_control.v(43) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/prediction_control.v Line: 43
-Info (10041): Inferred latch for "next[1]" at prediction_control.v(43) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/prediction_control.v Line: 43
-Info (10041): Inferred latch for "next[2]" at prediction_control.v(43) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/prediction_control.v Line: 43
-Info (10041): Inferred latch for "next[3]" at prediction_control.v(43) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/prediction_control.v Line: 43
-Info (10041): Inferred latch for "next[4]" at prediction_control.v(43) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/prediction_control.v Line: 43
-Info (10041): Inferred latch for "next[5]" at prediction_control.v(43) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/prediction_control.v Line: 43
-Info (10041): Inferred latch for "next[6]" at prediction_control.v(43) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/prediction_control.v Line: 43
-Info (10041): Inferred latch for "next[7]" at prediction_control.v(43) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/prediction_control.v Line: 43
-Info (10041): Inferred latch for "next[8]" at prediction_control.v(43) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/prediction_control.v Line: 43
-Info (10041): Inferred latch for "next[9]" at prediction_control.v(43) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/prediction_control.v Line: 43
-Info (10041): Inferred latch for "next[10]" at prediction_control.v(43) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/prediction_control.v Line: 43
+Warning (10235): Verilog HDL Always Construct warning at prediction_control.v(54): variable "PC" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_control.v Line: 54
+Warning (10240): Verilog HDL Always Construct warning at prediction_control.v(43): inferring latch(es) for variable "next", which holds its previous value in one or more paths through the always construct File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_control.v Line: 43
+Info (10041): Inferred latch for "next[0]" at prediction_control.v(43) File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_control.v Line: 43
+Info (10041): Inferred latch for "next[1]" at prediction_control.v(43) File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_control.v Line: 43
+Info (10041): Inferred latch for "next[2]" at prediction_control.v(43) File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_control.v Line: 43
+Info (10041): Inferred latch for "next[3]" at prediction_control.v(43) File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_control.v Line: 43
+Info (10041): Inferred latch for "next[4]" at prediction_control.v(43) File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_control.v Line: 43
+Info (10041): Inferred latch for "next[5]" at prediction_control.v(43) File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_control.v Line: 43
+Info (10041): Inferred latch for "next[6]" at prediction_control.v(43) File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_control.v Line: 43
+Info (10041): Inferred latch for "next[7]" at prediction_control.v(43) File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_control.v Line: 43
+Info (10041): Inferred latch for "next[8]" at prediction_control.v(43) File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_control.v Line: 43
+Info (10041): Inferred latch for "next[9]" at prediction_control.v(43) File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_control.v Line: 43
+Info (10041): Inferred latch for "next[10]" at prediction_control.v(43) File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_control.v Line: 43
 Info (12128): Elaborating entity "branch_predictor" for hierarchy "branch_predictor:inst"
-Warning (10240): Verilog HDL Always Construct warning at branch_predictor.v(70): inferring latch(es) for variable "takens", which holds its previous value in one or more paths through the always construct File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/branch_predictor.v Line: 70
-Warning (10240): Verilog HDL Always Construct warning at branch_predictor.v(70): inferring latch(es) for variable "index", which holds its previous value in one or more paths through the always construct File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/branch_predictor.v Line: 70
-Warning (10240): Verilog HDL Always Construct warning at branch_predictor.v(70): inferring latch(es) for variable "prediction", which holds its previous value in one or more paths through the always construct File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/branch_predictor.v Line: 70
-Info (10041): Inferred latch for "prediction" at branch_predictor.v(70) File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/branch_predictor.v Line: 70
+Warning (10240): Verilog HDL Always Construct warning at branch_predictor.v(70): inferring latch(es) for variable "takens", which holds its previous value in one or more paths through the always construct File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/branch_predictor.v Line: 70
+Warning (10240): Verilog HDL Always Construct warning at branch_predictor.v(70): inferring latch(es) for variable "index", which holds its previous value in one or more paths through the always construct File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/branch_predictor.v Line: 70
+Warning (10240): Verilog HDL Always Construct warning at branch_predictor.v(70): inferring latch(es) for variable "prediction", which holds its previous value in one or more paths through the always construct File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/branch_predictor.v Line: 70
+Info (10041): Inferred latch for "prediction" at branch_predictor.v(70) File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/branch_predictor.v Line: 70
 Info (12128): Elaborating entity "fifo_two_bit" for hierarchy "fifo_two_bit:inst1"
+Info (12128): Elaborating entity "fifo2" for hierarchy "fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0" File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/fifo_two_bit.v Line: 18
 Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:inst9"
 Info (12130): Elaborated megafunction instantiation "BUSMUX:inst9"
 Info (12133): Instantiated megafunction "BUSMUX:inst9" with the following parameter:
@@ -936,34 +953,33 @@ Info (12133): Instantiated megafunction "BUSMUX:inst9" with the following parame
 Info (12128): Elaborating entity "lpm_mux" for hierarchy "BUSMUX:inst9|lpm_mux:$00000" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12131): Elaborated megafunction instantiation "BUSMUX:inst9|lpm_mux:$00000", which is child of megafunction instantiation "BUSMUX:inst9" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_osc.tdf
-    Info (12023): Found entity 1: mux_osc File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/db/mux_osc.tdf Line: 22
+    Info (12023): Found entity 1: mux_osc File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/db/mux_osc.tdf Line: 22
 Info (12128): Elaborating entity "mux_osc" for hierarchy "BUSMUX:inst9|lpm_mux:$00000|mux_osc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
 Info (12128): Elaborating entity "eleven_fifo" for hierarchy "eleven_fifo:inst2"
-Info (12128): Elaborating entity "fifo2" for hierarchy "eleven_fifo:inst2|fifo2:fifo2_block[0].f0" File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/eleven_fifo.v Line: 48
-Warning (13012): Latch prediction_control:inst4|next[10] has unsafe behavior File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/prediction_control.v Line: 43
+Warning (13012): Latch prediction_control:inst4|next[10] has unsafe behavior File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_control.v Line: 43
     Warning (13013): Ports D and ENA on the latch are fed by the same signal I[21]
-Warning (13012): Latch prediction_control:inst4|next[9] has unsafe behavior File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/prediction_control.v Line: 43
+Warning (13012): Latch prediction_control:inst4|next[9] has unsafe behavior File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_control.v Line: 43
     Warning (13013): Ports D and ENA on the latch are fed by the same signal I[21]
-Warning (13012): Latch prediction_control:inst4|next[8] has unsafe behavior File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/prediction_control.v Line: 43
+Warning (13012): Latch prediction_control:inst4|next[8] has unsafe behavior File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_control.v Line: 43
     Warning (13013): Ports D and ENA on the latch are fed by the same signal I[21]
-Warning (13012): Latch prediction_control:inst4|next[7] has unsafe behavior File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/prediction_control.v Line: 43
+Warning (13012): Latch prediction_control:inst4|next[7] has unsafe behavior File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_control.v Line: 43
     Warning (13013): Ports D and ENA on the latch are fed by the same signal I[21]
-Warning (13012): Latch prediction_control:inst4|next[6] has unsafe behavior File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/prediction_control.v Line: 43
+Warning (13012): Latch prediction_control:inst4|next[6] has unsafe behavior File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_control.v Line: 43
     Warning (13013): Ports D and ENA on the latch are fed by the same signal I[21]
-Warning (13012): Latch prediction_control:inst4|next[5] has unsafe behavior File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/prediction_control.v Line: 43
+Warning (13012): Latch prediction_control:inst4|next[5] has unsafe behavior File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_control.v Line: 43
     Warning (13013): Ports D and ENA on the latch are fed by the same signal I[21]
-Warning (13012): Latch prediction_control:inst4|next[4] has unsafe behavior File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/prediction_control.v Line: 43
+Warning (13012): Latch prediction_control:inst4|next[4] has unsafe behavior File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_control.v Line: 43
     Warning (13013): Ports D and ENA on the latch are fed by the same signal I[21]
-Warning (13012): Latch prediction_control:inst4|next[3] has unsafe behavior File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/prediction_control.v Line: 43
+Warning (13012): Latch prediction_control:inst4|next[3] has unsafe behavior File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_control.v Line: 43
     Warning (13013): Ports D and ENA on the latch are fed by the same signal I[21]
-Warning (13012): Latch prediction_control:inst4|next[2] has unsafe behavior File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/prediction_control.v Line: 43
+Warning (13012): Latch prediction_control:inst4|next[2] has unsafe behavior File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_control.v Line: 43
     Warning (13013): Ports D and ENA on the latch are fed by the same signal I[21]
-Warning (13012): Latch prediction_control:inst4|next[1] has unsafe behavior File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/prediction_control.v Line: 43
+Warning (13012): Latch prediction_control:inst4|next[1] has unsafe behavior File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_control.v Line: 43
     Warning (13013): Ports D and ENA on the latch are fed by the same signal I[21]
-Warning (13012): Latch prediction_control:inst4|next[0] has unsafe behavior File: C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/prediction_control.v Line: 43
+Warning (13012): Latch prediction_control:inst4|next[0] has unsafe behavior File: C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/prediction_control.v Line: 43
     Warning (13013): Ports D and ENA on the latch are fed by the same signal I[21]
 Info (286030): Timing-Driven Synthesis is running
-Info (144001): Generated suppressed messages file C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/output_files/ev20QUARTUS.map.smsg
+Info (144001): Generated suppressed messages file C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/output_files/ev20QUARTUS.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 8 input pin(s) that do not drive logic
@@ -975,20 +991,20 @@ Warning (21074): Design contains 8 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "I[13]"
     Warning (15610): No output dependent on input pin "I[12]"
     Warning (15610): No output dependent on input pin "I[11]"
-Info (21057): Implemented 370 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 380 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 58 input pins
     Info (21059): Implemented 12 output pins
-    Info (21061): Implemented 300 logic cells
+    Info (21061): Implemented 310 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 39 warnings
-    Info: Peak virtual memory: 4795 megabytes
-    Info: Processing ended: Tue Jun 02 00:55:51 2020
-    Info: Elapsed time: 00:00:28
-    Info: Total CPU time (on all processors): 00:00:54
+    Info: Peak virtual memory: 4735 megabytes
+    Info: Processing ended: Thu Jun 04 22:50:37 2020
+    Info: Elapsed time: 00:00:29
+    Info: Total CPU time (on all processors): 00:00:50
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/output_files/ev20QUARTUS.map.smsg.
+The suppressed messages can be found in C:/ITBA/10 Cuatrimestre/Electrónica 5/Trabajos Practicos/Electro_V/MicroEV20/output_files/ev20QUARTUS.map.smsg.
 
 

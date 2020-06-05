@@ -1,11 +1,12 @@
 |prediction_block
 incorrect <= incPred.DB_MAX_OUTPUT_PORT_TYPE
-CY => prediction_checker:inst5.CY
+clk => prediction_checker:inst5.clk
 clk => fifo:inst11.clk
 clk => prediction_control:inst4.clk
 clk => branch_predictor:inst.clk
-clk => fifo_two_bit:inst1.CLK
+clk => fifo_two_bit:inst1.clk
 clk => eleven_fifo:inst2.clk
+CY => prediction_checker:inst5.CY
 T[0] => fifo_popper:inst3.T[0]
 T[0] => prediction_checker:inst5.T[0]
 T[1] => fifo_popper:inst3.T[1]
@@ -63,10 +64,10 @@ I[17] => prediction_control:inst4.I[17]
 I[18] => prediction_control:inst4.I[18]
 I[19] => prediction_control:inst4.I[19]
 I[19] => branch_predictor:inst.I[0]
-I[19] => fifo_two_bit:inst1.IN[0]
+I[19] => fifo_two_bit:inst1.I[0]
 I[20] => prediction_control:inst4.I[20]
 I[20] => branch_predictor:inst.I[1]
-I[20] => fifo_two_bit:inst1.IN[1]
+I[20] => fifo_two_bit:inst1.I[1]
 I[21] => prediction_control:inst4.I[21]
 PC[0] => prediction_control:inst4.PC[0]
 PC[0] => BUSMUX:inst7.dataa[0]
@@ -131,20 +132,85 @@ NEXT_OUT[10] <= BUSMUX:inst9.result[10]
 
 
 |prediction_block|prediction_checker:inst5
-T[0] => Equal0.IN1
-T[0] => Equal4.IN6
-T[1] => Equal0.IN6
-T[1] => Equal4.IN5
-T[2] => Equal0.IN5
-T[2] => Equal4.IN4
-T[3] => Equal0.IN4
-T[3] => Equal4.IN3
-T[4] => Equal0.IN3
-T[4] => Equal4.IN1
+clk => clk.IN3
+T[0] => T[0].IN3
+T[1] => T[1].IN3
+T[2] => T[2].IN3
+T[3] => T[3].IN3
+T[4] => T[4].IN3
+T[5] => T[5].IN3
+T[6] => T[6].IN3
+W[0] => W[0].IN3
+W[1] => W[1].IN3
+W[2] => W[2].IN3
+W[3] => W[3].IN3
+W[4] => W[4].IN3
+W[5] => W[5].IN3
+W[6] => W[6].IN3
+W[7] => W[7].IN3
+W[8] => W[8].IN3
+W[9] => W[9].IN3
+W[10] => W[10].IN3
+W[11] => W[11].IN3
+W[12] => W[12].IN3
+W[13] => W[13].IN3
+W[14] => W[14].IN3
+W[15] => W[15].IN3
+pred_type[0] => pred_type[0].IN3
+pred_type[1] => pred_type[1].IN3
+CY => CY.IN3
+last_pred => last_pred.IN3
+incorrect_pred <= incorrect_pred.DB_MAX_OUTPUT_PORT_TYPE
+correct_pred <= correct_pred.DB_MAX_OUTPUT_PORT_TYPE
+checked <= checked.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prediction_block|prediction_checker:inst5|jcy_checker:jcy
+clk => last_pred.CLK
+T[0] => Equal0.IN6
+T[1] => Equal0.IN5
+T[2] => Equal0.IN4
+T[3] => Equal0.IN3
+T[4] => Equal0.IN1
 T[5] => Equal0.IN2
-T[5] => Equal4.IN2
 T[6] => Equal0.IN0
-T[6] => Equal4.IN0
+W[0] => ~NO_FANOUT~
+W[1] => ~NO_FANOUT~
+W[2] => ~NO_FANOUT~
+W[3] => ~NO_FANOUT~
+W[4] => ~NO_FANOUT~
+W[5] => ~NO_FANOUT~
+W[6] => ~NO_FANOUT~
+W[7] => ~NO_FANOUT~
+W[8] => ~NO_FANOUT~
+W[9] => ~NO_FANOUT~
+W[10] => ~NO_FANOUT~
+W[11] => ~NO_FANOUT~
+W[12] => ~NO_FANOUT~
+W[13] => ~NO_FANOUT~
+W[14] => ~NO_FANOUT~
+W[15] => ~NO_FANOUT~
+aux_pred_type[0] => ~NO_FANOUT~
+aux_pred_type[1] => ~NO_FANOUT~
+CY => incorrect_pred.OUTPUTSELECT
+CY => correct_pred.DATAB
+aux_last_pred => last_pred.DATAIN
+incorrect_pred <= incorrect_pred.DB_MAX_OUTPUT_PORT_TYPE
+correct_pred <= correct_pred.DB_MAX_OUTPUT_PORT_TYPE
+checked <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prediction_block|prediction_checker:inst5|jze_checker:jze
+clk => pred_type[0].CLK
+clk => pred_type[1].CLK
+clk => last_pred.CLK
+T[0] => Equal0.IN1
+T[1] => Equal0.IN6
+T[2] => Equal0.IN5
+T[3] => Equal0.IN4
+T[4] => Equal0.IN3
+T[5] => Equal0.IN2
+T[6] => Equal0.IN0
 W[0] => Equal2.IN15
 W[1] => Equal2.IN14
 W[2] => Equal2.IN13
@@ -161,25 +227,50 @@ W[12] => Equal2.IN3
 W[13] => Equal2.IN2
 W[14] => Equal2.IN1
 W[15] => Equal2.IN0
-W[15] => incorrect_pred.OUTPUTSELECT
-W[15] => correct_pred.DATAB
-pred_type[0] => Equal1.IN0
-pred_type[0] => Equal3.IN1
-pred_type[1] => Equal1.IN1
-pred_type[1] => Equal3.IN0
-CY => incorrect_pred.OUTPUTSELECT
-CY => correct_pred.DATAB
-last_pred => correct_pred.DATAA
-last_pred => correct_pred.DATAA
-last_pred => incorrect_pred.DATAA
-last_pred => incorrect_pred.DATAA
-last_pred => incorrect_pred.DATAA
-last_pred => incorrect_pred.DATAB
-last_pred => incorrect_pred.DATAB
-last_pred => incorrect_pred.DATAB
+aux_pred_type[0] => pred_type[0].DATAIN
+aux_pred_type[1] => pred_type[1].DATAIN
+CY => ~NO_FANOUT~
+aux_last_pred => last_pred.DATAIN
 incorrect_pred <= incorrect_pred.DB_MAX_OUTPUT_PORT_TYPE
 correct_pred <= correct_pred.DB_MAX_OUTPUT_PORT_TYPE
-checked <= checked.DB_MAX_OUTPUT_PORT_TYPE
+checked <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prediction_block|prediction_checker:inst5|jne_checker:jne
+clk => pred_type[0].CLK
+clk => pred_type[1].CLK
+clk => last_pred.CLK
+T[0] => Equal0.IN1
+T[1] => Equal0.IN6
+T[2] => Equal0.IN5
+T[3] => Equal0.IN4
+T[4] => Equal0.IN3
+T[5] => Equal0.IN2
+T[6] => Equal0.IN0
+W[0] => ~NO_FANOUT~
+W[1] => ~NO_FANOUT~
+W[2] => ~NO_FANOUT~
+W[3] => ~NO_FANOUT~
+W[4] => ~NO_FANOUT~
+W[5] => ~NO_FANOUT~
+W[6] => ~NO_FANOUT~
+W[7] => ~NO_FANOUT~
+W[8] => ~NO_FANOUT~
+W[9] => ~NO_FANOUT~
+W[10] => ~NO_FANOUT~
+W[11] => ~NO_FANOUT~
+W[12] => ~NO_FANOUT~
+W[13] => ~NO_FANOUT~
+W[14] => ~NO_FANOUT~
+W[15] => incorrect_pred.OUTPUTSELECT
+W[15] => correct_pred.DATAB
+aux_pred_type[0] => pred_type[0].DATAIN
+aux_pred_type[1] => pred_type[1].DATAIN
+CY => ~NO_FANOUT~
+aux_last_pred => last_pred.DATAIN
+incorrect_pred <= incorrect_pred.DB_MAX_OUTPUT_PORT_TYPE
+correct_pred <= correct_pred.DB_MAX_OUTPUT_PORT_TYPE
+checked <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |prediction_block|fifo:inst11
@@ -438,22 +529,17 @@ prediction <= prediction$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |prediction_block|fifo_two_bit:inst1
-OUT[0] <= fifo:inst.P
-OUT[1] <= fifo:inst2.P
-CLK => fifo:inst.clk
-CLK => fifo:inst2.clk
-POP => fifo:inst.pop
-POP => fifo:inst2.pop
-PUSH => fifo:inst.push
-PUSH => fifo:inst2.push
-CLEAR => fifo:inst.clear
-CLEAR => fifo:inst2.clear
-IN[0] => fifo:inst.I
-IN[1] => fifo:inst2.I
+clk => clk.IN2
+clear => clear.IN2
+pop => pop.IN2
+push => push.IN2
+I[0] => I[0].IN1
+I[1] => I[1].IN1
+P[0] <= fifo2:fifo2b_block[0].f0.P
+P[1] <= fifo2:fifo2b_block[1].f0.P
 
 
-|prediction_block|fifo_two_bit:inst1|fifo:inst
-clk => P~reg0.CLK
+|prediction_block|fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0
 clk => index[0].CLK
 clk => index[1].CLK
 clk => index[2].CLK
@@ -490,6 +576,8 @@ clk => queue[0].CLK
 clk => queue[1].CLK
 clk => queue[2].CLK
 clk => queue[3].CLK
+clk => P~reg0.CLK
+pop => P.OUTPUTSELECT
 pop => queue.OUTPUTSELECT
 pop => queue.OUTPUTSELECT
 pop => queue.OUTPUTSELECT
@@ -526,6 +614,7 @@ pop => index.OUTPUTSELECT
 pop => index.OUTPUTSELECT
 pop => index.OUTPUTSELECT
 pop => index.OUTPUTSELECT
+pop => P.OUTPUTSELECT
 push => queue.OUTPUTSELECT
 push => queue.OUTPUTSELECT
 push => queue.OUTPUTSELECT
@@ -605,8 +694,7 @@ I => queue.DATAB
 P <= P~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|prediction_block|fifo_two_bit:inst1|fifo:inst2
-clk => P~reg0.CLK
+|prediction_block|fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0
 clk => index[0].CLK
 clk => index[1].CLK
 clk => index[2].CLK
@@ -643,6 +731,8 @@ clk => queue[0].CLK
 clk => queue[1].CLK
 clk => queue[2].CLK
 clk => queue[3].CLK
+clk => P~reg0.CLK
+pop => P.OUTPUTSELECT
 pop => queue.OUTPUTSELECT
 pop => queue.OUTPUTSELECT
 pop => queue.OUTPUTSELECT
@@ -679,6 +769,7 @@ pop => index.OUTPUTSELECT
 pop => index.OUTPUTSELECT
 pop => index.OUTPUTSELECT
 pop => index.OUTPUTSELECT
+pop => P.OUTPUTSELECT
 push => queue.OUTPUTSELECT
 push => queue.OUTPUTSELECT
 push => queue.OUTPUTSELECT

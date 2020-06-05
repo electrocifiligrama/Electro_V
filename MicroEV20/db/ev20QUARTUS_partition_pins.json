@@ -52,38 +52,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "T[6]",
-					"strict" : false
-				},
-				{
-					"name" : "T[5]",
-					"strict" : false
-				},
-				{
-					"name" : "T[3]",
-					"strict" : false
-				},
-				{
-					"name" : "T[2]",
-					"strict" : false
-				},
-				{
-					"name" : "T[4]",
-					"strict" : false
-				},
-				{
-					"name" : "T[1]",
-					"strict" : false
-				},
-				{
-					"name" : "T[0]",
-					"strict" : false
-				},
-				{
-					"name" : "CY",
-					"strict" : false
-				},
-				{
 					"name" : "W[15]",
 					"strict" : false
 				},
@@ -145,6 +113,38 @@
 				},
 				{
 					"name" : "W[0]",
+					"strict" : false
+				},
+				{
+					"name" : "CY",
+					"strict" : false
+				},
+				{
+					"name" : "T[6]",
+					"strict" : false
+				},
+				{
+					"name" : "T[5]",
+					"strict" : false
+				},
+				{
+					"name" : "T[3]",
+					"strict" : false
+				},
+				{
+					"name" : "T[2]",
+					"strict" : false
+				},
+				{
+					"name" : "T[4]",
+					"strict" : false
+				},
+				{
+					"name" : "T[1]",
+					"strict" : false
+				},
+				{
+					"name" : "T[0]",
 					"strict" : false
 				},
 				{

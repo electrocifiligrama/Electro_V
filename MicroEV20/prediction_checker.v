@@ -1,4 +1,5 @@
-module prediction_checker(input [6:0] T,
+module prediction_checker(	input clk,
+									input [6:0] T,
 									input [15:0] W,
 									input[1:0] pred_type,
 									input CY,
@@ -28,59 +29,76 @@ OUTPUT:
 TIME ANALYSIS (for input and for output):
 
 		1) Continuous: 
-*/		
-always@(T or W or last_pred or pred_type) begin
-	incorrect_pred = 0;
-	correct_pred = last_pred;
+*/
+
+
+wire checked_jcy;
+wire checked_jze;
+wire checked_jne;
+wire correct_pred_jcy;
+wire correct_pred_jze;
+wire correct_pred_jne;
+wire incorrect_pred_jcy;
+wire incorrect_pred_jze;
+wire incorrect_pred_jne;
+
+generate
+	jcy_checker jcy(.clk(clk),
+					.T(T),
+					.W(W),
+					.aux_pred_type(pred_type),
+					.CY(CY),
+					.aux_last_pred(last_pred),
+					.incorrect_pred(incorrect_pred_jcy),
+					.correct_pred(correct_pred_jcy),
+					.checked(checked_jcy));
+					
+	jze_checker jze(.clk(clk),
+					.T(T),
+					.W(W),
+					.aux_pred_type(pred_type),
+					.CY(CY),
+					.aux_last_pred(last_pred),
+					.incorrect_pred(incorrect_pred_jze),
+					.correct_pred(correct_pred_jze),
+					.checked(checked_jze));
+					
+	jne_checker jne(.clk(clk),
+					.T(T),
+					.W(W),
+					.aux_pred_type(pred_type),
+					.CY(CY),
+					.aux_last_pred(last_pred),
+					.incorrect_pred(incorrect_pred_jne),
+					.correct_pred(correct_pred_jne),
+					.checked(checked_jne));
+						
+endgenerate
+
+always@(*) begin
+	
+	checked <= 0;
+	incorrect_pred <= 0;
+	correct_pred <= last_pred;
 	
 	if(T == 7'b1000001) begin
-		checked <= 1;
-		if(pred_type == 2'b01) begin		//JZE 	
-			if(W == 15'b0) begin 	//should have taken the branch
-				if (!last_pred) begin	//mistakes were made
-					incorrect_pred <= 1;
-					correct_pred <= 1;
-				end
-			end 
-			else begin		//should not have taken the branch
-				if(last_pred) begin 	//mistakes were made
-					incorrect_pred <= 1;
-					correct_pred <= 0;					
-				end
-			end
+		if(pred_type == 2'b01) begin 	//JZE
+			checked <= checked_jze;
+			incorrect_pred <= incorrect_pred_jze;
+			correct_pred <= correct_pred_jze;
 		end
-		else if (pred_type == 2'b10) begin	//JNE
-			if(W[15] == 0) begin 	//should have taken the branch
-				if (!last_pred) begin	//mistakes were made
-					incorrect_pred <= 1;
-					correct_pred <= 1;
-				end 
-			end 
-			else begin				//should not have taken the branch
-				if(last_pred) begin //mistakes were made
-					incorrect_pred <= 1;
-					correct_pred <= 0;
-				end
-			end
-		end
+		else if(pred_type == 2'b10) begin		//JNE
+			checked <= checked_jne;
+			incorrect_pred <= incorrect_pred_jne;
+			correct_pred <= correct_pred_jne;
+		end 
 	end
-	else if(T == 7'b1010000) begin		//JCY
-		checked <= 1;
-		if(CY) begin				//Should have taken the branch
-			if(!last_pred) begin
-				incorrect_pred <= 1;
-				correct_pred <= 1;
-			end
-		end
-		else begin			//should not have taken the branch
-			if(last_pred) begin
-				incorrect_pred <= 1;
-				correct_pred <= 0;
-			end
-		end
+	else if(T == 7'b1010000) begin			//JCY
+		checked <= checked_jcy;
+		incorrect_pred <= incorrect_pred_jcy;
+		correct_pred <= correct_pred_jcy;		
 	end 
-	else begin
-		checked <= 0;
-	end
 end
+
 endmodule
+

@@ -75,7 +75,6 @@ set_global_assignment -name BDF_FILE branch_queue.bdf
 set_global_assignment -name VERILOG_FILE eleven_fifo.v
 set_global_assignment -name VERILOG_FILE branch_predictor.v
 set_global_assignment -name BDF_FILE prediction_block.bdf
-set_global_assignment -name BDF_FILE fifo_two_bit.bdf
 set_global_assignment -name VERILOG_FILE prediction_control.v
 set_global_assignment -name VERILOG_FILE prediction_checker.v
 set_global_assignment -name VERILOG_FILE pline_flush_ctrl.v
@@ -84,4 +83,8 @@ set_global_assignment -name VERILOG_FILE fifo2.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE jcy_checker.v
+set_global_assignment -name VERILOG_FILE jze_checker.v
+set_global_assignment -name VERILOG_FILE jne_checker.v
+set_global_assignment -name VERILOG_FILE fifo_two_bit.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

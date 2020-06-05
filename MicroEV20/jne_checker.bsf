@@ -20,8 +20,8 @@ refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 232 160)
-	(text "prediction_checker" (rect 5 0 79 12)(font "Arial" ))
+	(rect 16 16 256 160)
+	(text "jne_checker" (rect 5 0 53 12)(font "Arial" ))
 	(text "inst" (rect 8 128 20 140)(font "Arial" ))
 	(port
 		(pt 0 32)
@@ -47,8 +47,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 80)
 		(input)
-		(text "pred_type[1..0]" (rect 0 0 60 12)(font "Arial" ))
-		(text "pred_type[1..0]" (rect 21 75 81 87)(font "Arial" ))
+		(text "aux_pred_type[1..0]" (rect 0 0 80 12)(font "Arial" ))
+		(text "aux_pred_type[1..0]" (rect 21 75 101 87)(font "Arial" ))
 		(line (pt 0 80)(pt 16 80)(line_width 3))
 	)
 	(port
@@ -61,32 +61,32 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 112)
 		(input)
-		(text "last_pred" (rect 0 0 36 12)(font "Arial" ))
-		(text "last_pred" (rect 21 107 57 119)(font "Arial" ))
+		(text "aux_last_pred" (rect 0 0 56 12)(font "Arial" ))
+		(text "aux_last_pred" (rect 21 107 77 119)(font "Arial" ))
 		(line (pt 0 112)(pt 16 112)(line_width 1))
 	)
 	(port
-		(pt 216 32)
+		(pt 240 32)
 		(output)
 		(text "incorrect_pred" (rect 0 0 57 12)(font "Arial" ))
-		(text "incorrect_pred" (rect 138 27 195 39)(font "Arial" ))
-		(line (pt 216 32)(pt 200 32)(line_width 1))
+		(text "incorrect_pred" (rect 162 27 219 39)(font "Arial" ))
+		(line (pt 240 32)(pt 224 32)(line_width 1))
 	)
 	(port
-		(pt 216 48)
+		(pt 240 48)
 		(output)
 		(text "correct_pred" (rect 0 0 51 12)(font "Arial" ))
-		(text "correct_pred" (rect 144 43 195 55)(font "Arial" ))
-		(line (pt 216 48)(pt 200 48)(line_width 1))
+		(text "correct_pred" (rect 168 43 219 55)(font "Arial" ))
+		(line (pt 240 48)(pt 224 48)(line_width 1))
 	)
 	(port
-		(pt 216 64)
+		(pt 240 64)
 		(output)
 		(text "checked" (rect 0 0 33 12)(font "Arial" ))
-		(text "checked" (rect 162 59 195 71)(font "Arial" ))
-		(line (pt 216 64)(pt 200 64)(line_width 1))
+		(text "checked" (rect 186 59 219 71)(font "Arial" ))
+		(line (pt 240 64)(pt 224 64)(line_width 1))
 	)
 	(drawing
-		(rectangle (rect 16 16 200 128)(line_width 1))
+		(rectangle (rect 16 16 224 128)(line_width 1))
 	)
 )

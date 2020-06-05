@@ -1,5 +1,5 @@
 Flow report for ev20QUARTUS
-Tue Jun 02 00:55:51 2020
+Thu Jun 04 22:50:37 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Jun 02 00:55:51 2020       ;
+; Flow Status                        ; Successful - Thu Jun 04 22:50:37 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ev20QUARTUS                                 ;
 ; Top-level Entity Name              ; prediction_block                            ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 278                                         ;
-;     Total combinational functions  ; 272                                         ;
-;     Dedicated logic registers      ; 106                                         ;
-; Total registers                    ; 106                                         ;
+; Total logic elements               ; 286                                         ;
+;     Total combinational functions  ; 277                                         ;
+;     Dedicated logic registers      ; 111                                         ;
+; Total registers                    ; 111                                         ;
 ; Total pins                         ; 70                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -62,7 +62,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/02/2020 00:55:25 ;
+; Start date & time ; 06/04/2020 22:50:10 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ev20QUARTUS         ;
 +-------------------+---------------------+
@@ -73,7 +73,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+------------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name      ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+------------------+------------+
-; COMPILER_SIGNATURE_ID               ; 268891677263321.159107012442908        ; --            ; --               ; --         ;
+; COMPILER_SIGNATURE_ID               ; 136865864712007.159132181016500        ; --            ; --               ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; prediction_block ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; prediction_block ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; prediction_block ; Top        ;
@@ -89,8 +89,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:27     ; 1.0                     ; 4795 MB             ; 00:00:53                           ;
-; Total                ; 00:00:27     ; --                      ; --                  ; 00:00:53                           ;
+; Analysis & Synthesis ; 00:00:29     ; 1.0                     ; 4730 MB             ; 00:00:49                           ;
+; Total                ; 00:00:29     ; --                      ; --                  ; 00:00:49                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -99,7 +99,7 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-F48AUDE  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; Lenovo-PC        ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
