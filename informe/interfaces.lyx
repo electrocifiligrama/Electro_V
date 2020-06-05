@@ -90,8 +90,129 @@ Set de Instrucciones
 \end_layout
 
 \begin_layout Standard
-CAPAZ NO HACE FALTA DESCRIBIRLO, SOLO MOSTRARLO, ACLARAR QUE TIENE EXPANDING
- OPCODES, LESTO.
+El primer modelo tomado de base para el diseño del EV20 cuenta con un set
+ de 27 instrucciones de 14 bits que se pueden llamar 
+\begin_inset Quotes eld
+\end_inset
+
+sencillas
+\begin_inset Quotes erd
+\end_inset
+
+ ya que fueron ideadas para ser realizadas en un ciclo de máquina (o en
+ un ciclo de pipeline).
+ En el diseño final se mantuvo el número de instrucciones y la idea de su
+ realización estilo 
+\begin_inset Quotes eld
+\end_inset
+
+RISC
+\begin_inset Quotes erd
+\end_inset
+
+, pero se modificó el tamaño de cada instrucción agregando 8 bits de manera
+ de extender los operandos.
+\end_layout
+
+\begin_layout Standard
+Para indicar de una mejor manera como fueron añadidos estos 8 bits, primero
+ se muestra una imagen de algunas de las instrucciones del modelo de base:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/setDeInstruccionesBase.PNG
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fragmento de Set de Instrucciones - Modelo Base EV20
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se puede ver en la imagen, que el set de intrucciones presenta 
+\begin_inset Quotes eld
+\end_inset
+
+expanding opcodes
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Por ejemplo, en las instrucciones de 
+\begin_inset Quotes eld
+\end_inset
+
+JMP
+\begin_inset Quotes erd
+\end_inset
+
+ (saltos) se interpreta un opcode de 3 bits con un operando de 11 bits,
+ pero en las intrucciones de 
+\begin_inset Quotes eld
+\end_inset
+
+MOV
+\begin_inset Quotes erd
+\end_inset
+
+ (movimiento de registros) el opcode presenta 4 bits en lugar de 3.
+ Aún más, si se mostrase el set de intrucciones completo podría notarse
+ que el opcode llega a expandirse a 7 bits en algunas instrucciones.
+\end_layout
+
+\begin_layout Standard
+Dicho esto, los 8 bits extra se añadieron como los 8 bits más significativos
+ del operando, sin modificar el opcode.
+ Este aumento de tamaño de las instrucciones permite trabajar con constantes
+ de 16 bits en lugar de 8.
+\end_layout
+
+\begin_layout Standard
+Se consideró que la solución planteada es la más eficiente teniendo en cuenta
+ que se pretende mantener la implementación de las instrucciones con un
+ estilo 
+\begin_inset Quotes eld
+\end_inset
+
+RISC
+\begin_inset Quotes erd
+\end_inset
+
+ (entonces se descarta la idea de tener que realizar más de un fetch para
+ implementar una instrucción), y además pensando en un diseño escalable
+ que permita expandir aún más los opcodes permitiendo agregar más instrucciones
+ al set existente.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -99,7 +220,121 @@ Memoria de datos y memoria de instrucciones
 \end_layout
 
 \begin_layout Standard
-COMO USAR EL MICRO, COMO USAR LAS MEMORIAS DE DATOS Y DE INSTRUCCIONES.
+Para ingresar una instrucción al procesador y percibir sus resultados, son
+ necesarias la memoria de instrucciones y la memoria de datos, implementadas
+ por separado.
+ A continuación se presenta una imagen de las memorias utilizadas para el
+ diseño en 
+\begin_inset Quotes eld
+\end_inset
+
+Quartus
+\begin_inset Quotes erd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/memData.PNG
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename imagenes/memInstrucciones.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Memoria de Datos - Memoria de Instrucciones
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es importante notar que en los parámetros de Quartus para la memoria de
+ instrucciones (ubicada a la derecha en la figura), se especifica un archivo
+ 
+\begin_inset Quotes eld
+\end_inset
+
+instructionData.mif
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Este archivo tiene extensión 
+\begin_inset Quotes eld
+\end_inset
+
+.mif
+\begin_inset Quotes erd
+\end_inset
+
+ que significa 
+\begin_inset Quotes eld
+\end_inset
+
+Memory Initializer File
+\begin_inset Quotes erd
+\end_inset
+
+, y es utilizado para inicializar la memoria de instrucciones con un programa
+ a ejecutar por el EV20, y así poder expresar resultados en la memoria de
+ datos.
+\end_layout
+
+\begin_layout Standard
+Para generar el archivo de instrucciones mencionado, se realizó un compilador
+ que permite escribir programas de una manera relativamente 
+\begin_inset Quotes eld
+\end_inset
+
+user friendly
+\begin_inset Quotes erd
+\end_inset
+
+, si es comparado con el desafío de escribir un progama en binario y respetando
+ el formato un archivo 
+\begin_inset Quotes eld
+\end_inset
+
+.mif
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -107,8 +342,91 @@ Compilador
 \end_layout
 
 \begin_layout Standard
-EXPLICAR COMO FUNCIONA EL COMPILADOR, COMO SE HIZO, COMO SE PENSÓ, COMO
- SE USA.
+El compilador permite interpretar un programa escrito en un editor de texto
+ plano que permita guardar archivos con extensión 
+\begin_inset Quotes eld
+\end_inset
+
+.txt
+\begin_inset Quotes erd
+\end_inset
+
+, utilizando los némonicos del set de instrucciones del EV20 (se mantuvieron
+ los mismos némonicos del set de instrucciones tomado como base para el
+ diseño del EV20).
+ La escritura del código debe ser secuencial, con una instrucción debajo
+ de otra, sin identación, y se permiten ingresar comentarios luego de una
+ doble barra 
+\begin_inset Quotes eld
+\end_inset
+
+//
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A continuación se presenta una imagen de un código de input al compilador,
+ y su respectiva salida como archivo 
+\begin_inset Quotes eld
+\end_inset
+
+.mif
+\begin_inset Quotes erd
+\end_inset
+
+, listo para ser compilado en Quartus:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/compiladorInputOutput.PNG
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Input .txt - Output .mif - Compilador
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este compilador fue realizado en lenguaje 
+\begin_inset Quotes eld
+\end_inset
+
+Python
+\begin_inset Quotes erd
+\end_inset
+
+, lo cual lo hace capaz de incorporar funcionalidades extra las de permitir
+ labels para los saltos o la declaración de subrutinas, sin la necesidad
+ de un arduo esfuerzo en programación.
 \end_layout
 
 \end_body

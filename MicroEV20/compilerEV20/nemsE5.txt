@@ -2,7 +2,7 @@ MOK W,#10          //0
 MOV R0,W
 JMP 4
 MOK W,#5
-MOV R1,W   //el W debe finalizar en 10!!!!!!!!!!!!!
+MOV R1,W   //el W debe finalizar en 10
 BSR 10      //linea 5
 MOK W,#1    //linea 6
 CLR CY      //linea 7
