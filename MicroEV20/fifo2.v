@@ -1,11 +1,11 @@
-module fifo(input clk, 
+module fifo2(input clk, 
 				input pop,
 				input push,
 				input clear,
 				input I,
 				output reg P);
 /**************************************
-*****************fifo******************
+*****************fifo2******************
 ***************************************
 INPUT:
 		1) clk: clock signal.
@@ -45,6 +45,7 @@ always@(posedge clk) begin
 
 	// pop first, before clearing
 	if (pop) begin 
+		P = queue[3];
 		queue[3] = queue[2];
 		queue[2] = queue[1];
 		queue[1] = queue[0];
@@ -64,7 +65,11 @@ always@(posedge clk) begin
 		queue[index] = I;
 		index = index - 1;	
 	end
-	P = queue[3]; 
+
+	if(!pop) begin
+		P = queue[3]; 
+	end
+
 end
 
 
