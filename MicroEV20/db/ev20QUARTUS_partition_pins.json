@@ -216,6 +216,70 @@
 					"strict" : false
 				},
 				{
+					"name" : "fromDATAview[15]",
+					"strict" : false
+				},
+				{
+					"name" : "fromDATAview[14]",
+					"strict" : false
+				},
+				{
+					"name" : "fromDATAview[13]",
+					"strict" : false
+				},
+				{
+					"name" : "fromDATAview[12]",
+					"strict" : false
+				},
+				{
+					"name" : "fromDATAview[11]",
+					"strict" : false
+				},
+				{
+					"name" : "fromDATAview[10]",
+					"strict" : false
+				},
+				{
+					"name" : "fromDATAview[9]",
+					"strict" : false
+				},
+				{
+					"name" : "fromDATAview[8]",
+					"strict" : false
+				},
+				{
+					"name" : "fromDATAview[7]",
+					"strict" : false
+				},
+				{
+					"name" : "fromDATAview[6]",
+					"strict" : false
+				},
+				{
+					"name" : "fromDATAview[5]",
+					"strict" : false
+				},
+				{
+					"name" : "fromDATAview[4]",
+					"strict" : false
+				},
+				{
+					"name" : "fromDATAview[3]",
+					"strict" : false
+				},
+				{
+					"name" : "fromDATAview[2]",
+					"strict" : false
+				},
+				{
+					"name" : "fromDATAview[1]",
+					"strict" : false
+				},
+				{
+					"name" : "fromDATAview[0]",
+					"strict" : false
+				},
+				{
 					"name" : "I_out[21]",
 					"strict" : false
 				},

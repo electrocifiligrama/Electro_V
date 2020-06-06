@@ -1,12 +1,5 @@
-MOK W,#10          //0
-MOV R0,W
-JMP 4
-MOK W,#5
-MOV R1,W   //el W debe finalizar en 10
-BSR 10      //linea 5
-MOK W,#1    //linea 6
-CLR CY      //linea 7
-CLR CY      //linea 8
-JMP 8       //linea 9
-MOK W,#15      //linea 10
-RET
+MOK W,#10
+MOM 1,W
+MOK W,#20
+MOM W,1
+MOV R1,R2

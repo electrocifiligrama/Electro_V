@@ -20,9 +20,9 @@ refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 312 176)
+	(rect 16 16 312 208)
 	(text "SynchUnit" (rect 5 0 65 19)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 139 24 156)(font "Intel Clear" ))
+	(text "inst" (rect 8 171 24 188)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -73,6 +73,13 @@ refer to the applicable agreement for further details.
 		(line (pt 0 128)(pt 16 128))
 	)
 	(port
+		(pt 0 144)
+		(input)
+		(text "MR" (rect 0 0 18 19)(font "Intel Clear" (font_size 8)))
+		(text "MR" (rect 21 139 39 158)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
 		(pt 296 32)
 		(output)
 		(text "Asynched[4..0]" (rect 0 0 87 19)(font "Intel Clear" (font_size 8)))
@@ -107,7 +114,14 @@ refer to the applicable agreement for further details.
 		(text "JumpSynched" (rect 191 91 275 110)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 96)(pt 280 96))
 	)
+	(port
+		(pt 296 112)
+		(output)
+		(text "MRsynched" (rect 0 0 67 19)(font "Intel Clear" (font_size 8)))
+		(text "MRsynched" (rect 208 107 275 126)(font "Intel Clear" (font_size 8)))
+		(line (pt 296 112)(pt 280 112))
+	)
 	(drawing
-		(rectangle (rect 16 16 280 144))
+		(rectangle (rect 16 16 280 176))
 	)
 )

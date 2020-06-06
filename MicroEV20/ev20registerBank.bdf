@@ -117,9 +117,9 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -1400 1024 -1232 1040)
+	(rect -1448 1008 -1280 1024)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "MR" (rect 5 0 22 12)(font "Arial" ))
+	(text "MR" (rect 5 0 21 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -179,38 +179,6 @@ refer to the applicable agreement for further details.
 		(line (pt 98 12)(pt 94 8))
 	)
 	(flipy)
-)
-(symbol
-	(rect -1472 584 -1408 632)
-	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst101" (rect 3 37 38 49)(font "Arial" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
-		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 14 16))
-	)
-	(port
-		(pt 0 32)
-		(input)
-		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
-		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
-		(line (pt 0 32)(pt 14 32))
-	)
-	(port
-		(pt 64 24)
-		(output)
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(line (pt 42 24)(pt 64 24))
-	)
-	(drawing
-		(line (pt 14 12)(pt 30 12))
-		(line (pt 14 37)(pt 31 37))
-		(line (pt 14 12)(pt 14 37))
-		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
-	)
 )
 (symbol
 	(rect -792 -552 -672 -440)
@@ -333,7 +301,7 @@ refer to the applicable agreement for further details.
 	(annotation_block (parameter)(rect -760 792 -640 830))
 )
 (symbol
-	(rect -1320 592 -1256 640)
+	(rect -1304 912 -1240 960)
 	(text "OR2" (rect 1 0 19 10)(font "Arial" (font_size 6)))
 	(text "inst5_RB" (rect 3 37 47 49)(font "Arial" ))
 	(port
@@ -10915,39 +10883,8 @@ refer to the applicable agreement for further details.
 	(pt -712 960)
 )
 (connector
-	(pt -1216 1032)
-	(pt -1216 1056)
-)
-(connector
 	(pt -1216 1056)
 	(pt -1520 1056)
-)
-(connector
-	(text "eq[34]" (rect -1372 632 -1342 649)(font "Intel Clear" ))
-	(pt -1320 624)
-	(pt -1376 624)
-)
-(connector
-	(pt -1360 608)
-	(pt -1360 544)
-)
-(connector
-	(text "writeMem2W" (rect -1344 528 -1280 545)(font "Intel Clear" ))
-	(pt -1360 544)
-	(pt -1312 544)
-)
-(connector
-	(text "eq[35]" (rect -1517 576 -1487 593)(font "Intel Clear" ))
-	(pt -1472 600)
-	(pt -1512 600)
-)
-(connector
-	(pt -1520 1056)
-	(pt -1520 616)
-)
-(connector
-	(pt -1520 616)
-	(pt -1472 616)
 )
 (connector
 	(text "C[15..0]" (rect -823 880 -787 897)(font "Intel Clear" ))
@@ -10962,20 +10899,8 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt -1232 1032)
-	(pt -1216 1032)
-)
-(connector
 	(pt -1216 1032)
 	(pt -712 1032)
-)
-(connector
-	(pt -1408 608)
-	(pt -1360 608)
-)
-(connector
-	(pt -1360 608)
-	(pt -1320 608)
 )
 (connector
 	(pt -248 2912)
@@ -12960,11 +12885,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "enableW" (rect -1241 592 -1198 609)(font "Intel Clear" ))
-	(pt -1256 616)
-	(pt -1200 616)
-)
-(connector
 	(text "enableW" (rect -349 7192 -306 7209)(font "Intel Clear" ))
 	(pt -376 7208)
 	(pt -312 7208)
@@ -13108,6 +13028,49 @@ refer to the applicable agreement for further details.
 	(pt 848 32)
 	(bus)
 )
+(connector
+	(text "eq[34]" (rect -1356 952 -1326 969)(font "Intel Clear" ))
+	(pt -1304 944)
+	(pt -1360 944)
+)
+(connector
+	(pt -1344 928)
+	(pt -1344 864)
+)
+(connector
+	(text "writeMem2W" (rect -1328 848 -1264 865)(font "Intel Clear" ))
+	(pt -1344 864)
+	(pt -1296 864)
+)
+(connector
+	(pt -1520 1056)
+	(pt -1520 928)
+)
+(connector
+	(text "enableW" (rect -1225 912 -1182 929)(font "Intel Clear" ))
+	(pt -1240 936)
+	(pt -1184 936)
+)
+(connector
+	(pt -1520 928)
+	(pt -1344 928)
+)
+(connector
+	(pt -1344 928)
+	(pt -1304 928)
+)
+(connector
+	(pt -1216 1016)
+	(pt -1280 1016)
+)
+(connector
+	(pt -1216 1016)
+	(pt -1216 1032)
+)
+(connector
+	(pt -1216 1032)
+	(pt -1216 1056)
+)
 (junction (pt -656 -392))
 (junction (pt -656 -368))
 (junction (pt -656 -344))
@@ -13160,7 +13123,6 @@ refer to the applicable agreement for further details.
 (junction (pt -512 2480))
 (junction (pt -520 2704))
 (junction (pt -1216 1032))
-(junction (pt -1360 608))
 (junction (pt -496 2928))
 (junction (pt -272 3152))
 (junction (pt -272 3376))
@@ -13184,6 +13146,7 @@ refer to the applicable agreement for further details.
 (junction (pt -376 7208))
 (junction (pt 472 7208))
 (junction (pt -264 7456))
+(junction (pt -1344 928))
 (text "clk" (rect -639 1560 -625 1577)(font "Intel Clear" ))
 (text "clk" (rect -639 1784 -625 1801)(font "Intel Clear" ))
 (text "clk" (rect -663 2008 -649 2025)(font "Intel Clear" ))
