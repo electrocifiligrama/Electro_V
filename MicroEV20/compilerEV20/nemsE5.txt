@@ -2,6 +2,8 @@ MOK W,#10
 CLR CY 
 JCY 4//linea 2
 MOK W,#20  //linea 3
+SET CY
+SET CY
 MOV R1,R2  //linea 4
 MOV R3,R4  
 MOV R5,R6

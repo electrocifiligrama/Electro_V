@@ -11,7 +11,7 @@ module PCRegister (  input inc,
 		end
    always @ (negedge inc)
 			if(auxLoad)
-				PC <= auxAdd;
+				PC <= (auxAdd + 1);
 			else
 				PC <= PC + 11'b00000000001;
 endmodule

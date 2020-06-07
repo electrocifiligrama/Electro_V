@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ev20QUARTUS
-Sun Jun 07 00:45:17 2020
+Sun Jun 07 01:30:13 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -336,13 +336,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jun 07 00:45:16 2020       ;
+; Analysis & Synthesis Status        ; Successful - Sun Jun 07 01:30:12 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ev20QUARTUS                                 ;
 ; Top-level Entity Name              ; ev20main                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 2,900                                       ;
-;     Total combinational functions  ; 1,464                                       ;
+; Total logic elements               ; 2,911                                       ;
+;     Total combinational functions  ; 1,475                                       ;
 ;     Dedicated logic registers      ; 1,728                                       ;
 ; Total registers                    ; 1728                                        ;
 ; Total pins                         ; 197                                         ;
@@ -535,7 +535,7 @@ refer to the applicable agreement for further details.
 ; lpm_ram_io.tdf                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_ram_io.tdf              ;         ;
 ; altram.tdf                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.tdf                  ;         ;
 ; db/altsyncram_kqa1.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/altsyncram_kqa1.tdf    ;         ;
-; instructionData.mif              ; yes             ; Auto-Found Memory Initialization File    ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/instructionData.mif       ;         ;
+; instructiondata.mif              ; yes             ; Auto-Found Memory Initialization File    ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/instructiondata.mif       ;         ;
 ; db/mux_ssc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/mux_ssc.tdf            ;         ;
 ; lpm_rom.tdf                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_rom.tdf                 ;         ;
 ; altrom.tdf                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.tdf                  ;         ;
@@ -549,16 +549,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 2,900     ;
+; Estimated Total logic elements              ; 2,911     ;
 ;                                             ;           ;
-; Total combinational functions               ; 1464      ;
+; Total combinational functions               ; 1475      ;
 ; Logic element usage by number of LUT inputs ;           ;
 ;     -- 4 input functions                    ; 1003      ;
-;     -- 3 input functions                    ; 351       ;
+;     -- 3 input functions                    ; 362       ;
 ;     -- <=2 input functions                  ; 110       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 1346      ;
+;     -- normal mode                          ; 1357      ;
 ;     -- arithmetic mode                      ; 118       ;
 ;                                             ;           ;
 ; Total registers                             ; 1728      ;
@@ -572,7 +572,7 @@ refer to the applicable agreement for further details.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
 ; Maximum fan-out                             ; 1455      ;
-; Total fan-out                               ; 11245     ;
+; Total fan-out                               ; 11256     ;
 ; Average fan-out                             ; 3.07      ;
 +---------------------------------------------+-----------+
 
@@ -582,7 +582,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
 ; Compilation Hierarchy Node                    ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                ; Entity Name           ; Library Name ;
 +-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
-; |ev20main                                     ; 1464 (4)            ; 1728 (0)                  ; 65664       ; 0            ; 0       ; 0         ; 197  ; 0            ; |ev20main                                                                                                                          ; ev20main              ; work         ;
+; |ev20main                                     ; 1475 (4)            ; 1728 (0)                  ; 65664       ; 0            ; 0       ; 0         ; 197  ; 0            ; |ev20main                                                                                                                          ; ev20main              ; work         ;
 ;    |ALUUnit:inst13|                           ; 179 (0)             ; 33 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ALUUnit:inst13                                                                                                           ; ALUUnit               ; work         ;
 ;       |ALU:inst1|                             ; 158 (158)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ALUUnit:inst13|ALU:inst1                                                                                                 ; ALU                   ; work         ;
 ;       |carryBlock:inst|                       ; 4 (4)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ALUUnit:inst13|carryBlock:inst                                                                                           ; carryBlock            ; work         ;
@@ -774,8 +774,8 @@ refer to the applicable agreement for further details.
 ;       |lpm_ff:inst97|                         ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ev20registerBank:inst14|lpm_ff:inst97                                                                                    ; lpm_ff                ; work         ;
 ;       |lpm_ff:inst99|                         ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ev20registerBank:inst14|lpm_ff:inst99                                                                                    ; lpm_ff                ; work         ;
 ;       |lpm_ff:inst9|                          ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ev20registerBank:inst14|lpm_ff:inst9                                                                                     ; lpm_ff                ; work         ;
-;    |fetchUnit:inst|                           ; 411 (3)             ; 266 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst                                                                                                           ; fetchUnit             ; work         ;
-;       |PCRegister:inst1|                      ; 11 (11)             ; 23 (23)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|PCRegister:inst1                                                                                          ; PCRegister            ; work         ;
+;    |fetchUnit:inst|                           ; 422 (3)             ; 266 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst                                                                                                           ; fetchUnit             ; work         ;
+;       |PCRegister:inst1|                      ; 22 (22)             ; 23 (23)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|PCRegister:inst1                                                                                          ; PCRegister            ; work         ;
 ;       |SubRoutineControlUnit:inst6|           ; 93 (4)              ; 88 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6                                                                               ; SubRoutineControlUnit ; work         ;
 ;          |stack:inst|                         ; 89 (0)              ; 88 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst                                                                    ; stack                 ; work         ;
 ;             |push_pop:inst12|                 ; 8 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst12                                                    ; push_pop              ; work         ;
@@ -865,22 +865,22 @@ refer to the applicable agreement for further details.
 ;       |lpm_ff:InstructionRegister|            ; 0 (0)               ; 22 (22)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|lpm_ff:InstructionRegister                                                                                ; lpm_ff                ; work         ;
 ;       |prediction_block:inst16|               ; 258 (1)             ; 111 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16                                                                                   ; prediction_block      ; work         ;
 ;          |branch_predictor:inst|              ; 8 (8)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|branch_predictor:inst                                                             ; branch_predictor      ; work         ;
-;          |eleven_fifo:inst2|                  ; 138 (1)             ; 87 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2                                                                 ; eleven_fifo           ; work         ;
-;             |fifo2:fifo2_block[0].f0|         ; 72 (72)             ; 37 (37)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2|fifo2:fifo2_block[0].f0                                         ; fifo2                 ; work         ;
-;             |fifo2:fifo2_block[10].f0|        ; 11 (11)             ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2|fifo2:fifo2_block[10].f0                                        ; fifo2                 ; work         ;
-;             |fifo2:fifo2_block[1].f0|         ; 6 (6)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2|fifo2:fifo2_block[1].f0                                         ; fifo2                 ; work         ;
+;          |eleven_fifo:inst2|                  ; 136 (1)             ; 87 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2                                                                 ; eleven_fifo           ; work         ;
+;             |fifo2:fifo2_block[0].f0|         ; 70 (70)             ; 37 (37)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2|fifo2:fifo2_block[0].f0                                         ; fifo2                 ; work         ;
+;             |fifo2:fifo2_block[10].f0|        ; 7 (7)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2|fifo2:fifo2_block[10].f0                                        ; fifo2                 ; work         ;
+;             |fifo2:fifo2_block[1].f0|         ; 8 (8)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2|fifo2:fifo2_block[1].f0                                         ; fifo2                 ; work         ;
 ;             |fifo2:fifo2_block[2].f0|         ; 6 (6)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2|fifo2:fifo2_block[2].f0                                         ; fifo2                 ; work         ;
 ;             |fifo2:fifo2_block[3].f0|         ; 6 (6)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2|fifo2:fifo2_block[3].f0                                         ; fifo2                 ; work         ;
 ;             |fifo2:fifo2_block[4].f0|         ; 6 (6)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2|fifo2:fifo2_block[4].f0                                         ; fifo2                 ; work         ;
 ;             |fifo2:fifo2_block[5].f0|         ; 6 (6)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2|fifo2:fifo2_block[5].f0                                         ; fifo2                 ; work         ;
-;             |fifo2:fifo2_block[6].f0|         ; 6 (6)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2|fifo2:fifo2_block[6].f0                                         ; fifo2                 ; work         ;
+;             |fifo2:fifo2_block[6].f0|         ; 8 (8)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2|fifo2:fifo2_block[6].f0                                         ; fifo2                 ; work         ;
 ;             |fifo2:fifo2_block[7].f0|         ; 6 (6)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2|fifo2:fifo2_block[7].f0                                         ; fifo2                 ; work         ;
 ;             |fifo2:fifo2_block[8].f0|         ; 6 (6)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2|fifo2:fifo2_block[8].f0                                         ; fifo2                 ; work         ;
 ;             |fifo2:fifo2_block[9].f0|         ; 6 (6)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2|fifo2:fifo2_block[9].f0                                         ; fifo2                 ; work         ;
 ;          |fifo:inst11|                        ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|fifo:inst11                                                                       ; fifo                  ; work         ;
 ;          |fifo_popper:inst3|                  ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|fifo_popper:inst3                                                                 ; fifo_popper           ; work         ;
-;          |fifo_two_bit:inst1|                 ; 59 (0)              ; 10 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|fifo_two_bit:inst1                                                                ; fifo_two_bit          ; work         ;
-;             |fifo2:fifo2b_block[0].f0|        ; 53 (53)             ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0                                       ; fifo2                 ; work         ;
+;          |fifo_two_bit:inst1|                 ; 61 (0)              ; 10 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|fifo_two_bit:inst1                                                                ; fifo_two_bit          ; work         ;
+;             |fifo2:fifo2b_block[0].f0|        ; 55 (55)             ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0                                       ; fifo2                 ; work         ;
 ;             |fifo2:fifo2b_block[1].f0|        ; 6 (6)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0                                       ; fifo2                 ; work         ;
 ;          |prediction_checker:inst5|           ; 22 (13)             ; 3 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|prediction_checker:inst5                                                          ; prediction_checker    ; work         ;
 ;             |jcy_checker:jcy|                 ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|prediction_checker:inst5|jcy_checker:jcy                                          ; jcy_checker           ; work         ;
@@ -1480,7 +1480,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Total registers                              ; 1728  ;
 ; Number of registers using Synchronous Clear  ; 16    ;
-; Number of registers using Synchronous Load   ; 78    ;
+; Number of registers using Synchronous Load   ; 67    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 1201  ;
@@ -1508,24 +1508,24 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-------------------------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |ev20main|fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[29]                                    ;
-; 4:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |ev20main|ALUUnit:inst13|lpm_ff:OperandRegister1|dffs[9]                                                                                ;
-; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |ev20main|fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2|fifo2:fifo2_block[0].f0|queue[0]                                     ;
-; 4:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |ev20main|fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2|fifo2:fifo2_block[10].f0|queue[1]                                    ;
-; 4:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |ev20main|fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2|fifo2:fifo2_block[10].f0|queue[2]                                    ;
-; 33:1               ; 16 bits   ; 352 LEs       ; 352 LEs              ; 0 LEs                  ; Yes        ; |ev20main|operandsUnit:inst10|lpm_ff:LatchA1|dffs[9]                                                                                    ;
-; 33:1               ; 16 bits   ; 352 LEs       ; 352 LEs              ; 0 LEs                  ; Yes        ; |ev20main|operandsUnit:inst10|lpm_ff:LatchB1|dffs[3]                                                                                    ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |ev20main|fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[0]                                     ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |ev20main|ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|busmux:inst27|lpm_mux:$00000|mux_tsc:auto_generated|result_node[13] ;
-; 4:1                ; 13 bits   ; 26 LEs        ; 26 LEs               ; 0 LEs                  ; No         ; |ev20main|fetchUnit:inst|prediction_block:inst16|fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|queue                                      ;
-; 5:1                ; 11 bits   ; 33 LEs        ; 33 LEs               ; 0 LEs                  ; No         ; |ev20main|fetchUnit:inst|busmux:inst7|lpm_mux:$00000|mux_osc:auto_generated|result_node[8]                                              ;
-; 16:1               ; 15 bits   ; 150 LEs       ; 120 LEs              ; 30 LEs                 ; No         ; |ev20main|ALUUnit:inst13|ALU:inst1|Mux0                                                                                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |ev20main|fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[25]                                   ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |ev20main|ALUUnit:inst13|lpm_ff:OperandRegister1|dffs[14]                                                                              ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |ev20main|fetchUnit:inst|prediction_block:inst16|fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0|queue[0]                                  ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |ev20main|fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2|fifo2:fifo2_block[1].f0|queue[1]                                    ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |ev20main|fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2|fifo2:fifo2_block[6].f0|queue[2]                                    ;
+; 33:1               ; 16 bits   ; 352 LEs       ; 352 LEs              ; 0 LEs                  ; Yes        ; |ev20main|operandsUnit:inst10|lpm_ff:LatchA1|dffs[14]                                                                                  ;
+; 33:1               ; 16 bits   ; 352 LEs       ; 352 LEs              ; 0 LEs                  ; Yes        ; |ev20main|operandsUnit:inst10|lpm_ff:LatchB1|dffs[13]                                                                                  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |ev20main|fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[1]                                    ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |ev20main|ev20registerBank:inst14|ev20BLOQUE3:inst|ev20B3BUSB:inst2|busmux:inst27|lpm_mux:$00000|mux_tsc:auto_generated|result_node[3] ;
+; 4:1                ; 13 bits   ; 26 LEs        ; 26 LEs               ; 0 LEs                  ; No         ; |ev20main|fetchUnit:inst|prediction_block:inst16|fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0|queue                                     ;
+; 5:1                ; 11 bits   ; 33 LEs        ; 33 LEs               ; 0 LEs                  ; No         ; |ev20main|fetchUnit:inst|busmux:inst7|lpm_mux:$00000|mux_osc:auto_generated|result_node[8]                                             ;
+; 16:1               ; 15 bits   ; 150 LEs       ; 120 LEs              ; 30 LEs                 ; No         ; |ev20main|ALUUnit:inst13|ALU:inst1|Mux0                                                                                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------+
@@ -5980,22 +5980,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SCLR SLD      ; 11                          ;
 ;     SCLR              ; 4                           ;
 ;     SCLR SLD          ; 1                           ;
-;     SLD               ; 66                          ;
-;     plain             ; 456                         ;
-; cycloneiii_lcell_comb ; 1466                        ;
+;     SLD               ; 55                          ;
+;     plain             ; 467                         ;
+; cycloneiii_lcell_comb ; 1477                        ;
 ;     arith             ; 118                         ;
 ;         2 data inputs ; 54                          ;
 ;         3 data inputs ; 64                          ;
-;     normal            ; 1348                        ;
+;     normal            ; 1359                        ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 5                           ;
 ;         2 data inputs ; 51                          ;
-;         3 data inputs ; 287                         ;
+;         3 data inputs ; 298                         ;
 ;         4 data inputs ; 1003                        ;
 ; cycloneiii_ram_block  ; 71                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 12.90                       ;
-; Average LUT depth     ; 3.61                        ;
+; Average LUT depth     ; 3.62                        ;
 +-----------------------+-----------------------------+
 
 
@@ -6004,7 +6004,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:18     ;
+; Top            ; 00:00:12     ;
 +----------------+--------------+
 
 
@@ -6014,7 +6014,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Jun 07 00:42:39 2020
+    Info: Processing started: Sun Jun 07 01:28:30 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ev20QUARTUS -c ev20QUARTUS
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -6215,6 +6215,7 @@ Warning (12125): Using design file eleven_fifo.v, which is not specified as a de
     Info (12023): Found entity 1: eleven_fifo File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/eleven_fifo.v Line: 1
 Info (12128): Elaborating entity "eleven_fifo" for hierarchy "fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2"
 Info (12128): Elaborating entity "PCRegister" for hierarchy "fetchUnit:inst|PCRegister:inst1"
+Warning (10230): Verilog HDL assignment warning at PCRegister.v(14): truncated value with size 32 to match size of target (11) File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/PCRegister.v Line: 14
 Info (12128): Elaborating entity "SubRoutineControlUnit" for hierarchy "fetchUnit:inst|SubRoutineControlUnit:inst6"
 Warning (12125): Using design file stack.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: stack
@@ -6326,7 +6327,6 @@ Info (12131): Elaborated megafunction instantiation "LPM_RAM_IO:inst2|altram:sra
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_kqa1.tdf
     Info (12023): Found entity 1: altsyncram_kqa1 File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/db/altsyncram_kqa1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_kqa1" for hierarchy "LPM_RAM_IO:inst2|altram:sram|altsyncram:ram_block|altsyncram_kqa1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Critical Warning (127005): Memory depth (2048) in the design file differs from memory depth (11) in the Memory Initialization File "C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/instructionData.mif" -- setting initial value for remaining addresses to 0
 Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:inst8"
 Info (12130): Elaborated megafunction instantiation "BUSMUX:inst8"
 Info (12133): Instantiated megafunction "BUSMUX:inst8" with the following parameter:
@@ -6553,16 +6553,16 @@ Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/output_files/ev20QUARTUS.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3289 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3300 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 196 output pins
-    Info (21061): Implemented 3021 logic cells
+    Info (21061): Implemented 3032 logic cells
     Info (21064): Implemented 71 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 220 warnings
-    Info: Peak virtual memory: 4811 megabytes
-    Info: Processing ended: Sun Jun 07 00:45:17 2020
-    Info: Elapsed time: 00:02:38
-    Info: Total CPU time (on all processors): 00:01:45
+    Info: Peak virtual memory: 4808 megabytes
+    Info: Processing ended: Sun Jun 07 01:30:13 2020
+    Info: Elapsed time: 00:01:43
+    Info: Total CPU time (on all processors): 00:01:32
 
 
 +------------------------------------------+
