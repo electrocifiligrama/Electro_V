@@ -411,6 +411,38 @@ refer to the applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 )
+(pin
+	(output)
+	(rect 448 288 624 304)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "preload" (rect 90 0 125 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1184 -224 1360 -208)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "flush" (rect 90 0 114 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
 (symbol
 	(rect 1440 -248 1656 8)
 	(text "MIRUnit2" (rect 5 0 60 19)(font "Intel Clear" (font_size 8)))
@@ -1395,6 +1427,13 @@ refer to the applicable agreement for further details.
 		(text "flush" (rect 183 139 211 158)(font "Intel Clear" (font_size 8)))
 		(line (pt 232 144)(pt 216 144))
 	)
+	(port
+		(pt 232 160)
+		(output)
+		(text "preload" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "preload" (rect 165 155 211 174)(font "Intel Clear" (font_size 8)))
+		(line (pt 232 160)(pt 216 160))
+	)
 	(drawing
 		(rectangle (rect 16 16 216 176))
 	)
@@ -2288,14 +2327,6 @@ refer to the applicable agreement for further details.
 	(pt 568 504)
 )
 (connector
-	(pt 1352 -200)
-	(pt 1352 -216)
-)
-(connector
-	(pt 1352 -200)
-	(pt 1440 -200)
-)
-(connector
 	(text "HOLD" (rect 128 136 156 153)(font "Intel Clear" ))
 	(pt 168 152)
 	(pt 120 152)
@@ -2372,27 +2403,6 @@ refer to the applicable agreement for further details.
 	(pt 472 216)
 )
 (connector
-	(pt 408 232)
-	(pt 408 224)
-	(bus)
-)
-(connector
-	(pt 400 232)
-	(pt 408 232)
-	(bus)
-)
-(connector
-	(text "IA[10..0]" (rect 409 216 447 233)(font "Intel Clear" ))
-	(pt 408 224)
-	(pt 448 224)
-	(bus)
-)
-(connector
-	(text "flush" (rect 1340 -232 1363 -215)(font "Intel Clear" ))
-	(pt 1352 -216)
-	(pt 1296 -216)
-)
-(connector
 	(text "Carry" (rect 143 200 168 217)(font "Intel Clear" ))
 	(pt 168 216)
 	(pt 112 216)
@@ -2435,6 +2445,53 @@ refer to the applicable agreement for further details.
 	(pt 104 184)
 	(bus)
 )
+(connector
+	(text "IA[10..0]" (rect 417 224 455 241)(font "Intel Clear" ))
+	(pt 400 232)
+	(pt 456 232)
+	(bus)
+)
+(connector
+	(pt 400 264)
+	(pt 416 264)
+)
+(connector
+	(pt 416 264)
+	(pt 416 296)
+)
+(connector
+	(pt 416 296)
+	(pt 448 296)
+)
+(connector
+	(pt 1432 -200)
+	(pt 1432 -208)
+)
+(connector
+	(pt 1440 -200)
+	(pt 1432 -200)
+)
+(connector
+	(pt 1432 -208)
+	(pt 1176 -208)
+)
+(connector
+	(text "flush" (rect 1124 -240 1147 -223)(font "Intel Clear" ))
+	(pt 1080 -224)
+	(pt 1176 -224)
+)
+(connector
+	(pt 1176 -216)
+	(pt 1184 -216)
+)
+(connector
+	(pt 1176 -208)
+	(pt 1176 -216)
+)
+(connector
+	(pt 1176 -216)
+	(pt 1176 -224)
+)
 (junction (pt -72 80))
 (junction (pt -32 64))
 (junction (pt 416 472))
@@ -2445,3 +2502,4 @@ refer to the applicable agreement for further details.
 (junction (pt 896 456))
 (junction (pt 1256 424))
 (junction (pt 144 96))
+(junction (pt 1176 -216))

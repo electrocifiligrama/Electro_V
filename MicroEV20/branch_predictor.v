@@ -47,6 +47,7 @@ integer index;
 integer takens;
 
 initial begin 
+	prediction = 0;
 	takens = 6;
 	for (index = 0; index <= 6; index = index + 1) begin
 		last_takens[index] <= 1;	//as a first prediction, we should take the branch
@@ -80,6 +81,9 @@ always@(*) begin
 		else begin
 			prediction = 0;
 		end
+	end
+	else begin
+		prediction = 0;
 	end
 end
 

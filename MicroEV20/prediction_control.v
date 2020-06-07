@@ -2,6 +2,7 @@ module prediction_control(input clk,
 							input [21:0] I,
 							input [10:0] PC,
 							output reg enable,
+							output reg unconditional,
 							output reg [10:0]next);
 
 /**************************************
@@ -20,8 +21,9 @@ OUTPUT:
 								a) JZE
 								B) JNE
 								C) JCY
-								
-		2) next: resolves conflict for instructions that don t require prediction
+						
+		2) unconditional: 1 if unconditional jump is required. 0 in other case.				
+		3) next: resolves conflict for instructions that don t require prediction
 					(except for BSR)
 					If I is an instruction that does not require prediction,
 								a) next = PC if I is not JMP.
@@ -38,11 +40,14 @@ TIME ANALYSIS (for input and for output):
 							
 initial begin
 	enable = 0;
+	unconditional = 0;
 end 
 
 always @ (I) begin
+	unconditional <= 0;
 	if(I[21] == 1) begin
 		if(I[21:19] == 3'b100) begin  //unconditional jump
+			unconditional <= 1;
 			next <= I[10:0];
 			enable <= 0;
 		end

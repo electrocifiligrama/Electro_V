@@ -53,7 +53,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 816 944 992 960)
+	(rect 760 976 936 992)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "CY" (rect 9 0 25 12)(font "Arial" ))
 	(pt 176 8)
@@ -234,6 +234,22 @@ refer to the applicable agreement for further details.
 	(rect 1440 880 1616 896)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "flush" (rect 90 0 114 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1632 1048 1808 1064)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "preload" (rect 90 0 125 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -984,22 +1000,22 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
-		(text "PC[10..0]" (rect 0 0 55 19)(font "Intel Clear" (font_size 8)))
-		(text "PC[10..0]" (rect 21 27 76 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
+		(text "clk" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "clk" (rect 21 27 37 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
 	)
 	(port
 		(pt 0 48)
 		(input)
-		(text "clk" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
-		(text "clk" (rect 21 43 37 62)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
+		(text "I[21..0]" (rect 0 0 42 19)(font "Intel Clear" (font_size 8)))
+		(text "I[21..0]" (rect 21 43 63 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
 		(pt 0 64)
 		(input)
-		(text "I[21..0]" (rect 0 0 42 19)(font "Intel Clear" (font_size 8)))
-		(text "I[21..0]" (rect 21 59 63 78)(font "Intel Clear" (font_size 8)))
+		(text "PC[10..0]" (rect 0 0 55 19)(font "Intel Clear" (font_size 8)))
+		(text "PC[10..0]" (rect 21 59 76 78)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
@@ -1451,39 +1467,8 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1000 936)
-	(pt 1000 952)
-)
-(connector
 	(pt 1056 936)
 	(pt 1000 936)
-)
-(connector
-	(pt 1000 952)
-	(pt 992 952)
-)
-(connector
-	(pt 1056 856)
-	(pt 1000 856)
-	(bus)
-)
-(connector
-	(pt 1000 824)
-	(pt 1000 856)
-	(bus)
-)
-(connector
-	(pt 1056 872)
-	(pt 968 872)
-)
-(connector
-	(pt 968 872)
-	(pt 968 840)
-)
-(connector
-	(text "clk" (rect 937 824 951 841)(font "Intel Clear" ))
-	(pt 968 840)
-	(pt 912 840)
 )
 (connector
 	(pt 616 1056)
@@ -1510,24 +1495,8 @@ refer to the applicable agreement for further details.
 	(pt 728 760)
 )
 (connector
-	(pt 1056 888)
-	(pt 960 888)
-	(bus)
-)
-(connector
-	(pt 960 888)
-	(pt 960 864)
-	(bus)
-)
-(connector
 	(pt 1056 904)
 	(pt 952 904)
-	(bus)
-)
-(connector
-	(text "PC[10..0]" (rect 944 808 987 825)(font "Intel Clear" ))
-	(pt 1000 824)
-	(pt 904 824)
 	(bus)
 )
 (connector
@@ -1561,23 +1530,74 @@ refer to the applicable agreement for further details.
 	(pt 1624 872)
 )
 (connector
-	(pt 712 1056)
-	(pt 1624 1056)
-)
-(connector
 	(pt 1272 888)
 	(pt 1440 888)
-)
-(connector
-	(text "Iram[21..0]" (rect 919 848 969 865)(font "Intel Clear" ))
-	(pt 888 864)
-	(pt 960 864)
-	(bus)
 )
 (connector
 	(text "Iram[21..0]" (rect 262 280 312 297)(font "Intel Clear" ))
 	(pt 224 296)
 	(pt 448 296)
+	(bus)
+)
+(connector
+	(pt 1000 936)
+	(pt 1000 984)
+)
+(connector
+	(pt 1000 984)
+	(pt 936 984)
+)
+(connector
+	(pt 712 1056)
+	(pt 1624 1056)
+)
+(connector
+	(pt 1624 1056)
+	(pt 1632 1056)
+)
+(connector
+	(text "PC[10..0]" (rect 928 856 971 873)(font "Intel Clear" ))
+	(pt 984 872)
+	(pt 888 872)
+	(bus)
+)
+(connector
+	(pt 984 872)
+	(pt 984 888)
+	(bus)
+)
+(connector
+	(pt 984 888)
+	(pt 1056 888)
+	(bus)
+)
+(connector
+	(pt 1024 848)
+	(pt 1024 872)
+	(bus)
+)
+(connector
+	(pt 1024 872)
+	(pt 1056 872)
+	(bus)
+)
+(connector
+	(pt 1048 824)
+	(pt 1048 856)
+)
+(connector
+	(text "clk" (rect 985 808 999 825)(font "Intel Clear" ))
+	(pt 960 824)
+	(pt 1048 824)
+)
+(connector
+	(pt 1048 856)
+	(pt 1056 856)
+)
+(connector
+	(text "Iram[21..0]" (rect 911 832 961 849)(font "Intel Clear" ))
+	(pt 880 848)
+	(pt 1024 848)
 	(bus)
 )
 (junction (pt 976 328))
@@ -1596,3 +1616,4 @@ refer to the applicable agreement for further details.
 (junction (pt 568 616))
 (junction (pt 552 632))
 (junction (pt 704 760))
+(junction (pt 1624 1056))
