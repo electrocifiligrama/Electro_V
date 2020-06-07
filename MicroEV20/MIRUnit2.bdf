@@ -135,7 +135,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 192 112 360 128)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Flush" (rect 5 0 33 12)(font "Arial" ))
+	(text "Flush" (rect 5 0 32 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -151,7 +151,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 760 176 928 192)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "HOLD_CK2" (rect 5 0 63 12)(font "Arial" ))
+	(text "HOLD_CK2" (rect 5 0 62 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -344,6 +344,22 @@ refer to the applicable agreement for further details.
 	(rect 656 296 832 312)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "T2_out[6..0]" (rect 90 0 149 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 2856 560 3032 576)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "T5[6..0]" (rect 90 0 127 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -1891,12 +1907,6 @@ refer to the applicable agreement for further details.
 	(pt 1736 456)
 )
 (connector
-	(text "T5[6..0]" (rect 2768 200 2803 217)(font "Intel Clear" ))
-	(pt 2760 216)
-	(pt 2832 216)
-	(bus)
-)
-(connector
 	(pt 2432 208)
 	(pt 2464 208)
 	(bus)
@@ -2009,6 +2019,17 @@ refer to the applicable agreement for further details.
 	(text "HOLD_CK2" (rect 648 552 702 569)(font "Intel Clear" ))
 	(pt 736 568)
 	(pt 640 568)
+)
+(connector
+	(text "T5[6..0]" (rect 2768 200 2803 217)(font "Intel Clear" ))
+	(pt 2760 216)
+	(pt 2856 216)
+	(bus)
+)
+(connector
+	(pt 2856 216)
+	(pt 2856 568)
+	(bus)
 )
 (junction (pt 2080 288))
 (junction (pt 608 280))

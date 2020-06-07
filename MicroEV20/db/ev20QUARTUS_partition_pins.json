@@ -24,10 +24,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "Jmp_out",
-					"strict" : false
-				},
-				{
 					"name" : "ALU_out[3]",
 					"strict" : false
 				},
@@ -644,31 +640,31 @@
 					"strict" : false
 				},
 				{
-					"name" : "T[6]",
+					"name" : "T6",
 					"strict" : false
 				},
 				{
-					"name" : "T[5]",
+					"name" : "T5",
 					"strict" : false
 				},
 				{
-					"name" : "T[4]",
+					"name" : "T4",
 					"strict" : false
 				},
 				{
-					"name" : "T[3]",
+					"name" : "T3",
 					"strict" : false
 				},
 				{
-					"name" : "T[2]",
+					"name" : "T2",
 					"strict" : false
 				},
 				{
-					"name" : "T[1]",
+					"name" : "T1",
 					"strict" : false
 				},
 				{
-					"name" : "T[0]",
+					"name" : "T0",
 					"strict" : false
 				},
 				{

@@ -33,8 +33,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "JumpIn" (rect 0 0 44 19)(font "Intel Clear" (font_size 8)))
-		(text "JumpIn" (rect 21 43 65 62)(font "Intel Clear" (font_size 8)))
+		(text "Flush" (rect 0 0 30 19)(font "Intel Clear" (font_size 8)))
+		(text "Flush" (rect 21 43 51 62)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 48)(pt 16 48))
 	)
 	(port
@@ -47,8 +47,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 80)
 		(input)
-		(text "HOLD-CK2" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
-		(text "HOLD-CK2" (rect 21 75 85 94)(font "Intel Clear" (font_size 8)))
+		(text "HOLD_CK2" (rect 0 0 67 19)(font "Intel Clear" (font_size 8)))
+		(text "HOLD_CK2" (rect 21 75 88 94)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 80)(pt 16 80))
 	)
 	(port
@@ -169,6 +169,13 @@ refer to the applicable agreement for further details.
 		(text "DaddOut[9..0]" (rect 0 0 84 19)(font "Intel Clear" (font_size 8)))
 		(text "DaddOut[9..0]" (rect 111 203 195 222)(font "Intel Clear" (font_size 8)))
 		(line (pt 216 208)(pt 200 208)(line_width 3))
+	)
+	(port
+		(pt 216 224)
+		(output)
+		(text "T5[6..0]" (rect 0 0 47 19)(font "Intel Clear" (font_size 8)))
+		(text "T5[6..0]" (rect 148 219 195 238)(font "Intel Clear" (font_size 8)))
+		(line (pt 216 224)(pt 200 224)(line_width 3))
 	)
 	(drawing
 		(rectangle (rect 16 16 200 240))
