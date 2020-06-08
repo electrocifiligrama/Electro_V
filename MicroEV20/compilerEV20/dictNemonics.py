@@ -11,7 +11,7 @@ def validPort(px):
         return False
 
 def validConst(c):
-    if (int(c) < (2**15)) and int((c) >= (-1 * ((2**15) - 1))):
+    if (int(c) < (2**16)) and int((c) >= (-1 * ((2**15) - 1))):
         return True
     else:
         return False

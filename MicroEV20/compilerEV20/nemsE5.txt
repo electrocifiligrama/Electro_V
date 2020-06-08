@@ -1,12 +1,15 @@
-MOK W,#10
-CLR CY 
-JCY 4//linea 2
-MOK W,#20  //linea 3
-SET CY
-SET CY
-MOV R1,R2  //linea 4
-MOV R3,R4  
-MOV R5,R6
-MOV R7,R8
-MOV R9,R10
-MOV R11,R12   //si anda todo joya, el W tiene que terminar en 20, si anda mal termina en 10.
+MOK W,#20000
+MOV R2,W
+MOK W,#60000
+ADR W,R2   //W = W + R2 + CY
+CLR CY
+JZE 9   //5
+JCY 12  //6
+MOK W,#4  //7
+MOV R1,R2
+MOV R3,R4   //9
+MOK W,#1
+MOK W,#1
+JNE 0   //12
+
+

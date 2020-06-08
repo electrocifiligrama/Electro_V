@@ -12,6 +12,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "carry",
+					"strict" : false
+				},
+				{
 					"name" : "mr_out",
 					"strict" : false
 				},
@@ -701,6 +705,34 @@
 				},
 				{
 					"name" : "T2_view[0]",
+					"strict" : false
+				},
+				{
+					"name" : "T4view[6]",
+					"strict" : false
+				},
+				{
+					"name" : "T4view[5]",
+					"strict" : false
+				},
+				{
+					"name" : "T4view[4]",
+					"strict" : false
+				},
+				{
+					"name" : "T4view[3]",
+					"strict" : false
+				},
+				{
+					"name" : "T4view[2]",
+					"strict" : false
+				},
+				{
+					"name" : "T4view[1]",
+					"strict" : false
+				},
+				{
+					"name" : "T4view[0]",
 					"strict" : false
 				},
 				{

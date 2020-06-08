@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ev20QUARTUS -c ev20QUARTUS --vector_source="C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/Waveform21.vwf" --testbench_file="C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/simulation/qsim/Waveform21.vwf.vt"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ev20QUARTUS -c ev20QUARTUS --vector_source="C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/Waveform39.vwf" --testbench_file="C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/simulation/qsim/Waveform39.vwf.vt"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -25,20 +25,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Sun Jun 07 01:30:54 2020
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ev20QUARTUS -c ev20QUARTUS --vector_source="C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/Waveform21.vwf" --testbench_file="C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/simulation/qsim/Waveform21.vwf.vt"
+    Info: Processing started: Mon Jun 08 02:42:39 2020
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ev20QUARTUS -c ev20QUARTUS --vector_source="C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/Waveform39.vwf" --testbench_file="C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/simulation/qsim/Waveform39.vwf.vt"
 Info (119004): Automatically selected device EP4CE15F23C6 for design ev20QUARTUS
 Info (119005): Fitting design with smaller device may be possible, but smaller device must be specified
 Warning (18550): Found RAM instances implemented as ROM because the write logic is disabled. One instance is listed below as an example.
     Info (119043): Atom "lpm_ram_io:inst2|altram:sram|altsyncram:ram_block|altsyncram_kqa1:auto_generated|ram_block1a21" is instantiated as RAM, but it is actually implemented as ROM function because the write logic is always disabled
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
-es
-
-t[2]" in vector source file when writing test bench files
-
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:04
+oring output pin "WOUT[5]" in vector source file when writing test bench files
 
 Completed successfully. 
 
@@ -64,7 +59,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Sun Jun 07 01:31:02 2020
+    Info: Processing started: Mon Jun 08 02:42:49 2020
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/simulation/qsim/" ev20QUARTUS -c ev20QUARTUS
 Info (119004): Automatically selected device EP4CE15F23C6 for design ev20QUARTUS
 Info (119005): Fitting design with smaller device may be possible, but smaller device must be specified
@@ -73,9 +68,9 @@ Warning (18550): Found RAM instances implemented as ROM because the write logic 
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file ev20QUARTUS.vo in folder "C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4655 megabytes
-    Info: Processing ended: Sun Jun 07 01:31:09 2020
-    Info: Elapsed time: 00:00:07
+    Info: Peak virtual memory: 4654 megabytes
+    Info: Processing ended: Mon Jun 08 02:43:00 2020
+    Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:06
 
 Completed successfully. 
@@ -100,32 +95,30 @@ Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # ** Warning: (vlib-34) Library already exists at "work".
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:31:12 on Jun 07,2020
+# Start time: 02:43:02 on Jun 08,2020
 # vlog -work work ev20QUARTUS.vo 
-
 # -- Compiling module ev20main
 
 # 
 # Top level modules:
 # 	ev20main
-
-# End time: 01:31:13 on Jun 07,2020, Elapsed time: 0:00:01
+# End time: 02:43:04 on Jun 08,2020, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:31:13 on Jun 07,2020
-# vlog -work work Waveform21.vwf.vt 
+# Start time: 02:43:04 on Jun 08,2020
+# vlog -work work Waveform39.vwf.vt 
 
 # -- Compiling module ev20main_vlg_vec_tst
 # 
 # Top level modules:
 # 	ev20main_vlg_vec_tst
 
-# End time: 01:31:14 on Jun 07,2020, Elapsed time: 0:00:01
+# End time: 02:43:04 on Jun 08,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.ev20main_vlg_vec_tst 
-# Start time: 01:31:14 on Jun 07,2020
+# Start time: 02:43:04 on Jun 08,2020
 # Loading work.ev20main_vlg_vec_tst
 # Loading work.ev20main
 # Loading cycloneive_ver.cycloneive_io_obuf
@@ -136,31 +129,38 @@ Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # Loading cycloneive_ver.cycloneive_ram_register
 # Loading cycloneive_ver.cycloneive_ram_pulse_generator
 # Loading altera_ver.PRIM_GDFF_LOW
-# ** Warning: Design size of 10320 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 10432 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
-
 # after#25
 
 # Simulation time: 0 ps
 
 # Simulation time: 0 ps
 
-# ** Note: $finish    : Waveform21.vwf.vt(104)
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# ** Note: $finish    : Waveform39.vwf.vt(108)
 #    Time: 1 us  Iteration: 0  Instance: /ev20main_vlg_vec_tst
-# End time: 01:31:22 on Jun 07,2020, Elapsed time: 0:00:08
+# End time: 02:43:23 on Jun 08,2020, Elapsed time: 0:00:19
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/Waveform21.vwf...
+Reading C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/Waveform39.vwf...
 
 Reading C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/simulation/qsim/ev20QUARTUS.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/simulation/qsim/ev20QUARTUS_20200607013123.sim.vwf
+Writing the resulting VWF to C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/simulation/qsim/ev20QUARTUS_20200608024324.sim.vwf
 
 Finished VCD to VWF conversion.
 

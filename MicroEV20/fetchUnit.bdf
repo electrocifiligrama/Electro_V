@@ -21,7 +21,7 @@ refer to the applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect -32 376 144 392)
+	(rect -368 376 -192 392)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "HOLD" (rect 9 0 39 12)(font "Arial" ))
 	(pt 176 8)
@@ -294,7 +294,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 152 368 200 400)
+	(rect -144 368 -96 400)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst12" (rect 3 21 32 33)(font "Arial" ))
 	(port
@@ -1040,6 +1040,13 @@ refer to the applicable agreement for further details.
 		(line (pt 0 112)(pt 16 112))
 	)
 	(port
+		(pt 0 128)
+		(input)
+		(text "hold" (rect 0 0 25 19)(font "Intel Clear" (font_size 8)))
+		(text "hold" (rect 21 123 46 142)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
 		(pt 216 32)
 		(output)
 		(text "NEXT_OUT[10..0]" (rect 0 0 106 19)(font "Intel Clear" (font_size 8)))
@@ -1245,24 +1252,12 @@ refer to the applicable agreement for further details.
 	(pt 224 400)
 )
 (connector
-	(pt 224 400)
-	(pt 224 384)
-)
-(connector
-	(pt 224 384)
-	(pt 200 384)
-)
-(connector
 	(pt 224 416)
 	(pt 224 432)
 )
 (connector
 	(pt 312 416)
 	(pt 224 416)
-)
-(connector
-	(pt 144 384)
-	(pt 152 384)
 )
 (connector
 	(pt 648 312)
@@ -1373,75 +1368,12 @@ refer to the applicable agreement for further details.
 	(pt 1360 440)
 )
 (connector
-	(pt 552 408)
-	(pt 552 600)
-)
-(connector
-	(pt 544 600)
-	(pt 552 600)
-)
-(connector
-	(text "ClkAux" (rect 389 416 423 433)(font "Intel Clear" ))
-	(pt 384 408)
-	(pt 552 408)
-)
-(connector
-	(pt 552 408)
-	(pt 560 408)
-)
-(connector
-	(pt 568 592)
-	(pt 648 592)
-)
-(connector
-	(pt 568 616)
-	(pt 568 592)
-)
-(connector
-	(pt 544 616)
-	(pt 568 616)
-)
-(connector
-	(pt 568 616)
-	(pt 728 616)
-)
-(connector
 	(pt 104 760)
 	(pt 104 656)
 )
 (connector
-	(pt 728 616)
-	(pt 728 760)
-)
-(connector
 	(pt 160 632)
 	(pt 304 632)
-	(bus)
-)
-(connector
-	(pt 304 632)
-	(pt 304 712)
-	(bus)
-)
-(connector
-	(pt 304 712)
-	(pt 552 712)
-	(bus)
-)
-(connector
-	(pt 552 712)
-	(pt 552 632)
-	(bus)
-)
-(connector
-	(pt 576 632)
-	(pt 552 632)
-	(bus)
-)
-(connector
-	(text "nextADRESS[10..0]" (rect 569 640 657 657)(font "Intel Clear" ))
-	(pt 552 632)
-	(pt 544 632)
 	(bus)
 )
 (connector
@@ -1582,15 +1514,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1048 824)
-	(pt 1048 856)
-)
-(connector
-	(text "clk" (rect 985 808 999 825)(font "Intel Clear" ))
-	(pt 960 824)
-	(pt 1048 824)
-)
-(connector
 	(pt 1048 856)
 	(pt 1056 856)
 )
@@ -1599,6 +1522,130 @@ refer to the applicable agreement for further details.
 	(pt 880 848)
 	(pt 1024 848)
 	(bus)
+)
+(connector
+	(pt 1048 856)
+	(pt 1048 784)
+)
+(connector
+	(text "clk" (rect 1001 768 1015 785)(font "Intel Clear" ))
+	(pt 1048 784)
+	(pt 968 784)
+)
+(connector
+	(pt 648 592)
+	(pt 600 592)
+)
+(connector
+	(text "<<__$DEF_ALIAS7990>>" (rect 561 584 679 601)(font "Intel Clear" )(invisible))
+	(pt 544 600)
+	(pt 568 600)
+)
+(connector
+	(pt 224 400)
+	(pt 224 384)
+)
+(connector
+	(pt -96 384)
+	(pt 224 384)
+)
+(connector
+	(pt 568 464)
+	(pt 568 600)
+)
+(connector
+	(pt 568 464)
+	(pt 488 464)
+)
+(connector
+	(pt 488 464)
+	(pt 488 408)
+)
+(connector
+	(text "ClkAux" (rect 389 416 423 433)(font "Intel Clear" ))
+	(pt 384 408)
+	(pt 488 408)
+)
+(connector
+	(pt 488 408)
+	(pt 560 408)
+)
+(connector
+	(pt 600 592)
+	(pt 600 616)
+)
+(connector
+	(pt 304 632)
+	(pt 304 696)
+	(bus)
+)
+(connector
+	(pt 304 696)
+	(pt 560 696)
+	(bus)
+)
+(connector
+	(pt 560 632)
+	(pt 560 696)
+	(bus)
+)
+(connector
+	(pt 544 632)
+	(pt 560 632)
+	(bus)
+)
+(connector
+	(text "nextADRESS[10..0]" (rect 581 616 669 633)(font "Intel Clear" ))
+	(pt 560 632)
+	(pt 600 632)
+	(bus)
+)
+(connector
+	(pt 600 616)
+	(pt 728 616)
+)
+(connector
+	(pt 728 616)
+	(pt 728 760)
+)
+(connector
+	(text "<<__$DEF_ALIAS8606>>" (rect 562 600 680 617)(font "Intel Clear" )(invisible))
+	(pt 544 616)
+	(pt 600 616)
+)
+(connector
+	(pt 1056 952)
+	(pt 1040 952)
+)
+(connector
+	(pt 1040 952)
+	(pt 1040 1008)
+)
+(connector
+	(pt 936 1008)
+	(pt 936 1016)
+)
+(connector
+	(pt -168 384)
+	(pt -168 320)
+)
+(connector
+	(pt -192 384)
+	(pt -168 384)
+)
+(connector
+	(pt -168 384)
+	(pt -144 384)
+)
+(connector
+	(text "hold" (rect -142 304 -121 321)(font "Intel Clear" ))
+	(pt -168 320)
+	(pt -128 320)
+)
+(connector
+	(text "hold" (rect 1000 992 1021 1009)(font "Intel Clear" ))
+	(pt 1040 1008)
+	(pt 936 1008)
 )
 (junction (pt 976 328))
 (junction (pt 952 328))
@@ -1610,10 +1657,11 @@ refer to the applicable agreement for further details.
 (junction (pt 896 328))
 (junction (pt 976 288))
 (junction (pt 976 208))
-(junction (pt 552 408))
 (junction (pt 384 408))
 (junction (pt 496 1048))
-(junction (pt 568 616))
-(junction (pt 552 632))
 (junction (pt 704 760))
 (junction (pt 1624 1056))
+(junction (pt 488 408))
+(junction (pt 560 632))
+(junction (pt 600 616))
+(junction (pt -168 384))

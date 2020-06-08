@@ -9,88 +9,88 @@ z2
 cModel Technology
 Z0 dC:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/simulation/qsim
 vev20main
-!s110 1591504273
+Z1 !s110 1591594984
 !i10b 1
-!s100 _F]20OORjPQclMZ]Sh?]12
-Izk;;dMc[3<R1Y?L=cRgzF3
-Z1 VDg1SIo80bB@j0V0VzS_@n1
-Z2 dC:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/simulation/qsim
-w1591504269
-Z3 8ev20QUARTUS.vo
-Z4 Fev20QUARTUS.vo
-Z5 L0 31
-Z6 OV;L;10.5b;63
+!s100 g^m59oT`jgTW`b?f<fN0:0
+I^cS=W44Vn`z7WELY_ITN=1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/simulation/qsim
+w1591594979
+Z4 8ev20QUARTUS.vo
+Z5 Fev20QUARTUS.vo
+Z6 L0 31
+Z7 OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1591504272.000000
-Z7 !s107 ev20QUARTUS.vo|
-Z8 !s90 -work|work|ev20QUARTUS.vo|
+!s108 1591594982.000000
+Z8 !s107 ev20QUARTUS.vo|
+Z9 !s90 -work|work|ev20QUARTUS.vo|
 !i113 1
-Z9 o-work work
-Z10 tCvgOpt 0
+Z10 o-work work
+Z11 tCvgOpt 0
 vev20main_vlg_vec_tst
-!s110 1591504274
-!i10b 1
-!s100 LT01c]`n?0JG`2L=`JHFW3
-IHUV:<f9EVl7C4ZNfOP0EH3
 R1
+!i10b 1
+!s100 9<XIdAMf6oNlN]hOibAVf1
+I`U56gLSAzlhW]mWT0=lUz3
 R2
-w1591504260
-8Waveform21.vwf.vt
-FWaveform21.vwf.vt
-Z11 L0 29
-R6
+R3
+w1591594966
+8Waveform39.vwf.vt
+FWaveform39.vwf.vt
+Z12 L0 29
+R7
 r1
 !s85 0
 31
-!s108 1591504273.000000
-!s107 Waveform21.vwf.vt|
-!s90 -work|work|Waveform21.vwf.vt|
+!s108 1591594984.000000
+!s107 Waveform39.vwf.vt|
+!s90 -work|work|Waveform39.vwf.vt|
 !i113 1
-R9
 R10
+R11
 vfifo_TB
-Z12 !s110 1590902439
+Z13 !s110 1590902439
 !i10b 1
 !s100 CmG6G9=eZhPNDfh1P[zU=1
 Io8>hY=blb3ma>`fQ`:Pj32
-R1
+R2
 R0
 w1590902435
-R3
 R4
 R5
 R6
+R7
 r1
 !s85 0
 31
-Z13 !s108 1590902439.000000
-R7
+Z14 !s108 1590902439.000000
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 nfifo_@t@b
 vfifo_TB_vlg_vec_tst
-R12
+R13
 !i10b 1
 !s100 <0NhaKH73h1]l=?ibAn2o0
 I73DWg3`R_7ze=4E5BiaOI1
-R1
+R2
 R0
 w1590902432
 8Waveform8.vwf.vt
 FWaveform8.vwf.vt
-R11
-R6
+R12
+R7
 r1
 !s85 0
 31
-R13
+R14
 !s107 Waveform8.vwf.vt|
 !s90 -work|work|Waveform8.vwf.vt|
 !i113 1
-R9
 R10
+R11
 nfifo_@t@b_vlg_vec_tst
