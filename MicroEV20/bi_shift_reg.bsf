@@ -61,8 +61,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 144 48)
 		(output)
-		(text "lifoOut" (rect 0 0 24 12)(font "Arial" ))
-		(text "lifoOut" (rect 99 43 123 55)(font "Arial" ))
+		(text "TOS" (rect 0 0 18 12)(font "Arial" ))
+		(text "TOS" (rect 105 43 123 55)(font "Arial" ))
 		(line (pt 144 48)(pt 128 48)(line_width 1))
 	)
 	(drawing

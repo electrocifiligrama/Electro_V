@@ -21,7 +21,7 @@ refer to the applicable agreement for further details.
 (header "symbol" (version "1.2"))
 (symbol
 	(rect 16 16 248 208)
-	(text "fetchUnit" (rect 5 0 59 19)(font "Intel Clear" (font_size 8)))
+	(text "fetchUnit" (rect 5 0 46 17)(font "Intel Clear" (font_size 6)))
 	(text "inst" (rect 8 171 24 188)(font "Intel Clear" ))
 	(port
 		(pt 0 32)

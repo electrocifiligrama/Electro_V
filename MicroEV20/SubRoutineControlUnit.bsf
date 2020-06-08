@@ -26,16 +26,23 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
-		(text "I[6..0]" (rect 0 0 34 19)(font "Intel Clear" (font_size 8)))
-		(text "I[6..0]" (rect 21 27 55 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
+		(text "CLK" (rect 0 0 23 19)(font "Intel Clear" (font_size 8)))
+		(text "CLK" (rect 21 27 44 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
 	)
 	(port
 		(pt 0 48)
 		(input)
-		(text "PC[10..0]" (rect 0 0 55 19)(font "Intel Clear" (font_size 8)))
-		(text "PC[10..0]" (rect 21 43 76 62)(font "Intel Clear" (font_size 8)))
+		(text "I[6..0]" (rect 0 0 34 19)(font "Intel Clear" (font_size 8)))
+		(text "I[6..0]" (rect 21 43 55 62)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "PC[10..0]" (rect 0 0 55 19)(font "Intel Clear" (font_size 8)))
+		(text "PC[10..0]" (rect 21 59 76 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
 		(pt 192 32)
