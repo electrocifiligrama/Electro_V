@@ -686,7 +686,7 @@ status open
 
 \begin_inset Graphics
 	filename imagenes/JNEsimplepredictiontakenPredijo bien..png
-	scale 10
+	scale 30
 
 \end_inset
 
@@ -795,16 +795,6 @@ placement H
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename imagenes/Laprediccionseadaptadespuesdemuchoserrores.png
-	scale 20
-
-\end_inset
-
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
