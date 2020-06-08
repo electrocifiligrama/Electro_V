@@ -135,7 +135,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Shift Register Bidireccional
+Shift Register Bidireccional.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Shift-Register-Bidireccional"
@@ -197,7 +197,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Shift Register Bidireccional
+Estructura del stack.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Sstrucuture"
@@ -218,89 +218,23 @@ name "fig:Sstrucuture"
 \end_layout
 
 \begin_layout Standard
-Al momento de implementar el shift register en verilog, se sintetizaba de
- manera diferente a la que se esperaba, resultando en un funcionamiento
- inadecuado, por lo que se decidió cambiar el esquema y dividir las acciones
- de 
-\shape italic
-push
-\shape default
- y 
-\shape italic
-pop
-\shape default
- de manera que el diagrama 
-\begin_inset Formula $\text{\ref{fig:Shift-Register-Bidireccional}}$
-\end_inset
-
- quedaría de la siguiente forma:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagenes/push_pop.PNG
-	scale 70
+La implementación se realizó en verilog.
+ El módulo final se puede observar en la imagen 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:subrutinecontrolunit"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Shift Register Bidireccional
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:push_pop"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-El bloque de 
-\shape italic
-push
-\shape default
- realiza únicamente un shifteo a la derecha (un push) cuando le llega un
- flanco ascendente de la señal BSR que indica que hubo una instrucción de
- branch; de manera análoga, el bloque de 
-\shape italic
-pop
-\shape default
- realiza un shifteo a la izquierda, para realizar un pop del stack al recibir
- un flanco ascendente de la señal RET que señala una instrucción para volver
- de la subrutina.
- A la salida se encuentra un mux cuya línea de selección se condice con
- la instrucción de RET, y se realimentan ambos bloques con la salida, de
- manera de tener el registro actualizado.
- Cabe aclarar que la salida de este bloque es sólamente un bit, aquel más
- significativo.
-\end_layout
-
-\begin_layout Standard
-El bloque final se puede observar en la siguiente imagen:
+.
+ La idea es que el stack se actualiza de manera sincrónica, estando listo
+ para ser leído el valor del TOS en cada flanco ascendente del clock, pero
+ la salida, que es el TOS, se determina de manera asincrónica, entre en
+ flanco descendente y uno ascendente del clock, ya que es cuando cambia
+ el bus de instrucción.
 \end_layout
 
 \begin_layout Standard
@@ -325,7 +259,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Shift Register Bidireccional
+Entradas y salidas del módulo de control de subrutina.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:subrutinecontrolunit"
@@ -346,8 +280,9 @@ name "fig:subrutinecontrolunit"
 \end_layout
 
 \begin_layout Standard
-Recibe los 7 bits más significativos del opcode para poder discernir si
- se trata de un BSR (
+En resumen entonces, el módulo de control de subrutina recibe los 7 bits
+ más significativos del opcode para poder discernir si se trata de un BSR
+ (
 \shape italic
 branch to subroutine
 \shape default
@@ -355,13 +290,20 @@ branch to subroutine
 \shape italic
 return to subroutine
 \shape default
-), y además recibe el PC, que es el valor a guardar.
- 
-\end_layout
-
-\begin_layout Standard
-Devuelve ante un pop el valor del PC, y las señales isRET, isBSR se utilizan
- de manera externa para actualizar el valor del PC.
+), además recibe el PC, que es el valor a guardar, y el clock ya que funciona
+ de manera sincrónica.
+ Entre las salidas se encuentran las señales de isRET, e isBSR que están
+ en 
+\shape italic
+high
+\shape default
+ si se trata de un RET o de un BSR respectivamente, y estas señales se utilizan
+ de manera externa al módulo para actualizar el valor del PC.
+ También devuelve la variable stackPC que es el valor del TOS (
+\shape italic
+top of stack
+\shape default
+).
 \end_layout
 
 \end_body

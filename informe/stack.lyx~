@@ -88,7 +88,7 @@ Stack
 \begin_layout Standard
 La base del módulo del stack se basa en un shift register bidireccional.
  La cantidad de niveles requerida define el tamaño del registro, en este
- caso, 4, es decir que el MSB equivaldrá a 3.
+ caso 4, es decir que el MSB equivaldrá a 3.
  
 \end_layout
 
@@ -101,12 +101,8 @@ last in first out
 .
  Los registros se inicializan en cero, cuando se pushea un valor al stack
  se shiftean los bits a la derecha, ingresando el valor por el bit más significa
-tivo 
-\shape italic
--MSB
-\shape default
-–; mientras que al realizar la acción de pop, se shiftean a la izquierda,
- siendo la salida también por el bit más significativo.
+tivo (en la figura: MSB); mientras que al realizar la acción de pop, se
+ shiftean a la izquierda, siendo la salida también por el bit más significativo.
 \end_layout
 
 \begin_layout Standard
@@ -139,7 +135,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Shift Register Bidireccional
+Shift Register Bidireccional.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Shift-Register-Bidireccional"
@@ -166,16 +162,16 @@ name "fig:Shift-Register-Bidireccional"
 \begin_layout Standard
 La función del stack es guardar el valor del program counter register (PC),
  que es de 11 bits, por lo que necesitaríamos 11 shift registers para guardar
- cada uno de los bits y a su vez soportar 4 subrutinas anidadas.
+ cada uno de los bits y a su vez dar soporte para 4 subrutinas anidadas.
  El esquema del que se habla se puede ver en la figura 
 \begin_inset Formula $\text{\ref{fig:Sstrucuture}}$
 \end_inset
 
 , donde 
-\begin_inset Formula $n=10$
+\begin_inset Formula $n$
 \end_inset
 
-, para un total de 11 bits.
+ equivale a 10, para un total de 11 bits.
  
 \end_layout
 
@@ -201,7 +197,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Shift Register Bidireccional
+Estructura del stack.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Sstrucuture"
@@ -222,79 +218,23 @@ name "fig:Sstrucuture"
 \end_layout
 
 \begin_layout Standard
-Al momento de implementar el shift register en verilog, se sintetizaba de
- manera diferente a la que se esperaba que funcionara por lo que se decidió
- cambiar el esquema y dividir las acciones de 
-\shape italic
-push
-\shape default
- y 
-\shape italic
-pop
-\shape default
- de manera que el diagrama 
-\begin_inset Formula $\text{\ref{fig:Shift-Register-Bidireccional}}$
-\end_inset
-
- quedaría de la siguiente forma:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagenes/push_pop.PNG
-	scale 50
+La implementación se realizó en verilog.
+ El módulo final se puede observar en la imagen 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:subrutinecontrolunit"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Shift Register Bidireccional
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:push_pop"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-El bloque de push realiza únicamente un shifteo a la derecha (un push) cuando
- le llega un flanco ascendente de la señal BSR que indica que hubo una instrucci
-ón de branch; de manera análoga, el bloque de pop realiza un shifteo a la
- izquierda, para realizar un pop al recibir un flanco ascendente de la señal
- RET que señala una instrucción para volver de la subrutina.
- A la salida se encuentra un mux cuya línea de selección se condice con
- la instrucción de RET puesto que se desea tener salida cuando el valor
- del PC debe ser recuperado, y no cuando se pushea un valor, donde lo único
- que se busca es mantener el stack con sus valores actuales shifteados.
-\end_layout
-
-\begin_layout Standard
-El bloque final se puede observar en la siguiente imagen:
+.
+ La idea es que el stack se actualiza de manera sincrónica, estando listo
+ para ser leído el valor del TOS en cada flanco ascendente del clock, pero
+ la salida, que es el TOS, se determina de manera asincrónica, entre en
+ flanco descendente y uno ascendente del clock, ya que es cuando cambia
+ el bus de instrucción.
 \end_layout
 
 \begin_layout Standard
@@ -319,7 +259,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Shift Register Bidireccional
+Entradas y salidas del módulo de control de subrutina.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:subrutinecontrolunit"
@@ -341,10 +281,27 @@ name "fig:subrutinecontrolunit"
 
 \begin_layout Standard
 Recibe los 7 bits más significativos del opcode para poder discernir si
- se trata de un BSR (branch to subroutine) o RET (return to subroutine),
- y además recibe el PC, que el valor a guardar.
- Devuelve ante un pop el valor del PC, y las señales isRET, isBSR se utilizan
- de manera externa para actualizar el valor del PC.
+ se trata de un BSR (
+\shape italic
+branch to subroutine
+\shape default
+) o RET (
+\shape italic
+return to subroutine
+\shape default
+), además recibe el PC, que es el valor a guardar, y el clock ya que funciona
+ de manera sincrónica.
+ Entre las salidas se encuentran señales de isRET, isBSR que están en 
+\shape italic
+high
+\shape default
+ si se trata de un RET o de un BSR, respectivamente y se utilizan de manera
+ externa al módulo para actualizar el valor del PC.
+ También devuelve la variable stackPC que es el valor del TOS (
+\shape italic
+top of stack
+\shape default
+).
 \end_layout
 
 \end_body
