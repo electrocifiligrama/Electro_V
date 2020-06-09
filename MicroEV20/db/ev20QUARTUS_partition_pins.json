@@ -36,6 +36,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "predictHold",
+					"strict" : false
+				},
+				{
+					"name" : "blockPC",
+					"strict" : false
+				},
+				{
 					"name" : "ALU_out[3]",
 					"strict" : false
 				},
@@ -613,6 +621,50 @@
 				},
 				{
 					"name" : "MI_view[0]",
+					"strict" : false
+				},
+				{
+					"name" : "nextPC[10]",
+					"strict" : false
+				},
+				{
+					"name" : "nextPC[9]",
+					"strict" : false
+				},
+				{
+					"name" : "nextPC[8]",
+					"strict" : false
+				},
+				{
+					"name" : "nextPC[7]",
+					"strict" : false
+				},
+				{
+					"name" : "nextPC[6]",
+					"strict" : false
+				},
+				{
+					"name" : "nextPC[5]",
+					"strict" : false
+				},
+				{
+					"name" : "nextPC[4]",
+					"strict" : false
+				},
+				{
+					"name" : "nextPC[3]",
+					"strict" : false
+				},
+				{
+					"name" : "nextPC[2]",
+					"strict" : false
+				},
+				{
+					"name" : "nextPC[1]",
+					"strict" : false
+				},
+				{
+					"name" : "nextPC[0]",
 					"strict" : false
 				},
 				{
