@@ -81,10 +81,59 @@
 
 \begin_body
 
+\begin_layout Subsection
+OPERAND UNIT
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang spanish
+Descripción General
+\end_layout
+
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "caratula.lyx"
+
+\lang spanish
+Este bloque maneja la escritura y lectura de los registros A y B.
+ A continuación se puede ver el bloque en el main: 
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename imagenes/Screenshot 2020-06-09 01.54.41.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+Micro Instruction ROM
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -92,59 +141,47 @@ filename "caratula.lyx"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
 
-
+\lang spanish
+Y por dentro funciona de la siguiente manera:
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "carac_generales.lyx"
 
-\end_inset
+\lang spanish
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
+\begin_layout Plain Layout
+\align center
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "interfaces.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Unidades Funcionales
-\end_layout
-
-\begin_layout Standard
-MAIN.
- FOTITO DE MAIN.
-\end_layout
-
-\begin_layout Standard
-IDENTIFICAR PIPELINE!!!!!
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "fetch_unit.lyx"
+\lang spanish
+\begin_inset Graphics
+	filename imagenes/Screenshot 2020-06-09 01.54.56.png
+	scale 50
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "micro_inst_rom.lyx"
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+Micro Instruction ROM
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -152,63 +189,73 @@ filename "micro_inst_rom.lyx"
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "mir_unit.lyx"
 
-\end_inset
-
-
+\lang spanish
+Donde se usan para los registros dos flip flops en cascada, de manera de
+ ecribir el registro en el flanco ascendente y leerlo en el descendente.
+ Lo que se escribe del registro A proviene de un MUX entre el dato proveniente
+ de memoria y el opeando proveniente del register bank.
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "register_bank.lyx"
+\begin_layout Subsubsection
 
-\end_inset
-
-
+\lang spanish
+Inputs
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "stack.lyx"
+\begin_layout Itemize
 
-\end_inset
-
-
+\lang spanish
+OPERAND: 16 bits de operando provenientes de la instruccion siendo fetcheada.
+ 
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "branch_pred.lyx"
+\begin_layout Itemize
 
-\end_inset
-
-
+\lang spanish
+XMux: 16 bits de operando provenientes del register bank
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "analisis_funcionamiento.lyx"
+\begin_layout Itemize
 
-\end_inset
-
-
+\lang spanish
+CK-HOLD: Señal de clock con Hold.
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "conclusion.lyx"
+\begin_layout Itemize
 
-\end_inset
+\lang spanish
+CK3: Señal de clock.
+\end_layout
 
+\begin_layout Itemize
 
+\lang spanish
+MUXselect: Linea selectora del mux que escirbe el registro A.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+B_OP: 16 bits de operando provenientes del register bank.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang spanish
+Outputs
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+A:
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+B:
 \end_layout
 
 \end_body

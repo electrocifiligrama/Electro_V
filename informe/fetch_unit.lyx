@@ -85,9 +85,224 @@
 FETCH UNIT
 \end_layout
 
+\begin_layout Subsubsection
+
+\lang spanish
+Descripción General
+\end_layout
+
 \begin_layout Standard
-IMAGEN DEL BLOQUE, DESCRIPCION DEL MISMO, QUE HACE; INPUTS, OUTPUTS, SIMULACIONE
-S PARA MOSTRAR COMO ANDA.
+
+\lang spanish
+Este bloque maneja la comunicacion entre el programa en ROM, la MIR y la
+ Operand Unit.
+ A continuación se puede ver el bloque en el main: 
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename imagenes/Screenshot 2020-06-09 02.14.54.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+Micro Instruction ROM
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Y por dentro funciona de la siguiente manera:
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename imagenes/Screenshot 2020-06-09 01.23.10.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+Micro Instruction ROM
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+TERMINAR, HABLAR SOBRE SYNCH UNIT.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang spanish
+Inputs
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+I: Instruccion de 22 bits proveniente del programa alojado en la ROM.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+HOLD: Señal que suspende el avance del Fetch Unit si esta prendida.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+CK1: Clock de entrada.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Tfoward: ??
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+W: Registro W de 16 bits provenientes del register bank.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+CY: Señal de carry proveniente del ALU unit.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang spanish
+Outputs
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+INST_A: Parte de la instruccion que corresponde a la seleccion del bus A.
+ (5 bits)
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+INST_DAdd: Parte de la instruccion que corresponde a la direccion de memoria
+ para instruciones de lectura y escritura de la misma.
+ (10 bits)
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+MI: Direccion de la micro instruccion para leerla de la ROM.
+ (7 bits)
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+MUXSelect: Selector de Mux para MIR, correspondiente a la seleccion del
+ bus C.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+OPERAND: Operando que es leido por la Operand Unit.
+ (16 bits)
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Jump: Señal que se prende cuando hay un salto en el programa
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+IA: Direccion de la proxima instruccion del programa a ejecutar.
+ (11 bits)
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+flush: ??
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+preload: Señal de preload proveniente del prediction block dentro del fetch
+ unit.
 \end_layout
 
 \end_body
