@@ -1,4 +1,4 @@
-module PCRegister (
+module PCRegister (  input blockingPC,
 							input inc,
 							input preLoad,  
 							input [10:0] nextAdd,      
@@ -11,7 +11,9 @@ module PCRegister (
 			auxLoad <= preLoad;
 		end
    always @ (negedge inc)
-			if(auxLoad)
+			if(blockingPC)
+				PC <= auxAdd;
+			else if(auxLoad)
 				PC <= (auxAdd + 1);
 			else
 				PC <= PC + 11'b00000000001;

@@ -1,7 +1,7 @@
 onerror {exit -code 1}
 vlib work
 vlog -work work ev20QUARTUS.vo
-vlog -work work Waveform39.vwf.vt
+vlog -work work Waveform68.vwf.vt
 vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.ev20main_vlg_vec_tst
 vcd file -direction ev20QUARTUS.msim.vcd
 vcd add -internal ev20main_vlg_vec_tst/*

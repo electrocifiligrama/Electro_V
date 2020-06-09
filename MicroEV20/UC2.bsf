@@ -20,9 +20,9 @@ refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 144 176)
+	(rect 16 16 144 208)
 	(text "UC2" (rect 5 0 30 19)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 139 24 156)(font "Intel Clear" ))
+	(text "inst" (rect 8 171 24 188)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -66,6 +66,20 @@ refer to the applicable agreement for further details.
 		(line (pt 0 112)(pt 16 112)(line_width 3))
 	)
 	(port
+		(pt 0 128)
+		(input)
+		(text "T5[6..0]" (rect 0 0 47 19)(font "Intel Clear" (font_size 8)))
+		(text "T5[6..0]" (rect 21 123 68 142)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "MI[6..0]" (rect 0 0 44 19)(font "Intel Clear" (font_size 8)))
+		(text "MI[6..0]" (rect 21 139 65 158)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
 		(pt 128 32)
 		(output)
 		(text "Hold" (rect 0 0 28 19)(font "Intel Clear" (font_size 8)))
@@ -73,6 +87,6 @@ refer to the applicable agreement for further details.
 		(line (pt 128 32)(pt 112 32))
 	)
 	(drawing
-		(rectangle (rect 16 16 112 144))
+		(rectangle (rect 16 16 112 176))
 	)
 )

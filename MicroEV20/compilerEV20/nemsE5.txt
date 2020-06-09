@@ -3,13 +3,11 @@ MOV R2,W
 MOK W,#60000
 ADR W,R2   //W = W + R2 + CY
 CLR CY
-JZE 9   //5
-JCY 12  //6
+JZE 10   //5
+JCY 9  //6
 MOK W,#4  //7
-MOV R1,R2
-MOV R3,R4   //9
-MOK W,#1
+BSR 4   //8
+MOM W,1
+BSR 4   //10
 MOK W,#1
 JNE 0   //12
-
-

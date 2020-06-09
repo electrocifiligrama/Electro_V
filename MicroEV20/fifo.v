@@ -3,7 +3,8 @@ module fifo(input clk,
 				input push,
 				input clear,
 				input I,
-				output reg P);
+				output reg P,
+				output reg size);
 /**************************************
 *****************fifo******************
 ***************************************
@@ -33,11 +34,13 @@ TIME ANALYSIS (for input and for output):
 integer index = 3;
 reg [3:0] queue;
 
+
 initial begin 
 	queue[0] = 0;
 	queue[1] = 0;
 	queue[2] = 0;
 	queue[3] = 0;
+	size = 0;
 end 
 
 	
@@ -65,6 +68,12 @@ always@(posedge clk) begin
 		index = index - 1;	
 	end
 	P = queue[3]; 
+	if (index < 3) begin
+		size = 1;
+	end
+	else begin
+		size = 0;
+	end
 end
 
 

@@ -1,5 +1,5 @@
 |ev20main
-Hold_out <= HOLD.DB_MAX_OUTPUT_PORT_TYPE
+Hold_out <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 flush <= fetchUnit:inst.flush
 CLK => fetchUnit:inst.CK1
 CLK => SynchUnit:inst9.Clk_in
@@ -19,6 +19,8 @@ MW_out <= MIR_MW.DB_MAX_OUTPUT_PORT_TYPE
 Kmx_out <= KMx.DB_MAX_OUTPUT_PORT_TYPE
 HOLD_CK2_View <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 preload <= fetchUnit:inst.preload
+predictHold <= fetchUnit:inst.predictHold
+blockPC <= fetchUnit:inst.blockingPC
 ALU_out[0] <= MIRUnit2:inst1.ALUout[0]
 ALU_out[1] <= MIRUnit2:inst1.ALUout[1]
 ALU_out[2] <= MIRUnit2:inst1.ALUout[2]
@@ -169,6 +171,17 @@ MI_view[29] <= BUSMUX:inst8.result[29]
 MI_view[30] <= BUSMUX:inst8.result[30]
 MI_view[31] <= BUSMUX:inst8.result[31]
 MI_view[32] <= BUSMUX:inst8.result[32]
+nextPC[0] <= fetchUnit:inst.nextPC[0]
+nextPC[1] <= fetchUnit:inst.nextPC[1]
+nextPC[2] <= fetchUnit:inst.nextPC[2]
+nextPC[3] <= fetchUnit:inst.nextPC[3]
+nextPC[4] <= fetchUnit:inst.nextPC[4]
+nextPC[5] <= fetchUnit:inst.nextPC[5]
+nextPC[6] <= fetchUnit:inst.nextPC[6]
+nextPC[7] <= fetchUnit:inst.nextPC[7]
+nextPC[8] <= fetchUnit:inst.nextPC[8]
+nextPC[9] <= fetchUnit:inst.nextPC[9]
+nextPC[10] <= fetchUnit:inst.nextPC[10]
 Rom_add_out[0] <= ROMadd[0].DB_MAX_OUTPUT_PORT_TYPE
 Rom_add_out[1] <= ROMadd[1].DB_MAX_OUTPUT_PORT_TYPE
 Rom_add_out[2] <= ROMadd[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -243,12 +256,19 @@ MI[2] => ~NO_FANOUT~
 MI[3] => ~NO_FANOUT~
 MI[4] => ~NO_FANOUT~
 MI[5] => UC1:JmpControl.Tin[0]
+MI[5] => UC2:inst-uc2.MI[0]
 MI[6] => UC1:JmpControl.Tin[1]
+MI[6] => UC2:inst-uc2.MI[1]
 MI[7] => UC1:JmpControl.Tin[2]
+MI[7] => UC2:inst-uc2.MI[2]
 MI[8] => UC1:JmpControl.Tin[3]
+MI[8] => UC2:inst-uc2.MI[3]
 MI[9] => UC1:JmpControl.Tin[4]
+MI[9] => UC2:inst-uc2.MI[4]
 MI[10] => UC1:JmpControl.Tin[5]
+MI[10] => UC2:inst-uc2.MI[5]
 MI[11] => UC1:JmpControl.Tin[6]
+MI[11] => UC2:inst-uc2.MI[6]
 MI[12] => BUSMUX:CinMUX.dataa[0]
 MI[13] => BUSMUX:CinMUX.dataa[1]
 MI[14] => BUSMUX:CinMUX.dataa[2]
@@ -283,6 +303,13 @@ IC[5] => BUSMUX:CinMUX.datab[5]
 CK4 => UC1:Flush2.Clk
 CK4 => UC1:Flush3.Clk
 CK4 => MIR:MIR5.Clk
+T5[0] <= UC1:Flush3.Tout[0]
+T5[1] <= UC1:Flush3.Tout[1]
+T5[2] <= UC1:Flush3.Tout[2]
+T5[3] <= UC1:Flush3.Tout[3]
+T5[4] <= UC1:Flush3.Tout[4]
+T5[5] <= UC1:Flush3.Tout[5]
+T5[6] <= UC1:Flush3.Tout[6]
 KMX <= KMX3.DB_MAX_OUTPUT_PORT_TYPE
 MWout <= MW3.DB_MAX_OUTPUT_PORT_TYPE
 MRout <= MR3.DB_MAX_OUTPUT_PORT_TYPE
@@ -336,13 +363,6 @@ T2_out[3] <= T2[3].DB_MAX_OUTPUT_PORT_TYPE
 T2_out[4] <= T2[4].DB_MAX_OUTPUT_PORT_TYPE
 T2_out[5] <= T2[5].DB_MAX_OUTPUT_PORT_TYPE
 T2_out[6] <= T2[6].DB_MAX_OUTPUT_PORT_TYPE
-T5[0] <= UC1:Flush3.Tout[0]
-T5[1] <= UC1:Flush3.Tout[1]
-T5[2] <= UC1:Flush3.Tout[2]
-T5[3] <= UC1:Flush3.Tout[3]
-T5[4] <= UC1:Flush3.Tout[4]
-T5[5] <= UC1:Flush3.Tout[5]
-T5[6] <= UC1:Flush3.Tout[6]
 TOUT[0] <= T3[0].DB_MAX_OUTPUT_PORT_TYPE
 TOUT[1] <= T3[1].DB_MAX_OUTPUT_PORT_TYPE
 TOUT[2] <= T3[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -353,7 +373,7 @@ TOUT[6] <= T3[6].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ev20main|MIRUnit2:inst1|UC2:inst-uc2
-Hold <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+Hold <= inst29.DB_MAX_OUTPUT_PORT_TYPE
 T2[0] => inst2.IN0
 T2[1] => inst4.IN1
 T2[2] => inst21.IN0
@@ -362,13 +382,6 @@ T2[3] => ~NO_FANOUT~
 T2[4] => ~NO_FANOUT~
 T2[5] => ~NO_FANOUT~
 T2[6] => ~NO_FANOUT~
-T4[0] => ~NO_FANOUT~
-T4[1] => inst.IN0
-T4[2] => ~NO_FANOUT~
-T4[3] => inst22.IN1
-T4[4] => ~NO_FANOUT~
-T4[5] => ~NO_FANOUT~
-T4[6] => ~NO_FANOUT~
 T3[0] => ~NO_FANOUT~
 T3[1] => inst.IN1
 T3[2] => ~NO_FANOUT~
@@ -392,12 +405,33 @@ C3[2] => LPM_COMPARE:Paul.datab[2]
 C3[3] => LPM_COMPARE:Paul.datab[3]
 C3[4] => LPM_COMPARE:Paul.datab[4]
 C3[5] => ~NO_FANOUT~
+T4[0] => ~NO_FANOUT~
+T4[1] => inst.IN0
+T4[2] => ~NO_FANOUT~
+T4[3] => inst22.IN1
+T4[4] => ~NO_FANOUT~
+T4[5] => ~NO_FANOUT~
+T4[6] => ~NO_FANOUT~
 C4[0] => LPM_COMPARE:inst5.datab[0]
 C4[1] => LPM_COMPARE:inst5.datab[1]
 C4[2] => LPM_COMPARE:inst5.datab[2]
 C4[3] => LPM_COMPARE:inst5.datab[3]
 C4[4] => LPM_COMPARE:inst5.datab[4]
 C4[5] => ~NO_FANOUT~
+MI[0] => ~NO_FANOUT~
+MI[1] => ~NO_FANOUT~
+MI[2] => ~NO_FANOUT~
+MI[3] => ~NO_FANOUT~
+MI[4] => ~NO_FANOUT~
+MI[5] => ~NO_FANOUT~
+MI[6] => ~NO_FANOUT~
+T5[0] => ~NO_FANOUT~
+T5[1] => ~NO_FANOUT~
+T5[2] => ~NO_FANOUT~
+T5[3] => ~NO_FANOUT~
+T5[4] => ~NO_FANOUT~
+T5[5] => ~NO_FANOUT~
+T5[6] => ~NO_FANOUT~
 
 
 |ev20main|MIRUnit2:inst1|UC2:inst-uc2|LPM_COMPARE:Paul
@@ -3326,27 +3360,40 @@ HOLD => inst12.IN0
 HOLD => prediction_block:inst16.hold
 CK1 => inst11.IN1
 CK1 => prediction_block:inst16.clk
+CK1 => inst.IN1
+CK1 => SynchRegister:inst26.Clk
 I[0] => LPM_FF:InstructionRegister1.data[0]
+I[0] => BUSMUX:inst17.datab[0]
 I[0] => prediction_block:inst16.I[0]
 I[1] => LPM_FF:InstructionRegister1.data[1]
+I[1] => BUSMUX:inst17.datab[1]
 I[1] => prediction_block:inst16.I[1]
 I[2] => LPM_FF:InstructionRegister1.data[2]
+I[2] => BUSMUX:inst17.datab[2]
 I[2] => prediction_block:inst16.I[2]
 I[3] => LPM_FF:InstructionRegister1.data[3]
+I[3] => BUSMUX:inst17.datab[3]
 I[3] => prediction_block:inst16.I[3]
 I[4] => LPM_FF:InstructionRegister1.data[4]
+I[4] => BUSMUX:inst17.datab[4]
 I[4] => prediction_block:inst16.I[4]
 I[5] => LPM_FF:InstructionRegister1.data[5]
+I[5] => BUSMUX:inst17.datab[5]
 I[5] => prediction_block:inst16.I[5]
 I[6] => LPM_FF:InstructionRegister1.data[6]
+I[6] => BUSMUX:inst17.datab[6]
 I[6] => prediction_block:inst16.I[6]
 I[7] => LPM_FF:InstructionRegister1.data[7]
+I[7] => BUSMUX:inst17.datab[7]
 I[7] => prediction_block:inst16.I[7]
 I[8] => LPM_FF:InstructionRegister1.data[8]
+I[8] => BUSMUX:inst17.datab[8]
 I[8] => prediction_block:inst16.I[8]
 I[9] => LPM_FF:InstructionRegister1.data[9]
+I[9] => BUSMUX:inst17.datab[9]
 I[9] => prediction_block:inst16.I[9]
 I[10] => LPM_FF:InstructionRegister1.data[10]
+I[10] => BUSMUX:inst17.datab[10]
 I[10] => prediction_block:inst16.I[10]
 I[11] => LPM_FF:InstructionRegister1.data[11]
 I[11] => prediction_block:inst16.I[11]
@@ -3357,28 +3404,41 @@ I[13] => prediction_block:inst16.I[13]
 I[14] => LPM_FF:InstructionRegister1.data[14]
 I[14] => prediction_block:inst16.I[14]
 I[15] => LPM_FF:InstructionRegister1.data[15]
-I[15] => prediction_block:inst16.I[15]
 I[15] => SubRoutineControlUnit:inst6.I[0]
+I[15] => prediction_block:inst16.I[15]
 I[16] => LPM_FF:InstructionRegister1.data[16]
-I[16] => prediction_block:inst16.I[16]
 I[16] => SubRoutineControlUnit:inst6.I[1]
+I[16] => prediction_block:inst16.I[16]
 I[17] => LPM_FF:InstructionRegister1.data[17]
-I[17] => prediction_block:inst16.I[17]
 I[17] => SubRoutineControlUnit:inst6.I[2]
+I[17] => prediction_block:inst16.I[17]
 I[18] => LPM_FF:InstructionRegister1.data[18]
-I[18] => prediction_block:inst16.I[18]
 I[18] => SubRoutineControlUnit:inst6.I[3]
+I[18] => prediction_block:inst16.I[18]
 I[19] => LPM_FF:InstructionRegister1.data[19]
-I[19] => prediction_block:inst16.I[19]
 I[19] => SubRoutineControlUnit:inst6.I[4]
+I[19] => prediction_block:inst16.I[19]
 I[20] => LPM_FF:InstructionRegister1.data[20]
-I[20] => prediction_block:inst16.I[20]
 I[20] => SubRoutineControlUnit:inst6.I[5]
+I[20] => prediction_block:inst16.I[20]
 I[21] => LPM_FF:InstructionRegister1.data[21]
-I[21] => prediction_block:inst16.I[21]
 I[21] => SubRoutineControlUnit:inst6.I[6]
+I[21] => prediction_block:inst16.I[21]
 Jump <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 CY => prediction_block:inst16.CY
+blockingPC <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+flush <= prediction_block:inst16.incorrect
+IA[0] <= BUSMUX:inst8.result[0]
+IA[1] <= BUSMUX:inst8.result[1]
+IA[2] <= BUSMUX:inst8.result[2]
+IA[3] <= BUSMUX:inst8.result[3]
+IA[4] <= BUSMUX:inst8.result[4]
+IA[5] <= BUSMUX:inst8.result[5]
+IA[6] <= BUSMUX:inst8.result[6]
+IA[7] <= BUSMUX:inst8.result[7]
+IA[8] <= BUSMUX:inst8.result[8]
+IA[9] <= BUSMUX:inst8.result[9]
+IA[10] <= BUSMUX:inst8.result[10]
 Tfoward[0] => prediction_block:inst16.T[0]
 Tfoward[1] => prediction_block:inst16.T[1]
 Tfoward[2] => prediction_block:inst16.T[2]
@@ -3402,19 +3462,8 @@ W[12] => prediction_block:inst16.W[12]
 W[13] => prediction_block:inst16.W[13]
 W[14] => prediction_block:inst16.W[14]
 W[15] => prediction_block:inst16.W[15]
-flush <= prediction_block:inst16.incorrect
 preload <= prediction_block:inst16.preload
-IA[0] <= BUSMUX:inst8.result[0]
-IA[1] <= BUSMUX:inst8.result[1]
-IA[2] <= BUSMUX:inst8.result[2]
-IA[3] <= BUSMUX:inst8.result[3]
-IA[4] <= BUSMUX:inst8.result[4]
-IA[5] <= BUSMUX:inst8.result[5]
-IA[6] <= BUSMUX:inst8.result[6]
-IA[7] <= BUSMUX:inst8.result[7]
-IA[8] <= BUSMUX:inst8.result[8]
-IA[9] <= BUSMUX:inst8.result[9]
-IA[10] <= BUSMUX:inst8.result[10]
+predictHold <= prediction_block:inst16.holdExtra
 INST_A[0] <= q[0].DB_MAX_OUTPUT_PORT_TYPE
 INST_A[1] <= q[1].DB_MAX_OUTPUT_PORT_TYPE
 INST_A[2] <= q[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -3437,6 +3486,17 @@ MI[3] <= q[18].DB_MAX_OUTPUT_PORT_TYPE
 MI[4] <= q[19].DB_MAX_OUTPUT_PORT_TYPE
 MI[5] <= q[20].DB_MAX_OUTPUT_PORT_TYPE
 MI[6] <= q[21].DB_MAX_OUTPUT_PORT_TYPE
+nextPC[0] <= next[0].DB_MAX_OUTPUT_PORT_TYPE
+nextPC[1] <= next[1].DB_MAX_OUTPUT_PORT_TYPE
+nextPC[2] <= next[2].DB_MAX_OUTPUT_PORT_TYPE
+nextPC[3] <= next[3].DB_MAX_OUTPUT_PORT_TYPE
+nextPC[4] <= next[4].DB_MAX_OUTPUT_PORT_TYPE
+nextPC[5] <= next[5].DB_MAX_OUTPUT_PORT_TYPE
+nextPC[6] <= next[6].DB_MAX_OUTPUT_PORT_TYPE
+nextPC[7] <= next[7].DB_MAX_OUTPUT_PORT_TYPE
+nextPC[8] <= next[8].DB_MAX_OUTPUT_PORT_TYPE
+nextPC[9] <= next[9].DB_MAX_OUTPUT_PORT_TYPE
+nextPC[10] <= next[10].DB_MAX_OUTPUT_PORT_TYPE
 OPERAND[0] <= q[0].DB_MAX_OUTPUT_PORT_TYPE
 OPERAND[1] <= q[1].DB_MAX_OUTPUT_PORT_TYPE
 OPERAND[2] <= q[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -3650,15 +3710,18 @@ q[21] <= dffs[21].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ev20main|fetchUnit:inst|prediction_block:inst16
-incorrect <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+incorrect <= BUSMUX:inst20.result[0]
+clk => SynchRegister:inst18.Clk
 clk => SynchRegister:inst13.Clk
 clk => prediction_checker:inst5.clk
 clk => fifo:inst11.clk
 clk => prediction_control:inst4.clk
 clk => branch_predictor:inst.clk
 clk => fifo_two_bit:inst1.clk
-clk => SynchRegister:inst18.Clk
+clk => SynchRegister:inst22.Clk
 clk => eleven_fifo:inst2.clk
+clk => SynchRegister:inst23.Clk
+hold => SynchRegister:inst18.DATA[0]
 CY => prediction_checker:inst5.CY
 T[0] => fifo_popper:inst3.T[0]
 T[0] => prediction_checker:inst5.T[0]
@@ -3718,10 +3781,13 @@ I[18] => prediction_control:inst4.I[18]
 I[19] => prediction_control:inst4.I[19]
 I[19] => branch_predictor:inst.I[0]
 I[19] => fifo_two_bit:inst1.I[0]
+I[19] => inst26.IN0
 I[20] => prediction_control:inst4.I[20]
 I[20] => branch_predictor:inst.I[1]
 I[20] => fifo_two_bit:inst1.I[1]
+I[20] => inst25.IN1
 I[21] => prediction_control:inst4.I[21]
+I[21] => inst24.IN0
 PC[0] => prediction_control:inst4.PC[0]
 PC[0] => BUSMUX:inst7.dataa[0]
 PC[0] => eleven_fifo:inst2.I1[0]
@@ -3772,7 +3838,11 @@ W[13] => prediction_checker:inst5.W[13]
 W[14] => prediction_checker:inst5.W[14]
 W[15] => prediction_checker:inst5.W[15]
 preload <= BUSMUX:inst17.result[0]
-hold => SynchRegister:inst18.DATA[0]
+holdExtra <= LPM_LATCH:inst35.q[0]
+predicting <= inst42.DB_MAX_OUTPUT_PORT_TYPE
+RET => inst27.IN0
+BSR => inst27.IN2
+specialI <= inst27.DB_MAX_OUTPUT_PORT_TYPE
 NEXT_OUT[0] <= BUSMUX:inst16.result[0]
 NEXT_OUT[1] <= BUSMUX:inst16.result[1]
 NEXT_OUT[2] <= BUSMUX:inst16.result[2]
@@ -3784,6 +3854,89 @@ NEXT_OUT[7] <= BUSMUX:inst16.result[7]
 NEXT_OUT[8] <= BUSMUX:inst16.result[8]
 NEXT_OUT[9] <= BUSMUX:inst16.result[9]
 NEXT_OUT[10] <= BUSMUX:inst16.result[10]
+
+
+|ev20main|fetchUnit:inst|prediction_block:inst16|BUSMUX:inst20
+dataa[0] => lpm_mux:$00000.data[0][0]
+datab[0] => lpm_mux:$00000.data[1][0]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+
+
+|ev20main|fetchUnit:inst|prediction_block:inst16|BUSMUX:inst20|lpm_mux:$00000
+data[0][0] => mux_7rc:auto_generated.data[0]
+data[1][0] => mux_7rc:auto_generated.data[1]
+sel[0] => mux_7rc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_7rc:auto_generated.result[0]
+
+
+|ev20main|fetchUnit:inst|prediction_block:inst16|BUSMUX:inst20|lpm_mux:$00000|mux_7rc:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[0].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+
+|ev20main|fetchUnit:inst|prediction_block:inst16|SynchRegister:inst18
+DATA_OUT[0] <= LPM_FF:inst1.q[0]
+Clk => inst2.IN0
+Clk => LPM_FF:inst.clock
+DATA[0] => LPM_FF:inst.data[0]
+
+
+|ev20main|fetchUnit:inst|prediction_block:inst16|SynchRegister:inst18|LPM_FF:inst1
+data[0] => dffs[0].DATAIN
+clock => dffs[0].CLK
+enable => dffs[0].ENA
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|fetchUnit:inst|prediction_block:inst16|SynchRegister:inst18|LPM_FF:inst
+data[0] => dffs[0].DATAIN
+clock => dffs[0].CLK
+enable => dffs[0].ENA
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|fetchUnit:inst|prediction_block:inst16|BUSMUX:inst38
+dataa[0] => lpm_mux:$00000.data[0][0]
+datab[0] => lpm_mux:$00000.data[1][0]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+
+
+|ev20main|fetchUnit:inst|prediction_block:inst16|BUSMUX:inst38|lpm_mux:$00000
+data[0][0] => mux_7rc:auto_generated.data[0]
+data[1][0] => mux_7rc:auto_generated.data[1]
+sel[0] => mux_7rc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_7rc:auto_generated.result[0]
+
+
+|ev20main|fetchUnit:inst|prediction_block:inst16|BUSMUX:inst38|lpm_mux:$00000|mux_7rc:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[0].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
 
 
 |ev20main|fetchUnit:inst|prediction_block:inst16|SynchRegister:inst13
@@ -3962,6 +4115,7 @@ checked <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ev20main|fetchUnit:inst|prediction_block:inst16|fifo:inst11
+clk => size~reg0.CLK
 clk => P~reg0.CLK
 clk => index[0].CLK
 clk => index[1].CLK
@@ -4112,6 +4266,7 @@ I => queue.DATAB
 I => queue.DATAB
 I => queue.DATAB
 P <= P~reg0.DB_MAX_OUTPUT_PORT_TYPE
+size <= size~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ev20main|fetchUnit:inst|prediction_block:inst16|fifo_popper:inst3
@@ -4539,6 +4694,48 @@ I => queue.DATAB
 P <= P~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|ev20main|fetchUnit:inst|prediction_block:inst16|SynchRegister:inst22
+DATA_OUT[0] <= LPM_FF:inst1.q[0]
+Clk => inst2.IN0
+Clk => LPM_FF:inst.clock
+DATA[0] => LPM_FF:inst.data[0]
+
+
+|ev20main|fetchUnit:inst|prediction_block:inst16|SynchRegister:inst22|LPM_FF:inst1
+data[0] => dffs[0].DATAIN
+clock => dffs[0].CLK
+enable => dffs[0].ENA
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|fetchUnit:inst|prediction_block:inst16|SynchRegister:inst22|LPM_FF:inst
+data[0] => dffs[0].DATAIN
+clock => dffs[0].CLK
+enable => dffs[0].ENA
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|fetchUnit:inst|prediction_block:inst16|LPM_LATCH:inst15
+data[0] => latches[0].DATAIN
+gate => latches[0].LATCH_ENABLE
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+q[0] <= latches[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
 |ev20main|fetchUnit:inst|prediction_block:inst16|BUSMUX:inst17
 dataa[0] => lpm_mux:$00000.data[0][0]
 datab[0] => lpm_mux:$00000.data[1][0]
@@ -4564,43 +4761,19 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|ev20main|fetchUnit:inst|prediction_block:inst16|SynchRegister:inst18
-DATA_OUT[0] <= LPM_FF:inst1.q[0]
-Clk => inst2.IN0
-Clk => LPM_FF:inst.clock
-DATA[0] => LPM_FF:inst.data[0]
-
-
-|ev20main|fetchUnit:inst|prediction_block:inst16|SynchRegister:inst18|LPM_FF:inst1
-data[0] => dffs[0].DATAIN
-clock => dffs[0].CLK
-enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aload => ~NO_FANOUT~
-sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
-sload => ~NO_FANOUT~
-q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|prediction_block:inst16|SynchRegister:inst18|LPM_FF:inst
-data[0] => dffs[0].DATAIN
-clock => dffs[0].CLK
-enable => dffs[0].ENA
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aload => ~NO_FANOUT~
-sclr => ~NO_FANOUT~
-sset => ~NO_FANOUT~
-sload => ~NO_FANOUT~
-q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
-
-
 |ev20main|fetchUnit:inst|prediction_block:inst16|LPM_LATCH:inst14
 data[0] => latches[0].DATAIN
 gate => latches[0].LATCH_ENABLE
 aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+q[0] <= latches[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|fetchUnit:inst|prediction_block:inst16|LPM_LATCH:inst35
+data[0] => latches[0].DATAIN
+gate => latches[0].LATCH_ENABLE
+aclr => latches[0].IN0
 aset => ~NO_FANOUT~
 aconst => ~NO_FANOUT~
 q[0] <= latches[0].DB_MAX_OUTPUT_PORT_TYPE
@@ -6963,7 +7136,422 @@ q[9] <= latches[9].DB_MAX_OUTPUT_PORT_TYPE
 q[10] <= latches[10].DB_MAX_OUTPUT_PORT_TYPE
 
 
+|ev20main|fetchUnit:inst|prediction_block:inst16|SynchRegister:inst23
+DATA_OUT[0] <= LPM_FF:inst1.q[0]
+Clk => inst2.IN0
+Clk => LPM_FF:inst.clock
+DATA[0] => LPM_FF:inst.data[0]
+
+
+|ev20main|fetchUnit:inst|prediction_block:inst16|SynchRegister:inst23|LPM_FF:inst1
+data[0] => dffs[0].DATAIN
+clock => dffs[0].CLK
+enable => dffs[0].ENA
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|fetchUnit:inst|prediction_block:inst16|SynchRegister:inst23|LPM_FF:inst
+data[0] => dffs[0].DATAIN
+clock => dffs[0].CLK
+enable => dffs[0].ENA
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6
+isBSR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+I[0] => inst23.IN0
+I[1] => inst23.IN2
+I[2] => inst12.IN0
+I[3] => inst2.IN3
+I[3] => inst9.IN0
+I[4] => inst2.IN2
+I[4] => inst11.IN0
+I[5] => inst2.IN1
+I[5] => inst13.IN0
+I[6] => inst24.IN0
+isRET <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+stackPC[0] <= stack:inst.ToPC[0]
+stackPC[1] <= stack:inst.ToPC[1]
+stackPC[2] <= stack:inst.ToPC[2]
+stackPC[3] <= stack:inst.ToPC[3]
+stackPC[4] <= stack:inst.ToPC[4]
+stackPC[5] <= stack:inst.ToPC[5]
+stackPC[6] <= stack:inst.ToPC[6]
+stackPC[7] <= stack:inst.ToPC[7]
+stackPC[8] <= stack:inst.ToPC[8]
+stackPC[9] <= stack:inst.ToPC[9]
+stackPC[10] <= stack:inst.ToPC[10]
+CLK => stack:inst.clk
+PC[0] => stack:inst.FromPC[0]
+PC[1] => stack:inst.FromPC[1]
+PC[2] => stack:inst.FromPC[2]
+PC[3] => stack:inst.FromPC[3]
+PC[4] => stack:inst.FromPC[4]
+PC[5] => stack:inst.FromPC[5]
+PC[6] => stack:inst.FromPC[6]
+PC[7] => stack:inst.FromPC[7]
+PC[8] => stack:inst.FromPC[8]
+PC[9] => stack:inst.FromPC[9]
+PC[10] => stack:inst.FromPC[10]
+
+
+|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst
+ToPC[0] <= bi_shift_reg:inst.TOS
+ToPC[1] <= bi_shift_reg:inst2.TOS
+ToPC[2] <= bi_shift_reg:inst3.TOS
+ToPC[3] <= bi_shift_reg:inst12.TOS
+ToPC[4] <= bi_shift_reg:inst11.TOS
+ToPC[5] <= bi_shift_reg:inst10.TOS
+ToPC[6] <= bi_shift_reg:inst8.TOS
+ToPC[7] <= bi_shift_reg:inst7.TOS
+ToPC[8] <= bi_shift_reg:inst6.TOS
+ToPC[9] <= bi_shift_reg:inst5.TOS
+ToPC[10] <= bi_shift_reg:inst4.TOS
+FromPC[0] => bi_shift_reg:inst.in
+FromPC[1] => bi_shift_reg:inst2.in
+FromPC[2] => bi_shift_reg:inst3.in
+FromPC[3] => bi_shift_reg:inst12.in
+FromPC[4] => bi_shift_reg:inst11.in
+FromPC[5] => bi_shift_reg:inst10.in
+FromPC[6] => bi_shift_reg:inst8.in
+FromPC[7] => bi_shift_reg:inst7.in
+FromPC[8] => bi_shift_reg:inst6.in
+FromPC[9] => bi_shift_reg:inst5.in
+FromPC[10] => bi_shift_reg:inst4.in
+clk => bi_shift_reg:inst.clk
+clk => bi_shift_reg:inst2.clk
+clk => bi_shift_reg:inst3.clk
+clk => bi_shift_reg:inst4.clk
+clk => bi_shift_reg:inst5.clk
+clk => bi_shift_reg:inst6.clk
+clk => bi_shift_reg:inst7.clk
+clk => bi_shift_reg:inst8.clk
+clk => bi_shift_reg:inst10.clk
+clk => bi_shift_reg:inst11.clk
+clk => bi_shift_reg:inst12.clk
+ret => bi_shift_reg:inst.ret
+ret => bi_shift_reg:inst2.ret
+ret => bi_shift_reg:inst3.ret
+ret => bi_shift_reg:inst4.ret
+ret => bi_shift_reg:inst5.ret
+ret => bi_shift_reg:inst6.ret
+ret => bi_shift_reg:inst7.ret
+ret => bi_shift_reg:inst8.ret
+ret => bi_shift_reg:inst10.ret
+ret => bi_shift_reg:inst11.ret
+ret => bi_shift_reg:inst12.ret
+bsr => bi_shift_reg:inst.bsr
+bsr => bi_shift_reg:inst2.bsr
+bsr => bi_shift_reg:inst3.bsr
+bsr => bi_shift_reg:inst4.bsr
+bsr => bi_shift_reg:inst5.bsr
+bsr => bi_shift_reg:inst6.bsr
+bsr => bi_shift_reg:inst7.bsr
+bsr => bi_shift_reg:inst8.bsr
+bsr => bi_shift_reg:inst10.bsr
+bsr => bi_shift_reg:inst11.bsr
+bsr => bi_shift_reg:inst12.bsr
+
+
+|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst
+in => out.DATAB
+in => TOS.DATAB
+clk => TOS~reg0.CLK
+clk => out[0]~reg0.CLK
+clk => out[1]~reg0.CLK
+clk => out[2]~reg0.CLK
+clk => out[3]~reg0.CLK
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => TOS.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => TOS.OUTPUTSELECT
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+TOS <= TOS~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst2
+in => out.DATAB
+in => TOS.DATAB
+clk => TOS~reg0.CLK
+clk => out[0]~reg0.CLK
+clk => out[1]~reg0.CLK
+clk => out[2]~reg0.CLK
+clk => out[3]~reg0.CLK
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => TOS.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => TOS.OUTPUTSELECT
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+TOS <= TOS~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst3
+in => out.DATAB
+in => TOS.DATAB
+clk => TOS~reg0.CLK
+clk => out[0]~reg0.CLK
+clk => out[1]~reg0.CLK
+clk => out[2]~reg0.CLK
+clk => out[3]~reg0.CLK
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => TOS.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => TOS.OUTPUTSELECT
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+TOS <= TOS~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst4
+in => out.DATAB
+in => TOS.DATAB
+clk => TOS~reg0.CLK
+clk => out[0]~reg0.CLK
+clk => out[1]~reg0.CLK
+clk => out[2]~reg0.CLK
+clk => out[3]~reg0.CLK
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => TOS.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => TOS.OUTPUTSELECT
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+TOS <= TOS~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst5
+in => out.DATAB
+in => TOS.DATAB
+clk => TOS~reg0.CLK
+clk => out[0]~reg0.CLK
+clk => out[1]~reg0.CLK
+clk => out[2]~reg0.CLK
+clk => out[3]~reg0.CLK
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => TOS.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => TOS.OUTPUTSELECT
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+TOS <= TOS~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst6
+in => out.DATAB
+in => TOS.DATAB
+clk => TOS~reg0.CLK
+clk => out[0]~reg0.CLK
+clk => out[1]~reg0.CLK
+clk => out[2]~reg0.CLK
+clk => out[3]~reg0.CLK
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => TOS.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => TOS.OUTPUTSELECT
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+TOS <= TOS~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst7
+in => out.DATAB
+in => TOS.DATAB
+clk => TOS~reg0.CLK
+clk => out[0]~reg0.CLK
+clk => out[1]~reg0.CLK
+clk => out[2]~reg0.CLK
+clk => out[3]~reg0.CLK
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => TOS.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => TOS.OUTPUTSELECT
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+TOS <= TOS~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst8
+in => out.DATAB
+in => TOS.DATAB
+clk => TOS~reg0.CLK
+clk => out[0]~reg0.CLK
+clk => out[1]~reg0.CLK
+clk => out[2]~reg0.CLK
+clk => out[3]~reg0.CLK
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => TOS.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => TOS.OUTPUTSELECT
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+TOS <= TOS~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst10
+in => out.DATAB
+in => TOS.DATAB
+clk => TOS~reg0.CLK
+clk => out[0]~reg0.CLK
+clk => out[1]~reg0.CLK
+clk => out[2]~reg0.CLK
+clk => out[3]~reg0.CLK
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => TOS.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => TOS.OUTPUTSELECT
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+TOS <= TOS~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst11
+in => out.DATAB
+in => TOS.DATAB
+clk => TOS~reg0.CLK
+clk => out[0]~reg0.CLK
+clk => out[1]~reg0.CLK
+clk => out[2]~reg0.CLK
+clk => out[3]~reg0.CLK
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => TOS.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => TOS.OUTPUTSELECT
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+TOS <= TOS~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst12
+in => out.DATAB
+in => TOS.DATAB
+clk => TOS~reg0.CLK
+clk => out[0]~reg0.CLK
+clk => out[1]~reg0.CLK
+clk => out[2]~reg0.CLK
+clk => out[3]~reg0.CLK
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => out.OUTPUTSELECT
+ret => TOS.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => out.OUTPUTSELECT
+bsr => TOS.OUTPUTSELECT
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+TOS <= TOS~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |ev20main|fetchUnit:inst|PCRegister:inst1
+blockingPC => PC.OUTPUTSELECT
+blockingPC => PC.OUTPUTSELECT
+blockingPC => PC.OUTPUTSELECT
+blockingPC => PC.OUTPUTSELECT
+blockingPC => PC.OUTPUTSELECT
+blockingPC => PC.OUTPUTSELECT
+blockingPC => PC.OUTPUTSELECT
+blockingPC => PC.OUTPUTSELECT
+blockingPC => PC.OUTPUTSELECT
+blockingPC => PC.OUTPUTSELECT
+blockingPC => PC.OUTPUTSELECT
 inc => auxLoad.CLK
 inc => auxAdd[0].CLK
 inc => auxAdd[1].CLK
@@ -7010,6 +7598,276 @@ PC[7] <= PC[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 PC[8] <= PC[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 PC[9] <= PC[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 PC[10] <= PC[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ev20main|fetchUnit:inst|BUSMUX:inst28
+dataa[0] => lpm_mux:$00000.data[0][0]
+dataa[1] => lpm_mux:$00000.data[0][1]
+dataa[2] => lpm_mux:$00000.data[0][2]
+dataa[3] => lpm_mux:$00000.data[0][3]
+dataa[4] => lpm_mux:$00000.data[0][4]
+dataa[5] => lpm_mux:$00000.data[0][5]
+dataa[6] => lpm_mux:$00000.data[0][6]
+dataa[7] => lpm_mux:$00000.data[0][7]
+dataa[8] => lpm_mux:$00000.data[0][8]
+dataa[9] => lpm_mux:$00000.data[0][9]
+dataa[10] => lpm_mux:$00000.data[0][10]
+datab[0] => lpm_mux:$00000.data[1][0]
+datab[1] => lpm_mux:$00000.data[1][1]
+datab[2] => lpm_mux:$00000.data[1][2]
+datab[3] => lpm_mux:$00000.data[1][3]
+datab[4] => lpm_mux:$00000.data[1][4]
+datab[5] => lpm_mux:$00000.data[1][5]
+datab[6] => lpm_mux:$00000.data[1][6]
+datab[7] => lpm_mux:$00000.data[1][7]
+datab[8] => lpm_mux:$00000.data[1][8]
+datab[9] => lpm_mux:$00000.data[1][9]
+datab[10] => lpm_mux:$00000.data[1][10]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+result[1] <= lpm_mux:$00000.result[1]
+result[2] <= lpm_mux:$00000.result[2]
+result[3] <= lpm_mux:$00000.result[3]
+result[4] <= lpm_mux:$00000.result[4]
+result[5] <= lpm_mux:$00000.result[5]
+result[6] <= lpm_mux:$00000.result[6]
+result[7] <= lpm_mux:$00000.result[7]
+result[8] <= lpm_mux:$00000.result[8]
+result[9] <= lpm_mux:$00000.result[9]
+result[10] <= lpm_mux:$00000.result[10]
+
+
+|ev20main|fetchUnit:inst|BUSMUX:inst28|lpm_mux:$00000
+data[0][0] => mux_osc:auto_generated.data[0]
+data[0][1] => mux_osc:auto_generated.data[1]
+data[0][2] => mux_osc:auto_generated.data[2]
+data[0][3] => mux_osc:auto_generated.data[3]
+data[0][4] => mux_osc:auto_generated.data[4]
+data[0][5] => mux_osc:auto_generated.data[5]
+data[0][6] => mux_osc:auto_generated.data[6]
+data[0][7] => mux_osc:auto_generated.data[7]
+data[0][8] => mux_osc:auto_generated.data[8]
+data[0][9] => mux_osc:auto_generated.data[9]
+data[0][10] => mux_osc:auto_generated.data[10]
+data[1][0] => mux_osc:auto_generated.data[11]
+data[1][1] => mux_osc:auto_generated.data[12]
+data[1][2] => mux_osc:auto_generated.data[13]
+data[1][3] => mux_osc:auto_generated.data[14]
+data[1][4] => mux_osc:auto_generated.data[15]
+data[1][5] => mux_osc:auto_generated.data[16]
+data[1][6] => mux_osc:auto_generated.data[17]
+data[1][7] => mux_osc:auto_generated.data[18]
+data[1][8] => mux_osc:auto_generated.data[19]
+data[1][9] => mux_osc:auto_generated.data[20]
+data[1][10] => mux_osc:auto_generated.data[21]
+sel[0] => mux_osc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_osc:auto_generated.result[0]
+result[1] <= mux_osc:auto_generated.result[1]
+result[2] <= mux_osc:auto_generated.result[2]
+result[3] <= mux_osc:auto_generated.result[3]
+result[4] <= mux_osc:auto_generated.result[4]
+result[5] <= mux_osc:auto_generated.result[5]
+result[6] <= mux_osc:auto_generated.result[6]
+result[7] <= mux_osc:auto_generated.result[7]
+result[8] <= mux_osc:auto_generated.result[8]
+result[9] <= mux_osc:auto_generated.result[9]
+result[10] <= mux_osc:auto_generated.result[10]
+
+
+|ev20main|fetchUnit:inst|BUSMUX:inst28|lpm_mux:$00000|mux_osc:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[4].IN1
+data[5] => result_node[5].IN1
+data[6] => result_node[6].IN1
+data[7] => result_node[7].IN1
+data[8] => result_node[8].IN1
+data[9] => result_node[9].IN1
+data[10] => result_node[10].IN1
+data[11] => result_node[0].IN1
+data[12] => result_node[1].IN1
+data[13] => result_node[2].IN1
+data[14] => result_node[3].IN1
+data[15] => result_node[4].IN1
+data[16] => result_node[5].IN1
+data[17] => result_node[6].IN1
+data[18] => result_node[7].IN1
+data[19] => result_node[8].IN1
+data[20] => result_node[9].IN1
+data[21] => result_node[10].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= result_node[4].DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= result_node[5].DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= result_node[6].DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= result_node[7].DB_MAX_OUTPUT_PORT_TYPE
+result[8] <= result_node[8].DB_MAX_OUTPUT_PORT_TYPE
+result[9] <= result_node[9].DB_MAX_OUTPUT_PORT_TYPE
+result[10] <= result_node[10].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[10].IN0
+sel[0] => _.IN0
+sel[0] => result_node[9].IN0
+sel[0] => _.IN0
+sel[0] => result_node[8].IN0
+sel[0] => _.IN0
+sel[0] => result_node[7].IN0
+sel[0] => _.IN0
+sel[0] => result_node[6].IN0
+sel[0] => _.IN0
+sel[0] => result_node[5].IN0
+sel[0] => _.IN0
+sel[0] => result_node[4].IN0
+sel[0] => _.IN0
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+
+|ev20main|fetchUnit:inst|BUSMUX:inst21
+dataa[0] => lpm_mux:$00000.data[0][0]
+dataa[1] => lpm_mux:$00000.data[0][1]
+dataa[2] => lpm_mux:$00000.data[0][2]
+dataa[3] => lpm_mux:$00000.data[0][3]
+dataa[4] => lpm_mux:$00000.data[0][4]
+dataa[5] => lpm_mux:$00000.data[0][5]
+dataa[6] => lpm_mux:$00000.data[0][6]
+dataa[7] => lpm_mux:$00000.data[0][7]
+dataa[8] => lpm_mux:$00000.data[0][8]
+dataa[9] => lpm_mux:$00000.data[0][9]
+dataa[10] => lpm_mux:$00000.data[0][10]
+datab[0] => lpm_mux:$00000.data[1][0]
+datab[1] => lpm_mux:$00000.data[1][1]
+datab[2] => lpm_mux:$00000.data[1][2]
+datab[3] => lpm_mux:$00000.data[1][3]
+datab[4] => lpm_mux:$00000.data[1][4]
+datab[5] => lpm_mux:$00000.data[1][5]
+datab[6] => lpm_mux:$00000.data[1][6]
+datab[7] => lpm_mux:$00000.data[1][7]
+datab[8] => lpm_mux:$00000.data[1][8]
+datab[9] => lpm_mux:$00000.data[1][9]
+datab[10] => lpm_mux:$00000.data[1][10]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+result[1] <= lpm_mux:$00000.result[1]
+result[2] <= lpm_mux:$00000.result[2]
+result[3] <= lpm_mux:$00000.result[3]
+result[4] <= lpm_mux:$00000.result[4]
+result[5] <= lpm_mux:$00000.result[5]
+result[6] <= lpm_mux:$00000.result[6]
+result[7] <= lpm_mux:$00000.result[7]
+result[8] <= lpm_mux:$00000.result[8]
+result[9] <= lpm_mux:$00000.result[9]
+result[10] <= lpm_mux:$00000.result[10]
+
+
+|ev20main|fetchUnit:inst|BUSMUX:inst21|lpm_mux:$00000
+data[0][0] => mux_osc:auto_generated.data[0]
+data[0][1] => mux_osc:auto_generated.data[1]
+data[0][2] => mux_osc:auto_generated.data[2]
+data[0][3] => mux_osc:auto_generated.data[3]
+data[0][4] => mux_osc:auto_generated.data[4]
+data[0][5] => mux_osc:auto_generated.data[5]
+data[0][6] => mux_osc:auto_generated.data[6]
+data[0][7] => mux_osc:auto_generated.data[7]
+data[0][8] => mux_osc:auto_generated.data[8]
+data[0][9] => mux_osc:auto_generated.data[9]
+data[0][10] => mux_osc:auto_generated.data[10]
+data[1][0] => mux_osc:auto_generated.data[11]
+data[1][1] => mux_osc:auto_generated.data[12]
+data[1][2] => mux_osc:auto_generated.data[13]
+data[1][3] => mux_osc:auto_generated.data[14]
+data[1][4] => mux_osc:auto_generated.data[15]
+data[1][5] => mux_osc:auto_generated.data[16]
+data[1][6] => mux_osc:auto_generated.data[17]
+data[1][7] => mux_osc:auto_generated.data[18]
+data[1][8] => mux_osc:auto_generated.data[19]
+data[1][9] => mux_osc:auto_generated.data[20]
+data[1][10] => mux_osc:auto_generated.data[21]
+sel[0] => mux_osc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_osc:auto_generated.result[0]
+result[1] <= mux_osc:auto_generated.result[1]
+result[2] <= mux_osc:auto_generated.result[2]
+result[3] <= mux_osc:auto_generated.result[3]
+result[4] <= mux_osc:auto_generated.result[4]
+result[5] <= mux_osc:auto_generated.result[5]
+result[6] <= mux_osc:auto_generated.result[6]
+result[7] <= mux_osc:auto_generated.result[7]
+result[8] <= mux_osc:auto_generated.result[8]
+result[9] <= mux_osc:auto_generated.result[9]
+result[10] <= mux_osc:auto_generated.result[10]
+
+
+|ev20main|fetchUnit:inst|BUSMUX:inst21|lpm_mux:$00000|mux_osc:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[4].IN1
+data[5] => result_node[5].IN1
+data[6] => result_node[6].IN1
+data[7] => result_node[7].IN1
+data[8] => result_node[8].IN1
+data[9] => result_node[9].IN1
+data[10] => result_node[10].IN1
+data[11] => result_node[0].IN1
+data[12] => result_node[1].IN1
+data[13] => result_node[2].IN1
+data[14] => result_node[3].IN1
+data[15] => result_node[4].IN1
+data[16] => result_node[5].IN1
+data[17] => result_node[6].IN1
+data[18] => result_node[7].IN1
+data[19] => result_node[8].IN1
+data[20] => result_node[9].IN1
+data[21] => result_node[10].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= result_node[4].DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= result_node[5].DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= result_node[6].DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= result_node[7].DB_MAX_OUTPUT_PORT_TYPE
+result[8] <= result_node[8].DB_MAX_OUTPUT_PORT_TYPE
+result[9] <= result_node[9].DB_MAX_OUTPUT_PORT_TYPE
+result[10] <= result_node[10].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[10].IN0
+sel[0] => _.IN0
+sel[0] => result_node[9].IN0
+sel[0] => _.IN0
+sel[0] => result_node[8].IN0
+sel[0] => _.IN0
+sel[0] => result_node[7].IN0
+sel[0] => _.IN0
+sel[0] => result_node[6].IN0
+sel[0] => _.IN0
+sel[0] => result_node[5].IN0
+sel[0] => _.IN0
+sel[0] => result_node[4].IN0
+sel[0] => _.IN0
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
 
 
 |ev20main|fetchUnit:inst|BUSMUX:inst7
@@ -7147,189 +8005,131 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6
-isBSR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-I[0] => inst23.IN0
-I[1] => inst23.IN2
-I[2] => inst12.IN0
-I[3] => inst2.IN3
-I[3] => inst9.IN0
-I[4] => inst2.IN2
-I[4] => inst11.IN0
-I[5] => inst2.IN1
-I[5] => inst13.IN0
-I[6] => inst24.IN0
-isRET <= inst23.DB_MAX_OUTPUT_PORT_TYPE
-stackPC[0] <= stack:inst.ToPC[0]
-stackPC[1] <= stack:inst.ToPC[1]
-stackPC[2] <= stack:inst.ToPC[2]
-stackPC[3] <= stack:inst.ToPC[3]
-stackPC[4] <= stack:inst.ToPC[4]
-stackPC[5] <= stack:inst.ToPC[5]
-stackPC[6] <= stack:inst.ToPC[6]
-stackPC[7] <= stack:inst.ToPC[7]
-stackPC[8] <= stack:inst.ToPC[8]
-stackPC[9] <= stack:inst.ToPC[9]
-stackPC[10] <= stack:inst.ToPC[10]
-PC[0] => stack:inst.FromPC[0]
-PC[1] => stack:inst.FromPC[1]
-PC[2] => stack:inst.FromPC[2]
-PC[3] => stack:inst.FromPC[3]
-PC[4] => stack:inst.FromPC[4]
-PC[5] => stack:inst.FromPC[5]
-PC[6] => stack:inst.FromPC[6]
-PC[7] => stack:inst.FromPC[7]
-PC[8] => stack:inst.FromPC[8]
-PC[9] => stack:inst.FromPC[9]
-PC[10] => stack:inst.FromPC[10]
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst
-ToPC[0] <= push_pop:inst.lifo
-ToPC[1] <= push_pop:inst12.lifo
-ToPC[2] <= push_pop:inst13.lifo
-ToPC[3] <= push_pop:inst14.lifo
-ToPC[4] <= push_pop:inst15.lifo
-ToPC[5] <= push_pop:inst16.lifo
-ToPC[6] <= push_pop:inst18.lifo
-ToPC[7] <= push_pop:inst19.lifo
-ToPC[8] <= push_pop:inst20.lifo
-ToPC[9] <= push_pop:inst21.lifo
-ToPC[10] <= push_pop:inst22.lifo
-FromPC[0] => push_pop:inst.in
-FromPC[1] => push_pop:inst12.in
-FromPC[2] => push_pop:inst13.in
-FromPC[3] => push_pop:inst14.in
-FromPC[4] => push_pop:inst15.in
-FromPC[5] => push_pop:inst16.in
-FromPC[6] => push_pop:inst18.in
-FromPC[7] => push_pop:inst19.in
-FromPC[8] => push_pop:inst20.in
-FromPC[9] => push_pop:inst21.in
-FromPC[10] => push_pop:inst22.in
-bsr => push_pop:inst22.bsr
-bsr => push_pop:inst21.bsr
-bsr => push_pop:inst20.bsr
-bsr => push_pop:inst19.bsr
-bsr => push_pop:inst18.bsr
-bsr => push_pop:inst16.bsr
-bsr => push_pop:inst15.bsr
-bsr => push_pop:inst14.bsr
-bsr => push_pop:inst13.bsr
-bsr => push_pop:inst12.bsr
-bsr => push_pop:inst.bsr
-ret => push_pop:inst22.ret
-ret => push_pop:inst21.ret
-ret => push_pop:inst20.ret
-ret => push_pop:inst19.ret
-ret => push_pop:inst18.ret
-ret => push_pop:inst16.ret
-ret => push_pop:inst15.ret
-ret => push_pop:inst14.ret
-ret => push_pop:inst13.ret
-ret => push_pop:inst12.ret
-ret => push_pop:inst.ret
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst22
-lifo <= pop:inst2.lifoOut
-in => pop:inst2.in
-in => push:inst.in
-ret => pop:inst2.ret
-ret => inst66.IN1
-ret => BUSMUX:inst6.sel
-out[0] <= LPM_LATCH:inst7.q[0]
-out[1] <= LPM_LATCH:inst7.q[1]
-out[2] <= LPM_LATCH:inst7.q[2]
-out[3] <= LPM_LATCH:inst7.q[3]
-bsr => inst66.IN0
-bsr => push:inst.bsr
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst22|pop:inst2
-in => ~NO_FANOUT~
-ret => lifoOut~reg0.CLK
-ret => out[0]~reg0.CLK
-ret => out[1]~reg0.CLK
-ret => out[2]~reg0.CLK
-ret => out[3]~reg0.CLK
-shift_reg[0] => out[1]~reg0.DATAIN
-shift_reg[1] => out[2]~reg0.DATAIN
-shift_reg[2] => out[3]~reg0.DATAIN
-shift_reg[3] => lifoOut~reg0.DATAIN
-out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-lifoOut <= lifoOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst22|LPM_LATCH:inst7
-data[0] => latches[0].DATAIN
-data[1] => latches[1].DATAIN
-data[2] => latches[2].DATAIN
-data[3] => latches[3].DATAIN
-gate => latches[3].LATCH_ENABLE
-gate => latches[2].LATCH_ENABLE
-gate => latches[1].LATCH_ENABLE
-gate => latches[0].LATCH_ENABLE
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aconst => ~NO_FANOUT~
-q[0] <= latches[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= latches[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= latches[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= latches[3].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst22|BUSMUX:inst6
+|ev20main|fetchUnit:inst|BUSMUX:inst17
 dataa[0] => lpm_mux:$00000.data[0][0]
 dataa[1] => lpm_mux:$00000.data[0][1]
 dataa[2] => lpm_mux:$00000.data[0][2]
 dataa[3] => lpm_mux:$00000.data[0][3]
+dataa[4] => lpm_mux:$00000.data[0][4]
+dataa[5] => lpm_mux:$00000.data[0][5]
+dataa[6] => lpm_mux:$00000.data[0][6]
+dataa[7] => lpm_mux:$00000.data[0][7]
+dataa[8] => lpm_mux:$00000.data[0][8]
+dataa[9] => lpm_mux:$00000.data[0][9]
+dataa[10] => lpm_mux:$00000.data[0][10]
 datab[0] => lpm_mux:$00000.data[1][0]
 datab[1] => lpm_mux:$00000.data[1][1]
 datab[2] => lpm_mux:$00000.data[1][2]
 datab[3] => lpm_mux:$00000.data[1][3]
+datab[4] => lpm_mux:$00000.data[1][4]
+datab[5] => lpm_mux:$00000.data[1][5]
+datab[6] => lpm_mux:$00000.data[1][6]
+datab[7] => lpm_mux:$00000.data[1][7]
+datab[8] => lpm_mux:$00000.data[1][8]
+datab[9] => lpm_mux:$00000.data[1][9]
+datab[10] => lpm_mux:$00000.data[1][10]
 sel => lpm_mux:$00000.sel[0]
 result[0] <= lpm_mux:$00000.result[0]
 result[1] <= lpm_mux:$00000.result[1]
 result[2] <= lpm_mux:$00000.result[2]
 result[3] <= lpm_mux:$00000.result[3]
+result[4] <= lpm_mux:$00000.result[4]
+result[5] <= lpm_mux:$00000.result[5]
+result[6] <= lpm_mux:$00000.result[6]
+result[7] <= lpm_mux:$00000.result[7]
+result[8] <= lpm_mux:$00000.result[8]
+result[9] <= lpm_mux:$00000.result[9]
+result[10] <= lpm_mux:$00000.result[10]
 
 
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst22|BUSMUX:inst6|lpm_mux:$00000
-data[0][0] => mux_arc:auto_generated.data[0]
-data[0][1] => mux_arc:auto_generated.data[1]
-data[0][2] => mux_arc:auto_generated.data[2]
-data[0][3] => mux_arc:auto_generated.data[3]
-data[1][0] => mux_arc:auto_generated.data[4]
-data[1][1] => mux_arc:auto_generated.data[5]
-data[1][2] => mux_arc:auto_generated.data[6]
-data[1][3] => mux_arc:auto_generated.data[7]
-sel[0] => mux_arc:auto_generated.sel[0]
+|ev20main|fetchUnit:inst|BUSMUX:inst17|lpm_mux:$00000
+data[0][0] => mux_osc:auto_generated.data[0]
+data[0][1] => mux_osc:auto_generated.data[1]
+data[0][2] => mux_osc:auto_generated.data[2]
+data[0][3] => mux_osc:auto_generated.data[3]
+data[0][4] => mux_osc:auto_generated.data[4]
+data[0][5] => mux_osc:auto_generated.data[5]
+data[0][6] => mux_osc:auto_generated.data[6]
+data[0][7] => mux_osc:auto_generated.data[7]
+data[0][8] => mux_osc:auto_generated.data[8]
+data[0][9] => mux_osc:auto_generated.data[9]
+data[0][10] => mux_osc:auto_generated.data[10]
+data[1][0] => mux_osc:auto_generated.data[11]
+data[1][1] => mux_osc:auto_generated.data[12]
+data[1][2] => mux_osc:auto_generated.data[13]
+data[1][3] => mux_osc:auto_generated.data[14]
+data[1][4] => mux_osc:auto_generated.data[15]
+data[1][5] => mux_osc:auto_generated.data[16]
+data[1][6] => mux_osc:auto_generated.data[17]
+data[1][7] => mux_osc:auto_generated.data[18]
+data[1][8] => mux_osc:auto_generated.data[19]
+data[1][9] => mux_osc:auto_generated.data[20]
+data[1][10] => mux_osc:auto_generated.data[21]
+sel[0] => mux_osc:auto_generated.sel[0]
 clock => ~NO_FANOUT~
 aclr => ~NO_FANOUT~
 clken => ~NO_FANOUT~
-result[0] <= mux_arc:auto_generated.result[0]
-result[1] <= mux_arc:auto_generated.result[1]
-result[2] <= mux_arc:auto_generated.result[2]
-result[3] <= mux_arc:auto_generated.result[3]
+result[0] <= mux_osc:auto_generated.result[0]
+result[1] <= mux_osc:auto_generated.result[1]
+result[2] <= mux_osc:auto_generated.result[2]
+result[3] <= mux_osc:auto_generated.result[3]
+result[4] <= mux_osc:auto_generated.result[4]
+result[5] <= mux_osc:auto_generated.result[5]
+result[6] <= mux_osc:auto_generated.result[6]
+result[7] <= mux_osc:auto_generated.result[7]
+result[8] <= mux_osc:auto_generated.result[8]
+result[9] <= mux_osc:auto_generated.result[9]
+result[10] <= mux_osc:auto_generated.result[10]
 
 
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst22|BUSMUX:inst6|lpm_mux:$00000|mux_arc:auto_generated
+|ev20main|fetchUnit:inst|BUSMUX:inst17|lpm_mux:$00000|mux_osc:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
 data[3] => result_node[3].IN1
-data[4] => result_node[0].IN1
-data[5] => result_node[1].IN1
-data[6] => result_node[2].IN1
-data[7] => result_node[3].IN1
+data[4] => result_node[4].IN1
+data[5] => result_node[5].IN1
+data[6] => result_node[6].IN1
+data[7] => result_node[7].IN1
+data[8] => result_node[8].IN1
+data[9] => result_node[9].IN1
+data[10] => result_node[10].IN1
+data[11] => result_node[0].IN1
+data[12] => result_node[1].IN1
+data[13] => result_node[2].IN1
+data[14] => result_node[3].IN1
+data[15] => result_node[4].IN1
+data[16] => result_node[5].IN1
+data[17] => result_node[6].IN1
+data[18] => result_node[7].IN1
+data[19] => result_node[8].IN1
+data[20] => result_node[9].IN1
+data[21] => result_node[10].IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
 result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
 result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
 result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= result_node[4].DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= result_node[5].DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= result_node[6].DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= result_node[7].DB_MAX_OUTPUT_PORT_TYPE
+result[8] <= result_node[8].DB_MAX_OUTPUT_PORT_TYPE
+result[9] <= result_node[9].DB_MAX_OUTPUT_PORT_TYPE
+result[10] <= result_node[10].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[10].IN0
+sel[0] => _.IN0
+sel[0] => result_node[9].IN0
+sel[0] => _.IN0
+sel[0] => result_node[8].IN0
+sel[0] => _.IN0
+sel[0] => result_node[7].IN0
+sel[0] => _.IN0
+sel[0] => result_node[6].IN0
+sel[0] => _.IN0
+sel[0] => result_node[5].IN0
+sel[0] => _.IN0
+sel[0] => result_node[4].IN0
+sel[0] => _.IN0
 sel[0] => result_node[3].IN0
 sel[0] => _.IN0
 sel[0] => result_node[2].IN0
@@ -7340,1270 +8140,137 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst22|push:inst
-in => out[3]~reg0.DATAIN
-bsr => out[0]~reg0.CLK
-bsr => out[1]~reg0.CLK
-bsr => out[2]~reg0.CLK
-bsr => out[3]~reg0.CLK
-shift_reg[0] => ~NO_FANOUT~
-shift_reg[1] => out[0]~reg0.DATAIN
-shift_reg[2] => out[1]~reg0.DATAIN
-shift_reg[3] => out[2]~reg0.DATAIN
-out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|ev20main|fetchUnit:inst|SynchRegister:inst26
+DATA_OUT[0] <= LPM_FF:inst1.q[0]
+DATA_OUT[1] <= LPM_FF:inst1.q[1]
+DATA_OUT[2] <= LPM_FF:inst1.q[2]
+DATA_OUT[3] <= LPM_FF:inst1.q[3]
+DATA_OUT[4] <= LPM_FF:inst1.q[4]
+DATA_OUT[5] <= LPM_FF:inst1.q[5]
+DATA_OUT[6] <= LPM_FF:inst1.q[6]
+DATA_OUT[7] <= LPM_FF:inst1.q[7]
+DATA_OUT[8] <= LPM_FF:inst1.q[8]
+DATA_OUT[9] <= LPM_FF:inst1.q[9]
+DATA_OUT[10] <= LPM_FF:inst1.q[10]
+Clk => inst2.IN0
+Clk => LPM_FF:inst.clock
+DATA[0] => LPM_FF:inst.data[0]
+DATA[1] => LPM_FF:inst.data[1]
+DATA[2] => LPM_FF:inst.data[2]
+DATA[3] => LPM_FF:inst.data[3]
+DATA[4] => LPM_FF:inst.data[4]
+DATA[5] => LPM_FF:inst.data[5]
+DATA[6] => LPM_FF:inst.data[6]
+DATA[7] => LPM_FF:inst.data[7]
+DATA[8] => LPM_FF:inst.data[8]
+DATA[9] => LPM_FF:inst.data[9]
+DATA[10] => LPM_FF:inst.data[10]
 
 
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst21
-lifo <= pop:inst2.lifoOut
-in => pop:inst2.in
-in => push:inst.in
-ret => pop:inst2.ret
-ret => inst66.IN1
-ret => BUSMUX:inst6.sel
-out[0] <= LPM_LATCH:inst7.q[0]
-out[1] <= LPM_LATCH:inst7.q[1]
-out[2] <= LPM_LATCH:inst7.q[2]
-out[3] <= LPM_LATCH:inst7.q[3]
-bsr => inst66.IN0
-bsr => push:inst.bsr
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst21|pop:inst2
-in => ~NO_FANOUT~
-ret => lifoOut~reg0.CLK
-ret => out[0]~reg0.CLK
-ret => out[1]~reg0.CLK
-ret => out[2]~reg0.CLK
-ret => out[3]~reg0.CLK
-shift_reg[0] => out[1]~reg0.DATAIN
-shift_reg[1] => out[2]~reg0.DATAIN
-shift_reg[2] => out[3]~reg0.DATAIN
-shift_reg[3] => lifoOut~reg0.DATAIN
-out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-lifoOut <= lifoOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst21|LPM_LATCH:inst7
-data[0] => latches[0].DATAIN
-data[1] => latches[1].DATAIN
-data[2] => latches[2].DATAIN
-data[3] => latches[3].DATAIN
-gate => latches[3].LATCH_ENABLE
-gate => latches[2].LATCH_ENABLE
-gate => latches[1].LATCH_ENABLE
-gate => latches[0].LATCH_ENABLE
+|ev20main|fetchUnit:inst|SynchRegister:inst26|LPM_FF:inst1
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+data[2] => dffs[2].DATAIN
+data[3] => dffs[3].DATAIN
+data[4] => dffs[4].DATAIN
+data[5] => dffs[5].DATAIN
+data[6] => dffs[6].DATAIN
+data[7] => dffs[7].DATAIN
+data[8] => dffs[8].DATAIN
+data[9] => dffs[9].DATAIN
+data[10] => dffs[10].DATAIN
+clock => dffs[10].CLK
+clock => dffs[9].CLK
+clock => dffs[8].CLK
+clock => dffs[7].CLK
+clock => dffs[6].CLK
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[10].ENA
+enable => dffs[9].ENA
+enable => dffs[8].ENA
+enable => dffs[7].ENA
+enable => dffs[6].ENA
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
 aclr => ~NO_FANOUT~
 aset => ~NO_FANOUT~
-aconst => ~NO_FANOUT~
-q[0] <= latches[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= latches[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= latches[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= latches[3].DB_MAX_OUTPUT_PORT_TYPE
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= dffs[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= dffs[7].DB_MAX_OUTPUT_PORT_TYPE
+q[8] <= dffs[8].DB_MAX_OUTPUT_PORT_TYPE
+q[9] <= dffs[9].DB_MAX_OUTPUT_PORT_TYPE
+q[10] <= dffs[10].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst21|BUSMUX:inst6
-dataa[0] => lpm_mux:$00000.data[0][0]
-dataa[1] => lpm_mux:$00000.data[0][1]
-dataa[2] => lpm_mux:$00000.data[0][2]
-dataa[3] => lpm_mux:$00000.data[0][3]
-datab[0] => lpm_mux:$00000.data[1][0]
-datab[1] => lpm_mux:$00000.data[1][1]
-datab[2] => lpm_mux:$00000.data[1][2]
-datab[3] => lpm_mux:$00000.data[1][3]
-sel => lpm_mux:$00000.sel[0]
-result[0] <= lpm_mux:$00000.result[0]
-result[1] <= lpm_mux:$00000.result[1]
-result[2] <= lpm_mux:$00000.result[2]
-result[3] <= lpm_mux:$00000.result[3]
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst21|BUSMUX:inst6|lpm_mux:$00000
-data[0][0] => mux_arc:auto_generated.data[0]
-data[0][1] => mux_arc:auto_generated.data[1]
-data[0][2] => mux_arc:auto_generated.data[2]
-data[0][3] => mux_arc:auto_generated.data[3]
-data[1][0] => mux_arc:auto_generated.data[4]
-data[1][1] => mux_arc:auto_generated.data[5]
-data[1][2] => mux_arc:auto_generated.data[6]
-data[1][3] => mux_arc:auto_generated.data[7]
-sel[0] => mux_arc:auto_generated.sel[0]
-clock => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-clken => ~NO_FANOUT~
-result[0] <= mux_arc:auto_generated.result[0]
-result[1] <= mux_arc:auto_generated.result[1]
-result[2] <= mux_arc:auto_generated.result[2]
-result[3] <= mux_arc:auto_generated.result[3]
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst21|BUSMUX:inst6|lpm_mux:$00000|mux_arc:auto_generated
-data[0] => result_node[0].IN1
-data[1] => result_node[1].IN1
-data[2] => result_node[2].IN1
-data[3] => result_node[3].IN1
-data[4] => result_node[0].IN1
-data[5] => result_node[1].IN1
-data[6] => result_node[2].IN1
-data[7] => result_node[3].IN1
-result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
-result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[3].IN0
-sel[0] => _.IN0
-sel[0] => result_node[2].IN0
-sel[0] => _.IN0
-sel[0] => result_node[1].IN0
-sel[0] => _.IN0
-sel[0] => result_node[0].IN0
-sel[0] => _.IN0
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst21|push:inst
-in => out[3]~reg0.DATAIN
-bsr => out[0]~reg0.CLK
-bsr => out[1]~reg0.CLK
-bsr => out[2]~reg0.CLK
-bsr => out[3]~reg0.CLK
-shift_reg[0] => ~NO_FANOUT~
-shift_reg[1] => out[0]~reg0.DATAIN
-shift_reg[2] => out[1]~reg0.DATAIN
-shift_reg[3] => out[2]~reg0.DATAIN
-out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst20
-lifo <= pop:inst2.lifoOut
-in => pop:inst2.in
-in => push:inst.in
-ret => pop:inst2.ret
-ret => inst66.IN1
-ret => BUSMUX:inst6.sel
-out[0] <= LPM_LATCH:inst7.q[0]
-out[1] <= LPM_LATCH:inst7.q[1]
-out[2] <= LPM_LATCH:inst7.q[2]
-out[3] <= LPM_LATCH:inst7.q[3]
-bsr => inst66.IN0
-bsr => push:inst.bsr
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst20|pop:inst2
-in => ~NO_FANOUT~
-ret => lifoOut~reg0.CLK
-ret => out[0]~reg0.CLK
-ret => out[1]~reg0.CLK
-ret => out[2]~reg0.CLK
-ret => out[3]~reg0.CLK
-shift_reg[0] => out[1]~reg0.DATAIN
-shift_reg[1] => out[2]~reg0.DATAIN
-shift_reg[2] => out[3]~reg0.DATAIN
-shift_reg[3] => lifoOut~reg0.DATAIN
-out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-lifoOut <= lifoOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst20|LPM_LATCH:inst7
-data[0] => latches[0].DATAIN
-data[1] => latches[1].DATAIN
-data[2] => latches[2].DATAIN
-data[3] => latches[3].DATAIN
-gate => latches[3].LATCH_ENABLE
-gate => latches[2].LATCH_ENABLE
-gate => latches[1].LATCH_ENABLE
-gate => latches[0].LATCH_ENABLE
+|ev20main|fetchUnit:inst|SynchRegister:inst26|LPM_FF:inst
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+data[2] => dffs[2].DATAIN
+data[3] => dffs[3].DATAIN
+data[4] => dffs[4].DATAIN
+data[5] => dffs[5].DATAIN
+data[6] => dffs[6].DATAIN
+data[7] => dffs[7].DATAIN
+data[8] => dffs[8].DATAIN
+data[9] => dffs[9].DATAIN
+data[10] => dffs[10].DATAIN
+clock => dffs[10].CLK
+clock => dffs[9].CLK
+clock => dffs[8].CLK
+clock => dffs[7].CLK
+clock => dffs[6].CLK
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[10].ENA
+enable => dffs[9].ENA
+enable => dffs[8].ENA
+enable => dffs[7].ENA
+enable => dffs[6].ENA
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
 aclr => ~NO_FANOUT~
 aset => ~NO_FANOUT~
-aconst => ~NO_FANOUT~
-q[0] <= latches[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= latches[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= latches[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= latches[3].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst20|BUSMUX:inst6
-dataa[0] => lpm_mux:$00000.data[0][0]
-dataa[1] => lpm_mux:$00000.data[0][1]
-dataa[2] => lpm_mux:$00000.data[0][2]
-dataa[3] => lpm_mux:$00000.data[0][3]
-datab[0] => lpm_mux:$00000.data[1][0]
-datab[1] => lpm_mux:$00000.data[1][1]
-datab[2] => lpm_mux:$00000.data[1][2]
-datab[3] => lpm_mux:$00000.data[1][3]
-sel => lpm_mux:$00000.sel[0]
-result[0] <= lpm_mux:$00000.result[0]
-result[1] <= lpm_mux:$00000.result[1]
-result[2] <= lpm_mux:$00000.result[2]
-result[3] <= lpm_mux:$00000.result[3]
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst20|BUSMUX:inst6|lpm_mux:$00000
-data[0][0] => mux_arc:auto_generated.data[0]
-data[0][1] => mux_arc:auto_generated.data[1]
-data[0][2] => mux_arc:auto_generated.data[2]
-data[0][3] => mux_arc:auto_generated.data[3]
-data[1][0] => mux_arc:auto_generated.data[4]
-data[1][1] => mux_arc:auto_generated.data[5]
-data[1][2] => mux_arc:auto_generated.data[6]
-data[1][3] => mux_arc:auto_generated.data[7]
-sel[0] => mux_arc:auto_generated.sel[0]
-clock => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-clken => ~NO_FANOUT~
-result[0] <= mux_arc:auto_generated.result[0]
-result[1] <= mux_arc:auto_generated.result[1]
-result[2] <= mux_arc:auto_generated.result[2]
-result[3] <= mux_arc:auto_generated.result[3]
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst20|BUSMUX:inst6|lpm_mux:$00000|mux_arc:auto_generated
-data[0] => result_node[0].IN1
-data[1] => result_node[1].IN1
-data[2] => result_node[2].IN1
-data[3] => result_node[3].IN1
-data[4] => result_node[0].IN1
-data[5] => result_node[1].IN1
-data[6] => result_node[2].IN1
-data[7] => result_node[3].IN1
-result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
-result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[3].IN0
-sel[0] => _.IN0
-sel[0] => result_node[2].IN0
-sel[0] => _.IN0
-sel[0] => result_node[1].IN0
-sel[0] => _.IN0
-sel[0] => result_node[0].IN0
-sel[0] => _.IN0
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst20|push:inst
-in => out[3]~reg0.DATAIN
-bsr => out[0]~reg0.CLK
-bsr => out[1]~reg0.CLK
-bsr => out[2]~reg0.CLK
-bsr => out[3]~reg0.CLK
-shift_reg[0] => ~NO_FANOUT~
-shift_reg[1] => out[0]~reg0.DATAIN
-shift_reg[2] => out[1]~reg0.DATAIN
-shift_reg[3] => out[2]~reg0.DATAIN
-out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst19
-lifo <= pop:inst2.lifoOut
-in => pop:inst2.in
-in => push:inst.in
-ret => pop:inst2.ret
-ret => inst66.IN1
-ret => BUSMUX:inst6.sel
-out[0] <= LPM_LATCH:inst7.q[0]
-out[1] <= LPM_LATCH:inst7.q[1]
-out[2] <= LPM_LATCH:inst7.q[2]
-out[3] <= LPM_LATCH:inst7.q[3]
-bsr => inst66.IN0
-bsr => push:inst.bsr
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst19|pop:inst2
-in => ~NO_FANOUT~
-ret => lifoOut~reg0.CLK
-ret => out[0]~reg0.CLK
-ret => out[1]~reg0.CLK
-ret => out[2]~reg0.CLK
-ret => out[3]~reg0.CLK
-shift_reg[0] => out[1]~reg0.DATAIN
-shift_reg[1] => out[2]~reg0.DATAIN
-shift_reg[2] => out[3]~reg0.DATAIN
-shift_reg[3] => lifoOut~reg0.DATAIN
-out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-lifoOut <= lifoOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst19|LPM_LATCH:inst7
-data[0] => latches[0].DATAIN
-data[1] => latches[1].DATAIN
-data[2] => latches[2].DATAIN
-data[3] => latches[3].DATAIN
-gate => latches[3].LATCH_ENABLE
-gate => latches[2].LATCH_ENABLE
-gate => latches[1].LATCH_ENABLE
-gate => latches[0].LATCH_ENABLE
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aconst => ~NO_FANOUT~
-q[0] <= latches[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= latches[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= latches[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= latches[3].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst19|BUSMUX:inst6
-dataa[0] => lpm_mux:$00000.data[0][0]
-dataa[1] => lpm_mux:$00000.data[0][1]
-dataa[2] => lpm_mux:$00000.data[0][2]
-dataa[3] => lpm_mux:$00000.data[0][3]
-datab[0] => lpm_mux:$00000.data[1][0]
-datab[1] => lpm_mux:$00000.data[1][1]
-datab[2] => lpm_mux:$00000.data[1][2]
-datab[3] => lpm_mux:$00000.data[1][3]
-sel => lpm_mux:$00000.sel[0]
-result[0] <= lpm_mux:$00000.result[0]
-result[1] <= lpm_mux:$00000.result[1]
-result[2] <= lpm_mux:$00000.result[2]
-result[3] <= lpm_mux:$00000.result[3]
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst19|BUSMUX:inst6|lpm_mux:$00000
-data[0][0] => mux_arc:auto_generated.data[0]
-data[0][1] => mux_arc:auto_generated.data[1]
-data[0][2] => mux_arc:auto_generated.data[2]
-data[0][3] => mux_arc:auto_generated.data[3]
-data[1][0] => mux_arc:auto_generated.data[4]
-data[1][1] => mux_arc:auto_generated.data[5]
-data[1][2] => mux_arc:auto_generated.data[6]
-data[1][3] => mux_arc:auto_generated.data[7]
-sel[0] => mux_arc:auto_generated.sel[0]
-clock => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-clken => ~NO_FANOUT~
-result[0] <= mux_arc:auto_generated.result[0]
-result[1] <= mux_arc:auto_generated.result[1]
-result[2] <= mux_arc:auto_generated.result[2]
-result[3] <= mux_arc:auto_generated.result[3]
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst19|BUSMUX:inst6|lpm_mux:$00000|mux_arc:auto_generated
-data[0] => result_node[0].IN1
-data[1] => result_node[1].IN1
-data[2] => result_node[2].IN1
-data[3] => result_node[3].IN1
-data[4] => result_node[0].IN1
-data[5] => result_node[1].IN1
-data[6] => result_node[2].IN1
-data[7] => result_node[3].IN1
-result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
-result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[3].IN0
-sel[0] => _.IN0
-sel[0] => result_node[2].IN0
-sel[0] => _.IN0
-sel[0] => result_node[1].IN0
-sel[0] => _.IN0
-sel[0] => result_node[0].IN0
-sel[0] => _.IN0
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst19|push:inst
-in => out[3]~reg0.DATAIN
-bsr => out[0]~reg0.CLK
-bsr => out[1]~reg0.CLK
-bsr => out[2]~reg0.CLK
-bsr => out[3]~reg0.CLK
-shift_reg[0] => ~NO_FANOUT~
-shift_reg[1] => out[0]~reg0.DATAIN
-shift_reg[2] => out[1]~reg0.DATAIN
-shift_reg[3] => out[2]~reg0.DATAIN
-out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst18
-lifo <= pop:inst2.lifoOut
-in => pop:inst2.in
-in => push:inst.in
-ret => pop:inst2.ret
-ret => inst66.IN1
-ret => BUSMUX:inst6.sel
-out[0] <= LPM_LATCH:inst7.q[0]
-out[1] <= LPM_LATCH:inst7.q[1]
-out[2] <= LPM_LATCH:inst7.q[2]
-out[3] <= LPM_LATCH:inst7.q[3]
-bsr => inst66.IN0
-bsr => push:inst.bsr
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst18|pop:inst2
-in => ~NO_FANOUT~
-ret => lifoOut~reg0.CLK
-ret => out[0]~reg0.CLK
-ret => out[1]~reg0.CLK
-ret => out[2]~reg0.CLK
-ret => out[3]~reg0.CLK
-shift_reg[0] => out[1]~reg0.DATAIN
-shift_reg[1] => out[2]~reg0.DATAIN
-shift_reg[2] => out[3]~reg0.DATAIN
-shift_reg[3] => lifoOut~reg0.DATAIN
-out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-lifoOut <= lifoOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst18|LPM_LATCH:inst7
-data[0] => latches[0].DATAIN
-data[1] => latches[1].DATAIN
-data[2] => latches[2].DATAIN
-data[3] => latches[3].DATAIN
-gate => latches[3].LATCH_ENABLE
-gate => latches[2].LATCH_ENABLE
-gate => latches[1].LATCH_ENABLE
-gate => latches[0].LATCH_ENABLE
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aconst => ~NO_FANOUT~
-q[0] <= latches[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= latches[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= latches[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= latches[3].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst18|BUSMUX:inst6
-dataa[0] => lpm_mux:$00000.data[0][0]
-dataa[1] => lpm_mux:$00000.data[0][1]
-dataa[2] => lpm_mux:$00000.data[0][2]
-dataa[3] => lpm_mux:$00000.data[0][3]
-datab[0] => lpm_mux:$00000.data[1][0]
-datab[1] => lpm_mux:$00000.data[1][1]
-datab[2] => lpm_mux:$00000.data[1][2]
-datab[3] => lpm_mux:$00000.data[1][3]
-sel => lpm_mux:$00000.sel[0]
-result[0] <= lpm_mux:$00000.result[0]
-result[1] <= lpm_mux:$00000.result[1]
-result[2] <= lpm_mux:$00000.result[2]
-result[3] <= lpm_mux:$00000.result[3]
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst18|BUSMUX:inst6|lpm_mux:$00000
-data[0][0] => mux_arc:auto_generated.data[0]
-data[0][1] => mux_arc:auto_generated.data[1]
-data[0][2] => mux_arc:auto_generated.data[2]
-data[0][3] => mux_arc:auto_generated.data[3]
-data[1][0] => mux_arc:auto_generated.data[4]
-data[1][1] => mux_arc:auto_generated.data[5]
-data[1][2] => mux_arc:auto_generated.data[6]
-data[1][3] => mux_arc:auto_generated.data[7]
-sel[0] => mux_arc:auto_generated.sel[0]
-clock => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-clken => ~NO_FANOUT~
-result[0] <= mux_arc:auto_generated.result[0]
-result[1] <= mux_arc:auto_generated.result[1]
-result[2] <= mux_arc:auto_generated.result[2]
-result[3] <= mux_arc:auto_generated.result[3]
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst18|BUSMUX:inst6|lpm_mux:$00000|mux_arc:auto_generated
-data[0] => result_node[0].IN1
-data[1] => result_node[1].IN1
-data[2] => result_node[2].IN1
-data[3] => result_node[3].IN1
-data[4] => result_node[0].IN1
-data[5] => result_node[1].IN1
-data[6] => result_node[2].IN1
-data[7] => result_node[3].IN1
-result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
-result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[3].IN0
-sel[0] => _.IN0
-sel[0] => result_node[2].IN0
-sel[0] => _.IN0
-sel[0] => result_node[1].IN0
-sel[0] => _.IN0
-sel[0] => result_node[0].IN0
-sel[0] => _.IN0
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst18|push:inst
-in => out[3]~reg0.DATAIN
-bsr => out[0]~reg0.CLK
-bsr => out[1]~reg0.CLK
-bsr => out[2]~reg0.CLK
-bsr => out[3]~reg0.CLK
-shift_reg[0] => ~NO_FANOUT~
-shift_reg[1] => out[0]~reg0.DATAIN
-shift_reg[2] => out[1]~reg0.DATAIN
-shift_reg[3] => out[2]~reg0.DATAIN
-out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst16
-lifo <= pop:inst2.lifoOut
-in => pop:inst2.in
-in => push:inst.in
-ret => pop:inst2.ret
-ret => inst66.IN1
-ret => BUSMUX:inst6.sel
-out[0] <= LPM_LATCH:inst7.q[0]
-out[1] <= LPM_LATCH:inst7.q[1]
-out[2] <= LPM_LATCH:inst7.q[2]
-out[3] <= LPM_LATCH:inst7.q[3]
-bsr => inst66.IN0
-bsr => push:inst.bsr
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst16|pop:inst2
-in => ~NO_FANOUT~
-ret => lifoOut~reg0.CLK
-ret => out[0]~reg0.CLK
-ret => out[1]~reg0.CLK
-ret => out[2]~reg0.CLK
-ret => out[3]~reg0.CLK
-shift_reg[0] => out[1]~reg0.DATAIN
-shift_reg[1] => out[2]~reg0.DATAIN
-shift_reg[2] => out[3]~reg0.DATAIN
-shift_reg[3] => lifoOut~reg0.DATAIN
-out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-lifoOut <= lifoOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst16|LPM_LATCH:inst7
-data[0] => latches[0].DATAIN
-data[1] => latches[1].DATAIN
-data[2] => latches[2].DATAIN
-data[3] => latches[3].DATAIN
-gate => latches[3].LATCH_ENABLE
-gate => latches[2].LATCH_ENABLE
-gate => latches[1].LATCH_ENABLE
-gate => latches[0].LATCH_ENABLE
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aconst => ~NO_FANOUT~
-q[0] <= latches[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= latches[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= latches[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= latches[3].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst16|BUSMUX:inst6
-dataa[0] => lpm_mux:$00000.data[0][0]
-dataa[1] => lpm_mux:$00000.data[0][1]
-dataa[2] => lpm_mux:$00000.data[0][2]
-dataa[3] => lpm_mux:$00000.data[0][3]
-datab[0] => lpm_mux:$00000.data[1][0]
-datab[1] => lpm_mux:$00000.data[1][1]
-datab[2] => lpm_mux:$00000.data[1][2]
-datab[3] => lpm_mux:$00000.data[1][3]
-sel => lpm_mux:$00000.sel[0]
-result[0] <= lpm_mux:$00000.result[0]
-result[1] <= lpm_mux:$00000.result[1]
-result[2] <= lpm_mux:$00000.result[2]
-result[3] <= lpm_mux:$00000.result[3]
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst16|BUSMUX:inst6|lpm_mux:$00000
-data[0][0] => mux_arc:auto_generated.data[0]
-data[0][1] => mux_arc:auto_generated.data[1]
-data[0][2] => mux_arc:auto_generated.data[2]
-data[0][3] => mux_arc:auto_generated.data[3]
-data[1][0] => mux_arc:auto_generated.data[4]
-data[1][1] => mux_arc:auto_generated.data[5]
-data[1][2] => mux_arc:auto_generated.data[6]
-data[1][3] => mux_arc:auto_generated.data[7]
-sel[0] => mux_arc:auto_generated.sel[0]
-clock => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-clken => ~NO_FANOUT~
-result[0] <= mux_arc:auto_generated.result[0]
-result[1] <= mux_arc:auto_generated.result[1]
-result[2] <= mux_arc:auto_generated.result[2]
-result[3] <= mux_arc:auto_generated.result[3]
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst16|BUSMUX:inst6|lpm_mux:$00000|mux_arc:auto_generated
-data[0] => result_node[0].IN1
-data[1] => result_node[1].IN1
-data[2] => result_node[2].IN1
-data[3] => result_node[3].IN1
-data[4] => result_node[0].IN1
-data[5] => result_node[1].IN1
-data[6] => result_node[2].IN1
-data[7] => result_node[3].IN1
-result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
-result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[3].IN0
-sel[0] => _.IN0
-sel[0] => result_node[2].IN0
-sel[0] => _.IN0
-sel[0] => result_node[1].IN0
-sel[0] => _.IN0
-sel[0] => result_node[0].IN0
-sel[0] => _.IN0
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst16|push:inst
-in => out[3]~reg0.DATAIN
-bsr => out[0]~reg0.CLK
-bsr => out[1]~reg0.CLK
-bsr => out[2]~reg0.CLK
-bsr => out[3]~reg0.CLK
-shift_reg[0] => ~NO_FANOUT~
-shift_reg[1] => out[0]~reg0.DATAIN
-shift_reg[2] => out[1]~reg0.DATAIN
-shift_reg[3] => out[2]~reg0.DATAIN
-out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst15
-lifo <= pop:inst2.lifoOut
-in => pop:inst2.in
-in => push:inst.in
-ret => pop:inst2.ret
-ret => inst66.IN1
-ret => BUSMUX:inst6.sel
-out[0] <= LPM_LATCH:inst7.q[0]
-out[1] <= LPM_LATCH:inst7.q[1]
-out[2] <= LPM_LATCH:inst7.q[2]
-out[3] <= LPM_LATCH:inst7.q[3]
-bsr => inst66.IN0
-bsr => push:inst.bsr
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst15|pop:inst2
-in => ~NO_FANOUT~
-ret => lifoOut~reg0.CLK
-ret => out[0]~reg0.CLK
-ret => out[1]~reg0.CLK
-ret => out[2]~reg0.CLK
-ret => out[3]~reg0.CLK
-shift_reg[0] => out[1]~reg0.DATAIN
-shift_reg[1] => out[2]~reg0.DATAIN
-shift_reg[2] => out[3]~reg0.DATAIN
-shift_reg[3] => lifoOut~reg0.DATAIN
-out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-lifoOut <= lifoOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst15|LPM_LATCH:inst7
-data[0] => latches[0].DATAIN
-data[1] => latches[1].DATAIN
-data[2] => latches[2].DATAIN
-data[3] => latches[3].DATAIN
-gate => latches[3].LATCH_ENABLE
-gate => latches[2].LATCH_ENABLE
-gate => latches[1].LATCH_ENABLE
-gate => latches[0].LATCH_ENABLE
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aconst => ~NO_FANOUT~
-q[0] <= latches[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= latches[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= latches[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= latches[3].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst15|BUSMUX:inst6
-dataa[0] => lpm_mux:$00000.data[0][0]
-dataa[1] => lpm_mux:$00000.data[0][1]
-dataa[2] => lpm_mux:$00000.data[0][2]
-dataa[3] => lpm_mux:$00000.data[0][3]
-datab[0] => lpm_mux:$00000.data[1][0]
-datab[1] => lpm_mux:$00000.data[1][1]
-datab[2] => lpm_mux:$00000.data[1][2]
-datab[3] => lpm_mux:$00000.data[1][3]
-sel => lpm_mux:$00000.sel[0]
-result[0] <= lpm_mux:$00000.result[0]
-result[1] <= lpm_mux:$00000.result[1]
-result[2] <= lpm_mux:$00000.result[2]
-result[3] <= lpm_mux:$00000.result[3]
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst15|BUSMUX:inst6|lpm_mux:$00000
-data[0][0] => mux_arc:auto_generated.data[0]
-data[0][1] => mux_arc:auto_generated.data[1]
-data[0][2] => mux_arc:auto_generated.data[2]
-data[0][3] => mux_arc:auto_generated.data[3]
-data[1][0] => mux_arc:auto_generated.data[4]
-data[1][1] => mux_arc:auto_generated.data[5]
-data[1][2] => mux_arc:auto_generated.data[6]
-data[1][3] => mux_arc:auto_generated.data[7]
-sel[0] => mux_arc:auto_generated.sel[0]
-clock => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-clken => ~NO_FANOUT~
-result[0] <= mux_arc:auto_generated.result[0]
-result[1] <= mux_arc:auto_generated.result[1]
-result[2] <= mux_arc:auto_generated.result[2]
-result[3] <= mux_arc:auto_generated.result[3]
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst15|BUSMUX:inst6|lpm_mux:$00000|mux_arc:auto_generated
-data[0] => result_node[0].IN1
-data[1] => result_node[1].IN1
-data[2] => result_node[2].IN1
-data[3] => result_node[3].IN1
-data[4] => result_node[0].IN1
-data[5] => result_node[1].IN1
-data[6] => result_node[2].IN1
-data[7] => result_node[3].IN1
-result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
-result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[3].IN0
-sel[0] => _.IN0
-sel[0] => result_node[2].IN0
-sel[0] => _.IN0
-sel[0] => result_node[1].IN0
-sel[0] => _.IN0
-sel[0] => result_node[0].IN0
-sel[0] => _.IN0
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst15|push:inst
-in => out[3]~reg0.DATAIN
-bsr => out[0]~reg0.CLK
-bsr => out[1]~reg0.CLK
-bsr => out[2]~reg0.CLK
-bsr => out[3]~reg0.CLK
-shift_reg[0] => ~NO_FANOUT~
-shift_reg[1] => out[0]~reg0.DATAIN
-shift_reg[2] => out[1]~reg0.DATAIN
-shift_reg[3] => out[2]~reg0.DATAIN
-out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst14
-lifo <= pop:inst2.lifoOut
-in => pop:inst2.in
-in => push:inst.in
-ret => pop:inst2.ret
-ret => inst66.IN1
-ret => BUSMUX:inst6.sel
-out[0] <= LPM_LATCH:inst7.q[0]
-out[1] <= LPM_LATCH:inst7.q[1]
-out[2] <= LPM_LATCH:inst7.q[2]
-out[3] <= LPM_LATCH:inst7.q[3]
-bsr => inst66.IN0
-bsr => push:inst.bsr
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst14|pop:inst2
-in => ~NO_FANOUT~
-ret => lifoOut~reg0.CLK
-ret => out[0]~reg0.CLK
-ret => out[1]~reg0.CLK
-ret => out[2]~reg0.CLK
-ret => out[3]~reg0.CLK
-shift_reg[0] => out[1]~reg0.DATAIN
-shift_reg[1] => out[2]~reg0.DATAIN
-shift_reg[2] => out[3]~reg0.DATAIN
-shift_reg[3] => lifoOut~reg0.DATAIN
-out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-lifoOut <= lifoOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst14|LPM_LATCH:inst7
-data[0] => latches[0].DATAIN
-data[1] => latches[1].DATAIN
-data[2] => latches[2].DATAIN
-data[3] => latches[3].DATAIN
-gate => latches[3].LATCH_ENABLE
-gate => latches[2].LATCH_ENABLE
-gate => latches[1].LATCH_ENABLE
-gate => latches[0].LATCH_ENABLE
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aconst => ~NO_FANOUT~
-q[0] <= latches[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= latches[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= latches[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= latches[3].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst14|BUSMUX:inst6
-dataa[0] => lpm_mux:$00000.data[0][0]
-dataa[1] => lpm_mux:$00000.data[0][1]
-dataa[2] => lpm_mux:$00000.data[0][2]
-dataa[3] => lpm_mux:$00000.data[0][3]
-datab[0] => lpm_mux:$00000.data[1][0]
-datab[1] => lpm_mux:$00000.data[1][1]
-datab[2] => lpm_mux:$00000.data[1][2]
-datab[3] => lpm_mux:$00000.data[1][3]
-sel => lpm_mux:$00000.sel[0]
-result[0] <= lpm_mux:$00000.result[0]
-result[1] <= lpm_mux:$00000.result[1]
-result[2] <= lpm_mux:$00000.result[2]
-result[3] <= lpm_mux:$00000.result[3]
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst14|BUSMUX:inst6|lpm_mux:$00000
-data[0][0] => mux_arc:auto_generated.data[0]
-data[0][1] => mux_arc:auto_generated.data[1]
-data[0][2] => mux_arc:auto_generated.data[2]
-data[0][3] => mux_arc:auto_generated.data[3]
-data[1][0] => mux_arc:auto_generated.data[4]
-data[1][1] => mux_arc:auto_generated.data[5]
-data[1][2] => mux_arc:auto_generated.data[6]
-data[1][3] => mux_arc:auto_generated.data[7]
-sel[0] => mux_arc:auto_generated.sel[0]
-clock => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-clken => ~NO_FANOUT~
-result[0] <= mux_arc:auto_generated.result[0]
-result[1] <= mux_arc:auto_generated.result[1]
-result[2] <= mux_arc:auto_generated.result[2]
-result[3] <= mux_arc:auto_generated.result[3]
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst14|BUSMUX:inst6|lpm_mux:$00000|mux_arc:auto_generated
-data[0] => result_node[0].IN1
-data[1] => result_node[1].IN1
-data[2] => result_node[2].IN1
-data[3] => result_node[3].IN1
-data[4] => result_node[0].IN1
-data[5] => result_node[1].IN1
-data[6] => result_node[2].IN1
-data[7] => result_node[3].IN1
-result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
-result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[3].IN0
-sel[0] => _.IN0
-sel[0] => result_node[2].IN0
-sel[0] => _.IN0
-sel[0] => result_node[1].IN0
-sel[0] => _.IN0
-sel[0] => result_node[0].IN0
-sel[0] => _.IN0
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst14|push:inst
-in => out[3]~reg0.DATAIN
-bsr => out[0]~reg0.CLK
-bsr => out[1]~reg0.CLK
-bsr => out[2]~reg0.CLK
-bsr => out[3]~reg0.CLK
-shift_reg[0] => ~NO_FANOUT~
-shift_reg[1] => out[0]~reg0.DATAIN
-shift_reg[2] => out[1]~reg0.DATAIN
-shift_reg[3] => out[2]~reg0.DATAIN
-out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst13
-lifo <= pop:inst2.lifoOut
-in => pop:inst2.in
-in => push:inst.in
-ret => pop:inst2.ret
-ret => inst66.IN1
-ret => BUSMUX:inst6.sel
-out[0] <= LPM_LATCH:inst7.q[0]
-out[1] <= LPM_LATCH:inst7.q[1]
-out[2] <= LPM_LATCH:inst7.q[2]
-out[3] <= LPM_LATCH:inst7.q[3]
-bsr => inst66.IN0
-bsr => push:inst.bsr
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst13|pop:inst2
-in => ~NO_FANOUT~
-ret => lifoOut~reg0.CLK
-ret => out[0]~reg0.CLK
-ret => out[1]~reg0.CLK
-ret => out[2]~reg0.CLK
-ret => out[3]~reg0.CLK
-shift_reg[0] => out[1]~reg0.DATAIN
-shift_reg[1] => out[2]~reg0.DATAIN
-shift_reg[2] => out[3]~reg0.DATAIN
-shift_reg[3] => lifoOut~reg0.DATAIN
-out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-lifoOut <= lifoOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst13|LPM_LATCH:inst7
-data[0] => latches[0].DATAIN
-data[1] => latches[1].DATAIN
-data[2] => latches[2].DATAIN
-data[3] => latches[3].DATAIN
-gate => latches[3].LATCH_ENABLE
-gate => latches[2].LATCH_ENABLE
-gate => latches[1].LATCH_ENABLE
-gate => latches[0].LATCH_ENABLE
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aconst => ~NO_FANOUT~
-q[0] <= latches[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= latches[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= latches[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= latches[3].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst13|BUSMUX:inst6
-dataa[0] => lpm_mux:$00000.data[0][0]
-dataa[1] => lpm_mux:$00000.data[0][1]
-dataa[2] => lpm_mux:$00000.data[0][2]
-dataa[3] => lpm_mux:$00000.data[0][3]
-datab[0] => lpm_mux:$00000.data[1][0]
-datab[1] => lpm_mux:$00000.data[1][1]
-datab[2] => lpm_mux:$00000.data[1][2]
-datab[3] => lpm_mux:$00000.data[1][3]
-sel => lpm_mux:$00000.sel[0]
-result[0] <= lpm_mux:$00000.result[0]
-result[1] <= lpm_mux:$00000.result[1]
-result[2] <= lpm_mux:$00000.result[2]
-result[3] <= lpm_mux:$00000.result[3]
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst13|BUSMUX:inst6|lpm_mux:$00000
-data[0][0] => mux_arc:auto_generated.data[0]
-data[0][1] => mux_arc:auto_generated.data[1]
-data[0][2] => mux_arc:auto_generated.data[2]
-data[0][3] => mux_arc:auto_generated.data[3]
-data[1][0] => mux_arc:auto_generated.data[4]
-data[1][1] => mux_arc:auto_generated.data[5]
-data[1][2] => mux_arc:auto_generated.data[6]
-data[1][3] => mux_arc:auto_generated.data[7]
-sel[0] => mux_arc:auto_generated.sel[0]
-clock => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-clken => ~NO_FANOUT~
-result[0] <= mux_arc:auto_generated.result[0]
-result[1] <= mux_arc:auto_generated.result[1]
-result[2] <= mux_arc:auto_generated.result[2]
-result[3] <= mux_arc:auto_generated.result[3]
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst13|BUSMUX:inst6|lpm_mux:$00000|mux_arc:auto_generated
-data[0] => result_node[0].IN1
-data[1] => result_node[1].IN1
-data[2] => result_node[2].IN1
-data[3] => result_node[3].IN1
-data[4] => result_node[0].IN1
-data[5] => result_node[1].IN1
-data[6] => result_node[2].IN1
-data[7] => result_node[3].IN1
-result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
-result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[3].IN0
-sel[0] => _.IN0
-sel[0] => result_node[2].IN0
-sel[0] => _.IN0
-sel[0] => result_node[1].IN0
-sel[0] => _.IN0
-sel[0] => result_node[0].IN0
-sel[0] => _.IN0
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst13|push:inst
-in => out[3]~reg0.DATAIN
-bsr => out[0]~reg0.CLK
-bsr => out[1]~reg0.CLK
-bsr => out[2]~reg0.CLK
-bsr => out[3]~reg0.CLK
-shift_reg[0] => ~NO_FANOUT~
-shift_reg[1] => out[0]~reg0.DATAIN
-shift_reg[2] => out[1]~reg0.DATAIN
-shift_reg[3] => out[2]~reg0.DATAIN
-out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst12
-lifo <= pop:inst2.lifoOut
-in => pop:inst2.in
-in => push:inst.in
-ret => pop:inst2.ret
-ret => inst66.IN1
-ret => BUSMUX:inst6.sel
-out[0] <= LPM_LATCH:inst7.q[0]
-out[1] <= LPM_LATCH:inst7.q[1]
-out[2] <= LPM_LATCH:inst7.q[2]
-out[3] <= LPM_LATCH:inst7.q[3]
-bsr => inst66.IN0
-bsr => push:inst.bsr
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst12|pop:inst2
-in => ~NO_FANOUT~
-ret => lifoOut~reg0.CLK
-ret => out[0]~reg0.CLK
-ret => out[1]~reg0.CLK
-ret => out[2]~reg0.CLK
-ret => out[3]~reg0.CLK
-shift_reg[0] => out[1]~reg0.DATAIN
-shift_reg[1] => out[2]~reg0.DATAIN
-shift_reg[2] => out[3]~reg0.DATAIN
-shift_reg[3] => lifoOut~reg0.DATAIN
-out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-lifoOut <= lifoOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst12|LPM_LATCH:inst7
-data[0] => latches[0].DATAIN
-data[1] => latches[1].DATAIN
-data[2] => latches[2].DATAIN
-data[3] => latches[3].DATAIN
-gate => latches[3].LATCH_ENABLE
-gate => latches[2].LATCH_ENABLE
-gate => latches[1].LATCH_ENABLE
-gate => latches[0].LATCH_ENABLE
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aconst => ~NO_FANOUT~
-q[0] <= latches[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= latches[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= latches[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= latches[3].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst12|BUSMUX:inst6
-dataa[0] => lpm_mux:$00000.data[0][0]
-dataa[1] => lpm_mux:$00000.data[0][1]
-dataa[2] => lpm_mux:$00000.data[0][2]
-dataa[3] => lpm_mux:$00000.data[0][3]
-datab[0] => lpm_mux:$00000.data[1][0]
-datab[1] => lpm_mux:$00000.data[1][1]
-datab[2] => lpm_mux:$00000.data[1][2]
-datab[3] => lpm_mux:$00000.data[1][3]
-sel => lpm_mux:$00000.sel[0]
-result[0] <= lpm_mux:$00000.result[0]
-result[1] <= lpm_mux:$00000.result[1]
-result[2] <= lpm_mux:$00000.result[2]
-result[3] <= lpm_mux:$00000.result[3]
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst12|BUSMUX:inst6|lpm_mux:$00000
-data[0][0] => mux_arc:auto_generated.data[0]
-data[0][1] => mux_arc:auto_generated.data[1]
-data[0][2] => mux_arc:auto_generated.data[2]
-data[0][3] => mux_arc:auto_generated.data[3]
-data[1][0] => mux_arc:auto_generated.data[4]
-data[1][1] => mux_arc:auto_generated.data[5]
-data[1][2] => mux_arc:auto_generated.data[6]
-data[1][3] => mux_arc:auto_generated.data[7]
-sel[0] => mux_arc:auto_generated.sel[0]
-clock => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-clken => ~NO_FANOUT~
-result[0] <= mux_arc:auto_generated.result[0]
-result[1] <= mux_arc:auto_generated.result[1]
-result[2] <= mux_arc:auto_generated.result[2]
-result[3] <= mux_arc:auto_generated.result[3]
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst12|BUSMUX:inst6|lpm_mux:$00000|mux_arc:auto_generated
-data[0] => result_node[0].IN1
-data[1] => result_node[1].IN1
-data[2] => result_node[2].IN1
-data[3] => result_node[3].IN1
-data[4] => result_node[0].IN1
-data[5] => result_node[1].IN1
-data[6] => result_node[2].IN1
-data[7] => result_node[3].IN1
-result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
-result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[3].IN0
-sel[0] => _.IN0
-sel[0] => result_node[2].IN0
-sel[0] => _.IN0
-sel[0] => result_node[1].IN0
-sel[0] => _.IN0
-sel[0] => result_node[0].IN0
-sel[0] => _.IN0
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst12|push:inst
-in => out[3]~reg0.DATAIN
-bsr => out[0]~reg0.CLK
-bsr => out[1]~reg0.CLK
-bsr => out[2]~reg0.CLK
-bsr => out[3]~reg0.CLK
-shift_reg[0] => ~NO_FANOUT~
-shift_reg[1] => out[0]~reg0.DATAIN
-shift_reg[2] => out[1]~reg0.DATAIN
-shift_reg[3] => out[2]~reg0.DATAIN
-out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst
-lifo <= pop:inst2.lifoOut
-in => pop:inst2.in
-in => push:inst.in
-ret => pop:inst2.ret
-ret => inst66.IN1
-ret => BUSMUX:inst6.sel
-out[0] <= LPM_LATCH:inst7.q[0]
-out[1] <= LPM_LATCH:inst7.q[1]
-out[2] <= LPM_LATCH:inst7.q[2]
-out[3] <= LPM_LATCH:inst7.q[3]
-bsr => inst66.IN0
-bsr => push:inst.bsr
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst|pop:inst2
-in => ~NO_FANOUT~
-ret => lifoOut~reg0.CLK
-ret => out[0]~reg0.CLK
-ret => out[1]~reg0.CLK
-ret => out[2]~reg0.CLK
-ret => out[3]~reg0.CLK
-shift_reg[0] => out[1]~reg0.DATAIN
-shift_reg[1] => out[2]~reg0.DATAIN
-shift_reg[2] => out[3]~reg0.DATAIN
-shift_reg[3] => lifoOut~reg0.DATAIN
-out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-lifoOut <= lifoOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst|LPM_LATCH:inst7
-data[0] => latches[0].DATAIN
-data[1] => latches[1].DATAIN
-data[2] => latches[2].DATAIN
-data[3] => latches[3].DATAIN
-gate => latches[3].LATCH_ENABLE
-gate => latches[2].LATCH_ENABLE
-gate => latches[1].LATCH_ENABLE
-gate => latches[0].LATCH_ENABLE
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aconst => ~NO_FANOUT~
-q[0] <= latches[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= latches[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= latches[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= latches[3].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst|BUSMUX:inst6
-dataa[0] => lpm_mux:$00000.data[0][0]
-dataa[1] => lpm_mux:$00000.data[0][1]
-dataa[2] => lpm_mux:$00000.data[0][2]
-dataa[3] => lpm_mux:$00000.data[0][3]
-datab[0] => lpm_mux:$00000.data[1][0]
-datab[1] => lpm_mux:$00000.data[1][1]
-datab[2] => lpm_mux:$00000.data[1][2]
-datab[3] => lpm_mux:$00000.data[1][3]
-sel => lpm_mux:$00000.sel[0]
-result[0] <= lpm_mux:$00000.result[0]
-result[1] <= lpm_mux:$00000.result[1]
-result[2] <= lpm_mux:$00000.result[2]
-result[3] <= lpm_mux:$00000.result[3]
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst|BUSMUX:inst6|lpm_mux:$00000
-data[0][0] => mux_arc:auto_generated.data[0]
-data[0][1] => mux_arc:auto_generated.data[1]
-data[0][2] => mux_arc:auto_generated.data[2]
-data[0][3] => mux_arc:auto_generated.data[3]
-data[1][0] => mux_arc:auto_generated.data[4]
-data[1][1] => mux_arc:auto_generated.data[5]
-data[1][2] => mux_arc:auto_generated.data[6]
-data[1][3] => mux_arc:auto_generated.data[7]
-sel[0] => mux_arc:auto_generated.sel[0]
-clock => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-clken => ~NO_FANOUT~
-result[0] <= mux_arc:auto_generated.result[0]
-result[1] <= mux_arc:auto_generated.result[1]
-result[2] <= mux_arc:auto_generated.result[2]
-result[3] <= mux_arc:auto_generated.result[3]
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst|BUSMUX:inst6|lpm_mux:$00000|mux_arc:auto_generated
-data[0] => result_node[0].IN1
-data[1] => result_node[1].IN1
-data[2] => result_node[2].IN1
-data[3] => result_node[3].IN1
-data[4] => result_node[0].IN1
-data[5] => result_node[1].IN1
-data[6] => result_node[2].IN1
-data[7] => result_node[3].IN1
-result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
-result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[3].IN0
-sel[0] => _.IN0
-sel[0] => result_node[2].IN0
-sel[0] => _.IN0
-sel[0] => result_node[1].IN0
-sel[0] => _.IN0
-sel[0] => result_node[0].IN0
-sel[0] => _.IN0
-
-
-|ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|push_pop:inst|push:inst
-in => out[3]~reg0.DATAIN
-bsr => out[0]~reg0.CLK
-bsr => out[1]~reg0.CLK
-bsr => out[2]~reg0.CLK
-bsr => out[3]~reg0.CLK
-shift_reg[0] => ~NO_FANOUT~
-shift_reg[1] => out[0]~reg0.DATAIN
-shift_reg[2] => out[1]~reg0.DATAIN
-shift_reg[3] => out[2]~reg0.DATAIN
-out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= dffs[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= dffs[7].DB_MAX_OUTPUT_PORT_TYPE
+q[8] <= dffs[8].DB_MAX_OUTPUT_PORT_TYPE
+q[9] <= dffs[9].DB_MAX_OUTPUT_PORT_TYPE
+q[10] <= dffs[10].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ev20main|fetchUnit:inst|BUSMUX:inst8
