@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ev20QUARTUS
-Tue Jun 09 07:48:26 2020
+Tue Jun 09 08:15:17 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -128,9 +128,9 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 120. Parameter Settings for User Entity Instance: fetchUnit:inst|prediction_block:inst16|SynchRegister:inst23|LPM_FF:inst1
 121. Parameter Settings for User Entity Instance: fetchUnit:inst|prediction_block:inst16|SynchRegister:inst23|LPM_FF:inst
 122. Parameter Settings for User Entity Instance: fetchUnit:inst|BUSMUX:inst28
-123. Parameter Settings for User Entity Instance: fetchUnit:inst|BUSMUX:inst7
-124. Parameter Settings for User Entity Instance: fetchUnit:inst|BUSMUX:inst17
-125. Parameter Settings for User Entity Instance: fetchUnit:inst|BUSMUX:inst21
+123. Parameter Settings for User Entity Instance: fetchUnit:inst|BUSMUX:inst21
+124. Parameter Settings for User Entity Instance: fetchUnit:inst|BUSMUX:inst7
+125. Parameter Settings for User Entity Instance: fetchUnit:inst|BUSMUX:inst17
 126. Parameter Settings for User Entity Instance: fetchUnit:inst|SynchRegister:inst26
 127. Parameter Settings for User Entity Instance: fetchUnit:inst|SynchRegister:inst26|LPM_FF:inst1
 128. Parameter Settings for User Entity Instance: fetchUnit:inst|SynchRegister:inst26|LPM_FF:inst
@@ -345,13 +345,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jun 09 07:48:26 2020       ;
+; Analysis & Synthesis Status        ; Successful - Tue Jun 09 08:15:16 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ev20QUARTUS                                 ;
 ; Top-level Entity Name              ; ev20main                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 2,921                                       ;
-;     Total combinational functions  ; 1,508                                       ;
+; Total logic elements               ; 2,927                                       ;
+;     Total combinational functions  ; 1,514                                       ;
 ;     Dedicated logic registers      ; 1,730                                       ;
 ; Total registers                    ; 1730                                        ;
 ; Total pins                         ; 218                                         ;
@@ -556,16 +556,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 2,921     ;
+; Estimated Total logic elements              ; 2,927     ;
 ;                                             ;           ;
-; Total combinational functions               ; 1508      ;
+; Total combinational functions               ; 1514      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 1047      ;
-;     -- 3 input functions                    ; 330       ;
+;     -- 4 input functions                    ; 1055      ;
+;     -- 3 input functions                    ; 328       ;
 ;     -- <=2 input functions                  ; 131       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 1390      ;
+;     -- normal mode                          ; 1396      ;
 ;     -- arithmetic mode                      ; 118       ;
 ;                                             ;           ;
 ; Total registers                             ; 1730      ;
@@ -579,7 +579,7 @@ refer to the applicable agreement for further details.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
 ; Maximum fan-out                             ; 1489      ;
-; Total fan-out                               ; 11499     ;
+; Total fan-out                               ; 11525     ;
 ; Average fan-out                             ; 3.07      ;
 +---------------------------------------------+-----------+
 
@@ -589,7 +589,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                     ; Entity Name           ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
-; |ev20main                                    ; 1508 (5)            ; 1730 (0)                  ; 65664       ; 0            ; 0       ; 0         ; 218  ; 0            ; |ev20main                                                                                                               ; ev20main              ; work         ;
+; |ev20main                                    ; 1514 (5)            ; 1730 (0)                  ; 65664       ; 0            ; 0       ; 0         ; 218  ; 0            ; |ev20main                                                                                                               ; ev20main              ; work         ;
 ;    |ALUUnit:inst13|                          ; 176 (0)             ; 34 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ALUUnit:inst13                                                                                                ; ALUUnit               ; work         ;
 ;       |ALU:inst1|                            ; 156 (156)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ALUUnit:inst13|ALU:inst1                                                                                      ; ALU                   ; work         ;
 ;       |carryBlock:inst|                      ; 3 (3)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ALUUnit:inst13|carryBlock:inst                                                                                ; carryBlock            ; work         ;
@@ -598,7 +598,7 @@ refer to the applicable agreement for further details.
 ;       |lpm_ff:inst5|                         ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ALUUnit:inst13|lpm_ff:inst5                                                                                   ; lpm_ff                ; work         ;
 ;       |shifter:inst2|                        ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ALUUnit:inst13|shifter:inst2                                                                                  ; shifter               ; work         ;
 ;    |DelayInicial:inst6|                      ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|DelayInicial:inst6                                                                                            ; DelayInicial          ; work         ;
-;    |MIRUnit2:inst1|                          ; 65 (0)              ; 159 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1                                                                                                ; MIRUnit2              ; work         ;
+;    |MIRUnit2:inst1|                          ; 64 (0)              ; 159 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1                                                                                                ; MIRUnit2              ; work         ;
 ;       |MIR:MIR3|                             ; 0 (0)               ; 66 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|MIR:MIR3                                                                                       ; MIR                   ; work         ;
 ;          |lpm_ff:Ezu5|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|MIR:MIR3|lpm_ff:Ezu5                                                                           ; lpm_ff                ; work         ;
 ;          |lpm_ff:Ezu6|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|MIR:MIR3|lpm_ff:Ezu6                                                                           ; lpm_ff                ; work         ;
@@ -662,10 +662,10 @@ refer to the applicable agreement for further details.
 ;                |mux_drc:auto_generated|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|UC1:Flush3|busmux:inst9|lpm_mux:$00000|mux_drc:auto_generated                                  ; mux_drc               ; work         ;
 ;          |lpm_ff:inst10|                     ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|UC1:Flush3|lpm_ff:inst10                                                                       ; lpm_ff                ; work         ;
 ;          |lpm_ff:inst|                       ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|UC1:Flush3|lpm_ff:inst                                                                         ; lpm_ff                ; work         ;
-;       |UC1:JmpControl|                       ; 12 (0)              ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|UC1:JmpControl                                                                                 ; UC1                   ; work         ;
-;          |busmux:inst2|                      ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|UC1:JmpControl|busmux:inst2                                                                    ; busmux                ; work         ;
-;             |lpm_mux:$00000|                 ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|UC1:JmpControl|busmux:inst2|lpm_mux:$00000                                                     ; lpm_mux               ; work         ;
-;                |mux_crc:auto_generated|      ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|UC1:JmpControl|busmux:inst2|lpm_mux:$00000|mux_crc:auto_generated                              ; mux_crc               ; work         ;
+;       |UC1:JmpControl|                       ; 11 (0)              ; 1 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|UC1:JmpControl                                                                                 ; UC1                   ; work         ;
+;          |busmux:inst2|                      ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|UC1:JmpControl|busmux:inst2                                                                    ; busmux                ; work         ;
+;             |lpm_mux:$00000|                 ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|UC1:JmpControl|busmux:inst2|lpm_mux:$00000                                                     ; lpm_mux               ; work         ;
+;                |mux_crc:auto_generated|      ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|UC1:JmpControl|busmux:inst2|lpm_mux:$00000|mux_crc:auto_generated                              ; mux_crc               ; work         ;
 ;          |busmux:inst9|                      ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|UC1:JmpControl|busmux:inst9                                                                    ; busmux                ; work         ;
 ;             |lpm_mux:$00000|                 ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|UC1:JmpControl|busmux:inst9|lpm_mux:$00000                                                     ; lpm_mux               ; work         ;
 ;                |mux_drc:auto_generated|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|MIRUnit2:inst1|UC1:JmpControl|busmux:inst9|lpm_mux:$00000|mux_drc:auto_generated                              ; mux_drc               ; work         ;
@@ -794,9 +794,9 @@ refer to the applicable agreement for further details.
 ;       |lpm_ff:inst97|                        ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ev20registerBank:inst14|lpm_ff:inst97                                                                         ; lpm_ff                ; work         ;
 ;       |lpm_ff:inst99|                        ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ev20registerBank:inst14|lpm_ff:inst99                                                                         ; lpm_ff                ; work         ;
 ;       |lpm_ff:inst9|                         ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|ev20registerBank:inst14|lpm_ff:inst9                                                                          ; lpm_ff                ; work         ;
-;    |fetchUnit:inst|                          ; 447 (7)             ; 264 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst                                                                                                ; fetchUnit             ; work         ;
+;    |fetchUnit:inst|                          ; 454 (6)             ; 264 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst                                                                                                ; fetchUnit             ; work         ;
 ;       |PCRegister:inst1|                     ; 22 (22)             ; 23 (23)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|PCRegister:inst1                                                                               ; PCRegister            ; work         ;
-;       |SubRoutineControlUnit:inst6|          ; 58 (3)              ; 55 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6                                                                    ; SubRoutineControlUnit ; work         ;
+;       |SubRoutineControlUnit:inst6|          ; 60 (5)              ; 55 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6                                                                    ; SubRoutineControlUnit ; work         ;
 ;          |stack:inst|                        ; 55 (0)              ; 55 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst                                                         ; stack                 ; work         ;
 ;             |bi_shift_reg:inst10|            ; 5 (5)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst10                                     ; bi_shift_reg          ; work         ;
 ;             |bi_shift_reg:inst11|            ; 5 (5)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SubRoutineControlUnit:inst6|stack:inst|bi_shift_reg:inst11                                     ; bi_shift_reg          ; work         ;
@@ -812,15 +812,15 @@ refer to the applicable agreement for further details.
 ;       |SynchRegister:inst26|                 ; 0 (0)               ; 22 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SynchRegister:inst26                                                                           ; SynchRegister         ; work         ;
 ;          |lpm_ff:inst1|                      ; 0 (0)               ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SynchRegister:inst26|lpm_ff:inst1                                                              ; lpm_ff                ; work         ;
 ;          |lpm_ff:inst|                       ; 0 (0)               ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|SynchRegister:inst26|lpm_ff:inst                                                               ; lpm_ff                ; work         ;
-;       |busmux:inst28|                        ; 24 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|busmux:inst28                                                                                  ; busmux                ; work         ;
-;          |lpm_mux:$00000|                    ; 24 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|busmux:inst28|lpm_mux:$00000                                                                   ; lpm_mux               ; work         ;
-;             |mux_osc:auto_generated|         ; 24 (24)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|busmux:inst28|lpm_mux:$00000|mux_osc:auto_generated                                            ; mux_osc               ; work         ;
+;       |busmux:inst28|                        ; 25 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|busmux:inst28                                                                                  ; busmux                ; work         ;
+;          |lpm_mux:$00000|                    ; 25 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|busmux:inst28|lpm_mux:$00000                                                                   ; lpm_mux               ; work         ;
+;             |mux_osc:auto_generated|         ; 25 (25)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|busmux:inst28|lpm_mux:$00000|mux_osc:auto_generated                                            ; mux_osc               ; work         ;
 ;       |busmux:inst8|                         ; 11 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|busmux:inst8                                                                                   ; busmux                ; work         ;
 ;          |lpm_mux:$00000|                    ; 11 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|busmux:inst8|lpm_mux:$00000                                                                    ; lpm_mux               ; work         ;
 ;             |mux_osc:auto_generated|         ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|busmux:inst8|lpm_mux:$00000|mux_osc:auto_generated                                             ; mux_osc               ; work         ;
 ;       |lpm_ff:InstructionRegister1|          ; 0 (0)               ; 22 (22)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|lpm_ff:InstructionRegister1                                                                    ; lpm_ff                ; work         ;
 ;       |lpm_ff:InstructionRegister|           ; 0 (0)               ; 22 (22)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|lpm_ff:InstructionRegister                                                                     ; lpm_ff                ; work         ;
-;       |prediction_block:inst16|              ; 325 (6)             ; 120 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16                                                                        ; prediction_block      ; work         ;
+;       |prediction_block:inst16|              ; 330 (5)             ; 120 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16                                                                        ; prediction_block      ; work         ;
 ;          |SynchRegister:inst13|              ; 0 (0)               ; 2 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|SynchRegister:inst13                                                   ; SynchRegister         ; work         ;
 ;             |lpm_ff:inst1|                   ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|SynchRegister:inst13|lpm_ff:inst1                                      ; lpm_ff                ; work         ;
 ;             |lpm_ff:inst|                    ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|SynchRegister:inst13|lpm_ff:inst                                       ; lpm_ff                ; work         ;
@@ -837,9 +837,9 @@ refer to the applicable agreement for further details.
 ;          |busmux:inst20|                     ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|busmux:inst20                                                          ; busmux                ; work         ;
 ;             |lpm_mux:$00000|                 ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|busmux:inst20|lpm_mux:$00000                                           ; lpm_mux               ; work         ;
 ;                |mux_7rc:auto_generated|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|busmux:inst20|lpm_mux:$00000|mux_7rc:auto_generated                    ; mux_7rc               ; work         ;
-;          |busmux:inst9|                      ; 24 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|busmux:inst9                                                           ; busmux                ; work         ;
-;             |lpm_mux:$00000|                 ; 24 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|busmux:inst9|lpm_mux:$00000                                            ; lpm_mux               ; work         ;
-;                |mux_osc:auto_generated|      ; 24 (24)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|busmux:inst9|lpm_mux:$00000|mux_osc:auto_generated                     ; mux_osc               ; work         ;
+;          |busmux:inst9|                      ; 25 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|busmux:inst9                                                           ; busmux                ; work         ;
+;             |lpm_mux:$00000|                 ; 25 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|busmux:inst9|lpm_mux:$00000                                            ; lpm_mux               ; work         ;
+;                |mux_osc:auto_generated|      ; 25 (25)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|busmux:inst9|lpm_mux:$00000|mux_osc:auto_generated                     ; mux_osc               ; work         ;
 ;          |eleven_fifo:inst2|                 ; 68 (1)              ; 87 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2                                                      ; eleven_fifo           ; work         ;
 ;             |fifo2:fifo2_block[0].f0|        ; 7 (7)               ; 37 (37)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2|fifo2:fifo2_block[0].f0                              ; fifo2                 ; work         ;
 ;             |fifo2:fifo2_block[10].f0|       ; 6 (6)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2|fifo2:fifo2_block[10].f0                             ; fifo2                 ; work         ;
@@ -854,8 +854,8 @@ refer to the applicable agreement for further details.
 ;             |fifo2:fifo2_block[9].f0|        ; 6 (6)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2|fifo2:fifo2_block[9].f0                              ; fifo2                 ; work         ;
 ;          |fifo:inst11|                       ; 79 (79)             ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|fifo:inst11                                                            ; fifo                  ; work         ;
 ;          |fifo_popper:inst3|                 ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|fifo_popper:inst3                                                      ; fifo_popper           ; work         ;
-;          |fifo_two_bit:inst1|                ; 61 (0)              ; 10 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|fifo_two_bit:inst1                                                     ; fifo_two_bit          ; work         ;
-;             |fifo2:fifo2b_block[0].f0|       ; 54 (54)             ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0                            ; fifo2                 ; work         ;
+;          |fifo_two_bit:inst1|                ; 66 (0)              ; 10 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|fifo_two_bit:inst1                                                     ; fifo_two_bit          ; work         ;
+;             |fifo2:fifo2b_block[0].f0|       ; 59 (59)             ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|fifo_two_bit:inst1|fifo2:fifo2b_block[0].f0                            ; fifo2                 ; work         ;
 ;             |fifo2:fifo2b_block[1].f0|       ; 7 (7)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|fifo_two_bit:inst1|fifo2:fifo2b_block[1].f0                            ; fifo2                 ; work         ;
 ;          |lpm_latch:inst10|                  ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|lpm_latch:inst10                                                       ; lpm_latch             ; work         ;
 ;          |lpm_latch:inst14|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ev20main|fetchUnit:inst|prediction_block:inst16|lpm_latch:inst14                                                       ; lpm_latch             ; work         ;
@@ -1437,15 +1437,15 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-------------------------------------------------------------------------------------------+---------+
 ; Inverted Register                                                                         ; Fan out ;
 +-------------------------------------------------------------------------------------------+---------+
-; DelayInicial:inst6|counter[1]                                                             ; 45      ;
-; DelayInicial:inst6|counter[0]                                                             ; 45      ;
+; DelayInicial:inst6|counter[1]                                                             ; 44      ;
+; DelayInicial:inst6|counter[0]                                                             ; 44      ;
 ; fetchUnit:inst|prediction_block:inst16|branch_predictor:inst|last_takens[2]               ; 3       ;
 ; fetchUnit:inst|prediction_block:inst16|branch_predictor:inst|last_takens[1]               ; 3       ;
 ; fetchUnit:inst|prediction_block:inst16|branch_predictor:inst|last_takens[0]               ; 3       ;
 ; fetchUnit:inst|prediction_block:inst16|branch_predictor:inst|last_takens[5]               ; 3       ;
 ; fetchUnit:inst|prediction_block:inst16|branch_predictor:inst|last_takens[4]               ; 3       ;
 ; fetchUnit:inst|prediction_block:inst16|branch_predictor:inst|last_takens[3]               ; 3       ;
-; fetchUnit:inst|prediction_block:inst16|branch_predictor:inst|last_takens[6]               ; 3       ;
+; fetchUnit:inst|prediction_block:inst16|branch_predictor:inst|last_takens[6]               ; 4       ;
 ; fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[0] ; 1       ;
 ; fetchUnit:inst|prediction_block:inst16|eleven_fifo:inst2|fifo2:fifo2_block[0].f0|index[1] ; 1       ;
 ; Total number of inverted registers = 11                                                   ;         ;
@@ -3267,6 +3267,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fetchUnit:inst|BUSMUX:inst21 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; WIDTH          ; 11    ; Untyped                                          ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +--------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: fetchUnit:inst|BUSMUX:inst7 ;
 +----------------+-------+-------------------------------------------------+
@@ -3279,16 +3289,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +---------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: fetchUnit:inst|BUSMUX:inst17 ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; WIDTH          ; 11    ; Untyped                                          ;
-+----------------+-------+--------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: fetchUnit:inst|BUSMUX:inst21 ;
 +----------------+-------+--------------------------------------------------+
 ; Parameter Name ; Value ; Type                                             ;
 +----------------+-------+--------------------------------------------------+
@@ -6118,20 +6118,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     SCLR SLD          ; 1                           ;
 ;     SLD               ; 67                          ;
 ;     plain             ; 402                         ;
-; cycloneiii_lcell_comb ; 1510                        ;
+; cycloneiii_lcell_comb ; 1516                        ;
 ;     arith             ; 118                         ;
 ;         2 data inputs ; 54                          ;
 ;         3 data inputs ; 64                          ;
-;     normal            ; 1392                        ;
+;     normal            ; 1398                        ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 5                           ;
 ;         2 data inputs ; 72                          ;
-;         3 data inputs ; 266                         ;
-;         4 data inputs ; 1047                        ;
+;         3 data inputs ; 264                         ;
+;         4 data inputs ; 1055                        ;
 ; cycloneiii_ram_block  ; 71                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 13.00                       ;
-; Average LUT depth     ; 3.96                        ;
+; Max LUT depth         ; 12.10                       ;
+; Average LUT depth     ; 3.89                        ;
 +-----------------------+-----------------------------+
 
 
@@ -6140,7 +6140,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:10     ;
+; Top            ; 00:00:09     ;
 +----------------+--------------+
 
 
@@ -6150,7 +6150,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Jun 09 07:47:04 2020
+    Info: Processing started: Tue Jun 09 08:14:04 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ev20QUARTUS -c ev20QUARTUS
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -6649,16 +6649,16 @@ Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/output_files/ev20QUARTUS.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3301 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3307 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 217 output pins
-    Info (21061): Implemented 3012 logic cells
+    Info (21061): Implemented 3018 logic cells
     Info (21064): Implemented 71 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 166 warnings
-    Info: Peak virtual memory: 4817 megabytes
-    Info: Processing ended: Tue Jun 09 07:48:26 2020
-    Info: Elapsed time: 00:01:22
-    Info: Total CPU time (on all processors): 00:01:31
+    Info: Peak virtual memory: 4813 megabytes
+    Info: Processing ended: Tue Jun 09 08:15:17 2020
+    Info: Elapsed time: 00:01:13
+    Info: Total CPU time (on all processors): 00:01:29
 
 
 +------------------------------------------+

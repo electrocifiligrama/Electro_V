@@ -1,5 +1,5 @@
 Flow report for ev20QUARTUS
-Tue Jun 09 07:49:41 2020
+Tue Jun 09 08:16:04 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,13 +40,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Jun 09 07:49:41 2020       ;
+; Flow Status                        ; Successful - Tue Jun 09 08:16:04 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ev20QUARTUS                                 ;
 ; Top-level Entity Name              ; ev20main                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 2,921                                       ;
-;     Total combinational functions  ; 1,508                                       ;
+; Total logic elements               ; 2,927                                       ;
+;     Total combinational functions  ; 1,514                                       ;
 ;     Dedicated logic registers      ; 1,730                                       ;
 ; Total registers                    ; 1730                                        ;
 ; Total pins                         ; 218                                         ;
@@ -62,7 +62,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/09/2020 07:47:09 ;
+; Start date & time ; 06/09/2020 08:14:08 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ev20QUARTUS         ;
 +-------------------+---------------------+
@@ -73,7 +73,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 277375809421349.159169962813532        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 277375809421349.159170124710500        ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; ev20main    ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; ev20main    ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; ev20main    ; Top        ;
@@ -89,10 +89,10 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:01:19     ; 1.0                     ; 4814 MB             ; 00:01:29                           ;
-; EDA Netlist Writer   ; 00:00:05     ; 1.0                     ; 4644 MB             ; 00:00:05                           ;
-; EDA Netlist Writer   ; 00:00:06     ; 1.0                     ; 4650 MB             ; 00:00:06                           ;
-; Total                ; 00:01:30     ; --                      ; --                  ; 00:01:40                           ;
+; Analysis & Synthesis ; 00:01:09     ; 1.0                     ; 4812 MB             ; 00:01:27                           ;
+; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4640 MB             ; 00:00:05                           ;
+; EDA Netlist Writer   ; 00:00:06     ; 1.0                     ; 4657 MB             ; 00:00:06                           ;
+; Total                ; 00:01:19     ; --                      ; --                  ; 00:01:38                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -111,7 +111,7 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off ev20QUARTUS -c ev20QUARTUS
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ev20QUARTUS -c ev20QUARTUS --vector_source="C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/Waveform67.vwf" --testbench_file="C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/simulation/qsim/Waveform67.vwf.vt"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ev20QUARTUS -c ev20QUARTUS --vector_source="C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/Waveform68.vwf" --testbench_file="C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/simulation/qsim/Waveform68.vwf.vt"
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/simulation/qsim/" ev20QUARTUS -c ev20QUARTUS
 
 
