@@ -868,7 +868,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 680 840 728 904)
+	(rect 680 904 728 968)
 	(text "OR2" (rect 0 45 10 63)(font "Arial" (font_size 6))(vertical))
 	(text "inst10" (rect 37 32 49 61)(font "Arial" )(vertical))
 	(port
@@ -1442,30 +1442,6 @@ refer to the applicable agreement for further details.
 	(pt 1000 936)
 )
 (connector
-	(pt 616 1056)
-	(pt 696 1056)
-)
-(connector
-	(pt 696 1056)
-	(pt 696 904)
-)
-(connector
-	(pt 712 1056)
-	(pt 712 904)
-)
-(connector
-	(pt 704 760)
-	(pt 704 840)
-)
-(connector
-	(pt 104 760)
-	(pt 704 760)
-)
-(connector
-	(pt 704 760)
-	(pt 728 760)
-)
-(connector
 	(pt 1056 904)
 	(pt 952 904)
 	(bus)
@@ -1511,14 +1487,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 1000 984)
 	(pt 936 984)
-)
-(connector
-	(pt 712 1056)
-	(pt 1624 1056)
-)
-(connector
-	(pt 1624 1056)
-	(pt 1632 1056)
 )
 (connector
 	(text "PC[10..0]" (rect 928 856 971 873)(font "Intel Clear" ))
@@ -1733,6 +1701,38 @@ refer to the applicable agreement for further details.
 	(text "clk" (rect 187 1032 201 1049)(font "Intel Clear" ))
 	(pt 240 1048)
 	(pt 152 1048)
+)
+(connector
+	(pt 616 1056)
+	(pt 696 1056)
+)
+(connector
+	(pt 696 1056)
+	(pt 696 968)
+)
+(connector
+	(pt 712 1056)
+	(pt 712 968)
+)
+(connector
+	(pt 104 760)
+	(pt 704 760)
+)
+(connector
+	(pt 704 760)
+	(pt 728 760)
+)
+(connector
+	(pt 712 1056)
+	(pt 1624 1056)
+)
+(connector
+	(pt 1624 1056)
+	(pt 1632 1056)
+)
+(connector
+	(pt 704 760)
+	(pt 704 904)
 )
 (junction (pt 976 328))
 (junction (pt 952 328))

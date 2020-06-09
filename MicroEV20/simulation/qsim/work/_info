@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dC:/Users/Manuel Mollon/Dropbox/E5/Electro_V/MicroEV20/simulation/qsim
 vev20main
-Z1 !s110 1591594984
+Z1 !s110 1591666619
 !i10b 1
-!s100 g^m59oT`jgTW`b?f<fN0:0
-I^cS=W44Vn`z7WELY_ITN=1
+!s100 c^3?NOgcljPObH]f4E8hI1
+I4zn_9?=VbBW]9K9EhJMz03
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 dC:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/simulation/qsim
-w1591594979
+w1591666615
 Z4 8ev20QUARTUS.vo
 Z5 Fev20QUARTUS.vo
 Z6 L0 31
@@ -23,7 +23,7 @@ Z7 OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1591594982.000000
+!s108 1591666618.000000
 Z8 !s107 ev20QUARTUS.vo|
 Z9 !s90 -work|work|ev20QUARTUS.vo|
 !i113 1
@@ -33,20 +33,20 @@ vev20main_vlg_vec_tst
 R1
 !i10b 1
 !s100 9<XIdAMf6oNlN]hOibAVf1
-I`U56gLSAzlhW]mWT0=lUz3
+IXS=R@9:LiM`N=8OVWQZWl2
 R2
 R3
-w1591594966
-8Waveform39.vwf.vt
-FWaveform39.vwf.vt
+w1591666607
+8Waveform41.vwf.vt
+FWaveform41.vwf.vt
 Z12 L0 29
 R7
 r1
 !s85 0
 31
-!s108 1591594984.000000
-!s107 Waveform39.vwf.vt|
-!s90 -work|work|Waveform39.vwf.vt|
+!s108 1591666619.000000
+!s107 Waveform41.vwf.vt|
+!s90 -work|work|Waveform41.vwf.vt|
 !i113 1
 R10
 R11

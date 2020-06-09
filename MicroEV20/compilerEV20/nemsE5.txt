@@ -11,5 +11,3 @@ MOV R3,R4   //9
 MOK W,#1
 MOK W,#1
 JNE 0   //12
-
-
