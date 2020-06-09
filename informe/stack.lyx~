@@ -218,7 +218,8 @@ name "fig:Sstrucuture"
 \end_layout
 
 \begin_layout Standard
-La implementación se realizó en verilog.
+La implementación del shift register se realizó en verilog, mientras que
+ la estructura del stack fue con lógica combinacional.
  El módulo final se puede observar en la imagen 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -280,8 +281,9 @@ name "fig:subrutinecontrolunit"
 \end_layout
 
 \begin_layout Standard
-Recibe los 7 bits más significativos del opcode para poder discernir si
- se trata de un BSR (
+En resumen entonces, el módulo de control de subrutina recibe los 7 bits
+ más significativos del opcode para poder discernir si se trata de un BSR
+ (
 \shape italic
 branch to subroutine
 \shape default
@@ -291,12 +293,13 @@ return to subroutine
 \shape default
 ), además recibe el PC, que es el valor a guardar, y el clock ya que funciona
  de manera sincrónica.
- Entre las salidas se encuentran señales de isRET, isBSR que están en 
+ Entre las salidas se encuentran las señales de isRET, e isBSR que están
+ en 
 \shape italic
 high
 \shape default
- si se trata de un RET o de un BSR, respectivamente y se utilizan de manera
- externa al módulo para actualizar el valor del PC.
+ si se trata de un RET o de un BSR respectivamente, y estas señales se utilizan
+ de manera externa al módulo para actualizar el valor del PC.
  También devuelve la variable stackPC que es el valor del TOS (
 \shape italic
 top of stack

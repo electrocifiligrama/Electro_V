@@ -218,7 +218,8 @@ name "fig:Sstrucuture"
 \end_layout
 
 \begin_layout Standard
-La implementación se realizó en verilog.
+La implementación del shift register se realizó en verilog, mientras que
+ la estructura del stack fue con lógica combinacional.
  El módulo final se puede observar en la imagen 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -232,9 +233,9 @@ noprefix "false"
 .
  La idea es que el stack se actualiza de manera sincrónica, estando listo
  para ser leído el valor del TOS en cada flanco ascendente del clock, pero
- la salida, que es el TOS, se determina de manera asincrónica, entre en
+ la salida, que es el TOS, se determina de manera asincrónica, entre un
  flanco descendente y uno ascendente del clock, ya que es cuando cambia
- el bus de instrucción.
+ la instrucción.
 \end_layout
 
 \begin_layout Standard
