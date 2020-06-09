@@ -192,7 +192,7 @@ Micro Instruction ROM
 \begin_layout Standard
 
 \lang spanish
-TERMINAR
+TERMINAR, HABLAR SOBRE SYNCH UNIT.
 \end_layout
 
 \begin_layout Subsubsection
@@ -246,55 +246,63 @@ Outputs
 \begin_layout Itemize
 
 \lang spanish
-INST_A:
+INST_A: Parte de la instruccion que corresponde a la seleccion del bus A.
+ (5 bits)
 \end_layout
 
 \begin_layout Itemize
 
 \lang spanish
-INST_DAdd:
+INST_DAdd: Parte de la instruccion que corresponde a la direccion de memoria
+ para instruciones de lectura y escritura de la misma.
+ (10 bits)
 \end_layout
 
 \begin_layout Itemize
 
 \lang spanish
-MI:
+MI: Direccion de la micro instruccion para leerla de la ROM.
+ (7 bits)
 \end_layout
 
 \begin_layout Itemize
 
 \lang spanish
-MUXSelect:
+MUXSelect: Selector de Mux para MIR, correspondiente a la seleccion del
+ bus C.
 \end_layout
 
 \begin_layout Itemize
 
 \lang spanish
-OPERAND:
+OPERAND: Operando que es leido por la Operand Unit.
+ (16 bits)
 \end_layout
 
 \begin_layout Itemize
 
 \lang spanish
-Jump:
+Jump: Señal que se prende cuando hay un salto en el programa
 \end_layout
 
 \begin_layout Itemize
 
 \lang spanish
-IA:
+IA: Direccion de la proxima instruccion del programa a ejecutar.
+ (11 bits)
 \end_layout
 
 \begin_layout Itemize
 
 \lang spanish
-flush:
+flush: ??
 \end_layout
 
 \begin_layout Itemize
 
 \lang spanish
-preload:
+preload: Señal de preload proveniente del prediction block dentro del fetch
+ unit.
 \end_layout
 
 \end_body
