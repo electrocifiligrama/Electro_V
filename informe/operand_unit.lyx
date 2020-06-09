@@ -7,7 +7,7 @@
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
-\language spanish
+\language english
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -67,7 +67,7 @@
 \paragraph_indentation default
 \is_math_indent 0
 \math_numbering_side default
-\quotes_style french
+\quotes_style english
 \dynamic_quotes 0
 \papercolumns 1
 \papersides 1
@@ -82,33 +82,36 @@
 \begin_body
 
 \begin_layout Subsection
-MICRO-INSTRUCTION ROM
+OPERAND UNIT
 \end_layout
 
 \begin_layout Subsubsection
+
+\lang spanish
 Descripción General
 \end_layout
 
 \begin_layout Standard
-Este bloque maneja las micro instrucciones que son procesadas por el pipeline.
- La dirección de cada micro instrucción esta dada por los 7 bits mas significati
-vos del op code.
+
+\lang spanish
+Este bloque maneja la escritura y lectura de los registros A y B.
+ A continuación se puede ver el bloque en el main: 
 \end_layout
 
 \begin_layout Standard
-A continuación se muestra el bloque en el main:
-\end_layout
 
-\begin_layout Standard
+\lang spanish
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
+
+\lang spanish
 \begin_inset Graphics
-	filename imagenes/MIROM.png
+	filename imagenes/Screenshot 2020-06-09 01.54.41.png
 	scale 50
 
 \end_inset
@@ -117,9 +120,13 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
+
+\lang spanish
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+
+\lang spanish
 Micro Instruction ROM
 \end_layout
 
@@ -128,55 +135,20 @@ Micro Instruction ROM
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
 \end_layout
 
-\begin_layout Subsubsection
-Inputs
-\end_layout
+\begin_layout Standard
 
-\begin_layout Itemize
-ROM Address: Dirección de 7 bits a la cual buscar la micro instrucción.
- Para mantener la ortogonalidad, conjuntos de direcciones corresponden a
- la misma microinstrucción.
-\end_layout
-
-\begin_layout Itemize
-Clk: Señal para, con Hold, hacer sincrónica la ROM.
-\end_layout
-
-\begin_layout Itemize
-Hold: Señal para, con Clock, hacer sincrónica la ROM.
-\end_layout
-
-\begin_layout Subsubsection
-Outputs
-\end_layout
-
-\begin_layout Itemize
-Microinstruction: A la salida, se obtiene la microinstruccion de 33 bits
- correspondiente a la dirección pedida.
- Esta misma en un principio corresponde a un NOP introducido por el DelayInicial
-, el cual es necesario para el correcto funcionamiento del pipeline en los
- primeros ciclos en que se arranca el programa.
-\end_layout
-
-\begin_layout Subsubsection
-MIROM.mif
+\lang spanish
+Y por dentro funciona de la siguiente manera:
 \end_layout
 
 \begin_layout Standard
-Corresponde al archivo donde están plasmadas las micro instrucciones a continuac
-ión se pude apreciar la misma:
-\end_layout
 
-\begin_layout Standard
+\lang spanish
 \begin_inset Float figure
 wide false
 sideways false
@@ -184,9 +156,11 @@ status collapsed
 
 \begin_layout Plain Layout
 \align center
+
+\lang spanish
 \begin_inset Graphics
-	filename imagenes/mirommif.png
-	scale 30
+	filename imagenes/Screenshot 2020-06-09 01.54.56.png
+	scale 50
 
 \end_inset
 
@@ -194,18 +168,18 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
+
+\lang spanish
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-MIROM.mif
+
+\lang spanish
+Micro Instruction ROM
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -215,8 +189,73 @@ MIROM.mif
 \end_layout
 
 \begin_layout Standard
-Template utilizado para la creación del mif: https://www.mil.ufl.edu/4712/docs/mif_
-help.pdf
+
+\lang spanish
+Donde se usan para los registros dos flip flops en cascada, de manera de
+ ecribir el registro en el flanco ascendente y leerlo en el descendente.
+ Lo que se escribe del registro A proviene de un MUX entre el dato proveniente
+ de memoria y el opeando proveniente del register bank.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang spanish
+Inputs
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+OPERAND: 16 bits de operando provenientes de la instruccion siendo fetcheada.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+XMux: 16 bits de operando provenientes del register bank
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+CK-HOLD: Señal de clock con Hold.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+CK3: Señal de clock.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+MUXselect: Linea selectora del mux que escirbe el registro A.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+B_OP: 16 bits de operando provenientes del register bank.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang spanish
+Outputs
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+A: Operando de 16 bits proveniente del Latch A.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+B: Operando de 16 bits proveniente del Latch B.
 \end_layout
 
 \end_body

@@ -7,7 +7,7 @@
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
-\language spanish
+\language english
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -67,7 +67,7 @@
 \paragraph_indentation default
 \is_math_indent 0
 \math_numbering_side default
-\quotes_style french
+\quotes_style english
 \dynamic_quotes 0
 \papercolumns 1
 \papersides 1
@@ -82,33 +82,37 @@
 \begin_body
 
 \begin_layout Subsection
-MICRO-INSTRUCTION ROM
+FETCH UNIT
 \end_layout
 
 \begin_layout Subsubsection
+
+\lang spanish
 Descripción General
 \end_layout
 
 \begin_layout Standard
-Este bloque maneja las micro instrucciones que son procesadas por el pipeline.
- La dirección de cada micro instrucción esta dada por los 7 bits mas significati
-vos del op code.
+
+\lang spanish
+Este bloque maneja la comunicacion entre el programa en ROM, la MIR y la
+ Operand Unit.
+ A continuación se puede ver el bloque en el main: 
 \end_layout
 
 \begin_layout Standard
-A continuación se muestra el bloque en el main:
-\end_layout
 
-\begin_layout Standard
+\lang spanish
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
+
+\lang spanish
 \begin_inset Graphics
-	filename imagenes/MIROM.png
+	filename imagenes/Screenshot 2020-06-09 02.14.54.png
 	scale 50
 
 \end_inset
@@ -117,9 +121,13 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
+
+\lang spanish
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+
+\lang spanish
 Micro Instruction ROM
 \end_layout
 
@@ -128,55 +136,20 @@ Micro Instruction ROM
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
 \end_layout
 
-\begin_layout Subsubsection
-Inputs
-\end_layout
+\begin_layout Standard
 
-\begin_layout Itemize
-ROM Address: Dirección de 7 bits a la cual buscar la micro instrucción.
- Para mantener la ortogonalidad, conjuntos de direcciones corresponden a
- la misma microinstrucción.
-\end_layout
-
-\begin_layout Itemize
-Clk: Señal para, con Hold, hacer sincrónica la ROM.
-\end_layout
-
-\begin_layout Itemize
-Hold: Señal para, con Clock, hacer sincrónica la ROM.
-\end_layout
-
-\begin_layout Subsubsection
-Outputs
-\end_layout
-
-\begin_layout Itemize
-Microinstruction: A la salida, se obtiene la microinstruccion de 33 bits
- correspondiente a la dirección pedida.
- Esta misma en un principio corresponde a un NOP introducido por el DelayInicial
-, el cual es necesario para el correcto funcionamiento del pipeline en los
- primeros ciclos en que se arranca el programa.
-\end_layout
-
-\begin_layout Subsubsection
-MIROM.mif
+\lang spanish
+Y por dentro funciona de la siguiente manera:
 \end_layout
 
 \begin_layout Standard
-Corresponde al archivo donde están plasmadas las micro instrucciones a continuac
-ión se pude apreciar la misma:
-\end_layout
 
-\begin_layout Standard
+\lang spanish
 \begin_inset Float figure
 wide false
 sideways false
@@ -184,9 +157,11 @@ status collapsed
 
 \begin_layout Plain Layout
 \align center
+
+\lang spanish
 \begin_inset Graphics
-	filename imagenes/mirommif.png
-	scale 30
+	filename imagenes/Screenshot 2020-06-09 01.23.10.png
+	scale 50
 
 \end_inset
 
@@ -194,18 +169,18 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
+
+\lang spanish
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-MIROM.mif
+
+\lang spanish
+Micro Instruction ROM
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -215,8 +190,117 @@ MIROM.mif
 \end_layout
 
 \begin_layout Standard
-Template utilizado para la creación del mif: https://www.mil.ufl.edu/4712/docs/mif_
-help.pdf
+
+\lang spanish
+TERMINAR, HABLAR SOBRE SYNCH UNIT.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang spanish
+Inputs
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+I: Instruccion de 22 bits proveniente del programa alojado en la ROM.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+HOLD: Señal que suspende el avance del Fetch Unit si esta prendida.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+CK1: Clock de entrada.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Tfoward: ??
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+W: Registro W de 16 bits provenientes del register bank.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+CY: Señal de carry proveniente del ALU unit.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang spanish
+Outputs
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+INST_A: Parte de la instruccion que corresponde a la seleccion del bus A.
+ (5 bits)
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+INST_DAdd: Parte de la instruccion que corresponde a la direccion de memoria
+ para instruciones de lectura y escritura de la misma.
+ (10 bits)
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+MI: Direccion de la micro instruccion para leerla de la ROM.
+ (7 bits)
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+MUXSelect: Selector de Mux para MIR, correspondiente a la seleccion del
+ bus C.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+OPERAND: Operando que es leido por la Operand Unit.
+ (16 bits)
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Jump: Señal que se prende cuando hay un salto en el programa
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+IA: Direccion de la proxima instruccion de
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+flush: ??
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+preload: Señal de preload proveniente del prediction branch
 \end_layout
 
 \end_body

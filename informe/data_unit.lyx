@@ -7,7 +7,7 @@
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
-\language english
+\language spanish
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -67,7 +67,7 @@
 \paragraph_indentation default
 \is_math_indent 0
 \math_numbering_side default
-\quotes_style english
+\quotes_style french
 \dynamic_quotes 0
 \papercolumns 1
 \papersides 1
@@ -81,10 +81,47 @@
 
 \begin_body
 
+\begin_layout Subsection
+DATA UNIT
+\end_layout
+
+\begin_layout Subsubsection
+Descripción General
+\end_layout
+
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "caratula.lyx"
+Este bloque maneja la escritura y lectura de datos en la RAM de datos.
+ A continuación se puede ver el bloque en el main: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/Screenshot 2020-06-09 01.22.46.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Micro Instruction ROM
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -92,49 +129,37 @@ filename "caratula.lyx"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
+Y por dentro funciona de la siguiente manera:
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "carac_generales.lyx"
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "interfaces.lyx"
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/Screenshot 2020-06-09 01.23.10.png
+	scale 50
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Section
-Unidades Funcionales
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Micro Instruction ROM
 \end_layout
 
-\begin_layout Standard
-MAIN.
- FOTITO DE MAIN.
-\end_layout
+\end_inset
 
-\begin_layout Standard
-IDENTIFICAR PIPELINE!!!!!
-\end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "fetch_unit.lyx"
+\end_layout
 
 \end_inset
 
@@ -142,73 +167,47 @@ filename "fetch_unit.lyx"
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "micro_inst_rom.lyx"
-
-\end_inset
-
-
+Se puede apreciar que inlocken (input clock enable) y outclocken (out clock
+ enable) ponen a Vcc habilitando siempre la actualización sincrónica de
+ la RAM.
+ El output clock proviene del Clk, y este mismo escribe lo que hay en memoria
+ en el flanco ascendente.
+ El input clock, es el Clk negado, de manera que se escribe en el flanco
+ ascendente.
+ Así se evitan problemas de lectura y escritura simultanea.
+ Y wren (write enable) se prende solo cuando se quiere escribir (MW prendido)
+ y escribe en memoria el dato introducido.
+ 
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "mir_unit.lyx"
-
-\end_inset
-
-
+\begin_layout Subsubsection
+Inputs
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "register_bank.lyx"
-
-\end_inset
-
-
+\begin_layout Itemize
+CLK_DATA: Clock con el que se sincrónica la lectura y escritura de la RAM.
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "stack.lyx"
-
-\end_inset
-
-
+\begin_layout Itemize
+ToData: Data de 16 bits que se escribe en RAM cuando MW (Memory Write) esta
+ habilitado.
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "branch_pred.lyx"
-
-\end_inset
-
-
+\begin_layout Itemize
+DAdd: Dirección de 10 bits en donde se leen o escriben los datos.
+ 
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "analisis_funcionamiento.lyx"
-
-\end_inset
-
-
+\begin_layout Itemize
+MW: Señal que habilita la escritura de datos.
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "conclusion.lyx"
+\begin_layout Subsubsection
+Outputs
+\end_layout
 
-\end_inset
-
-
+\begin_layout Itemize
+FromData: Data de 16 bits que provienen de la memoria.
 \end_layout
 
 \end_body

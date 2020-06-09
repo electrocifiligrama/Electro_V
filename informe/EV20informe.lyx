@@ -154,6 +154,36 @@ filename "micro_inst_rom.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
+filename "alu_unit.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "operand_unit.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "data_unit.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
 filename "mir_unit.lyx"
 
 \end_inset
