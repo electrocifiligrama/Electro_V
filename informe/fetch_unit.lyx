@@ -105,7 +105,7 @@ Este bloque maneja la comunicacion entre el programa en ROM, la MIR y la
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -153,7 +153,7 @@ Y por dentro funciona de la siguiente manera:
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -222,7 +222,8 @@ CK1: Clock de entrada.
 \begin_layout Itemize
 
 \lang spanish
-Tfoward: ??
+Tfoward: T del MIR de la etapa de Write back, utilizado para corroborar
+ las predicciones de salto ya realizadas.
 \end_layout
 
 \begin_layout Itemize
@@ -295,7 +296,9 @@ IA: Direccion de la proxima instruccion del programa a ejecutar.
 \begin_layout Itemize
 
 \lang spanish
-flush: ??
+flush: 1 en caso de que se necesite realizar el flush del pipeline (predicción
+ de salto incorrecta).
+ 0 en otro caso.
 \end_layout
 
 \begin_layout Itemize
@@ -303,6 +306,49 @@ flush: ??
 \lang spanish
 preload: Señal de preload proveniente del prediction block dentro del fetch
  unit.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang spanish
+Funcionamiento detallado
+\end_layout
+
+\begin_layout Standard
+La fetch Unit es la encargada de mantener internamente el STACK de saltos
+ de subrutina, y de mantener el PC register actualizado con el valor de
+ memoria a partir de la cual se obtendrá la próxima instrucción a ejecutar.
+ Como internamente este módulo contiene al PC register, el fetch unit también
+ contendrá al predictor de saltos, que actualizará el valor del PC en caso
+ de que considere que debe realizarse un salto y en aquel caso en que el
+ prediction_block detecte que se ha realizado una predicción de salto incorrecta.
+\end_layout
+
+\begin_layout Standard
+Dado que el módulo de subrutinas impone el PC en caso de RET, el mismo deberá
+ estar en comunicación con el módulo de branch prediction de alguna manera.
+ Esta conexión se da a partir de la señal preload, que indicará que se deberá
+ actualizar el PC con una nueva instrucción (proveniente del bloque predictor
+ o del STACK) y unos muxes que eligen el valor de PC a actualizar.
+\end_layout
+
+\begin_layout Standard
+El branch predictor deberá impedir que el módulo de subrutinas imponga PC
+ en casos en que se haya realizado una predicción y se reciba un retorno.
+ Esto se debe a que el módulo de branch_predictor no tiene control del stack
+ suficiente como para reemplazar los contenidos del mismo en estos casos
+ si hubo una predicción incorrecta.
+\end_layout
+
+\begin_layout Standard
+El mux a la salida del PC register permite imponer una instrucción de fetch
+ antes de que se actualice el PC register.
+ Esto se debe a que la decisión de salto o no salto se debe tomar antes
+ de un flanco positivo, para que el fetch se realice sobre esta nueva instrucció
+n en dicho flanco.
+ En flanco positivo también se actualizará el valor del PC.
+ La señal de preload es la que se encargará de elegir la entrada del mux
+ a elegir.
 \end_layout
 
 \end_body
