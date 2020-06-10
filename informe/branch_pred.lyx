@@ -98,7 +98,7 @@ Un problema característico de las arquitecturas que cuentan con pipeline
  en caso de que la condición a la que hacen referencia se cumpla, por lo
  que ante esta incertidumbre, el diseñador de la arquitectura deberá recurrir
  a alguna de las siguientes estrategias para poder continuar con el flujo
- del programa:
+ del programa sin atorar el :
 \end_layout
 
 \begin_layout Itemize
@@ -162,34 +162,6 @@ Esquema de alto nivel del bloque
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Módulo del Branch Predictor - Alto Nivel
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 El bloque de predicción cuenta con las siguientes entradas:
 \end_layout
 
@@ -243,30 +215,6 @@ Funcionamiento interno del módulo
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Módulo Branch Predictor - Funcionamiento interno
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 El módulo de branch predictor cuenta con dos ramas principales:
 \end_layout
 
@@ -281,7 +229,7 @@ Rama encarga de revisar si se ha realizado la predicción correcta de una
 \end_layout
 
 \begin_layout Standard
-El intercambio de inforamción entre las dos ramas es realizado a través
+El intercambio de información entre las dos ramas es realizado a través
  del uso de unas FIFOs comunes.
  En estas FIFOs se guardará:
 \end_layout
@@ -321,6 +269,10 @@ Los módulos internos del branch prediction están documentados dentro de
 
 \begin_layout Paragraph
 Rama 1:
+\begin_inset Formula $\newline$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -421,7 +373,11 @@ Continuous: enable is continuously evaluated based on changes on I.
 \end_layout
 
 \begin_layout Paragraph
-Rama 2:
+Rama 2: 
+\begin_inset Formula $\newline$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -580,12 +536,39 @@ Nótese que para el caso de loops de muchas iteraciones y/o de secuencias
 \end_layout
 
 \begin_layout Subsubsection
+Predicción incorrecta
+\end_layout
+
+\begin_layout Standard
+En caso de predicción incorrecta, se deberá volver al PC original.
+ Esto se logra mediante una FIFO auxiliar que guarda los PCs a los que se
+ debería volver si la predicción fue incorrecta.
+\end_layout
+
+\begin_layout Standard
+En caso de tener una predicción incorrecta, se deberá realizar el flush
+ del pipeline.
+ Para esto, simplemente se reemplaza las instrucciones que están actualmente
+ en el pipeline con un NOP.
+\end_layout
+
+\begin_layout Standard
+Para el caso de escrituras y lecturas a memoria y BSR y RET, si se ha realizado
+ una predicción, se deberá esperar a que la misma sea finalizada, por lo
+ que se tendrá que realizar un HOLD sobre el pipeline hasta esperar a reconocer
+ si se realizó una predicción correcta o no y luego decidir en función de
+ lo mismo si se debe tomar el BSR o no.
+\end_layout
+
+\begin_layout Subsubsection
 Simulación
 \end_layout
 
 \begin_layout Standard
 Se simuló el módulo por separado para distintos casos, con resultados satisfacto
-rios:
+rios.
+ Los valores de los buses fueron elegidos manualmente para probar cada caso
+ de interés
 \end_layout
 
 \begin_layout Standard
@@ -631,6 +614,21 @@ W: Working Register.
 \end_layout
 
 \begin_layout Standard
+En la siguiente figura se muestra cómo se predice que se debe saltar para
+ una instrucción de tipo JCY (preload=1) .
+ Al recibir el T de la etapa de write back con valor 1010000 (JCY), el bloque
+ reconoce que la predicción fue incorrecta y vuelve a cargar la dirección
+ correcta en el PC (preload=1 e incorrect_pred =1 simultáneamente) .
+ Esto se puede observar en el bus NEXT_ADDRESS, que recupera el valor que
+ tenía el PC al momento de realizar la predicción.
+\end_layout
+
+\begin_layout Standard
+El bloque reconoce que la predicción fue incorrecta porque CY = 0 en el
+ momento en que se recibe el T previamente mencionado.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -671,6 +669,22 @@ JCY simple.
 \end_layout
 
 \begin_layout Standard
+En la siguiente figura se muestra cómo se predice que se debe saltar para
+ una instrucción de tipo JNE (preload=1).
+ Al recibir el T de la etapa de write back con valor 1000001 (JNE o JZE),
+ el bloque reconoce que la predicción fue correcta y por lo tanto no modifica
+ el valor de PC (preload=0 e incorrect_pred =0 simultáneamente) .
+ Esto se puede observar en el bus NEXT_ADDRESS, que deja pasar el valor
+ del PC actual sin hacer ninguna corrección.
+\end_layout
+
+\begin_layout Standard
+El bloque reconoce que la predicción fue correcta porque W no vale 0 en
+ el momento en que se recibe el T previamente mencionado (quinto ciclo de
+ clock).
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -680,13 +694,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename imagenes/JNEsimplepredictiontakenPredijo bien..png
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename imagenes/JNEsimplepredictiontakenPredijo bien..png
-	scale 10
+	scale 20
 
 \end_inset
 
@@ -717,6 +725,26 @@ JNE simple.
 \end_layout
 
 \begin_layout Standard
+En la siguiente figura se muestra cómo se predice que se debe saltar para
+ una instrucción de tipo JZE seguida de una JCY(preload=1 para ambos ciclos
+ consecutivos).
+ Al recibir el T de la etapa de write back con valor 1000001 (JNE o JZE),
+ el bloque reconoce que la predicción fue incorrecta y vuelve a cargar la
+ dirección correcta en el PC (preload=1 e incorrect_pred =1 simultáneamente).
+ Esto se puede observar en el bus NEXT_ADDRESS, que deja pasar el valor
+ del PC actual sin hacer ninguna corrección.
+ El bloque reconoce que la predicción fue correcta porque W[15] no vale
+ 0 en el momento en que se recibe el T previamente mencionado (sexto ciclo
+ de clock).
+\end_layout
+
+\begin_layout Standard
+Se ve como, luego de reconocer una predicción previa incorrecta, ignora
+ el siguiente T, pues este y los siguientes T del pipeline quedan invalidados,
+ por lo que el JCY ya no es revisado.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -725,8 +753,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename imagenes/JZEJCYpredictiontakenPredijomaljcy.png
-	scale 20
+	filename imagenes/JZEJCYpredictiontakenPredijomaljze.png
 
 \end_inset
 
@@ -749,6 +776,18 @@ JZE + JCY, Predicción: T.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Para la próxima figura, se realizan varias instrucciones de salto JCY intercalad
+as (instrucción dummy de por medio).
+ El módulo tomará los saltos al principio, ya que el algoritmo de decisión
+ tiene registrado que los últimos 7 saltos fueron tomados.
+ El primer salto (T=1010000) encuentra el CY=0, por lo que incorrect_pred=1.
+ Luego, el siguiente salto encuentra el CY = 1, por lo que incorrect_pred=0.
+ El siguiente salto tendrá incorrect_pred=1 porque el algoritmo de predicción
+ tiene memoria de los últimos N saltos, y no actualiza su algoritmo de decisión
+ todavía.
 \end_layout
 
 \begin_layout Standard
@@ -790,40 +829,6 @@ La predicción no se adapta porque el historial no tiene suficientes errores
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename imagenes/Laprediccionseadaptadespuesdemuchoserrores.png
-	scale 20
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-La predicción se adapta después de muchos errores
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
