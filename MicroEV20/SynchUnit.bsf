@@ -20,9 +20,9 @@ refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 312 208)
+	(rect 16 16 312 240)
 	(text "SynchUnit" (rect 5 0 65 19)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 171 24 188)(font "Intel Clear" ))
+	(text "inst" (rect 8 203 24 220)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -87,6 +87,13 @@ refer to the applicable agreement for further details.
 		(line (pt 0 160)(pt 16 160))
 	)
 	(port
+		(pt 0 176)
+		(input)
+		(text "T5[6..0]" (rect 0 0 47 19)(font "Intel Clear" (font_size 8)))
+		(text "T5[6..0]" (rect 21 171 68 190)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
 		(pt 296 32)
 		(output)
 		(text "Asynched[4..0]" (rect 0 0 87 19)(font "Intel Clear" (font_size 8)))
@@ -135,7 +142,14 @@ refer to the applicable agreement for further details.
 		(text "carrySynched" (rect 195 123 275 142)(font "Intel Clear" (font_size 8)))
 		(line (pt 296 128)(pt 280 128))
 	)
+	(port
+		(pt 296 144)
+		(output)
+		(text "T5Synched[6..0]" (rect 0 0 97 19)(font "Intel Clear" (font_size 8)))
+		(text "T5Synched[6..0]" (rect 178 139 275 158)(font "Intel Clear" (font_size 8)))
+		(line (pt 296 144)(pt 280 144)(line_width 3))
+	)
 	(drawing
-		(rectangle (rect 16 16 280 176))
+		(rectangle (rect 16 16 280 208))
 	)
 )

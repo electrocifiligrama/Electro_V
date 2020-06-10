@@ -149,6 +149,13 @@ refer to the applicable agreement for further details.
 		(text "nextPC[10..0]" (rect 131 203 211 222)(font "Intel Clear" (font_size 8)))
 		(line (pt 232 208)(pt 216 208)(line_width 3))
 	)
+	(port
+		(pt 232 224)
+		(output)
+		(text "predicting_out" (rect 0 0 86 19)(font "Intel Clear" (font_size 8)))
+		(text "predicting_out" (rect 125 219 211 238)(font "Intel Clear" (font_size 8)))
+		(line (pt 232 224)(pt 216 224))
+	)
 	(drawing
 		(rectangle (rect 16 16 216 240))
 	)
