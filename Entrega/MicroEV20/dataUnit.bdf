@@ -1,0 +1,445 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 1064 488 1232 504)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "DAdd2[9..0]" (rect 5 0 60 17)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 1160 544 1328 560)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "MW" (rect 5 0 25 17)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 936 456 1104 472)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "CLK_DATA" (rect 5 0 58 17)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 1064 512 1232 528)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "ToData[15..0]" (rect 5 0 68 17)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 1672 448 1849 464)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "FromData[15..0]" (rect 90 0 171 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(symbol
+	(rect 1360 560 1376 592)
+	(text "VCC" (rect 0 5 10 25)(font "Arial" (font_size 6))(vertical))
+	(text "inst5" (rect 5 7 22 29)(font "Intel Clear" )(vertical)(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 7 8 19 13)(font "Courier New" (bold))(vertical)(invisible))
+		(line (pt 16 16)(pt 8 16))
+	)
+	(drawing
+		(line (pt 8 24)(pt 8 8))
+	)
+	(rotate90)
+)
+(symbol
+	(rect 1304 432 1336 448)
+	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
+	(text "inst2" (rect 3 5 25 22)(font "Intel Clear" )(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 16 8))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 1448 416 1608 616)
+	(text "ALTDPRAM" (rect 49 0 131 16)(font "Arial" (font_size 10)))
+	(text "inst1" (rect 3 189 25 206)(font "Intel Clear" ))
+	(port
+		(pt 0 176)
+		(input)
+		(text "inclocken" (rect 20 169 73 183)(font "Arial" (font_size 8)))
+		(text "inclocken" (rect 20 169 73 183)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "inclock" (rect 20 153 58 167)(font "Arial" (font_size 8)))
+		(text "inclock" (rect 20 153 58 167)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 0 24)
+		(input)
+		(text "rdaddress[WIDTHAD-1..0]" (rect 20 17 167 31)(font "Arial" (font_size 8)))
+		(text "rdaddress[]" (rect 20 17 86 31)(font "Arial" (font_size 8)))
+		(line (pt 0 24)(pt 16 24)(line_width 3))
+	)
+	(port
+		(pt 0 40)
+		(input)
+		(text "rden" (rect 20 33 45 47)(font "Arial" (font_size 8)))
+		(text "rden" (rect 20 33 45 47)(font "Arial" (font_size 8)))
+		(line (pt 0 40)(pt 16 40))
+	)
+	(port
+		(pt 0 120)
+		(input)
+		(text "wraddress[WIDTHAD-1..0]" (rect 20 113 172 127)(font "Arial" (font_size 8)))
+		(text "wraddress[]" (rect 20 113 90 127)(font "Arial" (font_size 8)))
+		(line (pt 0 120)(pt 16 120)(line_width 3))
+	)
+	(port
+		(pt 0 104)
+		(input)
+		(text "data[WIDTH-1..0]" (rect 20 97 115 111)(font "Arial" (font_size 8)))
+		(text "data[]" (rect 20 97 51 111)(font "Arial" (font_size 8)))
+		(line (pt 0 104)(pt 16 104)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "outclock" (rect 20 57 67 71)(font "Arial" (font_size 8)))
+		(text "outclock" (rect 20 57 67 71)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "outclocken" (rect 20 73 81 87)(font "Arial" (font_size 8)))
+		(text "outclocken" (rect 20 73 81 87)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 136)
+		(input)
+		(text "wren" (rect 20 129 50 143)(font "Arial" (font_size 8)))
+		(text "wren" (rect 20 129 50 143)(font "Arial" (font_size 8)))
+		(line (pt 0 136)(pt 16 136))
+	)
+	(port
+		(pt 120 200)
+		(input)
+		(text "aclr" (rect 112 166 126 187)(font "Arial" (font_size 8))(vertical))
+		(text "aclr" (rect 112 166 126 187)(font "Arial" (font_size 8))(vertical))
+		(line (pt 120 200)(pt 120 184))
+	)
+	(port
+		(pt 160 40)
+		(output)
+		(text "q[WIDTH-1..0]" (rect 128 33 205 47)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 128 33 142 47)(font "Arial" (font_size 8)))
+		(line (pt 144 40)(pt 160 40)(line_width 3))
+	)
+	(parameter
+		"FILE"
+		""
+		"File containing initial contents of memory array"
+	)
+	(parameter
+		"INDATA_ACLR"
+		"\"ON\""
+		"Should aclr affect the write data register?"
+		"\"ON\"" "\"OFF\"" 
+	)
+	(parameter
+		"INDATA_REG"
+		"\"INCLOCK\""
+		"Should the write data be registered?"
+		"\"INCLOCK\"" "\"UNREGISTERED\"" 
+	)
+	(parameter
+		"NUMWORDS"
+		"2^WIDTHAD"
+		"Number of memory words, default is 2^WIDTHAD"
+	)
+	(parameter
+		"OUTDATA_ACLR"
+		"\"ON\""
+		"Should aclr affect the output data register?"
+		"\"ON\"" "\"OFF\"" 
+	)
+	(parameter
+		"OUTDATA_REG"
+		"\"UNREGISTERED\""
+		"Should the output data be registered?"
+		"\"OUTCLOCK\"" "\"UNREGISTERED\"" 
+	)
+	(parameter
+		"RDADDRESS_ACLR"
+		"\"ON\""
+		"Should aclr affect the read address register?"
+		"\"ON\"" "\"OFF\"" 
+	)
+	(parameter
+		"RDADDRESS_REG"
+		"\"OUTCLOCK\""
+		"Should the read address port be registered?"
+		"\"INCLOCK\"" "\"OUTCLOCK\"" "\"UNREGISTERED\"" 
+	)
+	(parameter
+		"RDCONTROL_ACLR"
+		"\"ON\""
+		"Should aclr affect the read enable register?"
+		"\"ON\"" "\"OFF\"" 
+	)
+	(parameter
+		"RDCONTROL_REG"
+		"\"OUTCLOCK\""
+		"Should the read enable port be registered?"
+		"\"INCLOCK\"" "\"OUTCLOCK\"" "\"UNREGISTERED\"" 
+	)
+	(parameter
+		"USE_EAB"
+		""
+		"Specifies EAB use"
+		"\"ON\"" "\"OFF\"" 
+	)
+	(parameter
+		"WIDTH"
+		"16"
+		"Data width in bits, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(parameter
+		"WIDTHAD"
+		"10"
+		"Number of address lines, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" 
+	)
+	(parameter
+		"WRADDRESS_ACLR"
+		"\"ON\""
+		"Should aclr affect the write address register?"
+		"\"ON\"" "\"OFF\"" 
+	)
+	(parameter
+		"WRADDRESS_REG"
+		"\"INCLOCK\""
+		"Should the write address port be registered?"
+		"\"INCLOCK\"" "\"UNREGISTERED\"" 
+	)
+	(parameter
+		"WRCONTROL_ACLR"
+		"\"ON\""
+		"Should aclr affect the write enable register?"
+		"\"ON\"" "\"OFF\"" 
+	)
+	(parameter
+		"WRCONTROL_REG"
+		"\"INCLOCK\""
+		"Should the write enable port be registered?"
+		"\"INCLOCK\"" "\"UNREGISTERED\"" 
+	)
+	(drawing
+		(line (pt 16 184)(pt 144 184))
+		(line (pt 16 16)(pt 144 16))
+		(line (pt 16 184)(pt 16 16))
+		(line (pt 144 184)(pt 144 16))
+	)
+	(annotation_block (parameter)(rect 1608 72 1842 414))
+)
+(symbol
+	(rect 1184 448 1232 480)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst" (rect 3 21 20 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
+(connector
+	(pt 1448 536)
+	(pt 1384 536)
+	(bus)
+)
+(connector
+	(pt 1448 440)
+	(pt 1384 440)
+	(bus)
+)
+(connector
+	(pt 1608 456)
+	(pt 1672 456)
+	(bus)
+)
+(connector
+	(pt 1448 552)
+	(pt 1328 552)
+)
+(connector
+	(pt 1448 496)
+	(pt 1416 496)
+)
+(connector
+	(pt 1416 592)
+	(pt 1448 592)
+)
+(connector
+	(pt 1416 576)
+	(pt 1376 576)
+)
+(connector
+	(pt 1416 496)
+	(pt 1416 576)
+)
+(connector
+	(pt 1416 576)
+	(pt 1416 592)
+)
+(connector
+	(pt 1384 440)
+	(pt 1384 496)
+	(bus)
+)
+(connector
+	(pt 1384 496)
+	(pt 1384 536)
+	(bus)
+)
+(connector
+	(pt 1232 496)
+	(pt 1384 496)
+	(bus)
+)
+(connector
+	(pt 1232 520)
+	(pt 1448 520)
+	(bus)
+)
+(connector
+	(pt 1432 576)
+	(pt 1432 656)
+)
+(connector
+	(text "CLK_DU" (rect 1440 648 1480 665)(font "Intel Clear" ))
+	(pt 1448 576)
+	(pt 1432 576)
+)
+(connector
+	(pt 1440 456)
+	(pt 1440 448)
+)
+(connector
+	(pt 1448 456)
+	(pt 1440 456)
+)
+(connector
+	(pt 1440 448)
+	(pt 1320 448)
+)
+(connector
+	(pt 1264 480)
+	(pt 1448 480)
+)
+(connector
+	(text "CLK_DU" (rect 1120 448 1160 465)(font "Intel Clear" ))
+	(pt 1184 464)
+	(pt 1104 464)
+)
+(connector
+	(pt 1232 464)
+	(pt 1264 464)
+)
+(connector
+	(pt 1264 464)
+	(pt 1264 480)
+)
+(junction (pt 1384 496))
+(junction (pt 1416 576))

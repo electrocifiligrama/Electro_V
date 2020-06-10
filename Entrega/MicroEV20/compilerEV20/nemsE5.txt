@@ -1,0 +1,13 @@
+MOK W,#20000
+MOV R2,W
+MOK W,#60000
+ADR W,R2   //W = W + R2 + CY
+CLR CY
+JZE 10   //5
+JCY 9  //6
+MOK W,#4  //7
+BSR 4   //8
+MOM W,1
+BSR 4   //10
+MOK W,#1
+JNE 0   //12

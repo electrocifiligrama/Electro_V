@@ -7,7 +7,7 @@
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
-\language english
+\language spanish-mexico
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -67,7 +67,7 @@
 \paragraph_indentation default
 \is_math_indent 0
 \math_numbering_side default
-\quotes_style english
+\quotes_style french
 \dynamic_quotes 0
 \papercolumns 1
 \papersides 1
@@ -90,8 +90,23 @@ Conclusión
 \end_layout
 
 \begin_layout Standard
-HAY QUE ROMPERLA TODA ACA, A ANDRES LE VA A GUSTAR QUE NOS ESFORCEMOS EN
- ESCRIBIR ESTO.
+La integración de los módulos pudo realizarse exitosamente y se verifico
+ que el branch prediction funcione adecuadamente y que en caso de saltos
+ incorrectos no se altere el estado de los registros o de la memoria de
+ datos respecto al estado previo al salto.
+ La mayor complejidad del procesador esta ubicada en el fetch unit, ya que
+ es donde se encuentra el modulo de branch prediction y también el modulo
+ encargado del stack para subrutinas.
+ Dicho esto, el fetch unit fue el modulo que genero la mayor dificultad
+ para integrar y lograr un correcto funcionamiento del mismo.
+\end_layout
+
+\begin_layout Standard
+El resultado final fue acorde a lo esperado y se pudo garantizar el correcto
+ avance del pipeline a su vez con la integración del branch prediction.
+ Sin embargo, el diseño presenta mejoras posibles en como se implementaron
+ los módulos asincronicos en la unidad de fetch para poder lograr utilizar
+ un frecuencia de clock mayor todavía mayor.
 \end_layout
 
 \end_body

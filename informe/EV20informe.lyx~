@@ -123,15 +123,6 @@ Unidades Funcionales
 \end_layout
 
 \begin_layout Standard
-MAIN.
- FOTITO DE MAIN.
-\end_layout
-
-\begin_layout Standard
-IDENTIFICAR PIPELINE!!!!!
-\end_layout
-
-\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
 filename "fetch_unit.lyx"
@@ -145,6 +136,36 @@ filename "fetch_unit.lyx"
 \begin_inset CommandInset include
 LatexCommand input
 filename "micro_inst_rom.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "alu_unit.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "operand_unit.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "data_unit.lyx"
 
 \end_inset
 

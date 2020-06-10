@@ -749,11 +749,12 @@ Se ve como, luego de reconocer una predicción previa incorrecta, ignora
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename imagenes/JZEJCYpredictiontakenPredijomaljze.png
+	scale 50
 
 \end_inset
 
@@ -788,7 +789,6 @@ as (instrucción dummy de por medio).
  El siguiente salto tendrá incorrect_pred=1 porque el algoritmo de predicción
  tiene memoria de los últimos N saltos, y no actualiza su algoritmo de decisión
  todavía.
- 
 \end_layout
 
 \begin_layout Standard
@@ -796,12 +796,12 @@ as (instrucción dummy de por medio).
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename imagenes/Predicciónnoseadaptaporquenosuficienteserrores.png
-	scale 20
+	scale 60
 
 \end_inset
 
@@ -830,40 +830,6 @@ La predicción no se adapta porque el historial no tiene suficientes errores
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename imagenes/Laprediccionseadaptadespuesdemuchoserrores.png
-	scale 20
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-La predicción se adapta después de muchos errores
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
 
 \end_layout
 

@@ -1,0 +1,49 @@
+MOK W,#10    W = 10
+MOV R3,W     R3 = 10
+CLR CY
+ADR W,R3     W = W + R3 + CY = 20
+MOM 0,W      ESCRIBO 20 EN MEMORIA
+MOM W,0      W = 20
+JMP 2 MOM W,0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MOK W,#10 cargo W con 10
+MOV R0,W  R0 con 10
+MOV R1,R0  R1 con 10
+MOV R2,R1   R2 con 10
+MOV R3,W   R3 con 10
+CPL W     W se va a las nubes
+MOK W,#1   W igual a 1
+CLR CY     CY=0
+ADW R0,R1  R0 = 11
+ADR W,R3    W = W + R3 + CY = 1 + 10 + 0 = 11
+ADW R2,R3   R2 = W + R3 + CY = deberia ser 21	  
+MOM 0,W	    ESCRIBO 11 en memoria 0
+MOV W,R1    W = 10	
+MOM 1,W     ESCRIBO 10 en memoria 1
+MOV W,R2    W = 21
+MOM 2,W	    ESCRIBO 21 en memoria 2	
+MOV W,R3    W = 10
+MOM 3,W	    ESCRIBO 10 en memoria 3
+MOM W,0		W = 11
+MOM W,1		W = 10
+MOM W,2		W = 21
+MOM W,3		W = 10

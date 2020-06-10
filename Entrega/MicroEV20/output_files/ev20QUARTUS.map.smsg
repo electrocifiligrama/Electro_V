@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at jne_checker.v(20): always construct contains both blocking and non-blocking assignments File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/jne_checker.v Line: 20
+Info (10281): Verilog HDL Declaration information at fifo_two_bit.v(5): object "I" differs only in case from object "i" in the same scope File: C:/Users/malen/Desktop/ELECTRONICA V/Electro_V/MicroEV20/fifo_two_bit.v Line: 5

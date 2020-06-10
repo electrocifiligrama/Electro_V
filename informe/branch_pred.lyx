@@ -689,7 +689,7 @@ El bloque reconoce que la predicción fue correcta porque W no vale 0 en
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -749,11 +749,12 @@ Se ve como, luego de reconocer una predicción previa incorrecta, ignora
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename imagenes/JZEJCYpredictiontakenPredijomaljze.png
+	scale 30
 
 \end_inset
 
@@ -795,12 +796,12 @@ as (instrucción dummy de por medio).
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename imagenes/Predicciónnoseadaptaporquenosuficienteserrores.png
-	scale 20
+	scale 30
 
 \end_inset
 
