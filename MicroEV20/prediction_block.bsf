@@ -100,13 +100,6 @@ refer to the applicable agreement for further details.
 		(text "predicting" (rect 135 75 195 94)(font "Intel Clear" (font_size 8)))
 		(line (pt 216 80)(pt 200 80))
 	)
-	(port
-		(pt 216 96)
-		(output)
-		(text "holdExtra" (rect 0 0 55 19)(font "Intel Clear" (font_size 8)))
-		(text "holdExtra" (rect 140 91 195 110)(font "Intel Clear" (font_size 8)))
-		(line (pt 216 96)(pt 200 96))
-	)
 	(drawing
 		(rectangle (rect 16 16 200 144))
 	)
