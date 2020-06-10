@@ -82,12 +82,274 @@
 \begin_body
 
 \begin_layout Subsection
-FETCH UNIT
+ALU UNIT
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang spanish
+Descripción General
 \end_layout
 
 \begin_layout Standard
-IMAGEN DEL BLOQUE, DESCRIPCION DEL MISMO, QUE HACE; INPUTS, OUTPUTS, SIMULACIONE
-S PARA MOSTRAR COMO ANDA.
+
+\lang spanish
+Este bloque se encarga de llevar a cabo las operaciones de la ALU y se shifter,
+ asi como tambien las de carry y el registro C:
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename imagenes/Screenshot 2020-06-09 20.22.24.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+Micro Instruction ROM
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Y por dentro funciona de la siguiente manera:
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename imagenes/Screenshot 2020-06-09 20.22.32.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+Micro Instruction ROM
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Los datos provenientes de A y B son introducidos en la ALU junto con el
+ selector de la operacion aluC.
+ Se lleva a cabo asincronicametne la operacion de acuerdo a la siguietne
+ tabla:
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/Screenshot 2020-06-09 22.58.27.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabla de operaciones de la ALU
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De esta operacion sale el resutlado Z y el carry carryOut.
+ El resultado es introducido en el shifter juunto al selector SH la cual
+ indica que operacion de shift introducir en el resultado Z.
+ La operacion de shifter corresponde a la siguiente tabla:
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/Screenshot 2020-06-09 22.58.278.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabla de operaciones del Shifter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La salida del shifter se almacena en el registro C.
+ El cual usa dos flip flops para ser escrito en el flanco ascendente y leido
+ en el descendente.
+ Por otro lado el carry, el clock y el selector de la alu ingresna al bloque
+ di carry, el cual decide si actualizar el carry out, el cual es guardado
+ en un registro.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang spanish
+Inputs
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+A: Operando de 16 bits que se introduce en la ALU.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+SH: Señal de 2 bits que indica que tipo de shift se introduce al resultado
+ de la ALU.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+B: Operando de 16 bits que se introduce en la ALU.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+aluC: Seleccion de cual operacion realiza la ALU.
+ (4 bits)
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Clk: Señal de clock
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang spanish
+Outputs
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+C: Salida del registro C de 16 bits.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+CY: Señal de Carry Out si esta es actualizada por la operacion realizada.
 \end_layout
 
 \end_body
