@@ -196,7 +196,7 @@ HRule
 
 { 
 \backslash
-huge Virtualización de servidores}
+huge Virtualizacion de servidores}
 \end_layout
 
 \begin_layout Plain Layout
@@ -445,6 +445,220 @@ end{titlepage}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Virtualización
+\end_layout
+
+\begin_layout Subsection
+Introducción
+\end_layout
+
+\begin_layout Subsubsection
+¿Qué es virtualización?
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/server_virtualization-traditional_virtual_architecture_desktop.jpg
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Esquema de maquinas virtuales en un mismo ambiente fisico
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ventajas/desventajas??
+\end_layout
+
+\begin_layout Standard
+Virtualized Environments 
+\end_layout
+
+\begin_layout Standard
+Three major components of Virtualized Environments 
+\end_layout
+
+\begin_layout Standard
+Host — the original environment (themachine or software) on which the VM
+ is implemented 
+\end_layout
+
+\begin_layout Standard
+Guest — the OS that interacts with Virtualization Layer under the control
+ of the VM Virtualization 
+\end_layout
+
+\begin_layout Standard
+Layer — recreate the same or different environment where guest will run.
+\end_layout
+
+\begin_layout Subsubsection
+Virtualización vs informática de cloud
+\end_layout
+
+\begin_layout Standard
+A pesar de ser tecnologías que suscitan el mismo interés, la virtualización
+ y la informática de cloud no son intercambiables.
+ La virtualización utiliza el software para separar los entornos informáticos
+ de la infraestructura física, mientras que la informática de cloud es un
+ servicio que proporciona recursos informáticos compartidos (software o
+ datos) según las necesidades por medio de Internet.
+ Como son soluciones complementarias, las organizaciones pueden comenzar
+ por virtualizar sus servidores y luego adoptar la informática de cloud
+ para lograr una mayor agilidad y capacidad de autoservicio.
+\end_layout
+
+\begin_layout Subsection
+Funcionamiento
+\end_layout
+
+\begin_layout Standard
+A grandes rasgos el funcionamiento de los servidores virtuales puede entenderse
+ como la siguiente serie de pasos:
+\end_layout
+
+\begin_layout Itemize
+Un Layer dedicado separa la capa fisica del host del guest
+\end_layout
+
+\begin_layout Itemize
+Este software divide y maneja los rescursos fisicos a los guests.
+\end_layout
+
+\begin_layout Itemize
+El usuario utiliza directamente las aplicaciones e interfaces que corren
+ en los guests.
+\end_layout
+
+\begin_layout Itemize
+El Layer se encarga de entregar recursos de la capa fisica a un guest cuando
+ el usuario los solicita asi como tambien efectuar los cambios necesarios
+ en la capa fisica.
+\end_layout
+
+\begin_layout Standard
+Los servidores virtuales pueden dividirse en tres categorias principales.
+ Estas son virtualización completa, virtualización parcial y virtualización
+ por sistema operativo(OS).
+\end_layout
+
+\begin_layout Subsubsection
+Virtualización completa
+\end_layout
+
+\begin_layout Standard
+En este tipo de virtualización se tiene que cada guest se comporta de manera
+ independiente de los demás y no hay interacción entre ellos.
+ Los guests pueden utilizar distintos sistemas operativos y distintos formas
+ de manejo de archivos.
+ Sin embargo, todo los guests corren en el mismo servidor físico, por lo
+ que comparten los recursos físicos de este.
+\end_layout
+
+\begin_layout Standard
+Con el fin de cada guest se abstraiga completamente de los demás, se utiliza
+ un software denominado hypervisor el cual se encarga de interactuar directament
+e con los recursos del host como el disco y la CPU.
+\end_layout
+
+\begin_layout Subsubsection
+Virtualización parcial
+\end_layout
+
+\begin_layout Standard
+A diferencia de la virtualización completa, se puede pensar como que en
+ este tipo de virtualización se 
+\begin_inset Quotes eld
+\end_inset
+
+delegan
+\begin_inset Quotes erd
+\end_inset
+
+ tareas sobre los guests.
+ En este caso los guests saben de la existencia de los demás y también que
+ recursos necesitan utilizar.
+ Por lo que, si bien en este esquema también hay un hypervisor, el mismo
+ necesita menos procesamiento ya que cada guest esta enterado de las demandas
+ de recursos de los demás.
+\end_layout
+
+\begin_layout Subsubsection
+Virtualización por OS
+\end_layout
+
+\begin_layout Standard
+Finalmente, la virtualización por OS se distingue en que no hay hypervisor
+ sino que la funcionalidad de virtualización es empleada completamente por
+ el OS del host.
+ En este caso se tiene la limitación de que todos los guests deben utilizar
+ el mismo OS.
+ Tiene en comun con la virtualización completa el hecho de que cada guest
+ es independiente del otro y no sabe de la existencia de los demás.
+\end_layout
+
+\begin_layout Subsection
+Estado del arte
+\end_layout
+
+\begin_layout Subsection
+Dirección y futuro
 \end_layout
 
 \end_body

@@ -75,6 +75,401 @@
 
 \begin_body
 
+\begin_layout Standard
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{titlepage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+HRule}{
+\backslash
+rule{
+\backslash
+linewidth}{0.5mm}}       
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+center        
+\end_layout
+
+\begin_layout Plain Layout
+
+%-------------------------------------------------------------------------------
+--------- 
+\end_layout
+
+\begin_layout Plain Layout
+
+%	HEADING SECTIONS 
+\end_layout
+
+\begin_layout Plain Layout
+
+%-------------------------------------------------------------------------------
+---------      
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+textsc{
+\backslash
+LARGE Instituto Tecnológico de Buenos Aires}
+\backslash
+
+\backslash
+[2cm]  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+textsc{
+\backslash
+Large 22.15 - Electrónica V}
+\backslash
+
+\backslash
+[1.5cm]  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+textsc{
+\backslash
+large Trabajo Práctico N°1}
+\backslash
+
+\backslash
+[0.5cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+%-------------------------------------------------------------------------------
+--------- 
+\end_layout
+
+\begin_layout Plain Layout
+
+%	TITLE SECTION 
+\end_layout
+
+\begin_layout Plain Layout
+
+%-------------------------------------------------------------------------------
+---------      
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+HRule 
+\backslash
+
+\backslash
+[0.5cm] 
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\backslash
+huge Virtualizacion de servidores}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[0.4cm]  
+\backslash
+HRule 
+\backslash
+
+\backslash
+[2cm]       
+\end_layout
+
+\begin_layout Plain Layout
+
+%-------------------------------------------------------------------------------
+--------- 
+\end_layout
+
+\begin_layout Plain Layout
+
+%	AUTHOR SECTION 
+\end_layout
+
+\begin_layout Plain Layout
+
+%-------------------------------------------------------------------------------
+---------      
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}{0.4
+\backslash
+textwidth} 
+\backslash
+begin{flushleft} 
+\backslash
+large 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+emph{Grupo 1:}
+\backslash
+
+\backslash
+		 [.3cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+Matías Agustín 
+\backslash
+textsc{Larroque}
+\backslash
+
+\backslash
+ Leg.
+ 56597 
+\backslash
+
+\backslash
+  [.3cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+Tomás Agustín 
+\backslash
+textsc{González Orlando}
+\backslash
+
+\backslash
+ Leg.
+ 57090 
+\backslash
+
+\backslash
+  [.3cm] 
+\end_layout
+
+\begin_layout Plain Layout
+
+Lucero Guadalupe 
+\backslash
+textsc{Fernandez}
+\backslash
+
+\backslash
+ Leg.
+ 57485 
+\backslash
+
+\backslash
+  [.3cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+Manuel Fernando 
+\backslash
+textsc{Mollón}
+\backslash
+
+\backslash
+ Leg.
+ 58023 
+\backslash
+
+\backslash
+  [.3cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+Ezequiel 
+\backslash
+textsc{Vijande}
+\backslash
+
+\backslash
+ Leg.
+ 58057 
+\backslash
+
+\backslash
+  [.3cm] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{flushleft} 
+\backslash
+end{minipage} ~ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}{0.4
+\backslash
+textwidth} 
+\backslash
+begin{flushright} 
+\backslash
+large 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+emph{Profesores:} 
+\backslash
+
+\backslash
+ [.3cm] 
+\end_layout
+
+\begin_layout Plain Layout
+
+Andrés Carlos 
+\backslash
+textsc{Rodríguez}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Pablo 
+\backslash
+textsc{Wündes}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{flushright} 
+\backslash
+end{minipage}
+\backslash
+
+\backslash
+[2cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+%-------------------------------------------------------------------------------
+--------- 
+\end_layout
+
+\begin_layout Plain Layout
+
+%	DATE SECTION 
+\end_layout
+
+\begin_layout Plain Layout
+
+%-------------------------------------------------------------------------------
+---------      
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vfill {
+\backslash
+large Entregado: 16 de Junio de 2020}
+\backslash
+
+\backslash
+[2cm]      
+\backslash
+vfill       
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{titlepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 ¿Qué es virtualización de servidores?
 \end_layout
