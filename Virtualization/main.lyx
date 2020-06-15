@@ -475,6 +475,10 @@ Virtualización
 \end_layout
 
 \begin_layout Subsection
+Introduccion
+\end_layout
+
+\begin_layout Subsubsection
 ¿Qué es virtualización?
 \end_layout
 
@@ -521,11 +525,15 @@ A pesar de ser tecnologías que suscitan el mismo interés, la virtualización
 \end_layout
 
 \begin_layout Subsection
-Virtualizacion de servidores
+Funcionamiento
 \end_layout
 
-\begin_layout Standard
-caracteristicas
+\begin_layout Subsection
+Estado del arte
+\end_layout
+
+\begin_layout Subsection
+Direccion y futuro
 \end_layout
 
 \end_body

@@ -7,7 +7,7 @@
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
-\language english
+\language spanish-mexico
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -28,12 +28,11 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\float_placement tph
 \paperfontsize default
 \spacing single
 \use_hyperref false
 \papersize default
-\use_geometry true
+\use_geometry false
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -58,17 +57,13 @@
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 19mm
-\topmargin 19mm
-\rightmargin 19mm
-\bottommargin 25mm
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation skip
-\defskip medskip
+\paragraph_separation indent
+\paragraph_indentation default
 \is_math_indent 0
 \math_numbering_side default
-\quotes_style english
+\quotes_style french
 \dynamic_quotes 0
 \papercolumns 1
 \papersides 1
@@ -162,7 +157,7 @@ Large 22.15 - Electrónica V}
 \backslash
 textsc{
 \backslash
-large Trabajo Práctico N°2}
+large Trabajo Práctico N°1}
 \backslash
 
 \backslash
@@ -201,7 +196,7 @@ HRule
 
 { 
 \backslash
-huge EV20 - Unidad Central de Procesamiento}
+huge Virtualizacion de servidores}
 \end_layout
 
 \begin_layout Plain Layout
@@ -262,14 +257,30 @@ emph{Grupo 1:}
 
 \begin_layout Plain Layout
 
-Ezequiel 
+Matías Agustín 
 \backslash
-textsc{Vijande}
+textsc{Larroque}
 \backslash
 
 \backslash
  Leg.
- 58057 
+ 56597 
+\backslash
+
+\backslash
+  [.3cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+Tomás Agustín 
+\backslash
+textsc{González Orlando}
+\backslash
+
+\backslash
+ Leg.
+ 57090 
 \backslash
 
 \backslash
@@ -310,50 +321,40 @@ textsc{Mollón}
 
 \begin_layout Plain Layout
 
-Matías Agustín 
+Ezequiel 
 \backslash
-textsc{Larroque}
-\backslash
-
-\backslash
- Leg.
- 56597 
-\backslash
-
-\backslash
-  [.3cm]
-\end_layout
-
-\begin_layout Plain Layout
-
-Robin 
-\backslash
-textsc{Bertrand}
+textsc{Vijande}
 \backslash
 
 \backslash
  Leg.
- 61739 
-\backslash
-
-\backslash
-  [.3cm]
-\end_layout
-
-\begin_layout Plain Layout
-
-Tomás Agustín 
-\backslash
-textsc{González Orlando}
-\backslash
-
-\backslash
- Leg.
- 57090 
+ 58057 
 \backslash
 
 \backslash
   [.3cm] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{flushleft} 
+\backslash
+end{minipage} ~ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}{0.4
+\backslash
+textwidth} 
+\backslash
+begin{flushright} 
+\backslash
+large 
 \end_layout
 
 \begin_layout Plain Layout
@@ -425,7 +426,7 @@ end{minipage}
 \backslash
 vfill {
 \backslash
-large Entregado: 9 de Junio de 2020}
+large Entregado: 16 de Junio de 2020}
 \backslash
 
 \backslash
