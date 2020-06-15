@@ -7,7 +7,7 @@
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
-\language english
+\language spanish-mexico
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -29,6 +29,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -44,6 +45,7 @@
 \use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -61,7 +63,7 @@
 \paragraph_indentation default
 \is_math_indent 0
 \math_numbering_side default
-\quotes_style english
+\quotes_style french
 \dynamic_quotes 0
 \papercolumns 1
 \papersides 1
@@ -76,8 +78,6 @@
 \begin_body
 
 \begin_layout Standard
-
-\lang spanish-mexico
 \begin_inset ERT
 status open
 
@@ -475,11 +475,55 @@ Virtualización
 \end_layout
 
 \begin_layout Subsection
-Introduccion
+Introducción
 \end_layout
 
 \begin_layout Subsubsection
 ¿Qué es virtualización?
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/server_virtualization-traditional_virtual_architecture_desktop.jpg
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Esquema de maquinas virtuales en un mismo ambiente fisico
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -500,7 +544,7 @@ Host — the original environment (themachine or software) on which the VM
 \end_layout
 
 \begin_layout Standard
-Guest — the OSthat interacts with Virtualization Layer under the control
+Guest — the OS that interacts with Virtualization Layer under the control
  of the VM Virtualization 
 \end_layout
 
@@ -509,7 +553,7 @@ Layer — recreate the same or different environment where guest will run.
 \end_layout
 
 \begin_layout Subsubsection
-Virtualziacion vs informatica de cloud
+Virtualización vs informática de cloud
 \end_layout
 
 \begin_layout Standard
@@ -528,12 +572,75 @@ A pesar de ser tecnologías que suscitan el mismo interés, la virtualización
 Funcionamiento
 \end_layout
 
+\begin_layout Standard
+Para analizar el funcionamiento general de los servidores virtuales primero
+ es necesario identificar las tres categorías principales en las que se
+ pueden dividir.
+ Estas son virtualización completa, virtualización parcial y virtualización
+ por sistema operativo(OS).
+\end_layout
+
+\begin_layout Subsubsection
+Virtualización completa
+\end_layout
+
+\begin_layout Standard
+En este tipo de virtualización se tiene que cada guest se comporta de manera
+ independiente de los demás y no hay interacción entre ellos.
+ Los guests pueden utilizar distintos sistemas operativos y distintos formas
+ de manejo de archivos.
+ Sin embargo, todo los guests corren en el mismo servidor físico, por lo
+ que comparten los recursos físicos de este.
+\end_layout
+
+\begin_layout Standard
+Con el fin de cada guest se abstraiga completamente de los demás, se utiliza
+ un software denominado hypervisor el cual se encarga de interactuar directament
+e con los recursos del host como el disco y la CPU.
+\end_layout
+
+\begin_layout Subsubsection
+Virtualización parcial
+\end_layout
+
+\begin_layout Standard
+A diferencia de la virtualización completa, se puede pensar como que en
+ este tipo de virtualización se 
+\begin_inset Quotes eld
+\end_inset
+
+delegan
+\begin_inset Quotes erd
+\end_inset
+
+ tareas sobre los guests.
+ En este caso los guests saben de la existencia de los demás y también que
+ recursos necesitan utilizar.
+ Por lo que, si bien en este esquema también hay un hypervisor, el mismo
+ necesita menos procesamiento ya que cada guest esta enterado de las demandas
+ de recursos de los demás.
+\end_layout
+
+\begin_layout Subsubsection
+Virtualización por OS
+\end_layout
+
+\begin_layout Standard
+Finalmente, la virtualización por OS se distingue en que no hay hypervisor
+ sino que la funcionalidad de virtualización es empleada completamente por
+ el OS del host.
+ En este caso se tiene la limitación de que todos los guests deben utilizar
+ el mismo OS.
+ Tiene en comun con la virtualización completa el hecho de que cada guest
+ es independiente del otro y no sabe de la existencia de los demás.
+\end_layout
+
 \begin_layout Subsection
 Estado del arte
 \end_layout
 
 \begin_layout Subsection
-Direccion y futuro
+Dirección y futuro
 \end_layout
 
 \end_body
