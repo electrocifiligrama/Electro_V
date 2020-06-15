@@ -29,9 +29,10 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -44,6 +45,7 @@
 \use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -55,6 +57,10 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 1.5cm
+\topmargin 2cm
+\rightmargin 1.5cm
+\bottommargin 2.5cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -75,62 +81,96 @@
 
 \begin_body
 
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "caratula.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "que_es_virtualizacion.lyx"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-Virtualización
+Características
 \end_layout
 
 \begin_layout Subsection
-¿Qué es virtualización?
+Simplicidad
+\end_layout
+
+\begin_layout Subsection
+Inteligencia
+\end_layout
+
+\begin_layout Subsection
+Seguridad
+\end_layout
+
+\begin_layout Section
+Desventajas
 \end_layout
 
 \begin_layout Standard
-ventajas/desventajas??
+menos independencia/autonomia
 \end_layout
 
 \begin_layout Standard
-Virtualized Environments 
+etc
 \end_layout
 
-\begin_layout Standard
-Three major components of Virtualized Environments 
-\end_layout
-
-\begin_layout Standard
-Host — the original environment (themachine or software) on which the VM
- is implemented 
-\end_layout
-
-\begin_layout Standard
-Guest — the OSthat interacts with Virtualization Layer under the control
- of the VM Virtualization 
-\end_layout
-
-\begin_layout Standard
-Layer — recreate the same or different environment where guest will run.
+\begin_layout Subsection
+(Enumero desventajas)
 \end_layout
 
 \begin_layout Subsubsection
-Virtualziacion vs informatica de cloud
+Beneficios para el negocio
 \end_layout
 
-\begin_layout Standard
-A pesar de ser tecnologías que suscitan el mismo interés, la virtualización
- y la informática de cloud no son intercambiables.
- La virtualización utiliza el software para separar los entornos informáticos
- de la infraestructura física, mientras que la informática de cloud es un
- servicio que proporciona recursos informáticos compartidos (software o
- datos) según las necesidades por medio de Internet.
- Como son soluciones complementarias, las organizaciones pueden comenzar
- por virtualizar sus servidores y luego adoptar la informática de cloud
- para lograr una mayor agilidad y capacidad de autoservicio.
+\begin_layout Paragraph
+Costos Bajos
+\end_layout
+
+\begin_layout Paragraph
+Disponibilidad Alta
+\end_layout
+
+\begin_layout Paragraph
+Manejo de Recursos Ágil
+\end_layout
+
+\begin_layout Paragraph
+Administración Centralizada
+\end_layout
+
+\begin_layout Section
+Más allá de virtualización de servidores
 \end_layout
 
 \begin_layout Subsection
-Virtualizacion de servidores
+Virtualización de Almacenamiento
+\end_layout
+
+\begin_layout Subsection
+Virtualización de Networking
+\end_layout
+
+\begin_layout Section
+Referencias
 \end_layout
 
 \begin_layout Standard
-caracteristicas
+pagina de vmware, recursos que estaban ahí
 \end_layout
 
 \end_body
