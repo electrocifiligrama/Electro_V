@@ -653,8 +653,14 @@ Finalmente, la virtualización por OS se distingue en que no hay hypervisor
  es independiente del otro y no sabe de la existencia de los demás.
 \end_layout
 
-\begin_layout Subsection
-Estado del arte
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "state_of_art.lyx"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
