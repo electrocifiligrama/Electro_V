@@ -491,10 +491,6 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Imagenes/server_virtualization-traditional_virtual_architecture_desktop.jpg
@@ -573,9 +569,31 @@ Funcionamiento
 \end_layout
 
 \begin_layout Standard
-Para analizar el funcionamiento general de los servidores virtuales primero
- es necesario identificar las tres categorías principales en las que se
- pueden dividir.
+A grandes rasgos el funcionamiento de los servidores virtuales puede entenderse
+ como la siguiente serie de pasos:
+\end_layout
+
+\begin_layout Itemize
+Un Layer dedicado separa la capa fisica del host del guest
+\end_layout
+
+\begin_layout Itemize
+Este software divide y maneja los rescursos fisicos a los guests.
+\end_layout
+
+\begin_layout Itemize
+El usuario utiliza directamente las aplicaciones e interfaces que corren
+ en los guests.
+\end_layout
+
+\begin_layout Itemize
+El Layer se encarga de entregar recursos de la capa fisica a un guest cuando
+ el usuario los solicita asi como tambien efectuar los cambios necesarios
+ en la capa fisica.
+\end_layout
+
+\begin_layout Standard
+Los servidores virtuales pueden dividirse en tres categorias principales.
  Estas son virtualización completa, virtualización parcial y virtualización
  por sistema operativo(OS).
 \end_layout
