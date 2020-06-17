@@ -132,7 +132,7 @@ Irónicamente, en los '90, las capacidades de las computadoras modernas y
  originalmente, sino más una solución para confiabilidad y seguridad.
  
 \begin_inset Note Comment
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Por ejemplo, funciones como migración y seguridad que tuvieron sus dificultades
@@ -170,8 +170,97 @@ Protection rings
 Beneficios 
 \end_layout
 
+\begin_layout Standard
+La virtualización lleva consigo beneficios e inconvenientes intrínsecos
+ de esta tecnología.
+ En esta parte del artículo se intenta agrupar los beneficios en tres factores,
+ y también luego se mencionarán los inconvenientes.
+\end_layout
+
+\begin_layout Standard
+El primer beneficio se lo puede etiquetar como 
+\begin_inset Quotes eld
+\end_inset
+
+consolidación
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Esta consolidación, o unificación, permite combinar todas las cargas de
+ trabajo en un número reducido de plataformas físicas, lo cual incrementa
+ el uso de los recursos y la optimización a la hora de utilizarlos.
+ Además, poseer en funcionamiento una plataforma de virtualización que admita
+ compatibilidad y permita administrar distintos sistemas independientes,
+ favorece la migración de sistemas antiguos e incompatibles con tecnologías
+ emergentes por otros más actuales, ya que no hace falta cesar la actividad
+ de aquellos sistemas que no sean necesario cambiar, lo cual reduce el impacto
+ en estas migraciones de sistemas.
+\end_layout
+
+\begin_layout Standard
+En segundo lugar, se cuenta con la 
+\begin_inset Quotes eld
+\end_inset
+
+fiabilidad
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Se puede afirmar esto ya que esta tecnología mantiene funcionalidades y
+ disponibilidades de operación en distintas maquinas virtuales, de manera
+ aislada, lo cual permite que alguna de las maquinas falle, sin que esta
+ falla tenga efectos sobre otras maquinas, aunque estás esten funcionando
+ en el momento de la falla.
+ Por otra parte, a las maquinas virtuales les son asignados recursos a medida
+ que estas los necesitan, sin que tengan que encargarse de la obtención,
+ configuración e instalación de los mismos.
+\end_layout
+
+\begin_layout Standard
+Como tercer y último lugar, se identifica al beneficio de la 
+\begin_inset Quotes eld
+\end_inset
+
+seguridad
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Este beneficio se da en el sentido del aislamiento entre maquinas virtuales,
+ ya que si la seguridad de una maquina está comprometida, el riesgo se detiene
+ en esa maquina y no se propaga a las demás, debido a la capa de virtualización.
+\end_layout
+
 \begin_layout Subsubsection
 Inconvenientes
+\end_layout
+
+\begin_layout Standard
+En cuanto a los inconvenientes de la tecnología de virtualización, se identifica
+n:
+\end_layout
+
+\begin_layout Standard
+1) Pérdida de performance/rendimiento en algunos casos específicos en los
+ que se requiera un hardware único para mayor eficiencia, o para cálculos
+ que lleven mucho tiempo y que requieran mucha capacidad de una central
+ de procesamiento especial.
+\end_layout
+
+\begin_layout Standard
+2) Necesidad de redundancia en el caso de que falle el hardware que implementa
+ la virtualización.
+ Al fallar este, todas las particiones pierden sus datos, excepto que se
+ tenga una redundancia para este hardware.
+\end_layout
+
+\begin_layout Standard
+3) Costos operativos.
+ En una organización, se debe tener en cuenta la necesidad de personal experto
+ para poder encargarse de mantener y manejar el entorno virtual, dado sus
+ complejidades, licencias que hay que tener en cuenta, y actualizaciones.
 \end_layout
 
 \begin_layout Subsubsection
