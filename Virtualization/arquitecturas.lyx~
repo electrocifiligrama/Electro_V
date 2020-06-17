@@ -359,7 +359,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Anillos de protección.
+Anillos de protección en CPU de arquitectura x86.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:anillos-de-prot"
@@ -383,7 +383,21 @@ name "fig:anillos-de-prot"
 Los anillos menos privilegiados no pueden acceder a los anillos del interior
  sin instrucciones que expliciten y permitan ese acceso.
  Y son los anillos exteriores los que tienen estas restricciones para resguardar
- y proteger la información y funcionalidades 
+ y proteger la información y funcionalidades internas de malos usos, malware,
+ y demás.
+\end_layout
+
+\begin_layout Standard
+En un entorno de virtualización, el hipervisor corre en modo kernel (
+\shape italic
+Ring-0
+\shape default
+) porque es su responsabilidad asignar recursos de hardware y alojar memorias
+ de dirección a las máquinas virtuales huéspedes.
+ Ergo, estas VMs corren en un anillo con menos privilegios que el anillo-0,
+ entonces el kernel de las máquinas virtuales cuenta con menos privilegios
+ para acceder a recursos o referenciar direcciones de memoria sin el consentimie
+nto del hipervisor.
 \end_layout
 
 \end_body
