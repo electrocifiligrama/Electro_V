@@ -75,7 +75,7 @@
 
 \begin_body
 
-\begin_layout Section
+\begin_layout Subsection
 Desarrollo en el ambiente empresarial
 \end_layout
 
@@ -97,7 +97,7 @@ magic quadrant
 \begin_inset Quotes erd
 \end_inset
 
- actualizado al año 2019:
+ actualizado al año 2016:
 \end_layout
 
 \begin_layout Standard
@@ -150,21 +150,12 @@ Se puede ver que la empresa
 \begin_inset Quotes eld
 \end_inset
 
-Nutanix
-\begin_inset Quotes erd
-\end_inset
-
-, por ejemplo, Se situa como la segunda más visionaria, y en primer lugar
- como la líder en el mercado, mientras que la más visionaria pero segundo
- puesto en liderazgo es 
-\begin_inset Quotes eld
-\end_inset
-
 VMware
 \begin_inset Quotes erd
 \end_inset
 
-, también en el cuadrante se plasman varias empresas con actividad de nicho.
+, por ejemplo, Se situa como la más visionaria y como la líder en el mercado.
+ También en el cuadrante se plasman varias empresas con actividad de nicho.
 \end_layout
 
 \end_body

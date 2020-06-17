@@ -146,10 +146,6 @@ Por ejemplo, funciones como migración y seguridad que tuvieron sus dificultades
 
 \end_layout
 
-\begin_layout Subsubsection
-Arquitecturas de Virtualización
-\end_layout
-
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input

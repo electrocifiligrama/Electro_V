@@ -81,7 +81,7 @@
 
 \begin_body
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Arquitecturas de Virtualización
 \end_layout
 
@@ -279,7 +279,7 @@ check pointing
  de virtualización desde un anfitrión físico hacia otro.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Anillos de Protección
 \end_layout
 

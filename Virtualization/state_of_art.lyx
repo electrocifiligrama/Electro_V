@@ -81,11 +81,11 @@
 
 \begin_body
 
-\begin_layout Subsection
+\begin_layout Section
 Estado del Arte
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Antecedentes
 \end_layout
 
@@ -156,7 +156,7 @@ filename "arquitecturas.lyx"
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Beneficios 
 \end_layout
 
@@ -223,7 +223,7 @@ seguridad
  en esa maquina y no se propaga a las demás, debido a la capa de virtualización.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Inconvenientes
 \end_layout
 

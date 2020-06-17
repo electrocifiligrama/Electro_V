@@ -84,7 +84,7 @@
 
 \begin_body
 
-\begin_layout Subsection
+\begin_layout Section
 Funcionamiento
 \end_layout
 
@@ -130,7 +130,7 @@ Los servidores virtuales pueden dividirse en tres categorias principales.
  por sistema operativo(OS).
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 
 \lang spanish-mexico
 Virtualización completa

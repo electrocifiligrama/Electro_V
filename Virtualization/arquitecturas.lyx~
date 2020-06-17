@@ -116,13 +116,11 @@ status open
 
 \begin_layout Plain Layout
 Imagen extraída de: 
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-https://www.how2shout.com/how-to/hyper-v-vs-virtualbox-basic-comparison.html
-\end_layout
+\begin_inset CommandInset href
+LatexCommand href
+name "https://www.how2shout.com/how-to/hyper-v-vs-virtualbox-basic-comparison.html"
+target "https://www.how2shout.com/how-to/hyper-v-vs-virtualbox-basic-comparison.html"
+literal "false"
 
 \end_inset
 
@@ -299,17 +297,15 @@ noprefix "false"
 
 )
 \begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Imagen extraída de: 
-\begin_inset Flex URL
 status open
 
 \begin_layout Plain Layout
-
-https://es.wikipedia.org/wiki/Anillo_(seguridad_informática)
-\end_layout
+Imagen extraída de: 
+\begin_inset CommandInset href
+LatexCommand href
+name "https://es.wikipedia.org/wiki/Anillo_(seguridad_informática)"
+target "https://es.wikipedia.org/wiki/Anillo_(seguridad_informática)"
+literal "false"
 
 \end_inset
 

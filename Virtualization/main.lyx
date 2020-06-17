@@ -474,51 +474,86 @@ LatexCommand tableofcontents
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "intro.lyx"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-Virtualización
+
+\lang english
+Estado del Arte
 \end_layout
 
 \begin_layout Subsection
-Introducción
-\end_layout
 
-\begin_layout Subsubsection
-¿Qué es virtualización?
+\lang english
+Antecedentes
 \end_layout
 
 \begin_layout Standard
-\align center
-\begin_inset Float figure
-placement H
-wide false
-sideways false
+
+\lang english
+La práctica de la virtualización surgió en la década de 1960 cuando IBM
+ quiso mejorar el particionado de los mainframes (o computadoras centrales)
+ para mejorar la utilización del CPU, de manera que los programadores pudieran
+ estar utilizando recursos del mainframe al mismo tiempo.
+ Los científicos de IBM observaron que estas particiones lógicas permitían
+ que varios procesos y aplicaciones pudieran estar ejecutándose al mismo
+ tiempo, lo que aumentaba la eficiencia.
+ En ese tiempo, reinaban los costosos mainframes, por lo que tenía sentido
+ aprovechar este escaso recurso para múltiples procesos, mediante VMM (Virtual
+ Machine Monitor).
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Tiempo después, con el inicio de la década de 1980 y 1990, la arquitectura
+ x86 (que comprendía los microprocesadores compatibles con el juego de instrucci
+ones Intel 8086) empezó a prevalecer y surgieron las minicomputadoras y
+ luego las PCs (computadoras personales), al punto de que esta arquitectura
+ se empezó a utilizar para implementar servidores y los mainframes junto
+ a VMM pasaron a ser una curiosidad histórica.
+ A modo de ejemplo, era más costoso tener un mainframe que dividiera recursos
+ para una cantidad de tareas que tener varios equipos que realizaran cada
+ uno una de esas tareas, además que ocupaban un menor espacio.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Irónicamente, en los '90, las capacidades de las computadoras modernas y
+ su bajo costo (la combinación que había hecho tan prolífero el uso de VMM
+ en la década pasada) empezaron a causar problemas que los investigadores
+ pensaron que las máquinas virtuales podrían resolver.
+ Como ya mencionamos, los bajos costos de las PCs hicieron que su uso se
+ masificara, pero la CPU se encontraba generalmente infrautilizada, al igual
+ que el almacenamiento.
+ Además, la cantidad de funcionalidades agregadas en los sistemas operativos
+ hacían que éstos fueran más frágiles y vulnerables.
+ Poder mover aplicaciones que antes corrían en muchas máquinas físicas a
+ máquinas virtuales y consolidar las mismas en algunas pocas físicas permitía
+ incrementar la eficiencia y el uso de la CPU, como así también gestionar
+ mejor el almacenamiento.
+ En el presente, VMM no es tanto un vehículo para multitarea, como se pensó
+ originalmente, sino más una solución para confiabilidad y seguridad.
+ 
+\begin_inset Note Comment
 status collapsed
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Imagenes/server_virtualization-traditional_virtual_architecture_desktop.jpg
-	scale 60
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Esquema de maquinas virtuales en un mismo ambiente fisico
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
+\lang english
+Por ejemplo, funciones como migración y seguridad que tuvieron sus dificultades
+ al momento de llevarlas a cabo parecen tener una solución accesible en
+ la capa VMM, ya que provee cierta compatibilidad hacia atrás para implementar
+ sistemas operativos
 \end_layout
 
 \end_inset
@@ -527,48 +562,147 @@ Esquema de maquinas virtuales en un mismo ambiente fisico
 \end_layout
 
 \begin_layout Standard
-ventajas/desventajas??
-\end_layout
 
-\begin_layout Standard
-Virtualized Environments 
-\end_layout
+\lang english
+\begin_inset CommandInset include
+LatexCommand input
+filename "arquitecturas.lyx"
 
-\begin_layout Standard
-Three major components of Virtualized Environments 
-\end_layout
+\end_inset
 
-\begin_layout Standard
-Host — the original environment (themachine or software) on which the VM
- is implemented 
-\end_layout
 
-\begin_layout Standard
-Guest — the OS that interacts with Virtualization Layer under the control
- of the VM Virtualization 
-\end_layout
-
-\begin_layout Standard
-Layer — recreate the same or different environment where guest will run.
-\end_layout
-
-\begin_layout Subsubsection
-Virtualización vs informática de cloud
-\end_layout
-
-\begin_layout Standard
-A pesar de ser tecnologías que suscitan el mismo interés, la virtualización
- y la informática de cloud no son intercambiables.
- La virtualización utiliza el software para separar los entornos informáticos
- de la infraestructura física, mientras que la informática de cloud es un
- servicio que proporciona recursos informáticos compartidos (software o
- datos) según las necesidades por medio de Internet.
- Como son soluciones complementarias, las organizaciones pueden comenzar
- por virtualizar sus servidores y luego adoptar la informática de cloud
- para lograr una mayor agilidad y capacidad de autoservicio.
 \end_layout
 
 \begin_layout Subsection
+
+\lang english
+Beneficios 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+La virtualización lleva consigo beneficios e inconvenientes intrínsecos
+ de esta tecnología.
+ En esta parte del artículo se intenta agrupar los beneficios en tres factores,
+ y también luego se mencionarán los inconvenientes.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+El primer beneficio se lo puede etiquetar como 
+\begin_inset Quotes eld
+\end_inset
+
+consolidación
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Esta consolidación, o unificación, permite combinar todas las cargas de
+ trabajo en un número reducido de plataformas físicas, lo cual incrementa
+ el uso de los recursos y la optimización a la hora de utilizarlos.
+ Además, poseer en funcionamiento una plataforma de virtualización que admita
+ compatibilidad y permita administrar distintos sistemas independientes,
+ favorece la migración de sistemas antiguos e incompatibles con tecnologías
+ emergentes por otros más actuales, ya que no hace falta cesar la actividad
+ de aquellos sistemas que no sean necesario cambiar, lo cual reduce el impacto
+ en estas migraciones de sistemas.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+En segundo lugar, se cuenta con la 
+\begin_inset Quotes eld
+\end_inset
+
+fiabilidad
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Se puede afirmar esto ya que esta tecnología mantiene funcionalidades y
+ disponibilidades de operación en distintas maquinas virtuales, de manera
+ aislada, lo cual permite que alguna de las maquinas falle, sin que esta
+ falla tenga efectos sobre otras maquinas, aunque estás esten funcionando
+ en el momento de la falla.
+ Por otra parte, a las maquinas virtuales les son asignados recursos a medida
+ que estas los necesitan, sin que tengan que encargarse de la obtención,
+ configuración e instalación de los mismos.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Como tercer y último lugar, se identifica al beneficio de la 
+\begin_inset Quotes eld
+\end_inset
+
+seguridad
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Este beneficio se da en el sentido del aislamiento entre maquinas virtuales,
+ ya que si la seguridad de una maquina está comprometida, el riesgo se detiene
+ en esa maquina y no se propaga a las demás, debido a la capa de virtualización.
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+Inconvenientes
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+En cuanto a los inconvenientes de la tecnología de virtualización, se identifica
+n:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+1) Pérdida de performance/rendimiento en algunos casos específicos en los
+ que se requiera un hardware único para mayor eficiencia, o para cálculos
+ que lleven mucho tiempo y que requieran mucha capacidad de una central
+ de procesamiento especial.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+2) Necesidad de redundancia en el caso de que falle el hardware que implementa
+ la virtualización.
+ Al fallar este, todas las particiones pierden sus datos, excepto que se
+ tenga una redundancia para este hardware.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+3) Costos operativos.
+ En una organización, se debe tener en cuenta la necesidad de personal experto
+ para poder encargarse de mantener y manejar el entorno virtual, dado sus
+ complejidades, licencias que hay que tener en cuenta, y actualizaciones.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset CommandInset include
+LatexCommand input
+filename "Security_Threats.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 
 \lang spanish
 Funcionamiento
@@ -604,7 +738,7 @@ Los servidores virtuales pueden dividirse en tres categorias principales.
  por sistema operativo(OS).
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Virtualización completa
 \end_layout
 
@@ -713,7 +847,7 @@ https://www.microsoft.com/es-ar/download/details.aspx?id=3702
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Virtualización parcial
 \end_layout
 
@@ -735,7 +869,7 @@ delegan
  de recursos de los demás.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Virtualización por OS
 \end_layout
 
@@ -854,18 +988,27 @@ Para este caso el hypervisor hace uso del CPU directamente por lo que es
  directamente mediante Xen.
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "state_of_art.lyx"
-
-\end_inset
-
-
+\begin_layout Section
+Conclusiones y visión de futuro
 \end_layout
 
-\begin_layout Subsection
-Dirección y futuro
+\begin_layout Standard
+La virtualización es una tecnología ampliamente utilizada a través del tiempo,
+ que permite aprovechar recursos de hardware de manera eficiente y promueven
+ la expansión de servidores en empresas.
+ La independencia y el aislamiento que se brinda entre los servidores es
+ la pieza escencial de esta tecnología.
+\end_layout
+
+\begin_layout Standard
+Virtualización de servidores sigue estando notablemente vigente en el mercado,
+ y continúa en crecimiento, a pesar de haber surgido en los principios de
+ los 70s, y habiendo hoy en día otras opciones que pueden llegar a ser competenc
+ia, como los contenedores o el cloud service.
+ Sin embargo, la robustez de la virtualización es tal que se complementa
+ con estas herramientas.
+ Esto es lo que nos permite afirmar que es altamente probable que la virtualizac
+ión continúe implementandosé en el mercado.
 \end_layout
 
 \begin_layout Bibliography

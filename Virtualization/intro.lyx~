@@ -86,23 +86,25 @@ Definiciones
 \end_layout
 
 \begin_layout Itemize
-Workload
+Workload: Cargas de trabajo.
 \end_layout
 
 \begin_layout Itemize
-Uptime
+Uptime: Tiempo en el que un servidor se mantiene activo durante un tiempo
+ determinado.
 \end_layout
 
 \begin_layout Itemize
-Host
+Host: Anfitrión.
 \end_layout
 
 \begin_layout Itemize
-Layer
+Layer: Capa.
 \end_layout
 
 \begin_layout Itemize
-Dongles
+Dongles: Pequeño dispositivo que se conecta a otro para aportar una función
+ adicional.
 \end_layout
 
 \begin_layout Section
@@ -111,11 +113,11 @@ Introduccion
 
 \begin_layout Standard
 Se cree que el concepto tiene sus origenes en los 1970s, cuando IBM invirtio
- mucho tiempo y esfuerzo en desarollar soluciones robustas en cuanrto a
- uso eficiente de los recursos de varias computadoraas entre muchos usuarios.
+ mucho tiempo y esfuerzo en desarollar soluciones robustas en cuanto a uso
+ eficiente de los recursos de varias computadoras entre muchos usuarios.
  Este concepto cambio el paradigma del uso eficietne de la tencologia, llegando
  a proveer capacidad computacional por un precio mucho menor.
- Empezamos el i0nforme con una breve introduccion del tema, su definicion,
+ Empezamos el informe con una breve introducción del tema, su definición,
  beneficios y desventajas.
 \end_layout
 
@@ -134,15 +136,16 @@ virtus
 
  que significa virtud.
  Según la RAE, virtual, entre otras cosas, significa ''Que tiene existencia
- aparente y no real'' Por lo que cuando se habla de virtualizacion en el
- mundo informático/electrónico, describe la separación de recursos o solicitud
- de estos del medio físico que los provee.
+ aparente y no real''.
+ Por lo que cuando se habla de virtualización en el mundo informático/electrónic
+o describe la separación de recursos o solicitud de estos del medio físico
+ que los provee.
  Esto es decir, que el servicio o recurso utilizado aparenta provenir del
  medio físico del cual se utiliza.
  Un ejemplo seria el uso de memoria virtual, donde el software de una computador
 a gana acceso a mayor memoria de la que físicamente es capaz.
- Se puede apreciar en la siguiente imagen como cambia el paradigma depuse
- de la implementacion de una capa de visualización:
+ Se puede apreciar en la siguiente imagen como cambia el paradigma después
+ de la implementación de una capa de virtualización:
 \end_layout
 
 \begin_layout Standard
@@ -167,7 +170,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Antes y después de la virtualizacion
+Antes y después de la virtualización
 \end_layout
 
 \end_inset
@@ -191,7 +194,7 @@ De esta manera se crea una nueva capa de abstracción entre el hardware y
 \end_layout
 
 \begin_layout Standard
-Cuando se habla sobre virualización en servidores específicamente, hablamos
+Cuando se habla sobre virtualización en servidores específicamente, hablamos
  del proceso de dividir un servidor físico en múltiples servidores virtuales
  por medio de una aplicación de software, donde cada servidor puede correr
  su propio sistema operativo.
@@ -219,7 +222,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Ilustración de un servidor de virtualizacion (PowerEdge R710)
+Ilustración de un servidor de virtualización (PowerEdge R710)
 \end_layout
 
 \end_inset
@@ -233,7 +236,7 @@ Ilustración de un servidor de virtualizacion (PowerEdge R710)
 \end_layout
 
 \begin_layout Subsection
-Por qué Virtualización
+¿Por qué Virtualización?
 \end_layout
 
 \begin_layout Standard
@@ -243,14 +246,14 @@ e los recursos de infraestructura.
  de su verdadero poder de procesamiento.
  Esto nace a raíz de que al no estar bien distribuido el workload, muchos
  servidores quedan inutilizados a la espera.
- Esto lleva a desperdicios de recursos y energia.
+ Esto lleva a desperdicios de recursos y energía.
  Con el uso de virtualización, cada servidor se divide en múltiples servidores
  virtuales que utilizan de manera eficiente los recursos y trabajan en conjunto,
  como varios servidores independientes eficientes.
 \end_layout
 
 \begin_layout Subsection
-Virtualización vs Cloud computing
+Virtualización vs Cloud Computing
 \end_layout
 
 \begin_layout Standard
@@ -266,8 +269,8 @@ shared pool
 
  que pueden ser provistos con mínimo esfuerzo del proveedor.
  Mientras que la virtualización se basa en software como servicio (SaaS).
- Por lo que la nube es ventajosa para usos públicos, pero para na empresa
- puede llegar a ser mejor un approach por el lado de la virtualización.
+ Por lo que la nube es ventajosa para usos públicos, pero para una empresa
+ puede llegar a ser mejor un enfoque por el lado de la virtualización.
 \end_layout
 
 \begin_layout Standard
@@ -391,7 +394,7 @@ Virtualización: Falla de una maquina puede hacer caer múltiples maquinas
 
 \end_deeper
 \begin_layout Subsection
-Cuando conviene virtualizar?
+¿Cuándo conviene virtualizar?
 \end_layout
 
 \begin_layout Standard
@@ -432,7 +435,7 @@ Problemas de licencias: Algunas aplicaciones no permiten ser corridas sobre
 \end_layout
 
 \begin_layout Itemize
-Con el uso de aplicaciones I/O o dongles: Con aplicaciones con caracteristicas
+Con el uso de aplicaciones I/O o dongles: Con aplicaciones con características
  de alto I/O (ej: bases de datos), aplicaciones que requieren uso de gráficos
  intensivos o dongles se prefiere no utilizar virtualización.
 \end_layout
@@ -523,8 +526,8 @@ Puede tener altos costos de implementación: Para los proveedores de virtualizac
 
 \begin_layout Itemize
 Tiene sus limitaciones: Como se menciono anteriormente, no todas las aplicacione
- y servidores van a ser compatibles con la virtualización a la hora de ser
- implementada.
+s y servidores van a ser compatibles con la virtualización a la hora de
+ ser implementada.
 \end_layout
 
 \begin_layout Itemize
@@ -602,7 +605,7 @@ Virtuozzo: Creada para proveer soporte comercial a la plataforma KVM (Kernel
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -630,6 +633,17 @@ Tabla de comparacion
 \begin_layout Plain Layout
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+preview true
+filename "magicQuadrant.lyx"
 
 \end_inset
 
