@@ -151,19 +151,13 @@ Arquitecturas de Virtualización
 \end_layout
 
 \begin_layout Standard
-//imagen
-\end_layout
+\begin_inset CommandInset include
+LatexCommand input
+filename "arquitecturas.lyx"
 
-\begin_layout Standard
-bare metal vs hosted
-\end_layout
+\end_inset
 
-\begin_layout Standard
-características: isolation, interposition, inspection.
-\end_layout
 
-\begin_layout Standard
-Protection rings
 \end_layout
 
 \begin_layout Subsubsection
@@ -237,36 +231,40 @@ seguridad
 Inconvenientes
 \end_layout
 
-\begin_layout Subsubsection
-Security Threats 
+\begin_layout Standard
+En cuanto a los inconvenientes de la tecnología de virtualización, se identifica
+n:
 \end_layout
 
 \begin_layout Standard
-threats que al 2013 no tenian solucion
+1) Pérdida de performance/rendimiento en algunos casos específicos en los
+ que se requiera un hardware único para mayor eficiencia, o para cálculos
+ que lleven mucho tiempo y que requieran mucha capacidad de una central
+ de procesamiento especial.
 \end_layout
 
 \begin_layout Standard
-apartado aparte porque merece mencion especial, basicamente existen:
+2) Necesidad de redundancia en el caso de que falle el hardware que implementa
+ la virtualización.
+ Al fallar este, todas las particiones pierden sus datos, excepto que se
+ tenga una redundancia para este hardware.
 \end_layout
 
 \begin_layout Standard
-virtualization based malware
+3) Costos operativos.
+ En una organización, se debe tener en cuenta la necesidad de personal experto
+ para poder encargarse de mantener y manejar el entorno virtual, dado sus
+ complejidades, licencias que hay que tener en cuenta, y actualizaciones.
 \end_layout
 
 \begin_layout Standard
-denial of service attack (DoS attack)
-\end_layout
+\begin_inset CommandInset include
+LatexCommand input
+filename "Security_Threats.lyx"
 
-\begin_layout Standard
-Communication Attack among guest VMs and the host
-\end_layout
+\end_inset
 
-\begin_layout Standard
-VM Escape
-\end_layout
 
-\begin_layout Standard
-Inter-VM Attacks and Network Blind Spots
 \end_layout
 
 \end_body
