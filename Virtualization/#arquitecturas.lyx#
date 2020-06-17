@@ -1,0 +1,401 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5cm
+\topmargin 2cm
+\rightmargin 1.5cm
+\bottommargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Subsubsection
+Arquitecturas de Virtualización
+\end_layout
+
+\begin_layout Standard
+Como ya mencionamos, el software de virtualización se conoce como hipervisor
+ o Virtual Machine Monitor (VMM) cuyo propósito es alojar los recursos físicos
+ a cada sistema operativo o a cada aplicación que se está ejecutando sobre
+ un sistema operativo.
+ Una vez definido, el hipervisor emula un dispositivo físico para cada sistema
+ operativo virtual y maneja las comunicaciones entre este SO y los recursos
+ físicos.
+\end_layout
+
+\begin_layout Standard
+El software del hipervisor puede instalarse de manera independiente o como
+ parte de un sistema operativo.
+ Como consecuencia, la manera en la que el hipervisor es instalado define
+ dos arquitecturas de virtualización, como se puede observar en la figura
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Arquitecturas-de-virtualización"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Imagen extraída de: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.how2shout.com/how-to/hyper-v-vs-virtualbox-basic-comparison.html
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+El Tipo I de hipervisor, también conocido como virtualización 
+\shape italic
+bare-metal
+\shape default
+, refiere a que no hay sistema operativo anfitrión porque la VMM se sitúa
+ directamente sobre el hardware físico e intercepta las comunicaciones entre
+ las múltiples máquinas virtuales y los recursos físicos.
+ 
+\end_layout
+
+\begin_layout Standard
+La segunda arquitectura, o el Tipo II de hipervisor, se conoce como 
+\shape italic
+hosted
+\shape default
+, donde el VMM se encuentra sobre el sistema operativo anfitrión y se ejecuta
+ como una aplicación más.
+ En este caso, es el SO anfitrión el encargado de proveer los drivers de
+ entrada/salida y es quién gestiona las máquinas virtuales huéspedes.
+ Un claro ejemplo de esta arquitectura es el software VirtualBox.
+ La principal desventaja de la arquitectura 
+\shape italic
+hosted
+\shape default
+ es que, al funcionar sobre un sistema operativo, gasta más recursos; sin
+ embargo como punto positivo, cuenta con mucha compatibilidad con el hardware,
+ ya que el SO anfitrión controla los drivers.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/arquitectures.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Arquitecturas de virtualización.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Arquitecturas-de-virtualización"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La característica principal del VMM es que remueve la dependencia del sistema
+ operativo con los recursos físicos, con el hardware.
+ En otras palabras, los recursos son controlados por el hipervisor y no
+ por el SO anfitrión o el hardware.
+ Debido a aquello, múltiples sistemas operativos pueden correr con el mismo
+ hardware al mismo tiempo, estando aislados entre sí.
+ Como resultado, el hardware físico es particionado en unidades lógicas
+ conocidas como máquinas virtuales (VM).
+\end_layout
+
+\begin_layout Standard
+Con esto, podemos definir los tres principales atributos de los VMM:
+\end_layout
+
+\begin_layout Paragraph
+Aislamiento 
+\end_layout
+
+\begin_layout Standard
+Sólo el hipervisor tiene la responsabilidad de controlar y monitorear las
+ máquinas virtuales huéspedes que residen en el hardware físico, y también
+ tiene la responsabilidad de alojar y gestionar los recursos físicos que
+ requieren las VMs.
+ Se puede decir entonces, que el VMM provee aislamiento, es decir, cada
+ máquina virtual está aislada de las otras máquinas virtuales que corren
+ desde el mismo hardware.
+ Esto es lo mismo que decir que las aplicaciones que se están ejecutando
+ en una máquina virtual no pueden ver ni interactuar con otras aplicaciones
+ que están corriendo en otra máquina virtual.
+ Cabe aclarar, cada máquina virtual está a su vez aislada del sistema operativo
+ anfitrión de la misma manera.
+\end_layout
+
+\begin_layout Paragraph
+Interposición
+\end_layout
+
+\begin_layout Standard
+Como ya mencionamos, el hipervisor es quien gestiona las instrucciones que
+ requieren privilegios sobre el hardware.
+ El sistema operativo huésped comunica las interrupciones (
+\shape italic
+interrupts
+\shape default
+) al hipervisor que en su debido momento procesará los eventos interactuando
+ en favor del SO huésped.
+ También, intercepta las solicitudes del periféricos del sistema operativo
+ huésped y las mapea de manera adecuada con los periféricos físicos correspondie
+ntes.
+\end_layout
+
+\begin_layout Paragraph
+Inspección
+\end_layout
+
+\begin_layout Standard
+El hipervisor tiene acceso al estado de todas las máquinas virtuales que
+ están corriendo, como el estado del CPU, o de la memoria.
+ Poder acceder a estas variables es necesario para que el VMM pueda por
+ ejemplo, reestablecer una máquina virtual a un estado previo (
+\shape italic
+rollback
+\shape default
+), o poder realizar una 'fotografía' del estado actual de la máquina (
+\shape italic
+check pointing
+\shape default
+).
+ Además permite que los administradores puedan mover, o instanciar entornos
+ de virtualización desde un anfitrión físico hacia otro.
+\end_layout
+
+\begin_layout Subsubsection
+Anillos de Protección
+\end_layout
+
+\begin_layout Standard
+La arquitectura x86 ofrece cuatro niveles de privilegios, en forma de anillos,
+ que se pueden observar en la figura (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:anillos-de-prot"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+)
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Imagen extraída de: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://es.wikipedia.org/wiki/Anillo_(seguridad_informática)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ Estos anillos permiten varios niveles de aislamiento y abstracción de privilegi
+os dentro de la misma arquitectura de la computadora.
+ Se acomodan de manera jerárquica de más privilegiado (más confiable y menos
+ restricciones para acceder a recursos - Ring-0) a menos privilegiado (menos
+ confiable y con más restricciones para acceder a recursos - Ring-3), como
+ se pueden observar en la figura (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:anillos-de-prot"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ El anillo-0 (Ring-0) es el que tiene más privilegios e interactúa directamente
+ con los recursos físicos del hardware.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/600px-Priv_rings.svg.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Anillos de protección en CPU de arquitectura x86.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:anillos-de-prot"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los anillos menos privilegiados no pueden acceder a los anillos del interior
+ sin instrucciones que expliciten y permitan ese acceso.
+ Y son los anillos exteriores los que tienen estas restricciones para resguardar
+ y proteger la información y funcionalidades internas de malos usos, malware,
+ y demás.
+\end_layout
+
+\begin_layout Standard
+En un entorno de virtualización, el hipervisor corre en modo kernel (
+\shape italic
+Ring-0
+\shape default
+) porque es su responsabilidad asignar recursos de hardware y alojar memorias
+ de dirección a las máquinas virtuales huéspedes.
+ Ergo, estas VMs corren en un anillo con menos privilegios que el anillo-0.
+\end_layout
+
+\end_body
+\end_document
