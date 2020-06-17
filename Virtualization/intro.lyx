@@ -1,0 +1,640 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style french
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Definiciones
+\end_layout
+
+\begin_layout Itemize
+Workload
+\end_layout
+
+\begin_layout Itemize
+Uptime
+\end_layout
+
+\begin_layout Itemize
+Host
+\end_layout
+
+\begin_layout Itemize
+Layer
+\end_layout
+
+\begin_layout Itemize
+Dongles
+\end_layout
+
+\begin_layout Section
+Introduccion
+\end_layout
+
+\begin_layout Standard
+Se cree que el concepto tiene sus origenes en los 1970s, cuando IBM invirtio
+ mucho tiempo y esfuerzo en desarollar soluciones robustas en cuanrto a
+ uso eficiente de los recursos de varias computadoraas entre muchos usuarios.
+ Este concepto cambio el paradigma del uso eficietne de la tencologia, llegando
+ a proveer capacidad computacional por un precio mucho menor.
+ Empezamos el i0nforme con una breve introduccion del tema, su definicion,
+ beneficios y desventajas.
+\end_layout
+
+\begin_layout Subsection
+Terminología
+\end_layout
+
+\begin_layout Standard
+La palabra virtual proviene del latín 
+\begin_inset Quotes fld
+\end_inset
+
+virtus
+\begin_inset Quotes frd
+\end_inset
+
+ que significa virtud.
+ Según la RAE, virtual, entre otras cosas, significa ''Que tiene existencia
+ aparente y no real'' Por lo que cuando se habla de virtualización en el
+ mundo informático/electrónico, describe la separación de recursos o solicitud
+ de estos del medio físico que los provee.
+ Esto es decir, que el servicio o recurso utilizado aparenta provenir del
+ medio físico del cual se utiliza.
+ Un ejemplo seria el uso de memoria virtual, donde el software de una computador
+a gana acceso a mayor memoria de la que físicamente es capaz.
+ Se puede apreciar en la siguiente imagen como cambia el paradigma depuse
+ de la implementación de una capa de visualización:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/Screenshot 2020-06-16 20.46.48.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Antes y después de la virtualización
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De esta manera se crea una nueva capa de abstracción entre el hardware y
+ el software.
+ 
+\end_layout
+
+\begin_layout Standard
+Cuando se habla sobre virtualización en servidores específicamente, hablamos
+ del proceso de dividir un servidor físico en múltiples servidores virtuales
+ por medio de una aplicación de software, donde cada servidor puede correr
+ su propio sistema operativo.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/71nIl2trHEL._AC_SL1500_.jpg
+	scale 10
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ilustración de un servidor de virtualización (PowerEdge R710)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Por qué Virtualización
+\end_layout
+
+\begin_layout Standard
+Es una solución rentable de proveer servicios de hosting y utilizar efectivament
+e los recursos de infraestructura.
+ Sin esta virtualización, los servers pueden llegar a usar una pequeña porción
+ de su verdadero poder de procesamiento.
+ Esto nace a raíz de que al no estar bien distribuido el workload, muchos
+ servidores quedan inutilizados a la espera.
+ Esto lleva a desperdicios de recursos y energía.
+ Con el uso de virtualización, cada servidor se divide en múltiples servidores
+ virtuales que utilizan de manera eficiente los recursos y trabajan en conjunto,
+ como varios servidores independientes eficientes.
+\end_layout
+
+\begin_layout Subsection
+Virtualización vs Cloud computing
+\end_layout
+
+\begin_layout Standard
+La diferencia fundamental es que el cloud computing trabaja con infraestructura
+ como servicio (IaaS), dando acceso on demand a recursos computacionales
+ en una 
+\begin_inset Quotes fld
+\end_inset
+
+shared pool
+\begin_inset Quotes frd
+\end_inset
+
+ que pueden ser provistos con mínimo esfuerzo del proveedor.
+ Mientras que la virtualización se basa en software como servicio (SaaS).
+ Por lo que la nube es ventajosa para usos públicos, pero para na empresa
+ puede llegar a ser mejor un approach por el lado de la virtualización.
+\end_layout
+
+\begin_layout Standard
+A continuación se detallan algunos aspectos claves que diferencian estos
+ dos conceptos:
+\end_layout
+
+\begin_layout Enumerate
+Escalabilidad
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Cloud Computing: Fácil escalabilidad
+\end_layout
+
+\begin_layout Itemize
+Virtualización: Limitada en escalabilidad por su configuración
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Setup
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Cloud Computing: Proceso tedioso
+\end_layout
+
+\begin_layout Itemize
+Virtualización: De fácil Setup
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Flexibilidad
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Cloud Computing: Flexible para sus usuarios, donde pueden acceder desde
+ cualquier lugar con Internet
+\end_layout
+
+\begin_layout Itemize
+Virtualización: No es tan flexible en cuanto a acceso, se requiere autenticación
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Dedicated Hardware
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Cloud Computing: Múltiples hardware crean el cloud computing
+\end_layout
+
+\begin_layout Itemize
+Virtualización: Se requiere hardware dedicado para maquina virtual múltiple
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Integración
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Cloud Computing: Permite expansión futura de usuarios, aplicaciones, etc
+\end_layout
+
+\begin_layout Itemize
+Virtualización: Permite expansión de nuevas maquinas en la misma infraestructura
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Dependencias
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Cloud Computing: Múltiples usuarios pueden acceder usando un mismo link
+\end_layout
+
+\begin_layout Itemize
+Virtualización: Múltiples sistemas operativos pueden ser instalados en un
+ servidor
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Accesibilidad
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Cloud Computing: Puede ser accedida desde cualquier parte del mundo
+\end_layout
+
+\begin_layout Itemize
+Virtualización: Permiso requerido para entrar desde fuera de la red
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Disaster Recovery
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Cloud Computing: No dependen se una sola maquina
+\end_layout
+
+\begin_layout Itemize
+Virtualización: Falla de una maquina puede hacer caer múltiples maquinas
+ virtuales
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Cuando conviene virtualizar?
+\end_layout
+
+\begin_layout Standard
+Puede no siempre ser beneficiosa la implementación de virtualización.
+ Algunos casos donde es ventajosa la virtualización son:
+\end_layout
+
+\begin_layout Itemize
+Cuando se requiere de tecnología para operar: Si es de vital importancia,
+ la virtualización puede reducir ampliamente los costos.
+\end_layout
+
+\begin_layout Itemize
+Si se tiene una empresa grande: Cuando los servidores aumentan en tamaño
+ la ineficiencia de los mismos tiende a ser mayor y el uso de virtualización
+ se hace esencial para el uso eficiente de recursos.
+\end_layout
+
+\begin_layout Itemize
+Si se pueden cubrir los costos iniciales: Reduce los costos a largo plazo
+ pero requieren une inversión inicial grande si no es una empresa grande.
+\end_layout
+
+\begin_layout Itemize
+Si se necesita espacio: Algunas empresas gastan mucha plata en mantenimiento,
+ espacio y energía de hardware.
+ Con el uso de virtualización se pueden reducir estos problemas de costos.
+\end_layout
+
+\begin_layout Standard
+Algunos ejemplos de cuando NO puede llegar a ser beneficiosa la virtualización
+ son:
+\end_layout
+
+\begin_layout Itemize
+Problemas de licencias: Algunas aplicaciones no permiten ser corridas sobre
+ maquinas virtuales.
+\end_layout
+
+\begin_layout Itemize
+Con el uso de aplicaciones I/O o dongles: Con aplicaciones con características
+ de alto I/O (ej: bases de datos), aplicaciones que requieren uso de gráficos
+ intensivos o dongles se prefiere no utilizar virtualización.
+\end_layout
+
+\begin_layout Itemize
+Cuando tiempos de sincronización son críticos: Las maquinas virtuales corren
+ con su propio clock, lo que significa que diverge del clock del server
+ host.
+ Si estas diferencias son criticas (por ejemplo, aplicaciones que corren
+ en la bolsa en tiempo real o sistemas de control industrial) conviene usar
+ sistemas físicas.
+\end_layout
+
+\begin_layout Itemize
+Capacidad limitada: El uso de maquinas virtuales con un hypervisor no tienen
+ misma performance en cuanto a velocidad que una maquina física.
+ Por lo que si el server esta corriendo a maxima capacidad, puede ser contraprod
+ucente el uso de virtualización.
+\end_layout
+
+\begin_layout Subsection
+Tipos de Virtualización
+\end_layout
+
+\begin_layout Itemize
+Full Virtualization
+\end_layout
+
+\begin_layout Itemize
+Para Virtualization
+\end_layout
+
+\begin_layout Itemize
+OS Level Virtualization
+\end_layout
+
+\begin_layout Subsection
+Ventajas
+\end_layout
+
+\begin_layout Standard
+Los beneficios que surgen de esta implementación son:
+\end_layout
+
+\begin_layout Itemize
+Menores costos de operación: Como ya se menciono, la virtualización reduce
+ costos a largo plazo, donde solo se compra la licencia para comenzar a
+ trabajar.
+\end_layout
+
+\begin_layout Itemize
+Mantiene los costos fijos: Se puede tener costos predecibles a la hora de
+ implementarlo, a diferencia de, por ejemplo, cloud computing, donde se
+ tiene que pagar mensualmente y los costos pueden variar.
+\end_layout
+
+\begin_layout Itemize
+Reduce el workload: Proveedores de virtualización hacen actualizaciones
+ automáticas de manera que se reduce el costo y tiempo del equipo IT.
+\end_layout
+
+\begin_layout Itemize
+Mejora el 'uptime': Gracias a técnicas de virtualización, el uptime se puede
+ mejorar drásticamente.
+ Por ejemplo, algunos proveedores ofrecen un uptime de 99.9999%.
+\end_layout
+
+\begin_layout Itemize
+Reduce costos energéticos: Los costos que generalmente son destinados a
+ los gastos energéticos o costos de cooling, pueden ser redirigidos hacia
+ otro lado.
+\end_layout
+
+\begin_layout Itemize
+Elimina complejidad del servidor: Al virtualizar, se pueden utilizar mejor
+ los recursos y simplificar el servidor de una manera sencilla y eficaz,
+ aprovechando los recursos del mismo.
+\end_layout
+
+\begin_layout Subsection
+Desventajas
+\end_layout
+
+\begin_layout Itemize
+Puede tener altos costos de implementación: Para los proveedores de virtualizaci
+ón, los costos de implementación pueden ser muy altos.
+\end_layout
+
+\begin_layout Itemize
+Tiene sus limitaciones: Como se menciono anteriormente, no todas las aplicacione
+s y servidores van a ser compatibles con la virtualización a la hora de
+ ser implementada.
+\end_layout
+
+\begin_layout Itemize
+Riesgos de seguridad: Al usar virtualización, los riesgos de seguridad aumentan.
+ El hypervisor introduce una nueva layer de software que puede ser atacada.
+ Ademas, una maquina virtual comprometida puede afectar al resto en un servidor
+ físico.
+ De manera que un ataque a un servidor físico puede llevar a la inhabilitacion
+ de todos los servidores virtuales.
+\end_layout
+
+\begin_layout Itemize
+Problemas de escalabilidad: Cuando se comparten recursos con otras áreas,
+ existe un lag ene el crecimiento de las misma, lo que lleva a usos desproporcio
+nados del espacio en los servidores, esto puede causar problemas de escalabilida
+d a largo plazo.
+ 
+\end_layout
+
+\begin_layout Itemize
+Toma tiempo: Reduce tiempos en cuanto a la implementación, pero cuesta tiempo
+ al usuario a largo plazo comprado con servers locales.
+\end_layout
+
+\begin_layout Section
+Estado actual del mercado de virtualización
+\end_layout
+
+\begin_layout Itemize
+VMware vSphere: VMWare se considera líder en el mercado, dominando el mismo
+ por mucho tiempo.
+ Como desventaja, con el tiempo gano mucha complejidad lo que la convierte
+ en una opcion poco atractiva para negocios chicos.
+ Tambien se piensa que para entornos Linux, se prefieren otras opciones.
+\end_layout
+
+\begin_layout Itemize
+Red Hat Virtualization: Opcion atractiva para entornos Linux.
+ Ratings levemente inferioires al de VMWare a costos mas bajos.
+\end_layout
+
+\begin_layout Itemize
+Proxmox VE: Opcion de bajo costo para entornos Linux.
+ Compite cercamente con Virtuozzo
+\end_layout
+
+\begin_layout Itemize
+Microsoft Hyper-V: Opcion mas economica que VMWare para entornos Windows.
+ Se tiene que tener cuidado con la compatibilidad.
+\end_layout
+
+\begin_layout Itemize
+Citrix Hypervisor: Lidera el mercado en industiras de graficos 3D y maneja
+ entornos tanto Windows como Linux
+\end_layout
+
+\begin_layout Itemize
+Oracle VM Server: Primera opcion para uso con aplicaciones Oracel.
+ Aunque tiene bajo rating de satisfaccion de usarios.
+\end_layout
+
+\begin_layout Itemize
+IBM PowerVM: Primera opcion para uso con apliaciones AIX, IBM Linux y clientes
+ IBM i.
+ Mejor para empreas grnades con mucno presupuesto.
+\end_layout
+
+\begin_layout Itemize
+Virtuozzo: Creada para proveer soporte comercial a la plataforma KVM (Kernel
+ based Virual Machine)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagenes/Screenshot 2020-06-16 22.46.13.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabla de comparacion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
