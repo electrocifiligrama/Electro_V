@@ -962,5 +962,108 @@ M.
  39–47, 2005.
 \end_layout
 
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+“Server Virtualization,” VMware.
+ [Online].
+ Available: 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.vmware.com/topics/glossary/content/server-virtualization"
+
+\end_inset
+
+.
+ [Accessed: 16-Jun-2020].
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+
+\end_inset
+
+“Why choose virtualization?,” TechAdvisory.org.
+ [Online].
+ Available: 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.techadvisory.org/2014/05/why-choose-virtualization/"
+
+\end_inset
+
+.
+ [Accessed: 16-Jun-2020].
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-3"
+
+\end_inset
+
+L.
+ Gaille, “14 Advantages and Disadvantages of Virtualization,” Vittana.org,
+ 16-Dec-2019.
+ [Online].
+ Available: 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://vittana.org/14-advantages-and-disadvantages-of-virtualization"
+
+\end_inset
+
+.
+ [Accessed: 16-Jun-2020].
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-4"
+
+\end_inset
+
+“Top 10 Reasons Not to Virtualize,” ServerWatch.
+ [Online].
+ Available: 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.serverwatch.com/server-trends/top-10-reasons-not-to-virtualize.html"
+
+\end_inset
+
+.
+ [Accessed: 16-Jun-2020].
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-5"
+
+\end_inset
+
+“Top 10 Useful Comparison Between Cloud Computing vs Virtualization,” EDUCBA,
+ 13-Apr-2020.
+ [Online].
+ Available: 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.educba.com/cloud-computing-vs-virtualization/"
+
+\end_inset
+
+.
+ [Accessed: 16-Jun-2020].
+\end_layout
+
 \end_body
 \end_document
