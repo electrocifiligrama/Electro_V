@@ -167,7 +167,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename Imagenes/FullVirtualization.PNG
-	scale 70
+	scale 60
 
 \end_inset
 
@@ -284,10 +284,14 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Imagenes/OsVirtualization.PNG
-	scale 70
+	scale 60
 
 \end_inset
 
